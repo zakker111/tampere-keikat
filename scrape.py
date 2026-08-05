@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Scraper with Playwright fallback for meteli.net and improved stealth.
+Scraper with Playwright fallback for meteli.net and VisitTampere integration.
 """
 import json
 import re
@@ -352,6 +352,188 @@ def merge_events(*event_lists):
     return merged
 
 
+# ---------------------------------------------------------------------------
+# VisitTampere scraper
+# ---------------------------------------------------------------------------
+
+def parse_fuzzy_date(s):
+    """Try several human-friendly date formats and return YYYY-MM-DD or None."""
+    if not s:
+        return None
+    s = s.strip()
+    # 1) ISO-like 2026-08-05 or 2026.08.05
+    m = re.search(r"(\d{4})[-\.](\d{1,2})[-\.](\d{1,2})", s)
+    if m:
+        y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        try:
+            return f"{y:04d}-{mo:02d}-{d:02d}"
+        except Exception:
+            pass
+    # 2) DD.MM.YYYY or D.M.YYYY
+    m = re.search(r"\b(\d{1,2})[.\-\/](\d{1,2})[.\-\/](\d{4})\b", s)
+    if m:
+        d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        try:
+            return f"{y:04d}-{mo:02d}-{d:02d}"
+        except Exception:
+            pass
+    # 3) DD Month YYYY  (e.g., 21 August 2026)
+    m = re.search(r"\b(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})\b", s)
+    if m:
+        d, mon_name, y = int(m.group(1)), m.group(2).lower(), int(m.group(3))
+        months = {
+            'january':1,'february':2,'march':3,'april':4,'may':5,'june':6,
+            'july':7,'august':8,'september':9,'october':10,'november':11,'december':12
+        }
+        mo = months.get(mon_name[:3]) or months.get(mon_name)
+        if mo:
+            return f"{y:04d}-{mo:02d}-{d:02d}"
+    # 4) Month DD, YYYY (e.g., August 21, 2026)
+    m = re.search(r"\b([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})\b", s)
+    if m:
+        mon_name, d, y = m.group(1).lower(), int(m.group(2)), int(m.group(3))
+        months = {
+            'january':1,'february':2,'march':3,'april':4,'may':5,'june':6,
+            'july':7,'august':8,'september':9,'october':10,'november':11,'december':12
+        }
+        mo = months.get(mon_name[:3]) or months.get(mon_name)
+        if mo:
+            return f"{y:04d}-{mo:02d}-{d:02d}"
+    return None
+
+
+def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tampere/"):
+    """
+    Scrape events from visittampere 'Events in Tampere' article listing.
+    Returns a list of event dicts matching other source format.
+    """
+    events = []
+    try:
+        resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=2, backoff=1)
+    except Exception as exc:
+        log_http_error("visittampere", exc)
+        return events
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    # Prefer article elements or list items that look like event cards
+    candidates = []
+    # 1) article blocks
+    candidates.extend(soup.find_all("article"))
+    # 2) elements with class containing 'card' or 'item' or 'article'
+    candidates.extend(soup.select("[class*='card'], [class*='item'], [class*='article']"))
+    # 3) fallback: headings with links inside the main content
+    for h in soup.find_all(["h2", "h3", "h4"]):
+        a = h.find("a", href=True)
+        if a:
+            candidates.append(h)
+
+    seen = set()
+    for node in candidates:
+        # Find a link / title
+        a = node.find("a", href=True)
+        title = None
+        url_ = None
+        if a:
+            title = a.get_text(" ", strip=True)
+            url_ = urljoin(url, a["href"])
+        else:
+            # try heading text in node
+            h = node.find(["h2", "h3", "h4"])
+            if h and h.get_text(strip=True):
+                title = h.get_text(" ", strip=True)
+        if not title:
+            # as fallback, look for immediate strong/bold text
+            strong = node.find(["strong", "b"])
+            if strong:
+                title = strong.get_text(" ", strip=True)
+        if not title:
+            continue
+
+        # Avoid duplicates
+        key = (title.lower(), url_ or "")
+        if key in seen:
+            continue
+        seen.add(key)
+
+        # Try to find nearby date/time text
+        # Look for time/datetime tags first
+        date_str = None
+        time_str = ""
+        dt = node.find(["time", "span"], attrs={"datetime": True})
+        if dt and dt.get("datetime"):
+            date_str = parse_fuzzy_date(dt["datetime"])
+        # if not, search text blocks inside node for date-like patterns
+        if not date_str:
+            text_snippets = []
+            for el in node.find_all(["p", "div", "span", "li"], recursive=True):
+                txt = el.get_text(" ", strip=True)
+                if txt:
+                    text_snippets.append(txt)
+            # check each snippet for a date
+            for s in text_snippets:
+                d = parse_fuzzy_date(s)
+                if d:
+                    date_str = d
+                    # also try to capture time like 19:00
+                    tm = re.search(r"\b([01]?\d|2[0-3]):([0-5]\d)\b", s)
+                    if tm:
+                        time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
+                    break
+
+        # Final fallback: try page-wide search near the link's parent
+        if not date_str and url_:
+            # Fetch article page to try to extract date (optional, slower)
+            try:
+                art_resp = fetch_with_retries("GET", url_, headers=HEADERS, timeout=15, retries=1, backoff=1)
+                art_soup = BeautifulSoup(art_resp.text, "html.parser")
+                # Common pattern: date in <time> or in a meta tag
+                t = art_soup.find("time")
+                if t and t.get("datetime"):
+                    date_str = parse_fuzzy_date(t["datetime"])
+                if not date_str:
+                    # look in first paragraphs
+                    for p in art_soup.find_all("p", limit=6):
+                        d = parse_fuzzy_date(p.get_text(" ", strip=True))
+                        if d:
+                            date_str = d
+                            tm = re.search(r"\b([01]?\d|2[0-3]):([0-5]\d)\b", p.get_text(" ", strip=True))
+                            if tm:
+                                time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
+                            break
+            except Exception:
+                # ignore article fetch failures
+                pass
+
+        # If we still don't have a date, skip (visittampere sometimes lists generic articles)
+        if not date_str:
+            continue
+
+        ev = {
+            "date": date_str,
+            "time": time_str,
+            "title": title,
+            "venue": "Tampere",
+            "genre": guess_genre(title, "Tampere"),
+            "free": 0,
+            "url": url_ or url,
+        }
+        events.append(ev)
+
+    # Deduplicate by title+date
+    dedup = []
+    seen_keys = set()
+    for e in events:
+        k = (e["date"], e["title"].lower())
+        if k in seen_keys:
+            continue
+        seen_keys.add(k)
+        dedup.append(e)
+
+    print(f"[visittampere] parsed {len(dedup)} events", file=sys.stderr)
+    return dedup
+
+
 # keikat.org and linkedevents code unchanged from prior (keikat.org uses fetch_with_retries; linkedevents tries HTTPS then HTTP)
 KEIKAT_ORG_URL = "https://keikat.org/tampere"
 KEIKAT_ORG_DATE_RE = re.compile(r"\d{1,2}\.\d{1,2}\.(\d{4})")
@@ -515,6 +697,7 @@ def main():
     meteli_events = []
     keikat_org_events = []
     linkedevents_events = []
+    visittampere_events = []
     errors = []
 
     months_to_fetch = [(today.year, today.month)]
@@ -552,7 +735,13 @@ def main():
         errors.append(f"linkedevents: {exc}")
         print(f"[linkedevents] FAILED: {exc}", file=sys.stderr)
 
-    all_events = merge_events(meteli_events, kohokohdat_events, keikat_org_events, linkedevents_events)
+    try:
+        visittampere_events = fetch_visittampere()
+    except Exception as exc:
+        errors.append(f"visittampere: {exc}")
+        print(f"[visittampere] FAILED: {exc}", file=sys.stderr)
+
+    all_events = merge_events(meteli_events, kohokohdat_events, keikat_org_events, linkedevents_events, visittampere_events)
 
     if not all_events:
         print("No events parsed from any source — leaving existing data.json untouched.", file=sys.stderr)
@@ -566,11 +755,12 @@ def main():
         "kohokohdat": len(kohokohdat_events),
         "keikat_org": len(keikat_org_events),
         "linkedevents": len(linkedevents_events),
+        "visittampere": len(visittampere_events),
     }
     output = {
         "generated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "source_note": (
-            f"Auto-scraped from 4 sources (raw counts: {counts}), merged to "
+            f"Auto-scraped from 5 sources (raw counts: {counts}), merged to "
             f"{len(raw)} events after de-duplication. Music gigs only \u2014 "
             f"theatre/comedy filtered out. Confidence varies by source."
         ),
