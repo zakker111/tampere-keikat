@@ -107,7 +107,21 @@ def is_music_event(title, venue):
     text = f"{title} {venue}".lower()
     return not any(kw in text for kw in EXCLUDE_KEYWORDS)
 
-HEADERS = {"User-Agent": "TampereKeikatBot/1.0 (personal hobby project; contact via github issues)"}
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept-Language": "fi-FI,fi;q=0.9,en;q=0.8",
+}
+
+
+def log_http_error(source, exc):
+    """Prints the actual response body (truncated) alongside the exception,
+    since 'the server said 400' is useless for debugging without knowing why."""
+    resp = getattr(exc, "response", None)
+    if resp is not None:
+        print(f"[{source}] FAILED: {exc} | body: {resp.text[:300]!r}", file=sys.stderr)
+    else:
+        print(f"[{source}] FAILED: {exc}", file=sys.stderr)
 
 
 def guess_genre(title, venue):
@@ -267,6 +281,12 @@ def split_title_venue(rest):
         suffix = f"{v}, Tampere"
         if rest.lower().endswith(suffix.lower()):
             return rest[: -len(suffix)].strip(" -–:"), v
+    # Some venue names (e.g. "G Livelab Tampere", "Tampereen stadion") already
+    # contain "Tampere", so a source that doesn't append the city again as a
+    # separate ", Tampere" suffix would otherwise never match above.
+    for v in KNOWN_VENUES_SORTED:
+        if rest.lower().endswith(v.lower()) and len(rest) > len(v):
+            return rest[: -len(v)].strip(" -–:"), v
     # Fallback for venues not in the whitelist yet: best-effort generic match.
     # Less reliable for titles with multiple capitalized words — see note above.
     m = re.search(r"(?P<venue>[A-ZÅÄÖ0-9][\w .'&\-]*?)\s*,\s*Tampere\s*$", rest)
@@ -324,7 +344,7 @@ def fetch_meteli(max_pages=4):
                 break
             resp.raise_for_status()
         except Exception as exc:
-            print(f"[meteli page {page_num}] FAILED: {exc}", file=sys.stderr)
+            log_http_error(f"meteli page {page_num}", exc)
             break
 
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -403,28 +423,71 @@ def parse_keikat_org_anchor_text(text):
     return {"date": f"{year:04d}-{month:02d}-{day:02d}", "time": time_str, "title": title, "venue": venue, "free": 0}
 
 
+KEIKAT_DATE_HEAD_RE = re.compile(r"^[a-zäöå]{2}\s+(\d{1,2})\.(\d{1,2})\.(\d{4})", re.IGNORECASE)
+
+
 def fetch_keikat_org(url=KEIKAT_ORG_URL):
     events = []
     try:
         resp = requests.get(url, headers=HEADERS, timeout=20)
         resp.raise_for_status()
     except Exception as exc:
-        print(f"[keikat.org] FAILED (non-fatal, source skipped): {exc}", file=sys.stderr)
+        log_http_error("keikat.org", exc)
         return events
 
     soup = BeautifulSoup(resp.text, "html.parser")
-    for a in soup.find_all("a", href=True):
-        text = a.get_text(" ", strip=True)
-        if not KEIKAT_ORG_DATE_RE.search(text):
+    current_date = None
+
+    # First live run of the previous version parsed 0 events, meaning the
+    # assumption that date+title+venue all live inside one <a>'s text was
+    # wrong. This version tries that first (parse_keikat_org_anchor_text),
+    # and falls back to kohokohdat's strategy: track the nearest preceding
+    # date-heading text, then treat any link as a title candidate and look
+    # its venue up in KNOWN_VENUES.
+    for el in soup.find_all(["h1", "h2", "h3", "h4", "p", "a", "li", "div", "td", "tr"]):
+        text = el.get_text(" ", strip=True)
+        if not text:
             continue
+
+        m = KEIKAT_DATE_HEAD_RE.match(text)
+        if m and len(text) < 40:
+            current_date = f"{int(m.group(3)):04d}-{int(m.group(2)):02d}-{int(m.group(1)):02d}"
+            continue
+
+        if el.name != "a":
+            continue
+        href = el.get("href", "")
+        if not href or href.startswith("#") or href.startswith("javascript:"):
+            continue
+
         parsed = parse_keikat_org_anchor_text(text)
-        if not parsed or not is_music_event(parsed["title"], parsed["venue"]):
+        if parsed:
+            title, venue, date_str = parsed["title"], parsed["venue"], parsed["date"]
+        elif current_date and 2 < len(text) < 120:
+            title, venue = split_title_venue(text)
+            if not venue:
+                continue
+            date_str = current_date
+        else:
             continue
-        parsed["genre"] = guess_genre(parsed["title"], parsed["venue"])
-        parsed["url"] = urljoin(url, a["href"])
-        events.append(parsed)
-    print(f"[keikat.org] parsed {len(events)} events", file=sys.stderr)
-    return events
+
+        if not is_music_event(title, venue):
+            continue
+        events.append({
+            "date": date_str, "time": "", "title": title, "venue": venue, "free": 0,
+            "genre": guess_genre(title, venue), "url": urljoin(url, href),
+        })
+
+    seen = set()
+    deduped = []
+    for e in events:
+        if e["url"] in seen:
+            continue
+        seen.add(e["url"])
+        deduped.append(e)
+
+    print(f"[keikat.org] parsed {len(deduped)} events", file=sys.stderr)
+    return deduped
 
 
 # ---------------------------------------------------------------------------
@@ -454,18 +517,18 @@ def fetch_linkedevents(days_ahead=45):
     events = []
     today = datetime.date.today()
     end = today + datetime.timedelta(days=days_ahead)
-    params = {
-        "start": today.isoformat(),
-        "end": end.isoformat(),
-        "sort": "start_time",
-        "page_size": 100,
-    }
+    # Simplified from the first version, which got a 400 with no visible
+    # reason. Down to the two params that are near-universal across
+    # LinkedEvents deployments; log_http_error() will print the actual
+    # response body if this still fails, which is what's needed to fix it
+    # properly rather than guessing further blind.
+    params = {"start": today.isoformat(), "end": end.isoformat()}
     try:
         resp = requests.get(LINKEDEVENTS_URL, headers=HEADERS, params=params, timeout=20)
         resp.raise_for_status()
         payload = resp.json()
     except Exception as exc:
-        print(f"[linkedevents] FAILED (non-fatal, source skipped): {exc}", file=sys.stderr)
+        log_http_error("linkedevents", exc)
         return events
 
     for item in payload.get("data", []):
@@ -563,7 +626,7 @@ def main():
         "linkedevents": len(linkedevents_events),
     }
     output = {
-        "generated": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
+        "generated": datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%d %H:%M UTC"),
         "source_note": (
             f"Auto-scraped from 4 sources (raw counts: {counts}), merged to "
             f"{len(raw)} events after de-duplication. Music gigs only \u2014 "
