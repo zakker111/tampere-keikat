@@ -1,1483 +1,2671 @@
 {
- "generated": "2026-08-04 (manual curation)",
- "source_note": "Hand-compiled from kohokohdat.fi and venue listings; music gigs only — theatre/comedy filtered out. NOTE: individual kohokohdat.fi event links in this snapshot could not be re-verified (site now blocks automated checks) and were replaced with the confirmed-live August listing page to avoid dead links.",
+ "generated": "2026-08-05 20:19 UTC",
+ "source_note": "Auto-scraped from 4 sources (raw counts: {'meteli': 0, 'kohokohdat': 357, 'keikat_org': 0, 'linkedevents': 0}), merged to 296 events after de-duplication. Music gigs only — theatre/comedy filtered out. Confidence varies by source: meteli.net was tested against real samples before shipping; kohokohdat.fi, keikat.org and the linkedevents.tampere.fi API integration are best-effort and unverified — check the per-source counts above if the total looks off.",
  "errors": [],
  "events": [
   [
    "2026-08-01",
    "",
-   "DAM Bar Summer DJs",
-   "DAM Bar",
+   "DAM Bar kesän dj:t",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "electronic",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/dam-bar-kesan-djt-2026-06-19-2026-06-20-2026-06-26-2026-06-27-2026-07-03-2026-07-04-2026-07-10-2026-07-11-2026-07-17-2026-07-18-2026-07-24-2026-07-25-2026-07-31-2026-08-01/"
   ],
   [
    "2026-08-01",
    "",
-   "Fest Afrika 2026 (31.7–2.8)",
-   "Multiple venues",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Laukon Kesä: Anssi Kela",
-   "Laukon kartano (Vesilahti)",
+   "Fest Afrika 2026",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/fest-afrika/"
   ],
   [
    "2026-08-01",
    "",
-   "Manserock Stadionilla: Manserock-orkesteri & Negative",
-   "Tammelan stadion",
-   "festival",
+   "Laukon Kesä 2026: Anssi Kela",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/laukon-kesa-2025-anssi-kela-ja-jonna-tervomaa/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Manserock stadionilla: Manserock-orkesteri ja NEGATIVE",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "classical",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/manserock-stadionilla-manserock-orkesteri-ja-negative/"
   ],
   [
    "2026-08-01",
    "",
    "Tampere Puistoreggae 2026",
-   "Laikunlava",
-   "folk",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-01",
-   "11:00",
-   "Lasten FOLK: Haidi ja Fer",
-   "Tahmelan Huvila",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "folk",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/tampere-puistoreggae/"
   ],
   [
    "2026-08-01",
-   "16:00",
-   "Manserock x Tornin etkot & jatkot",
-   "Paja Bar",
+   "",
+   "Lasten FOLK 2026",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "folk",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/haidi-ja-fer/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Manserock Stadionilla x Tornin etkot & jatkot",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-01",
-   "18:00",
-   "Ryönä-Klubi",
-   "Vastavirta-Klubi",
-   "metal",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/manserock-stadionilla-x-tornin-etkot-jatkot/"
   ],
   [
    "2026-08-01",
-   "18:00",
+   "",
+   "Ryönä-Klubi: Hirvonen & Härkönen, Nautintotarinat, Kinkyosasto, Miska Paamikko",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ryona-klubi-hirvonen-harkonen-nautintotarinat-kinkyosasto-miska-paamikko/"
+  ],
+  [
+   "2026-08-01",
+   "",
    "Trio Mandeng",
-   "Nekala",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-01",
-   "19:00",
-   "Laukkafest",
-   "Vastavirta-Klubi",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/trio-mandeng/"
   ],
   [
    "2026-08-01",
-   "19:00",
-   "Pispala Folk etkot: ËRSHkami, Silja Palomäki",
-   "Pethaus",
+   "",
+   "LAUKKAFEST: Jukka Nousiainen & Sini Suvanto, Ex-Kurpat, KYKS, Draamakuu",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/laukkafest-jukka-nousiainen-sini-suvanto-ex-kurpat-kyks-draamakuu-dj-jere-seppanen-tapahtumapaikka-vastavirta-klubi-alakerta-liput-15-e/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Pispala Folk etkot 2026: ËRSHkami, Silja Palomäki",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "folk",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/pispala-folk-etkot-2026-ershkami-silja-palomaki/"
   ],
   [
    "2026-08-01",
-   "20:00",
-   "Moro Sky Bar DJs: Kobi Spinns",
-   "Moro Sky Bar",
+   "",
+   "Moro Sky Bar DJ:t: Kobi Spinns",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "electronic",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-08-01/"
   ],
   [
    "2026-08-01",
-   "20:00",
+   "",
    "Nousu Hip Hop Night",
-   "Axu Katubaari",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "hiphop",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/nousu-hip-hop-night-2/"
   ],
   [
    "2026-08-01",
-   "20:00",
-   "Puisto by Night DJs",
-   "Puisto ravintola & kahvila",
+   "",
+   "Puisto by Night: Puisto DJ:t",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "electronic",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/puisto-by-night-puisto-djt-2026-08-01/"
   ],
   [
    "2026-08-01",
-   "20:00",
+   "",
    "The Go Getters (SE)",
-   "G Livelab Tampere",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/the-go-getters-se/"
   ],
   [
    "2026-08-01",
-   "20:30",
+   "",
    "Anton V. Kivi, Univibe, Kuollut Piimä, niilo karppinen",
-   "Maanalainen",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/anton-v-kivi-univibe-kuollut-piima-niilo-karppinen/"
   ],
   [
    "2026-08-01",
-   "21:00",
+   "",
    "ALT Agency Summer Sessions: Sonja Selene",
-   "O'Connell's Irish Bar",
-   "hiphop",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/alt-agency-summer-sessions-emilia-sisco/"
   ],
   [
    "2026-08-01",
-   "21:00",
+   "",
    "Bad Vision, Bad",
-   "Armo",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/bad-vision-bad/"
   ],
   [
    "2026-08-01",
-   "21:00",
-   "Crypt Cermon (USA)",
-   "Bar Kotelo",
-   "metal",
+   "",
+   "CRYPT CERMON (USA)",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/crypt-cermon-usa/"
   ],
   [
    "2026-08-01",
-   "21:00",
+   "",
    "Del Futuras",
-   "Paapan Kapakka",
-   "jazz",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/del-futuras-2/"
   ],
   [
    "2026-08-01",
-   "21:00",
-   "Olympia Puutarha DJs: PX1 & Lusmu",
-   "Ravintola Muusa",
+   "",
+   "Olympia-korttelin Puutarhan dj:t: PX1 & Lusmu",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "electronic",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/olympia-korttelin-puutarhan-djt-2026-08-01/"
   ],
   [
    "2026-08-01",
-   "21:00",
+   "",
    "Sami Arojoki",
-   "Paja Bar",
-   "hiphop",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/sami-arojoki-15/"
   ],
   [
    "2026-08-01",
-   "22:00",
-   "DJs Juissi & Jykke",
-   "Tavara-asema",
+   "",
+   "DJ:t Juissi & Jykke",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "electronic",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/djt-juissi-jykke/"
   ],
   [
    "2026-08-01",
-   "22:00",
+   "",
    "Hervanta Mutilation",
-   "Varjobaari",
-   "metal",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/elektrik-circus-26-centhron-de-moaan-exis-fr-teknohirvi-tba/"
   ],
   [
    "2026-08-01",
-   "22:00",
+   "",
    "Murrettu Väri",
-   "Pub Kujakolli",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/murrettu-vari-2/"
   ],
   [
    "2026-08-01",
-   "23:00",
-   "90's Fin Cover Boyz & Girlz",
-   "Ilona",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-01",
-   "23:00",
-   "DJ O-Nine",
-   "Bar Ihku",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-01",
-   "23:30",
-   "Jukkamies",
-   "Ruby & Fellas",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-02",
    "",
-   "PispalaFolk 2026",
-   "Tahmelan ranta",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-02",
-   "11:00",
-   "M'Pää — Cameroon meets Finland",
-   "Tahmelan Huvila",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-02",
-   "18:30",
-   "Kujakollin jamit + Univibe",
-   "Pub Kujakolli",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-02",
-   "20:00",
-   "Pispala Folk After Party: Degenerados, Dark Bottle, Matilda123",
-   "Vastavirta-Klubi",
+   "90’s Fin Cover Boyz & Girlz",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/bilebandi-highlights-2/"
   ],
   [
-   "2026-08-02",
-   "23:00",
-   "DJ O-Nine",
-   "Bar Ihku",
+   "2026-08-01",
+   "",
+   "Kuninkuusravien viralliset jatkot: DJ O-Nine",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "electronic",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/kuninkuusravien-viralliset-jatkot-dj-o-nine/"
   ],
   [
-   "2026-08-03",
-   "19:00",
-   "Reggaeta & Makkaraa",
-   "Ruby & Fellas",
+   "2026-08-01",
+   "",
+   "Puistoreggae-jatkot: Joonas Hauveli & Rytmi-Rengit + Puistoreggae -dj:t & friends",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/puistoreggae-jatkot-joonas-hauveli-rytmi-rengit-puistoreggae-djt-friends/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "JUKKAMIES",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jukkamies/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "M’Pää – Where Cameroon’s Atlantic Flavors Meet Finland’s Baltic Experience",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mpaa-where-cameroons-atlantic-flavors-meet-finlands-baltic-experience/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Pispala Folk -päätösklubi: Kujakollin jamit + Univibe",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "folk",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/kujakollin-jamit-2026-04-05-2026-05-03-2026-06-07-2026-07-05-2026-08-02/"
   ],
   [
-   "2026-08-04",
-   "21:00",
+   "2026-08-01",
+   "",
+   "PISPALA FOLK AFTER PARTY: Degenerados, Dark Bottle, Matilda123",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "folk",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/pispala-folk-after-party-degenerados-dark-bottle-matilda123/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "DJ Jiri & Thomas Valentino",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-jiri-thomas-valentino/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "REGGAETA & MAKKARAA",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "folk",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/reggaeta-makkaraa-4/"
+  ],
+  [
+   "2026-08-01",
+   "",
    "Janne Laurila & Ville Lehtovaara",
-   "Paapan Kapakka",
-   "jazz",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/janne-laurila-ville-lehtovaara/"
   ],
   [
-   "2026-08-05",
-   "17:00",
-   "Plevnan Vinyyliveranta: DJ Juissi",
-   "Panimoravintola Plevna",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-05",
-   "19:00",
-   "Finlayson Live: Ylva Haru",
-   "Väinö Linnan aukio",
-   "hiphop",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-05",
-   "19:00",
-   "Pappila Live: Happy Groove",
-   "Tyrvään Pappila (Sastamala)",
-   "jazz",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-05",
-   "19:00",
-   "Uittotunneli Summer Gigs: Seppo Tammilehto & Selkä",
-   "Uittotunneli",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-05",
-   "21:00",
-   "Erik Aho Trio",
-   "Paapan Kapakka",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-05",
-   "21:00",
-   "Friendship Connection",
-   "Paapan Kapakka",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-05",
-   "21:00",
-   "Janne Laurila Quartet",
-   "Paapan Kapakka",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-05",
-   "21:00",
-   "Kesäkeskiviikko: Ratikkacore Gaiden, Akubara, Avaruussetä & more",
-   "Vastavirta-Klubi",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-05",
-   "21:00",
-   "Wiley Cousins Trio",
-   "Paapan Kapakka",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-06",
+   "2026-08-01",
    "",
-   "Eppu Normaali — Ratinan lisäkonsertti",
-   "Ratinan stadion",
+   "Plevnan Vinyyliveranta – Manserock-spesiaali: DJ Juissi",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-vinyyli-keskiviikot-dj-juissi-2026-08-05/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Finlayson Live: Ylva Haru",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/finlayson-live-ylva-haru/"
   ],
   [
-   "2026-08-06",
-   "16:00",
-   "Eppu Normaali x Tornin etkot & jatkot (6.–8.8)",
-   "Paja Bar",
-   "rock",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-06",
-   "19:00",
-   "Heput soittaa Eppuja",
-   "Axu Katubaari",
+   "2026-08-01",
+   "",
+   "Pappila live -ilmaiskonsertit: Happy Groove",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/pappila-live-ilmaiskonsertit-happy-groove-2/"
   ],
   [
-   "2026-08-06",
-   "19:00",
-   "Negaatio, Kantør, Miss Vain",
-   "Maanalainen",
+   "2026-08-01",
+   "",
+   "Uittotunnelin kesäkeikat: Seppo Tammilehto & Selkä",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-sani-aartela-kalle-alatalo/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Friendship Connection",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/friendship-connection-5/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Kesäkeskiviikko: Ratikkacore Gaiden, Akubara (speedcore live), Avaruussetä, Dreamcoat Rising, Sini, Spugecore (live)",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "metal",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/kesakeskiviikko-ratikkacore-gaiden-akubara-speedcore-live-avaruusseta-dreamcoat-rising-sini-spugecore-live/"
   ],
   [
-   "2026-08-06",
-   "19:00",
-   "The Music of Hans Zimmer",
-   "Rantahotelli Waltikka (Valkeakoski)",
-   "classical",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-06",
-   "19:30",
-   "Lillanin Puutarhajuhlat: Tuure Kilpeläinen",
-   "Lillan Hotel & Kök",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-06",
-   "20:00",
-   "Solvychegodsk (fin/cyp), Pepita Vanni",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-06",
-   "20:00",
-   "Tapahtumien Yö: Tamjazz Collective",
-   "Finlaysonin Palatsi",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-06",
-   "21:00",
-   "Country Club",
-   "Paapan Kapakka",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-06",
-   "23:00",
-   "Ilonan Disco",
-   "Ilona",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-06",
-   "23:30",
-   "Vince Boncamper",
-   "Ruby & Fellas",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-07",
+   "2026-08-01",
    "",
-   "Eppu Normaali — sold out",
-   "Ratinan stadion",
-   "rock",
+   "DJ DJC",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/wicked-wednesday-dj-djc-9/"
   ],
   [
-   "2026-08-07",
+   "2026-08-01",
+   "",
+   "Eppu Normaali",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/eppu-normaali-2/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Tapahtumien Yö 2026",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tapahtumien-yo/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Eppu Normaali x Tornin etkot & jatkot",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/eppu-normaali-x-tornin-etkot-jatkot/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Heput soittaa Eppuja",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/heput-soittaa-eppuja/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Negaatio, Kantør, Miss Vain",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/negaatio-kantor-miss-vain/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "The Music of Hans Zimmer",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/the-music-of-hans-zimmer/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Asuntomessut LIVE: Kake Randelin",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/asuntomessut-live-kake-randelin/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Lillanin Puutarhajuhlat: TUURE KILPELÄINEN",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lillanin-puutarhajuhlat-tuure-kilpelainen/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Solvychegodsk (fin/cyp), Pepita Vanni",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/solvychegodsk-fin-cyp-pepita-vanni/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Tapahtumien Yö: Tamjazz Collective",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tapahtumien-yo-tamjazz-collective/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Vinyyliverannan TV-tunnarispesiaali",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/vinyyliverannan-tv-tunnarispesiaali/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Country Club",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/country-club/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "DJ Jiri",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-jiri-23/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Ilonan disco",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ilonan-disco/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Tapahtumien Yö Telakan terassilla: Yliopiston kuorot, Jamora ry – rumpuesitys",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/puistoreggae-jatkot-joonas-hauveli-rytmi-rengit-puistoreggae-djt-friends-2/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "VINCE BONCAMPER",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/vince-boncamper/"
+  ],
+  [
+   "2026-08-01",
    "",
    "Kaupunkijazz 2026",
-   "Ylöjärven kaupungintalo",
-   "jazz",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "metal",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/kaupunkijazz/"
   ],
   [
-   "2026-08-07",
+   "2026-08-01",
    "",
-   "Laukon Kesä: Vesterinen Yhtyeineen",
-   "Laukon kartano (Vesilahti)",
+   "Laukon Kesä 2026: Vesterinen Yhtyeineen",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/laukon-kesa-2026-vesterinen-yhtyeineen/"
   ],
   [
-   "2026-08-07",
+   "2026-08-01",
    "",
    "Silent Disco",
-   "Sisko ja sen Veli",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "electronic",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07/"
   ],
   [
-   "2026-08-07",
+   "2026-08-01",
    "",
-   "Tampere City Festival 2026 (7.–8.8): Flo Rida, Alan Walker, Scooter & more",
-   "Tampereen Messu- ja Urheilukeskus",
+   "Tampere City Festival 2026",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "festival",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/tampere-city-festival/"
   ],
   [
-   "2026-08-07",
-   "16:00",
-   "Midnight Sun Finstrumental Lounge",
-   "Saivo Kitchen & Bar",
-   "electronic",
+   "2026-08-01",
+   "",
+   "Konserttiristeily Vesterinen yhtyeineen",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/konserttiristeily-eppu-normaalin-keikalle/"
   ],
   [
-   "2026-08-07",
-   "19:00",
+   "2026-08-01",
+   "",
    "Suvi Teräsniska",
-   "Apianniemen kesäteatteri (Valkeakoski)",
-   "hiphop",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/suvi-terasniska-6/"
   ],
   [
-   "2026-08-07",
-   "19:30",
+   "2026-08-01",
+   "",
    "1Tipe & Kiertorata",
-   "Pethaus",
-   "hiphop",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/1tipe-kiertorata/"
   ],
   [
-   "2026-08-07",
-   "20:00",
-   "Moro Sky Bar DJs",
-   "Moro Sky Bar",
+   "2026-08-01",
+   "",
+   "Moro Sky Bar DJ:t",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "electronic",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-08-07/"
   ],
   [
-   "2026-08-07",
-   "21:00",
+   "2026-08-01",
+   "",
+   "A9 Live: Kova Maa",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/henry-kuronen-duo/"
+  ],
+  [
+   "2026-08-01",
+   "",
    "Bulrusher + Vaalimaa",
-   "Maanalainen",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/bulrusher-vaalimaa/"
   ],
   [
-   "2026-08-07",
-   "21:00",
-   "Disko Anksiyete: DJs Minkki & Stacye Deathsatan",
-   "Gastropub Soho",
+   "2026-08-01",
+   "",
+   "Disko Anksiyete – DJ´s Minkki & Stacye Deathsatan",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "electronic",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/disko-anksiyete-djs-minkki-stacye-deathsatan/"
   ],
   [
-   "2026-08-07",
-   "21:00",
+   "2026-08-01",
+   "",
    "Garbagemen, The Boasters, Jaakko & Jay, Lastauslaiturin Pojat",
-   "Vastavirta-Klubi",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/garbagemen-the-boasters-jaakko-jay-lastauslaiturin-pojat/"
   ],
   [
-   "2026-08-07",
-   "21:00",
+   "2026-08-01",
+   "",
    "Sobernot (CL), Pronoias (CL), Sargassus",
-   "Varjobaari",
-   "metal",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/sobernot-cl-pronoias-cl-sargassus/"
   ],
   [
-   "2026-08-07",
-   "21:00",
+   "2026-08-01",
+   "",
    "Vesa Oksanen",
-   "Paja Bar",
-   "hiphop",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/vesa-oksanen-12/"
   ],
   [
-   "2026-08-07",
-   "21:00",
+   "2026-08-01",
+   "",
+   "Wiley Cousins trio",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/wiley-cousins-trio-3/"
+  ],
+  [
+   "2026-08-01",
+   "",
    "Yatz3",
-   "Axu Katubaari",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/yatz3/"
   ],
   [
-   "2026-08-07",
-   "23:00",
-   "Joku Paikallinen Bändi",
-   "Bar Ihku",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-07",
-   "23:00",
-   "Tampere City Festival Jatkot: Kapteeni Lamminen",
-   "Ilona",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-07",
-   "23:30",
-   "Aleksi Kii & Antti Talvitie Guitar Party",
-   "Ruby & Fellas",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-08",
+   "2026-08-01",
    "",
-   "Eppu Normaali — farewell show",
-   "Ratinan stadion",
-   "rock",
+   "Milleniaalidisko: dj:t Jiri & Mr. Willy",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/milleniaalidisko-djt-jiri-mr-willy/"
   ],
   [
-   "2026-08-08",
+   "2026-08-01",
    "",
-   "Laukon Kesä: Arppa",
-   "Laukon kartano (Vesilahti)",
+   "JOKU PAIKALLINEN BÄNDI",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/joku-paikallinen-bandi/"
   ],
   [
-   "2026-08-08",
+   "2026-08-01",
    "",
-   "Tampere Filharmonia — Sorsapuisto Park Concert",
-   "Sorsapuisto",
+   "Tampere City Festival jatkot: Kapteeni Lamminen",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "festival",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tampere-city-festival-jatkot-kapteeni-lamminen/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "ALEKSI KII & ANTTI TALVITIE GUITAR PARTY",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/aleksi-kii-antti-talvitie-guitar-party/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Laukon Kesä 2026: ARPPA",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/laukon-kesa-2025-arppa/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Saariblues 2026 TAUOLLA",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/saariblues-festivaali/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Tampere Filharmonian Puistokonsertti 2026",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "classical",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/tampere-filharmonian-puistokonsertti/"
   ],
   [
-   "2026-08-08",
-   "18:00",
+   "2026-08-01",
+   "",
    "Anemones, Tanssit, Bunny Cute, J.Mann",
-   "Vastavirta-Klubi",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/anemones-tanssit-bunny-cute-j-mann/"
   ],
   [
-   "2026-08-08",
-   "18:00",
-   "Armo Blip Blop",
-   "Armo",
-   "electronic",
+   "2026-08-01",
+   "",
+   "Armo Blip Blop: Juha Valkeapää & Juhani Liiimatainen, SIPILÆ, Turkka Vuorinen",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/armo-blip-blop-juha-valkeapaa-juhani-liiimatainen-sipilae-turkka-vuorinen/"
   ],
   [
-   "2026-08-08",
-   "19:00",
+   "2026-08-01",
+   "",
+   "Huvilan",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/huvilan/"
+  ],
+  [
+   "2026-08-01",
+   "",
    "Pan Salmenhaara, L. Don Ōkami",
-   "Pethaus",
-   "jazz",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/pan-salmenhaara-l-don-okami/"
   ],
   [
-   "2026-08-08",
-   "20:00",
-   "Moro Sky Bar DJs",
-   "Moro Sky Bar",
-   "electronic",
+   "2026-08-01",
+   "",
+   "Jere Dangerous, B2B, Sum Cleep",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/jere-dangerous-b2b-sum-cleep/"
   ],
   [
-   "2026-08-08",
-   "21:00",
-   "Blastromen, Sekret Teknik, Naakka",
-   "Maanalainen",
-   "hiphop",
+   "2026-08-01",
+   "",
+   "Blastromen (julkkarit) + Sekret Teknik + Naakka",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/blastromen-julkkarit-sekret-teknik-naakka/"
   ],
   [
-   "2026-08-08",
-   "21:00",
+   "2026-08-01",
+   "",
    "Gilbert K Triologik",
-   "Paapan Kapakka",
-   "jazz",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/gilbert-k-triologik-2/"
   ],
   [
-   "2026-08-08",
-   "21:00",
+   "2026-08-01",
+   "",
    "Jann Wilde & The Neon Comets, UltraNoir",
-   "Vastavirta-Klubi",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/jann-wilde-the-neon-comets-ultranoir/"
   ],
   [
-   "2026-08-08",
-   "21:00",
-   "Vesa Oksanen",
-   "Paja Bar",
-   "hiphop",
+   "2026-08-01",
+   "",
+   "Classical Trancelations Afterparty",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/classical-trancelations-afterparty/"
   ],
   [
-   "2026-08-08",
-   "22:00",
+   "2026-08-01",
+   "",
+   "DJ Kimik",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-kimik-7/"
+  ],
+  [
+   "2026-08-01",
+   "",
    "Kino Kosmos",
-   "Pub Kujakolli",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kino-kosmos-2/"
   ],
   [
-   "2026-08-08",
-   "23:00",
+   "2026-08-01",
+   "",
    "DJ O-Nine",
-   "Bar Ihku",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "electronic",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-o-nine-11/"
   ],
   [
-   "2026-08-08",
-   "23:30",
-   "Ile & Teukka",
-   "Ruby & Fellas",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-08",
-   "23:59",
-   "Core Piknik Jatkot",
-   "Vastavirta-Klubi",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-09",
+   "2026-08-01",
    "",
-   "Supersunnuntai Tampereella: Marcus & Martinus, Mirella, Ahti & more",
-   "Tampereen Messu- ja Urheilukeskus",
-   "festival",
+   "ILE & TEUKKA",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/ile-teukka/"
   ],
   [
-   "2026-08-10",
-   "19:00",
-   "Reggaeta & Makkaraa",
-   "Ruby & Fellas",
-   "folk",
+   "2026-08-01",
+   "",
+   "Core piknik jatkot",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "metal",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/core-piknik-jatkot/"
   ],
   [
-   "2026-08-10",
-   "23:30",
-   "Colin Hartley",
-   "Ruby & Fellas",
-   "hiphop",
+   "2026-08-01",
+   "",
+   "Supersunnuntai Tampereella",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/supersunnuntai-tampereella/"
   ],
   [
-   "2026-08-11",
-   "21:00",
-   "Erik Aho Trio",
-   "Paapan Kapakka",
-   "jazz",
+   "2026-08-01",
+   "",
+   "Erik Aho trio",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/erik-aho-trio-3/"
   ],
   [
-   "2026-08-12",
-   "17:00",
+   "2026-08-01",
+   "",
    "Plevnan Vinyyliveranta: DJ Juissi",
-   "Panimoravintola Plevna",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "electronic",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-vinyyli-keskiviikot-dj-juissi-2026-08-12/"
   ],
   [
-   "2026-08-12",
-   "18:00",
-   "Puistokonsertit Laikunlavalla: Laakson Liljat, Hannele Juutinen, Tampereen Ukuleleorkesteri",
-   "Laikunlava",
+   "2026-08-01",
+   "",
+   "Puistokonsertit Laikunlavalla: Orkesteri Laakson Liljat, Hannele Juutinen, Tampereen Ukuleleorkesteri",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "classical",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-12",
-   "19:00",
-   "Fingerstyle Guitarist Pan Salmenhaara",
-   "Winebistro 1910",
-   "jazz",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/puistokonsertit-laikunlavalla-orkesteri-laakson-liljat-hannele-juutinen-tampereen-ukuleleorkesteri/"
   ],
   [
-   "2026-08-12",
-   "19:00",
-   "Pappila Live: Hateles",
-   "Tyrvään Pappila (Sastamala)",
-   "jazz",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-12",
-   "19:00",
-   "Uittotunneli Summer Gigs: Heikki Hela & Kalle Alatalo",
-   "Uittotunneli",
-   "folk",
+   "2026-08-01",
+   "",
+   "Fingerstyle-kitaristi Pan Salmenhaara",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/fingerstyle-kitaristi-pan-salmenhaara/"
   ],
   [
-   "2026-08-12",
-   "21:00",
-   "Friendship Connection",
-   "Paapan Kapakka",
-   "jazz",
+   "2026-08-01",
+   "",
+   "Pappila live -ilmaiskonsertit: Hateles",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/pappila-live-ilmaiskonsertit-hateles/"
   ],
   [
-   "2026-08-13",
-   "18:00",
+   "2026-08-01",
+   "",
+   "Uittotunnelin kesäkeikat: Heikki Hela & Kalle Alatalo",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-seppo-tammilehto-selka/"
+  ],
+  [
+   "2026-08-01",
+   "",
    "Laikunlavalla: Kesäsalsat",
-   "Laikunlava",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "folk",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/laikunlavalla-kesasalsat/"
   ],
   [
-   "2026-08-13",
-   "18:00",
+   "2026-08-01",
+   "",
    "Maida Vale",
-   "Tahmelan Huvila",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/maida-vale-2/"
   ],
   [
-   "2026-08-13",
-   "18:30",
+   "2026-08-01",
+   "",
    "Tiikeri, Vänsuut (jap), Punk Lurex, Shock Ward",
-   "Vastavirta-Klubi",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "metal",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/tiikeri-vansuut-jap-punk-lurex-shock-ward/"
   ],
   [
-   "2026-08-13",
-   "20:00",
-   "Varjokabaree — Emoklubi",
-   "Varjobaari",
+   "2026-08-01",
+   "",
+   "Laulun Tekijät -ilta: Ullalintulampi, Lauri Seppä",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/laulun-tekijat-ilta-ullalintulampi-lauri-seppa/"
   ],
   [
-   "2026-08-13",
-   "21:00",
+   "2026-08-01",
+   "",
+   "Varjokabaree – Emoklubi",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/varjokabaree-emoklubi/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Hannibal & Lecters, Olli PA",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hannibal-lecters-keikat-tampereella/"
+  ],
+  [
+   "2026-08-01",
+   "",
    "Janne Laurila Quartet",
-   "Paapan Kapakka",
-   "jazz",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/janne-laurila-quartet-2/"
   ],
   [
-   "2026-08-13",
-   "21:00",
-   "Wisborg (GER), Crisis Mode, Rain Diary",
-   "Bar Kotelo",
-   "metal",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-13",
-   "23:00",
-   "Hodari & Hittitorstai: Ch & Ch Bingo",
-   "Ilona",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-14",
+   "2026-08-01",
    "",
-   "Laukon Kesä: Apocalyptica",
-   "Laukon kartano (Vesilahti)",
-   "metal",
+   "WISBORG (GER) CRISIS MODE RAIN DIARY",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/wisborg-ger-crisis-mode-rain-diary/"
   ],
   [
-   "2026-08-14",
+   "2026-08-01",
    "",
-   "Raikku Rokkaa ja Rakastaa 2026 (14.–15.8): Kolmas Nainen & more",
-   "Peltolan tila (Kangasala)",
+   "Hodari & hittitorstai: Ch & Ch bingo",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hodari-hittitorstai-ch-ch-bingo/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Laukon Kesä 2026: Apocalyptica",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/laukon-kesa-2026-apocalyptica/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Raikku Rokkaa ja Rakastaa -festivaali 2026",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "festival",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/raikku-rokkaa-ja-rakastaa-festivaali/"
   ],
   [
-   "2026-08-14",
+   "2026-08-01",
    "",
-   "Silent Disco",
-   "Sisko ja sen Veli",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-14",
-   "16:00",
    "Midnight Sun Finstrumental Lounge",
-   "Saivo Kitchen & Bar",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-14",
-   "18:00",
-   "Soul Power on the G Livelab Terrace: DJs Kallio & Okapi",
-   "G Livelab Tampere",
-   "electronic",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-14",
-   "19:00",
-   "Esa Eloranta",
-   "Ravintola Suoma",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/midnight-sun-finstrumental-lounge-3-2026-08-14/"
   ],
   [
-   "2026-08-14",
-   "19:00",
-   "Kulanki & Jompulainen, Mikko Sarvanne, Ewoud Van Eetvelde",
-   "Pethaus",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-14",
-   "19:00",
-   "Popedan Ajajat",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-14",
-   "20:00",
-   "Moro Sky Bar DJs",
-   "Moro Sky Bar",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-14",
-   "21:00",
-   "Jukka Poika",
-   "G Livelab Tampere",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-14",
-   "21:00",
-   "Lemmenmursut",
-   "Axu Katubaari",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-14",
-   "21:00",
-   "Los Pasados",
-   "Paapan Kapakka",
+   "2026-08-01",
+   "",
+   "Soul Power G Livelabin terassilla – DJ’s Kallio & Okapi",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "jazz",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/soul-power-g-livelabin-terassilla-djs-kallio-okapi-2/"
   ],
   [
-   "2026-08-14",
-   "21:00",
-   "Mirkka Liesmäki",
-   "Paja Bar",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-14",
-   "21:00",
-   "Misstapes: DJ Jaanamirjami",
-   "Gastropub Soho",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-14",
-   "21:00",
-   "Satamaravintola Kaisla Summer: Egotrippi",
-   "Mustalahden satama",
+   "2026-08-01",
+   "",
+   "Esa Eloranta",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/esa-eloranta/"
   ],
   [
-   "2026-08-14",
-   "21:30",
-   "Mörv, Hautaustoimisto & Off the Grid",
-   "Maanalainen",
-   "metal",
+   "2026-08-01",
+   "",
+   "Kulanki & Jompulainen, Mikko Sarvanne, Ewoud Van Eetvelde",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/kulanki-jompulainen-mikko-sarvanne-ewoud-van-eetvelde/"
   ],
   [
-   "2026-08-14",
-   "22:00",
-   "Liveranta: Komiat (Juha Tapio)",
-   "Ikaalinen Spa & Resort",
+   "2026-08-01",
+   "",
+   "Popedan Ajajat",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "hiphop",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/popedan-ajajat/"
   ],
   [
-   "2026-08-15",
+   "2026-08-01",
+   "",
+   "Jukka Poika",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jukka-poika/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Lemmenmursut",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lemmenmursut-2/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Los Pasados",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/los-pasados/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Mirkka Liesmäki",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mirkka-liesmaki-2/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Misstapes – DJ Jaanamirjami",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/misstapes-dj-jaanamirjami-2/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Satamaravintola Kaislan kesä 2026: Egotrippi",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/satamaravintola-kaislan-kesa-2024-egotrippi/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Mörv, Hautaustoimisto & Off the Grid",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/morv-hautaustoimisto-off-the-grid/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Liveranta: Komiat",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/liveranta-komiat-2/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Sara-Maaria",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/sara-maaria/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "DJ Ozan",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-o-nine-114/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "COLIN HARTLEY",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/colin-hartley/"
+  ],
+  [
+   "2026-08-01",
    "",
    "Härstock 2026",
-   "Härmälän uimaranta",
-   "festival",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/harstock-festivaali/"
   ],
   [
-   "2026-08-15",
+   "2026-08-01",
    "",
-   "Raikku Rokkaa ja Rakastaa 2026, Day 2: Miljoonasade & more",
-   "Peltolan tila (Kangasala)",
+   "Raikku Rokkaa ja Rakastaa -festivaali 2026: Miljoonasade Still Sauerkraut7 Wiley Cousins Trio Oho & Eiku Jill Johnson",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "festival",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/raikku-rokkaa-ja-rakastaa-festivaali-2026-miljoonasade-still-sauerkraut7-wiley-cousins-trio-oho-eiku-jill-johnson/"
   ],
   [
-   "2026-08-15",
-   "16:00",
-   "Hullu!Klubi: Viides Vuodenaika, Ruttokansantuote & more",
-   "Vastavirta-Klubi",
-   "metal",
+   "2026-08-01",
+   "",
+   "Hullu!Klubi: Viides vuodenaika, Ruttokansantuote, Niskaperseote, VMVP, 197666",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/hulluklubi-viides-vuodenaika-ruttokansantuote-niskaperseote-vmvp-197666/"
   ],
   [
-   "2026-08-15",
-   "19:00",
+   "2026-08-01",
+   "",
    "Absoluuttinen Nollapiste",
-   "Tavara-asema",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/absoluuttinen-nollapiste/"
   ],
   [
-   "2026-08-15",
-   "19:00",
-   "Uittotunneli Summer Gigs: Kulkukoirat & Juha Hildén",
-   "Uittotunneli",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-15",
-   "19:30",
-   "Clone Statue, Casket Crawlers",
-   "Pethaus",
-   "metal",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-15",
-   "20:00",
-   "Maarit Hurmerinta Duo",
-   "G Livelab Tampere",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-15",
-   "20:00",
-   "Moro Sky Bar DJs",
-   "Moro Sky Bar",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-15",
-   "21:00",
-   "80's Vinyl Night: DJ Disparue & DJ Z",
-   "Gastropub Soho",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-15",
-   "21:00",
-   "ALT Agency Summer Sessions: Topi Saha",
-   "O'Connell's Irish Bar",
-   "hiphop",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-15",
-   "21:00",
-   "Beatline",
-   "Paapan Kapakka",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-15",
-   "21:00",
-   "Grandiradio, Sikuriina Karisukki, Olva, Kirsikkapuu",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-15",
-   "21:00",
-   "Heidi Valkama yhtyeineen",
-   "Axu Katubaari",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-15",
-   "21:00",
-   "Mirkka Liesmäki",
-   "Paja Bar",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-15",
-   "21:00",
-   "Perunabuffet & Friends DJ-iltamat: The Blassics DJ's",
-   "Vastavirta-Klubi",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-15",
-   "22:00",
-   "Eartheria, Kallas, Alya North",
-   "Varjobaari",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-15",
-   "22:00",
-   "J. Laho Rock'n'Roll Band",
-   "Pub Kujakolli",
-   "rock",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-15",
-   "23:00",
-   "Groove Brothers",
-   "Ilona",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-15",
-   "23:30",
-   "Bros Larsen",
-   "Ruby & Fellas",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-16",
-   "19:00",
-   "Horror Vacui, Shocked Volk",
-   "Vastavirta-Klubi",
-   "metal",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-17",
-   "18:30",
-   "Compañía Kaari & Roni Martin goes ROOTS, Pekko Käppi & K:H:H:L",
-   "Kangasalan Pirtti",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-17",
-   "19:00",
-   "Barbatos (JPN), Beatrix, Ravenous Medicine",
-   "Varjobaari",
-   "metal",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-17",
-   "19:00",
-   "Reggaeta & Makkaraa",
-   "Ruby & Fellas",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-18",
-   "17:30",
-   "Markus Savander — live & talk",
-   "Tahmelan Huvila",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-18",
-   "18:30",
-   "Barbatos, Beatrix, Black Spirits, VMVP",
-   "Vastavirta-Klubi",
-   "metal",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-18",
-   "19:00",
-   "Geordie Greep (UK)",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-18",
-   "20:00",
-   "Anal Womit (PER), R.I.O.T. (UKR)",
-   "Varjobaari",
-   "metal",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-18",
-   "21:00",
-   "Stetson Brothers",
-   "Paapan Kapakka",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-19",
-   "17:00",
-   "Plevnan Vinyyliveranta: DJ Juissi",
-   "Panimoravintola Plevna",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-19",
-   "19:00",
-   "Pappila Live: Jukka Keskitalo & Tyrvää All Stars",
-   "Tyrvään Pappila (Sastamala)",
-   "jazz",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-19",
-   "19:00",
-   "Uittotunneli Summer Gigs: Antti Railio & Kalle Alatalo",
-   "Uittotunneli",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-19",
-   "21:00",
-   "Mirka's Monarchy",
-   "Paapan Kapakka",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-20",
-   "18:00",
-   "Laikunlavalla: Kesäsalsat",
-   "Laikunlava",
-   "folk",
-   1,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-20",
-   "18:00",
-   "Päivi: Lauluja elämän varrelta",
-   "Tahmelan Huvila",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-20",
-   "21:00",
-   "Blue Skies",
-   "Paapan Kapakka",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-21",
+   "2026-08-01",
    "",
-   "Blockfest 2026: Future, Offset, Tyga, JVG & more",
-   "Ratinanniemen festivaalipuisto",
+   "Uittotunnelin kesäkeikat: Kulkukoirat & Juha Hildén",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-kulkukoirat-juha-hilden/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Clone Statue, Casket Crawlers",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/clone-statue-casket-crawlers/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Joe Vestich (USA)",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/joe-vestich-sisko-ja-sen-veli-pubissa/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Maarit Hurmerinta Duo",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/maarit-hurmerinta-duo-2/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "80´s vinyl Night – DJ Disparue & DJ Z",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/80s-vinyl-night-dj-disparue-dj-z-2/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "ALT Agency Summer Sessions: Topi Saha",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/alt-agency-summer-sessions-topi-saha/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Beatline",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/beatline-2/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Grandiradio, Sikuriina Karisukki, Olva, Kirsikkapuu",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/grandiradio-sikuriina-karisukki-olva-kirsikkapuu/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Heidi Valkama yhtyeineen",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/heidi-valkama-yhtyeineen/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "PERUNABUFFET & FRIENDS – DJ-ILTAMAT: vieraana THE BLASSICS DJ’S",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/perunabuffet-friends-dj-iltamat-vieraana-the-blassics-djs/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "matilda123, Bluedrive, FIXME",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/matilda123-bluedrive-fixme/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Eartheria, Kallas, Alya North",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/eartheria-kallas-alya-north/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "J.Laho rock’n’roll Band",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/j-laho-rocknroll-band/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Leo Luxxxxus",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/leo-luxus/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Groove Brothers",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/groove-brothers/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "BROS LARSEN",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/bros-larsen/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Horror Vacui, Shocked Volk",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/horror-vacui-shocked-volk/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "DJ Willy",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-willy-8/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Compañía Kaari & Roni Martin goes ROOTS ja Pekko Käppi & K:H:H:L",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/compania-kaari-roni-martin-goes-roots-ja-pekko-kappi-khhl/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Barbatos (JPN), Beatrix, Ravenous Medicine",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/barbatos-jpn-beatrix-ravenous-medicine/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Markus Savander",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/markus-savander/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Barbatos (Japani), Beatrix, Black Spirits, VMVP",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/barbatos-japani-beatrix-black-spirits-vmvp/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Geordie Greep (UK)",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/geordie-greep-uk/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Anal Womit (PER), R.I.O.T. (UKR)",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/anal-womit-per-r-i-o-t-ukr/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Stetson Brothers",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/stetson-brothers/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Pappila live -ilmaiskonsertit: Jukka Keskitalo & Tyrvää All Stars",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/pappila-live-ilmaiskonsertit-jukka-keskitalo-tyrvaa-all-stars/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Uittotunnelin kesäkeikat: Antti Railio & Kalle Alatalo",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-antti-railio-kalle-alatalo/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Emily Scott Robinson (USA), Julia Rautamaa",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/emily-scott-robinson-usa-julia-rautamaa/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Mirka’s Monarchy",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mirkas-monarchy-3/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Päivi: Lauluja elämän varrelta",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/paivi-lauluja-elaman-varrelta/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Maanalaisen JAMIT",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/maanalaisen-jamit-3/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Masi Luoma – 70 vuotta musiikin juhlaa: Groove Machine, The Wowels",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/masi-luoma-70-vuotta-musiikin-juhlaa-groove-machine-the-wowels/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Blue Skies",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/blue-skies-2/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Sapphic Space Dyke Disco",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/sapphic-space-dyke-disco/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Hippijuhla, Meirami",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hippijuhla-meirami/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Boycott",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/boycott/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Kesäkissat duo",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kesakissat-duo/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Satamaravintola Kaislan kesä 2026: Atomirotta",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/satamaravintola-kaislan-kesa-2024-atomirotta/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "K.E.K., Jorpakko, Pornogeneraattori",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/k-e-k-jorpakko-pornogeneraattori/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Somehow jo, Lumious Mind, Sleeth",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/somehow-jo-lumious-mind-sleeth/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "DJ Riku",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-riku-9/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "The Blaster Master",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/the-blaster-master/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "VINCE & EDI DUO",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/vince-edi-duo/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Hiedanrannan Puutarhajuhlat 2026",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hiedanrannan-puutarhajuhlat-2026/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Kirjaslampirock 2026",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kirjaslampirock/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "ViinikkalaFest 2026",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/viinikkalafest/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "LandeFest: Stenari",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/landefest-stenari/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Ahola, Töyssy  &  Ahola: Koko Komedia laulaa",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ahola-toyssy-ahola-koko-komedia-laulaa/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Reetan ja Mikon rakkaussynttärit: Lover, Hertta Q, EJH",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/reetan-ja-mikon-rakkaussynttarit-lover-hertta-q-ejh/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Lover, Hertta Q, Eero Heinosen huutorunoja",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lover-hertta-q-eero-heinosen-huutorunoja/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Manserock-risteily: Juri Lindeman ja Kalle Alatalo",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/manserock-risteily-2/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Virve Rosti, Freeman ja Menneisyyden vangit",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/virve-rosti-freeman-ja-menneisyyden-vangit-2/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Mikko Juvonen, Proto-Torvinen",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mikko-juvonen-proto-torvinen/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Jeff Moon (USA)",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jeff-moon-usa/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "A9 Live: Ilja Jalkanen",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-ilja-jalkanen/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "DJ:t Altti ja Juissi",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/djt-altti-ja-juissi/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Elokuinen Disco Ikinuorille: Topi Honkonen",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/elokuinen-disco-ikinuorille-topi-honkonen/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Jari Koivisto Työväenlauluja",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jari-koivisto-tyovaenlauluja/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Rock/Rap/Indie/Pop/Funk Mayhem!",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "hiphop",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/rock-rap-indie-pop-funk-mayhem/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "DJ Sara-Maaria",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-sara-maaria-10/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Mötherhead Plays Motörhead",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/motherhead-plays-motorhead/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "R.E.M. For The People",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/r-e-m-for-the-people/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Rentun Ruusut -Duo",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/rentun-ruusut-duo/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "THE FAIR ATTEMPTS, LIRPO, HERJA",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/the-fair-attempts-lirpo-herja/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "SQUARE ROOT 9",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/square-root-9/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "TamJazz: Kanvas + keikan jälkeen jamit",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tamjazz-klubi-mikko-pettinen-why-not/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Riku Poramo trio",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/riku-poramo-trio-3/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Pikkuvenetsialaiset",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/pikkuvenetsialaiset/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Puistokonsertit Laikunlavalla: SPOIL., Demonessa, Ashenplains",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/puistokonsertit-laikunlavalla-spoil-demonessa-ashenplains/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Roamin Street Bandin Gumbo Club Huurteessa",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/roamin-street-bandin-gumbo-club-huurteessa-2-2026-08-26/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Uittotunnelin kesäkeikat: Pauli Hanhiniemi & Ville Rauhala MAD",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-pauli-hanhiniemi-ville-rauhala-mad/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Henry Ojutkangas trio",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/henry-ojutkangas-trio-2/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Down Home Maanalainen: Jykä Blues Project",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/down-home-maanalainen-jyka-blues-project/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Laikunlavalla: Kesäsalsojen päätöskonsertti – Grupo Kaney",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/laikunlavalla-kesasalsojen-paatoskonsertti-grupo-kaney/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Dingo",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dingo/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Liekkiyö 2026",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/liekkiyo/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Vauhti Kiihtyy Festivaali 2026",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
    "festival",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/vauhti-kiihtyy-festivaali/"
   ],
   [
-   "2026-08-21",
+   "2026-08-01",
+   "",
+   "Waltikan venetsialaiset 2026: Kuumaa Portion Boys Petri Nygård Kake Randelin Sonata Arctica",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/waltikan-venetsialaiset-2026-kuumaa-portion-boys-petri-nygard-kake-randelin-sonata-arctica/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Gravity Well (IRL), Orbiter, Craneium, Sapata",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/gravity-well-irl-orbiter-craneium-sapata/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Crisella, Sekopoltsit, Kauno",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/crisella-sekopoltsit-kauno/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Ewa Kaarela Swing Band",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ewa-kaarela-swing-band/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Matthau Mikojan",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/matthau-mikojan/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "MONOKATE (UKR)",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/monokate-ukr/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Blackment, Despiser, Armed, Roadkill",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/blackment-despiser-armed-roadkill/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "A9 Live: Emppu Suhonen",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-emppu-suhonen/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "J. Jyrkänkoski Bluesband",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/j-jyrkankoski-bluesband-2/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Sapata, Gravity Well (IRL),Orbiter, Craneium",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/sapata-gravity-well-irlorbiter-craneium/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Bilebändi JAYHO + DJ O-Nine",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/bilebandi-jayho-dj-o-nine/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Glow -festival 2026",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "festival",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/glow-festival/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Waltikan venetsialaiset 2026: Popeda, Arttu Wiskari, Elastinen, Nylon Beat, Stratovarius ja XL5",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "hiphop",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/waltikan-venetsialaiset-2026-popeda-arttu-wiskari-elastinen-nylon-beat-stratovarius-ja-xl5/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Coitus Int 50 Revival",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/coitus-int-50-revival/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Jazz&Blues -risteily Tarjanteella",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jazzblues-risteily-tarjanteella-riku-poramo-trio/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Angelus Apatrida (ES), Prestige, Dethrone, Catalepsy",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/angelus-apatrida-es-prestige-dethrone-catalepsy/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Black Devils feat. Ile Kallio & Janne Louhivuori",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/black-devils-feat-ile-kallio-janne-louhivuori-3/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "KAISER66 X Röökihaus",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kaiser66-x-rookihaus/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Tuomas Räisänen",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tuomas-raisanen/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Pyhät Nuket, Syyskuu",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/skyjoggers-kaleidobolt-samane/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "ALT Agency Summer Sessions: Aksel Kankaanranta",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/alt-agency-summer-sessions-aksel-kankaanranta/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Hoc est Bellum, Hellgate Necrosodomy, Clactonian, Hekatoxen",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hoc-est-bellum-hellgate-necrosodomy-clactonian-hekatoxen/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "The Wowels",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/the-wowels/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Yo! Soho Raps! DJ EC & DJ Laki",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/yo-soho-raps-dj-ec-dj-laki/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Antsu Haahtela",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/antsu-haahtela/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Kimik",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kimik-8/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Bilejuna",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/bilejuna/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "A-J KESKINEN",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/a-j-keskinen-3/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Joonas Lepistön muistokonsertti",
+   "DAM Kesällä 2026 DAM Barin terassilla soi",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/speed-metal-afterparty/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Forces, Luke Lund & Sidewards Ebb",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/forces-luke-lund-sidewards-ebb/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Olli Ahvenlahti New Quintet",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/olli-ahvenlahti-new-quintet/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Haight, Sunvoyeur, Turbo Testicles",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/haight-sunvoyeur-turbo-testicles/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Jaakko Laitinen & Väärä Raha",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jaakko-laitinen-vaara-raha-3/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "A9 Live: Pasi Vainionperä",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-pasi-vainionpera/"
+  ],
+  [
+   "2026-09-01",
    "",
    "Silent Disco",
-   "Sisko ja sen Veli",
+   "Pethaus keikat Pispalassa ke 2",
    "electronic",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07-2026-08-14-2026-08-21-2026-08-28-2026-09-04/"
   ],
   [
-   "2026-08-21",
-   "16:00",
-   "Midnight Sun Finstrumental Lounge",
-   "Saivo Kitchen & Bar",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-21",
-   "19:30",
-   "Hippijuhla, Meirami",
-   "Pethaus",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-21",
-   "20:00",
-   "Boycott",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-21",
-   "20:00",
-   "Moro Sky Bar DJs",
-   "Moro Sky Bar",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
-  ],
-  [
-   "2026-08-21",
-   "21:00",
-   "Gilbert K Triologik",
-   "Paapan Kapakka",
+   "2026-09-01",
+   "",
+   "Tyrvää Jazz 2026",
+   "Pethaus keikat Pispalassa ke 2",
    "jazz",
    0,
-   "https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"
+   "https://kohokohdat.fi/tampere/tapahtuma/tyrvaa-jazz/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Moro Sky Bar DJ:t",
+   "Pethaus keikat Pispalassa ke 2",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-04/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Pintandwefall",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/pintandwefall/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Acoustenced & Ehdonalainen – We Still Play Sentenced",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/acoustenced-ehdonalainen-we-still-play-sentenced/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "DJ Ozan",
+   "Pethaus keikat Pispalassa ke 2",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-ozan-2/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Pispalan Saunafest 2026",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/pispalan-saunafest/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "+ Juggling Jugulars, Abduktio, Puhelinseksi",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/juggling-jugulars-abduktio-puhelinseksi/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "An Evening With Kiuas",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/an-evening-with-kiuas/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Billie Joelina",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/billie-joelina-2/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Funebrarum (USA) + support",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/funebrarum-usa-support/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Honey B & T-Bones",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/honey-b-t-bones-2/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Hekypop 2: Joku Puhuu, Maida Vale, Kesyt Jätkät",
+   "Pethaus keikat Pispalassa ke 2",
+   "hiphop",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hekypop-2-joku-puhuu-maida-vale-kesyt-jatkat/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "DJ O-Nine",
+   "Pethaus keikat Pispalassa ke 2",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-o-nine-16/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "DJ:t Jaana Mirjami & Karri Tappio, Sara-Maaria",
+   "Pethaus keikat Pispalassa ke 2",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/djt-jaana-mirjami-karri-tappio-sara-maaria/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Kujakollin jamit",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kujakollin-jamit-2026-04-05-2026-05-03-2026-06-07-2026-07-05-2026-08-02-2026-09-06/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Fatboy (SE)",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/fatboy-se-2/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "DJ Petermayn",
+   "Pethaus keikat Pispalassa ke 2",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-petermayn-4/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Tampere Guitar Festival 2026",
+   "Pethaus keikat Pispalassa ke 2",
+   "festival",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tampere-guitar-festival/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Ilmavoimien Big Band & Olli Soikkeli: Django!",
+   "Pethaus keikat Pispalassa ke 2",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ilmavoimien-big-band-olli-soikkeli-django/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "touko (EP-julkkarit) + Viive",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/touko-ep-julkkarit-viive/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "The Psychward Breakouts, De La Rocka & The Garbagemen",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/the-psychward-breakouts-de-la-rocka-the-garbagemen/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "VERMILIA, AETHER (PL), FOLKRIM",
+   "Pethaus keikat Pispalassa ke 2",
+   "folk",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/vermilia-aether-pl-folkrim/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Särkänniemen Kesäkauden päättäjäiset ja ilotulitus 2026",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/sarkanniemen-kesakauden-paattajaiset-ja-ilotulitus/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Jukka Perko & Jay Kortehisto: Foxtet",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jukka-perko-jay-kortehisto-foxtet/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Stenari",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/stenari-2/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "The Munsons (Tokela & Tommi Viksten)",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/the-munsons-tokela-tommi-viksten/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "NITS (NL)",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/nits-nl/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Timo Kämäräinen",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/timo-kamarainen/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Joose Keskitalo & The Mystic Revelation Of Teppo Repo",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/joose-keskitalo-the-mystic-revelation-of-teppo-repo/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Tommy Lindgren Metropolis – Sininen kaupunki Revisited",
+   "Pethaus keikat Pispalassa ke 2",
+   "metal",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tommy-lindgren-metropolis-sininen-kaupunki-revisited/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Aknestik – Vien Sun Sydämen Pohjoiseen 40-vuotisjuhlakiertue",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/aknestik-vien-sun-sydamen-pohjoiseen-40-vuotisjuhlakiertue/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Lost in Music: LASTOUT, Rioghan, King Satan",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lost-in-music-lastout-rioghan-king-satan/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Tumppi Varonen & Problems, Pelle Miljoona, Kärtsy Hatakka (Waltari)",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tumppi-varonen-problems-pelle-miljoona-kartsy-hatakka-waltari/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "The Clash Meets The Jam",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/the-clash-meets-the-jam/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "TERESIA VON STORM, ELEKTRIC ROKBAND, DISTANT HORIZON",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/teresia-von-storm-elektric-rokband-distant-horizon/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Lost Society & HOKKA: Miseria is a State of Mind – Tour, Support: St. Aurora",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lost-society-hokka-miseria-is-a-state-of-mind-tour-support-st-aurora/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Uhrattu, Buryfication, Monolicht, Funeral Home",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/uhrattu-buryfication-monolicht-funeral-home/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Jack & Jones",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jack-jones/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "LOWHILL, LIGHTBEARER, IN THORNS",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lowhill-lightbearer-in-thorns/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Emodisko",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/emodisko-3/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Irina: Akustinen ilta",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/irina-akustinen-ilta/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Lemonator",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lemonator/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "K40-disco: DJ:t Sami & Antti",
+   "Pethaus keikat Pispalassa ke 2",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/k40-disco-djt-sami-antti-3/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Juha Tretjakov",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/juha-tretjakov-3/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "A9 Live: Kauko Röyhkä",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-kauko-royhka/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Out Of Breath, Madella, Denshi, True Grit, Twisting Knives",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/out-of-breath-madella-denshi-true-grit-twisting-knives/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "GRAVECITY BANDITS, MANIC ORDER, DANGER HÅT",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/gravecity-bandits-manic-order-danger-hat/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "DJ:t Antti H & Sami",
+   "Pethaus keikat Pispalassa ke 2",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/djt-antti-h-sami/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Diandra – Hymni rakkaudelle",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/diandra-hymni-rakkaudelle/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Irkkujamit",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/irkkujamit-7/"
+  ],
+  [
+   "2026-09-01",
+   "",
+   "Roamin Street Bandin Gumbo Club Huurteessa",
+   "Pethaus keikat Pispalassa ke 2",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/roamin-street-bandin-gumbo-club-huurteessa-2-2026-09-30/"
   ]
  ]
 }
