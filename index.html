@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tampere Keikat — every gig, one wall</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#171310;
+    --ink-2:#1f1a15;
+    --paper:#efe8d8;
+    --paper-dim:#c9c0ac;
+    --brick:#b3492f;
+    --brick-2:#d1603f;
+    --amber:#e8a33d;
+    --teal:#4a8f89;
+    --plum:#9165a3;
+    --olive:#8a9a54;
+    --steel:#6f93ac;
+    --gold:#d4af37;
+    --maroon:#8a3a3a;
+    --line: rgba(239,232,216,0.14);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--paper);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--brick);color:var(--paper);}
+  a{color:inherit;}
+
+  /* ---------- brick texture backdrop ---------- */
+  .brickwall{
+    position:fixed; inset:0; z-index:0; pointer-events:none;
+    opacity:0.05;
+    background-image:
+      repeating-linear-gradient(0deg, transparent 0 38px, var(--paper) 38px 40px),
+      repeating-linear-gradient(90deg, transparent 0 78px, var(--paper) 78px 80px);
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative; z-index:1;
+    padding:56px 20px 28px;
+    text-align:center;
+    border-bottom:1px solid var(--line);
+    background:
+      radial-gradient(ellipse 600px 300px at 50% 0%, rgba(179,73,47,0.25), transparent 70%);
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    letter-spacing:.22em;
+    font-size:11px;
+    color:var(--amber);
+    text-transform:uppercase;
+    margin-bottom:14px;
+  }
+  .eyebrow::before{content:"● ";color:var(--brick-2);}
+  h1{
+    font-family:'Bebas Neue',sans-serif;
+    font-weight:400;
+    letter-spacing:.02em;
+    font-size:clamp(48px,13vw,104px);
+    line-height:.88;
+    margin:0;
+    color:var(--paper);
+  }
+  h1 span{color:var(--brick-2);}
+  .tagline{
+    font-size:15px;
+    color:var(--paper-dim);
+    max-width:460px;
+    margin:16px auto 0;
+    line-height:1.5;
+  }
+  .tagline b{color:var(--paper);font-weight:600;}
+
+  .status-pill{
+    display:inline-flex; align-items:center; gap:7px;
+    margin-top:16px; padding:6px 13px;
+    border:1px solid var(--line); border-radius:20px;
+    background:rgba(239,232,216,0.04);
+    font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.03em;
+    color:var(--paper-dim);
+  }
+  .status-dot{width:7px; height:7px; border-radius:50%; background:var(--paper-dim); flex:none;}
+  .status-pill.live .status-dot{background:var(--olive); box-shadow:0 0 6px var(--olive);}
+  .status-pill.stale .status-dot{background:var(--amber); box-shadow:0 0 6px var(--amber);}
+
+  /* ---------- controls ---------- */
+  .controls{
+    position:sticky; top:0; z-index:20;
+    background:rgba(23,19,16,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:2px solid var(--brick);
+    padding:12px 16px;
+  }
+  .controls-inner{max-width:920px;margin:0 auto;}
+  .row{display:flex; gap:8px; align-items:center; flex-wrap:wrap;}
+  .row + .row{margin-top:10px;}
+
+  .viewToggle{
+    display:inline-flex; background:var(--ink-2); border:1px solid var(--line);
+    border-radius:8px; padding:3px; gap:3px;
+  }
+  .viewToggle button{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px; letter-spacing:.05em; text-transform:uppercase;
+    padding:7px 14px; border-radius:6px; border:none; cursor:pointer;
+    background:transparent; color:var(--paper-dim); font-weight:600;
+  }
+  .viewToggle button.active{background:var(--brick); color:var(--paper);}
+
+  .searchWrap{position:relative; flex:1; min-width:160px;}
+  .searchWrap input{
+    width:100%; background:var(--ink-2); border:1px solid var(--line);
+    color:var(--paper); border-radius:8px; padding:8px 12px 8px 30px;
+    font-family:'Inter',sans-serif; font-size:13px;
+  }
+  .searchWrap input::placeholder{color:var(--paper-dim);}
+  .searchWrap::before{
+    content:"⌕"; position:absolute; left:10px; top:50%; transform:translateY(-50%);
+    color:var(--paper-dim); font-size:14px;
+  }
+
+  .chips{display:flex; gap:7px; flex-wrap:wrap;}
+  .chip{
+    display:inline-flex; align-items:center; gap:6px;
+    font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:.02em;
+    padding:6px 11px 6px 8px; border-radius:20px;
+    border:1px solid var(--line); background:var(--ink-2);
+    color:var(--paper-dim); cursor:pointer; user-select:none;
+    transition:transform .12s ease;
+  }
+  .chip:active{transform:scale(0.96);}
+  .chip .dot{width:8px;height:8px;border-radius:50%;flex:none;}
+  .chip.active{background:var(--paper); color:var(--ink); border-color:var(--paper); font-weight:600;}
+  .chip .count{opacity:.65; font-size:10.5px;}
+  .chip.active .count{opacity:.55;}
+
+  .clearBtn{
+    font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--brick-2);
+    background:none; border:1px solid var(--brick); border-radius:20px;
+    padding:6px 12px; cursor:pointer; display:none;
+  }
+  .clearBtn.show{display:inline-block;}
+
+  main{position:relative; z-index:1; max-width:920px; margin:0 auto; padding:24px 16px 80px;}
+
+  /* ---------- empty state ---------- */
+  .empty{
+    text-align:center; padding:60px 20px; color:var(--paper-dim);
+    font-family:'IBM Plex Mono',monospace; font-size:13px;
+  }
+
+  /* ---------- LIST VIEW ---------- */
+  .dateHead{
+    display:flex; align-items:baseline; gap:10px;
+    margin:34px 0 12px; padding-bottom:8px;
+    border-bottom:1px dashed var(--line);
+  }
+  .dateHead:first-child{margin-top:6px;}
+  .dateHead .dow{
+    font-family:'Bebas Neue',sans-serif; font-size:26px; color:var(--brick-2); letter-spacing:.03em;
+  }
+  .dateHead .full{font-size:12px; color:var(--paper-dim); font-family:'IBM Plex Mono',monospace;}
+  .dateHead .today-mark{
+    font-family:'IBM Plex Mono',monospace; font-size:10px; background:var(--amber); color:var(--ink);
+    padding:2px 7px; border-radius:10px; font-weight:700; letter-spacing:.05em;
+  }
+
+  .ticket{
+    position:relative;
+    display:grid; grid-template-columns:64px 1fr; gap:0;
+    background:var(--ink-2); border:1px solid var(--line); border-radius:10px;
+    margin-bottom:10px; overflow:hidden;
+    text-decoration:none; color:inherit;
+  }
+  .ticket:hover{border-color:var(--brick);}
+  .ticket .stub{
+    padding:12px 8px; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    font-family:'IBM Plex Mono',monospace; color:var(--paper);
+    border-right:2px dashed var(--line);
+    position:relative;
+    background:rgba(239,232,216,0.03);
+  }
+  .ticket .stub .time{font-size:13px; font-weight:600;}
+  .ticket .stub .time.tbd{color:var(--paper-dim); font-size:10px;}
+  .ticket .stub::before,.ticket .stub::after{
+    content:""; position:absolute; width:12px; height:12px; border-radius:50%;
+    background:var(--ink); left:50%; transform:translateX(-50%);
+  }
+  .ticket .stub::before{top:-6px;}
+  .ticket .stub::after{bottom:-6px;}
+  .ticket .body{padding:11px 14px; min-width:0;}
+  .ticket .title{font-size:15px; font-weight:700; color:var(--paper); line-height:1.3;}
+  .ticket .meta{
+    margin-top:5px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;
+    font-size:12px; color:var(--paper-dim);
+  }
+  .ticket .venue::before{content:"@ ";color:var(--paper-dim);}
+  .genretag{
+    display:inline-flex; align-items:center; gap:5px;
+    font-family:'IBM Plex Mono',monospace; font-size:10px; text-transform:uppercase; letter-spacing:.04em;
+  }
+  .genretag .dot{width:7px;height:7px;border-radius:50%;}
+  .freebadge{
+    font-family:'IBM Plex Mono',monospace; font-size:9.5px; letter-spacing:.04em;
+    background:var(--olive); color:var(--ink); padding:1px 7px; border-radius:9px; font-weight:700;
+  }
+
+  /* ---------- CALENDAR VIEW ---------- */
+  .calNav{display:flex; align-items:center; justify-content:center; gap:16px; margin-bottom:16px;}
+  .calNav button{
+    background:var(--ink-2); border:1px solid var(--line); color:var(--paper);
+    width:34px; height:34px; border-radius:50%; cursor:pointer; font-size:16px;
+  }
+  .calNav .label{font-family:'Bebas Neue',sans-serif; font-size:24px; letter-spacing:.03em; min-width:180px; text-align:center;}
+
+  .calGrid{
+    display:grid; grid-template-columns:repeat(7,1fr); gap:4px;
+    margin-bottom:22px;
+  }
+  .calDow{
+    font-family:'IBM Plex Mono',monospace; font-size:10px; text-align:center;
+    color:var(--paper-dim); padding-bottom:4px; letter-spacing:.05em;
+  }
+  .calCell{
+    aspect-ratio:1/0.82; border-radius:8px; border:1px solid var(--line);
+    background:var(--ink-2); padding:6px; cursor:pointer; position:relative;
+    display:flex; flex-direction:column; gap:4px;
+    transition:border-color .12s ease, background .12s ease;
+  }
+  .calCell.blank{visibility:hidden; pointer-events:none;}
+  .calCell:hover{border-color:var(--brick-2);}
+  .calCell.selected{border-color:var(--brick-2); background:rgba(179,73,47,0.14);}
+  .calCell .num{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--paper-dim);}
+  .calCell.today .num{color:var(--amber); font-weight:700;}
+  .calCell.today::after{
+    content:"today"; position:absolute; top:5px; right:6px;
+    font-family:'IBM Plex Mono',monospace; font-size:7.5px; color:var(--amber); letter-spacing:.03em;
+  }
+  .calDots{display:flex; flex-wrap:wrap; gap:3px; margin-top:auto;}
+  .calDots .d{width:6px;height:6px;border-radius:50%;}
+  .calDots .more{font-family:'IBM Plex Mono',monospace; font-size:8px; color:var(--paper-dim);}
+
+  .dayPanel{
+    border-top:2px solid var(--brick); padding-top:16px; scroll-margin-top:130px;
+  }
+  .dayPanel h3{
+    font-family:'Bebas Neue',sans-serif; font-size:28px; margin:0 0 12px; letter-spacing:.03em; color:var(--paper);
+  }
+
+  footer{
+    position:relative; z-index:1; max-width:920px; margin:0 auto; padding:20px 16px 60px;
+    border-top:1px solid var(--line); color:var(--paper-dim); font-size:12px; line-height:1.7;
+  }
+  footer a{color:var(--amber); text-decoration:underline;}
+
+  @media (max-width:520px){
+    .hero{padding:40px 16px 22px;}
+    .calCell{aspect-ratio:1/0.9;}
+    .ticket{grid-template-columns:56px 1fr;}
+    .dateHead .full{display:none;}
+  }
+</style>
+</head>
+<body>
+<div class="brickwall"></div>
+
+<header class="hero">
+  <div class="eyebrow">Manse on stage — August 2026</div>
+  <h1>TAMPERE<br><span>KEIKAT</span></h1>
+  <p class="tagline">Every gig from every bar, club and stage in town — <b>on one wall.</b> Filter by genre, or just see what's on tonight.</p>
+  <div id="updatedBadge" class="status-pill"><span class="status-dot"></span><span class="status-text">Loading data…</span></div>
+</header>
+
+<div class="controls">
+  <div class="controls-inner">
+    <div class="row">
+      <div class="viewToggle">
+        <button id="btnList" class="active">List</button>
+        <button id="btnCal">Calendar</button>
+      </div>
+      <div class="searchWrap">
+        <input id="search" type="text" placeholder="Search artist or venue…">
+      </div>
+      <button class="clearBtn" id="clearBtn">clear filters</button>
+    </div>
+    <div class="row">
+      <div class="chips" id="chips"></div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+  <div id="listView"></div>
+  <div id="calView" style="display:none;">
+    <div class="calNav">
+      <button id="calPrev">‹</button>
+      <div class="label" id="calLabel"></div>
+      <button id="calNext">›</button>
+    </div>
+    <div class="calGrid" id="calDowRow"></div>
+    <div class="calGrid" id="calGrid"></div>
+    <div class="dayPanel" id="dayPanel"></div>
+  </div>
+</main>
+
+<footer>
+  Hand-compiled on 4 Aug 2026 from Tampere venue listings and <a href="https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere/" target="_blank" rel="noopener">Kohokohdat.fi</a> — there's no single live feed bars publish to, so this is a snapshot rather than an auto-updating feed. Bars add and reschedule gigs constantly, so double-check the venue before heading out. Tullikamari (Klubi/Pakkahuone) is closed for renovation through 2026; its shows currently run at Tavara-asema.
+</footer>
+
+<script>
+const GENRES = {
+  rock:      {label:"Rock & Indie",        color:"var(--brick-2)"},
+  metal:     {label:"Metal & Punk",        color:"var(--maroon)"},
+  jazz:      {label:"Jazz, Blues & Roots", color:"var(--amber)"},
+  electronic:{label:"Electronic & DJ",     color:"var(--teal)"},
+  hiphop:    {label:"Hip-Hop & Pop",       color:"var(--plum)"},
+  folk:      {label:"Folk & World",        color:"var(--olive)"},
+  classical: {label:"Classical & Orchestral", color:"var(--steel)"},
+  festival:  {label:"Festivals",           color:"var(--gold)"}
+};
+
+// Data now lives in data.json (regenerated daily by scrape.py via GitHub Actions).
+// Fallback copy below is used only if data.json fails to load (e.g. opened as a local file:// page).
+// [date, time, title, venue, genre, free(0/1), url]
+const FALLBACK_RAW = [
+["2026-08-01","","DAM Bar Summer DJs","DAM Bar","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","","Fest Afrika 2026 (31.7–2.8)","Multiple venues","festival",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","","Laukon Kesä: Anssi Kela","Laukon kartano (Vesilahti)","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","","Manserock Stadionilla: Manserock-orkesteri & Negative","Tammelan stadion","festival",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","","Tampere Puistoreggae 2026","Laikunlava","folk",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","11:00","Lasten FOLK: Haidi ja Fer","Tahmelan Huvila","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","16:00","Manserock x Tornin etkot & jatkot","Paja Bar","rock",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","18:00","Ryönä-Klubi","Vastavirta-Klubi","metal",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","18:00","Trio Mandeng","Nekala","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","19:00","Laukkafest","Vastavirta-Klubi","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","19:00","Pispala Folk etkot: ËRSHkami, Silja Palomäki","Pethaus","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","20:00","Moro Sky Bar DJs: Kobi Spinns","Moro Sky Bar","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","20:00","Nousu Hip Hop Night","Axu Katubaari","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","20:00","Puisto by Night DJs","Puisto ravintola & kahvila","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","20:00","The Go Getters (SE)","G Livelab Tampere","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","20:30","Anton V. Kivi, Univibe, Kuollut Piimä, niilo karppinen","Maanalainen","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","21:00","ALT Agency Summer Sessions: Sonja Selene","O'Connell's Irish Bar","hiphop",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","21:00","Bad Vision, Bad","Armo","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","21:00","Crypt Cermon (USA)","Bar Kotelo","metal",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","21:00","Del Futuras","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","21:00","Olympia Puutarha DJs: PX1 & Lusmu","Ravintola Muusa","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","21:00","Sami Arojoki","Paja Bar","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","22:00","DJs Juissi & Jykke","Tavara-asema","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","22:00","Hervanta Mutilation","Varjobaari","metal",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","22:00","Murrettu Väri","Pub Kujakolli","rock",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","23:00","90's Fin Cover Boyz & Girlz","Ilona","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","23:00","DJ O-Nine","Bar Ihku","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-01","23:30","Jukkamies","Ruby & Fellas","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-02","","PispalaFolk 2026","Tahmelan ranta","festival",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-02","11:00","M'Pää — Cameroon meets Finland","Tahmelan Huvila","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-02","18:30","Kujakollin jamit + Univibe","Pub Kujakolli","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-02","20:00","Pispala Folk After Party: Degenerados, Dark Bottle, Matilda123","Vastavirta-Klubi","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-02","23:00","DJ O-Nine","Bar Ihku","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-03","19:00","Reggaeta & Makkaraa","Ruby & Fellas","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-04","21:00","Janne Laurila & Ville Lehtovaara","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-05","17:00","Plevnan Vinyyliveranta: DJ Juissi","Panimoravintola Plevna","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-05","19:00","Finlayson Live: Ylva Haru","Väinö Linnan aukio","hiphop",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-05","19:00","Pappila Live: Happy Groove","Tyrvään Pappila (Sastamala)","jazz",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-05","19:00","Uittotunneli Summer Gigs: Seppo Tammilehto & Selkä","Uittotunneli","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-05","21:00","Erik Aho Trio","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-05","21:00","Friendship Connection","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-05","21:00","Janne Laurila Quartet","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-05","21:00","Kesäkeskiviikko: Ratikkacore Gaiden, Akubara, Avaruussetä & more","Vastavirta-Klubi","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-05","21:00","Wiley Cousins Trio","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-06","","Eppu Normaali — Ratinan lisäkonsertti","Ratinan stadion","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-06","16:00","Eppu Normaali x Tornin etkot & jatkot (6.–8.8)","Paja Bar","rock",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-06","19:00","Heput soittaa Eppuja","Axu Katubaari","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-06","19:00","Negaatio, Kantør, Miss Vain","Maanalainen","metal",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-06","19:00","The Music of Hans Zimmer","Rantahotelli Waltikka (Valkeakoski)","classical",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-06","19:30","Lillanin Puutarhajuhlat: Tuure Kilpeläinen","Lillan Hotel & Kök","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-06","20:00","Solvychegodsk (fin/cyp), Pepita Vanni","Vastavirta-Klubi","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-06","20:00","Tapahtumien Yö: Tamjazz Collective","Finlaysonin Palatsi","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-06","21:00","Country Club","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-06","23:00","Ilonan Disco","Ilona","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-06","23:30","Vince Boncamper","Ruby & Fellas","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","","Eppu Normaali — sold out","Ratinan stadion","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","","Kaupunkijazz 2026","Ylöjärven kaupungintalo","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","","Laukon Kesä: Vesterinen Yhtyeineen","Laukon kartano (Vesilahti)","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","","Silent Disco","Sisko ja sen Veli","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","","Tampere City Festival 2026 (7.–8.8): Flo Rida, Alan Walker, Scooter & more","Tampereen Messu- ja Urheilukeskus","festival",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","16:00","Midnight Sun Finstrumental Lounge","Saivo Kitchen & Bar","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","19:00","Suvi Teräsniska","Apianniemen kesäteatteri (Valkeakoski)","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","19:30","1Tipe & Kiertorata","Pethaus","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","20:00","Moro Sky Bar DJs","Moro Sky Bar","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","21:00","Bulrusher + Vaalimaa","Maanalainen","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","21:00","Disko Anksiyete: DJs Minkki & Stacye Deathsatan","Gastropub Soho","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","21:00","Garbagemen, The Boasters, Jaakko & Jay, Lastauslaiturin Pojat","Vastavirta-Klubi","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","21:00","Sobernot (CL), Pronoias (CL), Sargassus","Varjobaari","metal",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","21:00","Vesa Oksanen","Paja Bar","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","21:00","Yatz3","Axu Katubaari","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","23:00","Joku Paikallinen Bändi","Bar Ihku","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","23:00","Tampere City Festival Jatkot: Kapteeni Lamminen","Ilona","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-07","23:30","Aleksi Kii & Antti Talvitie Guitar Party","Ruby & Fellas","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-08","","Eppu Normaali — farewell show","Ratinan stadion","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-08","","Laukon Kesä: Arppa","Laukon kartano (Vesilahti)","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-08","","Tampere Filharmonia — Sorsapuisto Park Concert","Sorsapuisto","classical",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-08","18:00","Anemones, Tanssit, Bunny Cute, J.Mann","Vastavirta-Klubi","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-08","18:00","Armo Blip Blop","Armo","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-08","19:00","Pan Salmenhaara, L. Don Ōkami","Pethaus","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-08","20:00","Moro Sky Bar DJs","Moro Sky Bar","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-08","21:00","Blastromen, Sekret Teknik, Naakka","Maanalainen","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-08","21:00","Gilbert K Triologik","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-08","21:00","Jann Wilde & The Neon Comets, UltraNoir","Vastavirta-Klubi","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-08","21:00","Vesa Oksanen","Paja Bar","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-08","22:00","Kino Kosmos","Pub Kujakolli","rock",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-08","23:00","DJ O-Nine","Bar Ihku","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-08","23:30","Ile & Teukka","Ruby & Fellas","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-08","23:59","Core Piknik Jatkot","Vastavirta-Klubi","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-09","","Supersunnuntai Tampereella: Marcus & Martinus, Mirella, Ahti & more","Tampereen Messu- ja Urheilukeskus","festival",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-10","19:00","Reggaeta & Makkaraa","Ruby & Fellas","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-10","23:30","Colin Hartley","Ruby & Fellas","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-11","21:00","Erik Aho Trio","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-12","17:00","Plevnan Vinyyliveranta: DJ Juissi","Panimoravintola Plevna","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-12","18:00","Puistokonsertit Laikunlavalla: Laakson Liljat, Hannele Juutinen, Tampereen Ukuleleorkesteri","Laikunlava","classical",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-12","19:00","Fingerstyle Guitarist Pan Salmenhaara","Winebistro 1910","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-12","19:00","Pappila Live: Hateles","Tyrvään Pappila (Sastamala)","jazz",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-12","19:00","Uittotunneli Summer Gigs: Heikki Hela & Kalle Alatalo","Uittotunneli","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-12","21:00","Friendship Connection","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-13","18:00","Laikunlavalla: Kesäsalsat","Laikunlava","folk",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-13","18:00","Maida Vale","Tahmelan Huvila","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-13","18:30","Tiikeri, Vänsuut (jap), Punk Lurex, Shock Ward","Vastavirta-Klubi","metal",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-13","20:00","Varjokabaree — Emoklubi","Varjobaari","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-13","21:00","Janne Laurila Quartet","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-13","21:00","Wisborg (GER), Crisis Mode, Rain Diary","Bar Kotelo","metal",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-13","23:00","Hodari & Hittitorstai: Ch & Ch Bingo","Ilona","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","","Laukon Kesä: Apocalyptica","Laukon kartano (Vesilahti)","metal",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","","Raikku Rokkaa ja Rakastaa 2026 (14.–15.8): Kolmas Nainen & more","Peltolan tila (Kangasala)","festival",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","","Silent Disco","Sisko ja sen Veli","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","16:00","Midnight Sun Finstrumental Lounge","Saivo Kitchen & Bar","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","18:00","Soul Power on the G Livelab Terrace: DJs Kallio & Okapi","G Livelab Tampere","electronic",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","19:00","Esa Eloranta","Ravintola Suoma","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","19:00","Kulanki & Jompulainen, Mikko Sarvanne, Ewoud Van Eetvelde","Pethaus","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","19:00","Popedan Ajajat","Tavara-asema","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","20:00","Moro Sky Bar DJs","Moro Sky Bar","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","21:00","Jukka Poika","G Livelab Tampere","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","21:00","Lemmenmursut","Axu Katubaari","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","21:00","Los Pasados","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","21:00","Mirkka Liesmäki","Paja Bar","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","21:00","Misstapes: DJ Jaanamirjami","Gastropub Soho","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","21:00","Satamaravintola Kaisla Summer: Egotrippi","Mustalahden satama","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","21:30","Mörv, Hautaustoimisto & Off the Grid","Maanalainen","metal",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-14","22:00","Liveranta: Komiat (Juha Tapio)","Ikaalinen Spa & Resort","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","","Härstock 2026","Härmälän uimaranta","festival",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","","Raikku Rokkaa ja Rakastaa 2026, Day 2: Miljoonasade & more","Peltolan tila (Kangasala)","festival",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","16:00","Hullu!Klubi: Viides Vuodenaika, Ruttokansantuote & more","Vastavirta-Klubi","metal",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","19:00","Absoluuttinen Nollapiste","Tavara-asema","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","19:00","Uittotunneli Summer Gigs: Kulkukoirat & Juha Hildén","Uittotunneli","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","19:30","Clone Statue, Casket Crawlers","Pethaus","metal",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","20:00","Maarit Hurmerinta Duo","G Livelab Tampere","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","20:00","Moro Sky Bar DJs","Moro Sky Bar","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","21:00","80's Vinyl Night: DJ Disparue & DJ Z","Gastropub Soho","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","21:00","ALT Agency Summer Sessions: Topi Saha","O'Connell's Irish Bar","hiphop",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","21:00","Beatline","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","21:00","Grandiradio, Sikuriina Karisukki, Olva, Kirsikkapuu","Vastavirta-Klubi","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","21:00","Heidi Valkama yhtyeineen","Axu Katubaari","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","21:00","Mirkka Liesmäki","Paja Bar","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","21:00","Perunabuffet & Friends DJ-iltamat: The Blassics DJ's","Vastavirta-Klubi","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","22:00","Eartheria, Kallas, Alya North","Varjobaari","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","22:00","J. Laho Rock'n'Roll Band","Pub Kujakolli","rock",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","23:00","Groove Brothers","Ilona","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-15","23:30","Bros Larsen","Ruby & Fellas","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-16","19:00","Horror Vacui, Shocked Volk","Vastavirta-Klubi","metal",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-17","18:30","Compañía Kaari & Roni Martin goes ROOTS, Pekko Käppi & K:H:H:L","Kangasalan Pirtti","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-17","19:00","Barbatos (JPN), Beatrix, Ravenous Medicine","Varjobaari","metal",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-17","19:00","Reggaeta & Makkaraa","Ruby & Fellas","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-18","17:30","Markus Savander — live & talk","Tahmelan Huvila","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-18","18:30","Barbatos, Beatrix, Black Spirits, VMVP","Vastavirta-Klubi","metal",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-18","19:00","Geordie Greep (UK)","G Livelab Tampere","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-18","20:00","Anal Womit (PER), R.I.O.T. (UKR)","Varjobaari","metal",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-18","21:00","Stetson Brothers","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-19","17:00","Plevnan Vinyyliveranta: DJ Juissi","Panimoravintola Plevna","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-19","19:00","Pappila Live: Jukka Keskitalo & Tyrvää All Stars","Tyrvään Pappila (Sastamala)","jazz",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-19","19:00","Uittotunneli Summer Gigs: Antti Railio & Kalle Alatalo","Uittotunneli","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-19","21:00","Mirka's Monarchy","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-20","18:00","Laikunlavalla: Kesäsalsat","Laikunlava","folk",1,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-20","18:00","Päivi: Lauluja elämän varrelta","Tahmelan Huvila","hiphop",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-20","21:00","Blue Skies","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-21","","Blockfest 2026: Future, Offset, Tyga, JVG & more","Ratinanniemen festivaalipuisto","festival",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-21","","Silent Disco","Sisko ja sen Veli","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-21","16:00","Midnight Sun Finstrumental Lounge","Saivo Kitchen & Bar","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-21","19:30","Hippijuhla, Meirami","Pethaus","folk",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-21","20:00","Boycott","G Livelab Tampere","rock",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-21","20:00","Moro Sky Bar DJs","Moro Sky Bar","electronic",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"],
+["2026-08-21","21:00","Gilbert K Triologik","Paapan Kapakka","jazz",0,"https://kohokohdat.fi/tampere/tapahtumat-tampere/keikat-tampere-elokuu/"]
+];
+
+let EVENTS = [];
+let dataMeta = {generated: null, source_note: ""};
+
+function toEvents(raw){
+  return raw.map((r,i)=>({id:i,date:r[0],time:r[1],title:r[2],venue:r[3],genre:r[4],free:!!r[5],url:r[6]}));
+}
+
+const now = new Date();
+const TODAY = now.toISOString().slice(0,10);
+const DOW = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+const DOW_FULL = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+let activeGenres = new Set();
+let searchTerm = "";
+let view = "list";
+let calYear = now.getFullYear(), calMonth = now.getMonth();
+let selectedDay = TODAY;
+
+function matches(ev){
+  if(activeGenres.size && !activeGenres.has(ev.genre)) return false;
+  if(searchTerm){
+    const s = (ev.title+" "+ev.venue).toLowerCase();
+    if(!s.includes(searchTerm)) return false;
+  }
+  return true;
+}
+
+function buildChips(){
+  const wrap = document.getElementById("chips");
+  wrap.innerHTML = "";
+  Object.keys(GENRES).forEach(g=>{
+    const count = EVENTS.filter(e=>e.genre===g).length;
+    const chip = document.createElement("div");
+    chip.className = "chip" + (activeGenres.has(g) ? " active":"");
+    chip.innerHTML = `<span class="dot" style="background:${GENRES[g].color}"></span>${GENRES[g].label} <span class="count">${count}</span>`;
+    chip.onclick = ()=>{
+      if(activeGenres.has(g)) activeGenres.delete(g); else activeGenres.add(g);
+      renderAll();
+    };
+    wrap.appendChild(chip);
+  });
+  document.getElementById("clearBtn").classList.toggle("show", activeGenres.size>0 || searchTerm.length>0);
+}
+
+function fmtDate(dateStr){
+  const d = new Date(dateStr+"T12:00:00");
+  return {dow: DOW[(d.getDay()+6)%7], dowFull: DOW_FULL[(d.getDay()+6)%7], day: d.getDate(), month: MONTHS[d.getMonth()]};
+}
+
+function ticketHTML(ev){
+  const g = GENRES[ev.genre];
+  const timeHtml = ev.time ? `<div class="time">${ev.time}</div>` : `<div class="time tbd">FEST</div>`;
+  return `<a class="ticket" href="${ev.url}" target="_blank" rel="noopener">
+    <div class="stub">${timeHtml}</div>
+    <div class="body">
+      <div class="title">${ev.title}</div>
+      <div class="meta">
+        <span class="venue">${ev.venue}</span>
+        <span class="genretag"><span class="dot" style="background:${g.color}"></span>${g.label}</span>
+        ${ev.free ? '<span class="freebadge">FREE</span>' : ''}
+      </div>
+    </div>
+  </a>`;
+}
+
+function renderList(){
+  const container = document.getElementById("listView");
+  const filtered = EVENTS.filter(matches).sort((a,b)=> a.date===b.date ? (a.time||"99").localeCompare(b.time||"99") : a.date.localeCompare(b.date));
+  if(!filtered.length){
+    container.innerHTML = `<div class="empty">No gigs match that combination. Try clearing a filter.</div>`;
+    return;
+  }
+  let html = "";
+  let lastDate = null;
+  filtered.forEach(ev=>{
+    if(ev.date !== lastDate){
+      const f = fmtDate(ev.date);
+      const isToday = ev.date === TODAY;
+      html += `<div class="dateHead"><span class="dow">${f.dow} ${f.day}</span><span class="full">${f.dowFull}, ${f.day} ${f.month}</span>${isToday?'<span class="today-mark">TODAY</span>':''}</div>`;
+      lastDate = ev.date;
+    }
+    html += ticketHTML(ev);
+  });
+  container.innerHTML = html;
+}
+
+function daysInMonth(y,m){ return new Date(y, m+1, 0).getDate(); }
+
+function renderCalendar(){
+  document.getElementById("calLabel").textContent = `${MONTHS[calMonth]} ${calYear}`;
+  const dowRow = document.getElementById("calDowRow");
+  dowRow.innerHTML = DOW.map(d=>`<div class="calDow">${d}</div>`).join("");
+
+  const grid = document.getElementById("calGrid");
+  const firstDow = (new Date(calYear, calMonth, 1).getDay()+6)%7; // 0=Mon
+  const totalDays = daysInMonth(calYear, calMonth);
+  let html = "";
+  for(let i=0;i<firstDow;i++) html += `<div class="calCell blank"></div>`;
+
+  for(let day=1; day<=totalDays; day++){
+    const dateStr = `${calYear}-${String(calMonth+1).padStart(2,"0")}-${String(day).padStart(2,"0")}`;
+    const dayEvents = EVENTS.filter(e=>e.date===dateStr && matches(e));
+    const isToday = dateStr === TODAY;
+    const isSelected = dateStr === selectedDay;
+    const dotsShown = dayEvents.slice(0,5);
+    const dotsHtml = dotsShown.map(e=>`<span class="d" style="background:${GENRES[e.genre].color}"></span>`).join("");
+    const moreHtml = dayEvents.length>5 ? `<span class="more">+${dayEvents.length-5}</span>` : "";
+    html += `<div class="calCell${isToday?' today':''}${isSelected?' selected':''}" data-date="${dateStr}">
+      <div class="num">${day}</div>
+      <div class="calDots">${dotsHtml}${moreHtml}</div>
+    </div>`;
+  }
+  grid.innerHTML = html;
+  grid.querySelectorAll(".calCell").forEach(cell=>{
+    cell.onclick = ()=>{
+      selectedDay = cell.dataset.date;
+      renderCalendar();
+      renderDayPanel();
+      document.getElementById("dayPanel").scrollIntoView({behavior:"smooth", block:"nearest"});
+    };
+  });
+}
+
+function renderDayPanel(){
+  const panel = document.getElementById("dayPanel");
+  if(!selectedDay){ panel.innerHTML=""; return; }
+  const f = fmtDate(selectedDay);
+  const dayEvents = EVENTS.filter(e=>e.date===selectedDay && matches(e)).sort((a,b)=>(a.time||"99").localeCompare(b.time||"99"));
+  let html = `<h3>${f.dowFull}, ${f.day} ${f.month}</h3>`;
+  if(!dayEvents.length){
+    html += `<div class="empty">Nothing matching your filters this day.</div>`;
+  } else {
+    dayEvents.forEach(ev=> html += ticketHTML(ev));
+  }
+  panel.innerHTML = html;
+}
+
+function renderAll(){
+  buildChips();
+  if(view==="list") renderList();
+  else { renderCalendar(); renderDayPanel(); }
+}
+
+document.getElementById("btnList").onclick = ()=>{
+  view="list";
+  document.getElementById("btnList").classList.add("active");
+  document.getElementById("btnCal").classList.remove("active");
+  document.getElementById("listView").style.display="block";
+  document.getElementById("calView").style.display="none";
+  renderAll();
+};
+document.getElementById("btnCal").onclick = ()=>{
+  view="cal";
+  document.getElementById("btnCal").classList.add("active");
+  document.getElementById("btnList").classList.remove("active");
+  document.getElementById("listView").style.display="none";
+  document.getElementById("calView").style.display="block";
+  renderAll();
+};
+document.getElementById("search").addEventListener("input", e=>{
+  searchTerm = e.target.value.trim().toLowerCase();
+  renderAll();
+});
+document.getElementById("clearBtn").onclick = ()=>{
+  activeGenres.clear();
+  searchTerm = "";
+  document.getElementById("search").value = "";
+  renderAll();
+};
+document.getElementById("calPrev").onclick = ()=>{
+  calMonth--; if(calMonth<0){calMonth=11; calYear--;}
+  renderCalendar(); renderDayPanel();
+};
+document.getElementById("calNext").onclick = ()=>{
+  calMonth++; if(calMonth>11){calMonth=0; calYear++;}
+  renderCalendar(); renderDayPanel();
+};
+
+async function loadData(){
+  try{
+    const res = await fetch('data.json?_=' + Date.now());
+    if(!res.ok) throw new Error('bad status ' + res.status);
+    const json = await res.json();
+    EVENTS = toEvents(json.events || json); // supports either {events:[...], generated:...} or a bare array
+    if(json.generated) dataMeta.generated = json.generated;
+    if(json.source_note) dataMeta.source_note = json.source_note;
+  } catch(err){
+    console.warn('data.json failed to load, using bundled fallback:', err);
+    EVENTS = toEvents(FALLBACK_RAW);
+    dataMeta.generated = null;
+  }
+  renderUpdatedBadge();
+  renderAll();
+}
+
+function formatGeneratedTimestamp(raw){
+  // scrape.py writes "YYYY-MM-DD HH:MM UTC"; the manual-curation fallback
+  // writes a plain human string. Try to parse the former, fall back to
+  // showing the raw string as-is for anything else.
+  const m = /^(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}) UTC$/.exec(raw);
+  if(!m) return raw;
+  const d = new Date(Date.UTC(+m[1], +m[2]-1, +m[3], +m[4], +m[5]));
+  const dateStr = d.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric', timeZone:'UTC' });
+  const timeStr = `${m[4]}:${m[5]}`;
+  return `${dateStr}, ${timeStr} UTC`;
+}
+
+function renderUpdatedBadge(){
+  const el = document.getElementById('updatedBadge');
+  if(!el) return;
+  const dot = el.querySelector('.status-text');
+  if(dataMeta.generated){
+    el.classList.remove('stale');
+    el.classList.add('live');
+    dot.textContent = "Updated " + formatGeneratedTimestamp(dataMeta.generated);
+  } else {
+    el.classList.remove('live');
+    el.classList.add('stale');
+    dot.textContent = "Showing bundled snapshot \u2014 live data.json unavailable";
+  }
+}
+
+loadData();
+</script>
+</body>
+</html>
