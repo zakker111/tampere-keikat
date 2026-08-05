@@ -1,8 +1,215 @@
 {
- "generated": "2026-08-05 23:18 UTC",
- "source_note": "Auto-scraped from 4 sources (raw counts: {'meteli': 111, 'kohokohdat': 357, 'keikat_org': 14, 'linkedevents': 0}), merged to 421 events after de-duplication. Music gigs only — theatre/comedy filtered out. Confidence varies by source.",
+ "generated": "2026-08-05 23:33 UTC",
+ "source_note": "Auto-scraped from 5 sources (raw counts: {'meteli': 111, 'kohokohdat': 357, 'keikat_org': 14, 'linkedevents': 0, 'visittampere': 23}), merged to 444 events after de-duplication. Music gigs only — theatre/comedy filtered out. Confidence varies by source.",
  "errors": [],
  "events": [
+  [
+   "2024-08-22",
+   "",
+   "Contact information",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/info/contact-information/"
+  ],
+  [
+   "2024-08-22",
+   "",
+   "Travel industry professionals",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/professionals/"
+  ],
+  [
+   "2024-08-22",
+   "",
+   "Map",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/destinations/?view=map"
+  ],
+  [
+   "2024-08-22",
+   "",
+   "Visibility on Visit Tampere’s channels",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/visibility-on-visit-tamperes-channels/"
+  ],
+  [
+   "2024-08-22",
+   "",
+   "For travel industry professionals",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/professionals/"
+  ],
+  [
+   "2024-08-22",
+   "",
+   "The best sports bars and places for sports fans",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/articles/events-in-tampere/"
+  ],
+  [
+   "2024-09-06",
+   "",
+   "Info",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/info/"
+  ],
+  [
+   "2025-02-20",
+   "",
+   "Accommodation",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/accommodation/"
+  ],
+  [
+   "2025-11-20",
+   "",
+   "For media",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/info/for-media/"
+  ],
+  [
+   "2026-01-18",
+   "",
+   "Suomi",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/artikkelit/vuoden-tapahtumakooste/"
+  ],
+  [
+   "2026-01-19",
+   "",
+   "English",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/articles/events-in-tampere/"
+  ],
+  [
+   "2026-01-19",
+   "",
+   "Events in Tampere 2026",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/articles/events-in-tampere/"
+  ],
+  [
+   "2026-05-29",
+   "",
+   "LGBTQIA+ friendly travel tips in Tampere",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/articles/events-in-tampere/"
+  ],
+  [
+   "2026-06-04",
+   "",
+   "Tampere summer cruises",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/articles/events-in-tampere/"
+  ],
+  [
+   "2026-06-23",
+   "",
+   "Eat and drink",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/eat-and-drink/"
+  ],
+  [
+   "2026-06-23",
+   "",
+   "Lovely summer cafés in Tampere",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/articles/events-in-tampere/"
+  ],
+  [
+   "2026-07-01",
+   "",
+   "Top tips for summer 2026 in Tampere",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/articles/events-in-tampere/"
+  ],
+  [
+   "2026-07-02",
+   "",
+   "See and do",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/see-and-do/"
+  ],
+  [
+   "2026-07-02",
+   "",
+   "Tampere’s top attractions",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/articles/events-in-tampere/"
+  ],
+  [
+   "2026-07-30",
+   "",
+   "Home",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en"
+  ],
+  [
+   "2026-07-30",
+   "",
+   "Articles and tips",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/articles/category/articles-and-tips-en/"
+  ],
+  [
+   "2026-07-30",
+   "",
+   "Events Articles and tips 30.7.2026 Events in Tampere region summer 2026 Tampere is known for its events. In this article, we have gathered a list of the most interesting events this summer.",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/articles/events-in-tampere-region-summer/"
+  ],
+  [
+   "2026-07-30",
+   "",
+   "Events in Tampere region summer 2026",
+   "Tampere",
+   "rock",
+   0,
+   "https://visittampere.fi/en/articles/events-in-tampere/"
+  ],
   [
    "2026-08-01",
    "",
@@ -2296,7 +2503,7 @@
    "00 Tampereen Messu- ja Urheilukeskus",
    "festival",
    0,
-   "https://keikat.org/olavi-tampereen-127"
+   "https://keikat.org/olavi-tampereen-120"
   ],
   [
    "2026-08-08",
@@ -2575,7 +2782,7 @@
    "00 Pyynikki",
    "festival",
    0,
-   "https://keikat.org/festivaali-pyynikki-234"
+   "https://keikat.org/festivaali-pyynikki-246"
   ],
   [
    "2026-08-22",
@@ -2692,7 +2899,7 @@
    "00 Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-315"
+   "https://keikat.org/koovee-spiral-314"
   ],
   [
    "2026-09-01",
@@ -3394,7 +3601,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-475"
+   "https://keikat.org/off-teatteri-474"
   ],
   [
    "2026-09-14",
@@ -3466,7 +3673,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-511"
+   "https://keikat.org/uudet-teatteri-510"
   ],
   [
    "2026-09-18",
@@ -3475,7 +3682,7 @@
    "00 Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-517"
+   "https://keikat.org/elämä-vastavirta-klub-516"
   ],
   [
    "2026-09-19",
@@ -3637,7 +3844,7 @@
    "00 Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-608"
+   "https://keikat.org/music-tampere-talo-607"
   ],
   [
    "2026-10-02",
@@ -3727,7 +3934,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-648"
+   "https://keikat.org/off-teatteri-647"
   ],
   [
    "2026-10-08",
@@ -3754,7 +3961,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-834"
+   "https://keikat.org/tehdas-teatteri-833"
   ],
   [
    "2026-11-18",
@@ -3763,7 +3970,7 @@
    "00 Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-930"
+   "https://keikat.org/sorin-sorin-929"
   ],
   [
    "2026-11-21",
@@ -3772,7 +3979,7 @@
    "00 Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-951"
+   "https://keikat.org/kotae-tampereen-950"
   ],
   [
    "2027-02-01",
@@ -3781,7 +3988,7 @@
    "00 Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1106"
+   "https://keikat.org/magda-vooninki-1105"
   ],
   [
    "2027-06-18",
@@ -3790,7 +3997,7 @@
    "00 Hiedanrannan Tehdasaukio",
    "festival",
    0,
-   "https://keikat.org/ankea-hiedanrannan-1125"
+   "https://keikat.org/ankea-hiedanrannan-1124"
   ]
  ]
 }
