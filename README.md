@@ -12,7 +12,7 @@ Four sources, merged and de-duplicated by (date, title):
 | meteli.net | **High** | Parser unit-tested against 7 real listings before shipping |
 | kohokohdat.fi | Medium | Generic heuristic, broadest coverage, unverified against live site |
 | keikat.org | Low | Built from search-snippet text, not real inspected HTML |
-| linkedevents.tampere.fi | Low (but a real API) | Official structured JSON API — should be the most reliable in principle, but I couldn't get a test query through this sandbox's network lock, so params are unverified |
+| linkedevents.tampere.fi | Low (but a real API) | Official structured JSON API — should be the most reliable in principle, but I couldn't get a test query through this sandbox's network lock, so it was unverified here |
 
 None of the four were reachable from the sandbox that built this (network
 egress there is domain-allowlisted; every one came back `403
@@ -37,16 +37,21 @@ only posts to its own website or Instagram won't show up regardless.
 2. **Upload these files** to the repo. Easiest way if you don't use git
    from the command line: on the repo's page, "Add file" → "Upload files",
    drag in everything from this folder *including* the `.github` folder
-   (GitHub's uploader keeps the folder structure). Commit to `main`.
+   (GitHub's uploader keeps the folder structure). Commit to the repository's default branch.
 
 3. **Turn on GitHub Pages**: repo → Settings → Pages → under "Build and
    deployment", set Source to **GitHub Actions** (not "Deploy from a
    branch" — the included workflow handles the build itself).
 
-4. **Run the workflow once by hand**: repo → Actions tab → "Update Tampere
-   gig data and deploy" → Run workflow. This does the first scrape + first
-   Pages deploy. After this it also runs automatically every day at
-   05:00 UTC.
+4. **Run the workflow once by hand (first-time run)** — this performs the
+   initial scrape and creates the first Pages deployment. Steps:
+
+   - Go to your repository on GitHub and click the "Actions" tab.
+   - In the left-hand workflow list, find and click the workflow named "Update Tampere gig data and deploy".
+   - On the workflow page, click the green "Run workflow" button (top-right). If prompted, select the branch to run on (use the default branch, usually `main`) and any inputs, then click "Run workflow".
+   - Wait for the run to complete. You can open the run and inspect the `scrape` job logs and the `pages` deploy job.
+
+   After this first manual run, the workflow will also run automatically every day at 05:00 UTC (configured in the workflow file).
 
 5. Your live link will show up under Settings → Pages once the first
    deploy finishes — something like:
