@@ -269,13 +269,33 @@ def fetch_with_playwright_content(url, timeout=20000):
         raise RuntimeError("playwright not available")
     try:
         with sync_playwright() as p:
-            browser = p.chromium.launch(args=["--no-sandbox"], headless=True)
-            page = browser.new_page()
+            browser = p.chromium.launch(args=["--no-sandbox", "--disable-blink-features=AutomationControlled"], headless=True)
+            context = browser.new_context(
+                user_agent=HEADERS.get("User-Agent"),
+                locale="fi-FI",
+                extra_http_headers={"Accept-Language": HEADERS.get("Accept-Language", "fi-FI,fi;q=0.9")}
+            )
+            # Make the page less detectable as automation
+            context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
+            page = context.new_page()
+            print(f"[meteli playwright] goto {url}", file=sys.stderr)
             page.goto(url, wait_until="networkidle", timeout=timeout)
+            # Wait for event anchors we parse later, but don't fail if not found
+            try:
+                page.wait_for_selector('a[href*=\"/tapahtuma/\"]', timeout=10000)
+                print("[meteli playwright] selector found", file=sys.stderr)
+            except Exception:
+                print("[meteli playwright] selector not found - continuing", file=sys.stderr)
             content = page.content()
+            # Log a short excerpt if content looks unexpectedly small (helps debugging)
+            if len(content) < 2000:
+                excerpt = content[:2000].replace("\n", " ")
+                print(f"[meteli playwright] small-content {len(content)} bytes excerpt: {excerpt!r}", file=sys.stderr)
+            context.close()
             browser.close()
             return content
     except Exception as exc:
+        # Re-raise to let the caller log via log_http_error
         raise
 
 
