@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 """
 Updated scraper:
-- Uses cloudscraper for meteli to handle Cloudflare/JS challenge pages.
+- Uses cloudscraper for meteli to handle Cloudflare/JS challenge pages (if available).
 - Retries network calls with simple backoff.
 - Tries HTTPS for linkedevents and sets Host header fallback on 400 Invalid host.
+- Keeps per-source logging and writes data.json as before.
 """
 import json
 import re
 import sys
-import datetime
 import time
+import datetime
 from urllib.parse import urljoin
 
 import requests
@@ -22,7 +23,6 @@ except Exception:
     cloudscraper = None
 
 BASE = "https://kohokohdat.fi"
-# ... (keep same constants as before) ...
 MONTH_SLUGS = {
     1: "tammikuu", 2: "helmikuu", 3: "maaliskuu", 4: "huhtikuu",
     5: "toukokuu", 6: "kesakuu", 7: "heinakuu", 8: "elokuu",
@@ -52,22 +52,21 @@ EXCLUDE_KEYWORDS = [
     "taidenäyttely", "luento", "urheiluottelu", "jalkapallo-ottelu",
 ]
 
-def is_music_event(title, venue):
-    text = f"{title} {venue}".lower()
-    return not any(kw in text for kw in EXCLUDE_KEYWORDS)
-
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                   "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
     "Accept-Language": "fi-FI,fi;q=0.9,en;q=0.8",
 }
 
+
 def log_http_error(source, exc):
+    """Prints the actual response body (truncated) alongside the exception."""
     resp = getattr(exc, "response", None)
     if resp is not None:
         print(f"[{source}] FAILED: {exc} | body: {resp.text[:500]!r}", file=sys.stderr)
     else:
         print(f"[{source}] FAILED: {exc}", file=sys.stderr)
+
 
 def guess_genre(title, venue):
     text = f"{title} {venue}".lower()
@@ -76,15 +75,18 @@ def guess_genre(title, venue):
             return genre
     return DEFAULT_GENRE
 
+
 def month_url(year, month):
     slug = MONTH_SLUGS[month]
     return f"{BASE}/tampere/tapahtumat-tampere/keikat-tampere-{slug}/"
+
 
 def parse_time(text):
     m = re.search(r"\b([01]?\d|2[0-3])[:.]([0-5]\d)\b", text)
     if m:
         return f"{int(m.group(1)):02d}:{m.group(2)}"
     return ""
+
 
 def parse_date(text, year_hint):
     m = re.search(r"\b(\d{1,2})\.(\d{1,2})\.(\d{4})\b", text)
@@ -96,6 +98,7 @@ def parse_date(text, year_hint):
         d, mo = int(m.group(1)), int(m.group(2))
         return f"{year_hint:04d}-{mo:02d}-{d:02d}"
     return None
+
 
 def parse_month_page(html, year, month):
     soup = BeautifulSoup(html, "html.parser")
@@ -128,7 +131,7 @@ def parse_month_page(html, year, month):
                 venue_match = re.search(r"Tampere\s+([A-ZÅÄÖ][\w &'\-]{2,40})", pt)
                 if venue_match:
                     venue = venue_match.group(1).strip()
-            if not is_music_event(title, venue):
+            if any(kw in f"{title} {venue}".lower() for kw in EXCLUDE_KEYWORDS):
                 excluded_count += 1
                 continue
 
@@ -157,12 +160,13 @@ def parse_month_page(html, year, month):
         print(f"  filtered out {excluded_count} non-music listing(s)", file=sys.stderr)
     return deduped
 
+
 def fetch_with_retries(method, url, *, headers=None, params=None, timeout=20, retries=3, backoff=1, allow_redirects=True, use_scraper=False):
     last_exc = None
     for attempt in range(1, retries + 1):
         try:
             if use_scraper and cloudscraper is not None:
-                scraper = cloudscraper.create_scraper()  # respects default headers
+                scraper = cloudscraper.create_scraper()
                 resp = scraper.get(url, headers=headers or HEADERS, params=params, timeout=timeout, allow_redirects=allow_redirects)
             else:
                 resp = requests.request(method, url, headers=headers or HEADERS, params=params, timeout=timeout, allow_redirects=allow_redirects)
@@ -170,20 +174,22 @@ def fetch_with_retries(method, url, *, headers=None, params=None, timeout=20, re
             return resp
         except Exception as exc:
             last_exc = exc
-            # log a little context, but don't spam too much output
             print(f"[fetch] attempt {attempt} for {url} failed: {exc}", file=sys.stderr)
             if attempt < retries:
                 time.sleep(backoff * attempt)
             continue
-    # All attempts failed
     raise last_exc
+
 
 def fetch_month(year, month):
     url = month_url(year, month)
     resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=3, backoff=1)
     return parse_month_page(resp.text, year, month)
 
-# ----- meteli.net (use cloudscraper if cloudflare blocks requests) -----
+
+# ---------------------------------------------------------------------------
+# SOURCE 2: meteli.net
+# ---------------------------------------------------------------------------
 METELI_BASE = "https://www.meteli.net"
 METELI_TAMPERE_URL = "https://www.meteli.net/kaupunki/tampere"
 METELI_LINK_RE = re.compile(
@@ -209,6 +215,7 @@ KNOWN_VENUES = [
 ]
 KNOWN_VENUES_SORTED = sorted(KNOWN_VENUES, key=len, reverse=True)
 
+
 def split_title_venue(rest):
     for v in KNOWN_VENUES_SORTED:
         suffix = f"{v}, Tampere"
@@ -221,6 +228,7 @@ def split_title_venue(rest):
     if m:
         return rest[:m.start()].strip(" -–:"), m.group("venue").strip()
     return None, None
+
 
 def parse_meteli_anchor_text(text, year_hint, today):
     m = METELI_LINK_RE.match(text.strip())
@@ -243,7 +251,6 @@ def parse_meteli_anchor_text(text, year_hint, today):
         if price_match.group(1).strip().rstrip(",0.") == "" or price_match.group(1).strip() == "0":
             free = 1
 
-    venue, title = None, None
     title, venue = split_title_venue(rest)
     if not venue or not title:
         return None
@@ -256,10 +263,10 @@ def parse_meteli_anchor_text(text, year_hint, today):
         "free": free,
     }
 
+
 def fetch_meteli(max_pages=4):
     events = []
     today = datetime.date.today()
-    # prefer cloudscraper when available to handle JS challenges
     use_scraper = cloudscraper is not None
     for page_num in range(1, max_pages + 1):
         url = METELI_TAMPERE_URL if page_num == 1 else f"{METELI_TAMPERE_URL}/page/{page_num}"
@@ -278,7 +285,7 @@ def fetch_meteli(max_pages=4):
             parsed = parse_meteli_anchor_text(text, today.year, today)
             if not parsed:
                 continue
-            if not is_music_event(parsed["title"], parsed["venue"]):
+            if any(kw in f"{parsed['title']} {parsed['venue']}".lower() for kw in EXCLUDE_KEYWORDS):
                 continue
             parsed["genre"] = guess_genre(parsed["title"], parsed["venue"])
             parsed["url"] = urljoin(METELI_BASE, a["href"])
@@ -289,8 +296,10 @@ def fetch_meteli(max_pages=4):
             break
     return events
 
+
 def normalize_title(title):
     return re.sub(r"[^a-z0-9]", "", title.lower())[:40]
+
 
 def merge_events(*event_lists):
     seen = {}
@@ -304,9 +313,13 @@ def merge_events(*event_lists):
             merged.append(e)
     return merged
 
-# ----- keikat.org (unchanged but uses fetch_with_retries) -----
+
+# ---------------------------------------------------------------------------
+# SOURCE 3: keikat.org
+# ---------------------------------------------------------------------------
 KEIKAT_ORG_URL = "https://keikat.org/tampere"
 KEIKAT_ORG_DATE_RE = re.compile(r"\d{1,2}\.\d{1,2}\.(\d{4})")
+
 
 def parse_keikat_org_anchor_text(text):
     m = re.search(r"(\d{1,2})\.(\d{1,2})\.(\d{4})", text)
@@ -326,7 +339,9 @@ def parse_keikat_org_anchor_text(text):
         return None
     return {"date": f"{year:04d}-{month:02d}-{day:02d}", "time": time_str, "title": title, "venue": venue, "free": 0}
 
+
 KEIKAT_DATE_HEAD_RE = re.compile(r"^[a-zäöå]{2}\s+(\d{1,2})\.(\d{1,2})\.(\d{4})", re.IGNORECASE)
+
 
 def fetch_keikat_org(url=KEIKAT_ORG_URL):
     events = []
@@ -366,7 +381,7 @@ def fetch_keikat_org(url=KEIKAT_ORG_URL):
         else:
             continue
 
-        if not is_music_event(title, venue):
+        if any(kw in f"{title} {venue}".lower() for kw in EXCLUDE_KEYWORDS):
             continue
         events.append({
             "date": date_str, "time": "", "title": title, "venue": venue, "free": 0,
@@ -384,17 +399,22 @@ def fetch_keikat_org(url=KEIKAT_ORG_URL):
     print(f"[keikat.org] parsed {len(deduped)} events", file=sys.stderr)
     return deduped
 
-# ----- linkedevents (use HTTPS, retry, set Host fallback) -----
+
+# ---------------------------------------------------------------------------
+# SOURCE 4: linkedevents.tampere.fi — try HTTPS first
+# ---------------------------------------------------------------------------
 LINKEDEVENTS_URLS = [
     "https://linkedevents.tampere.fi/v1/event/",
     "http://linkedevents.tampere.fi/v1/event/",
 ]
+
 
 def looks_like_music(title, venue):
     text = f"{title} {venue}".lower()
     if any(kw in text for kws in GENRE_KEYWORDS.values() for kw in kws):
         return True
     return any(v.lower() in venue.lower() for v in KNOWN_VENUES)
+
 
 def fetch_linkedevents(days_ahead=45):
     events = []
@@ -405,18 +425,14 @@ def fetch_linkedevents(days_ahead=45):
 
     for base in LINKEDEVENTS_URLS:
         try:
-            # First try with normal request
             resp = fetch_with_retries("GET", base, headers=HEADERS, params=params, timeout=20, retries=3, backoff=1)
             payload = resp.json()
         except Exception as exc:
-            # If the host rejects with "Invalid host", try forcing Host header or switching protocol
             last_exc = exc
-            # Inspect the exception string quickly
             try:
                 body = getattr(exc, "response", None).text if getattr(exc, "response", None) is not None else ""
             except Exception:
                 body = ""
-            # If invalid host, try again with explicit Host header
             if "Invalid host" in str(body) or "Invalid host" in str(exc):
                 try:
                     headers = dict(HEADERS)
@@ -427,7 +443,6 @@ def fetch_linkedevents(days_ahead=45):
                     last_exc = exc2
                     continue
             else:
-                # try next base URL
                 continue
 
         for item in payload.get("data", []):
@@ -441,7 +456,9 @@ def fetch_linkedevents(days_ahead=45):
                     continue
                 date_str = start_time[:10]
                 time_str = start_time[11:16] if len(start_time) >= 16 else ""
-                if not is_music_event(name, venue) or not looks_like_music(name, venue):
+                if any(kw in f"{name} {venue}".lower() for kw in EXCLUDE_KEYWORDS):
+                    continue
+                if not looks_like_music(name, venue):
                     continue
                 events.append({
                     "date": date_str,
@@ -462,6 +479,7 @@ def fetch_linkedevents(days_ahead=45):
     else:
         print(f"[linkedevents] parsed {len(events)} events", file=sys.stderr)
     return events
+
 
 def main():
     today = datetime.date.today()
@@ -536,6 +554,7 @@ def main():
         json.dump(output, f, ensure_ascii=False, indent=1)
 
     print(f"Wrote {len(raw)} events to data.json. Per-source raw counts: {counts}", file=sys.stderr)
+
 
 if __name__ == "__main__":
     main()
