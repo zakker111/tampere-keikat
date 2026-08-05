@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Updated scraper:
-- Uses cloudscraper for meteli to handle Cloudflare/JS challenge pages (if available).
-- Retries network calls with simple backoff.
-- Tries HTTPS for linkedevents and sets Host header fallback on 400 Invalid host.
-- Keeps per-source logging and writes data.json as before.
+Updated scraper with a Playwright fallback for meteli.net.
+- Uses cloudscraper when available.
+- Retries requests.
+- If meteli returns a Cloudflare challenge or requests fail, uses Playwright to fetch rendered HTML.
+- Linkedevents: tries HTTPS then HTTP with Host fallback; logs full response on error.
 """
 import json
 import re
@@ -16,11 +16,18 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
-# cloudscraper is optional for falling back when meteli blocks simple requests
+# Optional cloudscraper
 try:
     import cloudscraper
 except Exception:
     cloudscraper = None
+
+# Optional Playwright (sync API)
+try:
+    from playwright.sync_api import sync_playwright
+    PLAYWRIGHT_AVAILABLE = True
+except Exception:
+    PLAYWRIGHT_AVAILABLE = False
 
 BASE = "https://kohokohdat.fi"
 MONTH_SLUGS = {
@@ -28,12 +35,6 @@ MONTH_SLUGS = {
     5: "toukokuu", 6: "kesakuu", 7: "heinakuu", 8: "elokuu",
     9: "syyskuu", 10: "lokakuu", 11: "marraskuu", 12: "joulukuu",
 }
-FI_MONTH_NUM = {
-    "tammi": 1, "helmi": 2, "maalis": 3, "huhti": 4, "touko": 5, "kesä": 6,
-    "heinä": 7, "elo": 8, "syys": 9, "loka": 10, "marras": 11, "joulu": 12,
-}
-FI_DOW = {"ma": 0, "ti": 1, "ke": 2, "to": 3, "pe": 4, "la": 5, "su": 6}
-
 GENRE_KEYWORDS = {
     "metal":      ["metal", "punk", "hardcore", "black metal", "death metal", "core"],
     "jazz":       ["jazz", "blues", "soul", "country", "swing"],
@@ -60,7 +61,6 @@ HEADERS = {
 
 
 def log_http_error(source, exc):
-    """Prints the actual response body (truncated) alongside the exception."""
     resp = getattr(exc, "response", None)
     if resp is not None:
         print(f"[{source}] FAILED: {exc} | body: {resp.text[:500]!r}", file=sys.stderr)
@@ -147,7 +147,6 @@ def parse_month_page(html, year, month):
                 "url": url,
             })
 
-    # de-dupe by url
     seen = set()
     deduped = []
     for e in events:
@@ -188,7 +187,7 @@ def fetch_month(year, month):
 
 
 # ---------------------------------------------------------------------------
-# SOURCE 2: meteli.net
+# METELI.NET with Playwright fallback
 # ---------------------------------------------------------------------------
 METELI_BASE = "https://www.meteli.net"
 METELI_TAMPERE_URL = "https://www.meteli.net/kaupunki/tampere"
@@ -264,6 +263,21 @@ def parse_meteli_anchor_text(text, year_hint, today):
     }
 
 
+def fetch_with_playwright_content(url, timeout=20000):
+    if not PLAYWRIGHT_AVAILABLE:
+        raise RuntimeError("playwright not available")
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(args=["--no-sandbox"], headless=True)
+            page = browser.new_page()
+            page.goto(url, wait_until="networkidle", timeout=timeout)
+            content = page.content()
+            browser.close()
+            return content
+    except Exception as exc:
+        raise
+
+
 def fetch_meteli(max_pages=4):
     events = []
     today = datetime.date.today()
@@ -272,11 +286,20 @@ def fetch_meteli(max_pages=4):
         url = METELI_TAMPERE_URL if page_num == 1 else f"{METELI_TAMPERE_URL}/page/{page_num}"
         try:
             resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=4, backoff=1, use_scraper=use_scraper)
+            html = resp.text
         except Exception as exc:
+            # Try Playwright fallback if available and we got blocked
             log_http_error(f"meteli page {page_num}", exc)
-            break
+            if PLAYWRIGHT_AVAILABLE:
+                try:
+                    html = fetch_with_playwright_content(url)
+                except Exception as exc2:
+                    log_http_error(f"meteli playwright page {page_num}", exc2)
+                    break
+            else:
+                break
 
-        soup = BeautifulSoup(resp.text, "html.parser")
+        soup = BeautifulSoup(html, "html.parser")
         found_this_page = 0
         for a in soup.find_all("a", href=True):
             if "/tapahtuma/" not in a["href"]:
@@ -315,11 +338,10 @@ def merge_events(*event_lists):
 
 
 # ---------------------------------------------------------------------------
-# SOURCE 3: keikat.org
+# keikat.org (unchanged) and linkedevents (HTTPS first with Host fallback)
 # ---------------------------------------------------------------------------
 KEIKAT_ORG_URL = "https://keikat.org/tampere"
 KEIKAT_ORG_DATE_RE = re.compile(r"\d{1,2}\.\d{1,2}\.(\d{4})")
-
 
 def parse_keikat_org_anchor_text(text):
     m = re.search(r"(\d{1,2})\.(\d{1,2})\.(\d{4})", text)
@@ -339,9 +361,7 @@ def parse_keikat_org_anchor_text(text):
         return None
     return {"date": f"{year:04d}-{month:02d}-{day:02d}", "time": time_str, "title": title, "venue": venue, "free": 0}
 
-
 KEIKAT_DATE_HEAD_RE = re.compile(r"^[a-zäöå]{2}\s+(\d{1,2})\.(\d{1,2})\.(\d{4})", re.IGNORECASE)
-
 
 def fetch_keikat_org(url=KEIKAT_ORG_URL):
     events = []
@@ -400,21 +420,16 @@ def fetch_keikat_org(url=KEIKAT_ORG_URL):
     return deduped
 
 
-# ---------------------------------------------------------------------------
-# SOURCE 4: linkedevents.tampere.fi — try HTTPS first
-# ---------------------------------------------------------------------------
 LINKEDEVENTS_URLS = [
     "https://linkedevents.tampere.fi/v1/event/",
     "http://linkedevents.tampere.fi/v1/event/",
 ]
-
 
 def looks_like_music(title, venue):
     text = f"{title} {venue}".lower()
     if any(kw in text for kws in GENRE_KEYWORDS.values() for kw in kws):
         return True
     return any(v.lower() in venue.lower() for v in KNOWN_VENUES)
-
 
 def fetch_linkedevents(days_ahead=45):
     events = []
