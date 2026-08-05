@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-05 22:18 UTC",
+ "generated": "2026-08-05 22:52 UTC",
  "source_note": "Auto-scraped from 4 sources (raw counts: {'meteli': 0, 'kohokohdat': 357, 'keikat_org': 14, 'linkedevents': 0}), merged to 310 events after de-duplication. Music gigs only — theatre/comedy filtered out. Confidence varies by source.",
  "errors": [],
  "events": [
@@ -2161,7 +2161,7 @@
    "00 Tampereen Messu- ja Urheilukeskus",
    "festival",
    0,
-   "https://keikat.org/olavi-tampereen-120"
+   "https://keikat.org/olavi-tampereen-127"
   ],
   [
    "2026-08-09",
@@ -2179,7 +2179,7 @@
    "00 Pyynikki",
    "festival",
    0,
-   "https://keikat.org/festivaali-pyynikki-246"
+   "https://keikat.org/festivaali-pyynikki-234"
   ],
   [
    "2026-08-29",
@@ -2188,7 +2188,7 @@
    "00 Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-314"
+   "https://keikat.org/koovee-spiral-315"
   ],
   [
    "2026-09-01",
@@ -2710,7 +2710,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-474"
+   "https://keikat.org/off-teatteri-475"
   ],
   [
    "2026-09-18",
@@ -2719,7 +2719,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-510"
+   "https://keikat.org/uudet-teatteri-511"
   ],
   [
    "2026-09-18",
@@ -2728,7 +2728,7 @@
    "00 Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-516"
+   "https://keikat.org/elämä-vastavirta-klub-517"
   ],
   [
    "2026-10-01",
@@ -2737,7 +2737,7 @@
    "00 Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-607"
+   "https://keikat.org/music-tampere-talo-608"
   ],
   [
    "2026-10-07",
@@ -2746,7 +2746,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-647"
+   "https://keikat.org/off-teatteri-648"
   ],
   [
    "2026-11-05",
@@ -2755,7 +2755,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-833"
+   "https://keikat.org/tehdas-teatteri-834"
   ],
   [
    "2026-11-18",
@@ -2764,7 +2764,7 @@
    "00 Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-929"
+   "https://keikat.org/sorin-sorin-930"
   ],
   [
    "2026-11-21",
@@ -2773,7 +2773,7 @@
    "00 Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-950"
+   "https://keikat.org/kotae-tampereen-951"
   ],
   [
    "2027-02-01",
@@ -2782,7 +2782,7 @@
    "00 Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1105"
+   "https://keikat.org/magda-vooninki-1106"
   ],
   [
    "2027-06-18",
@@ -2791,7 +2791,7 @@
    "00 Hiedanrannan Tehdasaukio",
    "festival",
    0,
-   "https://keikat.org/ankea-hiedanrannan-1124"
+   "https://keikat.org/ankea-hiedanrannan-1125"
   ]
  ]
 }
