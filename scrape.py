@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-Scraper with Playwright fallback for meteli.net and improved logging.
+Scraper with Playwright fallback for meteli.net and improved stealth.
 """
 import json
 import re
 import sys
 import time
 import datetime
+import random
 from urllib.parse import urljoin
 
 import requests
@@ -24,10 +25,6 @@ try:
     PLAYWRIGHT_AVAILABLE = True
 except Exception:
     PLAYWRIGHT_AVAILABLE = False
-
-# Print availability so CI logs show it immediately
-print(f"PLAYWRIGHT_AVAILABLE={PLAYWRIGHT_AVAILABLE}", file=sys.stderr)
-print("SCRAPER_START", file=sys.stderr)
 
 BASE = "https://kohokohdat.fi"
 MONTH_SLUGS = {
@@ -269,6 +266,8 @@ def fetch_with_playwright_content(url, timeout=20000):
         raise RuntimeError("playwright not available")
     try:
         with sync_playwright() as p:
+            # small randomized sleep to make requests less bot-like
+            time.sleep(1 + random.random())
             browser = p.chromium.launch(args=["--no-sandbox", "--disable-blink-features=AutomationControlled"], headless=True)
             context = browser.new_context(
                 user_agent=HEADERS.get("User-Agent"),
@@ -276,26 +275,22 @@ def fetch_with_playwright_content(url, timeout=20000):
                 extra_http_headers={"Accept-Language": HEADERS.get("Accept-Language", "fi-FI,fi;q=0.9")}
             )
             # Make the page less detectable as automation
-            context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
+            try:
+                context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
+            except Exception:
+                pass
             page = context.new_page()
-            print(f"[meteli playwright] goto {url}", file=sys.stderr)
             page.goto(url, wait_until="networkidle", timeout=timeout)
             # Wait for event anchors we parse later, but don't fail if not found
             try:
-                page.wait_for_selector('a[href*=\"/tapahtuma/\"]', timeout=10000)
-                print("[meteli playwright] selector found", file=sys.stderr)
+                page.wait_for_selector('a[href*="/tapahtuma/"]', timeout=10000)
             except Exception:
-                print("[meteli playwright] selector not found - continuing", file=sys.stderr)
+                pass
             content = page.content()
-            # Log a short excerpt if content looks unexpectedly small (helps debugging)
-            if len(content) < 2000:
-                excerpt = content[:2000].replace("\n", " ")
-                print(f"[meteli playwright] small-content {len(content)} bytes excerpt: {excerpt!r}", file=sys.stderr)
             context.close()
             browser.close()
             return content
-    except Exception as exc:
-        # Re-raise to let the caller log via log_http_error
+    except Exception:
         raise
 
 
@@ -311,10 +306,8 @@ def fetch_meteli(max_pages=4):
         except Exception as exc:
             log_http_error(f"meteli page {page_num}", exc)
             if PLAYWRIGHT_AVAILABLE:
-                print(f"[meteli playwright] attempting playwright fetch for {url}", file=sys.stderr)
                 try:
                     html = fetch_with_playwright_content(url)
-                    print(f"[meteli playwright] fetched {len(html)} bytes", file=sys.stderr)
                 except Exception as exc2:
                     log_http_error(f"meteli playwright page {page_num}", exc2)
                     break
@@ -517,7 +510,6 @@ def fetch_linkedevents(days_ahead=45):
 
 
 def main():
-    print("SCRAPER_MAIN_START", file=sys.stderr)
     today = datetime.date.today()
     kohokohdat_events = []
     meteli_events = []
@@ -525,7 +517,6 @@ def main():
     linkedevents_events = []
     errors = []
 
-    print("ABOUT_TO_FETCH kohokohdat", file=sys.stderr)
     months_to_fetch = [(today.year, today.month)]
     nm = today.month + 1
     ny = today.year
@@ -543,21 +534,18 @@ def main():
             errors.append(f"kohokohdat {year}-{month:02d}: {exc}")
             print(f"[kohokohdat {year}-{month:02d}] FAILED: {exc}", file=sys.stderr)
 
-    print("ABOUT_TO_FETCH meteli", file=sys.stderr)
     try:
         meteli_events = fetch_meteli(max_pages=4)
     except Exception as exc:
         errors.append(f"meteli: {exc}")
         print(f"[meteli] FAILED: {exc}", file=sys.stderr)
 
-    print("ABOUT_TO_FETCH keikat_org", file=sys.stderr)
     try:
         keikat_org_events = fetch_keikat_org()
     except Exception as exc:
         errors.append(f"keikat.org: {exc}")
         print(f"[keikat.org] FAILED: {exc}", file=sys.stderr)
 
-    print("ABOUT_TO_FETCH linkedevents", file=sys.stderr)
     try:
         linkedevents_events = fetch_linkedevents()
     except Exception as exc:
