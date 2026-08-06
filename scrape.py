@@ -308,10 +308,34 @@ def fetch_with_retries(method, url, *, headers=None, params=None, timeout=20, re
     raise last_exc
 
 
+def _looks_like_stuck_date_tracking(events, year, month):
+    """Detects the failure mode where current_date tracking finds one real
+    date heading then silently fails to update for the rest of the page,
+    piling every remaining event onto that single date. This showed up on
+    kohokohdat's September page (all events landing on 2026-09-02) despite
+    August working fine \u2014 same parser, different month's markup apparently
+    trips it. Can't inspect the real HTML to fix the root cause (network
+    blocked from the sandbox that built this), so this catches the *symptom*
+    instead: if effectively all of a month's events share one date, that's
+    not a real gig calendar, that's a bug."""
+    if len(events) < 12:
+        return False
+    from collections import Counter
+    counts = Counter(e["date"] for e in events)
+    top_date, top_count = counts.most_common(1)[0]
+    return top_count / len(events) > 0.6
+
+
 def fetch_month(year, month):
     url = month_url(year, month)
     resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=3, backoff=1)
-    return parse_month_page(resp.text, year, month)
+    events = parse_month_page(resp.text, year, month)
+    if _looks_like_stuck_date_tracking(events, year, month):
+        print(f"[kohokohdat {year}-{month:02d}] REJECTING all {len(events)} events \u2014 "
+              f"date tracking looks stuck on one day (see _looks_like_stuck_date_tracking). "
+              f"This month's data needs a human to check the real page.", file=sys.stderr)
+        return []
+    return events
 
 
 # ---------------------------------------------------------------------------
