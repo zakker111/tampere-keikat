@@ -98,6 +98,20 @@ def parse_date(text, year_hint):
     return None
 
 
+def is_suspicious_heading(text):
+    """Return True if text looks like a section/article heading rather than a venue."""
+    if not text:
+        return True
+    text_l = text.lower()
+    # words that indicate site sections / headings or generically non-venue phrases
+    if re.search(r"\b(kesä|kesällä|home|info|article|artikkeli|kesän|dam|kesäkausi|artikkeleita|videos)\b", text_l, re.IGNORECASE):
+        return True
+    # too long to be a venue
+    if len(text.strip()) > 60:
+        return True
+    return False
+
+
 def parse_month_page(html, year, month):
     soup = BeautifulSoup(html, "html.parser")
     events = []
@@ -126,9 +140,35 @@ def parse_month_page(html, year, month):
             parent_text = el.find_parent(["li", "div", "article"])
             if parent_text:
                 pt = parent_text.get_text(" ", strip=True)
-                venue_match = re.search(r"Tampere\s+([A-ZÅÄÖ][\w &'\-]{2,40})", pt)
-                if venue_match:
-                    venue = venue_match.group(1).strip()
+
+                # 1) Prefer known venue names found in the surrounding text
+                for v in KNOWN_VENUES_SORTED:
+                    if v.lower() in pt.lower():
+                        venue = v
+                        break
+
+                # 2) Fallback: extract "<candidate>, Tampere" but guard against article headings
+                if not venue:
+                    m = re.search(r"\b([A-ZÅÄÖ][\w &'\-]{2,40})\s*,\s*Tampere\b", pt)
+                    if m:
+                        candidate = m.group(1).strip()
+                        if not is_suspicious_heading(candidate):
+                            venue = candidate
+
+                # 3) If still not found, try a short heuristic: a short sibling text that looks like a venue
+                if not venue:
+                    sib = el.find_previous_sibling()
+                    if sib:
+                        s = sib.get_text(" ", strip=True)
+                        if 2 < len(s) <= 40 and any(ch.isalpha() for ch in s):
+                            s2 = re.sub(r",?\s*Tampere\s*$", "", s, flags=re.IGNORECASE).strip()
+                            if not is_suspicious_heading(s2):
+                                venue = s2
+
+                # Debug: if venue still looks suspicious, log it for review
+                if venue and is_suspicious_heading(venue):
+                    print(f"[parse_month_page] suspicious venue `{venue}` for title `{title}` url={url}", file=sys.stderr)
+
             if any(kw in f"{title} {venue}".lower() for kw in EXCLUDE_KEYWORDS):
                 excluded_count += 1
                 continue
@@ -140,10 +180,10 @@ def parse_month_page(html, year, month):
                 "time": time_str,
                 "title": title,
                 "venue": venue or "Tampere",
-                "genre": guess_genre(title, venue),
+                "genre": guess_genre(title, venue or "Tampere"),
                 "free": 0,
                 "url": url,
-            })
+            )
 
     seen = set()
     deduped = []
@@ -403,6 +443,17 @@ def parse_fuzzy_date(s):
     return None
 
 
+def _snippet_looks_like_date(snippet):
+    """Return True if snippet contains an obvious date token (month name, DD.MM or YYYY-)."""
+    if re.search(r"\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|tammikuu|helmikuu|maaliskuu|huhtikuu|toukokuu|kesakuu|heinakuu|elokuu|syyskuu|lokakuu|marraskuu|joulukuu)\b", snippet, re.IGNORECASE):
+        return True
+    if re.search(r"\b\d{1,2}[.\-\/]\d{1,2}\b", snippet):
+        return True
+    if re.search(r"\b\d{4}-\d{2}-\d{2}\b", snippet):
+        return True
+    return False
+
+
 def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tampere/"):
     """
     Scrape events from visittampere 'Events in Tampere' article listing.
@@ -464,41 +515,43 @@ def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tamper
         dt = node.find(["time", "span"], attrs={"datetime": True})
         if dt and dt.get("datetime"):
             date_str = parse_fuzzy_date(dt["datetime"])
-        # if not, search text blocks inside node for date-like patterns
+
+        # if not, search text blocks inside node for date-like patterns, but require a clear date token
         if not date_str:
             text_snippets = []
             for el in node.find_all(["p", "div", "span", "li"], recursive=True):
                 txt = el.get_text(" ", strip=True)
                 if txt:
                     text_snippets.append(txt)
-            # check each snippet for a date
             for s in text_snippets:
+                if not _snippet_looks_like_date(s):
+                    continue
                 d = parse_fuzzy_date(s)
                 if d:
                     date_str = d
-                    # also try to capture time like 19:00
                     tm = re.search(r"\b([01]?\d|2[0-3]):([0-5]\d)\b", s)
                     if tm:
                         time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
                     break
 
-        # Final fallback: try page-wide search near the link's parent
+        # Final fallback: try page-wide search near the link's parent by fetching the article page
         if not date_str and url_:
-            # Fetch article page to try to extract date (optional, slower)
             try:
                 art_resp = fetch_with_retries("GET", url_, headers=HEADERS, timeout=15, retries=1, backoff=1)
                 art_soup = BeautifulSoup(art_resp.text, "html.parser")
-                # Common pattern: date in <time> or in a meta tag
                 t = art_soup.find("time")
                 if t and t.get("datetime"):
                     date_str = parse_fuzzy_date(t["datetime"])
                 if not date_str:
-                    # look in first paragraphs
+                    # look in first paragraphs but require obvious date token
                     for p in art_soup.find_all("p", limit=6):
-                        d = parse_fuzzy_date(p.get_text(" ", strip=True))
+                        ptxt = p.get_text(" ", strip=True)
+                        if not _snippet_looks_like_date(ptxt):
+                            continue
+                        d = parse_fuzzy_date(ptxt)
                         if d:
                             date_str = d
-                            tm = re.search(r"\b([01]?\d|2[0-3]):([0-5]\d)\b", p.get_text(" ", strip=True))
+                            tm = re.search(r"\b([01]?\d|2[0-3]):([0-5]\d)\b", ptxt)
                             if tm:
                                 time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
                             break
@@ -508,6 +561,8 @@ def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tamper
 
         # If we still don't have a date, skip (visittampere sometimes lists generic articles)
         if not date_str:
+            # debug output for visibility into skipped nodes
+            print(f"[visittampere] skipping candidate without reliable date: title={title!r} url={url_}", file=sys.stderr)
             continue
 
         ev = {
@@ -754,8 +809,29 @@ def main():
         print("No events parsed from any source — leaving existing data.json untouched.", file=sys.stderr)
         sys.exit(1)
 
+    # Sort
     all_events.sort(key=lambda e: (e["date"], e["time"] or "99:99"))
     raw = [[e["date"], e["time"], e["title"], e["venue"], e.get("genre", "rock"), e.get("free", 0), e.get("url", "")] for e in all_events]
+
+    # Post-filter: remove obviously wrong entries (very long venues, headings, title==venue, heading-like titles)
+    filtered = []
+    for e in raw:
+        date, time_s, title, venue, genre, free, url = e
+        title_l = (title or "").lower()
+        venue_l = (venue or "").lower()
+        if not title or not venue:
+            continue
+        if len(venue) > 60:
+            # likely an article heading captured as venue
+            print(f"[filter] dropping because venue too long: {venue!r} title={title!r} url={url}", file=sys.stderr)
+            continue
+        if title_l == venue_l:
+            print(f"[filter] dropping because title equals venue: {title!r}", file=sys.stderr)
+            continue
+        if re.search(r'\b(home|info|article|artikkeli|kesä|kesällä|DAM|articles|events in tampere)\b', title_l, re.IGNORECASE):
+            print(f"[filter] dropping heading-like title: {title!r}", file=sys.stderr)
+            continue
+        filtered.append(e)
 
     counts = {
         "meteli": len(meteli_events),
@@ -768,17 +844,17 @@ def main():
         "generated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "source_note": (
             f"Auto-scraped from 5 sources (raw counts: {counts}), merged to "
-            f"{len(raw)} events after de-duplication. Music gigs only \u2014 "
+            f"{len(filtered)} events after de-duplication. Music gigs only \u2014 "
             f"theatre/comedy filtered out. Confidence varies by source."
         ),
         "errors": errors,
-        "events": raw,
+        "events": filtered,
     }
 
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=1)
 
-    print(f"Wrote {len(raw)} events to data.json. Per-source raw counts: {counts}", file=sys.stderr)
+    print(f"Wrote {len(filtered)} events to data.json. Per-source raw counts: {counts}", file=sys.stderr)
 
 
 if __name__ == "__main__":
