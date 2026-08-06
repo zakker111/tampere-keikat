@@ -1,10 +1,10 @@
 {
- "generated": "2026-08-06 07:35 UTC",
+ "generated": "2026-08-06 08:42 UTC",
  "source_note": "Auto-scraped from 5 sources (raw counts: {'meteli': 110, 'kohokohdat': 363, 'keikat_org': 14, 'linkedevents': 0, 'visittampere': 23}), merged to 433 events after de-duplication. Music gigs only — theatre/comedy filtered out. Confidence varies by source.",
  "errors": [],
  "events": [
   [
-   "2024-08-22",
+   "2021-10-03",
    "",
    "Contact information",
    "Tampere",
@@ -13,7 +13,7 @@
    "https://visittampere.fi/en/info/contact-information/"
   ],
   [
-   "2024-08-22",
+   "2021-10-03",
    "",
    "Travel industry professionals",
    "Tampere",
@@ -22,7 +22,7 @@
    "https://visittampere.fi/en/professionals/"
   ],
   [
-   "2024-08-22",
+   "2021-10-03",
    "",
    "Map",
    "Tampere",
@@ -31,7 +31,7 @@
    "https://visittampere.fi/en/destinations/?view=map"
   ],
   [
-   "2024-08-22",
+   "2021-10-03",
    "",
    "Visibility on Visit Tampere’s channels",
    "Tampere",
@@ -40,7 +40,7 @@
    "https://visittampere.fi/en/visibility-on-visit-tamperes-channels/"
   ],
   [
-   "2024-08-22",
+   "2021-10-03",
    "",
    "For travel industry professionals",
    "Tampere",
@@ -49,9 +49,9 @@
    "https://visittampere.fi/en/professionals/"
   ],
   [
-   "2024-08-22",
+   "2021-10-03",
    "",
-   "The best sports bars and places for sports fans",
+   "A day in Tampere",
    "Tampere",
    "rock",
    0,
@@ -160,8 +160,8 @@
    "2026-08-01",
    "",
    "Fest Afrika 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/fest-afrika/"
   ],
@@ -169,7 +169,7 @@
    "2026-08-01",
    "",
    "Manserock stadionilla: Manserock-orkesteri ja NEGATIVE",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "classical",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/manserock-stadionilla-manserock-orkesteri-ja-negative/"
@@ -178,7 +178,7 @@
    "2026-08-01",
    "",
    "Tampere Puistoreggae 2026",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "folk",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tampere-puistoreggae/"
@@ -187,7 +187,7 @@
    "2026-08-01",
    "",
    "Lasten FOLK 2026",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "folk",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/haidi-ja-fer/"
@@ -196,8 +196,8 @@
    "2026-08-01",
    "",
    "Manserock Stadionilla x Tornin etkot & jatkot",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/manserock-stadionilla-x-tornin-etkot-jatkot/"
   ],
@@ -205,8 +205,8 @@
    "2026-08-01",
    "",
    "Ryönä-Klubi: Hirvonen & Härkönen, Nautintotarinat, Kinkyosasto, Miska Paamikko",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/ryona-klubi-hirvonen-harkonen-nautintotarinat-kinkyosasto-miska-paamikko/"
   ],
@@ -214,8 +214,8 @@
    "2026-08-01",
    "",
    "Trio Mandeng",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/trio-mandeng/"
   ],
@@ -223,8 +223,8 @@
    "2026-08-01",
    "",
    "LAUKKAFEST: Jukka Nousiainen & Sini Suvanto, Ex-Kurpat, KYKS, Draamakuu",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/laukkafest-jukka-nousiainen-sini-suvanto-ex-kurpat-kyks-draamakuu-dj-jere-seppanen-tapahtumapaikka-vastavirta-klubi-alakerta-liput-15-e/"
   ],
@@ -232,7 +232,7 @@
    "2026-08-01",
    "",
    "Pispala Folk etkot 2026: ËRSHkami, Silja Palomäki",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "folk",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/pispala-folk-etkot-2026-ershkami-silja-palomaki/"
@@ -241,7 +241,7 @@
    "2026-08-01",
    "",
    "Moro Sky Bar DJ:t: Kobi Spinns",
-   "Ratinanniemen festivaalipuisto",
+   "Moro Sky Bar",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-08-01/"
@@ -250,7 +250,7 @@
    "2026-08-01",
    "",
    "Nousu Hip Hop Night",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "hiphop",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/nousu-hip-hop-night-2/"
@@ -259,7 +259,7 @@
    "2026-08-01",
    "",
    "Puisto by Night: Puisto DJ:t",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/puisto-by-night-puisto-djt-2026-08-01/"
@@ -268,8 +268,8 @@
    "2026-08-01",
    "",
    "The Go Getters (SE)",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/the-go-getters-se/"
   ],
@@ -277,8 +277,8 @@
    "2026-08-01",
    "",
    "Anton V. Kivi, Univibe, Kuollut Piimä, niilo karppinen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/anton-v-kivi-univibe-kuollut-piima-niilo-karppinen/"
   ],
@@ -286,8 +286,8 @@
    "2026-08-01",
    "",
    "ALT Agency Summer Sessions: Sonja Selene",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/alt-agency-summer-sessions-emilia-sisco/"
   ],
@@ -295,8 +295,8 @@
    "2026-08-01",
    "",
    "Bad Vision, Bad",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/bad-vision-bad/"
   ],
@@ -304,8 +304,8 @@
    "2026-08-01",
    "",
    "CRYPT CERMON (USA)",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/crypt-cermon-usa/"
   ],
@@ -313,8 +313,8 @@
    "2026-08-01",
    "",
    "Del Futuras",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/del-futuras-2/"
   ],
@@ -322,7 +322,7 @@
    "2026-08-01",
    "",
    "Olympia-korttelin Puutarhan dj:t: PX1 & Lusmu",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/olympia-korttelin-puutarhan-djt-2026-08-01/"
@@ -331,8 +331,8 @@
    "2026-08-01",
    "",
    "Sami Arojoki",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/sami-arojoki-15/"
   ],
@@ -340,7 +340,7 @@
    "2026-08-01",
    "",
    "DJ:t Juissi & Jykke",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/djt-juissi-jykke/"
@@ -349,8 +349,8 @@
    "2026-08-01",
    "",
    "Hervanta Mutilation",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/elektrik-circus-26-centhron-de-moaan-exis-fr-teknohirvi-tba/"
   ],
@@ -358,8 +358,8 @@
    "2026-08-01",
    "",
    "Murrettu Väri",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/murrettu-vari-2/"
   ],
@@ -367,8 +367,8 @@
    "2026-08-01",
    "",
    "90’s Fin Cover Boyz & Girlz",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/bilebandi-highlights-2/"
   ],
@@ -376,7 +376,7 @@
    "2026-08-01",
    "",
    "Kuninkuusravien viralliset jatkot: DJ O-Nine",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/kuninkuusravien-viralliset-jatkot-dj-o-nine/"
@@ -385,7 +385,7 @@
    "2026-08-01",
    "",
    "Puistoreggae-jatkot: Joonas Hauveli & Rytmi-Rengit + Puistoreggae -dj:t & friends",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/puistoreggae-jatkot-joonas-hauveli-rytmi-rengit-puistoreggae-djt-friends/"
@@ -394,8 +394,8 @@
    "2026-08-01",
    "",
    "JUKKAMIES",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jukkamies/"
   ],
@@ -403,8 +403,8 @@
    "2026-08-01",
    "",
    "M’Pää – Where Cameroon’s Atlantic Flavors Meet Finland’s Baltic Experience",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/mpaa-where-cameroons-atlantic-flavors-meet-finlands-baltic-experience/"
   ],
@@ -412,7 +412,7 @@
    "2026-08-01",
    "",
    "Pispala Folk -päätösklubi: Kujakollin jamit + Univibe",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "folk",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/kujakollin-jamit-2026-04-05-2026-05-03-2026-06-07-2026-07-05-2026-08-02/"
@@ -421,7 +421,7 @@
    "2026-08-01",
    "",
    "PISPALA FOLK AFTER PARTY: Degenerados, Dark Bottle, Matilda123",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "folk",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/pispala-folk-after-party-degenerados-dark-bottle-matilda123/"
@@ -430,7 +430,7 @@
    "2026-08-01",
    "",
    "DJ Jiri & Thomas Valentino",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dj-jiri-thomas-valentino/"
@@ -439,7 +439,7 @@
    "2026-08-01",
    "",
    "REGGAETA & MAKKARAA",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "folk",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/reggaeta-makkaraa-4/"
@@ -448,8 +448,8 @@
    "2026-08-01",
    "",
    "Janne Laurila & Ville Lehtovaara",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/janne-laurila-ville-lehtovaara/"
   ],
@@ -457,7 +457,7 @@
    "2026-08-01",
    "",
    "Plevnan Vinyyliveranta – Manserock-spesiaali: DJ Juissi",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/plevnan-vinyyli-keskiviikot-dj-juissi-2026-08-05/"
@@ -466,8 +466,8 @@
    "2026-08-01",
    "",
    "Finlayson Live: Ylva Haru",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/finlayson-live-ylva-haru/"
   ],
@@ -475,8 +475,8 @@
    "2026-08-01",
    "",
    "Pappila live -ilmaiskonsertit: Happy Groove",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/pappila-live-ilmaiskonsertit-happy-groove-2/"
   ],
@@ -484,8 +484,8 @@
    "2026-08-01",
    "",
    "Uittotunnelin kesäkeikat: Seppo Tammilehto & Selkä",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Uittotunneli",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-sani-aartela-kalle-alatalo/"
   ],
@@ -493,8 +493,8 @@
    "2026-08-01",
    "",
    "Friendship Connection",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/friendship-connection-5/"
   ],
@@ -502,7 +502,7 @@
    "2026-08-01",
    "",
    "Kesäkeskiviikko: Ratikkacore Gaiden, Akubara (speedcore live), Avaruussetä, Dreamcoat Rising, Sini, Spugecore (live)",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "metal",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/kesakeskiviikko-ratikkacore-gaiden-akubara-speedcore-live-avaruusseta-dreamcoat-rising-sini-spugecore-live/"
@@ -511,7 +511,7 @@
    "2026-08-01",
    "",
    "DJ DJC",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/wicked-wednesday-dj-djc-9/"
@@ -520,8 +520,8 @@
    "2026-08-01",
    "",
    "Eppu Normaali",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/eppu-normaali-2/"
   ],
@@ -529,8 +529,8 @@
    "2026-08-01",
    "",
    "Tapahtumien Yö 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tapahtumien-yo/"
   ],
@@ -538,8 +538,8 @@
    "2026-08-01",
    "",
    "Eppu Normaali x Tornin etkot & jatkot",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/eppu-normaali-x-tornin-etkot-jatkot/"
   ],
@@ -547,8 +547,8 @@
    "2026-08-01",
    "",
    "Heput soittaa Eppuja",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/heput-soittaa-eppuja/"
   ],
@@ -556,8 +556,8 @@
    "2026-08-01",
    "",
    "Negaatio, Kantør, Miss Vain",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/negaatio-kantor-miss-vain/"
   ],
@@ -565,8 +565,8 @@
    "2026-08-01",
    "",
    "Olli Kärki",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/olli-karki-3/"
   ],
@@ -574,8 +574,8 @@
    "2026-08-01",
    "",
    "The Music of Hans Zimmer",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/the-music-of-hans-zimmer/"
   ],
@@ -583,8 +583,8 @@
    "2026-08-01",
    "",
    "Asuntomessut LIVE: Kake Randelin",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/asuntomessut-live-kake-randelin/"
   ],
@@ -592,8 +592,8 @@
    "2026-08-01",
    "",
    "Lillanin Puutarhajuhlat: TUURE KILPELÄINEN",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/lillanin-puutarhajuhlat-tuure-kilpelainen/"
   ],
@@ -601,8 +601,8 @@
    "2026-08-01",
    "",
    "Solvychegodsk (fin/cyp), Pepita Vanni",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/solvychegodsk-fin-cyp-pepita-vanni/"
   ],
@@ -610,7 +610,7 @@
    "2026-08-01",
    "",
    "Tapahtumien Yö: Tamjazz Collective",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "jazz",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tapahtumien-yo-tamjazz-collective/"
@@ -619,7 +619,7 @@
    "2026-08-01",
    "",
    "Vinyyliverannan TV-tunnarispesiaali",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/vinyyliverannan-tv-tunnarispesiaali/"
@@ -628,7 +628,7 @@
    "2026-08-01",
    "",
    "Country Club",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "jazz",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/country-club/"
@@ -637,7 +637,7 @@
    "2026-08-01",
    "",
    "DJ Jiri",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dj-jiri-23/"
@@ -646,7 +646,7 @@
    "2026-08-01",
    "",
    "Ilonan disco",
-   "Ratinanniemen festivaalipuisto",
+   "Ilona",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/ilonan-disco/"
@@ -655,8 +655,8 @@
    "2026-08-01",
    "",
    "Tapahtumien Yö Telakan terassilla: Yliopiston kuorot, Jamora ry – rumpuesitys",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/puistoreggae-jatkot-joonas-hauveli-rytmi-rengit-puistoreggae-djt-friends-2/"
   ],
@@ -664,8 +664,8 @@
    "2026-08-01",
    "",
    "VINCE BONCAMPER",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/vince-boncamper/"
   ],
@@ -673,7 +673,7 @@
    "2026-08-01",
    "",
    "Kaupunkijazz 2026",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "metal",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/kaupunkijazz/"
@@ -682,7 +682,7 @@
    "2026-08-01",
    "",
    "Silent Disco",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07/"
@@ -691,7 +691,7 @@
    "2026-08-01",
    "",
    "Tampere City Festival 2026",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "festival",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tampere-city-festival/"
@@ -700,8 +700,8 @@
    "2026-08-01",
    "",
    "Konserttiristeily Vesterinen yhtyeineen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/konserttiristeily-eppu-normaalin-keikalle/"
   ],
@@ -709,8 +709,8 @@
    "2026-08-01",
    "",
    "Suvi Teräsniska",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/suvi-terasniska-6/"
   ],
@@ -718,8 +718,8 @@
    "2026-08-01",
    "",
    "1Tipe & Kiertorata",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/1tipe-kiertorata/"
   ],
@@ -727,7 +727,7 @@
    "2026-08-01",
    "",
    "Moro Sky Bar DJ:t",
-   "Ratinanniemen festivaalipuisto",
+   "Moro Sky Bar",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-08-07/"
@@ -736,8 +736,8 @@
    "2026-08-01",
    "",
    "A9 Live: Kova Maa",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/henry-kuronen-duo/"
   ],
@@ -745,8 +745,8 @@
    "2026-08-01",
    "",
    "Bulrusher + Vaalimaa",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/bulrusher-vaalimaa/"
   ],
@@ -754,7 +754,7 @@
    "2026-08-01",
    "",
    "Disko Anksiyete – DJ´s Minkki & Stacye Deathsatan",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/disko-anksiyete-djs-minkki-stacye-deathsatan/"
@@ -763,8 +763,8 @@
    "2026-08-01",
    "",
    "Garbagemen, The Boasters, Jaakko & Jay, Lastauslaiturin Pojat",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/garbagemen-the-boasters-jaakko-jay-lastauslaiturin-pojat/"
   ],
@@ -772,8 +772,8 @@
    "2026-08-01",
    "",
    "Sobernot (CL), Pronoias (CL), Sargassus",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/sobernot-cl-pronoias-cl-sargassus/"
   ],
@@ -781,8 +781,8 @@
    "2026-08-01",
    "",
    "Vesa Oksanen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/vesa-oksanen-12/"
   ],
@@ -790,8 +790,8 @@
    "2026-08-01",
    "",
    "Wiley Cousins trio",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/wiley-cousins-trio-3/"
   ],
@@ -799,8 +799,8 @@
    "2026-08-01",
    "",
    "Yatz3",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/yatz3/"
   ],
@@ -808,7 +808,7 @@
    "2026-08-01",
    "",
    "Milleniaalidisko: dj:t Jiri & Mr. Willy",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/milleniaalidisko-djt-jiri-mr-willy/"
@@ -817,8 +817,8 @@
    "2026-08-01",
    "",
    "JOKU PAIKALLINEN BÄNDI",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/joku-paikallinen-bandi/"
   ],
@@ -826,7 +826,7 @@
    "2026-08-01",
    "",
    "Tampere City Festival jatkot: Kapteeni Lamminen",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "festival",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tampere-city-festival-jatkot-kapteeni-lamminen/"
@@ -835,8 +835,8 @@
    "2026-08-01",
    "",
    "ALEKSI KII & ANTTI TALVITIE GUITAR PARTY",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/aleksi-kii-antti-talvitie-guitar-party/"
   ],
@@ -844,7 +844,7 @@
    "2026-08-01",
    "",
    "Saariblues 2026 TAUOLLA",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "jazz",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/saariblues-festivaali/"
@@ -853,7 +853,7 @@
    "2026-08-01",
    "",
    "Tampere Filharmonian Puistokonsertti 2026",
-   "Ratinanniemen festivaalipuisto",
+   "Armo",
    "classical",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tampere-filharmonian-puistokonsertti/"
@@ -862,8 +862,8 @@
    "2026-08-01",
    "",
    "Anemones, Tanssit, Bunny Cute, J.Mann",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/anemones-tanssit-bunny-cute-j-mann/"
   ],
@@ -871,8 +871,8 @@
    "2026-08-01",
    "",
    "Armo Blip Blop: Juha Valkeapää & Juhani Liiimatainen, SIPILÆ, Turkka Vuorinen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/armo-blip-blop-juha-valkeapaa-juhani-liiimatainen-sipilae-turkka-vuorinen/"
   ],
@@ -880,8 +880,8 @@
    "2026-08-01",
    "",
    "Huvilan",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/huvilan/"
   ],
@@ -889,8 +889,8 @@
    "2026-08-01",
    "",
    "Pan Salmenhaara, L. Don Ōkami",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/pan-salmenhaara-l-don-okami/"
   ],
@@ -898,8 +898,8 @@
    "2026-08-01",
    "",
    "Jere Dangerous, B2B, Sum Cleep",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jere-dangerous-b2b-sum-cleep/"
   ],
@@ -907,8 +907,8 @@
    "2026-08-01",
    "",
    "Blastromen (julkkarit) + Sekret Teknik + Naakka",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/blastromen-julkkarit-sekret-teknik-naakka/"
   ],
@@ -916,8 +916,8 @@
    "2026-08-01",
    "",
    "Gilbert K Triologik",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/gilbert-k-triologik-2/"
   ],
@@ -925,8 +925,8 @@
    "2026-08-01",
    "",
    "Jann Wilde & The Neon Comets, UltraNoir",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jann-wilde-the-neon-comets-ultranoir/"
   ],
@@ -934,8 +934,8 @@
    "2026-08-01",
    "",
    "Classical Trancelations Afterparty",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/classical-trancelations-afterparty/"
   ],
@@ -943,7 +943,7 @@
    "2026-08-01",
    "",
    "DJ Kimik",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dj-kimik-7/"
@@ -952,8 +952,8 @@
    "2026-08-01",
    "",
    "Kino Kosmos",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/kino-kosmos-2/"
   ],
@@ -961,7 +961,7 @@
    "2026-08-01",
    "",
    "DJ O-Nine",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dj-o-nine-11/"
@@ -970,8 +970,8 @@
    "2026-08-01",
    "",
    "ILE & TEUKKA",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/ile-teukka/"
   ],
@@ -979,7 +979,7 @@
    "2026-08-01",
    "",
    "Core piknik jatkot",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "metal",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/core-piknik-jatkot/"
@@ -988,8 +988,8 @@
    "2026-08-01",
    "",
    "Supersunnuntai Tampereella",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/supersunnuntai-tampereella/"
   ],
@@ -997,8 +997,8 @@
    "2026-08-01",
    "",
    "Erik Aho trio",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/erik-aho-trio-3/"
   ],
@@ -1006,7 +1006,7 @@
    "2026-08-01",
    "",
    "Plevnan Vinyyliveranta: DJ Juissi",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/plevnan-vinyyli-keskiviikot-dj-juissi-2026-08-12/"
@@ -1015,7 +1015,7 @@
    "2026-08-01",
    "",
    "Puistokonsertit Laikunlavalla: Orkesteri Laakson Liljat, Hannele Juutinen, Tampereen Ukuleleorkesteri",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "classical",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/puistokonsertit-laikunlavalla-orkesteri-laakson-liljat-hannele-juutinen-tampereen-ukuleleorkesteri/"
@@ -1024,8 +1024,8 @@
    "2026-08-01",
    "",
    "Fingerstyle-kitaristi Pan Salmenhaara",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/fingerstyle-kitaristi-pan-salmenhaara/"
   ],
@@ -1033,8 +1033,8 @@
    "2026-08-01",
    "",
    "Pappila live -ilmaiskonsertit: Hateles",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/pappila-live-ilmaiskonsertit-hateles/"
   ],
@@ -1042,8 +1042,8 @@
    "2026-08-01",
    "",
    "Uittotunnelin kesäkeikat: Heikki Hela & Kalle Alatalo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Uittotunneli",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-seppo-tammilehto-selka/"
   ],
@@ -1051,7 +1051,7 @@
    "2026-08-01",
    "",
    "Laikunlavalla: Kesäsalsat",
-   "Ratinanniemen festivaalipuisto",
+   "Laikunlava",
    "folk",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/laikunlavalla-kesasalsat/"
@@ -1060,8 +1060,8 @@
    "2026-08-01",
    "",
    "Maida Vale",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/maida-vale-2/"
   ],
@@ -1069,7 +1069,7 @@
    "2026-08-01",
    "",
    "Tiikeri, Vänsuut (jap), Punk Lurex, Shock Ward",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "metal",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tiikeri-vansuut-jap-punk-lurex-shock-ward/"
@@ -1078,8 +1078,8 @@
    "2026-08-01",
    "",
    "Laulun Tekijät -ilta: Ullalintulampi, Lauri Seppä",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/laulun-tekijat-ilta-ullalintulampi-lauri-seppa/"
   ],
@@ -1087,8 +1087,8 @@
    "2026-08-01",
    "",
    "Varjokabaree – Emoklubi",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/varjokabaree-emoklubi/"
   ],
@@ -1096,8 +1096,8 @@
    "2026-08-01",
    "",
    "Hannibal & Lecters, Olli PA",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/hannibal-lecters-keikat-tampereella/"
   ],
@@ -1105,8 +1105,8 @@
    "2026-08-01",
    "",
    "Janne Laurila Quartet",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/janne-laurila-quartet-2/"
   ],
@@ -1114,8 +1114,8 @@
    "2026-08-01",
    "",
    "WISBORG (GER) CRISIS MODE RAIN DIARY",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/wisborg-ger-crisis-mode-rain-diary/"
   ],
@@ -1123,8 +1123,8 @@
    "2026-08-01",
    "",
    "Hodari & hittitorstai: Ch & Ch bingo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/hodari-hittitorstai-ch-ch-bingo/"
   ],
@@ -1132,7 +1132,7 @@
    "2026-08-01",
    "",
    "Raikku Rokkaa ja Rakastaa -festivaali 2026",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "festival",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/raikku-rokkaa-ja-rakastaa-festivaali/"
@@ -1141,8 +1141,8 @@
    "2026-08-01",
    "",
    "Midnight Sun Finstrumental Lounge",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/midnight-sun-finstrumental-lounge-3-2026-08-14/"
   ],
@@ -1150,7 +1150,7 @@
    "2026-08-01",
    "",
    "Soul Power G Livelabin terassilla – DJ’s Kallio & Okapi",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "jazz",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/soul-power-g-livelabin-terassilla-djs-kallio-okapi-2/"
@@ -1159,8 +1159,8 @@
    "2026-08-01",
    "",
    "Esa Eloranta",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/esa-eloranta/"
   ],
@@ -1168,8 +1168,8 @@
    "2026-08-01",
    "",
    "Kulanki & Jompulainen, Mikko Sarvanne, Ewoud Van Eetvelde",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/kulanki-jompulainen-mikko-sarvanne-ewoud-van-eetvelde/"
   ],
@@ -1177,7 +1177,7 @@
    "2026-08-01",
    "",
    "Popedan Ajajat",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "hiphop",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/popedan-ajajat/"
@@ -1186,8 +1186,8 @@
    "2026-08-01",
    "",
    "Jukka Poika",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jukka-poika/"
   ],
@@ -1195,8 +1195,8 @@
    "2026-08-01",
    "",
    "Lemmenmursut",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/lemmenmursut-2/"
   ],
@@ -1204,8 +1204,8 @@
    "2026-08-01",
    "",
    "Los Pasados",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/los-pasados/"
   ],
@@ -1213,8 +1213,8 @@
    "2026-08-01",
    "",
    "Mirkka Liesmäki",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/mirkka-liesmaki-2/"
   ],
@@ -1222,7 +1222,7 @@
    "2026-08-01",
    "",
    "Misstapes – DJ Jaanamirjami",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/misstapes-dj-jaanamirjami-2/"
@@ -1231,8 +1231,8 @@
    "2026-08-01",
    "",
    "Mörv, Hautaustoimisto & Off the Grid",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/morv-hautaustoimisto-off-the-grid/"
   ],
@@ -1240,8 +1240,8 @@
    "2026-08-01",
    "",
    "Liveranta: Komiat",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/liveranta-komiat-2/"
   ],
@@ -1249,8 +1249,8 @@
    "2026-08-01",
    "",
    "Sara-Maaria",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/sara-maaria/"
   ],
@@ -1258,7 +1258,7 @@
    "2026-08-01",
    "",
    "DJ Ozan",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dj-o-nine-114/"
@@ -1267,8 +1267,8 @@
    "2026-08-01",
    "",
    "COLIN HARTLEY",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/colin-hartley/"
   ],
@@ -1276,8 +1276,8 @@
    "2026-08-01",
    "",
    "Härstock 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/harstock-festivaali/"
   ],
@@ -1285,7 +1285,7 @@
    "2026-08-01",
    "",
    "Raikku Rokkaa ja Rakastaa -festivaali 2026: Miljoonasade Still Sauerkraut7 Wiley Cousins Trio Oho & Eiku Jill Johnson",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "festival",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/raikku-rokkaa-ja-rakastaa-festivaali-2026-miljoonasade-still-sauerkraut7-wiley-cousins-trio-oho-eiku-jill-johnson/"
@@ -1294,8 +1294,8 @@
    "2026-08-01",
    "",
    "Hullu!Klubi: Viides vuodenaika, Ruttokansantuote, Niskaperseote, VMVP, 197666",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/hulluklubi-viides-vuodenaika-ruttokansantuote-niskaperseote-vmvp-197666/"
   ],
@@ -1303,8 +1303,8 @@
    "2026-08-01",
    "",
    "Absoluuttinen Nollapiste",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/absoluuttinen-nollapiste/"
   ],
@@ -1312,8 +1312,8 @@
    "2026-08-01",
    "",
    "Dos Urbotos Duo plays Klamydia",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dos-urbotos-duo-plays-klamydi/"
   ],
@@ -1321,8 +1321,8 @@
    "2026-08-01",
    "",
    "Uittotunnelin kesäkeikat: Kulkukoirat & Juha Hildén",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Uittotunneli",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-kulkukoirat-juha-hilden/"
   ],
@@ -1330,8 +1330,8 @@
    "2026-08-01",
    "",
    "Clone Statue, Casket Crawlers",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/clone-statue-casket-crawlers/"
   ],
@@ -1339,8 +1339,8 @@
    "2026-08-01",
    "",
    "Joe Vestich (USA)",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/joe-vestich-sisko-ja-sen-veli-pubissa/"
   ],
@@ -1348,8 +1348,8 @@
    "2026-08-01",
    "",
    "Maarit Hurmerinta Duo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/maarit-hurmerinta-duo-2/"
   ],
@@ -1357,7 +1357,7 @@
    "2026-08-01",
    "",
    "80´s vinyl Night – DJ Disparue & DJ Z",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/80s-vinyl-night-dj-disparue-dj-z-2/"
@@ -1366,8 +1366,8 @@
    "2026-08-01",
    "",
    "ALT Agency Summer Sessions: Topi Saha",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/alt-agency-summer-sessions-topi-saha/"
   ],
@@ -1375,8 +1375,8 @@
    "2026-08-01",
    "",
    "Beatline",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/beatline-2/"
   ],
@@ -1384,8 +1384,8 @@
    "2026-08-01",
    "",
    "Grandiradio, Sikuriina Karisukki, Olva, Kirsikkapuu",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/grandiradio-sikuriina-karisukki-olva-kirsikkapuu/"
   ],
@@ -1393,8 +1393,8 @@
    "2026-08-01",
    "",
    "Heidi Valkama yhtyeineen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/heidi-valkama-yhtyeineen/"
   ],
@@ -1402,7 +1402,7 @@
    "2026-08-01",
    "",
    "PERUNABUFFET & FRIENDS – DJ-ILTAMAT: vieraana THE BLASSICS DJ’S",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/perunabuffet-friends-dj-iltamat-vieraana-the-blassics-djs/"
@@ -1411,8 +1411,8 @@
    "2026-08-01",
    "",
    "matilda123, Bluedrive, FIXME",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/matilda123-bluedrive-fixme/"
   ],
@@ -1420,8 +1420,8 @@
    "2026-08-01",
    "",
    "Eartheria, Kallas, Alya North",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/eartheria-kallas-alya-north/"
   ],
@@ -1429,8 +1429,8 @@
    "2026-08-01",
    "",
    "J.Laho rock’n’roll Band",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/j-laho-rocknroll-band/"
   ],
@@ -1438,8 +1438,8 @@
    "2026-08-01",
    "",
    "Leo Luxxxxus",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/leo-luxus/"
   ],
@@ -1447,8 +1447,8 @@
    "2026-08-01",
    "",
    "Groove Brothers",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/groove-brothers/"
   ],
@@ -1456,8 +1456,8 @@
    "2026-08-01",
    "",
    "BROS LARSEN",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/bros-larsen/"
   ],
@@ -1465,8 +1465,8 @@
    "2026-08-01",
    "",
    "Horror Vacui, Shocked Volk",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/horror-vacui-shocked-volk/"
   ],
@@ -1474,7 +1474,7 @@
    "2026-08-01",
    "",
    "DJ Willy",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dj-willy-8/"
@@ -1483,8 +1483,8 @@
    "2026-08-01",
    "",
    "Compañía Kaari & Roni Martin goes ROOTS ja Pekko Käppi & K:H:H:L",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/compania-kaari-roni-martin-goes-roots-ja-pekko-kappi-khhl/"
   ],
@@ -1492,8 +1492,8 @@
    "2026-08-01",
    "",
    "Barbatos (JPN), Beatrix, Ravenous Medicine",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/barbatos-jpn-beatrix-ravenous-medicine/"
   ],
@@ -1501,8 +1501,8 @@
    "2026-08-01",
    "",
    "Markus Savander",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/markus-savander/"
   ],
@@ -1510,8 +1510,8 @@
    "2026-08-01",
    "",
    "Barbatos (Japani), Beatrix, Black Spirits, VMVP",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/barbatos-japani-beatrix-black-spirits-vmvp/"
   ],
@@ -1519,8 +1519,8 @@
    "2026-08-01",
    "",
    "Geordie Greep (UK)",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/geordie-greep-uk/"
   ],
@@ -1528,8 +1528,8 @@
    "2026-08-01",
    "",
    "Anal Womit (PER), R.I.O.T. (UKR)",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/anal-womit-per-r-i-o-t-ukr/"
   ],
@@ -1537,8 +1537,8 @@
    "2026-08-01",
    "",
    "Stetson Brothers",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/stetson-brothers/"
   ],
@@ -1546,8 +1546,8 @@
    "2026-08-01",
    "",
    "Pappila live -ilmaiskonsertit: Jukka Keskitalo & Tyrvää All Stars",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/pappila-live-ilmaiskonsertit-jukka-keskitalo-tyrvaa-all-stars/"
   ],
@@ -1555,8 +1555,8 @@
    "2026-08-01",
    "",
    "Uittotunnelin kesäkeikat: Antti Railio & Kalle Alatalo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Uittotunneli",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-antti-railio-kalle-alatalo/"
   ],
@@ -1564,8 +1564,8 @@
    "2026-08-01",
    "",
    "Emily Scott Robinson (USA), Julia Rautamaa",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/emily-scott-robinson-usa-julia-rautamaa/"
   ],
@@ -1573,8 +1573,8 @@
    "2026-08-01",
    "",
    "Mirka’s Monarchy",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/mirkas-monarchy-3/"
   ],
@@ -1582,8 +1582,8 @@
    "2026-08-01",
    "",
    "Päivi: Lauluja elämän varrelta",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/paivi-lauluja-elaman-varrelta/"
   ],
@@ -1591,8 +1591,8 @@
    "2026-08-01",
    "",
    "Maanalaisen JAMIT",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/maanalaisen-jamit-3/"
   ],
@@ -1600,8 +1600,8 @@
    "2026-08-01",
    "",
    "Masi Luoma – 70 vuotta musiikin juhlaa: Groove Machine, The Wowels",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/masi-luoma-70-vuotta-musiikin-juhlaa-groove-machine-the-wowels/"
   ],
@@ -1609,8 +1609,8 @@
    "2026-08-01",
    "",
    "Blue Skies",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/blue-skies-2/"
   ],
@@ -1618,7 +1618,7 @@
    "2026-08-01",
    "",
    "Sapphic Space Dyke Disco",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/sapphic-space-dyke-disco/"
@@ -1627,8 +1627,8 @@
    "2026-08-01",
    "",
    "Hippijuhla, Meirami",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/hippijuhla-meirami/"
   ],
@@ -1636,8 +1636,8 @@
    "2026-08-01",
    "",
    "Boycott",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/boycott/"
   ],
@@ -1645,8 +1645,8 @@
    "2026-08-01",
    "",
    "Kesäkissat duo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/kesakissat-duo/"
   ],
@@ -1654,8 +1654,8 @@
    "2026-08-01",
    "",
    "K.E.K., Jorpakko, Pornogeneraattori",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/k-e-k-jorpakko-pornogeneraattori/"
   ],
@@ -1663,8 +1663,8 @@
    "2026-08-01",
    "",
    "Somehow jo, Lumious Mind, Sleeth",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/somehow-jo-lumious-mind-sleeth/"
   ],
@@ -1672,7 +1672,7 @@
    "2026-08-01",
    "",
    "DJ Riku",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dj-riku-9/"
@@ -1681,8 +1681,8 @@
    "2026-08-01",
    "",
    "The Blaster Master",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/the-blaster-master/"
   ],
@@ -1690,8 +1690,8 @@
    "2026-08-01",
    "",
    "VINCE & EDI DUO",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/vince-edi-duo/"
   ],
@@ -1699,8 +1699,8 @@
    "2026-08-01",
    "",
    "Hiedanrannan Puutarhajuhlat 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/hiedanrannan-puutarhajuhlat-2026/"
   ],
@@ -1708,8 +1708,8 @@
    "2026-08-01",
    "",
    "Kirjaslampirock 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/kirjaslampirock/"
   ],
@@ -1717,8 +1717,8 @@
    "2026-08-01",
    "",
    "ViinikkalaFest 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/viinikkalafest/"
   ],
@@ -1726,8 +1726,8 @@
    "2026-08-01",
    "",
    "LandeFest: Stenari",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/landefest-stenari/"
   ],
@@ -1735,8 +1735,8 @@
    "2026-08-01",
    "",
    "Ahola, Töyssy  &  Ahola: Koko Komedia laulaa",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/ahola-toyssy-ahola-koko-komedia-laulaa/"
   ],
@@ -1744,8 +1744,8 @@
    "2026-08-01",
    "",
    "Reetan ja Mikon rakkaussynttärit: Lover, Hertta Q, EJH",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/reetan-ja-mikon-rakkaussynttarit-lover-hertta-q-ejh/"
   ],
@@ -1753,8 +1753,8 @@
    "2026-08-01",
    "",
    "Kadun Kaswatti plays Irwin",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/kadun-kaswatti-plays-irwin/"
   ],
@@ -1762,8 +1762,8 @@
    "2026-08-01",
    "",
    "Lover, Hertta Q, Eero Heinosen huutorunoja",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/lover-hertta-q-eero-heinosen-huutorunoja/"
   ],
@@ -1771,8 +1771,8 @@
    "2026-08-01",
    "",
    "Manserock-risteily: Juri Lindeman ja Kalle Alatalo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/manserock-risteily-2/"
   ],
@@ -1780,8 +1780,8 @@
    "2026-08-01",
    "",
    "Virve Rosti, Freeman ja Menneisyyden vangit",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/virve-rosti-freeman-ja-menneisyyden-vangit-2/"
   ],
@@ -1789,8 +1789,8 @@
    "2026-08-01",
    "",
    "Mikko Juvonen, Proto-Torvinen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/mikko-juvonen-proto-torvinen/"
   ],
@@ -1798,8 +1798,8 @@
    "2026-08-01",
    "",
    "Jeff Moon (USA)",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jeff-moon-usa/"
   ],
@@ -1807,8 +1807,8 @@
    "2026-08-01",
    "",
    "A9 Live: Ilja Jalkanen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/a9-live-ilja-jalkanen/"
   ],
@@ -1816,7 +1816,7 @@
    "2026-08-01",
    "",
    "DJ:t Altti ja Juissi",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/djt-altti-ja-juissi/"
@@ -1825,7 +1825,7 @@
    "2026-08-01",
    "",
    "Elokuinen Disco Ikinuorille: Topi Honkonen",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/elokuinen-disco-ikinuorille-topi-honkonen/"
@@ -1834,8 +1834,8 @@
    "2026-08-01",
    "",
    "Jari Koivisto Työväenlauluja",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jari-koivisto-tyovaenlauluja/"
   ],
@@ -1843,7 +1843,7 @@
    "2026-08-01",
    "",
    "Rock/Rap/Indie/Pop/Funk Mayhem!",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "hiphop",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/rock-rap-indie-pop-funk-mayhem/"
@@ -1852,7 +1852,7 @@
    "2026-08-01",
    "",
    "DJ Sara-Maaria",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dj-sara-maaria-10/"
@@ -1861,8 +1861,8 @@
    "2026-08-01",
    "",
    "Mötherhead Plays Motörhead",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/motherhead-plays-motorhead/"
   ],
@@ -1870,8 +1870,8 @@
    "2026-08-01",
    "",
    "R.E.M. For The People",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/r-e-m-for-the-people/"
   ],
@@ -1879,8 +1879,8 @@
    "2026-08-01",
    "",
    "Rentun Ruusut -Duo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/rentun-ruusut-duo/"
   ],
@@ -1888,8 +1888,8 @@
    "2026-08-01",
    "",
    "THE FAIR ATTEMPTS, LIRPO, HERJA",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/the-fair-attempts-lirpo-herja/"
   ],
@@ -1897,8 +1897,8 @@
    "2026-08-01",
    "",
    "SQUARE ROOT 9",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/square-root-9/"
   ],
@@ -1906,7 +1906,7 @@
    "2026-08-01",
    "",
    "TamJazz: Kanvas + keikan jälkeen jamit",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "jazz",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tamjazz-klubi-mikko-pettinen-why-not/"
@@ -1915,8 +1915,8 @@
    "2026-08-01",
    "",
    "Riku Poramo trio",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/riku-poramo-trio-3/"
   ],
@@ -1924,8 +1924,8 @@
    "2026-08-01",
    "",
    "Pikkuvenetsialaiset",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/pikkuvenetsialaiset/"
   ],
@@ -1933,8 +1933,8 @@
    "2026-08-01",
    "",
    "Puistokonsertit Laikunlavalla: SPOIL., Demonessa, Ashenplains",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/puistokonsertit-laikunlavalla-spoil-demonessa-ashenplains/"
   ],
@@ -1942,8 +1942,8 @@
    "2026-08-01",
    "",
    "Roamin Street Bandin Gumbo Club Huurteessa",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/roamin-street-bandin-gumbo-club-huurteessa-2-2026-08-26/"
   ],
@@ -1951,8 +1951,8 @@
    "2026-08-01",
    "",
    "Uittotunnelin kesäkeikat: Pauli Hanhiniemi & Ville Rauhala MAD",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-pauli-hanhiniemi-ville-rauhala-mad/"
   ],
@@ -1960,8 +1960,8 @@
    "2026-08-01",
    "",
    "Henry Ojutkangas trio",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/henry-ojutkangas-trio-2/"
   ],
@@ -1969,8 +1969,8 @@
    "2026-08-01",
    "",
    "Laikunlavalla: Kesäsalsojen päätöskonsertti – Grupo Kaney",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Laikunlava",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/laikunlavalla-kesasalsojen-paatoskonsertti-grupo-kaney/"
   ],
@@ -1978,8 +1978,8 @@
    "2026-08-01",
    "",
    "Dingo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dingo/"
   ],
@@ -1987,8 +1987,8 @@
    "2026-08-01",
    "",
    "Liekkiyö 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/liekkiyo/"
   ],
@@ -1996,7 +1996,7 @@
    "2026-08-01",
    "",
    "Vauhti Kiihtyy Festivaali 2026",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "festival",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/vauhti-kiihtyy-festivaali/"
@@ -2005,8 +2005,8 @@
    "2026-08-01",
    "",
    "Waltikan venetsialaiset 2026: Kuumaa Portion Boys Petri Nygård Kake Randelin Sonata Arctica",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/waltikan-venetsialaiset-2026-kuumaa-portion-boys-petri-nygard-kake-randelin-sonata-arctica/"
   ],
@@ -2014,8 +2014,8 @@
    "2026-08-01",
    "",
    "Gravity Well (IRL), Orbiter, Craneium, Sapata",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/gravity-well-irl-orbiter-craneium-sapata/"
   ],
@@ -2023,8 +2023,8 @@
    "2026-08-01",
    "",
    "Crisella, Sekopoltsit, Kauno",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/crisella-sekopoltsit-kauno/"
   ],
@@ -2032,7 +2032,7 @@
    "2026-08-01",
    "",
    "Ewa Kaarela Swing Band",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "jazz",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/ewa-kaarela-swing-band/"
@@ -2041,8 +2041,8 @@
    "2026-08-01",
    "",
    "Matthau Mikojan",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/matthau-mikojan/"
   ],
@@ -2050,8 +2050,8 @@
    "2026-08-01",
    "",
    "MONOKATE (UKR)",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/monokate-ukr/"
   ],
@@ -2059,8 +2059,8 @@
    "2026-08-01",
    "",
    "Blackment, Despiser, Armed, Roadkill",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/blackment-despiser-armed-roadkill/"
   ],
@@ -2068,8 +2068,8 @@
    "2026-08-01",
    "",
    "A9 Live: Emppu Suhonen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/a9-live-emppu-suhonen/"
   ],
@@ -2077,7 +2077,7 @@
    "2026-08-01",
    "",
    "J. Jyrkänkoski Bluesband",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "jazz",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/j-jyrkankoski-bluesband-2/"
@@ -2086,8 +2086,8 @@
    "2026-08-01",
    "",
    "Sapata, Gravity Well (IRL),Orbiter, Craneium",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/sapata-gravity-well-irlorbiter-craneium/"
   ],
@@ -2095,7 +2095,7 @@
    "2026-08-01",
    "",
    "Bilebändi JAYHO + DJ O-Nine",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/bilebandi-jayho-dj-o-nine/"
@@ -2104,7 +2104,7 @@
    "2026-08-01",
    "",
    "Glow -festival 2026",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "festival",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/glow-festival/"
@@ -2113,7 +2113,7 @@
    "2026-08-01",
    "",
    "Waltikan venetsialaiset 2026: Popeda, Arttu Wiskari, Elastinen, Nylon Beat, Stratovarius ja XL5",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "hiphop",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/waltikan-venetsialaiset-2026-popeda-arttu-wiskari-elastinen-nylon-beat-stratovarius-ja-xl5/"
@@ -2122,8 +2122,8 @@
    "2026-08-01",
    "",
    "Coitus Int 50 Revival",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/coitus-int-50-revival/"
   ],
@@ -2131,7 +2131,7 @@
    "2026-08-01",
    "",
    "Jazz&Blues -risteily Tarjanteella",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "jazz",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jazzblues-risteily-tarjanteella-riku-poramo-trio/"
@@ -2140,8 +2140,8 @@
    "2026-08-01",
    "",
    "Angelus Apatrida (ES), Prestige, Dethrone, Catalepsy",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/angelus-apatrida-es-prestige-dethrone-catalepsy/"
   ],
@@ -2149,8 +2149,8 @@
    "2026-08-01",
    "",
    "Black Devils feat. Ile Kallio & Janne Louhivuori",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/black-devils-feat-ile-kallio-janne-louhivuori-3/"
   ],
@@ -2158,8 +2158,8 @@
    "2026-08-01",
    "",
    "KAISER66 X Röökihaus",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/kaiser66-x-rookihaus/"
   ],
@@ -2167,8 +2167,8 @@
    "2026-08-01",
    "",
    "Tuomas Räisänen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tuomas-raisanen/"
   ],
@@ -2176,8 +2176,8 @@
    "2026-08-01",
    "",
    "Pyhät Nuket, Syyskuu",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/skyjoggers-kaleidobolt-samane/"
   ],
@@ -2185,8 +2185,8 @@
    "2026-08-01",
    "",
    "ALT Agency Summer Sessions: Aksel Kankaanranta",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/alt-agency-summer-sessions-aksel-kankaanranta/"
   ],
@@ -2194,8 +2194,8 @@
    "2026-08-01",
    "",
    "Hoc est Bellum, Hellgate Necrosodomy, Clactonian, Hekatoxen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/hoc-est-bellum-hellgate-necrosodomy-clactonian-hekatoxen/"
   ],
@@ -2203,8 +2203,8 @@
    "2026-08-01",
    "",
    "The Wowels",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/the-wowels/"
   ],
@@ -2212,7 +2212,7 @@
    "2026-08-01",
    "",
    "Yo! Soho Raps! DJ EC & DJ Laki",
-   "Ratinanniemen festivaalipuisto",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/yo-soho-raps-dj-ec-dj-laki/"
@@ -2221,8 +2221,8 @@
    "2026-08-01",
    "",
    "Antsu Haahtela",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/antsu-haahtela/"
   ],
@@ -2230,8 +2230,8 @@
    "2026-08-01",
    "",
    "Kimik",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/kimik-8/"
   ],
@@ -2239,8 +2239,8 @@
    "2026-08-01",
    "",
    "Bilejuna",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/bilejuna/"
   ],
@@ -2248,8 +2248,8 @@
    "2026-08-01",
    "",
    "A-J KESKINEN",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/a-j-keskinen-3/"
   ],
@@ -2257,8 +2257,8 @@
    "2026-08-01",
    "",
    "Joonas Lepistön muistokonsertti",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
+   "Tampere",
+   "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/speed-metal-afterparty/"
   ],
@@ -2788,7 +2788,7 @@
    "2026-09-02",
    "",
    "Forces, Luke Lund & Sidewards Ebb",
-   "G Livelab Tampere",
+   "Armo",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/forces-luke-lund-sidewards-ebb/"
@@ -2797,7 +2797,7 @@
    "2026-09-02",
    "",
    "Haight, Sunvoyeur, Turbo Testicles",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/haight-sunvoyeur-turbo-testicles/"
@@ -2806,7 +2806,7 @@
    "2026-09-02",
    "",
    "Issias Duo Selkä & Katwi",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/issias-duo-selka-katwi/"
@@ -2815,7 +2815,7 @@
    "2026-09-02",
    "",
    "Jaakko Laitinen & Väärä Raha",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jaakko-laitinen-vaara-raha-3/"
@@ -2824,7 +2824,7 @@
    "2026-09-02",
    "",
    "A9 Live: Pasi Vainionperä",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/a9-live-pasi-vainionpera/"
@@ -2833,7 +2833,7 @@
    "2026-09-02",
    "",
    "Silent Disco",
-   "G Livelab Tampere",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07-2026-08-14-2026-08-21-2026-08-28-2026-09-04/"
@@ -2842,7 +2842,7 @@
    "2026-09-02",
    "",
    "Tyrvää Jazz 2026",
-   "G Livelab Tampere",
+   "Tampere",
    "jazz",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tyrvaa-jazz/"
@@ -2851,7 +2851,7 @@
    "2026-09-02",
    "",
    "Moro Sky Bar DJ:t",
-   "G Livelab Tampere",
+   "Moro Sky Bar",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-04/"
@@ -2860,7 +2860,7 @@
    "2026-09-02",
    "",
    "Pintandwefall",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/pintandwefall/"
@@ -2869,7 +2869,7 @@
    "2026-09-02",
    "",
    "Acoustenced & Ehdonalainen – We Still Play Sentenced",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/acoustenced-ehdonalainen-we-still-play-sentenced/"
@@ -2878,7 +2878,7 @@
    "2026-09-02",
    "",
    "DJ Ozan",
-   "G Livelab Tampere",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dj-ozan-2/"
@@ -2887,7 +2887,7 @@
    "2026-09-02",
    "",
    "Pispalan Saunafest 2026",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/pispalan-saunafest/"
@@ -2896,7 +2896,7 @@
    "2026-09-02",
    "",
    "+ Juggling Jugulars, Abduktio, Puhelinseksi",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/juggling-jugulars-abduktio-puhelinseksi/"
@@ -2905,7 +2905,7 @@
    "2026-09-02",
    "",
    "An Evening With Kiuas",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/an-evening-with-kiuas/"
@@ -2914,7 +2914,7 @@
    "2026-09-02",
    "",
    "Colin Hartley",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/colin-hartley-4/"
@@ -2923,7 +2923,7 @@
    "2026-09-02",
    "",
    "Billie Joelina",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/billie-joelina-2/"
@@ -2932,7 +2932,7 @@
    "2026-09-02",
    "",
    "Funebrarum (USA) + support",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/funebrarum-usa-support/"
@@ -2941,7 +2941,7 @@
    "2026-09-02",
    "",
    "Honey B & T-Bones",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/honey-b-t-bones-2/"
@@ -2950,7 +2950,7 @@
    "2026-09-02",
    "",
    "Hekypop 2: Joku Puhuu, Maida Vale, Kesyt Jätkät",
-   "G Livelab Tampere",
+   "Tampere",
    "hiphop",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/hekypop-2-joku-puhuu-maida-vale-kesyt-jatkat/"
@@ -2959,7 +2959,7 @@
    "2026-09-02",
    "",
    "DJ O-Nine",
-   "G Livelab Tampere",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dj-o-nine-16/"
@@ -2968,7 +2968,7 @@
    "2026-09-02",
    "",
    "DJ:t Jaana Mirjami & Karri Tappio, Sara-Maaria",
-   "G Livelab Tampere",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/djt-jaana-mirjami-karri-tappio-sara-maaria/"
@@ -2977,7 +2977,7 @@
    "2026-09-02",
    "",
    "Kujakollin jamit",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/kujakollin-jamit-2026-04-05-2026-05-03-2026-06-07-2026-07-05-2026-08-02-2026-09-06/"
@@ -2986,7 +2986,7 @@
    "2026-09-02",
    "",
    "Fatboy (SE)",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/fatboy-se-2/"
@@ -2995,7 +2995,7 @@
    "2026-09-02",
    "",
    "DJ Petermayn",
-   "G Livelab Tampere",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dj-petermayn-4/"
@@ -3004,7 +3004,7 @@
    "2026-09-02",
    "",
    "Tampere Guitar Festival 2026",
-   "G Livelab Tampere",
+   "Tampere",
    "festival",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tampere-guitar-festival/"
@@ -3013,7 +3013,7 @@
    "2026-09-02",
    "",
    "Ilmavoimien Big Band & Olli Soikkeli: Django!",
-   "G Livelab Tampere",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/ilmavoimien-big-band-olli-soikkeli-django/"
@@ -3022,7 +3022,7 @@
    "2026-09-02",
    "",
    "touko (EP-julkkarit) + Viive",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/touko-ep-julkkarit-viive/"
@@ -3031,7 +3031,7 @@
    "2026-09-02",
    "",
    "The Psychward Breakouts, De La Rocka & The Garbagemen",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/the-psychward-breakouts-de-la-rocka-the-garbagemen/"
@@ -3040,7 +3040,7 @@
    "2026-09-02",
    "",
    "VERMILIA, AETHER (PL), FOLKRIM",
-   "G Livelab Tampere",
+   "Tampere",
    "folk",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/vermilia-aether-pl-folkrim/"
@@ -3049,7 +3049,7 @@
    "2026-09-02",
    "",
    "Särkänniemen Kesäkauden päättäjäiset ja ilotulitus 2026",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/sarkanniemen-kesakauden-paattajaiset-ja-ilotulitus/"
@@ -3058,7 +3058,7 @@
    "2026-09-02",
    "",
    "Jukka Perko & Jay Kortehisto: Foxtet",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jukka-perko-jay-kortehisto-foxtet/"
@@ -3067,7 +3067,7 @@
    "2026-09-02",
    "",
    "Stenari",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/stenari-2/"
@@ -3076,7 +3076,7 @@
    "2026-09-02",
    "",
    "The Munsons (Tokela & Tommi Viksten)",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/the-munsons-tokela-tommi-viksten/"
@@ -3085,7 +3085,7 @@
    "2026-09-02",
    "",
    "NITS (NL)",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/nits-nl/"
@@ -3094,7 +3094,7 @@
    "2026-09-02",
    "",
    "Timo Kämäräinen",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/timo-kamarainen/"
@@ -3103,7 +3103,7 @@
    "2026-09-02",
    "",
    "Joose Keskitalo & The Mystic Revelation Of Teppo Repo",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/joose-keskitalo-the-mystic-revelation-of-teppo-repo/"
@@ -3112,7 +3112,7 @@
    "2026-09-02",
    "",
    "Tommy Lindgren Metropolis – Sininen kaupunki Revisited",
-   "G Livelab Tampere",
+   "Tampere",
    "metal",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tommy-lindgren-metropolis-sininen-kaupunki-revisited/"
@@ -3121,7 +3121,7 @@
    "2026-09-02",
    "",
    "Aknestik – Vien Sun Sydämen Pohjoiseen 40-vuotisjuhlakiertue",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/aknestik-vien-sun-sydamen-pohjoiseen-40-vuotisjuhlakiertue/"
@@ -3130,7 +3130,7 @@
    "2026-09-02",
    "",
    "Lost in Music: LASTOUT, Rioghan, King Satan",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/lost-in-music-lastout-rioghan-king-satan/"
@@ -3139,7 +3139,7 @@
    "2026-09-02",
    "",
    "Tumppi Varonen & Problems, Pelle Miljoona, Kärtsy Hatakka (Waltari)",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tumppi-varonen-problems-pelle-miljoona-kartsy-hatakka-waltari/"
@@ -3148,7 +3148,7 @@
    "2026-09-02",
    "",
    "The Clash Meets The Jam",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/the-clash-meets-the-jam/"
@@ -3157,7 +3157,7 @@
    "2026-09-02",
    "",
    "TERESIA VON STORM, ELEKTRIC ROKBAND, DISTANT HORIZON",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/teresia-von-storm-elektric-rokband-distant-horizon/"
@@ -3166,7 +3166,7 @@
    "2026-09-02",
    "",
    "Lost Society & HOKKA: Miseria is a State of Mind – Tour, Support: St. Aurora",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/lost-society-hokka-miseria-is-a-state-of-mind-tour-support-st-aurora/"
@@ -3175,7 +3175,7 @@
    "2026-09-02",
    "",
    "Jack & Jones",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jack-jones/"
@@ -3184,7 +3184,7 @@
    "2026-09-02",
    "",
    "LOWHILL, LIGHTBEARER, IN THORNS",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/lowhill-lightbearer-in-thorns/"
@@ -3193,7 +3193,7 @@
    "2026-09-02",
    "",
    "Emodisko",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/emodisko-3/"
@@ -3202,7 +3202,7 @@
    "2026-09-02",
    "",
    "Irina: Akustinen ilta",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/irina-akustinen-ilta/"
@@ -3211,7 +3211,7 @@
    "2026-09-02",
    "",
    "Lemonator",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/lemonator/"
@@ -3220,7 +3220,7 @@
    "2026-09-02",
    "",
    "K40-disco: DJ:t Sami & Antti",
-   "G Livelab Tampere",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/k40-disco-djt-sami-antti-3/"
@@ -3229,7 +3229,7 @@
    "2026-09-02",
    "",
    "Mikko Alatalo",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/mikko-alatalo-2/"
@@ -3238,7 +3238,7 @@
    "2026-09-02",
    "",
    "Juha Tretjakov",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/juha-tretjakov-3/"
@@ -3247,7 +3247,7 @@
    "2026-09-02",
    "",
    "A9 Live: Kauko Röyhkä",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/a9-live-kauko-royhka/"
@@ -3256,7 +3256,7 @@
    "2026-09-02",
    "",
    "Out Of Breath, Madella, Denshi, True Grit, Twisting Knives",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/out-of-breath-madella-denshi-true-grit-twisting-knives/"
@@ -3265,7 +3265,7 @@
    "2026-09-02",
    "",
    "GRAVECITY BANDITS, MANIC ORDER, DANGER HÅT",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/gravecity-bandits-manic-order-danger-hat/"
@@ -3274,7 +3274,7 @@
    "2026-09-02",
    "",
    "DJ:t Antti H & Sami",
-   "G Livelab Tampere",
+   "Tampere",
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/djt-antti-h-sami/"
@@ -3283,7 +3283,7 @@
    "2026-09-02",
    "",
    "Diandra – Hymni rakkaudelle",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/diandra-hymni-rakkaudelle/"
@@ -3292,7 +3292,7 @@
    "2026-09-02",
    "",
    "Irkkujamit",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/irkkujamit-7/"
@@ -3301,7 +3301,7 @@
    "2026-09-02",
    "",
    "Roamin Street Bandin Gumbo Club Huurteessa",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/roamin-street-bandin-gumbo-club-huurteessa-2-2026-09-30/"
@@ -3484,7 +3484,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-474"
+   "https://keikat.org/off-teatteri-473"
   ],
   [
    "2026-09-14",
@@ -3556,7 +3556,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-511"
+   "https://keikat.org/uudet-teatteri-509"
   ],
   [
    "2026-09-18",
@@ -3565,7 +3565,7 @@
    "00 Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-517"
+   "https://keikat.org/elämä-vastavirta-klub-515"
   ],
   [
    "2026-09-19",
@@ -3727,7 +3727,7 @@
    "00 Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-608"
+   "https://keikat.org/music-tampere-talo-606"
   ],
   [
    "2026-10-02",
@@ -3817,7 +3817,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-648"
+   "https://keikat.org/off-teatteri-646"
   ],
   [
    "2026-10-08",
@@ -3862,7 +3862,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-835"
+   "https://keikat.org/tehdas-teatteri-832"
   ],
   [
    "2026-11-18",
@@ -3871,7 +3871,7 @@
    "00 Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-932"
+   "https://keikat.org/sorin-sorin-928"
   ],
   [
    "2026-11-21",
@@ -3880,7 +3880,7 @@
    "00 Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-953"
+   "https://keikat.org/kotae-tampereen-949"
   ],
   [
    "2027-02-01",
@@ -3889,7 +3889,7 @@
    "00 Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1110"
+   "https://keikat.org/magda-vooninki-1104"
   ],
   [
    "2027-06-18",
@@ -3898,7 +3898,7 @@
    "00 Hiedanrannan Tehdasaukio",
    "festival",
    0,
-   "https://keikat.org/ankea-hiedanrannan-1129"
+   "https://keikat.org/ankea-hiedanrannan-1123"
   ]
  ]
 }
