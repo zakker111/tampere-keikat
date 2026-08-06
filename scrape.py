@@ -74,6 +74,20 @@ def guess_genre(title, venue):
     return DEFAULT_GENRE
 
 
+def venue_looks_valid(venue):
+    """Rejects garbled venue splits (e.g. '00 Tampereen Messu...' from a
+    mis-parsed time like '20:00') that individual parsers might still let
+    through. Applied as a last line of defense in main()'s post-filter too."""
+    if not venue or len(venue.strip()) < 2:
+        return False
+    v = venue.strip()
+    if v[0].isdigit():
+        return False
+    if not re.search(r"[a-zA-ZåäöÅÄÖ]", v):
+        return False
+    return True
+
+
 def month_url(year, month):
     slug = MONTH_SLUGS[month]
     return f"{BASE}/tampere/tapahtumat-tampere/keikat-tampere-{slug}/"
@@ -325,6 +339,9 @@ KNOWN_VENUES = [
     "Ratinanniemen festivaalipuisto", "Sorsapuisto", "Finlaysonin Palatsi",
     "Väinö Linnan aukio", "Tyrvään Pappila", "Kuudes Linja", "Semifinal",
     "Kulttuuritehdas Korjaamo", "Tavastia-klubi", "Nekala", "Ylöjärven kaupungintalo",
+    "Tampereen Messu- ja Urheilukeskus", "Ratinanniemi", "Hakametsän jäähalli",
+    "Spiral Tampere", "Sorin Sirkus", "Vooninki", "Hiedanrannan Tehdasaukio",
+    "Teatteri Telakka", "TTT-Klubi", "Kulttuuritalo Laikku", "Pyynikki",
 ]
 KNOWN_VENUES_SORTED = sorted(KNOWN_VENUES, key=len, reverse=True)
 
@@ -529,7 +546,153 @@ def _snippet_looks_like_date(snippet):
     return False
 
 
-def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tampere/"):
+NAV_TITLE_BLACKLIST = [
+    "contact information", "accommodation", "for media", "eat and drink",
+    "see and do", "map", "professionals", "for travel industry professionals",
+    "top attractions", "articles", "destinations", "visibility on",
+    "a day in tampere", "summer cruises", "cafés in tampere",
+    "top tips for summer",
+]
+
+
+def fetch_visittampere(url="https://visittampere.fi/en/events/"):
+    # Real fix (previous version pointed at the blog-style "/en/articles/
+    # events-in-tampere/" page, which is prose, not a card listing \u2014 that's
+    # why it only ever found generic page elements). Confirmed via search
+    # that the real per-event pages live under /en/events/ (e.g.
+    # /en/events/tove-festivaali/), so the sanity-check below now requires
+    # "/events/" in the URL instead of the old "/tapahtuma/" check, which
+    # was checking for kohokohdat's URL pattern on the wrong site \u2014 that
+    # bug is exactly why "Contact information" slipped through before.
+    # Still unverified against the live site (no internet access in the
+    # sandbox that built this), so keep an eye on its raw count in
+    # source_note after the first real run.
+    events = []
+    try:
+        resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=2, backoff=1)
+    except Exception as exc:
+        log_http_error("visittampere", exc)
+        return events
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    candidates = []
+    candidates.extend(soup.find_all("article"))
+    candidates.extend(soup.select("[class*='card'], [class*='item'], [class*='article']"))
+    for h in soup.find_all(["h2", "h3", "h4"]):
+        a = h.find("a", href=True)
+        if a:
+            candidates.append(h)
+
+    seen = set()
+    for node in candidates:
+        a = node.find("a", href=True)
+        title = None
+        url_ = None
+        if a:
+            title = a.get_text(" ", strip=True)
+            url_ = urljoin(url, a["href"])
+        else:
+            h = node.find(["h2", "h3", "h4"])
+            if h and h.get_text(strip=True):
+                title = h.get_text(" ", strip=True)
+        if not title:
+            strong = node.find(["strong", "b"])
+            if strong:
+                title = strong.get_text(" ", strip=True)
+        if not title:
+            continue
+        if any(bad in title.lower() for bad in NAV_TITLE_BLACKLIST):
+            continue
+
+        key = (title.lower(), url_ or "")
+        if key in seen:
+            continue
+        seen.add(key)
+
+        # Positive signal required regardless of where the date came from:
+        # this site's real event pages live under /events/. No URL match,
+        # no event \u2014 this replaces the old date_from_time bypass that let
+        # non-event pages through.
+        if not url_ or "/events/" not in url_.lower():
+            continue
+
+        date_str = None
+        time_str = ""
+        dt = node.find(["time", "span"], attrs={"datetime": True})
+        if dt and dt.get("datetime"):
+            date_str = parse_fuzzy_date(dt["datetime"])
+
+        if not date_str:
+            text_snippets = []
+            for el in node.find_all(["p", "div", "span", "li"], recursive=True):
+                txt = el.get_text(" ", strip=True)
+                if txt:
+                    text_snippets.append(txt)
+            for s in text_snippets:
+                if not _snippet_looks_like_date(s):
+                    continue
+                d = parse_fuzzy_date(s)
+                if d:
+                    date_str = d
+                    tm = re.search(r"\b([01]?\d|2[0-3]):([0-5]\d)\b", s)
+                    if tm:
+                        time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
+                    break
+
+        if not date_str:
+            try:
+                art_resp = fetch_with_retries("GET", url_, headers=HEADERS, timeout=15, retries=1, backoff=1)
+                art_soup = BeautifulSoup(art_resp.text, "html.parser")
+                t = art_soup.find("time")
+                if t and t.get("datetime"):
+                    date_str = parse_fuzzy_date(t["datetime"])
+                if not date_str:
+                    for p in art_soup.find_all("p", limit=6):
+                        ptxt = p.get_text(" ", strip=True)
+                        if not _snippet_looks_like_date(ptxt):
+                            continue
+                        d = parse_fuzzy_date(ptxt)
+                        if d:
+                            date_str = d
+                            tm = re.search(r"\b([01]?\d|2[0-3]):([0-5]\d)\b", ptxt)
+                            if tm:
+                                time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
+                            break
+            except Exception:
+                pass
+
+        if not date_str:
+            print(f"[visittampere] skipping candidate without reliable date: title={title!r} url={url_}", file=sys.stderr)
+            continue
+
+        if any(kw in title.lower() for kw in EXCLUDE_KEYWORDS):
+            continue
+
+        events.append({
+            "date": date_str,
+            "time": time_str,
+            "title": title,
+            "venue": "Tampere",
+            "genre": guess_genre(title, "Tampere"),
+            "free": 0,
+            "url": url_,
+        })
+
+    dedup = []
+    seen_keys = set()
+    for e in events:
+        k = (e["date"], e["title"].lower())
+        if k in seen_keys:
+            continue
+        seen_keys.add(k)
+        dedup.append(e)
+
+    print(f"[visittampere] parsed {len(dedup)} events", file=sys.stderr)
+    return dedup
+
+
+def _fetch_visittampere_impl(url="https://visittampere.fi/en/articles/events-in-tampere/"):
     events = []
     try:
         resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=2, backoff=1)
@@ -878,11 +1041,19 @@ def main():
     raw = [[e["date"], e["time"], e["title"], e["venue"], e.get("genre", "rock"), e.get("free", 0), e.get("url", "")] for e in all_events]
 
     filtered = []
+    date_window_start = (today - datetime.timedelta(days=3)).isoformat()
+    date_window_end = (today + datetime.timedelta(days=200)).isoformat()
     for e in raw:
         date, time_s, title, venue, genre, free, url = e
         title_l = (title or "").lower()
         venue_l = (venue or "").lower()
         if not title or not venue:
+            continue
+        if not venue_looks_valid(venue):
+            print(f"[filter] dropping garbled venue: {venue!r} title={title!r} url={url}", file=sys.stderr)
+            continue
+        if not (date_window_start <= date <= date_window_end):
+            print(f"[filter] dropping out-of-range date {date}: title={title!r} url={url}", file=sys.stderr)
             continue
         if len(venue) > 60:
             print(f"[filter] dropping because venue too long: {venue!r} title={title!r} url={url}", file=sys.stderr)
