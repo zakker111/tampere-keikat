@@ -183,7 +183,7 @@ def parse_month_page(html, year, month):
                 "genre": guess_genre(title, venue or "Tampere"),
                 "free": 0,
                 "url": url,
-            )
+            })
 
     seen = set()
     deduped = []
@@ -423,8 +423,13 @@ def parse_fuzzy_date(s):
     if m:
         d, mon_name, y = int(m.group(1)), m.group(2).lower(), int(m.group(3))
         months = {
-            'january':1,'february':2,'march':3,'april':4,'may':5,'june':6,
-            'july':7,'august':8,'september':9,'october':10,'november':11,'december':12
+            'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6,
+            'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12,
+            'january': 1, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6,
+            'july': 7, 'august': 8, 'september': 9, 'october': 10, 'november': 11, 'december': 12,
+            'tammikuu': 1, 'helmikuu': 2, 'maaliskuu': 3, 'huhtikuu': 4,
+            'toukokuu': 5, 'kesakuu': 6, 'heinakuu': 7, 'elokuu': 8,
+            'syyskuu': 9, 'lokakuu': 10, 'marraskuu': 11, 'joulukuu': 12,
         }
         mo = months.get(mon_name[:3]) or months.get(mon_name)
         if mo:
@@ -433,11 +438,13 @@ def parse_fuzzy_date(s):
     m = re.search(r"\b([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})\b", s)
     if m:
         mon_name, d, y = m.group(1).lower(), int(m.group(2)), int(m.group(3))
-        months = {
-            'january':1,'february':2,'march':3,'april':4,'may':5,'june':6,
-            'july':7,'august':8,'september':9,'october':10,'november':11,'december':12
+        months2 = {
+            'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6,
+            'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12,
+            'january': 1, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6,
+            'july': 7, 'august': 8, 'september': 9, 'october': 10, 'november': 11, 'december': 12,
         }
-        mo = months.get(mon_name[:3]) or months.get(mon_name)
+        mo = months2.get(mon_name[:3]) or months2.get(mon_name)
         if mo:
             return f"{y:04d}-{mo:02d}-{d:02d}"
     return None
