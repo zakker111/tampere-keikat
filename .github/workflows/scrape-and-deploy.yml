@@ -37,7 +37,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          # Install Playwright browsers for the runner (only if playwright was installed)
           python -m playwright install --with-deps
 
       - name: Run scraper
@@ -52,13 +51,32 @@ jobs:
           git fetch origin main
           git rebase origin/main || git merge --no-edit origin/main || true
 
-      - name: Commit data.json
+      - name: Check for changes to data.json
+        id: check_changes
+        run: |
+          if git status --porcelain --untracked-files=no | grep -q '^'; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit data.json (if changed)
+        if: steps.check_changes.outputs.changed == 'true'
         uses: EndBug/add-and-commit@v9
         with:
           author_name: 'github-actions[bot]'
           author_email: '41898282+github-actions[bot]@users.noreply.github.com'
           message: 'chore: update data.json (scraped)'
           add: 'data.json'
+          push: true
+
+      - name: Prepare Pages content
+        run: |
+          rm -rf out
+          mkdir -p out
+          # copy only the files you want to publish (exclude .git and workflow files)
+          rsync -av --exclude='.git' --exclude='.github' --exclude='.gitignore' --exclude='node_modules' ./ out/
+          # If you want to publish only certain files, replace the rsync with targeted copy commands
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -66,7 +84,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: 'out'
 
       - name: Deploy to GitHub Pages
         id: deploy
