@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-05 23:33 UTC",
- "source_note": "Auto-scraped from 5 sources (raw counts: {'meteli': 111, 'kohokohdat': 357, 'keikat_org': 14, 'linkedevents': 0, 'visittampere': 23}), merged to 444 events after de-duplication. Music gigs only — theatre/comedy filtered out. Confidence varies by source.",
+ "generated": "2026-08-06 01:06 UTC",
+ "source_note": "Auto-scraped from 5 sources (raw counts: {'meteli': 110, 'kohokohdat': 357, 'keikat_org': 14, 'linkedevents': 0, 'visittampere': 23}), merged to 443 events after de-duplication. Music gigs only — theatre/comedy filtered out. Confidence varies by source.",
  "errors": [],
  "events": [
   [
@@ -2362,33 +2362,6 @@
    "https://kohokohdat.fi/tampere/tapahtuma/speed-metal-afterparty/"
   ],
   [
-   "2026-08-05",
-   "",
-   "Tilaantuminen – Osa – Kuronta: Kahr. Karh.",
-   "Liikelaituri",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/tilaantuminen-osa-kuronta-kahr-karh"
-  ],
-  [
-   "2026-08-05",
-   "",
-   "Joyce DiDonato (USA) & Time for Three trio",
-   "Tampere-talo",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/joyce-didonato-usa-time-for-three-trio"
-  ],
-  [
-   "2026-08-05",
-   "",
-   "Com A Alma Do Fado: Kirsi Poutanen, Esa Helasvuo, Juha Lanu",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/com-a-alma-do-fado-kirsi-poutanen-esa-helasvuo-juha-lanu"
-  ],
-  [
    "2026-08-06",
    "",
    "Tilaantuminen – Osa – Kuronta: Kahr. Karh.",
@@ -3953,6 +3926,24 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/vince-boncamperin-20-vuotistaiteilijajuhla"
+  ],
+  [
+   "2026-10-09",
+   "",
+   "Kun saksofoni palaa: Timo Lassy",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/kun-saksofoni-palaa-timo-lassy-2"
+  ],
+  [
+   "2026-10-09",
+   "",
+   "Frank Martini Party of the Century",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/frank-martini-party-of-the-century"
   ],
   [
    "2026-11-05",
