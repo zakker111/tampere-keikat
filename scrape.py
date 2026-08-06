@@ -104,6 +104,10 @@ def parse_date(text, year_hint):
     return None
 
 
+def _is_event_anchor(node):
+    return getattr(node, "name", None) == "a" and "/tampere/tapahtuma/" in (node.get("href") or "")
+
+
 def is_suspicious_heading(text):
     """Return True if text looks like a section/article heading rather than a venue."""
     if not text:
@@ -151,11 +155,29 @@ def _date_matches_month(date_str, year, month):
     return y == year and m == month
 
 
+def _forward_adjacent_text(el):
+    """Text immediately after this anchor, stopping at the next event
+    anchor OR any block-level element — matches the common 'Title Venue,
+    Tampere' inline convention without crossing into a neighboring event."""
+    node = el.next_sibling
+    if node is None or _is_event_anchor(node):
+        return ""
+    if getattr(node, "name", None) in {"p", "div", "li", "article", "section", "h1", "h2", "h3", "h4"}:
+        return ""
+    return node.get_text(" ", strip=True) if hasattr(node, "get_text") else str(node).strip()
+
+
 def parse_month_page(html, year, month):
     soup = BeautifulSoup(html, "html.parser")
     events = []
     current_date = None
     excluded_count = 0
+    # A short heading/paragraph naming a known venue (e.g. a festival name
+    # introducing a lineup) is remembered as a hint for the VERY NEXT event
+    # only, then cleared — unlike current_date, venue must not be sticky
+    # across many events, or one festival name leaks onto everything until
+    # the next heading (this was the actual reported bug: see chat).
+    pending_venue_hint = None
 
     for el in soup.find_all(["h1", "h2", "h3", "h4", "p", "a", "li", "div"]):
         text = el.get_text(" ", strip=True)
@@ -167,6 +189,14 @@ def parse_month_page(html, year, month):
             current_date = maybe_date
             continue
 
+        if el.name != "a":
+            if len(text) < 60:
+                for v in KNOWN_VENUES_SORTED:
+                    if v.lower() in text.lower():
+                        pending_venue_hint = v
+                        break
+            continue
+
         if el.name == "a":
             href = el.get("href", "")
             if "/tampere/tapahtuma/" not in href:
@@ -176,36 +206,30 @@ def parse_month_page(html, year, month):
                 continue
             url = urljoin(BASE, href)
             venue = ""
-            parent_text = el.find_parent(["li", "div", "article"])
-            if parent_text:
-                pt = parent_text.get_text(" ", strip=True)
 
-                # 1) Prefer known venue names found in the surrounding text
-                for v in KNOWN_VENUES_SORTED:
-                    if v.lower() in pt.lower():
-                        venue = v
-                        break
+            # 1) Text immediately after this anchor (most reliable: this is
+            # this event's own inline description, can't belong to a
+            # neighbor since we stop at the next anchor/block boundary).
+            fwd = _forward_adjacent_text(el)
+            for v in KNOWN_VENUES_SORTED:
+                if v.lower() in fwd.lower():
+                    venue = v
+                    break
+            if not venue and fwd:
+                m = re.search(r"\b([A-ZÅÄÖ][\w &'\-]{2,40})\s*,\s*Tampere\b", fwd)
+                if m:
+                    candidate = m.group(1).strip()
+                    if not is_suspicious_heading(candidate):
+                        venue = candidate
 
-                # 2) Fallback: extract "<candidate>, Tampere" but guard against article headings
-                if not venue:
-                    m = re.search(r"\b([A-ZÅÄÖ][\w &'\-]{2,40})\s*,\s*Tampere\b", pt)
-                    if m:
-                        candidate = m.group(1).strip()
-                        if not is_suspicious_heading(candidate):
-                            venue = candidate
+            # 2) Otherwise, a heading naming a venue seen just before this
+            # anchor (single-use — see pending_venue_hint comment above).
+            if not venue and pending_venue_hint:
+                venue = pending_venue_hint
+            pending_venue_hint = None  # always consumed here, never carries to a 2nd event
 
-                # 3) Short sibling heuristic
-                if not venue:
-                    sib = el.find_previous_sibling()
-                    if sib:
-                        s = sib.get_text(" ", strip=True)
-                        if 2 < len(s) <= 40 and any(ch.isalpha() for ch in s):
-                            s2 = re.sub(r",?\s*Tampere\s*$", "", s, flags=re.IGNORECASE).strip()
-                            if not is_suspicious_heading(s2):
-                                venue = s2
-
-                if venue and is_suspicious_heading(venue):
-                    print(f"[parse_month_page] suspicious venue `{venue}` for title `{title}` url={url}", file=sys.stderr)
+            if venue and is_suspicious_heading(venue):
+                print(f"[parse_month_page] suspicious venue `{venue}` for title `{title}` url={url}", file=sys.stderr)
 
             if any(kw in f"{title} {venue}".lower() for kw in EXCLUDE_KEYWORDS):
                 excluded_count += 1
