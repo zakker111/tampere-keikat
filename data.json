@@ -1,161 +1,8 @@
 {
- "generated": "2026-08-06 01:50 UTC",
- "source_note": "Auto-scraped from 5 sources (raw counts: {'meteli': 110, 'kohokohdat': 357, 'keikat_org': 14, 'linkedevents': 0, 'visittampere': 23}), merged to 428 events after de-duplication. Music gigs only — theatre/comedy filtered out. Confidence varies by source.",
+ "generated": "2026-08-06 02:06 UTC",
+ "source_note": "Auto-scraped from 5 sources (raw counts: {'meteli': 110, 'kohokohdat': 357, 'keikat_org': 14, 'linkedevents': 0, 'visittampere': 0}), merged to 410 events after de-duplication. Music gigs only — theatre/comedy filtered out. Confidence varies by source.",
  "errors": [],
  "events": [
-  [
-   "2024-08-22",
-   "",
-   "Contact information",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/info/contact-information/"
-  ],
-  [
-   "2024-08-22",
-   "",
-   "Travel industry professionals",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/professionals/"
-  ],
-  [
-   "2024-08-22",
-   "",
-   "Map",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/destinations/?view=map"
-  ],
-  [
-   "2024-08-22",
-   "",
-   "Visibility on Visit Tampere’s channels",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/visibility-on-visit-tamperes-channels/"
-  ],
-  [
-   "2024-08-22",
-   "",
-   "For travel industry professionals",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/professionals/"
-  ],
-  [
-   "2024-08-22",
-   "",
-   "The best sports bars and places for sports fans",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/articles/events-in-tampere/"
-  ],
-  [
-   "2025-02-20",
-   "",
-   "Accommodation",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/accommodation/"
-  ],
-  [
-   "2025-11-20",
-   "",
-   "For media",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/info/for-media/"
-  ],
-  [
-   "2026-01-18",
-   "",
-   "Suomi",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/artikkelit/vuoden-tapahtumakooste/"
-  ],
-  [
-   "2026-01-19",
-   "",
-   "English",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/articles/events-in-tampere/"
-  ],
-  [
-   "2026-05-29",
-   "",
-   "LGBTQIA+ friendly travel tips in Tampere",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/articles/events-in-tampere/"
-  ],
-  [
-   "2026-06-04",
-   "",
-   "Tampere summer cruises",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/articles/events-in-tampere/"
-  ],
-  [
-   "2026-06-23",
-   "",
-   "Eat and drink",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/eat-and-drink/"
-  ],
-  [
-   "2026-06-23",
-   "",
-   "Lovely summer cafés in Tampere",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/articles/events-in-tampere/"
-  ],
-  [
-   "2026-07-01",
-   "",
-   "Top tips for summer 2026 in Tampere",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/articles/events-in-tampere/"
-  ],
-  [
-   "2026-07-02",
-   "",
-   "See and do",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/see-and-do/"
-  ],
-  [
-   "2026-07-02",
-   "",
-   "Tampere’s top attractions",
-   "Tampere",
-   "rock",
-   0,
-   "https://visittampere.fi/en/articles/events-in-tampere/"
-  ],
   [
    "2026-08-01",
    "",
@@ -2350,7 +2197,7 @@
    "00 Tampereen Messu- ja Urheilukeskus",
    "festival",
    0,
-   "https://keikat.org/olavi-tampereen-120"
+   "https://keikat.org/olavi-tampereen-122"
   ],
   [
    "2026-08-08",
@@ -2449,7 +2296,7 @@
    "00 Tampereen Messu- ja Urheilukeskus",
    "festival",
    0,
-   "https://keikat.org/etta-tampereen-154"
+   "https://keikat.org/etta-tampereen-152"
   ],
   [
    "2026-08-12",
@@ -2629,7 +2476,7 @@
    "00 Pyynikki",
    "festival",
    0,
-   "https://keikat.org/festivaali-pyynikki-246"
+   "https://keikat.org/festivaali-pyynikki-232"
   ],
   [
    "2026-08-22",
@@ -2746,511 +2593,7 @@
    "00 Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-314"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Forces, Luke Lund & Sidewards Ebb",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/forces-luke-lund-sidewards-ebb/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Olli Ahvenlahti New Quintet",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/olli-ahvenlahti-new-quintet/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Haight, Sunvoyeur, Turbo Testicles",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/haight-sunvoyeur-turbo-testicles/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Jaakko Laitinen & Väärä Raha",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jaakko-laitinen-vaara-raha-3/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "A9 Live: Pasi Vainionperä",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-pasi-vainionpera/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Silent Disco",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07-2026-08-14-2026-08-21-2026-08-28-2026-09-04/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Tyrvää Jazz 2026",
-   "G Livelab Tampere",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tyrvaa-jazz/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Moro Sky Bar DJ:t",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-04/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Pintandwefall",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pintandwefall/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Acoustenced & Ehdonalainen – We Still Play Sentenced",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/acoustenced-ehdonalainen-we-still-play-sentenced/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "DJ Ozan",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-ozan-2/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Pispalan Saunafest 2026",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pispalan-saunafest/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "+ Juggling Jugulars, Abduktio, Puhelinseksi",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/juggling-jugulars-abduktio-puhelinseksi/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "An Evening With Kiuas",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/an-evening-with-kiuas/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Billie Joelina",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/billie-joelina-2/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Funebrarum (USA) + support",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/funebrarum-usa-support/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Honey B & T-Bones",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/honey-b-t-bones-2/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Hekypop 2: Joku Puhuu, Maida Vale, Kesyt Jätkät",
-   "G Livelab Tampere",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/hekypop-2-joku-puhuu-maida-vale-kesyt-jatkat/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "DJ O-Nine",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-o-nine-16/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "DJ:t Jaana Mirjami & Karri Tappio, Sara-Maaria",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/djt-jaana-mirjami-karri-tappio-sara-maaria/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Kujakollin jamit",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/kujakollin-jamit-2026-04-05-2026-05-03-2026-06-07-2026-07-05-2026-08-02-2026-09-06/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Fatboy (SE)",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/fatboy-se-2/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "DJ Petermayn",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-petermayn-4/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Tampere Guitar Festival 2026",
-   "G Livelab Tampere",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tampere-guitar-festival/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Ilmavoimien Big Band & Olli Soikkeli: Django!",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/ilmavoimien-big-band-olli-soikkeli-django/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "touko (EP-julkkarit) + Viive",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/touko-ep-julkkarit-viive/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "The Psychward Breakouts, De La Rocka & The Garbagemen",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/the-psychward-breakouts-de-la-rocka-the-garbagemen/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "VERMILIA, AETHER (PL), FOLKRIM",
-   "G Livelab Tampere",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/vermilia-aether-pl-folkrim/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Särkänniemen Kesäkauden päättäjäiset ja ilotulitus 2026",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/sarkanniemen-kesakauden-paattajaiset-ja-ilotulitus/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Jukka Perko & Jay Kortehisto: Foxtet",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jukka-perko-jay-kortehisto-foxtet/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Stenari",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/stenari-2/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "The Munsons (Tokela & Tommi Viksten)",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/the-munsons-tokela-tommi-viksten/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "NITS (NL)",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/nits-nl/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Timo Kämäräinen",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/timo-kamarainen/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Joose Keskitalo & The Mystic Revelation Of Teppo Repo",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/joose-keskitalo-the-mystic-revelation-of-teppo-repo/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Tommy Lindgren Metropolis – Sininen kaupunki Revisited",
-   "G Livelab Tampere",
-   "metal",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tommy-lindgren-metropolis-sininen-kaupunki-revisited/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Aknestik – Vien Sun Sydämen Pohjoiseen 40-vuotisjuhlakiertue",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/aknestik-vien-sun-sydamen-pohjoiseen-40-vuotisjuhlakiertue/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Lost in Music: LASTOUT, Rioghan, King Satan",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/lost-in-music-lastout-rioghan-king-satan/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Tumppi Varonen & Problems, Pelle Miljoona, Kärtsy Hatakka (Waltari)",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tumppi-varonen-problems-pelle-miljoona-kartsy-hatakka-waltari/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "The Clash Meets The Jam",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/the-clash-meets-the-jam/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "TERESIA VON STORM, ELEKTRIC ROKBAND, DISTANT HORIZON",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/teresia-von-storm-elektric-rokband-distant-horizon/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Lost Society & HOKKA: Miseria is a State of Mind – Tour, Support: St. Aurora",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/lost-society-hokka-miseria-is-a-state-of-mind-tour-support-st-aurora/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Jack & Jones",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jack-jones/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "LOWHILL, LIGHTBEARER, IN THORNS",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/lowhill-lightbearer-in-thorns/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Emodisko",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/emodisko-3/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Irina: Akustinen ilta",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/irina-akustinen-ilta/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Lemonator",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/lemonator/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "K40-disco: DJ:t Sami & Antti",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/k40-disco-djt-sami-antti-3/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Juha Tretjakov",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/juha-tretjakov-3/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "A9 Live: Kauko Röyhkä",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-kauko-royhka/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Out Of Breath, Madella, Denshi, True Grit, Twisting Knives",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/out-of-breath-madella-denshi-true-grit-twisting-knives/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "GRAVECITY BANDITS, MANIC ORDER, DANGER HÅT",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/gravecity-bandits-manic-order-danger-hat/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "DJ:t Antti H & Sami",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/djt-antti-h-sami/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Diandra – Hymni rakkaudelle",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/diandra-hymni-rakkaudelle/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Irkkujamit",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/irkkujamit-7/"
-  ],
-  [
-   "2026-09-01",
-   "",
-   "Roamin Street Bandin Gumbo Club Huurteessa",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/roamin-street-bandin-gumbo-club-huurteessa-2-2026-09-30/"
+   "https://keikat.org/koovee-spiral-313"
   ],
   [
    "2026-09-02",
@@ -3260,6 +2603,501 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/olli-ahvenlahti-new-quintet-2"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Forces, Luke Lund & Sidewards Ebb",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/forces-luke-lund-sidewards-ebb/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Haight, Sunvoyeur, Turbo Testicles",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/haight-sunvoyeur-turbo-testicles/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Jaakko Laitinen & Väärä Raha",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jaakko-laitinen-vaara-raha-3/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "A9 Live: Pasi Vainionperä",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-pasi-vainionpera/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Silent Disco",
+   "G Livelab Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07-2026-08-14-2026-08-21-2026-08-28-2026-09-04/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Tyrvää Jazz 2026",
+   "G Livelab Tampere",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tyrvaa-jazz/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Moro Sky Bar DJ:t",
+   "G Livelab Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-04/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Pintandwefall",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/pintandwefall/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Acoustenced & Ehdonalainen – We Still Play Sentenced",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/acoustenced-ehdonalainen-we-still-play-sentenced/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "DJ Ozan",
+   "G Livelab Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-ozan-2/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Pispalan Saunafest 2026",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/pispalan-saunafest/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "+ Juggling Jugulars, Abduktio, Puhelinseksi",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/juggling-jugulars-abduktio-puhelinseksi/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "An Evening With Kiuas",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/an-evening-with-kiuas/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Billie Joelina",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/billie-joelina-2/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Funebrarum (USA) + support",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/funebrarum-usa-support/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Honey B & T-Bones",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/honey-b-t-bones-2/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Hekypop 2: Joku Puhuu, Maida Vale, Kesyt Jätkät",
+   "G Livelab Tampere",
+   "hiphop",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hekypop-2-joku-puhuu-maida-vale-kesyt-jatkat/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "DJ O-Nine",
+   "G Livelab Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-o-nine-16/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "DJ:t Jaana Mirjami & Karri Tappio, Sara-Maaria",
+   "G Livelab Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/djt-jaana-mirjami-karri-tappio-sara-maaria/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Kujakollin jamit",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kujakollin-jamit-2026-04-05-2026-05-03-2026-06-07-2026-07-05-2026-08-02-2026-09-06/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Fatboy (SE)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/fatboy-se-2/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "DJ Petermayn",
+   "G Livelab Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-petermayn-4/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Tampere Guitar Festival 2026",
+   "G Livelab Tampere",
+   "festival",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tampere-guitar-festival/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Ilmavoimien Big Band & Olli Soikkeli: Django!",
+   "G Livelab Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ilmavoimien-big-band-olli-soikkeli-django/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "touko (EP-julkkarit) + Viive",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/touko-ep-julkkarit-viive/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "The Psychward Breakouts, De La Rocka & The Garbagemen",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/the-psychward-breakouts-de-la-rocka-the-garbagemen/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "VERMILIA, AETHER (PL), FOLKRIM",
+   "G Livelab Tampere",
+   "folk",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/vermilia-aether-pl-folkrim/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Särkänniemen Kesäkauden päättäjäiset ja ilotulitus 2026",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/sarkanniemen-kesakauden-paattajaiset-ja-ilotulitus/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Jukka Perko & Jay Kortehisto: Foxtet",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jukka-perko-jay-kortehisto-foxtet/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Stenari",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/stenari-2/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "The Munsons (Tokela & Tommi Viksten)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/the-munsons-tokela-tommi-viksten/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "NITS (NL)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/nits-nl/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Timo Kämäräinen",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/timo-kamarainen/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Joose Keskitalo & The Mystic Revelation Of Teppo Repo",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/joose-keskitalo-the-mystic-revelation-of-teppo-repo/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Tommy Lindgren Metropolis – Sininen kaupunki Revisited",
+   "G Livelab Tampere",
+   "metal",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tommy-lindgren-metropolis-sininen-kaupunki-revisited/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Aknestik – Vien Sun Sydämen Pohjoiseen 40-vuotisjuhlakiertue",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/aknestik-vien-sun-sydamen-pohjoiseen-40-vuotisjuhlakiertue/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Lost in Music: LASTOUT, Rioghan, King Satan",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lost-in-music-lastout-rioghan-king-satan/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Tumppi Varonen & Problems, Pelle Miljoona, Kärtsy Hatakka (Waltari)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tumppi-varonen-problems-pelle-miljoona-kartsy-hatakka-waltari/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "The Clash Meets The Jam",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/the-clash-meets-the-jam/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "TERESIA VON STORM, ELEKTRIC ROKBAND, DISTANT HORIZON",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/teresia-von-storm-elektric-rokband-distant-horizon/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Lost Society & HOKKA: Miseria is a State of Mind – Tour, Support: St. Aurora",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lost-society-hokka-miseria-is-a-state-of-mind-tour-support-st-aurora/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Jack & Jones",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jack-jones/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "LOWHILL, LIGHTBEARER, IN THORNS",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lowhill-lightbearer-in-thorns/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Emodisko",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/emodisko-3/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Irina: Akustinen ilta",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/irina-akustinen-ilta/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Lemonator",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lemonator/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "K40-disco: DJ:t Sami & Antti",
+   "G Livelab Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/k40-disco-djt-sami-antti-3/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Juha Tretjakov",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/juha-tretjakov-3/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "A9 Live: Kauko Röyhkä",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-kauko-royhka/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Out Of Breath, Madella, Denshi, True Grit, Twisting Knives",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/out-of-breath-madella-denshi-true-grit-twisting-knives/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "GRAVECITY BANDITS, MANIC ORDER, DANGER HÅT",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/gravecity-bandits-manic-order-danger-hat/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "DJ:t Antti H & Sami",
+   "G Livelab Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/djt-antti-h-sami/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Diandra – Hymni rakkaudelle",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/diandra-hymni-rakkaudelle/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Irkkujamit",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/irkkujamit-7/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Roamin Street Bandin Gumbo Club Huurteessa",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/roamin-street-bandin-gumbo-club-huurteessa-2-2026-09-30/"
   ],
   [
    "2026-09-03",
@@ -3439,7 +3277,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-474"
+   "https://keikat.org/off-teatteri-473"
   ],
   [
    "2026-09-14",
@@ -3511,7 +3349,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-510"
+   "https://keikat.org/uudet-teatteri-509"
   ],
   [
    "2026-09-18",
@@ -3520,7 +3358,7 @@
    "00 Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-516"
+   "https://keikat.org/elämä-vastavirta-klub-515"
   ],
   [
    "2026-09-19",
@@ -3682,7 +3520,7 @@
    "00 Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-607"
+   "https://keikat.org/music-tampere-talo-606"
   ],
   [
    "2026-10-02",
@@ -3772,7 +3610,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-647"
+   "https://keikat.org/off-teatteri-646"
   ],
   [
    "2026-10-08",
@@ -3817,7 +3655,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-833"
+   "https://keikat.org/tehdas-teatteri-832"
   ],
   [
    "2026-11-18",
@@ -3826,7 +3664,7 @@
    "00 Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-929"
+   "https://keikat.org/sorin-sorin-928"
   ],
   [
    "2026-11-21",
@@ -3835,7 +3673,7 @@
    "00 Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-950"
+   "https://keikat.org/kotae-tampereen-949"
   ],
   [
    "2027-02-01",
@@ -3844,7 +3682,7 @@
    "00 Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1105"
+   "https://keikat.org/magda-vooninki-1104"
   ],
   [
    "2027-06-18",
@@ -3853,7 +3691,7 @@
    "00 Hiedanrannan Tehdasaukio",
    "festival",
    0,
-   "https://keikat.org/ankea-hiedanrannan-1124"
+   "https://keikat.org/ankea-hiedanrannan-1123"
   ]
  ]
 }
