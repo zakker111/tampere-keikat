@@ -118,18 +118,15 @@ def is_suspicious_heading(text):
 
 def _find_nearby_date(el, year):
     """Try to find a date near element el: check element text, parent, previous siblings, and preceding headings."""
-    # 1) element text
     txt = el.get_text(" ", strip=True)
     d = parse_date(txt, year)
     if d:
         return d
-    # 2) parent container
     parent = el.find_parent(["li", "div", "article", "section"])
     if parent:
         pd = parse_date(parent.get_text(" ", strip=True), year)
         if pd:
             return pd
-    # 3) previous siblings (a few)
     sib = el.find_previous_sibling()
     tries = 0
     while sib and tries < 6:
@@ -138,13 +135,20 @@ def _find_nearby_date(el, year):
             return sd
         sib = sib.find_previous_sibling()
         tries += 1
-    # 4) preceding headings using find_all_previous
     headings = el.find_all_previous(["h1", "h2", "h3", "h4"], limit=6)
     for h in headings:
         hd = parse_date(h.get_text(" ", strip=True), year)
         if hd:
             return hd
     return None
+
+
+def _date_matches_month(date_str, year, month):
+    try:
+        y, m, d = map(int, date_str.split("-"))
+    except Exception:
+        return False
+    return y == year and m == month
 
 
 def parse_month_page(html, year, month):
@@ -214,8 +218,12 @@ def parse_month_page(html, year, month):
             if not date_str:
                 date_str = _find_nearby_date(el, year)
             if not date_str:
-                # No reliable date found — skip this anchor
                 print(f"[parse_month_page] skipping anchor without reliable date: title={title!r} url={url}", file=sys.stderr)
+                continue
+
+            # Enforce date belongs to the month we are parsing
+            if not _date_matches_month(date_str, year, month):
+                print(f"[parse_month_page] skipping anchor because date {date_str} not in parsed month {year}-{month:02d}: title={title!r} url={url}", file=sys.stderr)
                 continue
 
             time_str = parse_time(text)
@@ -540,10 +548,12 @@ def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tamper
         seen.add(key)
 
         date_str = None
+        date_from_time = False
         time_str = ""
         dt = node.find(["time", "span"], attrs={"datetime": True})
         if dt and dt.get("datetime"):
             date_str = parse_fuzzy_date(dt["datetime"])
+            date_from_time = True
 
         if not date_str:
             text_snippets = []
@@ -560,6 +570,7 @@ def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tamper
                     tm = re.search(r"\b([01]?\d|2[0-3]):([0-5]\d)\b", s)
                     if tm:
                         time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
+                    date_from_time = False
                     break
 
         if not date_str and url_:
@@ -569,6 +580,7 @@ def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tamper
                 t = art_soup.find("time")
                 if t and t.get("datetime"):
                     date_str = parse_fuzzy_date(t["datetime"])
+                    date_from_time = True
                 if not date_str:
                     for p in art_soup.find_all("p", limit=6):
                         ptxt = p.get_text(" ", strip=True)
@@ -579,13 +591,20 @@ def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tamper
                             date_str = d
                             tm = re.search(r"\b([01]?\d|2[0-3]):([0-5]\d)\b", ptxt)
                             if tm:
-                                time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
+                                time_str = f"{int(tm.group(1)):02d}:{ptxt[tm.end(1)+1:tm.end(2)]}"
+                            date_from_time = False
                             break
             except Exception:
                 pass
 
         if not date_str:
             print(f"[visittampere] skipping candidate without reliable date: title={title!r} url={url_}", file=sys.stderr)
+            continue
+
+        # If date was extracted from a paragraph (not a time element) require that the URL looks like an event page,
+        # otherwise it's likely the article's publication date.
+        if not date_from_time and url_ and "/tapahtuma/" not in url_.lower():
+            print(f"[visittampere] skipping candidate where date likely publication date (no <time> and not /tapahtuma/): title={title!r} url={url_}", file=sys.stderr)
             continue
 
         ev = {
