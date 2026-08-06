@@ -87,6 +87,8 @@ def parse_time(text):
 
 
 def parse_date(text, year_hint):
+    if not text:
+        return None
     m = re.search(r"\b(\d{1,2})\.(\d{1,2})\.(\d{4})\b", text)
     if m:
         d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
@@ -95,6 +97,10 @@ def parse_date(text, year_hint):
     if m:
         d, mo = int(m.group(1)), int(m.group(2))
         return f"{year_hint:04d}-{mo:02d}-{d:02d}"
+    m = re.search(r"(\d{4})-(\d{1,2})-(\d{1,2})", text)
+    if m:
+        y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        return f"{y:04d}-{mo:02d}-{d:02d}"
     return None
 
 
@@ -103,13 +109,42 @@ def is_suspicious_heading(text):
     if not text:
         return True
     text_l = text.lower()
-    # words that indicate site sections / headings or generically non-venue phrases
     if re.search(r"\b(kesä|kesällä|home|info|article|artikkeli|kesän|dam|kesäkausi|artikkeleita|videos)\b", text_l, re.IGNORECASE):
         return True
-    # too long to be a venue
     if len(text.strip()) > 60:
         return True
     return False
+
+
+def _find_nearby_date(el, year):
+    """Try to find a date near element el: check element text, parent, previous siblings, and preceding headings."""
+    # 1) element text
+    txt = el.get_text(" ", strip=True)
+    d = parse_date(txt, year)
+    if d:
+        return d
+    # 2) parent container
+    parent = el.find_parent(["li", "div", "article", "section"])
+    if parent:
+        pd = parse_date(parent.get_text(" ", strip=True), year)
+        if pd:
+            return pd
+    # 3) previous siblings (a few)
+    sib = el.find_previous_sibling()
+    tries = 0
+    while sib and tries < 6:
+        sd = parse_date(sib.get_text(" ", strip=True), year)
+        if sd:
+            return sd
+        sib = sib.find_previous_sibling()
+        tries += 1
+    # 4) preceding headings using find_all_previous
+    headings = el.find_all_previous(["h1", "h2", "h3", "h4"], limit=6)
+    for h in headings:
+        hd = parse_date(h.get_text(" ", strip=True), year)
+        if hd:
+            return hd
+    return None
 
 
 def parse_month_page(html, year, month):
@@ -123,8 +158,8 @@ def parse_month_page(html, year, month):
         if not text:
             continue
 
-        maybe_date = parse_date(text[:40], year)
-        if maybe_date and len(text) < 60:
+        maybe_date = parse_date(text[:60], year)
+        if maybe_date and len(text) < 120:
             current_date = maybe_date
             continue
 
@@ -155,7 +190,7 @@ def parse_month_page(html, year, month):
                         if not is_suspicious_heading(candidate):
                             venue = candidate
 
-                # 3) If still not found, try a short heuristic: a short sibling text that looks like a venue
+                # 3) Short sibling heuristic
                 if not venue:
                     sib = el.find_previous_sibling()
                     if sib:
@@ -165,7 +200,6 @@ def parse_month_page(html, year, month):
                             if not is_suspicious_heading(s2):
                                 venue = s2
 
-                # Debug: if venue still looks suspicious, log it for review
                 if venue and is_suspicious_heading(venue):
                     print(f"[parse_month_page] suspicious venue `{venue}` for title `{title}` url={url}", file=sys.stderr)
 
@@ -173,8 +207,18 @@ def parse_month_page(html, year, month):
                 excluded_count += 1
                 continue
 
+            # Determine date: prefer current_date from headings, otherwise try several nearby heuristics.
+            date_str = current_date
+            if not date_str:
+                date_str = parse_date(title, year)
+            if not date_str:
+                date_str = _find_nearby_date(el, year)
+            if not date_str:
+                # No reliable date found — skip this anchor
+                print(f"[parse_month_page] skipping anchor without reliable date: title={title!r} url={url}", file=sys.stderr)
+                continue
+
             time_str = parse_time(text)
-            date_str = current_date or f"{year:04d}-{month:02d}-01"
             events.append({
                 "date": date_str,
                 "time": time_str,
@@ -306,7 +350,6 @@ def fetch_with_playwright_content(url, timeout=20000):
         raise RuntimeError("playwright not available")
     try:
         with sync_playwright() as p:
-            # small randomized sleep to make requests less bot-like
             time.sleep(1 + random.random())
             browser = p.chromium.launch(args=["--no-sandbox", "--disable-blink-features=AutomationControlled"], headless=True)
             context = browser.new_context(
@@ -314,14 +357,12 @@ def fetch_with_playwright_content(url, timeout=20000):
                 locale="fi-FI",
                 extra_http_headers={"Accept-Language": HEADERS.get("Accept-Language", "fi-FI,fi;q=0.9")}
             )
-            # Make the page less detectable as automation
             try:
                 context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
             except Exception:
                 pass
             page = context.new_page()
             page.goto(url, wait_until="networkidle", timeout=timeout)
-            # Wait for event anchors we parse later, but don't fail if not found
             try:
                 page.wait_for_selector('a[href*="/tapahtuma/"]', timeout=10000)
             except Exception:
@@ -402,7 +443,6 @@ def parse_fuzzy_date(s):
     if not s:
         return None
     s = s.strip()
-    # 1) ISO-like 2026-08-05 or 2026.08.05
     m = re.search(r"(\d{4})[-\.](\d{1,2})[-\.](\d{1,2})", s)
     if m:
         y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
@@ -410,7 +450,6 @@ def parse_fuzzy_date(s):
             return f"{y:04d}-{mo:02d}-{d:02d}"
         except Exception:
             pass
-    # 2) DD.MM.YYYY or D.M.YYYY
     m = re.search(r"\b(\d{1,2})[.\-\/](\d{1,2})[.\-\/](\d{4})\b", s)
     if m:
         d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
@@ -418,7 +457,6 @@ def parse_fuzzy_date(s):
             return f"{y:04d}-{mo:02d}-{d:02d}"
         except Exception:
             pass
-    # 3) DD Month YYYY  (e.g., 21 August 2026)
     m = re.search(r"\b(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})\b", s)
     if m:
         d, mon_name, y = int(m.group(1)), m.group(2).lower(), int(m.group(3))
@@ -434,7 +472,6 @@ def parse_fuzzy_date(s):
         mo = months.get(mon_name[:3]) or months.get(mon_name)
         if mo:
             return f"{y:04d}-{mo:02d}-{d:02d}"
-    # 4) Month DD, YYYY (e.g., August 21, 2026)
     m = re.search(r"\b([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})\b", s)
     if m:
         mon_name, d, y = m.group(1).lower(), int(m.group(2)), int(m.group(3))
@@ -451,7 +488,6 @@ def parse_fuzzy_date(s):
 
 
 def _snippet_looks_like_date(snippet):
-    """Return True if snippet contains an obvious date token (month name, DD.MM or YYYY-)."""
     if re.search(r"\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|tammikuu|helmikuu|maaliskuu|huhtikuu|toukokuu|kesakuu|heinakuu|elokuu|syyskuu|lokakuu|marraskuu|joulukuu)\b", snippet, re.IGNORECASE):
         return True
     if re.search(r"\b\d{1,2}[.\-\/]\d{1,2}\b", snippet):
@@ -462,10 +498,6 @@ def _snippet_looks_like_date(snippet):
 
 
 def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tampere/"):
-    """
-    Scrape events from visittampere 'Events in Tampere' article listing.
-    Returns a list of event dicts matching other source format.
-    """
     events = []
     try:
         resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=2, backoff=1)
@@ -475,13 +507,9 @@ def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tamper
 
     soup = BeautifulSoup(resp.text, "html.parser")
 
-    # Prefer article elements or list items that look like event cards
     candidates = []
-    # 1) article blocks
     candidates.extend(soup.find_all("article"))
-    # 2) elements with class containing 'card' or 'item' or 'article'
     candidates.extend(soup.select("[class*='card'], [class*='item'], [class*='article']"))
-    # 3) fallback: headings with links inside the main content
     for h in soup.find_all(["h2", "h3", "h4"]):
         a = h.find("a", href=True)
         if a:
@@ -489,7 +517,6 @@ def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tamper
 
     seen = set()
     for node in candidates:
-        # Find a link / title
         a = node.find("a", href=True)
         title = None
         url_ = None
@@ -497,33 +524,27 @@ def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tamper
             title = a.get_text(" ", strip=True)
             url_ = urljoin(url, a["href"])
         else:
-            # try heading text in node
             h = node.find(["h2", "h3", "h4"])
             if h and h.get_text(strip=True):
                 title = h.get_text(" ", strip=True)
         if not title:
-            # as fallback, look for immediate strong/bold text
             strong = node.find(["strong", "b"])
             if strong:
                 title = strong.get_text(" ", strip=True)
         if not title:
             continue
 
-        # Avoid duplicates
         key = (title.lower(), url_ or "")
         if key in seen:
             continue
         seen.add(key)
 
-        # Try to find nearby date/time text
-        # Look for time/datetime tags first
         date_str = None
         time_str = ""
         dt = node.find(["time", "span"], attrs={"datetime": True})
         if dt and dt.get("datetime"):
             date_str = parse_fuzzy_date(dt["datetime"])
 
-        # if not, search text blocks inside node for date-like patterns, but require a clear date token
         if not date_str:
             text_snippets = []
             for el in node.find_all(["p", "div", "span", "li"], recursive=True):
@@ -541,7 +562,6 @@ def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tamper
                         time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
                     break
 
-        # Final fallback: try page-wide search near the link's parent by fetching the article page
         if not date_str and url_:
             try:
                 art_resp = fetch_with_retries("GET", url_, headers=HEADERS, timeout=15, retries=1, backoff=1)
@@ -550,7 +570,6 @@ def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tamper
                 if t and t.get("datetime"):
                     date_str = parse_fuzzy_date(t["datetime"])
                 if not date_str:
-                    # look in first paragraphs but require obvious date token
                     for p in art_soup.find_all("p", limit=6):
                         ptxt = p.get_text(" ", strip=True)
                         if not _snippet_looks_like_date(ptxt):
@@ -563,12 +582,9 @@ def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tamper
                                 time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
                             break
             except Exception:
-                # ignore article fetch failures
                 pass
 
-        # If we still don't have a date, skip (visittampere sometimes lists generic articles)
         if not date_str:
-            # debug output for visibility into skipped nodes
             print(f"[visittampere] skipping candidate without reliable date: title={title!r} url={url_}", file=sys.stderr)
             continue
 
@@ -583,7 +599,6 @@ def fetch_visittampere(url="https://visittampere.fi/en/articles/events-in-tamper
         }
         events.append(ev)
 
-    # Deduplicate by title+date
     dedup = []
     seen_keys = set()
     for e in events:
@@ -816,11 +831,9 @@ def main():
         print("No events parsed from any source — leaving existing data.json untouched.", file=sys.stderr)
         sys.exit(1)
 
-    # Sort
     all_events.sort(key=lambda e: (e["date"], e["time"] or "99:99"))
     raw = [[e["date"], e["time"], e["title"], e["venue"], e.get("genre", "rock"), e.get("free", 0), e.get("url", "")] for e in all_events]
 
-    # Post-filter: remove obviously wrong entries (very long venues, headings, title==venue, heading-like titles)
     filtered = []
     for e in raw:
         date, time_s, title, venue, genre, free, url = e
@@ -829,13 +842,12 @@ def main():
         if not title or not venue:
             continue
         if len(venue) > 60:
-            # likely an article heading captured as venue
             print(f"[filter] dropping because venue too long: {venue!r} title={title!r} url={url}", file=sys.stderr)
             continue
         if title_l == venue_l:
             print(f"[filter] dropping because title equals venue: {title!r}", file=sys.stderr)
             continue
-        if re.search(r'\b(home|info|article|artikkeli|kesä|kesällä|DAM|articles|events in tampere)\b', title_l, re.IGNORECASE):
+        if re.search(r'\b(home|info|article|artikkeli|kesä|kesällä|dam|articles|events in tampere)\b', title_l, re.IGNORECASE):
             print(f"[filter] dropping heading-like title: {title!r}", file=sys.stderr)
             continue
         filtered.append(e)
