@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-06 02:17 UTC",
- "source_note": "Auto-scraped from 5 sources (raw counts: {'meteli': 110, 'kohokohdat': 357, 'keikat_org': 14, 'linkedevents': 0, 'visittampere': 23}), merged to 427 events after de-duplication. Music gigs only — theatre/comedy filtered out. Confidence varies by source.",
+ "generated": "2026-08-06 07:35 UTC",
+ "source_note": "Auto-scraped from 5 sources (raw counts: {'meteli': 110, 'kohokohdat': 363, 'keikat_org': 14, 'linkedevents': 0, 'visittampere': 23}), merged to 433 events after de-duplication. Music gigs only — theatre/comedy filtered out. Confidence varies by source.",
  "errors": [],
  "events": [
   [
@@ -560,6 +560,15 @@
    "festival",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/negaatio-kantor-miss-vain/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Olli Kärki",
+   "Ratinanniemen festivaalipuisto",
+   "festival",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/olli-karki-3/"
   ],
   [
    "2026-08-01",
@@ -1302,6 +1311,15 @@
   [
    "2026-08-01",
    "",
+   "Dos Urbotos Duo plays Klamydia",
+   "Ratinanniemen festivaalipuisto",
+   "festival",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dos-urbotos-duo-plays-klamydi/"
+  ],
+  [
+   "2026-08-01",
+   "",
    "Uittotunnelin kesäkeikat: Kulkukoirat & Juha Hildén",
    "Ratinanniemen festivaalipuisto",
    "festival",
@@ -1730,6 +1748,15 @@
    "festival",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/reetan-ja-mikon-rakkaussynttarit-lover-hertta-q-ejh/"
+  ],
+  [
+   "2026-08-01",
+   "",
+   "Kadun Kaswatti plays Irwin",
+   "Ratinanniemen festivaalipuisto",
+   "festival",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kadun-kaswatti-plays-irwin/"
   ],
   [
    "2026-08-01",
@@ -2350,7 +2377,7 @@
    "00 Tampereen Messu- ja Urheilukeskus",
    "festival",
    0,
-   "https://keikat.org/olavi-tampereen-120"
+   "https://keikat.org/olavi-tampereen-122"
   ],
   [
    "2026-08-08",
@@ -2449,7 +2476,7 @@
    "00 Tampereen Messu- ja Urheilukeskus",
    "festival",
    0,
-   "https://keikat.org/etta-tampereen-154"
+   "https://keikat.org/etta-tampereen-152"
   ],
   [
    "2026-08-12",
@@ -2629,7 +2656,7 @@
    "00 Pyynikki",
    "festival",
    0,
-   "https://keikat.org/festivaali-pyynikki-246"
+   "https://keikat.org/festivaali-pyynikki-232"
   ],
   [
    "2026-08-22",
@@ -2746,7 +2773,7 @@
    "00 Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-314"
+   "https://keikat.org/koovee-spiral-313"
   ],
   [
    "2026-09-02",
@@ -2774,6 +2801,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/haight-sunvoyeur-turbo-testicles/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Issias Duo Selkä & Katwi",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/issias-duo-selka-katwi/"
   ],
   [
    "2026-09-02",
@@ -2873,6 +2909,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/an-evening-with-kiuas/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Colin Hartley",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/colin-hartley-4/"
   ],
   [
    "2026-09-02",
@@ -3179,6 +3224,15 @@
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/k40-disco-djt-sami-antti-3/"
+  ],
+  [
+   "2026-09-02",
+   "",
+   "Mikko Alatalo",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mikko-alatalo-2/"
   ],
   [
    "2026-09-02",
@@ -3502,7 +3556,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-510"
+   "https://keikat.org/uudet-teatteri-511"
   ],
   [
    "2026-09-18",
@@ -3511,7 +3565,7 @@
    "00 Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-516"
+   "https://keikat.org/elämä-vastavirta-klub-517"
   ],
   [
    "2026-09-19",
@@ -3673,7 +3727,7 @@
    "00 Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-607"
+   "https://keikat.org/music-tampere-talo-608"
   ],
   [
    "2026-10-02",
@@ -3763,7 +3817,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-647"
+   "https://keikat.org/off-teatteri-648"
   ],
   [
    "2026-10-08",
@@ -3808,7 +3862,7 @@
    "00 Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-833"
+   "https://keikat.org/tehdas-teatteri-835"
   ],
   [
    "2026-11-18",
@@ -3817,7 +3871,7 @@
    "00 Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-929"
+   "https://keikat.org/sorin-sorin-932"
   ],
   [
    "2026-11-21",
@@ -3826,7 +3880,7 @@
    "00 Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-950"
+   "https://keikat.org/kotae-tampereen-953"
   ],
   [
    "2027-02-01",
@@ -3835,7 +3889,7 @@
    "00 Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1105"
+   "https://keikat.org/magda-vooninki-1110"
   ],
   [
    "2027-06-18",
@@ -3844,7 +3898,7 @@
    "00 Hiedanrannan Tehdasaukio",
    "festival",
    0,
-   "https://keikat.org/ankea-hiedanrannan-1124"
+   "https://keikat.org/ankea-hiedanrannan-1129"
   ]
  ]
 }
