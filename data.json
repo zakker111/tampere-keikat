@@ -1,26 +1,8 @@
 {
- "generated": "2026-08-06 20:19 UTC",
+ "generated": "2026-08-07 06:06 UTC",
  "source_note": "Auto-scraped from 5 sources (raw counts: {'meteli': 114, 'kohokohdat': 0, 'keikat_org': 14, 'linkedevents': 0, 'visittampere': 0}), merged to 114 events after de-duplication. Music gigs only — theatre/comedy filtered out. Confidence varies by source.",
  "errors": [],
  "events": [
-  [
-   "2026-08-06",
-   "",
-   "Tilaantuminen – Osa – Kuronta: Kahr. Karh.",
-   "Liikelaituri",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/tilaantuminen-osa-kuronta-kahr-karh-2"
-  ],
-  [
-   "2026-08-06",
-   "",
-   "Eppu Normaali",
-   "Tampereen stadion",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/eppu-normaali-3"
-  ],
   [
    "2026-08-07",
    "",
@@ -1028,6 +1010,24 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/antti-railio-19"
+  ],
+  [
+   "2026-10-08",
+   "",
+   "Vince Boncamperin 20-vuotistaiteilijajuhla",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/vince-boncamperin-20-vuotistaiteilijajuhla"
+  ],
+  [
+   "2026-10-09",
+   "",
+   "Kun saksofoni palaa: Timo Lassy",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/kun-saksofoni-palaa-timo-lassy-2"
   ]
  ]
 }
