@@ -444,34 +444,53 @@ def parse_meteli_anchor_text(text, year_hint, today):
     }
 
 
-def fetch_with_playwright_content(url, timeout=20000):
+def fetch_with_playwright_content(url, timeout=25000):
     if not PLAYWRIGHT_AVAILABLE:
         raise RuntimeError("playwright not available")
-    try:
-        with sync_playwright() as p:
-            time.sleep(1 + random.random())
-            browser = p.chromium.launch(args=["--no-sandbox", "--disable-blink-features=AutomationControlled"], headless=True)
-            context = browser.new_context(
-                user_agent=HEADERS.get("User-Agent"),
-                locale="fi-FI",
-                extra_http_headers={"Accept-Language": HEADERS.get("Accept-Language", "fi-FI,fi;q=0.9")}
-            )
+    with sync_playwright() as p:
+        time.sleep(1 + random.random())
+        browser = p.chromium.launch(args=["--no-sandbox", "--disable-blink-features=AutomationControlled"], headless=True)
+        context = browser.new_context(
+            user_agent=HEADERS.get("User-Agent"),
+            locale="fi-FI",
+            extra_http_headers={"Accept-Language": HEADERS.get("Accept-Language", "fi-FI,fi;q=0.9")}
+        )
+        try:
+            context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
+        except Exception:
+            pass
+        page = context.new_page()
+        try:
+            # networkidle never fires on a Cloudflare "Just a moment..."
+            # challenge page \u2014 it has persistent background JS activity by
+            # design, so networkidle guarantees a timeout every time the
+            # challenge appears rather than just occasionally. domcontentloaded
+            # fires immediately regardless; the actual gate we care about is
+            # real event links showing up, which the selector wait below checks.
+            page.goto(url, wait_until="domcontentloaded", timeout=timeout)
             try:
-                context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
+                page.wait_for_selector('a[href*="/tapahtuma/"]', timeout=25000)
             except Exception:
-                pass
-            page = context.new_page()
-            page.goto(url, wait_until="networkidle", timeout=timeout)
-            try:
-                page.wait_for_selector('a[href*="/tapahtuma/"]', timeout=10000)
-            except Exception:
-                pass
+                pass  # checked explicitly below instead of assuming success
             content = page.content()
+        finally:
             context.close()
             browser.close()
-            return content
-    except Exception:
-        raise
+
+    if "Just a moment" in content or "/tapahtuma/" not in content:
+        raise RuntimeError("playwright fetch returned a challenge/empty page, not real content")
+    return content
+
+
+def fetch_with_playwright_retries(url, attempts=2):
+    last_exc = None
+    for attempt in range(1, attempts + 1):
+        try:
+            return fetch_with_playwright_content(url)
+        except Exception as exc:
+            last_exc = exc
+            print(f"[playwright] attempt {attempt}/{attempts} for {url} failed: {exc}", file=sys.stderr)
+    raise last_exc
 
 
 def fetch_meteli(max_pages=4):
@@ -487,7 +506,7 @@ def fetch_meteli(max_pages=4):
             log_http_error(f"meteli page {page_num}", exc)
             if PLAYWRIGHT_AVAILABLE:
                 try:
-                    html = fetch_with_playwright_content(url)
+                    html = fetch_with_playwright_retries(url)
                 except Exception as exc2:
                     log_http_error(f"meteli playwright page {page_num}", exc2)
                     break
