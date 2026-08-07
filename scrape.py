@@ -66,6 +66,32 @@ def log_http_error(source, exc):
         print(f"[{source}] FAILED: {exc}", file=sys.stderr)
 
 
+def _recover_leaked_time(title, venue, time_str):
+    """A venue starting with 1-2 bare digits is never real (no venue name
+    starts with a number) \u2014 it's leaked time debris from wherever the real
+    corruption happens (couldn't pin down the exact cause without real HTML
+    access to keikat.org, see chat). If the title also ends in 1-2 bare
+    digits right where it got cut, these are almost certainly the two
+    halves of a HH:MM time that lost its separator during text extraction.
+    Reassemble them instead of just discarding the event."""
+    if not venue or not title:
+        return title, venue, time_str
+    m_venue = re.match(r'^(\d{1,2})\s+(\S.*)$', venue)
+    if not m_venue:
+        return title, venue, time_str
+    m_title = re.search(r'(\d{1,2})\s*$', title)
+    if m_title:
+        hh, mm = m_title.group(1), m_venue.group(1)
+        if len(mm) == 2:
+            recovered_time = f"{int(hh):02d}:{mm}"
+            new_title = title[:m_title.start()].strip(" -\u2013:")
+            new_venue = m_venue.group(2).strip()
+            return new_title, new_venue, time_str or recovered_time
+    # Couldn't pair it with a title-side fragment \u2014 still strip the leaked
+    # digits from venue so a recoverable event isn't dropped over noise.
+    return title, m_venue.group(2).strip(), time_str
+
+
 def guess_genre(title, venue):
     text = f"{title} {venue}".lower()
     for genre, kws in GENRE_KEYWORDS.items():
@@ -900,18 +926,25 @@ def fetch_keikat_org(url=KEIKAT_ORG_URL):
         parsed = parse_keikat_org_anchor_text(text)
         if parsed:
             title, venue, date_str = parsed["title"], parsed["venue"], parsed["date"]
+            time_str = parsed.get("time", "")
         elif current_date and 2 < len(text) < 120:
             title, venue = split_title_venue(text)
             if not venue:
                 continue
             date_str = current_date
+            time_str = ""
         else:
+            continue
+
+        title, venue, time_str = _recover_leaked_time(title, venue, time_str)
+        if not venue_looks_valid(venue):
+            print(f"[keikat.org] dropping unrecoverable venue: {venue!r} title={title!r}", file=sys.stderr)
             continue
 
         if any(kw in f"{title} {venue}".lower() for kw in EXCLUDE_KEYWORDS):
             continue
         events.append({
-            "date": date_str, "time": "", "title": title, "venue": venue, "free": 0,
+            "date": date_str, "time": time_str, "title": title, "venue": venue, "free": 0,
             "genre": guess_genre(title, venue), "url": urljoin(url, href),
         })
 
