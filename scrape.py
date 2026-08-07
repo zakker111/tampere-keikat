@@ -226,34 +226,56 @@ def is_suspicious_heading(text):
 
 
 def _find_nearby_date(el, year):
-    """Try to find a date near element el: check element text, parent, previous siblings, and preceding headings."""
+    """Find the date belonging to this event across Kohokohdat layout variants."""
     txt = el.get_text(" ", strip=True)
     d = parse_date(txt, year)
     if d:
         return d
-    parent = el.find_parent(["li", "div", "article", "section"])
-    if parent:
-        # Only trust a parent date when that container represents ONE event.
-        # A broad calendar wrapper can contain hundreds of events; taking its
-        # first date would incorrectly assign that same date to every event.
-        event_links = [a for a in parent.find_all("a", href=True) if _is_event_anchor(a)]
-        if len(event_links) <= 1:
-            pd = parse_date(parent.get_text(" ", strip=True), year)
+
+    # The event card can be several DOM levels above the anchor. Only trust a
+    # container that contains exactly one event link, so a calendar wrapper
+    # cannot leak its first date onto hundreds of events.
+    ancestor = el
+    for _ in range(8):
+        ancestor = ancestor.parent
+        if ancestor is None:
+            break
+        event_links = [
+            a for a in ancestor.find_all("a", href=True)
+            if _is_event_anchor(a)
+        ]
+        if len(event_links) == 1:
+            pd = parse_date(ancestor.get_text(" ", strip=True), year)
             if pd:
                 return pd
-    sib = el.find_previous_sibling()
-    tries = 0
-    while sib and tries < 6:
-        sd = parse_date(sib.get_text(" ", strip=True), year)
+
+        for sib in ancestor.find_previous_siblings(limit=5):
+            st = sib.get_text(" ", strip=True)
+            if not st or len(st) > 100:
+                continue
+            if re.search(r"\b\d{1,2}\.\d{1,2}\.\d{4}\b", st):
+                sd = parse_date(st, year)
+                if sd:
+                    return sd
+
+    # Date headings are sometimes div/p rather than h2/h3/h4.
+    for node in el.find_all_previous(
+        ["h1", "h2", "h3", "h4", "p", "div", "li"], limit=30
+    ):
+        st = node.get_text(" ", strip=True)
+        if not st or len(st) > 100:
+            continue
+        if not (
+            re.search(r"\b\d{1,2}\.\d{1,2}\.\d{4}\b", st)
+            or re.search(
+                r"\b(?:ma|ti|ke|to|pe|la|su)\s+\d{1,2}\.\d{1,2}\.",
+                st, re.I
+            )
+        ):
+            continue
+        sd = parse_date(st, year)
         if sd:
             return sd
-        sib = sib.find_previous_sibling()
-        tries += 1
-    headings = el.find_all_previous(["h1", "h2", "h3", "h4"], limit=6)
-    for h in headings:
-        hd = parse_date(h.get_text(" ", strip=True), year)
-        if hd:
-            return hd
     return None
 
 
@@ -910,7 +932,10 @@ def fetch_keikkalista(url=KEIKKALISTA_URL):
     events = []
     try:
         resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=3, backoff=1)
-        events = parse_soup(BeautifulSoup(resp.text, "html.parser"))
+        if _looks_like_block_page(resp.text, getattr(resp, "status_code", None)):
+            print("[keikkalista] BLOCKED/challenge page detected", file=sys.stderr)
+        else:
+            events = parse_soup(BeautifulSoup(resp.text, "html.parser"))
     except Exception as exc:
         log_http_error("keikkalista", exc)
 
@@ -1200,26 +1225,49 @@ PUISTOKONSERTIT_URL = "https://puistokonsertit.tampere.fi/ohjelma/"
 
 
 def fetch_puistokonsertit(url=PUISTOKONSERTIT_URL):
-    """Scrape the official Puistokonsertit programme, with JS fallback."""
+    """Scrape the official Puistokonsertit programme using event links and
+    their nearest date/title/location container."""
     def parse_soup(soup):
         events = []
-        for heading in soup.find_all(["h2", "h3", "h4"]):
-            heading_text = re.sub(r"\s+", " ", heading.get_text(" ", strip=True)).strip()
-            if not heading_text.lower().startswith("puistokonsertit:"):
+        seen_urls = set()
+
+        links = [
+            a for a in soup.find_all("a", href=True)
+            if "puistokonsertit.tampere.fi/tapahtuma/" in urljoin(url, a["href"])
+        ]
+
+        for a in links:
+            event_url = urljoin(url, a["href"])
+            if event_url in seen_urls:
                 continue
-            title = re.sub(r"^puistokonsertit:\s*", "", heading_text, flags=re.I).strip()
-            card = heading
-            for _ in range(8):
-                card = card.parent
-                if card is None:
+            seen_urls.add(event_url)
+
+            node = a
+            chosen = None
+            for _ in range(10):
+                node = node.parent
+                if node is None:
                     break
-                text = card.get_text(" ", strip=True)
-                if re.search(r"\b\d{1,2}\.\d{1,2}\.\d{4}\b", text) and "Maksuton" in text:
-                    if any("/tapahtuma/" in (a.get("href") or "") for a in card.find_all("a", href=True)):
-                        break
-            if card is None:
+                text = re.sub(r"\s+", " ", node.get_text(" ", strip=True)).strip()
+                if re.search(r"\b\d{1,2}\.\d{1,2}\.\d{4}\b", text) and len(text) < 3000:
+                    chosen = node
+                    break
+            if chosen is None:
+                chosen = a.parent or a
+
+            text = re.sub(r"\s+", " ", chosen.get_text(" ", strip=True)).strip()
+
+            title = ""
+            for h in chosen.find_all(["h1", "h2", "h3", "h4"]):
+                ht = re.sub(r"\s+", " ", h.get_text(" ", strip=True)).strip()
+                if ht.lower().startswith("puistokonsertit:"):
+                    title = re.sub(r"^puistokonsertit:\s*", "", ht, flags=re.I).strip()
+                    break
+            if not title:
+                title = re.sub(r"^puistokonsertit:\s*", "", a.get_text(" ", strip=True), flags=re.I).strip()
+            if not title:
                 continue
-            text = re.sub(r"\s+", " ", card.get_text(" ", strip=True)).strip()
+
             dm = re.search(r"\b(\d{1,2})\.(\d{1,2})\.(\d{4})\b", text)
             if not dm:
                 continue
@@ -1227,8 +1275,10 @@ def fetch_puistokonsertit(url=PUISTOKONSERTIT_URL):
                 event_date = datetime.date(int(dm.group(3)), int(dm.group(2)), int(dm.group(1)))
             except ValueError:
                 continue
-            tm = re.search(r"\b([01]?\d|2[0-3])\.([0-5]\d)\s*-", text)
+
+            tm = re.search(r"\b([01]?\d|2[0-3])[\.:]([0-5]\d)\s*-", text)
             time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}" if tm else ""
+
             venue = ""
             for known in KNOWN_VENUES_SORTED:
                 if known.lower() in text.lower():
@@ -1236,18 +1286,12 @@ def fetch_puistokonsertit(url=PUISTOKONSERTIT_URL):
                     break
             if not venue:
                 after_date = text[dm.end():]
-                after_date = re.sub(r"^\s*([01]?\d|2[0-3])\.([0-5]\d)\s*-\s*([01]?\d|2[0-3])\.([0-5]\d)\s*", "", after_date)
                 vm = re.search(r"([^,]{2,100}),\s*\d{5}\s+Tampere\b", after_date)
                 if vm:
                     venue = vm.group(1).strip()
             if not venue:
                 continue
-            event_url = url
-            for a in card.find_all("a", href=True):
-                href = urljoin(url, a["href"])
-                if "puistokonsertit.tampere.fi/tapahtuma/" in href:
-                    event_url = href
-                    break
+
             events.append({
                 "date": event_date.isoformat(),
                 "time": time_str,
@@ -1257,20 +1301,23 @@ def fetch_puistokonsertit(url=PUISTOKONSERTIT_URL):
                 "free": 1,
                 "url": event_url,
             })
-        seen = set()
-        unique = []
-        for event in events:
-            key = event_duplicate_key(event)
+
+        unique, seen = [], set()
+        for e in events:
+            key = event_duplicate_key(e)
             if key in seen:
                 continue
             seen.add(key)
-            unique.append(event)
+            unique.append(e)
         return unique
 
     events = []
     try:
         resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=3, backoff=1)
-        events = parse_soup(BeautifulSoup(resp.text, "html.parser"))
+        if _looks_like_block_page(resp.text, getattr(resp, "status_code", None)):
+            print("[puistokonsertit] BLOCKED/challenge page detected — not parsing it", file=sys.stderr)
+        else:
+            events = parse_soup(BeautifulSoup(resp.text, "html.parser"))
     except Exception as exc:
         log_http_error("puistokonsertit", exc)
 
@@ -1285,6 +1332,7 @@ def fetch_puistokonsertit(url=PUISTOKONSERTIT_URL):
     print(f"[puistokonsertit] parsed {len(events)} events", file=sys.stderr)
     _print_event_lines("puistokonsertit", events)
     return events
+
 
 # ---------------------------------------------------------------------------
 # VisitTampere scraper
