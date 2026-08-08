@@ -946,7 +946,7 @@ NAV_TITLE_BLACKLIST = [
 
 # Keikat.org scraper
 
-KEIKAT_ORG_URL = "https://keikat.org/tampere"
+KEIKAT_ORG_URL = "https://keikat.org/Tampere"
 KEIKAT_ORG_DATE_RE = re.compile(r"\d{1,2}\.\d{1,2}\.(\d{4})")
 
 
