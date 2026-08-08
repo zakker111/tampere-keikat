@@ -1,17 +1,8 @@
 {
- "generated": "2026-08-08 00:01 UTC",
+ "generated": "2026-08-08 00:09 UTC",
  "source_note": "Auto-scraped from 8 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "events": [
-  [
-   "2026-08-07",
-   "20:00",
-   "Tampere City Festival 2026 pe 7.8.2026",
-   "Tampereen Messu- ja Urheilukeskus",
-   "festival",
-   0,
-   "https://keikat.org/olavi-tampereen-110"
-  ],
   [
    "2026-08-07",
    "",
@@ -104,6 +95,15 @@
   ],
   [
    "2026-08-08",
+   "14:00",
+   "Yksi Meistä",
+   "Näsinpuiston laululava",
+   "hiphop",
+   1,
+   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69d7797253fe1000075ad294&date=08.08.2026&time=14.00+-+15.00"
+  ],
+  [
+   "2026-08-08",
    "",
    "Jon-Henrik Fjällgren (SWE)",
    "Kalevan kirkko",
@@ -167,12 +167,21 @@
   ],
   [
    "2026-08-09",
+   "13:00",
+   "Markus Savander",
+   "Niihaman siirtolapuutarha",
+   "folk",
+   1,
+   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=6a295800187d2f000743828c&date=09.08.2026&time=13.00+-+14.00"
+  ],
+  [
+   "2026-08-09",
    "20:00",
    "Supersunnuntai perhefestivaali, Tampere su 9.8.2026",
    "Tampereen Messu- ja Urheilukeskus",
    "festival",
    0,
-   "https://keikat.org/etta-tampereen-147"
+   "https://keikat.org/etta-tampereen-137"
   ],
   [
    "2026-08-09",
@@ -211,6 +220,42 @@
    "https://www.meteli.net/tapahtuma/jethro-tull-gbr-5"
   ],
   [
+   "2026-08-10",
+   "18:30",
+   "Laikunlava laulaa | Naiskuoro Miskantti ja yhteislaulut",
+   "Laikunlava",
+   "rock",
+   1,
+   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69dc918229140f000752c78b&date=10.08.2026&time=18.30+-+20.00"
+  ],
+  [
+   "2026-08-12",
+   "18:00",
+   "Duo Songbirds",
+   "Nekalan siirtolapuutarha",
+   "jazz",
+   1,
+   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69dca90d29140f000752d305&date=12.08.2026&time=18.00+-+18.45"
+  ],
+  [
+   "2026-08-12",
+   "18:00",
+   "Olli Tuomarla",
+   "Haiharan taidekeskus",
+   "hiphop",
+   1,
+   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69d7444a29140f000750dc9c&date=12.08.2026&time=18.00+-+19.00"
+  ],
+  [
+   "2026-08-12",
+   "18:00",
+   "Orkesteri Laakson Liljat, Hannele Juutinen, Tampereen Ukuleleorkesteri",
+   "Laikunlava",
+   "classical",
+   1,
+   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69e20492a3e0ec0007205b0d&date=12.08.2026&time=18.00+-+20.45"
+  ],
+  [
    "2026-08-12",
    "",
    "Pan Salmenhaara",
@@ -218,6 +263,15 @@
    "rock",
    1,
    "https://www.meteli.net/tapahtuma/pan-salmenhaara-10"
+  ],
+  [
+   "2026-08-13",
+   "18:00",
+   "Kaunis veli",
+   "Nekala",
+   "folk",
+   1,
+   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69dca39253fe1000075cab95&date=13.08.2026&time=18.00+-+19.00"
   ],
   [
    "2026-08-13",
@@ -292,13 +346,40 @@
    "https://www.meteli.net/tapahtuma/pep-torres-usa-his-finnish-all-stars-son-demon-and-his-holy-boys"
   ],
   [
+   "2026-08-16",
+   "14:00",
+   "JP Matias",
+   "Satakunnankatu 49",
+   "hiphop",
+   1,
+   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69d7662329140f000750ed76&date=16.08.2026&time=14.00+-+15.00"
+  ],
+  [
+   "2026-08-17",
+   "18:30",
+   "Laikunlava laulaa | Nota Bene Nokia ja yhteislaulut",
+   "Laikunlava",
+   "rock",
+   1,
+   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=6a1e77d343cec9000772913f&date=17.08.2026&time=18.30+-+20.00"
+  ],
+  [
+   "2026-08-19",
+   "18:00",
+   "Marianne Salminen",
+   "Haiharan taidekeskus",
+   "jazz",
+   1,
+   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69d7460b53fe1000075ab8c5&date=19.08.2026&time=18.00+-+19.00"
+  ],
+  [
    "2026-08-21",
    "20:00",
    "Festivaali 2026 pe 21.8.2026",
    "Pyynikki",
    "festival",
    0,
-   "https://keikat.org/festivaali-pyynikki-240"
+   "https://keikat.org/festivaali-pyynikki-217"
   ],
   [
    "2026-08-21",
@@ -355,6 +436,24 @@
    "https://www.meteli.net/tapahtuma/industrial-oddities-the-fair-attempts-lirpo-herja"
   ],
   [
+   "2026-08-26",
+   "18:00",
+   "Poplauluyhtye Sounds",
+   "Haiharan taidekeskus",
+   "hiphop",
+   1,
+   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69dc983653fe1000075ca616&date=26.08.2026&time=18.00+-+19.00"
+  ],
+  [
+   "2026-08-26",
+   "18:00",
+   "SPOIL., Demonessa, Ashenplains",
+   "Laikunlava",
+   "rock",
+   1,
+   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69d8de6d53fe1000075b5d82&date=26.08.2026&time=18.00+-+20.45"
+  ],
+  [
    "2026-08-28",
    "",
    "Vauhti Kiihtyy Tampere: Käärijä, Sonata Arctica, Stratovarius, Bess, Kaija Koo, Elastinen, Kake Randelin, Diandra instagrammfacebook, Juha Tapio, Yö, Petri Nygård, Popeda, Portion Boys, Ressu Redford, Nylon Beat, Klamydia",
@@ -397,7 +496,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-308"
+   "https://keikat.org/koovee-spiral-305"
   ],
   [
    "2026-08-29",
@@ -631,7 +730,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-473"
+   "https://keikat.org/off-teatteri-459"
   ],
   [
    "2026-09-14",
@@ -672,20 +771,20 @@
   [
    "2026-09-18",
    "20:00",
-   "Uudet Tekijät: Knife Jerks - Puukkojunkkarit pe 18.9.2026",
-   "Teatteri Telakka",
-   "rock",
-   0,
-   "https://keikat.org/uudet-teatteri-511"
-  ],
-  [
-   "2026-09-18",
-   "20:00",
    "Elämä on Punk Vol. 32 pe 18.9.2026",
    "Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-517"
+   "https://keikat.org/elämä-vastavirta-klub-482"
+  ],
+  [
+   "2026-09-18",
+   "20:00",
+   "Uudet Tekijät: Knife Jerks - Puukkojunkkarit pe 18.9.2026",
+   "Teatteri Telakka",
+   "rock",
+   0,
+   "https://keikat.org/uudet-teatteri-505"
   ],
   [
    "2026-09-18",
@@ -874,7 +973,7 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-616"
+   "https://keikat.org/music-tampere-talo-605"
   ],
   [
    "2026-10-01",
@@ -982,7 +1081,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-659"
+   "https://keikat.org/off-teatteri-649"
   ],
   [
    "2026-10-07",
@@ -1126,7 +1225,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-852"
+   "https://keikat.org/tehdas-teatteri-842"
   ],
   [
    "2026-11-18",
@@ -1135,7 +1234,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-950"
+   "https://keikat.org/sorin-sorin-940"
   ],
   [
    "2026-11-21",
@@ -1144,7 +1243,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-972"
+   "https://keikat.org/kotae-tampereen-964"
   ],
   [
    "2027-02-01",
@@ -1153,7 +1252,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1128"
+   "https://keikat.org/magda-vooninki-1118"
   ]
  ]
 }
