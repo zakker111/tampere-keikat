@@ -1101,8 +1101,11 @@ def main():
     raw = [[e["date"], e["time"], e["title"], e["venue"], e.get("genre", "rock"), e.get("free", 0), e.get("url", "")] for e in all_events]
 
     filtered = []
-    date_window_start = (today - datetime.timedelta(days=3)).isoformat()
+    # Only publish gigs happening today or later. Past gigs are no longer useful
+    # to the site, so they are removed from the final dataset every run.
+    date_window_start = today.isoformat()
     date_window_end = (today + datetime.timedelta(days=200)).isoformat()
+    print(f"[date filter] Keeping gigs from {date_window_start} through {date_window_end}", file=sys.stderr)
     for e in raw:
         date, time_s, title, venue, genre, free, url = e
         title_l = (title or "").lower()
@@ -1112,8 +1115,11 @@ def main():
         if not venue_looks_valid(venue):
             print(f"[filter] dropping garbled venue: {venue!r} title={title!r} url={url}", file=sys.stderr)
             continue
-        if not (date_window_start <= date <= date_window_end):
-            print(f"[filter] dropping out-of-range date {date}: title={title!r} url={url}", file=sys.stderr)
+        if date < date_window_start:
+            print(f"[filter] dropping past gig {date}: title={title!r} url={url}", file=sys.stderr)
+            continue
+        if date > date_window_end:
+            print(f"[filter] dropping beyond date window {date}: title={title!r} url={url}", file=sys.stderr)
             continue
         if len(venue) > 60:
             print(f"[filter] dropping because venue too long: {venue!r} title={title!r} url={url}", file=sys.stderr)
