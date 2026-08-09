@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Scraper for Meteli, Kohokohdat, Keikat.org, Puistokonsertit and Keikat.live.
+Scraper with Playwright fallback for meteli.net and VisitTampere integration.
 """
 import json
 import re
@@ -8,8 +8,7 @@ import sys
 import time
 import datetime
 import random
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from urllib.parse import urljoin, urlparse, parse_qs
+from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -67,54 +66,9 @@ def log_http_error(source, exc):
         print(f"[{source}] FAILED: {exc}", file=sys.stderr)
 
 
-def _looks_like_block_page(html, status_code=None):
-    """Return True when a response is clearly a bot/challenge/error shell.
-
-    A blocked page must never be parsed as real events. This is especially
-    important for Cloudflare pages such as Meteli/Tampere Events.
-    """
-    if status_code in (401, 403, 429, 503):
-        return True
-    if not html:
-        return True
-    sample = html[:200000].lower()
-    markers = (
-        "just a moment...", "checking your browser", "cf-chl-",
-        "challenge-platform", "enable javascript and cookies to continue",
-        "attention required! | cloudflare", "access denied",
-        "captcha", "invalid host",
-    )
-    return any(marker in sample for marker in markers)
-
-
-def _print_event_lines(source, events, limit=None):
-    """Print every parsed event so a run is auditable from the console."""
-    print(f"[{source}] parsed {len(events)} events", file=sys.stderr)
-    shown = events if limit is None else events[:limit]
-    for e in shown:
-        print(
-            f"  ✓ {e.get('date','')} {e.get('time','') or '--:--'} — "
-            f"{e.get('title','')} — {e.get('venue','')} — {e.get('url','')}",
-            file=sys.stderr,
-        )
-    if limit is not None and len(events) > limit:
-        print(f"  ... {len(events) - limit} more event(s)", file=sys.stderr)
-
-
-def _print_final_events(events):
-    print("\n========================================", file=sys.stderr)
-    print("FINAL EVENTS WRITTEN TO data.json", file=sys.stderr)
-    print("========================================", file=sys.stderr)
-    for e in events:
-        print(
-            f"{e[0]} {e[1] or '--:--'} — {e[2]} — {e[3]} — {e[6]}",
-            file=sys.stderr,
-        )
-
-
 def _recover_leaked_time(title, venue, time_str):
     """A venue starting with 1-2 bare digits is never real (no venue name
-    starts with a number) — it's leaked time debris from wherever the real
+    starts with a number) \u2014 it's leaked time debris from wherever the real
     corruption happens (couldn't pin down the exact cause without real HTML
     access to keikat.org, see chat). If the title also ends in 1-2 bare
     digits right where it got cut, these are almost certainly the two
@@ -130,10 +84,10 @@ def _recover_leaked_time(title, venue, time_str):
         hh, mm = m_title.group(1), m_venue.group(1)
         if len(mm) == 2:
             recovered_time = f"{int(hh):02d}:{mm}"
-            new_title = title[:m_title.start()].strip(" -–:")
+            new_title = title[:m_title.start()].strip(" -\u2013:")
             new_venue = m_venue.group(2).strip()
             return new_title, new_venue, time_str or recovered_time
-    # Couldn't pair it with a title-side fragment — still strip the leaked
+    # Couldn't pair it with a title-side fragment \u2014 still strip the leaked
     # digits from venue so a recoverable event isn't dropped over noise.
     return title, m_venue.group(2).strip(), time_str
 
@@ -192,7 +146,7 @@ def parse_date(text, year_hint):
 
 def parse_date_with_year(text):
     """Only matches a date that includes an explicit 4-digit year (e.g.
-    'torstai 6.8.2026'). Used for the STICKY section-heading tracker —
+    'torstai 6.8.2026'). Used for the STICKY section-heading tracker \u2014
     real day headings on kohokohdat include the year; per-event date/time
     stamps like 'pe 7.8.' or 'to 6.8. - la 8.8. 16:00' don't. Treating both
     as equally sticky was the actual bug behind entire months piling onto
@@ -227,56 +181,29 @@ def is_suspicious_heading(text):
 
 
 def _find_nearby_date(el, year):
-    """Find the date belonging to this event across Kohokohdat layout variants."""
+    """Try to find a date near element el: check element text, parent, previous siblings, and preceding headings."""
     txt = el.get_text(" ", strip=True)
     d = parse_date(txt, year)
     if d:
         return d
-
-    # The event card can be several DOM levels above the anchor. Only trust a
-    # container that contains exactly one event link, so a calendar wrapper
-    # cannot leak its first date onto hundreds of events.
-    ancestor = el
-    for _ in range(8):
-        ancestor = ancestor.parent
-        if ancestor is None:
-            break
-        event_links = [
-            a for a in ancestor.find_all("a", href=True)
-            if _is_event_anchor(a)
-        ]
-        if len(event_links) == 1:
-            pd = parse_date(ancestor.get_text(" ", strip=True), year)
-            if pd:
-                return pd
-
-        for sib in ancestor.find_previous_siblings(limit=5):
-            st = sib.get_text(" ", strip=True)
-            if not st or len(st) > 100:
-                continue
-            if re.search(r"\b\d{1,2}\.\d{1,2}\.\d{4}\b", st):
-                sd = parse_date(st, year)
-                if sd:
-                    return sd
-
-    # Date headings are sometimes div/p rather than h2/h3/h4.
-    for node in el.find_all_previous(
-        ["h1", "h2", "h3", "h4", "p", "div", "li"], limit=30
-    ):
-        st = node.get_text(" ", strip=True)
-        if not st or len(st) > 100:
-            continue
-        if not (
-            re.search(r"\b\d{1,2}\.\d{1,2}\.\d{4}\b", st)
-            or re.search(
-                r"\b(?:ma|ti|ke|to|pe|la|su)\s+\d{1,2}\.\d{1,2}\.",
-                st, re.I
-            )
-        ):
-            continue
-        sd = parse_date(st, year)
+    parent = el.find_parent(["li", "div", "article", "section"])
+    if parent:
+        pd = parse_date(parent.get_text(" ", strip=True), year)
+        if pd:
+            return pd
+    sib = el.find_previous_sibling()
+    tries = 0
+    while sib and tries < 6:
+        sd = parse_date(sib.get_text(" ", strip=True), year)
         if sd:
             return sd
+        sib = sib.find_previous_sibling()
+        tries += 1
+    headings = el.find_all_previous(["h1", "h2", "h3", "h4"], limit=6)
+    for h in headings:
+        hd = parse_date(h.get_text(" ", strip=True), year)
+        if hd:
+            return hd
     return None
 
 
@@ -291,7 +218,7 @@ def _date_matches_month(date_str, year, month):
 def _forward_adjacent_text(el):
     """Text following this anchor that still belongs to THIS event card
     (e.g. a 'Tampere Venue Name' line right after the title). Skips
-    insignificant whitespace-only text nodes between tags — without that,
+    insignificant whitespace-only text nodes between tags \u2014 without that,
     this returned empty for every event on kohokohdat's real markup, since
     the actual next sibling there is just whitespace before the venue div,
     not the venue div itself (that's what caused venues to come out
@@ -319,16 +246,6 @@ def _forward_adjacent_text(el):
     return ""
 
 
-def _kohokohdat_url_date(url, year_hint):
-    m = re.search(r"(?:^|[-_/])(20\d{2})-(\d{1,2})-(\d{1,2})(?:[-_/]|$)", url or "")
-    if not m:
-        return None
-    try:
-        return datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3))).isoformat()
-    except ValueError:
-        return None
-
-
 def parse_month_page(html, year, month):
     soup = BeautifulSoup(html, "html.parser")
     events = []
@@ -348,7 +265,7 @@ def parse_month_page(html, year, month):
         if not text:
             continue
 
-        # Real section heading (has a year, e.g. "torstai 6.8.2026") —
+        # Real section heading (has a year, e.g. "torstai 6.8.2026") \u2014
         # sticky, applies to every event until the next one of these.
         heading_date = parse_date_with_year(text[:60])
         if heading_date and len(text) < 120:
@@ -358,8 +275,8 @@ def parse_month_page(html, year, month):
             continue
 
         # Per-event date/time stamp with no year (e.g. "pe 7.8." or
-        # "to 6.8. - la 8.8.   16:00") — single-use, applies only to the
-        # very next event anchor, then cleared. NOT sticky — this is
+        # "to 6.8. - la 8.8.   16:00") \u2014 single-use, applies only to the
+        # very next event anchor, then cleared. NOT sticky \u2014 this is
         # exactly the distinction that was missing before.
         if el.name != "a" and len(text) < 60:
             yearless_date = parse_date(text, year)
@@ -406,7 +323,7 @@ def parse_month_page(html, year, month):
             # looks like "<city> <venue name>" (kohokohdat prefixes every
             # event's venue line with its municipality, e.g. "Vesilahti
             # Laukon kartano"). Strip the known city prefix and use the
-            # rest — this is still THIS event's own text, so it's more
+            # rest \u2014 this is still THIS event's own text, so it's more
             # trustworthy than falling back to pending_venue_hint below,
             # which reflects a DIFFERENT event and was misattributing
             # venues whenever the real one just wasn't whitelisted yet.
@@ -440,58 +357,6 @@ def parse_month_page(html, year, month):
                 date_str = parse_date(title, year)
             if not date_str:
                 date_str = _find_nearby_date(el, year)
-            if not date_str:
-                url_date = _kohokohdat_url_date(url, year)
-                if url_date and _date_matches_month(url_date, year, month):
-                    date_str = url_date
-
-            if not date_str:
-                # Some Kohokohdat month pages contain secondary/sidebar event links
-                # whose own card has no date. The event detail page is authoritative
-                # and contains the exact date/time (for example The Wowels -> 29.8.2026).
-                # Use it as a fallback instead of throwing away a real gig.
-                try:
-                    detail_resp = fetch_with_retries(
-                        "GET", url, headers=HEADERS, timeout=12, retries=1, backoff=0.5
-                    )
-                    detail_soup = BeautifulSoup(detail_resp.text, "html.parser")
-                    detail_text = detail_soup.get_text(" ", strip=True)
-
-                    # Do NOT use the first date on the detail page: its header
-                    # contains today's date. The event's date appears after the
-                    # event title (h1), e.g. "The Wowels" -> "29.8.2026".
-                    detail_date = None
-                    title_pos = detail_text.casefold().find(title.casefold())
-                    search_text = detail_text[title_pos:] if title_pos >= 0 else detail_text
-                    for dm in re.finditer(r"\b(\d{1,2})\.(\d{1,2})\.(\d{4})\b", search_text):
-                        candidate = parse_date(dm.group(0), year)
-                        if candidate and _date_matches_month(candidate, year, month):
-                            detail_date = candidate
-                            nearby = search_text[dm.start():dm.start() + 100]
-                            detail_time = parse_time(nearby)
-                            if detail_time:
-                                event_time_hint = detail_time
-                            break
-
-                    if detail_date:
-                        date_str = detail_date
-                    elif PLAYWRIGHT_AVAILABLE:
-                        try:
-                            rendered = fetch_with_playwright_generic(url, wait_selector="body")
-                            rendered_soup = BeautifulSoup(rendered, "html.parser")
-                            rendered_text = rendered_soup.get_text(" ", strip=True)
-                            title_pos = rendered_text.casefold().find(title.casefold())
-                            rendered_search = rendered_text[title_pos:] if title_pos >= 0 else rendered_text
-                            for dm in re.finditer(r"\b(\d{1,2})\.(\d{1,2})\.(\d{4})\b", rendered_search):
-                                candidate = parse_date(dm.group(0), year)
-                                if candidate and _date_matches_month(candidate, year, month):
-                                    date_str = candidate
-                                    break
-                        except Exception as pw_exc:
-                            print(f"[parse_month_page] detail Playwright fallback failed for {url}: {pw_exc}", file=sys.stderr)
-                except Exception as exc:
-                    print(f"[parse_month_page] detail-date fallback failed for {url}: {exc}", file=sys.stderr)
-
             if not date_str:
                 print(f"[parse_month_page] skipping anchor without reliable date: title={title!r} url={url}", file=sys.stderr)
                 continue
@@ -550,7 +415,7 @@ def _looks_like_stuck_date_tracking(events, year, month):
     date heading then silently fails to update for the rest of the page,
     piling every remaining event onto that single date. This showed up on
     kohokohdat's September page (all events landing on 2026-09-02) despite
-    August working fine — same parser, different month's markup apparently
+    August working fine \u2014 same parser, different month's markup apparently
     trips it. Can't inspect the real HTML to fix the root cause (network
     blocked from the sandbox that built this), so this catches the *symptom*
     instead: if effectively all of a month's events share one date, that's
@@ -560,10 +425,7 @@ def _looks_like_stuck_date_tracking(events, year, month):
     from collections import Counter
     counts = Counter(e["date"] for e in events)
     top_date, top_count = counts.most_common(1)[0]
-    # A real monthly music calendar can legitimately have a busy date.
-    # Reject only the unmistakable failure mode: almost everything collapsed
-    # onto one date with no meaningful date diversity.
-    return len(counts) <= 2 and top_count / len(events) > 0.85
+    return top_count / len(events) > 0.6
 
 
 def fetch_month(year, month):
@@ -571,7 +433,7 @@ def fetch_month(year, month):
     resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=3, backoff=1)
     events = parse_month_page(resp.text, year, month)
     if _looks_like_stuck_date_tracking(events, year, month):
-        print(f"[kohokohdat {year}-{month:02d}] REJECTING all {len(events)} events — "
+        print(f"[kohokohdat {year}-{month:02d}] REJECTING all {len(events)} events \u2014 "
               f"date tracking looks stuck on one day (see _looks_like_stuck_date_tracking). "
               f"This month's data needs a human to check the real page.", file=sys.stderr)
         return []
@@ -589,8 +451,6 @@ METELI_LINK_RE = re.compile(
 )
 
 KNOWN_VENUES = [
-    "Näsinpuiston laululava", "Niihaman siirtolapuutarha", "Laikunlava",
-    "Nekalan siirtolapuutarha", "Haiharan taidekeskus",
     "G Livelab Tampere", "Vastavirta-Klubi", "Vastavirta-klubi", "Paapan Kapakka",
     "Telakka", "Tavara-asema", "Bar Kotelo", "Pethaus", "Ruby & Fellas",
     "John Scott's Ratina", "Tampere-talo", "Tampereen stadion", "Tähti Areena",
@@ -678,7 +538,7 @@ def fetch_with_playwright_content(url, timeout=25000):
         page = context.new_page()
         try:
             # networkidle never fires on a Cloudflare "Just a moment..."
-            # challenge page — it has persistent background JS activity by
+            # challenge page \u2014 it has persistent background JS activity by
             # design, so networkidle guarantees a timeout every time the
             # challenge appears rather than just occasionally. domcontentloaded
             # fires immediately regardless; the actual gate we care about is
@@ -698,45 +558,6 @@ def fetch_with_playwright_content(url, timeout=25000):
     return content
 
 
-def fetch_with_playwright_generic(url, timeout=25000, wait_selector=None):
-    """Render a page with Playwright without assuming a specific event URL pattern."""
-    if not PLAYWRIGHT_AVAILABLE:
-        raise RuntimeError("playwright not available")
-    with sync_playwright() as p:
-        browser = p.chromium.launch(
-            args=["--no-sandbox", "--disable-blink-features=AutomationControlled"],
-            headless=True,
-        )
-        context = browser.new_context(
-            user_agent=HEADERS.get("User-Agent"),
-            locale="fi-FI",
-            extra_http_headers={"Accept-Language": HEADERS.get("Accept-Language", "fi-FI,fi;q=0.9")},
-        )
-        try:
-            context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
-        except Exception:
-            pass
-        page = context.new_page()
-        try:
-            page.goto(url, wait_until="domcontentloaded", timeout=timeout)
-            if wait_selector:
-                try:
-                    page.wait_for_selector(wait_selector, timeout=12000)
-                except Exception:
-                    pass
-            page.wait_for_timeout(1500)
-            content = page.content()
-        finally:
-            context.close()
-            browser.close()
-    lowered = content.lower()
-    if "just a moment" in lowered or "cf-chl-" in lowered:
-        raise RuntimeError("playwright fetch returned a Cloudflare challenge")
-    if len(content) < 1000:
-        raise RuntimeError("playwright fetch returned an empty/very small page")
-    return content
-
-
 def fetch_with_playwright_retries(url, attempts=2):
     last_exc = None
     for attempt in range(1, attempts + 1):
@@ -748,29 +569,20 @@ def fetch_with_playwright_retries(url, attempts=2):
     raise last_exc
 
 
-def fetch_meteli():
+def fetch_meteli(max_pages=4):
     events = []
     today = datetime.date.today()
     use_scraper = cloudscraper is not None
-    seen_page_signatures = set()
-    page_num = 1
-
-    while True:
+    for page_num in range(1, max_pages + 1):
         url = METELI_TAMPERE_URL if page_num == 1 else f"{METELI_TAMPERE_URL}/page/{page_num}"
         try:
             resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=4, backoff=1, use_scraper=use_scraper)
             html = resp.text
-            if _looks_like_block_page(html, getattr(resp, "status_code", None)):
-                print(f"[meteli page {page_num}] BLOCKED/challenge page detected — not parsing it", file=sys.stderr)
-                break
         except Exception as exc:
             log_http_error(f"meteli page {page_num}", exc)
             if PLAYWRIGHT_AVAILABLE:
                 try:
                     html = fetch_with_playwright_retries(url)
-                    if _looks_like_block_page(html):
-                        print(f"[meteli page {page_num}] BLOCKED/challenge page detected in Playwright fallback — not parsing it", file=sys.stderr)
-                        break
                 except Exception as exc2:
                     log_http_error(f"meteli playwright page {page_num}", exc2)
                     break
@@ -778,25 +590,6 @@ def fetch_meteli():
                 break
 
         soup = BeautifulSoup(html, "html.parser")
-
-        # Stop if the site starts returning the same page repeatedly.
-        # This prevents an infinite loop while still allowing the scraper
-        # to continue through every real Meteli page.
-        page_links = [
-            urljoin(METELI_BASE, a["href"])
-            for a in soup.find_all("a", href=True)
-            if "/tapahtuma/" in a["href"]
-        ]
-        page_signature = tuple(sorted(set(page_links)))
-        if page_signature and page_signature in seen_page_signatures:
-            print(
-                f"[meteli page {page_num}] same event page returned again — stopping pagination",
-                file=sys.stderr,
-            )
-            break
-        if page_signature:
-            seen_page_signatures.add(page_signature)
-
         found_this_page = 0
         for a in soup.find_all("a", href=True):
             if "/tapahtuma/" not in a["href"]:
@@ -811,76 +604,91 @@ def fetch_meteli():
             parsed["url"] = urljoin(METELI_BASE, a["href"])
             events.append(parsed)
             found_this_page += 1
-        _print_event_lines(f"meteli page {page_num}", [events[-found_this_page + i] for i in range(found_this_page)] if found_this_page else [])
+        print(f"[meteli page {page_num}] parsed {found_this_page} events", file=sys.stderr)
         if found_this_page == 0:
             break
-
-        page_num += 1
-
     return events
 
 
-def normalize_text(value):
-    """Normalize text only for internal comparisons; never changes JSON output."""
-    if not value:
-        return ""
-    value = value.casefold()
-    # Treat Tampere/address suffixes as venue decoration, not identity.
-    value = re.sub(r"\s*,\s*\d{5}\s+tampere\s*$", "", value)
-    value = re.sub(r"\s*,\s*tampere\s*$", "", value)
-    value = re.sub(r"[–—−]", "-", value)
-    value = re.sub(r"[^\w]+", "", value, flags=re.UNICODE)
-    return value
-
-
 def normalize_title(title):
-    return normalize_text(title)
-
-
-def normalize_venue(venue):
-    return normalize_text(venue)
-
-
-def event_duplicate_key(event):
-    """Internal identity: date + normalized title + normalized venue.
-
-    The first event encountered wins, including its URL. This key is never
-    written to data.json.
-    """
-    return (
-        event.get("date", ""),
-        normalize_title(event.get("title", "")),
-        normalize_venue(event.get("venue", "")),
-    )
+    return re.sub(r"[^a-z0-9]", "", title.lower())[:40]
 
 
 def merge_events(*event_lists):
-    """Merge sources in order; first matching event keeps all its data/URL.
-
-    Duplicate decisions are logged so the user can see exactly which URL won.
-    """
     seen = {}
     merged = []
-    duplicate_count = 0
     for events in event_lists:
-        for event in events:
-            key = event_duplicate_key(event)
-            if not key[0] or not key[1] or not key[2]:
-                continue
+        for e in events:
+            key = (e["date"], normalize_title(e["title"]))
             if key in seen:
-                duplicate_count += 1
-                first = seen[key]
-                print(
-                    f"[duplicate] {event.get('date')} — {event.get('title')} — {event.get('venue')}\n"
-                    f"  keeping first URL: {first.get('url','')}\n"
-                    f"  ignoring later URL: {event.get('url','')}",
-                    file=sys.stderr,
-                )
                 continue
-            seen[key] = event
-            merged.append(event)
-    print(f"[duplicates] removed {duplicate_count} duplicate event(s); first-found URL wins", file=sys.stderr)
+            seen[key] = True
+            merged.append(e)
     return merged
+
+
+# ---------------------------------------------------------------------------
+# VisitTampere scraper
+# ---------------------------------------------------------------------------
+
+
+def parse_fuzzy_date(s):
+    """Try several human-friendly date formats and return YYYY-MM-DD or None."""
+    if not s:
+        return None
+    s = s.strip()
+    m = re.search(r"(\d{4})[-\.](\d{1,2})[-\.](\d{1,2})", s)
+    if m:
+        y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        try:
+            return f"{y:04d}-{mo:02d}-{d:02d}"
+        except Exception:
+            pass
+    m = re.search(r"\b(\d{1,2})[.\-\/](\d{1,2})[.\-\/](\d{4})\b", s)
+    if m:
+        d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        try:
+            return f"{y:04d}-{mo:02d}-{d:02d}"
+        except Exception:
+            pass
+    m = re.search(r"\b(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})\b", s)
+    if m:
+        d, mon_name, y = int(m.group(1)), m.group(2).lower(), int(m.group(3))
+        months = {
+            'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6,
+            'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12,
+            'january': 1, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6,
+            'july': 7, 'august': 8, 'september': 9, 'october': 10, 'november': 11, 'december': 12,
+            'tammikuu': 1, 'helmikuu': 2, 'maaliskuu': 3, 'huhtikuu': 4,
+            'toukokuu': 5, 'kesakuu': 6, 'heinakuu': 7, 'elokuu': 8,
+            'syyskuu': 9, 'lokakuu': 10, 'marraskuu': 11, 'joulukuu': 12,
+        }
+        mo = months.get(mon_name[:3]) or months.get(mon_name)
+        if mo:
+            return f"{y:04d}-{mo:02d}-{d:02d}"
+    m = re.search(r"\b([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})\b", s)
+    if m:
+        mon_name, d, y = m.group(1).lower(), int(m.group(2)), int(m.group(3))
+        months2 = {
+            'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6,
+            'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12,
+            'january': 1, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6,
+            'july': 7, 'august': 8, 'september': 9, 'october': 10, 'november': 11, 'december': 12,
+        }
+        mo = months2.get(mon_name[:3]) or months2.get(mon_name)
+        if mo:
+            return f"{y:04d}-{mo:02d}-{d:02d}"
+    return None
+
+
+def _snippet_looks_like_date(snippet):
+    if re.search(r"\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|tammikuu|helmikuu|maaliskuu|huhtikuu|toukokuu|kesakuu|heinakuu|elokuu|syyskuu|lokakuu|marraskuu|joulukuu)\b", snippet, re.IGNORECASE):
+        return True
+    if re.search(r"\b\d{1,2}[.\-\/]\d{1,2}\b", snippet):
+        return True
+    if re.search(r"\b\d{4}-\d{2}-\d{2}\b", snippet):
+        return True
+    return False
 
 
 NAV_TITLE_BLACKLIST = [
@@ -892,7 +700,270 @@ NAV_TITLE_BLACKLIST = [
 ]
 
 
-# Keikat.org scraper
+def fetch_visittampere(url="https://visittampere.fi/en/events/"):
+    # Real fix (previous version pointed at the blog-style "/en/articles/
+    # events-in-tampere/" page, which is prose, not a card listing \u2014 that's
+    # why it only ever found generic page elements). Confirmed via search
+    # that the real per-event pages live under /en/events/ (e.g.
+    # /en/events/tove-festivaali/), so the sanity-check below now requires
+    # "/events/" in the URL instead of the old "/tapahtuma/" check, which
+    # was checking for kohokohdat's URL pattern on the wrong site \u2014 that
+    # bug is exactly why "Contact information" slipped through before.
+    # Still unverified against the live site (no internet access in the
+    # sandbox that built this), so keep an eye on its raw count in
+    # source_note after the first real run.
+    events = []
+    try:
+        resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=2, backoff=1)
+    except Exception as exc:
+        log_http_error("visittampere", exc)
+        return events
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    candidates = []
+    candidates.extend(soup.find_all("article"))
+    candidates.extend(soup.select("[class*='card'], [class*='item'], [class*='article']"))
+    for h in soup.find_all(["h2", "h3", "h4"]):
+        a = h.find("a", href=True)
+        if a:
+            candidates.append(h)
+
+    seen = set()
+    for node in candidates:
+        a = node.find("a", href=True)
+        title = None
+        url_ = None
+        if a:
+            title = a.get_text(" ", strip=True)
+            url_ = urljoin(url, a["href"])
+        else:
+            h = node.find(["h2", "h3", "h4"])
+            if h and h.get_text(strip=True):
+                title = h.get_text(" ", strip=True)
+        if not title:
+            strong = node.find(["strong", "b"])
+            if strong:
+                title = strong.get_text(" ", strip=True)
+        if not title:
+            continue
+        if any(bad in title.lower() for bad in NAV_TITLE_BLACKLIST):
+            continue
+
+        key = (title.lower(), url_ or "")
+        if key in seen:
+            continue
+        seen.add(key)
+
+        # Positive signal required regardless of where the date came from:
+        # this site's real event pages live under /events/. No URL match,
+        # no event \u2014 this replaces the old date_from_time bypass that let
+        # non-event pages through.
+        if not url_ or "/events/" not in url_.lower():
+            continue
+
+        date_str = None
+        time_str = ""
+        dt = node.find(["time", "span"], attrs={"datetime": True})
+        if dt and dt.get("datetime"):
+            date_str = parse_fuzzy_date(dt["datetime"])
+
+        if not date_str:
+            text_snippets = []
+            for el in node.find_all(["p", "div", "span", "li"], recursive=True):
+                txt = el.get_text(" ", strip=True)
+                if txt:
+                    text_snippets.append(txt)
+            for s in text_snippets:
+                if not _snippet_looks_like_date(s):
+                    continue
+                d = parse_fuzzy_date(s)
+                if d:
+                    date_str = d
+                    tm = re.search(r"\b([01]?\d|2[0-3]):([0-5]\d)\b", s)
+                    if tm:
+                        time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
+                    break
+
+        if not date_str:
+            try:
+                art_resp = fetch_with_retries("GET", url_, headers=HEADERS, timeout=15, retries=1, backoff=1)
+                art_soup = BeautifulSoup(art_resp.text, "html.parser")
+                t = art_soup.find("time")
+                if t and t.get("datetime"):
+                    date_str = parse_fuzzy_date(t["datetime"])
+                if not date_str:
+                    for p in art_soup.find_all("p", limit=6):
+                        ptxt = p.get_text(" ", strip=True)
+                        if not _snippet_looks_like_date(ptxt):
+                            continue
+                        d = parse_fuzzy_date(ptxt)
+                        if d:
+                            date_str = d
+                            tm = re.search(r"\b([01]?\d|2[0-3]):([0-5]\d)\b", ptxt)
+                            if tm:
+                                time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
+                            break
+            except Exception:
+                pass
+
+        if not date_str:
+            print(f"[visittampere] skipping candidate without reliable date: title={title!r} url={url_}", file=sys.stderr)
+            continue
+
+        if any(kw in title.lower() for kw in EXCLUDE_KEYWORDS):
+            continue
+
+        events.append({
+            "date": date_str,
+            "time": time_str,
+            "title": title,
+            "venue": "Tampere",
+            "genre": guess_genre(title, "Tampere"),
+            "free": 0,
+            "url": url_,
+        })
+
+    dedup = []
+    seen_keys = set()
+    for e in events:
+        k = (e["date"], e["title"].lower())
+        if k in seen_keys:
+            continue
+        seen_keys.add(k)
+        dedup.append(e)
+
+    print(f"[visittampere] parsed {len(dedup)} events", file=sys.stderr)
+    return dedup
+
+
+def _fetch_visittampere_impl(url="https://visittampere.fi/en/articles/events-in-tampere/"):
+    events = []
+    try:
+        resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=2, backoff=1)
+    except Exception as exc:
+        log_http_error("visittampere", exc)
+        return events
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    candidates = []
+    candidates.extend(soup.find_all("article"))
+    candidates.extend(soup.select("[class*='card'], [class*='item'], [class*='article']"))
+    for h in soup.find_all(["h2", "h3", "h4"]):
+        a = h.find("a", href=True)
+        if a:
+            candidates.append(h)
+
+    seen = set()
+    for node in candidates:
+        a = node.find("a", href=True)
+        title = None
+        url_ = None
+        if a:
+            title = a.get_text(" ", strip=True)
+            url_ = urljoin(url, a["href"])
+        else:
+            h = node.find(["h2", "h3", "h4"])
+            if h and h.get_text(strip=True):
+                title = h.get_text(" ", strip=True)
+        if not title:
+            strong = node.find(["strong", "b"])
+            if strong:
+                title = strong.get_text(" ", strip=True)
+        if not title:
+            continue
+
+        key = (title.lower(), url_ or "")
+        if key in seen:
+            continue
+        seen.add(key)
+
+        date_str = None
+        date_from_time = False
+        time_str = ""
+        dt = node.find(["time", "span"], attrs={"datetime": True})
+        if dt and dt.get("datetime"):
+            date_str = parse_fuzzy_date(dt["datetime"])
+            date_from_time = True
+
+        if not date_str:
+            text_snippets = []
+            for el in node.find_all(["p", "div", "span", "li"], recursive=True):
+                txt = el.get_text(" ", strip=True)
+                if txt:
+                    text_snippets.append(txt)
+            for s in text_snippets:
+                if not _snippet_looks_like_date(s):
+                    continue
+                d = parse_fuzzy_date(s)
+                if d:
+                    date_str = d
+                    tm = re.search(r"\b([01]?\d|2[0-3]):([0-5]\d)\b", s)
+                    if tm:
+                        time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
+                    date_from_time = False
+                    break
+
+        if not date_str and url_:
+            try:
+                art_resp = fetch_with_retries("GET", url_, headers=HEADERS, timeout=15, retries=1, backoff=1)
+                art_soup = BeautifulSoup(art_resp.text, "html.parser")
+                t = art_soup.find("time")
+                if t and t.get("datetime"):
+                    date_str = parse_fuzzy_date(t["datetime"])
+                    date_from_time = True
+                if not date_str:
+                    for p in art_soup.find_all("p", limit=6):
+                        ptxt = p.get_text(" ", strip=True)
+                        if not _snippet_looks_like_date(ptxt):
+                            continue
+                        d = parse_fuzzy_date(ptxt)
+                        if d:
+                            date_str = d
+                            tm = re.search(r"\b([01]?\d|2[0-3]):([0-5]\d)\b", ptxt)
+                            if tm:
+                                time_str = f"{int(tm.group(1)):02d}:{ptxt[tm.end(1)+1:tm.end(2)]}"
+                            date_from_time = False
+                            break
+            except Exception:
+                pass
+
+        if not date_str:
+            print(f"[visittampere] skipping candidate without reliable date: title={title!r} url={url_}", file=sys.stderr)
+            continue
+
+        # If date was extracted from a paragraph (not a time element) require that the URL looks like an event page,
+        # otherwise it's likely the article's publication date.
+        if not date_from_time and url_ and "/tapahtuma/" not in url_.lower():
+            print(f"[visittampere] skipping candidate where date likely publication date (no <time> and not /tapahtuma/): title={title!r} url={url_}", file=sys.stderr)
+            continue
+
+        ev = {
+            "date": date_str,
+            "time": time_str,
+            "title": title,
+            "venue": "Tampere",
+            "genre": guess_genre(title, "Tampere"),
+            "free": 0,
+            "url": url_ or url,
+        }
+        events.append(ev)
+
+    dedup = []
+    seen_keys = set()
+    for e in events:
+        k = (e["date"], e["title"].lower())
+        if k in seen_keys:
+            continue
+        seen_keys.add(k)
+        dedup.append(e)
+
+    print(f"[visittampere] parsed {len(dedup)} events", file=sys.stderr)
+    return dedup
+
+
+# keikat.org and linkedevents code follow the same approach:
 
 KEIKAT_ORG_URL = "https://keikat.org/tampere"
 KEIKAT_ORG_DATE_RE = re.compile(r"\d{1,2}\.\d{1,2}\.(\d{4})")
@@ -984,6 +1055,12 @@ def fetch_keikat_org(url=KEIKAT_ORG_URL):
     return deduped
 
 
+LINKEDEVENTS_URLS = [
+    "https://linkedevents.tampere.fi/v1/event/",
+    "http://linkedevents.tampere.fi/v1/event/",
+]
+
+
 def looks_like_music(title, venue):
     text = f"{title} {venue}".lower()
     if any(kw in text for kws in GENRE_KEYWORDS.values() for kw in kws):
@@ -991,394 +1068,273 @@ def looks_like_music(title, venue):
     return any(v.lower() in venue.lower() for v in KNOWN_VENUES)
 
 
+def fetch_linkedevents(days_ahead=45):
+    events = []
+    today = datetime.date.today()
+    end = today + datetime.timedelta(days=days_ahead)
+    params = {"start": today.isoformat(), "end": end.isoformat()}
+    last_exc = None
+
+    for base in LINKEDEVENTS_URLS:
+        try:
+            resp = fetch_with_retries("GET", base, headers=HEADERS, params=params, timeout=20, retries=3, backoff=1)
+            payload = resp.json()
+        except Exception as exc:
+            last_exc = exc
+            try:
+                body = getattr(exc, "response", None).text if getattr(exc, "response", None) is not None else ""
+            except Exception:
+                body = ""
+            if "Invalid host" in str(body) or "Invalid host" in str(exc):
+                try:
+                    headers = dict(HEADERS)
+                    headers["Host"] = "linkedevents.tampere.fi"
+                    resp = fetch_with_retries("GET", base, headers=headers, params=params, timeout=20, retries=2, backoff=1)
+                    payload = resp.json()
+                except Exception as exc2:
+                    last_exc = exc2
+                    continue
+            else:
+                continue
+
+        for item in payload.get("data", []):
+            try:
+                name_field = item.get("name") or {}
+                name = name_field.get("fi") or name_field.get("en") or ""
+                loc_field = (item.get("location") or {}).get("name") or {}
+                venue = loc_field.get("fi") or loc_field.get("en") or ""
+                start_time = item.get("start_time") or ""
+                if not name or len(start_time) < 10:
+                    continue
+                date_str = start_time[:10]
+                time_str = start_time[11:16] if len(start_time) >= 16 else ""
+                if any(kw in f"{name} {venue}".lower() for kw in EXCLUDE_KEYWORDS):
+                    continue
+                if not looks_like_music(name, venue):
+                    continue
+                events.append({
+                    "date": date_str,
+                    "time": time_str,
+                    "title": name.strip(),
+                    "venue": (venue or "Tampere").strip(),
+                    "genre": guess_genre(name, venue),
+                    "free": 0,
+                    "url": item.get("info_url") or item.get("@id") or base,
+                })
+            except Exception:
+                continue
+        if events:
+            break
+
+    if not events and last_exc:
+        log_http_error("linkedevents", last_exc)
+    else:
+        print(f"[linkedevents] parsed {len(events)} events", file=sys.stderr)
+    return events
+
+
 
 # ---------------------------------------------------------------------------
-# KEIKAT.LIVE — independent Tampere gig calendar
+# KEIKAT.LIVE — Tampere city calendar
 # ---------------------------------------------------------------------------
 KEIKAT_LIVE_URL = "https://keikat.live/kaupunki/tampere"
 KEIKAT_LIVE_DATE_RE = re.compile(
-    r"^\s*(\d{1,2})\.(\d{1,2})\.(?:[A-ZÅÄÖ]{2,3})\b", re.IGNORECASE
+    r"^(\d{1,2})\.(\d{1,2})\.(?:[A-Za-zÄÖÅäöå]{2})\b", re.IGNORECASE
 )
+KEIKAT_LIVE_TIME_RE = re.compile(r"\bklo\s*([01]?\d|2[0-3])\.([0-5]\d)\b", re.IGNORECASE)
+KEIKAT_LIVE_YEAR_RE = re.compile(r"#\s*Tampere\s+keikat\s+(\d{4})", re.IGNORECASE)
+KEIKAT_LIVE_FREE_RE = re.compile(r"\bIlmainen\b", re.IGNORECASE)
+KEIKAT_LIVE_HREF_RE = re.compile(r"/(?:keikka|tapahtuma)/", re.IGNORECASE)
 
 
-def _clean_keikat_live_anchor_text(text):
-    """Return title, venue, time and free flag from a Keikat.live event link.
+def _keikat_live_repeated_title(before_time):
+    """Recover title/venue from the compact card text used by keikat.live.
 
-    Keikat.live renders each event as a compact link whose accessible text
-    usually contains the title twice, with the genre between the two copies,
-    followed by venue and time. We deliberately parse that rendered text
-    instead of visiting every event detail page so this source stays fast.
+    Cards commonly render as:
+        TITLE [genre] TITLE VENUE klo 19.00 [Ilmainen]
+    The title is therefore repeated. Find the longest useful repeated piece
+    and treat everything after its second occurrence as the venue.
     """
-    text = re.sub(r"\s+", " ", text or "").strip()
+    text = re.sub(r"\s+", " ", before_time).strip()
     if not text:
-        return None
+        return "", ""
 
-    time_match = re.search(r"\bklo\s*(\d{1,2})[.:](\d{2})", text, re.IGNORECASE)
-    if not time_match:
-        # Some markup may omit the literal "klo".
-        time_match = re.search(r"\b(\d{1,2})[.:](\d{2})\b", text)
-    if not time_match:
-        return None
+    # Remove trailing price/age metadata that can sit after the venue.
+    text = re.sub(r"\s*(?:\d+[,.]?\d*\s*€|K\s*-?\s*18|K18)\s*$", "", text, flags=re.I).strip()
 
-    time_str = f"{int(time_match.group(1)):02d}:{time_match.group(2)}"
-    body = text[:time_match.start()].strip()
+    words = text.split()
+    if len(words) < 3:
+        return "", ""
 
-    free = 1 if "ilmainen" in text.casefold() else 0
-    body = re.sub(r"\bIlmainen\b", "", body, flags=re.IGNORECASE)
-    body = re.sub(r"\b\d+(?:[,.]\d+)?\s*€(?:\s*[–-]\s*\d+(?:[,.]\d+)?\s*€)?", "", body)
-    body = re.sub(r"\bK[- ]?18\b", "", body, flags=re.IGNORECASE)
-    body = re.sub(r"\s+", " ", body).strip(" -–|")
-
-    tokens = body.split()
-    if len(tokens) < 2:
-        return None
-
-    # Find the longest repeated prefix. The source normally has:
-    #   TITLE [GENRE] TITLE VENUE
-    # or:
-    #   TITLE TITLE VENUE
-    # The text after the second title is therefore the venue.
     best = None
-    max_title_words = min(30, len(tokens) // 2)
-    for title_words in range(max_title_words, 0, -1):
-        prefix = tokens[:title_words]
-        for second_start in range(title_words, len(tokens) - title_words):
-            if tokens[second_start:second_start + title_words] == prefix:
-                venue_tokens = tokens[second_start + title_words:]
-                if venue_tokens:
-                    best = (
-                        " ".join(prefix).strip(),
-                        " ".join(venue_tokens).strip(" -–|,"),
-                    )
+    # Find the longest contiguous prefix/subsequence that appears again later.
+    # Limiting the first part avoids expensive O(n^3) behavior on long titles.
+    max_words = min(25, len(words) // 2 + 8)
+    for n in range(max_words, 1, -1):
+        candidate = " ".join(words[:n])
+        for j in range(1, len(words) - n + 1):
+            if " ".join(words[j:j+n]).casefold() == candidate.casefold():
+                venue = " ".join(words[j+n:]).strip()
+                if venue:
+                    best = (candidate, venue)
                     break
         if best:
             break
 
-    if not best:
-        # Fallback to known venues when the page happens not to repeat the
-        # title in the accessible text.
-        lower = body.casefold()
-        for venue_name in KNOWN_VENUES_SORTED:
-            pos = lower.rfind(venue_name.casefold())
-            if pos > 0:
-                title = body[:pos].strip(" -–|,")
-                if title:
-                    best = (title, venue_name)
-                    break
+    if best:
+        return best
 
-    if not best:
+    # The first token can be a genre label, so try to find any long repeated
+    # run and choose the occurrence whose remainder is a plausible venue.
+    for start in range(1, min(8, len(words))):
+        remaining = words[start:]
+        for n in range(min(20, len(remaining)//2), 1, -1):
+            candidate = " ".join(remaining[:n])
+            for j in range(n, len(remaining) - n + 1):
+                if " ".join(remaining[j:j+n]).casefold() == candidate.casefold():
+                    venue = " ".join(remaining[j+n:]).strip()
+                    if venue:
+                        return candidate, venue
+    return "", ""
+
+
+def _parse_keikat_live_card(text, date_str, url):
+    tm = KEIKAT_LIVE_TIME_RE.search(text)
+    if not tm or not date_str:
         return None
 
-    title, venue = best
+    before_time = text[:tm.start()].strip()
+    title, venue = _keikat_live_repeated_title(before_time)
     if not title or not venue:
         return None
 
-    # A repeated title can include a source category suffix in unusual cards.
-    # Remove only obvious genre labels from the end of the title.
-    title = re.sub(
-        r"\s+(?:Rock|Metal|Pop|Hip hop|Elektro / DJ|Jazz|Folk|Punk|Klassinen|"
-        r"Iskelmä|Reggae|Blues|Festari)\s*$",
-        "",
-        title,
-        flags=re.IGNORECASE,
-    ).strip()
+    # Clean known display metadata accidentally left around the venue.
+    venue = re.sub(r"\b(?:Ilmainen|K-18|K18)\b", "", venue, flags=re.I).strip(" -–·")
+    title = title.strip(" -–·")
+    if not title or not venue or not venue_looks_valid(venue):
+        return None
+
+    if any(kw in f"{title} {venue}".lower() for kw in EXCLUDE_KEYWORDS):
+        return None
 
     return {
+        "date": date_str,
+        "time": f"{int(tm.group(1)):02d}:{tm.group(2)}",
         "title": title,
         "venue": venue,
-        "time": time_str,
-        "free": free,
+        "genre": guess_genre(title, venue),
+        "free": 1 if KEIKAT_LIVE_FREE_RE.search(text) else 0,
+        "url": url,
     }
 
 
-def parse_keikat_live_page(html, today=None):
-    """Parse only Tampere event links from the Keikat.live city page."""
-    today = today or datetime.date.today()
-    soup = BeautifulSoup(html, "html.parser")
+def fetch_keikat_live(url=KEIKAT_LIVE_URL):
+    """Scrape the Tampere city calendar without opening individual events.
+
+    The page is already city-scoped, so every qualifying event card belongs to
+    Tampere. We only need a date heading plus an event card containing 'klo'.
+    This is intentionally independent from the other source parsers.
+    """
+    try:
+        resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=2, backoff=1)
+    except Exception as exc:
+        log_http_error("keikat_live", exc)
+        return []
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+    year = datetime.date.today().year
+    m_year = KEIKAT_LIVE_YEAR_RE.search(soup.get_text(" ", strip=True))
+    if m_year:
+        year = int(m_year.group(1))
+
     events = []
-    seen_urls = set()
-
-    current_year = today.year
-    previous_month = None
     current_date = None
+    seen_urls = set()
+    card_count = 0
 
-    for el in soup.find_all(["h1", "h2", "h3", "h4", "p", "a", "li", "div"]):
+    # Walk the document in order. The live page has compact date headings such
+    # as '11.8.TI 1 keikka', followed by anchors containing the event card.
+    for el in soup.find_all(["h1", "h2", "h3", "h4", "a", "div", "li"]):
         text = el.get_text(" ", strip=True)
         if not text:
             continue
 
-        if el.name != "a":
-            date_match = KEIKAT_LIVE_DATE_RE.match(text)
-            if date_match and len(text) < 50:
-                day = int(date_match.group(1))
-                month = int(date_match.group(2))
+        dm = re.match(r"^(\d{1,2})\.(\d{1,2})\.(?:[A-Za-zÄÖÅäöå]{2})\b", text, re.I)
+        if dm and len(text) < 60:
+            day, month = int(dm.group(1)), int(dm.group(2))
+            try:
+                current_date = f"{year:04d}-{month:02d}-{day:02d}"
+            except ValueError:
+                current_date = None
+            continue
 
-                # The city page starts in the current year and rolls into the
-                # following year once the displayed month goes backwards.
-                if previous_month is not None and month < previous_month:
-                    current_year += 1
-                previous_month = month
-
-                try:
-                    current_date = datetime.date(current_year, month, day)
-                except ValueError:
-                    current_date = None
-                continue
-
-        if el.name != "a":
+        if el.name != "a" or not current_date:
+            continue
+        if not KEIKAT_LIVE_TIME_RE.search(text):
             continue
 
         href = el.get("href", "")
         if not href or href.startswith("#") or href.startswith("javascript:"):
             continue
-        if not href.startswith("/") and "keikat.live" not in href:
+        full_url = urljoin(url, href)
+        if full_url in seen_urls:
             continue
 
-        # Avoid navigation/footer links. Event links on the city page point to
-        # an event/detail path and contain a date-bearing event card.
-        if "/kaupunki/" in href or "/paikka/" in href or "/artist" in href:
+        # Require an event-like link when the site provides one. If the site
+        # changes its slug, the time-bearing anchor is still accepted.
+        if "keikat.live" not in full_url:
             continue
 
-        parsed = _clean_keikat_live_anchor_text(text)
+        parsed = _parse_keikat_live_card(text, current_date, full_url)
         if not parsed:
             continue
+        seen_urls.add(full_url)
+        events.append(parsed)
+        card_count += 1
 
-        if current_date is None:
-            continue
+    # Fallback: some HTML versions put the clickable event URL on a wrapper
+    # while the text-bearing anchor is nested. Scan all anchors once more using
+    # their parent card text, but still require a time and current date.
+    if not events:
+        current_date = None
+        for el in soup.find_all(["h1", "h2", "h3", "h4", "a", "div", "li"]):
+            text = el.get_text(" ", strip=True)
+            if not text:
+                continue
+            dm = re.match(r"^(\d{1,2})\.(\d{1,2})\.(?:[A-Za-zÄÖÅäöå]{2})\b", text, re.I)
+            if dm and len(text) < 60:
+                current_date = f"{year:04d}-{int(dm.group(2)):02d}-{int(dm.group(1)):02d}"
+                continue
+            if el.name != "a" or not current_date:
+                continue
+            tm = KEIKAT_LIVE_TIME_RE.search(text)
+            if not tm:
+                continue
+            href = el.get("href", "")
+            if not href:
+                continue
+            full_url = urljoin(url, href)
+            if full_url in seen_urls:
+                continue
+            parsed = _parse_keikat_live_card(text, current_date, full_url)
+            if parsed:
+                seen_urls.add(full_url)
+                events.append(parsed)
 
-        url = urljoin(KEIKAT_LIVE_URL, href)
-        if url in seen_urls:
-            continue
-
-        title = parsed["title"]
-        venue = parsed["venue"]
-
-        if not title or not venue:
-            continue
-        if any(kw in f"{title} {venue}".lower() for kw in EXCLUDE_KEYWORDS):
-            continue
-        if not venue_looks_valid(venue):
-            continue
-
-        events.append({
-            "date": current_date.isoformat(),
-            "time": parsed["time"],
-            "title": title,
-            "venue": venue,
-            "genre": guess_genre(title, venue),
-            "free": parsed["free"],
-            "url": url,
-        })
-        seen_urls.add(url)
-
-    # The page can contain a small number of non-event cards mixed into the
-    # same DOM. Keep the source independently deduplicated.
-    deduped = []
-    seen_keys = set()
-    for event in events:
-        key = (event["date"], normalize_title(event["title"]), normalize_venue(event["venue"]))
-        if key in seen_keys:
-            continue
-        seen_keys.add(key)
-        deduped.append(event)
-
-    return deduped
-
-
-def fetch_keikat_live():
-    events = []
-    try:
-        resp = fetch_with_retries(
-            "GET",
-            KEIKAT_LIVE_URL,
-            headers=HEADERS,
-            timeout=20,
-            retries=2,
-            backoff=0.75,
-        )
-        if _looks_like_block_page(resp.text, getattr(resp, "status_code", None)):
-            print("[keikat.live] BLOCKED/challenge page detected", file=sys.stderr)
-            return events
-
-        events = parse_keikat_live_page(resp.text)
-
-        # A very small result usually means the page layout changed or the
-        # request returned incomplete content. Use Playwright only then.
-        if not events and PLAYWRIGHT_AVAILABLE:
-            print("[keikat.live] HTTP returned 0 events — trying Playwright fallback", file=sys.stderr)
-            html = fetch_with_playwright_generic(
-                KEIKAT_LIVE_URL,
-                wait_selector='a[href*="/keikka/"], a[href*="/tapahtuma/"]',
-            )
-            events = parse_keikat_live_page(html)
-
-    except Exception as exc:
-        log_http_error("keikat.live", exc)
-        if PLAYWRIGHT_AVAILABLE:
-            try:
-                print("[keikat.live] HTTP failed — trying Playwright fallback", file=sys.stderr)
-                html = fetch_with_playwright_generic(
-                    KEIKAT_LIVE_URL,
-                    wait_selector='a[href*="/keikka/"], a[href*="/tapahtuma/"]',
-                )
-                events = parse_keikat_live_page(html)
-            except Exception as exc2:
-                log_http_error("keikat.live playwright", exc2)
-
-    print(f"[keikat.live] parsed {len(events)} events", file=sys.stderr)
+    print(f"[keikat_live] parsed {len(events)} events from Tampere calendar", file=sys.stderr)
+    if not events:
+        print(f"[keikat_live] NO EVENTS: page fetched successfully but no event cards matched (card candidates with time were {card_count})", file=sys.stderr)
     return events
-
-# ---------------------------------------------------------------------------
-# Puistokonsertit.tampere.fi (Tampere park concerts)
-# ---------------------------------------------------------------------------
-# Unusually reliable source: each event's own URL carries the date and time
-# as query params, e.g.
-#   ?event-id=...&date=08.08.2026&time=14.00+-+15.00
-# so the date/time don't need to be inferred from surrounding page text at
-# all \u2014 just parsed straight out of the link itself. Venue/price still come
-# from the page text near the link, same approach as the other sources.
-PUISTOKONSERTIT_URL = "https://puistokonsertit.tampere.fi/ohjelma/"
-
-
-def parse_puistokonsertit_page(html):
-    soup = BeautifulSoup(html, "html.parser")
-    events = []
-    seen = set()
-
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-        if "/tapahtuma/" not in href or "event-id=" not in href:
-            continue
-        if href in seen:
-            continue
-
-        qs = parse_qs(urlparse(href).query)
-        date_raw = (qs.get("date") or [None])[0]
-        time_raw = (qs.get("time") or [None])[0]
-        if not date_raw:
-            continue
-        dm = re.match(r"(\d{1,2})\.(\d{1,2})\.(\d{4})", date_raw)
-        if not dm:
-            continue
-        d, mo, y = int(dm.group(1)), int(dm.group(2)), int(dm.group(3))
-        date_str = f"{y:04d}-{mo:02d}-{d:02d}"
-
-        time_str = ""
-        if time_raw:
-            tm = re.match(r"(\d{1,2})\.(\d{2})", time_raw)
-            if tm:
-                time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
-
-        title = re.sub(r"^Puistokonsertit:\s*", "", a.get_text(" ", strip=True)).strip()
-        if not title:
-            continue
-
-        # Venue/price come from the surrounding card text, not the URL.
-        container = a.find_parent(["article", "li", "div"]) or a.parent
-        ctext = container.get_text(" ", strip=True) if container else ""
-
-        venue = "Tampere"
-        for v in KNOWN_VENUES_SORTED:
-            if v.lower() in ctext.lower():
-                venue = v
-                break
-        if venue == "Tampere":
-            addr_m = re.search(r"([A-ZÅÄÖ][\w .,'\-]{2,60}?),?\s*\d{5}\s+Tampere", ctext)
-            if addr_m:
-                candidate = addr_m.group(1).strip().rstrip(",")
-                # Prefer just the venue name over "Venue, Street 39" when a
-                # street address is present as its own comma-separated part.
-                candidate = candidate.split(",")[0].strip()
-                if not is_suspicious_heading(candidate):
-                    venue = candidate
-
-        free = 1 if "maksuton" in ctext.lower() else 0
-
-        seen.add(href)
-        events.append({
-            "date": date_str,
-            "time": time_str,
-            "title": title,
-            "venue": venue,
-            "genre": guess_genre(title, venue),
-            "free": free,
-            "url": href,
-        })
-
-    return events
-
-
-def fetch_puistokonsertit(url=PUISTOKONSERTIT_URL):
-    events = []
-    try:
-        resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=3, backoff=1)
-        if _looks_like_block_page(resp.text, getattr(resp, "status_code", None)):
-            print("[puistokonsertit] BLOCKED/challenge page detected \u2014 not parsing it", file=sys.stderr)
-            return events
-        events = parse_puistokonsertit_page(resp.text)
-    except Exception as exc:
-        log_http_error("puistokonsertit", exc)
-        if PLAYWRIGHT_AVAILABLE:
-            try:
-                html = fetch_with_playwright_generic(url, wait_selector='a[href*="/tapahtuma/"]')
-                events = parse_puistokonsertit_page(html)
-            except Exception as exc2:
-                log_http_error("puistokonsertit playwright", exc2)
-    print(f"[puistokonsertit] parsed {len(events)} events", file=sys.stderr)
-    return events
-
-
-def _run_source(name, func):
-    """Run one independent source and always return a structured result."""
-    started = time.monotonic()
-    try:
-        events = func()
-        elapsed = time.monotonic() - started
-        status = "OK" if events else "NO_EVENTS_OR_PARSE_FAILURE"
-        print(f"[{name}] COMPLETE — {len(events)} events in {elapsed:.1f}s — {status}", file=sys.stderr)
-        return name, events, status, None
-    except Exception as exc:
-        elapsed = time.monotonic() - started
-        print(f"[{name}] FAILED after {elapsed:.1f}s: {exc}", file=sys.stderr)
-        return name, [], "FAILED", f"{name}: {exc}"
-
-
-def _fetch_kohokohdat_months(months):
-    """Fetch the current and next Kohokohdat month concurrently."""
-    events = []
-    if len(months) == 1:
-        year, month = months[0]
-        return fetch_month(year, month)
-
-    with ThreadPoolExecutor(max_workers=len(months), thread_name_prefix="kohokohdat") as pool:
-        futures = {
-            pool.submit(fetch_month, year, month): (year, month)
-            for year, month in months
-        }
-        for future in as_completed(futures):
-            year, month = futures[future]
-            try:
-                month_events = future.result()
-                _print_event_lines(f"kohokohdat {year}-{month:02d}", month_events)
-                events.extend(month_events)
-            except Exception as exc:
-                print(f"[kohokohdat {year}-{month:02d}] FAILED: {exc}", file=sys.stderr)
-                raise
-    return events
-
 
 def main():
-    started_total = time.monotonic()
     today = datetime.date.today()
+    kohokohdat_events = []
+    meteli_events = []
+    keikat_org_events = []
+    linkedevents_events = []
+    visittampere_events = []
+    keikat_live_events = []
     errors = []
-    source_status = {}
-    source_events = {
-        "meteli": [],
-        "kohokohdat": [],
-        "keikat_org": [],
-        "puistokonsertit": [],
-        "keikat_live": [],
-    }
 
     months_to_fetch = [(today.year, today.month)]
     nm = today.month + 1
@@ -1388,52 +1344,46 @@ def main():
         ny += 1
     months_to_fetch.append((ny, nm))
 
-    print("\n========================================", file=sys.stderr)
-    print("SCRAPE START", file=sys.stderr)
-    print("========================================", file=sys.stderr)
-    print("Running independent sources in parallel.", file=sys.stderr)
-    print(f"Date range: {today.isoformat()} -> {(today + datetime.timedelta(days=200)).isoformat()}", file=sys.stderr)
+    for year, month in months_to_fetch:
+        try:
+            events = fetch_month(year, month)
+            print(f"[kohokohdat {year}-{month:02d}] parsed {len(events)} events", file=sys.stderr)
+            kohokohdat_events.extend(events)
+        except Exception as exc:
+            errors.append(f"kohokohdat {year}-{month:02d}: {exc}")
+            print(f"[kohokohdat {year}-{month:02d}] FAILED: {exc}", file=sys.stderr)
 
-    # These sources are independent. Run them concurrently so a slow/blocked
-    # source cannot make the whole scraper wait behind it.
-    jobs = {
-        "kohokohdat": lambda: _fetch_kohokohdat_months(months_to_fetch),
-        "meteli": fetch_meteli,
-        "keikat_org": fetch_keikat_org,
-        "puistokonsertit": fetch_puistokonsertit,
-        "keikat_live": fetch_keikat_live,
-    }
+    try:
+        meteli_events = fetch_meteli(max_pages=4)
+    except Exception as exc:
+        errors.append(f"meteli: {exc}")
+        print(f"[meteli] FAILED: {exc}", file=sys.stderr)
 
-    with ThreadPoolExecutor(max_workers=len(jobs), thread_name_prefix="source") as pool:
-        futures = {pool.submit(_run_source, name, func): name for name, func in jobs.items()}
-        for future in as_completed(futures):
-            name = futures[future]
-            try:
-                result_name, events, status, error = future.result()
-            except Exception as exc:
-                result_name, events, status, error = name, [], "FAILED", f"{name}: {exc}"
-            source_events[result_name] = events
-            source_status[result_name] = status
-            if error:
-                errors.append(error)
+    try:
+        keikat_org_events = fetch_keikat_org()
+    except Exception as exc:
+        errors.append(f"keikat.org: {exc}")
+        print(f"[keikat.org] FAILED: {exc}", file=sys.stderr)
 
-    kohokohdat_events = source_events["kohokohdat"]
-    meteli_events = source_events["meteli"]
-    keikat_org_events = source_events["keikat_org"]
-    puistokonsertit_events = source_events["puistokonsertit"]
-    keikat_live_events = source_events["keikat_live"]
+    try:
+        linkedevents_events = fetch_linkedevents()
+    except Exception as exc:
+        errors.append(f"linkedevents: {exc}")
+        print(f"[linkedevents] FAILED: {exc}", file=sys.stderr)
 
-    # First source wins when the same gig appears on multiple sites.
-    # puistokonsertit goes first: its date/time come straight from the
-    # event URL itself rather than being inferred from page text, so it's
-    # the most trustworthy signal when a gig also shows up elsewhere.
-    all_events = merge_events(
-        puistokonsertit_events,
-        meteli_events,
-        kohokohdat_events,
-        keikat_org_events,
-        keikat_live_events,
-    )
+    try:
+        visittampere_events = fetch_visittampere()
+    except Exception as exc:
+        errors.append(f"visittampere: {exc}")
+        print(f"[visittampere] FAILED: {exc}", file=sys.stderr)
+
+    try:
+        keikat_live_events = fetch_keikat_live()
+    except Exception as exc:
+        errors.append(f"keikat_live: {exc}")
+        print(f"[keikat_live] FAILED: {exc}", file=sys.stderr)
+
+    all_events = merge_events(meteli_events, kohokohdat_events, keikat_org_events, linkedevents_events, visittampere_events, keikat_live_events)
 
     if not all_events:
         print("No events parsed from any source — leaving existing data.json untouched.", file=sys.stderr)
@@ -1443,11 +1393,8 @@ def main():
     raw = [[e["date"], e["time"], e["title"], e["venue"], e.get("genre", "rock"), e.get("free", 0), e.get("url", "")] for e in all_events]
 
     filtered = []
-    # Only publish gigs happening today or later — past gigs aren't useful
-    # to the site, so they're dropped from the final dataset every run.
-    date_window_start = today.isoformat()
+    date_window_start = (today - datetime.timedelta(days=3)).isoformat()
     date_window_end = (today + datetime.timedelta(days=200)).isoformat()
-    print(f"[date filter] Keeping gigs from {date_window_start} through {date_window_end}", file=sys.stderr)
     for e in raw:
         date, time_s, title, venue, genre, free, url = e
         title_l = (title or "").lower()
@@ -1457,11 +1404,8 @@ def main():
         if not venue_looks_valid(venue):
             print(f"[filter] dropping garbled venue: {venue!r} title={title!r} url={url}", file=sys.stderr)
             continue
-        if date < date_window_start:
-            print(f"[filter] dropping past gig {date}: title={title!r} url={url}", file=sys.stderr)
-            continue
-        if date > date_window_end:
-            print(f"[filter] dropping beyond date window {date}: title={title!r} url={url}", file=sys.stderr)
+        if not (date_window_start <= date <= date_window_end):
+            print(f"[filter] dropping out-of-range date {date}: title={title!r} url={url}", file=sys.stderr)
             continue
         if len(venue) > 60:
             print(f"[filter] dropping because venue too long: {venue!r} title={title!r} url={url}", file=sys.stderr)
@@ -1474,30 +1418,29 @@ def main():
             continue
         filtered.append(e)
 
-    counts = {name: len(source_events[name]) for name in jobs}
+    counts = {
+        "meteli": len(meteli_events),
+        "kohokohdat": len(kohokohdat_events),
+        "keikat_org": len(keikat_org_events),
+        "linkedevents": len(linkedevents_events),
+        "visittampere": len(visittampere_events),
+        "keikat_live": len(keikat_live_events),
+    }
     output = {
         "generated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
+        "source_note": (
+            f"Auto-scraped from 6 sources (raw counts: {counts}), merged to "
+            f"{len(filtered)} events after de-duplication. Music gigs only \u2014 "
+            f"theatre/comedy filtered out. Confidence varies by source."
+        ),
         "errors": errors,
-        "source_status": source_status,
         "events": filtered,
     }
 
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=1)
 
-    total_elapsed = time.monotonic() - started_total
-    print("\n========================================", file=sys.stderr)
-    print("SCRAPE SUMMARY", file=sys.stderr)
-    print("========================================", file=sys.stderr)
-    for name, count in counts.items():
-        print(f"  {name:22} {count:4d}  {source_status.get(name, 'UNKNOWN')}", file=sys.stderr)
-    print(f"  Parsed before final filter: {len(all_events):4d}", file=sys.stderr)
-    print(f"  Final events in JSON:       {len(filtered):4d}", file=sys.stderr)
-    print(f"  Sources parsed: {sum(1 for name in jobs if counts[name] > 0)}/{len(jobs)}", file=sys.stderr)
-    print(f"  Total runtime: {total_elapsed:.1f}s", file=sys.stderr)
-    print("  Output: data.json", file=sys.stderr)
-    _print_final_events(filtered)
+    print(f"Wrote {len(filtered)} events to data.json. Per-source raw counts: {counts}", file=sys.stderr)
 
 
 if __name__ == "__main__":
