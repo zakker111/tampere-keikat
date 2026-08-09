@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Scraper for Meteli, Kohokohdat, Keikat.org, Puistokonsertit and Kulttuuritoimitus.
+Scraper for Meteli, Kohokohdat and Keikat.org.
 """
 import json
 import re
@@ -8,6 +8,7 @@ import sys
 import time
 import datetime
 import random
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urljoin, urlparse, parse_qs
 
 import requests
@@ -1090,218 +1091,56 @@ def fetch_puistokonsertit(url=PUISTOKONSERTIT_URL):
     return events
 
 
-
-# ---------------------------------------------------------------------------
-# Kulttuuritoimitus.fi (Tampere/Pirkanmaa concert listing)
-# ---------------------------------------------------------------------------
-KULTTUURITOIMITUS_URL = "https://kulttuuritoimitus.fi/konsertit-pirkanmaa/"
-KULTTUURITOIMITUS_DATE_RE = re.compile(
-    r"^(?:[A-Za-zÅÄÖåäö]+\s+)?(\d{1,2})\.(?:(?:[–-](\d{1,2}))\.)?(\d{1,2})\.?(?:\s*)"
-)
-KULTTUURITOIMITUS_TAMPERE_MARKERS = ("/ tampere", "/ tampere", "tampere", "tampere-")
-
-
-def _parse_kulttuuritoimitus_date_prefix(text, year):
-    """Parse '8.8.' or '28.–30.8.' from the beginning of a listing."""
-    if not text:
-        return None
-    m = re.match(r"^(?:[A-Za-zÅÄÖåäö]+\s+)?(\d{1,2})\.(?:[–-](\d{1,2})\.)?(\d{1,2})\.?(?=\s|$)", text.strip())
-    if not m:
-        return None
-    day = int(m.group(1))
-    end_day = int(m.group(2)) if m.group(2) else day
-    month = int(m.group(3))
+def _run_source(name, func):
+    """Run one independent source and always return a structured result."""
+    started = time.monotonic()
     try:
-        start = datetime.date(year, month, day)
-        end = datetime.date(year, month, end_day)
-    except ValueError:
-        return None
-    return start.isoformat(), end.isoformat(), m.end()
+        events = func()
+        elapsed = time.monotonic() - started
+        status = "OK" if events else "NO_EVENTS_OR_PARSE_FAILURE"
+        print(f"[{name}] COMPLETE — {len(events)} events in {elapsed:.1f}s — {status}", file=sys.stderr)
+        return name, events, status, None
+    except Exception as exc:
+        elapsed = time.monotonic() - started
+        print(f"[{name}] FAILED after {elapsed:.1f}s: {exc}", file=sys.stderr)
+        return name, [], "FAILED", f"{name}: {exc}"
 
 
-def _kulttuuritoimitus_location_is_tampere(location):
-    if not location:
-        return False
-    loc = location.casefold()
-    return "tampere" in loc or "hervanta" in loc
-
-
-def _kulttuuritoimitus_clean_venue(venue):
-    venue = re.sub(r"\s+", " ", venue or "").strip(" []")
-    venue = re.sub(r"\s*/\s*Tampere\s*$", "", venue, flags=re.I)
-    venue = re.sub(r",\s*Tampere\s*$", "", venue, flags=re.I)
-    return venue.strip(" []") or "Tampere"
-
-
-def parse_kulttuuritoimitus_page(html, year=None):
-    """Parse Kulttuuritoimitus' Pirkanmaa concert list.
-
-    Only Tampere listings are accepted.  The parser is intentionally isolated
-    from the other source parsers so a layout change here cannot affect them.
-    """
-    year = year or datetime.date.today().year
-    soup = BeautifulSoup(html, "html.parser")
+def _fetch_kohokohdat_months(months):
+    """Fetch the current and next Kohokohdat month concurrently."""
     events = []
-    seen = set()
-    section = ""
-    current_venue = None
-    scanned = 0
-    date_candidates = 0
-    rejected_non_tampere = 0
-    rejected_no_venue = 0
-    rejected_excluded = 0
-    rejected_invalid = 0
+    if len(months) == 1:
+        year, month = months[0]
+        return fetch_month(year, month)
 
-    # The page uses headings to separate Tampere from the rest of Pirkanmaa.
-    # Keep both the Tampere concert section and the large/festival section,
-    # because the latter also contains Tampere concerts with [Venue / Tampere].
-    for el in soup.find_all(["h1", "h2", "h3", "h4", "p", "li"]):
-        text = el.get_text(" ", strip=True)
-        if not text:
-            continue
-
-        low = text.casefold()
-        if el.name in ("h1", "h2"):
-            if "konsertit | tampere" in low or low == "konsertit tampere":
-                section = "tampere"
-                current_venue = None
-                continue
-            if "muu pirkanmaa" in low:
-                section = "other"
-                current_venue = None
-                continue
-            if "festivaalit ja suuret konsertit" in low:
-                section = "festivals"
-                current_venue = None
-                continue
-
-        if section == "other":
-            continue
-
-        if el.name == "h3":
-            # Venue headings are used only inside the Tampere concert section.
-            if section == "tampere":
-                current_venue = text
-            continue
-
-        parsed_date = _parse_kulttuuritoimitus_date_prefix(text, year)
-        if not parsed_date:
-            continue
-        date_candidates += 1
-        scanned += 1
-
-        start_date, end_date, prefix_end = parsed_date
-        rest = text[prefix_end:].strip(" –-:·")
-        if not rest or len(rest) > 220:
-            rejected_invalid += 1
-            continue
-
-        venue = current_venue or ""
-        location = ""
-
-        # Most festival/large-concert rows have a location suffix such as
-        # "[Nokia Arena / Tampere]".  This is authoritative for city filtering.
-        loc_match = re.search(r"\[([^\]]+)\]\s*$", rest)
-        if loc_match:
-            location = loc_match.group(1).strip()
-            rest = rest[:loc_match.start()].strip()
-            if "/" in location:
-                venue_part, city_part = [x.strip() for x in location.split("/", 1)]
-                if not _kulttuuritoimitus_location_is_tampere(city_part):
-                    rejected_non_tampere += 1
-                    continue
-                venue = venue_part
-            elif not _kulttuuritoimitus_location_is_tampere(location):
-                rejected_non_tampere += 1
-                continue
-        elif section == "festivals":
-            # Festival rows without a [venue / city] suffix cannot safely be
-            # assigned to Tampere, so do not guess.
-            rejected_non_tampere += 1
-            continue
-
-        if not venue:
-            rejected_no_venue += 1
-            continue
-
-        venue = _kulttuuritoimitus_clean_venue(venue)
-        if not venue_looks_valid(venue):
-            rejected_invalid += 1
-            continue
-
-        # Prefer an event-specific link when the row contains one. Otherwise
-        # the article itself is the correct source URL. Duplicate handling in
-        # merge_events guarantees that an earlier source URL wins.
-        event_url = KULTTUURITOIMITUS_URL
-        for a in el.find_all("a", href=True):
-            href = urljoin(KULTTUURITOIMITUS_URL, a["href"])
-            if href.startswith("http") and href != KULTTUURITOIMITUS_URL:
-                event_url = href
-                break
-
-        title = re.sub(r"^asti\s+", "", rest, flags=re.I).strip()
-        if not title:
-            rejected_invalid += 1
-            continue
-        if any(kw in f"{title} {venue}".casefold() for kw in EXCLUDE_KEYWORDS):
-            rejected_excluded += 1
-            continue
-
-        # If the whole multi-day range has ended, there is nothing useful to
-        # publish. Otherwise keep the start date as the event date.
-        try:
-            if datetime.date.fromisoformat(end_date) < datetime.date.today():
-                rejected_invalid += 1
-                continue
-        except ValueError:
-            rejected_invalid += 1
-            continue
-
-        key = (start_date, normalize_title(title), normalize_venue(venue))
-        if key in seen:
-            continue
-        seen.add(key)
-        events.append({
-            "date": start_date,
-            "time": "",
-            "title": title,
-            "venue": venue,
-            "genre": guess_genre(title, venue),
-            "free": 0,
-            "url": event_url,
-        })
-
-    print(
-        f"[kulttuuritoimitus] scanned dated listings={scanned}, "
-        f"Tampere events={len(events)}, non-Tampere={rejected_non_tampere}, "
-        f"no venue={rejected_no_venue}, excluded={rejected_excluded}, "
-        f"other rejected={rejected_invalid}",
-        file=sys.stderr,
-    )
-    _print_event_lines("kulttuuritoimitus", events)
+    with ThreadPoolExecutor(max_workers=len(months), thread_name_prefix="kohokohdat") as pool:
+        futures = {
+            pool.submit(fetch_month, year, month): (year, month)
+            for year, month in months
+        }
+        for future in as_completed(futures):
+            year, month = futures[future]
+            try:
+                month_events = future.result()
+                _print_event_lines(f"kohokohdat {year}-{month:02d}", month_events)
+                events.extend(month_events)
+            except Exception as exc:
+                print(f"[kohokohdat {year}-{month:02d}] FAILED: {exc}", file=sys.stderr)
+                raise
     return events
 
 
-def fetch_kulttuuritoimitus(url=KULTTUURITOIMITUS_URL):
-    try:
-        resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=15, retries=2, backoff=1)
-        if _looks_like_block_page(resp.text, getattr(resp, "status_code", None)):
-            print("[kulttuuritoimitus] BLOCKED/challenge page detected — not parsing it", file=sys.stderr)
-            return []
-        return parse_kulttuuritoimitus_page(resp.text)
-    except Exception as exc:
-        log_http_error("kulttuuritoimitus", exc)
-        return []
-
 def main():
+    started_total = time.monotonic()
     today = datetime.date.today()
-    kohokohdat_events = []
-    meteli_events = []
-    keikat_org_events = []
-    puistokonsertit_events = []
-    kulttuuritoimitus_events = []
     errors = []
     source_status = {}
+    source_events = {
+        "meteli": [],
+        "kohokohdat": [],
+        "keikat_org": [],
+        "puistokonsertit": [],
+    }
 
     months_to_fetch = [(today.year, today.month)]
     nm = today.month + 1
@@ -1311,54 +1150,49 @@ def main():
         ny += 1
     months_to_fetch.append((ny, nm))
 
-    for year, month in months_to_fetch:
-        try:
-            events = fetch_month(year, month)
-            _print_event_lines(f"kohokohdat {year}-{month:02d}", events)
-            kohokohdat_events.extend(events)
-            source_status["kohokohdat"] = "OK" if events else "NO_EVENTS_OR_PARSE_FAILURE"
-        except Exception as exc:
-            errors.append(f"kohokohdat {year}-{month:02d}: {exc}")
-            source_status["kohokohdat"] = "FAILED"
-            print(f"[kohokohdat {year}-{month:02d}] FAILED: {exc}", file=sys.stderr)
+    print("\n========================================", file=sys.stderr)
+    print("SCRAPE START", file=sys.stderr)
+    print("========================================", file=sys.stderr)
+    print("Running independent sources in parallel.", file=sys.stderr)
+    print(f"Date range: {today.isoformat()} -> {(today + datetime.timedelta(days=200)).isoformat()}", file=sys.stderr)
 
-    try:
-        meteli_events = fetch_meteli()
-        source_status["meteli"] = "OK" if meteli_events else "BLOCKED_OR_NO_EVENTS"
-    except Exception as exc:
-        errors.append(f"meteli: {exc}")
-        source_status["meteli"] = "FAILED"
-        print(f"[meteli] FAILED: {exc}", file=sys.stderr)
+    # These sources are independent. Run them concurrently so a slow/blocked
+    # source cannot make the whole scraper wait behind it.
+    jobs = {
+        "kohokohdat": lambda: _fetch_kohokohdat_months(months_to_fetch),
+        "meteli": fetch_meteli,
+        "keikat_org": fetch_keikat_org,
+        "puistokonsertit": fetch_puistokonsertit,
+    }
 
-    try:
-        keikat_org_events = fetch_keikat_org()
-        source_status["keikat_org"] = "OK" if keikat_org_events else "NO_EVENTS_OR_PARSE_FAILURE"
-    except Exception as exc:
-        errors.append(f"keikat.org: {exc}")
-        source_status["keikat_org"] = "FAILED"
-        print(f"[keikat.org] FAILED: {exc}", file=sys.stderr)
+    with ThreadPoolExecutor(max_workers=len(jobs), thread_name_prefix="source") as pool:
+        futures = {pool.submit(_run_source, name, func): name for name, func in jobs.items()}
+        for future in as_completed(futures):
+            name = futures[future]
+            try:
+                result_name, events, status, error = future.result()
+            except Exception as exc:
+                result_name, events, status, error = name, [], "FAILED", f"{name}: {exc}"
+            source_events[result_name] = events
+            source_status[result_name] = status
+            if error:
+                errors.append(error)
 
-    try:
-        puistokonsertit_events = fetch_puistokonsertit()
-        source_status["puistokonsertit"] = "OK" if puistokonsertit_events else "NO_EVENTS_OR_PARSE_FAILURE"
-    except Exception as exc:
-        errors.append(f"puistokonsertit: {exc}")
-        source_status["puistokonsertit"] = "FAILED"
-        print(f"[puistokonsertit] FAILED: {exc}", file=sys.stderr)
-
-    try:
-        kulttuuritoimitus_events = fetch_kulttuuritoimitus()
-        source_status["kulttuuritoimitus"] = "OK" if kulttuuritoimitus_events else "NO_EVENTS_OR_PARSE_FAILURE"
-    except Exception as exc:
-        errors.append(f"kulttuuritoimitus: {exc}")
-        source_status["kulttuuritoimitus"] = "FAILED"
-        print(f"[kulttuuritoimitus] FAILED: {exc}", file=sys.stderr)
+    kohokohdat_events = source_events["kohokohdat"]
+    meteli_events = source_events["meteli"]
+    keikat_org_events = source_events["keikat_org"]
+    puistokonsertit_events = source_events["puistokonsertit"]
 
     # First source wins when the same gig appears on multiple sites.
     # puistokonsertit goes first: its date/time come straight from the
     # event URL itself rather than being inferred from page text, so it's
     # the most trustworthy signal when a gig also shows up elsewhere.
-    all_events = merge_events(puistokonsertit_events, meteli_events, kohokohdat_events, keikat_org_events, kulttuuritoimitus_events)
+    all_events = merge_events(
+        puistokonsertit_events,
+        meteli_events,
+        kohokohdat_events,
+        keikat_org_events,
+    )
 
     if not all_events:
         print("No events parsed from any source — leaving existing data.json untouched.", file=sys.stderr)
@@ -1399,16 +1233,10 @@ def main():
             continue
         filtered.append(e)
 
-    counts = {
-        "meteli": len(meteli_events),
-        "kohokohdat": len(kohokohdat_events),
-        "keikat_org": len(keikat_org_events),
-        "puistokonsertit": len(puistokonsertit_events),
-        "kulttuuritoimitus": len(kulttuuritoimitus_events),
-    }
+    counts = {name: len(source_events[name]) for name in jobs}
     output = {
         "generated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
+        "source_note": "Auto-scraped from 4 sources. Music gigs only — theatre/comedy filtered out.",
         "errors": errors,
         "source_status": source_status,
         "events": filtered,
@@ -1417,17 +1245,17 @@ def main():
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=1)
 
+    total_elapsed = time.monotonic() - started_total
     print("\n========================================", file=sys.stderr)
     print("SCRAPE SUMMARY", file=sys.stderr)
     print("========================================", file=sys.stderr)
     for name, count in counts.items():
-        print(f"  {name:22} {count:4d}", file=sys.stderr)
+        print(f"  {name:22} {count:4d}  {source_status.get(name, 'UNKNOWN')}", file=sys.stderr)
     print(f"  Parsed before final filter: {len(all_events):4d}", file=sys.stderr)
     print(f"  Final events in JSON:       {len(filtered):4d}", file=sys.stderr)
-    print("  Source status:", file=sys.stderr)
-    for name in counts:
-        print(f"    {name:20} {source_status.get(name, 'UNKNOWN')}", file=sys.stderr)
-    print(f"  Output: data.json", file=sys.stderr)
+    print(f"  Sources parsed: {sum(1 for name in jobs if counts[name] > 0)}/{len(jobs)}", file=sys.stderr)
+    print(f"  Total runtime: {total_elapsed:.1f}s", file=sys.stderr)
+    print("  Output: data.json", file=sys.stderr)
     _print_final_events(filtered)
 
 
