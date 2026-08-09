@@ -1290,7 +1290,14 @@ def fetch_keikat_live(url=KEIKAT_LIVE_URL):
             print("[keikat_live] BLOCKED/challenge page detected — not parsing it", file=sys.stderr)
             return []
         events = parse_keikat_live_page(resp.text, datetime.date.today().year)
-        print(f"[keikat_live] parsed {len(events)} events from Tampere calendar", file=sys.stderr)
+        print(
+            f"[keikat_live] parsed {len(events)} events from Tampere calendar",
+            file=sys.stderr,
+        )
+        if events:
+            print(f"[keikat_live] SOURCE OK — {len(events)} events parsed", file=sys.stderr)
+        else:
+            print("[keikat_live] SOURCE OK — page fetched, but 0 events parsed", file=sys.stderr)
         return events
     except Exception as exc:
         log_http_error("keikat_live", exc)
@@ -1303,8 +1310,15 @@ def _run_source(name, func):
     try:
         events = func()
         elapsed = time.monotonic() - started
-        status = "OK" if events else "NO_EVENTS_OR_PARSE_FAILURE"
-        print(f"[{name}] COMPLETE — {len(events)} events in {elapsed:.1f}s — {status}", file=sys.stderr)
+        if name == "keikat_live":
+            status = "OK" if events else "NO_EVENTS_OR_PARSE_FAILURE"
+            print(
+                f"[{name}] COMPLETE — {len(events)} events in {elapsed:.1f}s — {status}",
+                file=sys.stderr,
+            )
+        else:
+            status = "OK" if events else "NO_EVENTS_OR_PARSE_FAILURE"
+            print(f"[{name}] COMPLETE — {len(events)} events in {elapsed:.1f}s — {status}", file=sys.stderr)
         return name, events, status, None
     except Exception as exc:
         elapsed = time.monotonic() - started
