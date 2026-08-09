@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Scraper for Meteli, Kohokohdat and Keikat.org.
+Scraper for Meteli, Kohokohdat, Keikat.org, Puistokonsertit and Keikat.live.
 """
 import json
 import re
@@ -991,6 +991,243 @@ def looks_like_music(title, venue):
     return any(v.lower() in venue.lower() for v in KNOWN_VENUES)
 
 
+
+# ---------------------------------------------------------------------------
+# KEIKAT.LIVE — independent Tampere gig calendar
+# ---------------------------------------------------------------------------
+KEIKAT_LIVE_URL = "https://keikat.live/kaupunki/tampere"
+KEIKAT_LIVE_DATE_RE = re.compile(
+    r"^\s*(\d{1,2})\.(\d{1,2})\.(?:[A-ZÅÄÖ]{2,3})\b", re.IGNORECASE
+)
+
+
+def _clean_keikat_live_anchor_text(text):
+    """Return title, venue, time and free flag from a Keikat.live event link.
+
+    Keikat.live renders each event as a compact link whose accessible text
+    usually contains the title twice, with the genre between the two copies,
+    followed by venue and time. We deliberately parse that rendered text
+    instead of visiting every event detail page so this source stays fast.
+    """
+    text = re.sub(r"\s+", " ", text or "").strip()
+    if not text:
+        return None
+
+    time_match = re.search(r"\bklo\s*(\d{1,2})[.:](\d{2})", text, re.IGNORECASE)
+    if not time_match:
+        # Some markup may omit the literal "klo".
+        time_match = re.search(r"\b(\d{1,2})[.:](\d{2})\b", text)
+    if not time_match:
+        return None
+
+    time_str = f"{int(time_match.group(1)):02d}:{time_match.group(2)}"
+    body = text[:time_match.start()].strip()
+
+    free = 1 if "ilmainen" in text.casefold() else 0
+    body = re.sub(r"\bIlmainen\b", "", body, flags=re.IGNORECASE)
+    body = re.sub(r"\b\d+(?:[,.]\d+)?\s*€(?:\s*[–-]\s*\d+(?:[,.]\d+)?\s*€)?", "", body)
+    body = re.sub(r"\bK[- ]?18\b", "", body, flags=re.IGNORECASE)
+    body = re.sub(r"\s+", " ", body).strip(" -–|")
+
+    tokens = body.split()
+    if len(tokens) < 2:
+        return None
+
+    # Find the longest repeated prefix. The source normally has:
+    #   TITLE [GENRE] TITLE VENUE
+    # or:
+    #   TITLE TITLE VENUE
+    # The text after the second title is therefore the venue.
+    best = None
+    max_title_words = min(30, len(tokens) // 2)
+    for title_words in range(max_title_words, 0, -1):
+        prefix = tokens[:title_words]
+        for second_start in range(title_words, len(tokens) - title_words):
+            if tokens[second_start:second_start + title_words] == prefix:
+                venue_tokens = tokens[second_start + title_words:]
+                if venue_tokens:
+                    best = (
+                        " ".join(prefix).strip(),
+                        " ".join(venue_tokens).strip(" -–|,"),
+                    )
+                    break
+        if best:
+            break
+
+    if not best:
+        # Fallback to known venues when the page happens not to repeat the
+        # title in the accessible text.
+        lower = body.casefold()
+        for venue_name in KNOWN_VENUES_SORTED:
+            pos = lower.rfind(venue_name.casefold())
+            if pos > 0:
+                title = body[:pos].strip(" -–|,")
+                if title:
+                    best = (title, venue_name)
+                    break
+
+    if not best:
+        return None
+
+    title, venue = best
+    if not title or not venue:
+        return None
+
+    # A repeated title can include a source category suffix in unusual cards.
+    # Remove only obvious genre labels from the end of the title.
+    title = re.sub(
+        r"\s+(?:Rock|Metal|Pop|Hip hop|Elektro / DJ|Jazz|Folk|Punk|Klassinen|"
+        r"Iskelmä|Reggae|Blues|Festari)\s*$",
+        "",
+        title,
+        flags=re.IGNORECASE,
+    ).strip()
+
+    return {
+        "title": title,
+        "venue": venue,
+        "time": time_str,
+        "free": free,
+    }
+
+
+def parse_keikat_live_page(html, today=None):
+    """Parse only Tampere event links from the Keikat.live city page."""
+    today = today or datetime.date.today()
+    soup = BeautifulSoup(html, "html.parser")
+    events = []
+    seen_urls = set()
+
+    current_year = today.year
+    previous_month = None
+    current_date = None
+
+    for el in soup.find_all(["h1", "h2", "h3", "h4", "p", "a", "li", "div"]):
+        text = el.get_text(" ", strip=True)
+        if not text:
+            continue
+
+        if el.name != "a":
+            date_match = KEIKAT_LIVE_DATE_RE.match(text)
+            if date_match and len(text) < 50:
+                day = int(date_match.group(1))
+                month = int(date_match.group(2))
+
+                # The city page starts in the current year and rolls into the
+                # following year once the displayed month goes backwards.
+                if previous_month is not None and month < previous_month:
+                    current_year += 1
+                previous_month = month
+
+                try:
+                    current_date = datetime.date(current_year, month, day)
+                except ValueError:
+                    current_date = None
+                continue
+
+        if el.name != "a":
+            continue
+
+        href = el.get("href", "")
+        if not href or href.startswith("#") or href.startswith("javascript:"):
+            continue
+        if not href.startswith("/") and "keikat.live" not in href:
+            continue
+
+        # Avoid navigation/footer links. Event links on the city page point to
+        # an event/detail path and contain a date-bearing event card.
+        if "/kaupunki/" in href or "/paikka/" in href or "/artist" in href:
+            continue
+
+        parsed = _clean_keikat_live_anchor_text(text)
+        if not parsed:
+            continue
+
+        if current_date is None:
+            continue
+
+        url = urljoin(KEIKAT_LIVE_URL, href)
+        if url in seen_urls:
+            continue
+
+        title = parsed["title"]
+        venue = parsed["venue"]
+
+        if not title or not venue:
+            continue
+        if any(kw in f"{title} {venue}".lower() for kw in EXCLUDE_KEYWORDS):
+            continue
+        if not venue_looks_valid(venue):
+            continue
+
+        events.append({
+            "date": current_date.isoformat(),
+            "time": parsed["time"],
+            "title": title,
+            "venue": venue,
+            "genre": guess_genre(title, venue),
+            "free": parsed["free"],
+            "url": url,
+        })
+        seen_urls.add(url)
+
+    # The page can contain a small number of non-event cards mixed into the
+    # same DOM. Keep the source independently deduplicated.
+    deduped = []
+    seen_keys = set()
+    for event in events:
+        key = (event["date"], normalize_title(event["title"]), normalize_venue(event["venue"]))
+        if key in seen_keys:
+            continue
+        seen_keys.add(key)
+        deduped.append(event)
+
+    return deduped
+
+
+def fetch_keikat_live():
+    events = []
+    try:
+        resp = fetch_with_retries(
+            "GET",
+            KEIKAT_LIVE_URL,
+            headers=HEADERS,
+            timeout=20,
+            retries=2,
+            backoff=0.75,
+        )
+        if _looks_like_block_page(resp.text, getattr(resp, "status_code", None)):
+            print("[keikat.live] BLOCKED/challenge page detected", file=sys.stderr)
+            return events
+
+        events = parse_keikat_live_page(resp.text)
+
+        # A very small result usually means the page layout changed or the
+        # request returned incomplete content. Use Playwright only then.
+        if not events and PLAYWRIGHT_AVAILABLE:
+            print("[keikat.live] HTTP returned 0 events — trying Playwright fallback", file=sys.stderr)
+            html = fetch_with_playwright_generic(
+                KEIKAT_LIVE_URL,
+                wait_selector='a[href*="/keikka/"], a[href*="/tapahtuma/"]',
+            )
+            events = parse_keikat_live_page(html)
+
+    except Exception as exc:
+        log_http_error("keikat.live", exc)
+        if PLAYWRIGHT_AVAILABLE:
+            try:
+                print("[keikat.live] HTTP failed — trying Playwright fallback", file=sys.stderr)
+                html = fetch_with_playwright_generic(
+                    KEIKAT_LIVE_URL,
+                    wait_selector='a[href*="/keikka/"], a[href*="/tapahtuma/"]',
+                )
+                events = parse_keikat_live_page(html)
+            except Exception as exc2:
+                log_http_error("keikat.live playwright", exc2)
+
+    print(f"[keikat.live] parsed {len(events)} events", file=sys.stderr)
+    return events
+
 # ---------------------------------------------------------------------------
 # Puistokonsertit.tampere.fi (Tampere park concerts)
 # ---------------------------------------------------------------------------
@@ -1140,6 +1377,7 @@ def main():
         "kohokohdat": [],
         "keikat_org": [],
         "puistokonsertit": [],
+        "keikat_live": [],
     }
 
     months_to_fetch = [(today.year, today.month)]
@@ -1163,6 +1401,7 @@ def main():
         "meteli": fetch_meteli,
         "keikat_org": fetch_keikat_org,
         "puistokonsertit": fetch_puistokonsertit,
+        "keikat_live": fetch_keikat_live,
     }
 
     with ThreadPoolExecutor(max_workers=len(jobs), thread_name_prefix="source") as pool:
@@ -1182,6 +1421,7 @@ def main():
     meteli_events = source_events["meteli"]
     keikat_org_events = source_events["keikat_org"]
     puistokonsertit_events = source_events["puistokonsertit"]
+    keikat_live_events = source_events["keikat_live"]
 
     # First source wins when the same gig appears on multiple sites.
     # puistokonsertit goes first: its date/time come straight from the
@@ -1192,6 +1432,7 @@ def main():
         meteli_events,
         kohokohdat_events,
         keikat_org_events,
+        keikat_live_events,
     )
 
     if not all_events:
@@ -1236,7 +1477,7 @@ def main():
     counts = {name: len(source_events[name]) for name in jobs}
     output = {
         "generated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "source_note": "Auto-scraped from 4 sources. Music gigs only — theatre/comedy filtered out.",
+        "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
         "errors": errors,
         "source_status": source_status,
         "events": filtered,
