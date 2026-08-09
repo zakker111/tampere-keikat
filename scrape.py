@@ -7,7 +7,6 @@ import re
 import sys
 import time
 import datetime
-import random
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urljoin, urlparse, parse_qs
 
@@ -475,20 +474,6 @@ def parse_month_page(html, year, month):
 
                     if detail_date:
                         date_str = detail_date
-                    elif PLAYWRIGHT_AVAILABLE:
-                        try:
-                            rendered = fetch_with_playwright_generic(url, wait_selector="body")
-                            rendered_soup = BeautifulSoup(rendered, "html.parser")
-                            rendered_text = rendered_soup.get_text(" ", strip=True)
-                            title_pos = rendered_text.casefold().find(title.casefold())
-                            rendered_search = rendered_text[title_pos:] if title_pos >= 0 else rendered_text
-                            for dm in re.finditer(r"\b(\d{1,2})\.(\d{1,2})\.(\d{4})\b", rendered_search):
-                                candidate = parse_date(dm.group(0), year)
-                                if candidate and _date_matches_month(candidate, year, month):
-                                    date_str = candidate
-                                    break
-                        except Exception as pw_exc:
-                            print(f"[parse_month_page] detail Playwright fallback failed for {url}: {pw_exc}", file=sys.stderr)
                 except Exception as exc:
                     print(f"[parse_month_page] detail-date fallback failed for {url}: {exc}", file=sys.stderr)
 
@@ -525,7 +510,8 @@ def parse_month_page(html, year, month):
     return deduped
 
 
-def fetch_with_retries(method, url, *, headers=None, params=None, timeout=20, retries=3, backoff=1, allow_redirects=True, use_scraper=False):
+def fetch_with_retries(method, url, *, headers=None, params=None, timeout=20, retries=2, backoff=0.75, allow_redirects=True, use_scraper=False):
+    """Fetch with a small retry budget; never retry permanent HTTP failures."""
     last_exc = None
     for attempt in range(1, retries + 1):
         try:
@@ -534,14 +520,21 @@ def fetch_with_retries(method, url, *, headers=None, params=None, timeout=20, re
                 resp = scraper.get(url, headers=headers or HEADERS, params=params, timeout=timeout, allow_redirects=allow_redirects)
             else:
                 resp = requests.request(method, url, headers=headers or HEADERS, params=params, timeout=timeout, allow_redirects=allow_redirects)
+
+            # These indicate a permanent block/missing page. Retrying immediately
+            # cannot make the same URL succeed and only slows the other sources.
+            if resp.status_code in (401, 403, 404):
+                resp.raise_for_status()
+
             resp.raise_for_status()
             return resp
         except Exception as exc:
             last_exc = exc
-            print(f"[fetch] attempt {attempt} for {url} failed: {exc}", file=sys.stderr)
-            if attempt < retries:
-                time.sleep(backoff * attempt)
-            continue
+            status = getattr(getattr(exc, "response", None), "status_code", None)
+            print(f"[fetch] attempt {attempt}/{retries} for {url} failed: {exc}", file=sys.stderr)
+            if status in (401, 403, 404) or attempt >= retries:
+                break
+            time.sleep(backoff * attempt)
     raise last_exc
 
 
@@ -660,43 +653,6 @@ def parse_meteli_anchor_text(text, year_hint, today):
     }
 
 
-def fetch_with_playwright_content(url, timeout=25000):
-    if not PLAYWRIGHT_AVAILABLE:
-        raise RuntimeError("playwright not available")
-    with sync_playwright() as p:
-        time.sleep(1 + random.random())
-        browser = p.chromium.launch(args=["--no-sandbox", "--disable-blink-features=AutomationControlled"], headless=True)
-        context = browser.new_context(
-            user_agent=HEADERS.get("User-Agent"),
-            locale="fi-FI",
-            extra_http_headers={"Accept-Language": HEADERS.get("Accept-Language", "fi-FI,fi;q=0.9")}
-        )
-        try:
-            context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
-        except Exception:
-            pass
-        page = context.new_page()
-        try:
-            # networkidle never fires on a Cloudflare "Just a moment..."
-            # challenge page — it has persistent background JS activity by
-            # design, so networkidle guarantees a timeout every time the
-            # challenge appears rather than just occasionally. domcontentloaded
-            # fires immediately regardless; the actual gate we care about is
-            # real event links showing up, which the selector wait below checks.
-            page.goto(url, wait_until="domcontentloaded", timeout=timeout)
-            try:
-                page.wait_for_selector('a[href*="/tapahtuma/"]', timeout=25000)
-            except Exception:
-                pass  # checked explicitly below instead of assuming success
-            content = page.content()
-        finally:
-            context.close()
-            browser.close()
-
-    if "Just a moment" in content or "/tapahtuma/" not in content:
-        raise RuntimeError("playwright fetch returned a challenge/empty page, not real content")
-    return content
-
 
 def fetch_with_playwright_generic(url, timeout=25000, wait_selector=None):
     """Render a page with Playwright without assuming a specific event URL pattern."""
@@ -737,16 +693,6 @@ def fetch_with_playwright_generic(url, timeout=25000, wait_selector=None):
     return content
 
 
-def fetch_with_playwright_retries(url, attempts=2):
-    last_exc = None
-    for attempt in range(1, attempts + 1):
-        try:
-            return fetch_with_playwright_content(url)
-        except Exception as exc:
-            last_exc = exc
-            print(f"[playwright] attempt {attempt}/{attempts} for {url} failed: {exc}", file=sys.stderr)
-    raise last_exc
-
 
 def fetch_meteli():
     events = []
@@ -765,17 +711,7 @@ def fetch_meteli():
                 break
         except Exception as exc:
             log_http_error(f"meteli page {page_num}", exc)
-            if PLAYWRIGHT_AVAILABLE:
-                try:
-                    html = fetch_with_playwright_retries(url)
-                    if _looks_like_block_page(html):
-                        print(f"[meteli page {page_num}] BLOCKED/challenge page detected in Playwright fallback — not parsing it", file=sys.stderr)
-                        break
-                except Exception as exc2:
-                    log_http_error(f"meteli playwright page {page_num}", exc2)
-                    break
-            else:
-                break
+            break
 
         soup = BeautifulSoup(html, "html.parser")
 
@@ -1212,12 +1148,6 @@ def fetch_puistokonsertit(url=PUISTOKONSERTIT_URL):
         events = parse_puistokonsertit_page(resp.text)
     except Exception as exc:
         log_http_error("puistokonsertit", exc)
-        if PLAYWRIGHT_AVAILABLE:
-            try:
-                html = fetch_with_playwright_generic(url, wait_selector='a[href*="/tapahtuma/"]')
-                events = parse_puistokonsertit_page(html)
-            except Exception as exc2:
-                log_http_error("puistokonsertit playwright", exc2)
     print(f"[puistokonsertit] parsed {len(events)} events", file=sys.stderr)
     return events
 
