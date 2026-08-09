@@ -1144,9 +1144,10 @@ KEIKAT_LIVE_GENRE_LABELS = [
 
 def _keikat_live_heading_date(text, year):
     """Return ISO date from headings such as '11.8.TI 1 keikka'."""
+    text = re.sub(r"\s+", " ", text).strip()
     m = re.match(
         r"^\s*(\d{1,2})\.(\d{1,2})\.[A-Za-zÄÖÅäöå]+\s+\d+\s+keikka(?:a)?\s*$",
-        re.sub(r"\s+", " ", text).strip(),
+        text,
         re.IGNORECASE,
     )
     if not m:
@@ -1157,39 +1158,65 @@ def _keikat_live_heading_date(text, year):
         return None
 
 
-def _keikat_live_extract_venue(text_before_time):
-    """Find the venue at the end of a Keikat.live event card."""
-    cleaned = re.sub(r"\s+", " ", text_before_time).strip(" -–:")
-    for venue in KEIKAT_LIVE_VENUES_SORTED:
-        if cleaned.casefold().endswith(venue.casefold()):
-            return venue, cleaned[: -len(venue)].strip(" -–:")
-    return "", cleaned
-
-
-def _keikat_live_clean_title(prefix):
-    """Remove Keikat.live category/age labels and repeated title text."""
-    text = re.sub(r"\s+", " ", prefix).strip(" -–:")
-    # The site commonly renders: TITLE + GENRE + TITLE (+ K-18).
+def _keikat_live_clean_title(text):
+    """Remove category labels and the duplicated title rendered by the site."""
+    text = re.sub(r"\s+", " ", text).strip(" -–:")
     for label in sorted(KEIKAT_LIVE_GENRE_LABELS, key=len, reverse=True):
         text = re.sub(rf"\s+{re.escape(label)}(?=\s|$)", " ", text, flags=re.IGNORECASE)
     text = re.sub(r"\s+K-18\b", " ", text, flags=re.IGNORECASE)
     text = re.sub(r"\s+", " ", text).strip(" -–:")
 
     words = text.split()
-    if len(words) >= 2:
-        # After removing the source's labels, most cards are exactly TITLE TITLE.
-        for split_at in range(1, len(words) // 2 + 1):
-            left = words[:split_at]
-            right = words[split_at:split_at * 2]
-            if left == right and split_at * 2 == len(words):
-                return " ".join(left).strip()
-        # Also handle a small amount of trailing source metadata.
-        normalized = " ".join(words).casefold()
-        for split_at in range(len(words) - 1, 1, -1):
-            candidate = " ".join(words[:split_at])
-            if re.search(rf"(?<!\w){re.escape(candidate.casefold())}(?!\w)", normalized[normalized.find(candidate.casefold()) + len(candidate):]):
-                return candidate.strip()
+    for n in range(len(words) // 2, 0, -1):
+        if (
+            [w.casefold() for w in words[:n]]
+            == [w.casefold() for w in words[n:2 * n]]
+            and len(words) == 2 * n
+        ):
+            return " ".join(words[:n]).strip()
+
     return text
+
+
+def _keikat_live_extract_title_venue(text_before_time):
+    """
+    Keikat.live commonly renders:
+        TITLE [GENRE] TITLE VENUE
+    Find the repeated title and treat the remainder as the venue.
+    """
+    cleaned = re.sub(r"\s+", " ", text_before_time).strip(" -–:")
+    words = cleaned.split()
+    if len(words) < 3:
+        return "", ""
+
+    labels = {label.casefold() for label in KEIKAT_LIVE_GENRE_LABELS}
+
+    for title_len in range(min(len(words) // 2, 40), 0, -1):
+        first = words[:title_len]
+
+        for middle_len in range(0, min(3, len(words) - 2 * title_len) + 1):
+            second_start = title_len + middle_len
+            second_end = second_start + title_len
+            if second_end >= len(words):
+                continue
+
+            middle = words[title_len:second_start]
+            if any(word.casefold() not in labels and word.casefold() != "k-18" for word in middle):
+                continue
+
+            second = words[second_start:second_end]
+            if [w.casefold() for w in first] != [w.casefold() for w in second]:
+                continue
+
+            venue = " ".join(words[second_end:]).strip(" -–:")
+            if venue:
+                return " ".join(first), venue
+
+    for venue in KEIKAT_LIVE_VENUES_SORTED:
+        if cleaned.casefold().endswith(venue.casefold()):
+            return cleaned[: -len(venue)].strip(" -–:"), venue
+
+    return "", ""
 
 
 def parse_keikat_live_page(html, year=None):
@@ -1200,19 +1227,17 @@ def parse_keikat_live_page(html, year=None):
     current_date = None
     seen_urls = set()
 
-    # Process the document in order: date headings establish the date only
-    # until the next date heading. Event anchors carry their own time/venue.
-    for el in soup.find_all(True):
-        if el.name != "a":
-            text = re.sub(r"\s+", " ", el.get_text(" ", strip=True)).strip()
-            if len(text) <= 80:
-                heading_date = _keikat_live_heading_date(text, year)
-                if heading_date:
-                    current_date = heading_date
+    for el in soup.find_all(["h2", "h3", "h4", "a"]):
+        if el.name in {"h2", "h3", "h4"}:
+            heading = re.sub(r"\s+", " ", el.get_text(" ", strip=True)).strip()
+            parsed_date = _keikat_live_heading_date(heading, year)
+            if parsed_date:
+                current_date = parsed_date
             continue
 
         if not current_date:
             continue
+
         text = re.sub(r"\s+", " ", el.get_text(" ", strip=True)).strip()
         if not text or "klo" not in text.casefold():
             continue
@@ -1220,27 +1245,15 @@ def parse_keikat_live_page(html, year=None):
         tm = re.search(r"\bklo\s*([01]?\d|2[0-3])\.([0-5]\d)\b", text, re.IGNORECASE)
         if not tm:
             continue
+
         time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
         before_time = text[:tm.start()].strip()
         free = 1 if re.search(r"\bIlmainen\b", text, re.IGNORECASE) else 0
 
-        venue, title_prefix = _keikat_live_extract_venue(before_time)
-        if not venue:
-            # Unknown venues are still recoverable when the source repeats the
-            # title before appending the venue, e.g.
-            # "TITLE Festari TITLE Kyttälänkatu 7".
-            cleaned = re.sub(r"\s+", " ", before_time).strip(" -–:")
-            for label in sorted(KEIKAT_LIVE_GENRE_LABELS, key=len, reverse=True):
-                cleaned = re.sub(rf"\s+{re.escape(label)}(?=\s|$)", " ", cleaned, flags=re.IGNORECASE)
-            cleaned = re.sub(r"\s+K-18\b", " ", cleaned, flags=re.IGNORECASE)
-            words = re.sub(r"\s+", " ", cleaned).strip().split()
-            for split_at in range(1, len(words) // 2 + 1):
-                if words[:split_at] == words[split_at:split_at * 2] and len(words) > split_at * 2:
-                    title_prefix = " ".join(words[:split_at])
-                    venue = " ".join(words[split_at * 2:]).strip(" -–:")
-                    break
-        if not venue:
+        title_prefix, venue = _keikat_live_extract_title_venue(before_time)
+        if not title_prefix or not venue:
             continue
+
         title = _keikat_live_clean_title(title_prefix)
         if not title or len(title) > 180 or len(venue) > 80:
             continue
@@ -1248,7 +1261,11 @@ def parse_keikat_live_page(html, year=None):
         if any(kw in f"{title} {venue}".casefold() for kw in EXCLUDE_KEYWORDS):
             continue
 
-        url = urljoin(KEIKAT_LIVE_URL, el.get("href", ""))
+        href = el.get("href", "").strip()
+        if not href:
+            continue
+
+        url = urljoin(KEIKAT_LIVE_URL, href)
         if url in seen_urls:
             continue
         seen_urls.add(url)
@@ -1264,7 +1281,6 @@ def parse_keikat_live_page(html, year=None):
         })
 
     return events
-
 
 def fetch_keikat_live(url=KEIKAT_LIVE_URL):
     """Fetch Keikat.live directly; no Playwright fallback is used."""
