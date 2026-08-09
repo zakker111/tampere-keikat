@@ -7,6 +7,7 @@ import re
 import sys
 import time
 import datetime
+import random
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urljoin, urlparse, parse_qs
 
@@ -474,6 +475,20 @@ def parse_month_page(html, year, month):
 
                     if detail_date:
                         date_str = detail_date
+                    elif PLAYWRIGHT_AVAILABLE:
+                        try:
+                            rendered = fetch_with_playwright_generic(url, wait_selector="body")
+                            rendered_soup = BeautifulSoup(rendered, "html.parser")
+                            rendered_text = rendered_soup.get_text(" ", strip=True)
+                            title_pos = rendered_text.casefold().find(title.casefold())
+                            rendered_search = rendered_text[title_pos:] if title_pos >= 0 else rendered_text
+                            for dm in re.finditer(r"\b(\d{1,2})\.(\d{1,2})\.(\d{4})\b", rendered_search):
+                                candidate = parse_date(dm.group(0), year)
+                                if candidate and _date_matches_month(candidate, year, month):
+                                    date_str = candidate
+                                    break
+                        except Exception as pw_exc:
+                            print(f"[parse_month_page] detail Playwright fallback failed for {url}: {pw_exc}", file=sys.stderr)
                 except Exception as exc:
                     print(f"[parse_month_page] detail-date fallback failed for {url}: {exc}", file=sys.stderr)
 
@@ -510,8 +525,7 @@ def parse_month_page(html, year, month):
     return deduped
 
 
-def fetch_with_retries(method, url, *, headers=None, params=None, timeout=20, retries=2, backoff=0.75, allow_redirects=True, use_scraper=False):
-    """Fetch with a small retry budget; never retry permanent HTTP failures."""
+def fetch_with_retries(method, url, *, headers=None, params=None, timeout=20, retries=3, backoff=1, allow_redirects=True, use_scraper=False):
     last_exc = None
     for attempt in range(1, retries + 1):
         try:
@@ -520,21 +534,14 @@ def fetch_with_retries(method, url, *, headers=None, params=None, timeout=20, re
                 resp = scraper.get(url, headers=headers or HEADERS, params=params, timeout=timeout, allow_redirects=allow_redirects)
             else:
                 resp = requests.request(method, url, headers=headers or HEADERS, params=params, timeout=timeout, allow_redirects=allow_redirects)
-
-            # These indicate a permanent block/missing page. Retrying immediately
-            # cannot make the same URL succeed and only slows the other sources.
-            if resp.status_code in (401, 403, 404):
-                resp.raise_for_status()
-
             resp.raise_for_status()
             return resp
         except Exception as exc:
             last_exc = exc
-            status = getattr(getattr(exc, "response", None), "status_code", None)
-            print(f"[fetch] attempt {attempt}/{retries} for {url} failed: {exc}", file=sys.stderr)
-            if status in (401, 403, 404) or attempt >= retries:
-                break
-            time.sleep(backoff * attempt)
+            print(f"[fetch] attempt {attempt} for {url} failed: {exc}", file=sys.stderr)
+            if attempt < retries:
+                time.sleep(backoff * attempt)
+            continue
     raise last_exc
 
 
@@ -653,6 +660,43 @@ def parse_meteli_anchor_text(text, year_hint, today):
     }
 
 
+def fetch_with_playwright_content(url, timeout=25000):
+    if not PLAYWRIGHT_AVAILABLE:
+        raise RuntimeError("playwright not available")
+    with sync_playwright() as p:
+        time.sleep(1 + random.random())
+        browser = p.chromium.launch(args=["--no-sandbox", "--disable-blink-features=AutomationControlled"], headless=True)
+        context = browser.new_context(
+            user_agent=HEADERS.get("User-Agent"),
+            locale="fi-FI",
+            extra_http_headers={"Accept-Language": HEADERS.get("Accept-Language", "fi-FI,fi;q=0.9")}
+        )
+        try:
+            context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
+        except Exception:
+            pass
+        page = context.new_page()
+        try:
+            # networkidle never fires on a Cloudflare "Just a moment..."
+            # challenge page — it has persistent background JS activity by
+            # design, so networkidle guarantees a timeout every time the
+            # challenge appears rather than just occasionally. domcontentloaded
+            # fires immediately regardless; the actual gate we care about is
+            # real event links showing up, which the selector wait below checks.
+            page.goto(url, wait_until="domcontentloaded", timeout=timeout)
+            try:
+                page.wait_for_selector('a[href*="/tapahtuma/"]', timeout=25000)
+            except Exception:
+                pass  # checked explicitly below instead of assuming success
+            content = page.content()
+        finally:
+            context.close()
+            browser.close()
+
+    if "Just a moment" in content or "/tapahtuma/" not in content:
+        raise RuntimeError("playwright fetch returned a challenge/empty page, not real content")
+    return content
+
 
 def fetch_with_playwright_generic(url, timeout=25000, wait_selector=None):
     """Render a page with Playwright without assuming a specific event URL pattern."""
@@ -693,6 +737,16 @@ def fetch_with_playwright_generic(url, timeout=25000, wait_selector=None):
     return content
 
 
+def fetch_with_playwright_retries(url, attempts=2):
+    last_exc = None
+    for attempt in range(1, attempts + 1):
+        try:
+            return fetch_with_playwright_content(url)
+        except Exception as exc:
+            last_exc = exc
+            print(f"[playwright] attempt {attempt}/{attempts} for {url} failed: {exc}", file=sys.stderr)
+    raise last_exc
+
 
 def fetch_meteli():
     events = []
@@ -711,7 +765,17 @@ def fetch_meteli():
                 break
         except Exception as exc:
             log_http_error(f"meteli page {page_num}", exc)
-            break
+            if PLAYWRIGHT_AVAILABLE:
+                try:
+                    html = fetch_with_playwright_retries(url)
+                    if _looks_like_block_page(html):
+                        print(f"[meteli page {page_num}] BLOCKED/challenge page detected in Playwright fallback — not parsing it", file=sys.stderr)
+                        break
+                except Exception as exc2:
+                    log_http_error(f"meteli playwright page {page_num}", exc2)
+                    break
+            else:
+                break
 
         soup = BeautifulSoup(html, "html.parser")
 
@@ -928,137 +992,6 @@ def looks_like_music(title, venue):
 
 
 # ---------------------------------------------------------------------------
-# Keikkalista.fi \u2014 LOWEST CONFIDENCE SOURCE, built entirely blind.
-#
-# The Tampere directory page (KEIKKALISTA_TAMPERE_URL) is plain server-
-# rendered HTML and reliably lists every venue with a real gig count, e.g.
-# "Ravintola Telakka Keikkoja tulossa 116" \u2014 that part is solid.
-#
-# But each individual venue page's actual gig listing is loaded via
-# JavaScript after the page loads; the server-rendered HTML only contains
-# venue info (address, map, contact), no gigs at all. I could not find a
-# single real example of what that JS-rendered content looks like \u2014 not
-# by fetching it directly, not through Google's cache. So
-# parse_keikkalista_venue_text() below is a guess based on the pattern
-# every OTHER similar Finnish gig-listing site uses (a repeating
-# "D.M. Title" sequence, confirmed on kulttuuritoimitus.fi and on
-# individual venues' own sites like telakka.eu), not on anything actually
-# observed from keikkalista.fi itself. Treat the first real run's per-venue
-# counts (logged individually below) as the actual test.
-# ---------------------------------------------------------------------------
-KEIKKALISTA_BASE = "https://www.keikkalista.fi"
-KEIKKALISTA_TAMPERE_URL = "https://www.keikkalista.fi/tampere"
-KEIKKALISTA_DATE_RE = re.compile(r"\b(\d{1,2})\.(\d{1,2})\.(\d{4})?\b")
-
-
-def fetch_keikkalista_venue_links(url=KEIKKALISTA_TAMPERE_URL):
-    venues = []
-    try:
-        resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=3, backoff=1)
-    except Exception as exc:
-        log_http_error("keikkalista directory", exc)
-        return venues
-
-    soup = BeautifulSoup(resp.text, "html.parser")
-    seen = set()
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-        if not re.match(r"^/tampere/[\w\-]+$", href):
-            continue
-        text = a.get_text(" ", strip=True)
-        m = re.match(r"^(.*?)\s+Keikkoja tulossa\s+(\d+)$", text)
-        if not m:
-            continue
-        venue_name = m.group(1).strip()
-        gig_count = int(m.group(2))
-        if gig_count == 0:
-            continue  # skip venues with nothing upcoming, saves a page load
-        full_url = urljoin(KEIKKALISTA_BASE, href)
-        if full_url in seen:
-            continue
-        seen.add(full_url)
-        venues.append((venue_name, full_url, gig_count))
-    return venues
-
-
-def parse_keikkalista_venue_text(text, venue_name, today):
-    events = []
-    matches = list(KEIKKALISTA_DATE_RE.finditer(text))
-    for i, m in enumerate(matches):
-        day, month = int(m.group(1)), int(m.group(2))
-        if not (1 <= day <= 31 and 1 <= month <= 12):
-            continue
-        year = int(m.group(3)) if m.group(3) else today.year
-        try:
-            candidate = datetime.date(year, month, day)
-        except ValueError:
-            continue
-        if not m.group(3) and candidate < today - datetime.timedelta(days=3):
-            year += 1
-            try:
-                candidate = datetime.date(year, month, day)
-            except ValueError:
-                continue
-
-        start = m.end()
-        end = matches[i + 1].start() if i + 1 < len(matches) else min(len(text), start + 150)
-        title = text[start:end].strip(" -\u2013:.,")
-        title = re.sub(r"\s+", " ", title)
-        title = re.sub(
-            r"\b(Lis[äa][äa]\s*tietoa|Osta\s*liput|Liput\b.*|Lue\s*lis[äa][äa]).*$",
-            "", title, flags=re.IGNORECASE,
-        ).strip(" -\u2013:.,")
-        if not title or len(title) > 140 or len(title) < 2:
-            continue
-        if any(kw in title.lower() for kw in EXCLUDE_KEYWORDS):
-            continue
-
-        events.append({
-            "date": candidate.isoformat(),
-            "time": "",
-            "title": title,
-            "venue": venue_name,
-            "genre": guess_genre(title, venue_name),
-            "free": 0,
-            "url": None,
-        })
-    return events
-
-
-def fetch_keikkalista():
-    events = []
-    if not PLAYWRIGHT_AVAILABLE:
-        print("[keikkalista] Playwright not available \u2014 skipping this source", file=sys.stderr)
-        return events
-
-    venues = fetch_keikkalista_venue_links()
-    print(f"[keikkalista] found {len(venues)} venue pages with upcoming gigs (directory listing)", file=sys.stderr)
-    today = datetime.date.today()
-
-    for venue_name, url, expected_count in venues:
-        try:
-            html = fetch_with_playwright_generic(url, wait_selector="body")
-        except Exception as exc:
-            log_http_error(f"keikkalista {venue_name}", exc)
-            continue
-
-        soup = BeautifulSoup(html, "html.parser")
-        text = soup.get_text(" ", strip=True)
-        venue_events = parse_keikkalista_venue_text(text, venue_name, today)
-        for e in venue_events:
-            e["url"] = url
-        events.extend(venue_events)
-        print(
-            f"[keikkalista] {venue_name}: parsed {len(venue_events)} events "
-            f"(directory said {expected_count} upcoming)",
-            file=sys.stderr,
-        )
-
-    print(f"[keikkalista] TOTAL parsed {len(events)} events across {len(venues)} venue pages", file=sys.stderr)
-    return events
-
-
-# ---------------------------------------------------------------------------
 # Puistokonsertit.tampere.fi (Tampere park concerts)
 # ---------------------------------------------------------------------------
 # Unusually reliable source: each event's own URL carries the date and time
@@ -1148,6 +1081,12 @@ def fetch_puistokonsertit(url=PUISTOKONSERTIT_URL):
         events = parse_puistokonsertit_page(resp.text)
     except Exception as exc:
         log_http_error("puistokonsertit", exc)
+        if PLAYWRIGHT_AVAILABLE:
+            try:
+                html = fetch_with_playwright_generic(url, wait_selector='a[href*="/tapahtuma/"]')
+                events = parse_puistokonsertit_page(html)
+            except Exception as exc2:
+                log_http_error("puistokonsertit playwright", exc2)
     print(f"[puistokonsertit] parsed {len(events)} events", file=sys.stderr)
     return events
 
@@ -1201,7 +1140,6 @@ def main():
         "kohokohdat": [],
         "keikat_org": [],
         "puistokonsertit": [],
-        "keikkalista": [],
     }
 
     months_to_fetch = [(today.year, today.month)]
@@ -1219,15 +1157,12 @@ def main():
     print(f"Date range: {today.isoformat()} -> {(today + datetime.timedelta(days=200)).isoformat()}", file=sys.stderr)
 
     # These sources are independent. Run them concurrently so a slow/blocked
-    # source cannot make the whole scraper wait behind it. keikkalista is by
-    # far the slowest (~86 Playwright page loads, one per venue) so running
-    # it alongside the others rather than after them matters a lot here.
+    # source cannot make the whole scraper wait behind it.
     jobs = {
         "kohokohdat": lambda: _fetch_kohokohdat_months(months_to_fetch),
         "meteli": fetch_meteli,
         "keikat_org": fetch_keikat_org,
         "puistokonsertit": fetch_puistokonsertit,
-        "keikkalista": fetch_keikkalista,
     }
 
     with ThreadPoolExecutor(max_workers=len(jobs), thread_name_prefix="source") as pool:
@@ -1247,20 +1182,16 @@ def main():
     meteli_events = source_events["meteli"]
     keikat_org_events = source_events["keikat_org"]
     puistokonsertit_events = source_events["puistokonsertit"]
-    keikkalista_events = source_events["keikkalista"]
 
     # First source wins when the same gig appears on multiple sites.
     # puistokonsertit goes first: its date/time come straight from the
     # event URL itself rather than being inferred from page text, so it's
     # the most trustworthy signal when a gig also shows up elsewhere.
-    # keikkalista goes last — lowest confidence, built blind (see its
-    # module comment), so it only fills gaps rather than overriding anything.
     all_events = merge_events(
         puistokonsertit_events,
         meteli_events,
         kohokohdat_events,
         keikat_org_events,
-        keikkalista_events,
     )
 
     if not all_events:
@@ -1305,7 +1236,7 @@ def main():
     counts = {name: len(source_events[name]) for name in jobs}
     output = {
         "generated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
+        "source_note": "Auto-scraped from 4 sources. Music gigs only — theatre/comedy filtered out.",
         "errors": errors,
         "source_status": source_status,
         "events": filtered,
