@@ -992,6 +992,137 @@ def looks_like_music(title, venue):
 
 
 # ---------------------------------------------------------------------------
+# Keikkalista.fi \u2014 LOWEST CONFIDENCE SOURCE, built entirely blind.
+#
+# The Tampere directory page (KEIKKALISTA_TAMPERE_URL) is plain server-
+# rendered HTML and reliably lists every venue with a real gig count, e.g.
+# "Ravintola Telakka Keikkoja tulossa 116" \u2014 that part is solid.
+#
+# But each individual venue page's actual gig listing is loaded via
+# JavaScript after the page loads; the server-rendered HTML only contains
+# venue info (address, map, contact), no gigs at all. I could not find a
+# single real example of what that JS-rendered content looks like \u2014 not
+# by fetching it directly, not through Google's cache. So
+# parse_keikkalista_venue_text() below is a guess based on the pattern
+# every OTHER similar Finnish gig-listing site uses (a repeating
+# "D.M. Title" sequence, confirmed on kulttuuritoimitus.fi and on
+# individual venues' own sites like telakka.eu), not on anything actually
+# observed from keikkalista.fi itself. Treat the first real run's per-venue
+# counts (logged individually below) as the actual test.
+# ---------------------------------------------------------------------------
+KEIKKALISTA_BASE = "https://www.keikkalista.fi"
+KEIKKALISTA_TAMPERE_URL = "https://www.keikkalista.fi/tampere"
+KEIKKALISTA_DATE_RE = re.compile(r"\b(\d{1,2})\.(\d{1,2})\.(\d{4})?\b")
+
+
+def fetch_keikkalista_venue_links(url=KEIKKALISTA_TAMPERE_URL):
+    venues = []
+    try:
+        resp = fetch_with_retries("GET", url, headers=HEADERS, timeout=20, retries=3, backoff=1)
+    except Exception as exc:
+        log_http_error("keikkalista directory", exc)
+        return venues
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+    seen = set()
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if not re.match(r"^/tampere/[\w\-]+$", href):
+            continue
+        text = a.get_text(" ", strip=True)
+        m = re.match(r"^(.*?)\s+Keikkoja tulossa\s+(\d+)$", text)
+        if not m:
+            continue
+        venue_name = m.group(1).strip()
+        gig_count = int(m.group(2))
+        if gig_count == 0:
+            continue  # skip venues with nothing upcoming, saves a page load
+        full_url = urljoin(KEIKKALISTA_BASE, href)
+        if full_url in seen:
+            continue
+        seen.add(full_url)
+        venues.append((venue_name, full_url, gig_count))
+    return venues
+
+
+def parse_keikkalista_venue_text(text, venue_name, today):
+    events = []
+    matches = list(KEIKKALISTA_DATE_RE.finditer(text))
+    for i, m in enumerate(matches):
+        day, month = int(m.group(1)), int(m.group(2))
+        if not (1 <= day <= 31 and 1 <= month <= 12):
+            continue
+        year = int(m.group(3)) if m.group(3) else today.year
+        try:
+            candidate = datetime.date(year, month, day)
+        except ValueError:
+            continue
+        if not m.group(3) and candidate < today - datetime.timedelta(days=3):
+            year += 1
+            try:
+                candidate = datetime.date(year, month, day)
+            except ValueError:
+                continue
+
+        start = m.end()
+        end = matches[i + 1].start() if i + 1 < len(matches) else min(len(text), start + 150)
+        title = text[start:end].strip(" -\u2013:.,")
+        title = re.sub(r"\s+", " ", title)
+        title = re.sub(
+            r"\b(Lis[äa][äa]\s*tietoa|Osta\s*liput|Liput\b.*|Lue\s*lis[äa][äa]).*$",
+            "", title, flags=re.IGNORECASE,
+        ).strip(" -\u2013:.,")
+        if not title or len(title) > 140 or len(title) < 2:
+            continue
+        if any(kw in title.lower() for kw in EXCLUDE_KEYWORDS):
+            continue
+
+        events.append({
+            "date": candidate.isoformat(),
+            "time": "",
+            "title": title,
+            "venue": venue_name,
+            "genre": guess_genre(title, venue_name),
+            "free": 0,
+            "url": None,
+        })
+    return events
+
+
+def fetch_keikkalista():
+    events = []
+    if not PLAYWRIGHT_AVAILABLE:
+        print("[keikkalista] Playwright not available \u2014 skipping this source", file=sys.stderr)
+        return events
+
+    venues = fetch_keikkalista_venue_links()
+    print(f"[keikkalista] found {len(venues)} venue pages with upcoming gigs (directory listing)", file=sys.stderr)
+    today = datetime.date.today()
+
+    for venue_name, url, expected_count in venues:
+        try:
+            html = fetch_with_playwright_generic(url, wait_selector="body")
+        except Exception as exc:
+            log_http_error(f"keikkalista {venue_name}", exc)
+            continue
+
+        soup = BeautifulSoup(html, "html.parser")
+        text = soup.get_text(" ", strip=True)
+        venue_events = parse_keikkalista_venue_text(text, venue_name, today)
+        for e in venue_events:
+            e["url"] = url
+        events.extend(venue_events)
+        print(
+            f"[keikkalista] {venue_name}: parsed {len(venue_events)} events "
+            f"(directory said {expected_count} upcoming)",
+            file=sys.stderr,
+        )
+
+    print(f"[keikkalista] TOTAL parsed {len(events)} events across {len(venues)} venue pages", file=sys.stderr)
+    return events
+
+
+# ---------------------------------------------------------------------------
 # Puistokonsertit.tampere.fi (Tampere park concerts)
 # ---------------------------------------------------------------------------
 # Unusually reliable source: each event's own URL carries the date and time
@@ -1140,6 +1271,7 @@ def main():
         "kohokohdat": [],
         "keikat_org": [],
         "puistokonsertit": [],
+        "keikkalista": [],
     }
 
     months_to_fetch = [(today.year, today.month)]
@@ -1157,12 +1289,15 @@ def main():
     print(f"Date range: {today.isoformat()} -> {(today + datetime.timedelta(days=200)).isoformat()}", file=sys.stderr)
 
     # These sources are independent. Run them concurrently so a slow/blocked
-    # source cannot make the whole scraper wait behind it.
+    # source cannot make the whole scraper wait behind it. keikkalista is by
+    # far the slowest (~86 Playwright page loads, one per venue) so running
+    # it alongside the others rather than after them matters a lot here.
     jobs = {
         "kohokohdat": lambda: _fetch_kohokohdat_months(months_to_fetch),
         "meteli": fetch_meteli,
         "keikat_org": fetch_keikat_org,
         "puistokonsertit": fetch_puistokonsertit,
+        "keikkalista": fetch_keikkalista,
     }
 
     with ThreadPoolExecutor(max_workers=len(jobs), thread_name_prefix="source") as pool:
@@ -1182,16 +1317,20 @@ def main():
     meteli_events = source_events["meteli"]
     keikat_org_events = source_events["keikat_org"]
     puistokonsertit_events = source_events["puistokonsertit"]
+    keikkalista_events = source_events["keikkalista"]
 
     # First source wins when the same gig appears on multiple sites.
     # puistokonsertit goes first: its date/time come straight from the
     # event URL itself rather than being inferred from page text, so it's
     # the most trustworthy signal when a gig also shows up elsewhere.
+    # keikkalista goes last — lowest confidence, built blind (see its
+    # module comment), so it only fills gaps rather than overriding anything.
     all_events = merge_events(
         puistokonsertit_events,
         meteli_events,
         kohokohdat_events,
         keikat_org_events,
+        keikkalista_events,
     )
 
     if not all_events:
@@ -1236,7 +1375,7 @@ def main():
     counts = {name: len(source_events[name]) for name in jobs}
     output = {
         "generated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "source_note": "Auto-scraped from 4 sources. Music gigs only — theatre/comedy filtered out.",
+        "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
         "errors": errors,
         "source_status": source_status,
         "events": filtered,
