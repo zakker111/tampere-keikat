@@ -1,10 +1,11 @@
 {
- "generated": "2026-08-09 07:30 UTC",
- "source_note": "Auto-scraped from 4 sources. Music gigs only — theatre/comedy filtered out.",
+ "generated": "2026-08-09 07:51 UTC",
+ "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "puistokonsertit": "OK",
   "keikat_org": "OK",
+  "puistokonsertit": "OK",
+  "keikat_live": "NO_EVENTS_OR_PARSE_FAILURE",
   "meteli": "OK",
   "kohokohdat": "OK"
  },
