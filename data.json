@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-09 08:46 UTC",
+ "generated": "2026-08-10 06:14 UTC",
  "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
@@ -10,78 +10,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-08-09",
-   "13:00",
-   "Markus Savander",
-   "Niihaman siirtolapuutarha",
-   "rock",
-   1,
-   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=6a295800187d2f000743828c&date=09.08.2026&time=13.00+-+14.00"
-  ],
-  [
-   "2026-08-09",
-   "20:00",
-   "Supersunnuntai perhefestivaali, Tampere su 9.8.2026",
-   "Tampereen Messu- ja Urheilukeskus",
-   "festival",
-   0,
-   "https://keikat.org/etta-tampereen-109"
-  ],
-  [
-   "2026-08-09",
-   "22:00",
-   "DJ Jiri",
-   "Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-jiri-26/"
-  ],
-  [
-   "2026-08-09",
-   "",
-   "Supersunnuntai Tampere: Marcus & Martinus (NOR), Mirella, Ahti, Etta, Hugo, Lage ym.",
-   "Tähti Areena",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/supersunnuntai-tampere-marcus-martinus-nor-mirella-ahti-etta-hugo-lage-ym"
-  ],
-  [
-   "2026-08-09",
-   "",
-   "Tilaantuminen – Osa – Kuronta: Kahr. Karh.",
-   "Liikelaituri",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/tilaantuminen-osa-kuronta-kahr-karh-3"
-  ],
-  [
-   "2026-08-09",
-   "",
-   "Pan Salmenhaara",
-   "Tallipiha",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/pan-salmenhaara-9"
-  ],
-  [
-   "2026-08-09",
-   "",
-   "Jethro Tull (GBR)",
-   "Tampere-talo",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/jethro-tull-gbr-5"
-  ],
-  [
-   "2026-08-09",
-   "",
-   "Supersunnuntai Tampereella",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/supersunnuntai-tampereella/"
-  ],
   [
    "2026-08-10",
    "18:30",
@@ -1070,7 +998,7 @@
    "Pyynikki",
    "festival",
    0,
-   "https://keikat.org/festivaali-pyynikki-190"
+   "https://keikat.org/festivaali-pyynikki-185"
   ],
   [
    "2026-08-21",
@@ -1907,7 +1835,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-279"
+   "https://keikat.org/koovee-spiral-270"
   ],
   [
    "2026-08-29",
@@ -2627,7 +2555,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-430"
+   "https://keikat.org/off-teatteri-426"
   ],
   [
    "2026-09-14",
@@ -2704,20 +2632,20 @@
   [
    "2026-09-18",
    "20:00",
-   "Elämä on Punk Vol. 32 pe 18.9.2026",
-   "Vastavirta-klubi",
-   "metal",
-   0,
-   "https://keikat.org/elämä-vastavirta-klub-453"
-  ],
-  [
-   "2026-09-18",
-   "20:00",
    "Uudet Tekijät: Knife Jerks - Puukkojunkkarit pe 18.9.2026",
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-465"
+   "https://keikat.org/uudet-teatteri-448"
+  ],
+  [
+   "2026-09-18",
+   "20:00",
+   "Elämä on Punk Vol. 32 pe 18.9.2026",
+   "Vastavirta-klubi",
+   "metal",
+   0,
+   "https://keikat.org/elämä-vastavirta-klub-472"
   ],
   [
    "2026-09-18",
@@ -3158,7 +3086,7 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-576"
+   "https://keikat.org/music-tampere-talo-571"
   ],
   [
    "2026-10-01",
@@ -3266,7 +3194,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-619"
+   "https://keikat.org/off-teatteri-615"
   ],
   [
    "2026-10-07",
@@ -3626,7 +3554,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-815"
+   "https://keikat.org/tehdas-teatteri-812"
   ],
   [
    "2026-11-05",
@@ -3770,7 +3698,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-913"
+   "https://keikat.org/sorin-sorin-910"
   ],
   [
    "2026-11-18",
@@ -3824,7 +3752,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-936"
+   "https://keikat.org/kotae-tampereen-933"
   ],
   [
    "2026-11-27",
@@ -3878,7 +3806,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1091"
+   "https://keikat.org/magda-vooninki-1088"
   ]
  ]
 }
