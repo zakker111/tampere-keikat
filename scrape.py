@@ -1494,11 +1494,21 @@ def main():
     print("\n========================================", file=sys.stderr)
     print("SCRAPE SUMMARY", file=sys.stderr)
     print("========================================", file=sys.stderr)
-    for name, count in counts.items():
-        print(f"  {name:22} {count:4d}  {source_status.get(name, 'UNKNOWN')}", file=sys.stderr)
+    for name in jobs:
+        count = counts.get(name, 0)
+        status = source_status.get(name, "NOT_RUN")
+        print(f"  {name:22} {count:4d}  {status}", file=sys.stderr)
+
+    completed_sources = sum(
+        1 for name in jobs
+        if source_status.get(name) in {"OK", "NO_EVENTS_OR_PARSE_FAILURE", "FAILED"}
+    )
+    sources_with_events = sum(1 for name in jobs if counts.get(name, 0) > 0)
+
     print(f"  Parsed before final filter: {len(all_events):4d}", file=sys.stderr)
     print(f"  Final events in JSON:       {len(filtered):4d}", file=sys.stderr)
-    print(f"  Sources parsed: {sum(1 for name in jobs if counts[name] > 0)}/{len(jobs)}", file=sys.stderr)
+    print(f"  Sources completed:          {completed_sources}/{len(jobs)}", file=sys.stderr)
+    print(f"  Sources with events:        {sources_with_events}/{len(jobs)}", file=sys.stderr)
     print(f"  Total runtime: {total_elapsed:.1f}s", file=sys.stderr)
     print("  Output: data.json", file=sys.stderr)
     _print_final_events(filtered)
