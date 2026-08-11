@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-10 06:14 UTC",
+ "generated": "2026-08-11 05:54 UTC",
  "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
@@ -10,24 +10,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-08-10",
-   "18:30",
-   "Laikunlava laulaa | Naiskuoro Miskantti ja yhteislaulut",
-   "Laikunlava",
-   "rock",
-   1,
-   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69dc918229140f000752c78b&date=10.08.2026&time=18.30+-+20.00"
-  ],
-  [
-   "2026-08-10",
-   "19:00",
-   "REGGAETA & MAKKARAA",
-   "Tampere",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/reggaeta-makkaraa-5/"
-  ],
   [
    "2026-08-11",
    "21:00",
@@ -998,7 +980,7 @@
    "Pyynikki",
    "festival",
    0,
-   "https://keikat.org/festivaali-pyynikki-185"
+   "https://keikat.org/festivaali-pyynikki-183"
   ],
   [
    "2026-08-21",
@@ -1835,7 +1817,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-270"
+   "https://keikat.org/koovee-spiral-268"
   ],
   [
    "2026-08-29",
@@ -1971,6 +1953,15 @@
    "festival",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/glow-festival/"
+  ],
+  [
+   "2026-08-29",
+   "",
+   "Viikinsaaren Venetsialaiset 2026",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/viikinsaaren-venetsialaiset/"
   ],
   [
    "2026-08-29",
@@ -2555,7 +2546,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-426"
+   "https://keikat.org/off-teatteri-425"
   ],
   [
    "2026-09-14",
@@ -2632,20 +2623,20 @@
   [
    "2026-09-18",
    "20:00",
-   "Uudet Tekijät: Knife Jerks - Puukkojunkkarit pe 18.9.2026",
-   "Teatteri Telakka",
-   "rock",
-   0,
-   "https://keikat.org/uudet-teatteri-448"
-  ],
-  [
-   "2026-09-18",
-   "20:00",
    "Elämä on Punk Vol. 32 pe 18.9.2026",
    "Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-472"
+   "https://keikat.org/elämä-vastavirta-klub-448"
+  ],
+  [
+   "2026-09-18",
+   "20:00",
+   "Uudet Tekijät: Knife Jerks - Puukkojunkkarit pe 18.9.2026",
+   "Teatteri Telakka",
+   "rock",
+   0,
+   "https://keikat.org/uudet-teatteri-469"
   ],
   [
    "2026-09-18",
@@ -2745,6 +2736,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/the-clash-meets-the-jam/"
+  ],
+  [
+   "2026-09-18",
+   "",
+   "Tampereen Flamencoviikko 2026 – 360-klubi: Murtola, Widenius & Mugu",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tampereen-flamencoviikko-2026-360-klubi-murtola-widenius-mugu/"
   ],
   [
    "2026-09-19",
@@ -3086,7 +3086,7 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-571"
+   "https://keikat.org/music-tampere-talo-572"
   ],
   [
    "2026-10-01",
@@ -3554,7 +3554,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-812"
+   "https://keikat.org/tehdas-teatteri-816"
   ],
   [
    "2026-11-05",
@@ -3698,7 +3698,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-910"
+   "https://keikat.org/sorin-sorin-914"
   ],
   [
    "2026-11-18",
@@ -3752,7 +3752,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-933"
+   "https://keikat.org/kotae-tampereen-938"
   ],
   [
    "2026-11-27",
@@ -3806,7 +3806,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1088"
+   "https://keikat.org/magda-vooninki-1094"
   ]
  ]
 }
