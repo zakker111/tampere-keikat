@@ -1,114 +1,15 @@
 {
- "generated": "2026-08-12 06:22 UTC",
+ "generated": "2026-08-13 06:20 UTC",
  "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_org": "OK",
   "puistokonsertit": "OK",
+  "keikat_org": "OK",
   "keikat_live": "NO_EVENTS_OR_PARSE_FAILURE",
   "meteli": "OK",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-08-12",
-   "18:00",
-   "Duo Songbirds",
-   "Nekalan siirtolapuutarha",
-   "rock",
-   1,
-   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69dca90d29140f000752d305&date=12.08.2026&time=18.00+-+18.45"
-  ],
-  [
-   "2026-08-12",
-   "18:00",
-   "Olli Tuomarla",
-   "Haiharan taidekeskus",
-   "rock",
-   1,
-   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69d7444a29140f000750dc9c&date=12.08.2026&time=18.00+-+19.00"
-  ],
-  [
-   "2026-08-12",
-   "18:00",
-   "Orkesteri Laakson Liljat, Hannele Juutinen, Tampereen Ukuleleorkesteri",
-   "Laikunlava",
-   "classical",
-   1,
-   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69e20492a3e0ec0007205b0d&date=12.08.2026&time=18.00+-+20.45"
-  ],
-  [
-   "2026-08-12",
-   "18:00",
-   "Puistokonsertit Laikunlavalla: Orkesteri Laakson Liljat, Hannele Juutinen, Tampereen Ukuleleorkesteri",
-   "Tampere",
-   "classical",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/puistokonsertit-laikunlavalla-orkesteri-laakson-liljat-hannele-juutinen-tampereen-ukuleleorkesteri/"
-  ],
-  [
-   "2026-08-12",
-   "19:00",
-   "Fingerstyle-kitaristi Pan Salmenhaara",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/fingerstyle-kitaristi-pan-salmenhaara/"
-  ],
-  [
-   "2026-08-12",
-   "19:00",
-   "Pappila live -ilmaiskonsertit: Hateles",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pappila-live-ilmaiskonsertit-hateles/"
-  ],
-  [
-   "2026-08-12",
-   "19:00",
-   "Uittotunnelin kesäkeikat: Heikki Hela & Kalle Alatalo",
-   "Uittotunneli",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-seppo-tammilehto-selka/"
-  ],
-  [
-   "2026-08-12",
-   "21:00",
-   "Friendship Connection",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/friendship-connection-7/"
-  ],
-  [
-   "2026-08-12",
-   "23:00",
-   "DJ DJC",
-   "Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-djc-2/"
-  ],
-  [
-   "2026-08-12",
-   "",
-   "Pan Salmenhaara",
-   "Winebistro 1910",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/pan-salmenhaara-10"
-  ],
-  [
-   "2026-08-12",
-   "",
-   "Plevnan Vinyyliveranta: DJ Juissi",
-   "Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-vinyyli-keskiviikot-dj-juissi-2026-08-12/"
-  ],
   [
    "2026-08-13",
    "18:00",
@@ -436,7 +337,7 @@
   [
    "2026-08-14",
    "",
-   "Moro Sky Bar DJ:t",
+   "Moro Sky Bar DJ:t: Juels",
    "Moro Sky Bar",
    "electronic",
    0,
@@ -679,7 +580,7 @@
   [
    "2026-08-15",
    "",
-   "Moro Sky Bar DJ:t",
+   "Moro Sky Bar DJ:t: Juels",
    "Moro Sky Bar",
    "electronic",
    0,
@@ -971,7 +872,7 @@
    "Pyynikki",
    "festival",
    0,
-   "https://keikat.org/helmi-pyynikki-181"
+   "https://keikat.org/helmi-pyynikki-179"
   ],
   [
    "2026-08-21",
@@ -990,6 +891,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/kesakissat-duo/"
+  ],
+  [
+   "2026-08-21",
+   "21:00",
+   "Suvi Karjula",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/suvi-karjula-5/"
   ],
   [
    "2026-08-21",
@@ -1102,7 +1012,7 @@
   [
    "2026-08-21",
    "",
-   "Moro Sky Bar DJ:t",
+   "Moro Sky Bar DJ:t: Kimble",
    "Moro Sky Bar",
    "electronic",
    0,
@@ -1228,15 +1138,6 @@
   [
    "2026-08-22",
    "21:00",
-   "Elokuinen Disco Ikinuorille: Topi Honkonen",
-   "Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/elokuinen-disco-ikinuorille-topi-honkonen/"
-  ],
-  [
-   "2026-08-22",
-   "21:00",
    "Jari Koivisto Työväenlauluja",
    "Tampere",
    "rock",
@@ -1251,6 +1152,15 @@
    "hiphop",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/rock-rap-indie-pop-funk-mayhem/"
+  ],
+  [
+   "2026-08-22",
+   "21:00",
+   "Suvi Karjula",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/suvi-karjula-4/"
   ],
   [
    "2026-08-22",
@@ -1381,7 +1291,7 @@
   [
    "2026-08-22",
    "",
-   "Moro Sky Bar DJ:t",
+   "Moro Sky Bar DJ:t: Sami Sakari",
    "Moro Sky Bar",
    "electronic",
    0,
@@ -1597,6 +1507,15 @@
   [
    "2026-08-28",
    "21:00",
+   "Kari Koponen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kari-koponen/"
+  ],
+  [
+   "2026-08-28",
+   "21:00",
    "Suvi Teräsniska",
    "Tampere",
    "rock",
@@ -1732,7 +1651,7 @@
   [
    "2026-08-28",
    "",
-   "Moro Sky Bar DJ:t",
+   "Moro Sky Bar DJ:t: Sami Sakari",
    "Moro Sky Bar",
    "electronic",
    0,
@@ -1808,7 +1727,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-267"
+   "https://keikat.org/koovee-spiral-265"
   ],
   [
    "2026-08-29",
@@ -1827,6 +1746,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/alt-agency-summer-sessions-aksel-kankaanranta/"
+  ],
+  [
+   "2026-08-29",
+   "21:00",
+   "Kari Koponen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kari-koponen-2/"
   ],
   [
    "2026-08-29",
@@ -1966,7 +1894,7 @@
   [
    "2026-08-29",
    "",
-   "Moro Sky Bar DJ:t",
+   "Moro Sky Bar DJ:t: DJ MM",
    "Moro Sky Bar",
    "electronic",
    0,
@@ -2070,6 +1998,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/jaakko-laitinen-vaara-raha-16"
+  ],
+  [
+   "2026-09-04",
+   "21:00",
+   "Mikko Lankinen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mikko-lankinen/"
   ],
   [
    "2026-09-04",
@@ -2370,6 +2307,15 @@
   ],
   [
    "2026-09-11",
+   "21:00",
+   "Tuomas Lehto",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tuomas-lehto/"
+  ],
+  [
+   "2026-09-11",
    "22:00",
    "VERMILIA, AETHER (PL), FOLKRIM",
    "Tampere",
@@ -2478,6 +2424,15 @@
   ],
   [
    "2026-09-12",
+   "21:00",
+   "Tuomas Lehto",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tuomas-lehto-2/"
+  ],
+  [
+   "2026-09-12",
    "",
    "Jukka Perko & Jay Kortehisto Foxtet",
    "G Livelab Tampere",
@@ -2537,7 +2492,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-432"
+   "https://keikat.org/off-teatteri-430"
   ],
   [
    "2026-09-14",
@@ -2618,7 +2573,7 @@
    "Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-452"
+   "https://keikat.org/elämä-vastavirta-klub-450"
   ],
   [
    "2026-09-18",
@@ -2627,7 +2582,16 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-464"
+   "https://keikat.org/uudet-teatteri-462"
+  ],
+  [
+   "2026-09-18",
+   "21:00",
+   "Ari Pulkkinen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ari-pulkkinen-4/"
   ],
   [
    "2026-09-18",
@@ -2757,6 +2721,15 @@
   ],
   [
    "2026-09-19",
+   "21:00",
+   "Ari Pulkkinen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ari-pulkkinen-3/"
+  ],
+  [
+   "2026-09-19",
    "22:00",
    "LOWHILL, LIGHTBEARER, IN THORNS",
    "Tampere",
@@ -2856,6 +2829,15 @@
   ],
   [
    "2026-09-25",
+   "21:00",
+   "Mika Rämä Trubaduuri",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mika-rama-trubaduuri-6/"
+  ],
+  [
+   "2026-09-25",
    "",
    "Hanhiniemi-Rauhala M.A.D",
    "TTT-Klubi",
@@ -2934,6 +2916,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/a9-live-kauko-royhka/"
+  ],
+  [
+   "2026-09-26",
+   "21:00",
+   "Mika Rämä Trubaduuri",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mika-rama-trubaduuri-5/"
   ],
   [
    "2026-09-26",
@@ -3545,7 +3536,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-827"
+   "https://keikat.org/tehdas-teatteri-830"
   ],
   [
    "2026-11-05",
@@ -3689,7 +3680,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-925"
+   "https://keikat.org/sorin-sorin-931"
   ],
   [
    "2026-11-18",
@@ -3743,7 +3734,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-949"
+   "https://keikat.org/kotae-tampereen-965"
   ],
   [
    "2026-11-27",
@@ -3797,7 +3788,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1108"
+   "https://keikat.org/magda-vooninki-1116"
   ]
  ]
 }
