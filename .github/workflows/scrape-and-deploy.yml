@@ -18,6 +18,12 @@ jobs:
   scrape-and-deploy:
     name: Update data.json and deploy Pages
     runs-on: ubuntu-latest
+    # Safety net: without this, a hung step (e.g. a Playwright page stuck
+    # waiting on a Cloudflare challenge that never resolves) could run for
+    # GitHub's default 360-minute job limit, burning Actions minutes for
+    # no benefit. 40 minutes is generous for 5 sources running in parallel
+    # (keikkalista's ~86 venue pages are the slow part) but still bounded.
+    timeout-minutes: 40
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
