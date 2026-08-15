@@ -1,231 +1,15 @@
 {
- "generated": "2026-08-14 06:14 UTC",
+ "generated": "2026-08-15 05:22 UTC",
  "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "puistokonsertit": "OK",
   "keikat_org": "OK",
+  "puistokonsertit": "OK",
   "keikat_live": "NO_EVENTS_OR_PARSE_FAILURE",
   "meteli": "OK",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-08-14",
-   "18:00",
-   "Soul Power G Livelabin terassilla – DJ’s Kallio & Okapi",
-   "Tampere",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/soul-power-g-livelabin-terassilla-djs-kallio-okapi-2/"
-  ],
-  [
-   "2026-08-14",
-   "19:00",
-   "Esa Eloranta",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/esa-eloranta/"
-  ],
-  [
-   "2026-08-14",
-   "19:00",
-   "Kulanki & Jompulainen, Mikko Sarvanne, Ewoud Van Eetvelde",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/kulanki-jompulainen-mikko-sarvanne-ewoud-van-eetvelde/"
-  ],
-  [
-   "2026-08-14",
-   "19:00",
-   "Popedan Ajajat",
-   "Tampere",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/popedan-ajajat/"
-  ],
-  [
-   "2026-08-14",
-   "19:00",
-   "Sir Elwoodin hiljaiset värit",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/sir-elwoodin-hiljaiset-varit-2/"
-  ],
-  [
-   "2026-08-14",
-   "21:00",
-   "Jukka Poika",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jukka-poika/"
-  ],
-  [
-   "2026-08-14",
-   "21:00",
-   "Lemmenmursut",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/lemmenmursut-2/"
-  ],
-  [
-   "2026-08-14",
-   "21:00",
-   "Los Pasados",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/los-pasados/"
-  ],
-  [
-   "2026-08-14",
-   "21:00",
-   "Mirkka Liesmäki",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/mirkka-liesmaki-2/"
-  ],
-  [
-   "2026-08-14",
-   "21:00",
-   "Misstapes – DJ Jaanamirjami",
-   "Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/misstapes-dj-jaanamirjami-2/"
-  ],
-  [
-   "2026-08-14",
-   "21:30",
-   "Mörv, Hautaustoimisto & Off the Grid",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/morv-hautaustoimisto-off-the-grid/"
-  ],
-  [
-   "2026-08-14",
-   "22:00",
-   "Sara-Maaria",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/sara-maaria/"
-  ],
-  [
-   "2026-08-14",
-   "23:00",
-   "DJ Ozan",
-   "Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-o-nine-114/"
-  ],
-  [
-   "2026-08-14",
-   "23:30",
-   "COLIN HARTLEY",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/colin-hartley/"
-  ],
-  [
-   "2026-08-14",
-   "",
-   "Popedan Ajajat, Horsepower",
-   "Tavara-asema",
-   "hiphop",
-   0,
-   "https://www.meteli.net/tapahtuma/popedan-ajajat-horsepower"
-  ],
-  [
-   "2026-08-14",
-   "",
-   "Jukka Poika",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/jukka-poika-9"
-  ],
-  [
-   "2026-08-14",
-   "",
-   "Wallu’s Little Friday: Janne Westerlund",
-   "John Scott's Ratina",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/wallus-little-friday-janne-westerlund"
-  ],
-  [
-   "2026-08-14",
-   "",
-   "Pep Torres (USA) & His Finnish All-Stars, Son Demon and His Holy Boys",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/pep-torres-usa-his-finnish-all-stars-son-demon-and-his-holy-boys"
-  ],
-  [
-   "2026-08-14",
-   "",
-   "Live Music Afterwork: Jukka Pahkamäki",
-   "Pub Simon",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/live-music-afterwork-jukka-pahkamaki-2"
-  ],
-  [
-   "2026-08-14",
-   "",
-   "Raikku Rokkaa ja Rakastaa -festivaali 2026",
-   "Tampere",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/raikku-rokkaa-ja-rakastaa-festivaali/"
-  ],
-  [
-   "2026-08-14",
-   "",
-   "Silent Disco",
-   "Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07-2026-08-14/"
-  ],
-  [
-   "2026-08-14",
-   "",
-   "Midnight Sun Finstrumental Lounge",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/midnight-sun-finstrumental-lounge-3-2026-08-14/"
-  ],
-  [
-   "2026-08-14",
-   "",
-   "Moro Sky Bar DJ:t: Juels",
-   "Moro Sky Bar",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-08-14/"
-  ],
-  [
-   "2026-08-14",
-   "",
-   "Liveranta: Komiat",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/liveranta-komiat-2/"
-  ],
   [
    "2026-08-15",
    "00:00",
@@ -764,7 +548,7 @@
    "Pyynikki",
    "festival",
    0,
-   "https://keikat.org/helmi-pyynikki-176"
+   "https://keikat.org/helmi-pyynikki-169"
   ],
   [
    "2026-08-21",
@@ -891,6 +675,42 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/maasta-multiversumiin-king-of-none-grand-sorceress-primate"
+  ],
+  [
+   "2026-08-21",
+   "",
+   "Blockfest Jatkoclubi – I Wanna Dance With Sombadi: DJ:t Sombadi, Remynotagain, Fuge, DZR,",
+   "Momo Hotelli Ilves",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/blockfest-jatkoclubi-i-wanna-dance-with-sombadi-djt-sombadi-remynotagain-fuge-dzr-momo"
+  ],
+  [
+   "2026-08-21",
+   "",
+   "Blockfest Jatkoclubi – The Day Events x Crushroom: ATG, Bremer, Cream, DJVVV, Justjulius, Mygis,",
+   "Petermayn Fame Club",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/blockfest-jatkoclubi-the-day-events-x-crushroom-atg-bremer-cream-djvvv-justjulius-mygis-petermayn"
+  ],
+  [
+   "2026-08-21",
+   "",
+   "Blockfest Jatkoclubi – Dose Club: Kuya Kai, Will Nams, Timito,",
+   "DJ Sweedy Sin City",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/blockfest-jatkoclubi-dose-club-kuya-kai-will-nams-timito-dj-sweedy"
+  ],
+  [
+   "2026-08-21",
+   "",
+   "Blockfest Jatkoclubi: DJ:t AC, Taste,",
+   "Le Noir H5 Bar & Cellar",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/blockfest-jatkoclubi-djt-ac-taste-le-noir"
   ],
   [
    "2026-08-21",
@@ -1170,6 +990,42 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/industrial-oddities-the-fair-attempts-lirpo-herja"
+  ],
+  [
+   "2026-08-22",
+   "",
+   "Blockfest Jatkoclubi – Night Traveller Club: DJ Baile, Zeze, Yanarito,",
+   "Fractious Frank Hotelli Ilves",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/blockfest-jatkoclubi-night-traveller-club-dj-baile-zeze-yanarito-fractious-frank"
+  ],
+  [
+   "2026-08-22",
+   "",
+   "Blockfest Jatkoclubi – The Day Events x Crushroom: ATG, Bremer, Cream, DJVVV, Justjulius, Mygis,",
+   "Petermayn Fame Club",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/blockfest-jatkoclubi-the-day-events-x-crushroom-atg-bremer-cream-djvvv-justjulius-mygis-petermayn-2"
+  ],
+  [
+   "2026-08-22",
+   "",
+   "Blockfest Jatkoclubi – Dose Club: Kuya Kai, Will Nams, Timito,",
+   "Seben Sin City",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/blockfest-jatkoclubi-dose-club-kuya-kai-will-nams-timito-seben"
+  ],
+  [
+   "2026-08-22",
+   "",
+   "Blockfest Jatkoclubi: DJ:t AC, Taste,",
+   "Le Noir H5 Bar & Cellar",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/blockfest-jatkoclubi-djt-ac-taste-le-noir-2"
   ],
   [
    "2026-08-22",
@@ -1498,6 +1354,15 @@
   [
    "2026-08-28",
    "",
+   "The Best of the Best – Ewa Kaarela Swing Band 30 vuotta",
+   "Telakka",
+   "jazz",
+   0,
+   "https://www.meteli.net/tapahtuma/the-best-of-the-best-ewa-kaarela-swing-band-30-vuotta"
+  ],
+  [
+   "2026-08-28",
+   "",
    "Liekkiyö 2026",
    "Tampere",
    "rock",
@@ -1628,7 +1493,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-265"
+   "https://keikat.org/koovee-spiral-248"
   ],
   [
    "2026-08-29",
@@ -1957,6 +1822,15 @@
   [
    "2026-09-04",
    "",
+   "Sumuposauttaja Band",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/sumuposauttaja-band"
+  ],
+  [
+   "2026-09-04",
+   "",
    "Silent Disco",
    "Tampere",
    "electronic",
@@ -2101,7 +1975,7 @@
   [
    "2026-09-05",
    "",
-   "Funebrarum (USA)",
+   "Funebrarum (USA), Malformed, Pestigore",
    "Varjobaari",
    "rock",
    0,
@@ -2411,7 +2285,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-428"
+   "https://keikat.org/off-teatteri-413"
   ],
   [
    "2026-09-14",
@@ -2492,7 +2366,7 @@
    "Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-452"
+   "https://keikat.org/elämä-vastavirta-klub-438"
   ],
   [
    "2026-09-18",
@@ -2501,7 +2375,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-473"
+   "https://keikat.org/uudet-teatteri-452"
   ],
   [
    "2026-09-18",
@@ -2654,7 +2528,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-479"
+   "https://keikat.org/koovee-spiral-465"
   ],
   [
    "2026-09-19",
@@ -2756,6 +2630,15 @@
    "https://www.meteli.net/tapahtuma/hallowed-lungs-pyhat-keuhkot-kimmo-pohjonen"
   ],
   [
+   "2026-09-23",
+   "",
+   "Juha Saunala, MäSä Duo, M.I. Laine",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/juha-saunala-masa-duo-m-i-laine"
+  ],
+  [
    "2026-09-24",
    "",
    "Wöyh!",
@@ -2835,6 +2718,15 @@
    "electronic",
    0,
    "https://www.meteli.net/tapahtuma/k40-disco-djt-sami-antti-21"
+  ],
+  [
+   "2026-09-25",
+   "",
+   "Soundrun, Cold Dogs",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/soundrun-cold-dogs"
   ],
   [
    "2026-09-25",
@@ -2992,7 +2884,7 @@
   [
    "2026-09-29",
    "",
-   "Stu Larsen (AUS), Imme & Julia Adriana",
+   "Stu Larsen (AUS), Imme (NLD), Julia Adriana (NLD)",
    "Telakka",
    "rock",
    0,
@@ -3041,7 +2933,7 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-581"
+   "https://keikat.org/music-tampere-talo-568"
   ],
   [
    "2026-10-01",
@@ -3149,7 +3041,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-626"
+   "https://keikat.org/off-teatteri-612"
   ],
   [
    "2026-10-07",
@@ -3163,7 +3055,7 @@
   [
    "2026-10-07",
    "",
-   "Michael Monroe",
+   "Michael Monroe (akustinen)",
    "G Livelab Tampere",
    "rock",
    0,
@@ -3370,7 +3262,7 @@
   [
    "2026-10-21",
    "",
-   "Laura Moisio",
+   "Laura Moisio, Julia Rautamaa",
    "G Livelab Tampere",
    "rock",
    0,
@@ -3509,7 +3401,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-835"
+   "https://keikat.org/tehdas-teatteri-825"
   ],
   [
    "2026-11-05",
@@ -3653,7 +3545,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-936"
+   "https://keikat.org/sorin-sorin-924"
   ],
   [
    "2026-11-18",
@@ -3692,6 +3584,15 @@
    "https://www.meteli.net/tapahtuma/ricky-tick-big-band-julkinen-sana-4"
   ],
   [
+   "2026-11-19",
+   "",
+   "Asla Jo, Saga Olsson",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/asla-jo-saga-olsson"
+  ],
+  [
    "2026-11-20",
    "",
    "Timo Kahilainen feat. Heikki Hela & Just in Time",
@@ -3707,7 +3608,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-961"
+   "https://keikat.org/kotae-tampereen-960"
   ],
   [
    "2026-11-27",
@@ -3761,7 +3662,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1127"
+   "https://keikat.org/magda-vooninki-1115"
   ]
  ]
 }
