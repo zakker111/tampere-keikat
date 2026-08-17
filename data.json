@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-16 05:24 UTC",
+ "generated": "2026-08-17 05:37 UTC",
  "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
@@ -10,33 +10,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-08-16",
-   "14:00",
-   "JP Matias",
-   "Amurin museokortteli",
-   "rock",
-   1,
-   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69d7662329140f000750ed76&date=16.08.2026&time=14.00+-+15.00"
-  ],
-  [
-   "2026-08-16",
-   "19:00",
-   "Horror Vacui, Shocked Volk",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/horror-vacui-shocked-volk/"
-  ],
-  [
-   "2026-08-16",
-   "23:00",
-   "DJ Willy",
-   "Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-willy-8/"
-  ],
   [
    "2026-08-17",
    "18:30",
@@ -296,7 +269,7 @@
    "Pyynikki",
    "festival",
    0,
-   "https://keikat.org/helmi-pyynikki-124"
+   "https://keikat.org/helmi-pyynikki-119"
   ],
   [
    "2026-08-21",
@@ -481,6 +454,15 @@
   [
    "2026-08-21",
    "",
+   "Nekalataajuus v2.0",
+   "Nekala",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/nekalataajuus-v2-0/"
+  ],
+  [
+   "2026-08-21",
+   "",
    "Moro Sky Bar DJ:t: Kimble",
    "Moro Sky Bar",
    "electronic",
@@ -495,15 +477,6 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/k-e-k-jorpakko-pornogeneraattori/"
-  ],
-  [
-   "2026-08-22",
-   "00:00",
-   "ViinikkalaFest 2026",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/viinikkalafest/"
   ],
   [
    "2026-08-22",
@@ -621,6 +594,15 @@
    "hiphop",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/rock-rap-indie-pop-funk-mayhem/"
+  ],
+  [
+   "2026-08-22",
+   "21:00",
+   "Siesma",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/siesma/"
   ],
   [
    "2026-08-22",
@@ -792,6 +774,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/kirjaslampirock/"
+  ],
+  [
+   "2026-08-22",
+   "",
+   "ViinikkalaFest 2026",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/viinikkalafest/"
   ],
   [
    "2026-08-22",
@@ -1156,6 +1147,15 @@
   [
    "2026-08-28",
    "",
+   "DJ Melodinda & Daddylicious: Koko ilta kotimaista",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-melodinda-daddylicious-koko-ilta-kotimaista/"
+  ],
+  [
+   "2026-08-28",
+   "",
    "MONOKATE (UKR)",
    "Tampere",
    "rock",
@@ -1241,7 +1241,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-203"
+   "https://keikat.org/koovee-spiral-207"
   ],
   [
    "2026-08-29",
@@ -2033,7 +2033,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-380"
+   "https://keikat.org/off-teatteri-373"
   ],
   [
    "2026-09-14",
@@ -2110,20 +2110,20 @@
   [
    "2026-09-18",
    "20:00",
-   "Elämä on Punk Vol. 32 pe 18.9.2026",
-   "Vastavirta-klubi",
-   "metal",
-   0,
-   "https://keikat.org/elämä-vastavirta-klub-405"
-  ],
-  [
-   "2026-09-18",
-   "20:00",
    "Uudet Tekijät: Knife Jerks - Puukkojunkkarit pe 18.9.2026",
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-418"
+   "https://keikat.org/uudet-teatteri-398"
+  ],
+  [
+   "2026-09-18",
+   "20:00",
+   "Elämä on Punk Vol. 32 pe 18.9.2026",
+   "Vastavirta-klubi",
+   "metal",
+   0,
+   "https://keikat.org/elämä-vastavirta-klub-413"
   ],
   [
    "2026-09-18",
@@ -2276,7 +2276,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-448"
+   "https://keikat.org/koovee-spiral-444"
   ],
   [
    "2026-09-19",
@@ -2681,7 +2681,7 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-535"
+   "https://keikat.org/music-tampere-talo-529"
   ],
   [
    "2026-10-01",
@@ -2789,7 +2789,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-576"
+   "https://keikat.org/off-teatteri-570"
   ],
   [
    "2026-10-07",
@@ -3149,7 +3149,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-791"
+   "https://keikat.org/tehdas-teatteri-789"
   ],
   [
    "2026-11-05",
@@ -3293,7 +3293,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-892"
+   "https://keikat.org/sorin-sorin-886"
   ],
   [
    "2026-11-18",
@@ -3356,7 +3356,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-918"
+   "https://keikat.org/kotae-tampereen-912"
   ],
   [
    "2026-11-27",
@@ -3410,7 +3410,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1086"
+   "https://keikat.org/magda-vooninki-1081"
   ]
  ]
 }
