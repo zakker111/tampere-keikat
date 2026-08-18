@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-17 05:37 UTC",
+ "generated": "2026-08-18 05:28 UTC",
  "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
@@ -10,42 +10,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-08-17",
-   "18:30",
-   "Laikunlava laulaa | Nota Bene Nokia ja yhteislaulut",
-   "Laikunlava",
-   "rock",
-   1,
-   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=6a1e77d343cec9000772913f&date=17.08.2026&time=18.30+-+20.00"
-  ],
-  [
-   "2026-08-17",
-   "18:30",
-   "Compañía Kaari & Roni Martin goes ROOTS ja Pekko Käppi & K:H:H:L",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/compania-kaari-roni-martin-goes-roots-ja-pekko-kappi-khhl/"
-  ],
-  [
-   "2026-08-17",
-   "19:00",
-   "REGGAETA & MAKKARAA",
-   "Tampere",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/reggaeta-makkaraa-6/"
-  ],
-  [
-   "2026-08-17",
-   "",
-   "Barbatos (JPN), Beatrix, Ravenous Medicine",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/barbatos-jpn-beatrix-ravenous-medicine/"
-  ],
   [
    "2026-08-18",
    "17:30",
@@ -269,7 +233,7 @@
    "Pyynikki",
    "festival",
    0,
-   "https://keikat.org/helmi-pyynikki-119"
+   "https://keikat.org/helmi-pyynikki-125"
   ],
   [
    "2026-08-21",
@@ -1241,7 +1205,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-207"
+   "https://keikat.org/koovee-spiral-205"
   ],
   [
    "2026-08-29",
@@ -2033,7 +1997,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-373"
+   "https://keikat.org/off-teatteri-375"
   ],
   [
    "2026-09-14",
@@ -2114,7 +2078,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-398"
+   "https://keikat.org/uudet-teatteri-399"
   ],
   [
    "2026-09-18",
@@ -2123,7 +2087,7 @@
    "Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-413"
+   "https://keikat.org/elämä-vastavirta-klub-424"
   ],
   [
    "2026-09-18",
@@ -2276,7 +2240,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-444"
+   "https://keikat.org/koovee-spiral-434"
   ],
   [
    "2026-09-19",
@@ -2630,6 +2594,15 @@
    "https://kohokohdat.fi/tampere/tapahtuma/diandra-hymni-rakkaudelle/"
   ],
   [
+   "2026-09-27",
+   "20:00",
+   "Tampereen Pyrintö lentopallo kausikortti 2026-2027 su 27.9.2026",
+   "Sammon uusi koulu",
+   "rock",
+   0,
+   "https://keikat.org/tampereen-sammon-518"
+  ],
+  [
    "2026-09-29",
    "",
    "Stu Larsen (AUS), Imme (NLD), Julia Adriana (NLD)",
@@ -2681,7 +2654,7 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-529"
+   "https://keikat.org/music-tampere-talo-535"
   ],
   [
    "2026-10-01",
@@ -2789,7 +2762,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-570"
+   "https://keikat.org/off-teatteri-581"
   ],
   [
    "2026-10-07",
@@ -3149,7 +3122,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-789"
+   "https://keikat.org/tehdas-teatteri-802"
   ],
   [
    "2026-11-05",
@@ -3293,7 +3266,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-886"
+   "https://keikat.org/sorin-sorin-904"
   ],
   [
    "2026-11-18",
@@ -3356,7 +3329,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-912"
+   "https://keikat.org/kotae-tampereen-933"
   ],
   [
    "2026-11-27",
@@ -3410,7 +3383,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1081"
+   "https://keikat.org/magda-vooninki-1108"
   ]
  ]
 }
