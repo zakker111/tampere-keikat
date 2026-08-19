@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-18 05:28 UTC",
+ "generated": "2026-08-19 05:37 UTC",
  "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
@@ -10,60 +10,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-08-18",
-   "17:30",
-   "Markus Savander",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/markus-savander/"
-  ],
-  [
-   "2026-08-18",
-   "18:30",
-   "Barbatos (Japani), Beatrix, Black Spirits, VMVP",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/barbatos-japani-beatrix-black-spirits-vmvp/"
-  ],
-  [
-   "2026-08-18",
-   "19:00",
-   "Geordie Greep (UK)",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/geordie-greep-uk/"
-  ],
-  [
-   "2026-08-18",
-   "21:00",
-   "Stetson Brothers",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/stetson-brothers/"
-  ],
-  [
-   "2026-08-18",
-   "",
-   "Geordie Greep (GBR)",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/geordie-greep-gbr-2"
-  ],
-  [
-   "2026-08-18",
-   "",
-   "Anal Womit (PER), R.I.O.T. (UKR)",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/anal-womit-per-r-i-o-t-ukr/"
-  ],
   [
    "2026-08-19",
    "18:00",
@@ -233,7 +179,7 @@
    "Pyynikki",
    "festival",
    0,
-   "https://keikat.org/helmi-pyynikki-125"
+   "https://keikat.org/aaro630-pyynikki-124"
   ],
   [
    "2026-08-21",
@@ -1066,6 +1012,15 @@
   [
    "2026-08-28",
    "",
+   "All Good In The Hood: Kriso, Mimosa & Getto-Otto, DJ:t C-Flava,",
+   "Loasteeze Kaijakka",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/all-good-in-the-hood-kriso-mimosa-getto-otto-djt-c-flava-loasteeze"
+  ],
+  [
+   "2026-08-28",
+   "",
    "Liekkiyö 2026",
    "Tampere",
    "rock",
@@ -1205,7 +1160,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-205"
+   "https://keikat.org/koovee-spiral-204"
   ],
   [
    "2026-08-29",
@@ -1997,7 +1952,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-375"
+   "https://keikat.org/off-teatteri-374"
   ],
   [
    "2026-09-14",
@@ -2078,7 +2033,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-399"
+   "https://keikat.org/uudet-teatteri-398"
   ],
   [
    "2026-09-18",
@@ -2087,7 +2042,7 @@
    "Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-424"
+   "https://keikat.org/elämä-vastavirta-klub-425"
   ],
   [
    "2026-09-18",
@@ -2240,7 +2195,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-434"
+   "https://keikat.org/koovee-spiral-435"
   ],
   [
    "2026-09-19",
@@ -2560,15 +2515,6 @@
   [
    "2026-09-26",
    "",
-   "Carola Forever Show & Dinner",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/carola-forever-show-dinner/"
-  ],
-  [
-   "2026-09-26",
-   "",
    "Moro Sky Bar DJ:t",
    "Moro Sky Bar",
    "electronic",
@@ -2600,7 +2546,7 @@
    "Sammon uusi koulu",
    "rock",
    0,
-   "https://keikat.org/tampereen-sammon-518"
+   "https://keikat.org/tampereen-sammon-524"
   ],
   [
    "2026-09-29",
@@ -2654,7 +2600,7 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-535"
+   "https://keikat.org/music-tampere-talo-539"
   ],
   [
    "2026-10-01",
@@ -2682,6 +2628,24 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/lost-in-music-fibi-efka-crush-hopeasiivet"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Lost In Music: Jutta Rahmel, Tyson Blu, Saarisalo",
+   "O'Connell's",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-jutta-rahmel-tyson-blu-saarisalo"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Lost In Music: Marita Närhi, Hulda Huima, Ani Harmi, Padelclub",
+   "Paapan Kapakka",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-marita-narhi-hulda-huima-ani-harmi-padelclub"
   ],
   [
    "2026-10-02",
@@ -2718,6 +2682,33 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/lost-in-music-ab-keiju-f"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: Vauxdeville, Us",
+   "Maanalainen",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-vauxdeville-us"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: Aizhan Sultan, Nicholas Francett, Leija Lautamaja",
+   "O'Connell's",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-aizhan-sultan-nicholas-francett-leija-lautamaja"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: Onni Rajaniemi, Nina Kaitaranta, Ricky Kotka, Tero-Petri & Korvaamattomat",
+   "Paapan Kapakka",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-onni-rajaniemi-nina-kaitaranta-ricky-kotka-tero-petri-korvaamattomat"
   ],
   [
    "2026-10-03",
@@ -2762,7 +2753,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-581"
+   "https://keikat.org/off-teatteri-585"
   ],
   [
    "2026-10-07",
@@ -2907,6 +2898,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/clearwater-creedence-revival-gbr"
+  ],
+  [
+   "2026-10-15",
+   "",
+   "Absoluuttinen Nollapiste",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/absoluuttinen-nollapiste-11"
   ],
   [
    "2026-10-16",
@@ -3122,7 +3122,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-802"
+   "https://keikat.org/tehdas-teatteri-808"
   ],
   [
    "2026-11-05",
@@ -3266,7 +3266,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-904"
+   "https://keikat.org/sorin-sorin-912"
   ],
   [
    "2026-11-18",
@@ -3329,7 +3329,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-933"
+   "https://keikat.org/kotae-tampereen-941"
   ],
   [
    "2026-11-27",
@@ -3383,7 +3383,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1108"
+   "https://keikat.org/magda-vooninki-1116"
   ]
  ]
 }
