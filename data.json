@@ -1,87 +1,15 @@
 {
- "generated": "2026-08-20 05:29 UTC",
+ "generated": "2026-08-21 05:31 UTC",
  "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "puistokonsertit": "OK",
-  "keikat_org": "OK",
+  "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "NO_EVENTS_OR_PARSE_FAILURE",
   "meteli": "OK",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-08-20",
-   "18:00",
-   "Laikunlavalla: Kesäsalsat",
-   "Laikunlava",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/laikunlavalla-kesasalsat-2/"
-  ],
-  [
-   "2026-08-20",
-   "18:00",
-   "Päivi: Lauluja elämän varrelta",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/paivi-lauluja-elaman-varrelta/"
-  ],
-  [
-   "2026-08-20",
-   "19:00",
-   "Maanalaisen JAMIT",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/maanalaisen-jamit-3/"
-  ],
-  [
-   "2026-08-20",
-   "20:00",
-   "Masi Luoma – 70 vuotta musiikin juhlaa: Groove Machine, The Wowels",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/masi-luoma-70-vuotta-musiikin-juhlaa-groove-machine-the-wowels/"
-  ],
-  [
-   "2026-08-20",
-   "21:00",
-   "Blue Skies",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/blue-skies-2/"
-  ],
-  [
-   "2026-08-20",
-   "22:00",
-   "Sapphic Space Dyke Disco",
-   "Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/sapphic-space-dyke-disco/"
-  ],
-  [
-   "2026-08-20",
-   "",
-   "Masi Luoma – 70 vuotta musiikin juhlaa!: Groove Machine, The Wowels",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/masi-luoma-70-vuotta-musiikin-juhlaa-groove-machine-the-wowels"
-  ],
-  [
-   "2026-08-20",
-   "",
-   "Oma Sfääri: Ida Niemi, Daniela Lila, Aava Alue",
-   "Atmos Taproom",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/oma-sfaari-ida-niemi-daniela-lila-aava-alue"
-  ],
   [
    "2026-08-21",
    "00:00",
@@ -108,15 +36,6 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/boycott/"
-  ],
-  [
-   "2026-08-21",
-   "20:00",
-   "Festivaali 2026 pe 21.8.2026",
-   "Pyynikki",
-   "festival",
-   0,
-   "https://keikat.org/aaro630-pyynikki-111"
   ],
   [
    "2026-08-21",
@@ -1092,15 +1011,6 @@
   ],
   [
    "2026-08-29",
-   "20:00",
-   "Koovee naiset kotiottelut 2026-2027 la 29.8.2026",
-   "Spiral Tampere",
-   "rock",
-   0,
-   "https://keikat.org/koovee-spiral-199"
-  ],
-  [
-   "2026-08-29",
    "20:30",
    "Pyhät Nuket, Syyskuu",
    "Tampere",
@@ -1588,6 +1498,15 @@
   [
    "2026-09-05",
    "",
+   "Tuomiofest: Yöpuolia, Utopianisti, Pelkkä Poutanen, Silja Palomäki, Kaunis Veli,",
+   "Suurimot Bistro Vilja",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/tuomiofest"
+  ],
+  [
+   "2026-09-05",
+   "",
    "Pispalan Saunafest 2026",
    "Tampere",
    "rock",
@@ -1883,15 +1802,6 @@
    "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-12/"
   ],
   [
-   "2026-09-13",
-   "20:00",
-   "OFF: Carolus Rex su 13.9.2026",
-   "Teatteri Telakka",
-   "rock",
-   0,
-   "https://keikat.org/off-teatteri-369"
-  ],
-  [
    "2026-09-14",
    "19:00",
    "NITS (NL)",
@@ -1962,24 +1872,6 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/samae-koskinen-19"
-  ],
-  [
-   "2026-09-18",
-   "20:00",
-   "Uudet Tekijät: Knife Jerks - Puukkojunkkarit pe 18.9.2026",
-   "Teatteri Telakka",
-   "rock",
-   0,
-   "https://keikat.org/uudet-teatteri-395"
-  ],
-  [
-   "2026-09-18",
-   "20:00",
-   "Elämä on Punk Vol. 32 pe 18.9.2026",
-   "Vastavirta-klubi",
-   "metal",
-   0,
-   "https://keikat.org/elämä-vastavirta-klub-410"
   ],
   [
    "2026-09-18",
@@ -2124,15 +2016,6 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jack-jones/"
-  ],
-  [
-   "2026-09-19",
-   "20:00",
-   "Koovee miehet kotiottelut 2026-2027 la 19.9.2026",
-   "Spiral Tampere",
-   "rock",
-   0,
-   "https://keikat.org/koovee-spiral-426"
   ],
   [
    "2026-09-19",
@@ -2477,15 +2360,6 @@
    "https://kohokohdat.fi/tampere/tapahtuma/diandra-hymni-rakkaudelle/"
   ],
   [
-   "2026-09-27",
-   "20:00",
-   "Tampereen Pyrintö lentopallo kausikortti 2026-2027 su 27.9.2026",
-   "Sammon uusi koulu",
-   "rock",
-   0,
-   "https://keikat.org/tampereen-sammon-523"
-  ],
-  [
    "2026-09-29",
    "",
    "Stu Larsen (AUS), Imme (NLD), Julia Adriana (NLD)",
@@ -2529,15 +2403,6 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/roamin-street-bandin-gumbo-club-huurteessa-2-2026-09-30/"
-  ],
-  [
-   "2026-10-01",
-   "20:00",
-   "Music x Media 2026 to 1.10.2026",
-   "Tampere-talo",
-   "rock",
-   0,
-   "https://keikat.org/music-tampere-talo-537"
   ],
   [
    "2026-10-01",
@@ -2682,15 +2547,6 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/g-liveslow-lawrence-english-aus"
-  ],
-  [
-   "2026-10-07",
-   "20:00",
-   "OFF: Maailman onnellisin mies ke 7.10.2026",
-   "Teatteri Telakka",
-   "rock",
-   0,
-   "https://keikat.org/off-teatteri-584"
   ],
   [
    "2026-10-07",
@@ -3072,15 +2928,6 @@
   ],
   [
    "2026-11-05",
-   "20:00",
-   "Tehdas Teatteri: Extra-neitsyt evankeliumi to 5.11.2026",
-   "Teatteri Telakka",
-   "rock",
-   0,
-   "https://keikat.org/tehdas-teatteri-816"
-  ],
-  [
-   "2026-11-05",
    "",
    "Yona",
    "G Livelab Tampere",
@@ -3216,15 +3063,6 @@
   ],
   [
    "2026-11-18",
-   "20:00",
-   "Sorin Sirkus: Joulushow 2026 – Noctua ke 18.11.2026",
-   "Sorin Sirkus",
-   "rock",
-   0,
-   "https://keikat.org/sorin-sorin-923"
-  ],
-  [
-   "2026-11-18",
    "",
    "Graham Bonnet Band (GBR),",
    "Wishing Well Klubi",
@@ -3278,15 +3116,6 @@
    "https://www.meteli.net/tapahtuma/timo-kahilainen-feat-heikki-hela-just-in-time"
   ],
   [
-   "2026-11-21",
-   "20:00",
-   "Kotae Expo 2026 la 21.11.2026",
-   "Tampereen Messu- ja Urheilukeskus",
-   "rock",
-   0,
-   "https://keikat.org/kotae-tampereen-953"
-  ],
-  [
    "2026-11-27",
    "",
    "Masa Orpana Honk",
@@ -3330,15 +3159,6 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/herrasmiehet-lavalla-danny-eino-gron-pasi-kaunisto-erkki-liikanen-kai-hyttinen-eikka-eronen-jari-puhakka-markku-veijalainen-6"
-  ],
-  [
-   "2027-02-01",
-   "20:00",
-   "Magda G - Valtakunnan äiti ma 1.2.2027",
-   "Vooninki",
-   "rock",
-   0,
-   "https://keikat.org/magda-vooninki-1132"
   ]
  ]
 }
