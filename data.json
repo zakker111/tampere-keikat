@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-24 05:39 UTC",
+ "generated": "2026-08-25 05:28 UTC",
  "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
@@ -144,6 +144,15 @@
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dj-riku-10/"
+  ],
+  [
+   "2026-08-27",
+   "",
+   "Lingonperry Liveklubi",
+   "Luminous Mind Frank the Lobster",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lingonperry-liveklubi-luminous-mind"
   ],
   [
    "2026-08-28",
@@ -423,6 +432,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/black-devils-feat-ile-kallio-janne-louhivuori-3/"
+  ],
+  [
+   "2026-08-29",
+   "20:00",
+   "Hank Nero",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hank-nero-2/"
   ],
   [
    "2026-08-29",
@@ -1001,6 +1019,15 @@
    "https://www.meteli.net/tapahtuma/tohtori-kivimaen-valinnat-hilja-gronfors-trio-akkajee-emmi-kuittinen"
   ],
   [
+   "2026-09-08",
+   "19:00",
+   "Johanna Försti & HT Combo – Swing Swing Swing",
+   "Tampere",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/johanna-forsti-ht-combo-swing-swing-swing/"
+  ],
+  [
    "2026-09-09",
    "19:00",
    "Fatboy (SE)",
@@ -1170,6 +1197,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jukka-perko-jay-kortehisto-foxtet/"
+  ],
+  [
+   "2026-09-12",
+   "18:00",
+   "Jiri Nikkinen The Beatles Tribute Band",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jiri-nikkinen-the-beatles-tribute-band-2/"
   ],
   [
    "2026-09-12",
@@ -1577,6 +1613,24 @@
    "https://www.meteli.net/tapahtuma/juha-saunala-masa-duo-m-i-laine"
   ],
   [
+   "2026-09-23",
+   "",
+   "Brian Charette (USA), Mathias Sandberg & Teppo Mäkynen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/brian-charette-usa-mathias-sandberg-teppo-makynen/"
+  ],
+  [
+   "2026-09-24",
+   "18:00",
+   "Lauantain toivotut 90 vuotta",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lauantain-toivotut-90-vuotta-2/"
+  ],
+  [
    "2026-09-24",
    "",
    "Wöyh!",
@@ -1665,6 +1719,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/soundrun-cold-dogs"
+  ],
+  [
+   "2026-09-25",
+   "",
+   "Kätfish,",
+   "Kirkkovene Ihku",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/katfish-kirkkovene-2"
   ],
   [
    "2026-09-25",
@@ -1782,6 +1845,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/timo-rautiainen-trio-niskalaukaus-6"
+  ],
+  [
+   "2026-09-26",
+   "",
+   "Hiljaiset levyt 40 Vuotta punkkia: Maaseudun tulevaisuus, Saattohoito79, Tappajatomaatit, Jugglin Jugulars",
+   "Vastavirta-Klubi",
+   "metal",
+   0,
+   "https://www.meteli.net/tapahtuma/hiljaiset-levyt-40-vuotta-punkkia-maaseudun-tulevaisuus-saattohoito79-tappajatomaatit-jugglin-jugulars"
   ],
   [
    "2026-09-26",
@@ -2252,6 +2324,15 @@
    "https://www.meteli.net/tapahtuma/laura-moisio-7"
   ],
   [
+   "2026-10-21",
+   "",
+   "Warner E. Hodges International All Stars feat. Stacie Collins (USA/SWE)",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/warner-e-hodges-international-all-stars-feat-stacie-collins-usa-swe"
+  ],
+  [
    "2026-10-22",
    "",
    "Jukka Haavisto – Löyly Syndicate",
@@ -2513,6 +2594,15 @@
    "https://www.meteli.net/tapahtuma/k40-disco-djt-sami-antti-23"
   ],
   [
+   "2026-11-14",
+   "",
+   "Kisko-klubi",
+   "Stenari Asemamestari",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/kisko-klubi-stenari"
+  ],
+  [
    "2026-11-18",
    "",
    "Graham Bonnet Band (GBR),",
@@ -2565,6 +2655,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/timo-kahilainen-feat-heikki-hela-just-in-time"
+  ],
+  [
+   "2026-11-20",
+   "",
+   "Benjamin",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/benjamin-18"
   ],
   [
    "2026-11-27",
