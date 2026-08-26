@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-25 05:28 UTC",
+ "generated": "2026-08-26 05:30 UTC",
  "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
@@ -10,24 +10,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-08-25",
-   "20:00",
-   "TamJazz: Kanvas + keikan jälkeen jamit",
-   "Tampere",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tamjazz-klubi-mikko-pettinen-why-not/"
-  ],
-  [
-   "2026-08-25",
-   "21:00",
-   "Riku Poramo trio",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/riku-poramo-trio-3/"
-  ],
   [
    "2026-08-26",
    "17:00",
@@ -319,6 +301,15 @@
   [
    "2026-08-28",
    "",
+   "Amurin taivaan alla – yhteisöllinen piknik: Saana Kastelli",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/amurin-taivaan-alla-yhteisollinen-piknik-saana-kastelli/"
+  ],
+  [
+   "2026-08-28",
+   "",
    "Liekkiyö 2026",
    "Tampere",
    "rock",
@@ -603,6 +594,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/pyhat-nuket-syyskuu"
+  ],
+  [
+   "2026-08-29",
+   "",
+   "Glow Festival: Diandra, Jepa Lambert, Sounds of Mercy -kuoro, Ilta, Pekka Ruuska, Jari Levy, Jukka Leppilampi. Simojoki & The Next Generation, Idän Ihmeet,",
+   "Heaven Up Nokia-areena",
+   "festival",
+   0,
+   "https://www.meteli.net/tapahtuma/glow-festival-diandra-jepa-lambert-sounds-of-mercy-kuoro-ilta-pekka-ruuska-jari-levy-jukka-leppilampi-simojoki-the-next-generation-idan-ihmeet-heaven-up"
   ],
   [
    "2026-08-29",
@@ -2441,6 +2441,15 @@
    "https://www.meteli.net/tapahtuma/dj-kridlokk-jv"
   ],
   [
+   "2026-10-31",
+   "",
+   "Kivesveto GoGo, Sanktio",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/kivesveto-gogo-sanktio"
+  ],
+  [
    "2026-11-03",
    "",
    "Arkai (USA)",
@@ -2533,7 +2542,7 @@
   [
    "2026-11-12",
    "",
-   "Maija Vilkkumaa",
+   "Maija Vilkkumaa, Linda",
    "Tavara-asema",
    "rock",
    0,
@@ -2666,6 +2675,24 @@
    "https://www.meteli.net/tapahtuma/benjamin-18"
   ],
   [
+   "2026-11-21",
+   "",
+   "Us",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/us-2"
+  ],
+  [
+   "2026-11-25",
+   "",
+   "Johanna Iivanainen 50v -juhlakonsertti",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/johanna-iivanainen-50v-juhlakonsertti"
+  ],
+  [
    "2026-11-27",
    "",
    "Masa Orpana Honk",
@@ -2673,6 +2700,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/masa-orpana-honk-2"
+  ],
+  [
+   "2026-11-28",
+   "",
+   "Die Oberherren (SWE), Dharma Guns, Rob Coffinshaker (SWE)",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/die-oberherren-swe-dharma-guns-rob-coffinshaker-swe"
   ],
   [
    "2026-12-04",
