@@ -1,96 +1,15 @@
 {
- "generated": "2026-08-26 05:30 UTC",
+ "generated": "2026-08-27 16:09 UTC",
  "source_note": "Auto-scraped from 5 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "puistokonsertit": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "NO_EVENTS_OR_PARSE_FAILURE",
   "meteli": "OK",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-08-26",
-   "17:00",
-   "Pikkuvenetsialaiset",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pikkuvenetsialaiset/"
-  ],
-  [
-   "2026-08-26",
-   "18:00",
-   "Poplauluyhtye Sounds",
-   "Haiharan taidekeskus",
-   "hiphop",
-   1,
-   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69dc983653fe1000075ca616&date=26.08.2026&time=18.00+-+19.00"
-  ],
-  [
-   "2026-08-26",
-   "18:00",
-   "SPOIL., Demonessa, Ashenplains",
-   "Laikunlava",
-   "rock",
-   1,
-   "https://puistokonsertit.tampere.fi/tapahtuma/?event-id=69d8de6d53fe1000075b5d82&date=26.08.2026&time=18.00+-+20.45"
-  ],
-  [
-   "2026-08-26",
-   "18:00",
-   "Puistokonsertit Laikunlavalla: SPOIL., Demonessa, Ashenplains",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/puistokonsertit-laikunlavalla-spoil-demonessa-ashenplains/"
-  ],
-  [
-   "2026-08-26",
-   "19:00",
-   "Uittotunnelin kesäkeikat: Pauli Hanhiniemi & Ville Rauhala MAD",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-pauli-hanhiniemi-ville-rauhala-mad/"
-  ],
-  [
-   "2026-08-26",
-   "21:00",
-   "Henry Ojutkangas trio",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/henry-ojutkangas-trio-2/"
-  ],
-  [
-   "2026-08-26",
-   "23:00",
-   "DJ DJC",
-   "Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-djc-4/"
-  ],
-  [
-   "2026-08-26",
-   "",
-   "Plevnan Vinyyliveranta: DJ Juissi",
-   "Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-vinyyli-keskiviikot-dj-juissi-2026-08-26/"
-  ],
-  [
-   "2026-08-26",
-   "",
-   "Roamin Street Bandin Gumbo Club Huurteessa",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/roamin-street-bandin-gumbo-club-huurteessa-2-2026-08-26/"
-  ],
   [
    "2026-08-27",
    "19:00",
@@ -306,15 +225,6 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/amurin-taivaan-alla-yhteisollinen-piknik-saana-kastelli/"
-  ],
-  [
-   "2026-08-28",
-   "",
-   "Liekkiyö 2026",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/liekkiyo/"
   ],
   [
    "2026-08-28",
@@ -723,6 +633,15 @@
   ],
   [
    "2026-09-03",
+   "20:00",
+   "Rahvaanmusiikin kerho: Désirée Saarela, I Fäälan",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/rahvaanmusiikin-kerho-desiree-saarela-i-faalan/"
+  ],
+  [
+   "2026-09-03",
    "21:00",
    "A9 Live: Pasi Vainionperä",
    "Tampere",
@@ -738,6 +657,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/jaakko-laitinen-vaara-raha-16"
+  ],
+  [
+   "2026-09-03",
+   "",
+   "Rahvaanmusiikin kerho: Désirée Saarela, I Fäälan",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/rahvaanmusiikin-kerho-desiree-saarela-i-faalan"
   ],
   [
    "2026-09-04",
@@ -2108,6 +2036,15 @@
    "https://www.meteli.net/tapahtuma/vince-boncamperin-20-vuotistaiteilijajuhla"
   ],
   [
+   "2026-10-08",
+   "",
+   "Rahvaanmusiikin kerho: Tareq Abboushi, Nemat Battah",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/rahvaanmusiikin-kerho-tareq-abboushi-nemat-battah"
+  ],
+  [
    "2026-10-09",
    "",
    "Kun saksofoni palaa: Timo Lassy",
@@ -2477,6 +2414,15 @@
    "https://www.meteli.net/tapahtuma/yona-21"
   ],
   [
+   "2026-11-05",
+   "",
+   "Rahvaanmusiikin kerho: Orffit",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/rahvaanmusiikin-kerho-orffit"
+  ],
+  [
    "2026-11-06",
    "",
    "Saimaa",
@@ -2560,7 +2506,7 @@
   [
    "2026-11-13",
    "",
-   "Dàimh (SCO), Rachel Hair & Ron Jappy (SCO)",
+   "Scottish Music Night: Dàimh (SCO), Rachel Hair & Ron Jappy (SCO)",
    "G Livelab Tampere",
    "rock",
    0,
@@ -2684,6 +2630,15 @@
    "https://www.meteli.net/tapahtuma/us-2"
   ],
   [
+   "2026-11-21",
+   "",
+   "60-vuotisjuhlakonsertti: Mika Maijala",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/60-vuotisjuhlakonsertti-mika-maijala"
+  ],
+  [
    "2026-11-25",
    "",
    "Johanna Iivanainen 50v -juhlakonsertti",
@@ -2691,6 +2646,33 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/johanna-iivanainen-50v-juhlakonsertti"
+  ],
+  [
+   "2026-11-26",
+   "",
+   "Vapaat äänet 30 vuotta: Lotus Flowers trio, Antti Lötjönen",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/vapaat-aanet-30-vuotta-lotus-flowers-trio-antti-lotjonen"
+  ],
+  [
+   "2026-11-26",
+   "",
+   "Tabula Rasa, Fantasia",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/tabula-rasa-fantasia"
+  ],
+  [
+   "2026-11-26",
+   "",
+   "Kissa,",
+   "Lala Salama Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/kissa-lala-salama"
   ],
   [
    "2026-11-27",
@@ -2702,6 +2684,15 @@
    "https://www.meteli.net/tapahtuma/masa-orpana-honk-2"
   ],
   [
+   "2026-11-27",
+   "",
+   "Melancholy Mass: Sólstafir (ISL), Vorna, Cryptic Hatred,",
+   "Ashen Tomb Olympia",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/melancholy-mass-solstafir-isl-vorna-cryptic-hatred-ashen-tomb-2"
+  ],
+  [
    "2026-11-28",
    "",
    "Die Oberherren (SWE), Dharma Guns, Rob Coffinshaker (SWE)",
@@ -2709,6 +2700,24 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/die-oberherren-swe-dharma-guns-rob-coffinshaker-swe"
+  ],
+  [
+   "2026-11-28",
+   "",
+   "Stam1na,",
+   "Stoned Statues Pakkahuone",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/stam1na-stoned-statues-6"
+  ],
+  [
+   "2026-11-28",
+   "",
+   "Costi, Uu$er",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/costi-uuer-3"
   ],
   [
    "2026-12-04",
