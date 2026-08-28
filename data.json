@@ -1,12 +1,12 @@
 {
- "generated": "2026-08-28 07:58 UTC",
+ "generated": "2026-08-28 17:07 UTC",
  "source_note": "Auto-scraped from 6 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "NO_EVENTS_OR_PARSE_FAILURE",
-  "tampere_filharmonia": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
+  "tampere_filharmonia": "OK",
   "meteli": "OK",
   "kohokohdat": "OK"
  },
@@ -19,42 +19,6 @@
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/dynamic-event/classical-trancelations-in-concert/"
-  ],
-  [
-   "2026-08-28",
-   "19:00",
-   "Gravity Well (IRL), Orbiter, Craneium, Sapata",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/gravity-well-irl-orbiter-craneium-sapata/"
-  ],
-  [
-   "2026-08-28",
-   "19:30",
-   "Crisella, Sekopoltsit, Kauno",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/crisella-sekopoltsit-kauno/"
-  ],
-  [
-   "2026-08-28",
-   "20:00",
-   "Ewa Kaarela Swing Band",
-   "Tampere",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/ewa-kaarela-swing-band/"
-  ],
-  [
-   "2026-08-28",
-   "20:00",
-   "Matthau Mikojan",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/matthau-mikojan/"
   ],
   [
    "2026-08-28",
@@ -239,11 +203,38 @@
   [
    "2026-08-28",
    "",
-   "MONOKATE (UKR)",
+   "Gravity Well (IRL), Orbiter, Craneium, Sapata",
    "Tampere",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtuma/monokate-ukr/"
+   "https://kohokohdat.fi/tampere/tapahtuma/gravity-well-irl-orbiter-craneium-sapata/"
+  ],
+  [
+   "2026-08-28",
+   "",
+   "Crisella, Sekopoltsit, Kauno",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/crisella-sekopoltsit-kauno/"
+  ],
+  [
+   "2026-08-28",
+   "",
+   "Ewa Kaarela Swing Band",
+   "Tampere",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ewa-kaarela-swing-band/"
+  ],
+  [
+   "2026-08-28",
+   "",
+   "Matthau Mikojan",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/matthau-mikojan/"
   ],
   [
    "2026-08-28",
