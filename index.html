@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tampere Keikat — every gig, one wall beta</title>
+<title>Tampere Keikat — every gig, one wall</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -92,6 +92,50 @@
   .status-dot{width:7px; height:7px; border-radius:50%; background:var(--paper-dim); flex:none;}
   .status-pill.live .status-dot{background:var(--olive); box-shadow:0 0 6px var(--olive);}
   .status-pill.stale .status-dot{background:var(--amber); box-shadow:0 0 6px var(--amber);}
+
+  /* ---------- footer ---------- */
+  footer{
+    max-width:920px; margin:40px auto 0; padding:20px 16px 40px;
+    border-top:1px solid var(--line);
+    font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--paper-dim);
+    display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+  }
+  footer a, footer button.linklike{
+    color:var(--paper-dim); text-decoration:underline; text-underline-offset:2px;
+    background:none; border:none; font:inherit; cursor:pointer; padding:0;
+  }
+  footer a:hover, footer button.linklike:hover{color:var(--amber);}
+
+  /* ---------- cookie consent banner ---------- */
+  #cookieBanner{
+    position:fixed; left:0; right:0; bottom:0; z-index:100;
+    background:rgba(15,12,10,0.97); backdrop-filter:blur(8px);
+    border-top:2px solid var(--brick);
+    padding:16px 20px; display:none;
+  }
+  #cookieBanner.show{display:block;}
+  .cookieInner{
+    max-width:920px; margin:0 auto; display:flex; align-items:center;
+    gap:20px; flex-wrap:wrap;
+  }
+  .cookieText{flex:1; min-width:240px; font-size:13px; line-height:1.5; color:var(--paper-dim);}
+  .cookieText b{color:var(--paper);}
+  .cookieText a{color:var(--amber); text-decoration:underline;}
+  .cookieBtns{display:flex; gap:8px; flex:none;}
+  .cookieBtns button{
+    font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.03em;
+    padding:9px 16px; border-radius:8px; cursor:pointer; border:1px solid var(--line);
+    background:var(--ink-2); color:var(--paper);
+  }
+  #cookieAccept{background:var(--brick); border-color:var(--brick); color:var(--paper); font-weight:600;}
+  #cookieDecline:hover{border-color:var(--paper-dim);}
+  #cookieAccept:hover{background:var(--brick-2);}
+
+  @media (max-width:520px){
+    #cookieBanner{padding:14px;}
+    .cookieBtns{width:100%;}
+    .cookieBtns button{flex:1;}
+  }
 
   /* ---------- controls ---------- */
   .controls{
@@ -540,6 +584,23 @@ function buildChips(){
   document.getElementById("clearBtn").classList.toggle("show", activeGenres.size>0 || searchTerm.length>0);
 }
 
+function escapeHtml(str){
+  // Every field here comes from scraped third-party sites, not code we
+  // control — must be escaped before going into innerHTML. Found via a
+  // chaos test that fed a `<script>` title through the real backend
+  // pipeline: script tags are inert via innerHTML so that specific payload
+  // wouldn't fire, but other HTML (e.g. an <img onerror=...> title) would
+  // have executed. Also escapes quotes so a malicious URL can't break out
+  // of the href="..." attribute either.
+  if(str == null) return "";
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function fmtDate(dateStr){
   const d = new Date(dateStr+"T12:00:00");
   return {dow: DOW[(d.getDay()+6)%7], dowFull: DOW_FULL[(d.getDay()+6)%7], day: d.getDate(), month: MONTHS[d.getMonth()]};
@@ -547,13 +608,13 @@ function fmtDate(dateStr){
 
 function ticketHTML(ev){
   const g = GENRES[ev.genre];
-  const timeHtml = ev.time ? `<div class="time">${ev.time}</div>` : `<div class="time tbd">FEST</div>`;
-  return `<a class="ticket" href="${ev.url}" target="_blank" rel="noopener">
+  const timeHtml = ev.time ? `<div class="time">${escapeHtml(ev.time)}</div>` : `<div class="time tbd">FEST</div>`;
+  return `<a class="ticket" href="${escapeHtml(ev.url)}" target="_blank" rel="noopener">
     <div class="stub">${timeHtml}</div>
     <div class="body">
-      <div class="title">${ev.title}</div>
+      <div class="title">${escapeHtml(ev.title)}</div>
       <div class="meta">
-        <span class="venue">${ev.venue}</span>
+        <span class="venue">${escapeHtml(ev.venue)}</span>
         <span class="genretag"><span class="dot" style="background:${g.color}"></span>${g.label}</span>
         ${ev.free ? '<span class="freebadge">FREE</span>' : ''}
       </div>
@@ -720,6 +781,88 @@ function renderUpdatedBadge(){
 
 loadData();
 </script>
-<footer>this page scrapes data from meteli.net,kohokohdat.fi,keikat.org,puistokonsertit.tampere.fi for now more coming soon</footer>
+<footer>
+  <span id="footerNote">Tampere Keikat</span>
+  <button class="linklike" id="cookiePrefsLink">Cookie preferences</button>
+</footer>
+
+<div id="cookieBanner">
+  <div class="cookieInner">
+    <div class="cookieText">
+      <b>This site uses cookies</b> for basic visit analytics — how many people visit,
+      what site sent them here, and roughly what country they're in. No ads, nothing sold to third parties.
+      You can decline and the site works exactly the same either way.
+    </div>
+    <div class="cookieBtns">
+      <button id="cookieDecline">Decline</button>
+      <button id="cookieAccept">Accept</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ---------------------------------------------------------------------
+// Cookie consent + analytics (Google Analytics 4)
+// ---------------------------------------------------------------------
+// GA4's tracking script is only ever loaded AFTER the visitor clicks
+// Accept — never before, and never just because the banner was shown.
+// That's the actual legal requirement under GDPR/ePrivacy, not just
+// showing a banner. Consent choice itself is stored in localStorage
+// (not a cookie) since remembering "they already answered" is treated
+// as strictly necessary, not itself something requiring consent.
+//
+// IMPORTANT: replace this placeholder with your real GA4 Measurement ID
+// (looks like "G-XXXXXXXXXX") from your own Google Analytics account —
+// see README.md for how to get one. Analytics stays fully inactive
+// until you do, so it's safe to deploy as-is in the meantime.
+const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+
+const CONSENT_KEY = "tampere-keikat-cookie-consent"; // "accepted" | "declined"
+
+function loadGoogleAnalytics(){
+  if(!GA_MEASUREMENT_ID || GA_MEASUREMENT_ID.includes("XXXXXXXXXX")) {
+    console.warn("Analytics: GA_MEASUREMENT_ID is still the placeholder — not loading. Set your real ID in index.html to enable.");
+    return;
+  }
+  if(window.__gaLoaded) return;
+  window.__gaLoaded = true;
+
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+  document.head.appendChild(script);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ window.dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', GA_MEASUREMENT_ID);
+}
+
+function applyConsent(choice){
+  localStorage.setItem(CONSENT_KEY, choice);
+  document.getElementById('cookieBanner').classList.remove('show');
+  if(choice === 'accepted') loadGoogleAnalytics();
+}
+
+function initCookieConsent(){
+  const stored = localStorage.getItem(CONSENT_KEY);
+  const banner = document.getElementById('cookieBanner');
+
+  document.getElementById('cookieAccept').addEventListener('click', () => applyConsent('accepted'));
+  document.getElementById('cookieDecline').addEventListener('click', () => applyConsent('declined'));
+  document.getElementById('cookiePrefsLink').addEventListener('click', () => banner.classList.add('show'));
+
+  if(stored === 'accepted'){
+    loadGoogleAnalytics();
+  } else if(stored !== 'declined'){
+    // No choice recorded yet — ask.
+    banner.classList.add('show');
+  }
+}
+
+initCookieConsent();
+</script>
+
 </body>
 </html>
