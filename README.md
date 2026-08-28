@@ -3,16 +3,42 @@
 A one-page gig guide for Tampere: list + calendar views, genre filters, mobile-friendly.
 `data.json` is meant to be regenerated daily by `scrape.py` via GitHub Actions.
 
+## Code structure
+
+```
+scrape.py              orchestrator only — no site-specific parsing logic here
+sources/
+  common.py             shared helpers: HTTP/Playwright fetching, genre guessing,
+                         venue whitelist, date/time parsing, dedup logic
+  kohokohdat.py          kohokohdat.fi
+  meteli.py              meteli.net
+  keikat_org.py          keikat.org
+  puistokonsertit.py     puistokonsertit.tampere.fi
+  keikat_live.py         keikat.live
+  tamperefilharmonia.py  tamperefilharmonia.fi
+```
+
+Each source module is self-contained: it knows how to fetch and parse
+exactly one website, and returns a plain list of event dicts. `scrape.py`
+runs all six concurrently, merges/de-duplicates the results, filters out
+anything stale or invalid, and writes `data.json`. A bug in one source's
+parser can't leak into another's, and adding a 7th source later is just:
+write `sources/newsite.py` with a `fetch_x()` function, import it in
+`scrape.py`, add one line to the `jobs` dict.
+
 ## What it scrapes
 
-Four sources, merged and de-duplicated by (date, title):
+Six sources, merged and de-duplicated by (date, title, venue):
 
 | Source | Confidence | Why |
 |---|---|---|
 | meteli.net | **High** | Parser unit-tested against 7 real listings before shipping |
-| kohokohdat.fi | Medium | Generic heuristic, broadest coverage, unverified against live site |
-| keikat.org | Low | Built from search-snippet text, not real inspected HTML |
-| linkedevents.tampere.fi | Low (but a real API) | Official structured JSON API — should be the most reliable in principle, but I couldn't get a test query through this sandbox's network lock, so it was unverified here |
+| puistokonsertit.tampere.fi | **High** | Date/time come from the event URL's own query params, not inferred from page text |
+| tamperefilharmonia.fi | **High** | Fetched and verified against the live page while building this — real dates/times/venues, no robots.txt block. Adds classical coverage the other sources barely touch. |
+| kohokohdat.fi | Medium | Real bugs found and fixed against an actual page snapshot (date tracking, venue extraction) — see comments in `sources/kohokohdat.py` |
+| puistokonsertit.tampere.fi | **High** | Date/time come from the event URL's own query params, not inferred from page text |
+| keikat.org | Low | Built from search-snippet text, not fully inspected real HTML |
+| keikat.live | Unverified | Built without a live-tested reference sample |
 
 None of the four were reachable from the sandbox that built this (network
 egress there is domain-allowlisted; every one came back `403
@@ -70,27 +96,66 @@ only posts to its own website or Instagram won't show up regardless.
 
 ## If a source needs fixing
 
-Check `source_note` in `data.json` (or the Actions log) for per-source
-counts first — that tells you which one broke.
+Check `source_status` in `data.json` (or the Actions log) for per-source
+status first — that tells you which one broke. Each source is now its own
+file under `sources/`, independent of the others.
 
-- **meteli**: `parse_meteli_anchor_text()` / `split_title_venue()` — if a
-  venue keeps coming back wrong, add its exact name to `KNOWN_VENUES`.
-- **kohokohdat**: `parse_month_page()`.
-- **keikat.org**: `parse_keikat_org_anchor_text()` — most likely to need a
-  fix first, since it was built blind.
-- **linkedevents**: `fetch_linkedevents()` — if this returns 0 every time,
-  open `http://linkedevents.tampere.fi/v1/event/` in a browser, check the
-  actual JSON field names and working query params, and adjust the `params`
-  dict and field lookups (`item.get("name")` etc.) to match.
+- **meteli**: `sources/meteli.py` — `parse_meteli_anchor_text()` /
+  `split_title_venue()` (in `sources/common.py`). If a venue keeps coming
+  back wrong, add its exact name to `KNOWN_VENUES` in `common.py`.
+- **kohokohdat**: `sources/kohokohdat.py` — `parse_month_page()`. Broadest
+  coverage but the trickiest site; read the comments on
+  `_forward_adjacent_text()` and `_looks_like_stuck_date_tracking()` before
+  changing anything, they document real bugs already found and fixed here.
+- **keikat.org**: `sources/keikat_org.py` — `parse_keikat_org_anchor_text()`,
+  built from search-snippet text rather than fully inspected HTML.
+- **puistokonsertit**: `sources/puistokonsertit.py` — most reliable source,
+  date/time come from the event URL itself.
+- **keikat.live**: `sources/keikat_live.py` — built without a live-tested
+  reference sample, most likely to need adjustment first.
 
-Genre guessing (shared by all sources) is in `guess_genre()`. Everything's
-commented. You (or a future Claude session with real internet access, e.g.
-via Claude Code) can iterate on any of these against the live sites much
-more reliably than I could while building this, since I had no network
-access in the sandbox I built it in.
+Genre guessing (shared by all sources) is `guess_genre()` in
+`sources/common.py`. Everything's commented. You (or a future Claude
+session with real internet access, e.g. via Claude Code) can iterate on
+any of these against the live sites much more reliably than from a
+sandbox without network access.
 
 ## Manual data updates without touching the scraper
 
 You can always hand-edit `data.json` directly (it's just an array of
 `[date, time, title, venue, genre, free, url]` rows plus a `generated`
 timestamp) and push — no need to wait for or debug the scraper.
+
+## Visitor analytics (cookie consent + Google Analytics)
+
+The site has a working cookie-consent banner built in, but analytics
+stays fully inactive until you plug in your own Google Analytics ID —
+safe to deploy as-is with no tracking happening at all.
+
+**To turn it on:**
+
+1. Go to [analytics.google.com](https://analytics.google.com), sign in
+   with a Google account, and create a new GA4 property for your site
+   (free). It'll give you a Measurement ID that looks like `G-ABC1234567`.
+2. Open `index.html`, find this line near the bottom (search for
+   `GA_MEASUREMENT_ID`):
+   ```js
+   const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+   ```
+   Replace the placeholder with your real ID.
+3. Commit and push. That's it — no other changes needed.
+
+**How the consent flow actually works:** on a visitor's first visit, a
+banner asks Accept or Decline. The Google Analytics script is only ever
+injected into the page *after* Accept is clicked — never before, and
+never just because the banner was shown. That's the real legal
+requirement (GDPR/ePrivacy), not just displaying a banner. Their choice
+is remembered in `localStorage` (not a cookie) so they aren't asked again
+on future visits, and a "Cookie preferences" link in the footer lets them
+reopen the banner and change their mind at any time.
+
+If you leave `GA_MEASUREMENT_ID` as the placeholder, the banner still
+shows (so the UI is testable), but clicking Accept logs a console warning
+and does not inject any tracking script — verified with an automated
+browser test before shipping this.
+
