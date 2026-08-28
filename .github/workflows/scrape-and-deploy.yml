@@ -18,6 +18,12 @@ jobs:
   scrape-and-deploy:
     name: Update data.json and deploy Pages
     runs-on: ubuntu-latest
+    # Safety net: without this, a hung step (e.g. a Playwright page stuck
+    # waiting on a Cloudflare challenge that never resolves) could run for
+    # GitHub's default 360-minute job limit, burning Actions minutes for
+    # no benefit. 40 minutes is generous for 5 sources running in parallel
+    # (keikkalista's ~86 venue pages are the slow part) but still bounded.
+    timeout-minutes: 40
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -41,7 +47,19 @@ jobs:
 
       - name: Run scraper
         run: |
-          python scrape.py
+          python scrape.py 2>&1 | tee scrape.log
+          # tee keeps the log visible live in the Actions console AND
+          # saves it to a file below, for the artifact upload step.
+
+      - name: Upload scraper log as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scrape-log-${{ github.run_number }}
+          path: scrape.log
+          retention-days: 30
+          # if: always() means this uploads even if the scraper step above
+          # failed or timed out — that's exactly when you most want the log.
 
       - name: Sync with remote main
         run: |
@@ -74,8 +92,8 @@ jobs:
         run: |
           rm -rf out
           mkdir -p out
-          # copy only the files you want to publish (exclude .git and workflow files)
-          rsync -av --exclude='.git' --exclude='.github' --exclude='.gitignore' --exclude='node_modules' ./ out/
+          # copy only the files you want to publish (exclude .git, workflow files, and the scrape log)
+          rsync -av --exclude='.git' --exclude='.github' --exclude='.gitignore' --exclude='node_modules' --exclude='scrape.log' ./ out/
           # If you want to publish only certain files, replace the rsync with targeted copy commands
 
       - name: Setup Pages
