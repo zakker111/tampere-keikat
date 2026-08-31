@@ -1,52 +1,16 @@
 {
- "generated": "2026-08-30 10:16 UTC",
+ "generated": "2026-08-31 11:19 UTC",
  "source_note": "Auto-scraped from 6 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_live": "NO_EVENTS_OR_PARSE_FAILURE",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_live": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_filharmonia": "OK",
   "meteli": "OK",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-08-30",
-   "15:00",
-   "Chamber Music Among Visual Art",
-   "Armo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/chamber-music-among-visual-art-freshly-painted/"
-  ],
-  [
-   "2026-08-30",
-   "17:00",
-   "Hullu!Klubi: Kollaasi, Dross, Aselepo SS, Gacy’s House, Yleislakko",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/hulluklubi-kollaasi-dross-aselepo-ss-gacys-house-yleislakko/"
-  ],
-  [
-   "2026-08-30",
-   "17:00",
-   "Joonas Lepistön muistokonsertti",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/speed-metal-afterparty/"
-  ],
-  [
-   "2026-08-30",
-   "22:00",
-   "DJ Riku",
-   "Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-riku-11/"
-  ],
   [
    "2026-09-02",
    "19:00",
@@ -606,6 +570,15 @@
    "https://www.meteli.net/tapahtuma/aarne-pelkonen-6"
   ],
   [
+   "2026-09-10",
+   "",
+   "KiskoFest 2026: Ege Zulu, Olga, Aaro 630",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kiskofest/"
+  ],
+  [
    "2026-09-11",
    "09:45",
    "Open Rehearsal",
@@ -676,6 +649,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tuomas-lehto/"
+  ],
+  [
+   "2026-09-11",
+   "22:00",
+   "RNBLICIOUS: 90- ja 00-lukujen R&B- ja hiphop-klassikot  DJ’t Sara-Maaria & C-Flava",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/rnblicious-90-ja-00-lukujen-rb-ja-hiphop-klassikot-djt-sara-maaria-c-flava/"
   ],
   [
    "2026-09-11",
@@ -811,6 +793,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/forca-macabra-35v-show-kovaa-rasvaa-the-carnival-below-the-graves/"
+  ],
+  [
+   "2026-09-12",
+   "21:00",
+   "KANERVA -levynjulkaisukeikka + Liila Jokelin & Teemu Markkula",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kanerva-levynjulkaisukeikka-liila-jokelin-teemu-markkula/"
   ],
   [
    "2026-09-12",
@@ -1237,6 +1228,15 @@
   ],
   [
    "2026-09-19",
+   "22:00",
+   "Milleniaalidisko: dj:t Jiri & Mr. Willy",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/milleniaalidisko-djt-jiri-mr-willy/"
+  ],
+  [
+   "2026-09-19",
    "23:00",
    "Emodisko",
    "Tampere",
@@ -1432,6 +1432,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/hanhiniemi-rauhala-mad-2/"
+  ],
+  [
+   "2026-09-25",
+   "22:00",
+   "Game&RAVE: DJ:s Thomas Johan, JWLZ, Kehveli, Yukata, HExexen, Utepia",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-jiri-32/"
   ],
   [
    "2026-09-25",
@@ -2224,15 +2233,6 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/m-9"
-  ],
-  [
-   "2026-10-24",
-   "19:00",
-   "Mansen tähdet – tarinoita ja lauluja",
-   "Armo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/mansen-tahdet-tarinoita-ja-lauluja/"
   ],
   [
    "2026-10-24",
