@@ -27,7 +27,7 @@ from .common import (
     guess_genre, fetch_with_retries, _looks_like_block_page, log_http_error,
 )
 
-KEIKAT_LIVE_URL = "https://keikat.live/kaupunki/tampere"
+KEIKAT_LIVE_URL = "https://keikat.live/?city=tampere"
 
 # keikat.live tags each event with its own genre label — trust that over
 # guessing from keywords in the title, since it's the site's own
