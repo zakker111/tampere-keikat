@@ -41,17 +41,9 @@ DEFAULT_GENRE = "rock"
 
 EXCLUDE_KEYWORDS = [
     "teatterikesä", "telttalab", "näytelmä", "teatteriesitys",
-    "komedian superilta", "stand up", "stand-up", "improvisaatioteatteri",
+    "komedian superilta", "komiikan festivaali", "komiikka", "stand up", "stand-up", "improvisaatioteatteri",
     "elokuvanäytös", "leffailta", "kirjailijavierailu", "kirjamessu",
     "taidenäyttely", "luento", "urheiluottelu", "jalkapallo-ottelu",
-]
-
-NAV_TITLE_BLACKLIST = [
-    "contact information", "accommodation", "for media", "eat and drink",
-    "see and do", "map", "professionals", "for travel industry professionals",
-    "top attractions", "articles", "destinations", "visibility on",
-    "a day in tampere", "summer cruises", "cafés in tampere",
-    "top tips for summer",
 ]
 
 HEADERS = {
@@ -175,13 +167,6 @@ def is_suspicious_heading(text):
     if len(text.strip()) > 60:
         return True
     return False
-
-
-def looks_like_music(title, venue):
-    text = f"{title} {venue}".lower()
-    if any(kw in text for kws in GENRE_KEYWORDS.values() for kw in kws):
-        return True
-    return any(v.lower() in venue.lower() for v in KNOWN_VENUES)
 
 
 def split_title_venue(rest):
@@ -570,6 +555,12 @@ def merge_events(*event_lists):
         for event in events:
             key = event_duplicate_key(event)
             if not key[0] or not key[1] or not key[2]:
+                print(
+                    f"[merge] dropping event with missing date/title/venue: "
+                    f"date={event.get('date')!r} title={event.get('title')!r} "
+                    f"venue={event.get('venue')!r} url={event.get('url','')!r}",
+                    file=sys.stderr,
+                )
                 continue
             if key in seen:
                 duplicate_count += 1

@@ -1,12 +1,19 @@
 """
 keikat.live source scraper — independent Tampere calendar source.
 
-Fetched directly with plain requests; no Playwright fallback needed for
-this one. Keikat.live puts the date in a section heading and the event
-details in the following links, and commonly renders each entry as
-"TITLE [GENRE] TITLE VENUE" (the title duplicated with a genre label
-sandwiched in between) — see _keikat_live_extract_title_venue for how
-that gets untangled.
+Rewritten against a REAL sample of the live page (confirmed via a real
+production run + a pasted snapshot), replacing an earlier version that
+was built entirely blind and, as expected, returned 0 events in practice.
+
+Real structure: each event renders as FOUR consecutive <a> tags all
+sharing the same href — genre tag, title, venue, then date/time, e.g.:
+    [Festari](url)
+    [Nousevan komiikan festivaali - Perjantaiklubi 18.00](url)
+    [Onda Music & Arts Café, Tampere](url)
+    [28.8.klo 18.00](url)
+Nothing like the "TITLE [GENRE] TITLE VENUE duplicated in one link" shape
+the old parser assumed — that guess was simply wrong, which is exactly
+why it silently returned zero rather than erroring.
 """
 import re
 import sys
@@ -22,187 +29,87 @@ from .common import (
 
 KEIKAT_LIVE_URL = "https://keikat.live/kaupunki/tampere"
 
-KEIKAT_LIVE_VENUES = [
-    "Mustanlahden Tapahtumasatama / Ravintola Kaisla",
-    "Tampereen Komediateatteri katettu ulkoilmakatsomo",
-    "Pyynikin kesäteatteri",
-    "Irish Bar O’Connell’s",
-    "Irish Bar O'Connell's",
-    "Kulttuurikeskus Maanalainen",
-    "Kulttuuritalo Telakka",
-    "G Livelab Tampere",
-    "Tampereen konservatorio",
-    "Tampere-talo",
-    "Tampere-talo",
-    "Tavara-asema",
-    "Tahmelan Huvila",
-    "Ravintola Suoma",
-    "Katubaari Axu",
-    "Tallipiha",
-    "Viikinsaari",
-    "Ratinanniemi",
-    "Ratinan stadion",
-    "Koskikatu 9",
-    "Satakunnankatu 12",
-    "Satakunnankatu 18",
-    "Jokipohjantie 47",
-    "Erkkilänkatu 11 B-rappu",
-    "Finlaysoninkuja 9",
-    "Hatanpään valtatie 40",
-    "Nyyrikintie 4",
-    "Olympia",
-    "Varjobaari",
-    "Vastavirta-Klubi",
-    "Cafe Kartano",
-    "Pub Sisko ja sen Veli",
-    "Artturi 9",
-    "TTT-klubi",
-    "TTT-Klubi",
-]
-KEIKAT_LIVE_VENUES_SORTED = sorted(KEIKAT_LIVE_VENUES, key=len, reverse=True)
-KEIKAT_LIVE_GENRE_LABELS = [
-    "Elektro / DJ", "Hip hop", "Klassinen", "Iskelmä", "Metal",
-    "Rock", "Pop", "Jazz", "Folk", "Punk", "Reggae", "Blues", "Festari",
-]
+# keikat.live tags each event with its own genre label — trust that over
+# guessing from keywords in the title, since it's the site's own
+# classification. Falls back to guess_genre() for any label not listed here.
+KEIKAT_LIVE_GENRE_MAP = {
+    "rock": "rock",
+    "metal": "metal",
+    "punk": "metal",
+    "pop": "hiphop",
+    "hip hop": "hiphop",
+    "jazz": "jazz",
+    "blues": "jazz",
+    "iskelmä": "hiphop",
+    "folk": "folk",
+    "reggae": "folk",
+    "elektro / dj": "electronic",
+    "klassinen": "classical",
+    "festari": "festival",
+}
 
-
-def _keikat_live_heading_date(text, year):
-    """Return ISO date from headings such as '11.8.TI 1 keikka'."""
-    text = re.sub(r"\s+", " ", text).strip()
-    m = re.match(
-        r"^\s*(\d{1,2})\.(\d{1,2})\.[A-Za-zÄÖÅäöå]+\s+\d+\s+keikka(?:a)?\s*$",
-        text,
-        re.IGNORECASE,
-    )
-    if not m:
-        return None
-    try:
-        return datetime.date(year, int(m.group(2)), int(m.group(1))).isoformat()
-    except ValueError:
-        return None
-
-
-def _keikat_live_clean_title(text):
-    """Remove category labels and the duplicated title rendered by the site."""
-    text = re.sub(r"\s+", " ", text).strip(" -–:")
-    for label in sorted(KEIKAT_LIVE_GENRE_LABELS, key=len, reverse=True):
-        text = re.sub(rf"\s+{re.escape(label)}(?=\s|$)", " ", text, flags=re.IGNORECASE)
-    text = re.sub(r"\s+K-18\b", " ", text, flags=re.IGNORECASE)
-    text = re.sub(r"\s+", " ", text).strip(" -–:")
-
-    words = text.split()
-    for n in range(len(words) // 2, 0, -1):
-        if (
-            [w.casefold() for w in words[:n]]
-            == [w.casefold() for w in words[n:2 * n]]
-            and len(words) == 2 * n
-        ):
-            return " ".join(words[:n]).strip()
-
-    return text
-
-
-def _keikat_live_extract_title_venue(text_before_time):
-    """
-    Keikat.live commonly renders:
-        TITLE [GENRE] TITLE VENUE
-    Find the repeated title and treat the remainder as the venue.
-    """
-    cleaned = re.sub(r"\s+", " ", text_before_time).strip(" -–:")
-    words = cleaned.split()
-    if len(words) < 3:
-        return "", ""
-
-    labels = {label.casefold() for label in KEIKAT_LIVE_GENRE_LABELS}
-
-    for title_len in range(min(len(words) // 2, 40), 0, -1):
-        first = words[:title_len]
-
-        for middle_len in range(0, min(3, len(words) - 2 * title_len) + 1):
-            second_start = title_len + middle_len
-            second_end = second_start + title_len
-            if second_end >= len(words):
-                continue
-
-            middle = words[title_len:second_start]
-            if any(word.casefold() not in labels and word.casefold() != "k-18" for word in middle):
-                continue
-
-            second = words[second_start:second_end]
-            if [w.casefold() for w in first] != [w.casefold() for w in second]:
-                continue
-
-            venue = " ".join(words[second_end:]).strip(" -–:")
-            if venue:
-                return " ".join(first), venue
-
-    for venue in KEIKAT_LIVE_VENUES_SORTED:
-        if cleaned.casefold().endswith(venue.casefold()):
-            return cleaned[: -len(venue)].strip(" -–:"), venue
-
-    return "", ""
+KEIKAT_LIVE_DATETIME_RE = re.compile(
+    r"(\d{1,2})\.(\d{1,2})\.\s*klo\s*([01]?\d|2[0-3])\.([0-5]\d)", re.IGNORECASE
+)
 
 
 def parse_keikat_live_page(html, year=None):
-    """Parse the public Tampere calendar without JavaScript or Playwright."""
+    """Groups consecutive same-href anchors into 4-tuples: genre, title,
+    venue, date/time. Confirmed against one real example while building
+    this (a comedy-festival listing, correctly excluded below) — still
+    worth checking the per-source count after the first real run, since
+    one example isn't the same as broad coverage."""
     year = year or datetime.date.today().year
+    today = datetime.date.today()
     soup = BeautifulSoup(html, "html.parser")
     events = []
-    current_date = None
     seen_urls = set()
 
-    for el in soup.find_all(["h2", "h3", "h4", "a"]):
-        if el.name in {"h2", "h3", "h4"}:
-            heading = re.sub(r"\s+", " ", el.get_text(" ", strip=True)).strip()
-            parsed_date = _keikat_live_heading_date(heading, year)
-            if parsed_date:
-                current_date = parsed_date
-            continue
+    anchors = soup.find_all("a", href=True)
+    i, n = 0, len(anchors)
+    while i < n:
+        href = anchors[i]["href"]
+        j = i + 1
+        while j < n and anchors[j]["href"] == href:
+            j += 1
+        group = anchors[i:j]
 
-        if not current_date:
-            continue
+        if len(group) >= 4:
+            genre_tag, title, venue_raw, dt_text = (
+                a.get_text(" ", strip=True) for a in group[:4]
+            )
+            dt_m = KEIKAT_LIVE_DATETIME_RE.match(dt_text)
+            if dt_m and title and venue_raw:
+                day, month = int(dt_m.group(1)), int(dt_m.group(2))
+                hh, mm = int(dt_m.group(3)), dt_m.group(4)
+                try:
+                    candidate = datetime.date(year, month, day)
+                    ev_year = year
+                    if candidate < today - datetime.timedelta(days=3):
+                        ev_year += 1
+                        candidate = datetime.date(ev_year, month, day)
 
-        text = re.sub(r"\s+", " ", el.get_text(" ", strip=True)).strip()
-        if not text or "klo" not in text.casefold():
-            continue
+                    if not any(kw in f"{title} {genre_tag}".casefold() for kw in EXCLUDE_KEYWORDS):
+                        venue = re.sub(r",\s*Tampere\s*$", "", venue_raw, flags=re.IGNORECASE).strip() or venue_raw
+                        full_url = urljoin(KEIKAT_LIVE_URL, href)
+                        if full_url not in seen_urls and len(title) <= 180 and len(venue) <= 80:
+                            seen_urls.add(full_url)
+                            genre = KEIKAT_LIVE_GENRE_MAP.get(genre_tag.strip().casefold())
+                            if not genre:
+                                genre = guess_genre(title, venue)
+                            events.append({
+                                "date": candidate.isoformat(),
+                                "time": f"{hh:02d}:{mm}",
+                                "title": title,
+                                "venue": venue,
+                                "genre": genre,
+                                "free": 0,
+                                "url": full_url,
+                            })
+                except ValueError:
+                    pass
 
-        tm = re.search(r"\bklo\s*([01]?\d|2[0-3])\.([0-5]\d)\b", text, re.IGNORECASE)
-        if not tm:
-            continue
-
-        time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
-        before_time = text[:tm.start()].strip()
-        free = 1 if re.search(r"\bIlmainen\b", text, re.IGNORECASE) else 0
-
-        title_prefix, venue = _keikat_live_extract_title_venue(before_time)
-        if not title_prefix or not venue:
-            continue
-
-        title = _keikat_live_clean_title(title_prefix)
-        if not title or len(title) > 180 or len(venue) > 80:
-            continue
-
-        if any(kw in f"{title} {venue}".casefold() for kw in EXCLUDE_KEYWORDS):
-            continue
-
-        href = el.get("href", "").strip()
-        if not href:
-            continue
-
-        url = urljoin(KEIKAT_LIVE_URL, href)
-        if url in seen_urls:
-            continue
-        seen_urls.add(url)
-
-        events.append({
-            "date": current_date,
-            "time": time_str,
-            "title": title,
-            "venue": venue,
-            "genre": guess_genre(title, venue),
-            "free": free,
-            "url": url,
-        })
+        i = j if j > i else i + 1
 
     return events
 
@@ -215,10 +122,6 @@ def fetch_keikat_live(url=KEIKAT_LIVE_URL):
             print("[keikat_live] BLOCKED/challenge page detected — not parsing it", file=sys.stderr)
             return []
         events = parse_keikat_live_page(resp.text, datetime.date.today().year)
-        print(
-            f"[keikat_live] parsed {len(events)} events from Tampere calendar",
-            file=sys.stderr,
-        )
         if events:
             print(f"[keikat_live] SOURCE OK — {len(events)} events parsed", file=sys.stderr)
         else:

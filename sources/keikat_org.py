@@ -19,7 +19,6 @@ from .common import (
 )
 
 KEIKAT_ORG_URL = "https://keikat.org/tampere"
-KEIKAT_ORG_DATE_RE = re.compile(r"\d{1,2}\.\d{1,2}\.(\d{4})")
 KEIKAT_DATE_HEAD_RE = re.compile(r"^[a-zäöå]{2}\s+(\d{1,2})\.(\d{1,2})\.(\d{4})", re.IGNORECASE)
 
 
