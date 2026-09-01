@@ -1,2599 +1,24 @@
 {
- "generated": "2026-08-06 02:06 UTC",
- "source_note": "Auto-scraped from 5 sources (raw counts: {'meteli': 110, 'kohokohdat': 357, 'keikat_org': 14, 'linkedevents': 0, 'visittampere': 0}), merged to 410 events after de-duplication. Music gigs only — theatre/comedy filtered out. Confidence varies by source.",
+ "generated": "2026-09-01 12:26 UTC",
+ "source_note": "Auto-scraped from 6 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
+ "source_status": {
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_live": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
+  "tampere_filharmonia": "OK",
+  "meteli": "OK",
+  "kohokohdat": "OK"
+ },
  "events": [
   [
-   "2026-08-01",
-   "",
-   "Fest Afrika 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/fest-afrika/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Manserock stadionilla: Manserock-orkesteri ja NEGATIVE",
-   "Ratinanniemen festivaalipuisto",
-   "classical",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/manserock-stadionilla-manserock-orkesteri-ja-negative/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Tampere Puistoreggae 2026",
-   "Ratinanniemen festivaalipuisto",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tampere-puistoreggae/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Lasten FOLK 2026",
-   "Ratinanniemen festivaalipuisto",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/haidi-ja-fer/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Manserock Stadionilla x Tornin etkot & jatkot",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/manserock-stadionilla-x-tornin-etkot-jatkot/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Ryönä-Klubi: Hirvonen & Härkönen, Nautintotarinat, Kinkyosasto, Miska Paamikko",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/ryona-klubi-hirvonen-harkonen-nautintotarinat-kinkyosasto-miska-paamikko/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Trio Mandeng",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/trio-mandeng/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "LAUKKAFEST: Jukka Nousiainen & Sini Suvanto, Ex-Kurpat, KYKS, Draamakuu",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/laukkafest-jukka-nousiainen-sini-suvanto-ex-kurpat-kyks-draamakuu-dj-jere-seppanen-tapahtumapaikka-vastavirta-klubi-alakerta-liput-15-e/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Pispala Folk etkot 2026: ËRSHkami, Silja Palomäki",
-   "Ratinanniemen festivaalipuisto",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pispala-folk-etkot-2026-ershkami-silja-palomaki/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Moro Sky Bar DJ:t: Kobi Spinns",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-08-01/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Nousu Hip Hop Night",
-   "Ratinanniemen festivaalipuisto",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/nousu-hip-hop-night-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Puisto by Night: Puisto DJ:t",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/puisto-by-night-puisto-djt-2026-08-01/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "The Go Getters (SE)",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/the-go-getters-se/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Anton V. Kivi, Univibe, Kuollut Piimä, niilo karppinen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/anton-v-kivi-univibe-kuollut-piima-niilo-karppinen/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "ALT Agency Summer Sessions: Sonja Selene",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/alt-agency-summer-sessions-emilia-sisco/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Bad Vision, Bad",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/bad-vision-bad/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "CRYPT CERMON (USA)",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/crypt-cermon-usa/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Del Futuras",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/del-futuras-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Olympia-korttelin Puutarhan dj:t: PX1 & Lusmu",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/olympia-korttelin-puutarhan-djt-2026-08-01/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Sami Arojoki",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/sami-arojoki-15/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "DJ:t Juissi & Jykke",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/djt-juissi-jykke/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Hervanta Mutilation",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/elektrik-circus-26-centhron-de-moaan-exis-fr-teknohirvi-tba/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Murrettu Väri",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/murrettu-vari-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "90’s Fin Cover Boyz & Girlz",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/bilebandi-highlights-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Kuninkuusravien viralliset jatkot: DJ O-Nine",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/kuninkuusravien-viralliset-jatkot-dj-o-nine/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Puistoreggae-jatkot: Joonas Hauveli & Rytmi-Rengit + Puistoreggae -dj:t & friends",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/puistoreggae-jatkot-joonas-hauveli-rytmi-rengit-puistoreggae-djt-friends/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "JUKKAMIES",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jukkamies/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "M’Pää – Where Cameroon’s Atlantic Flavors Meet Finland’s Baltic Experience",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/mpaa-where-cameroons-atlantic-flavors-meet-finlands-baltic-experience/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Pispala Folk -päätösklubi: Kujakollin jamit + Univibe",
-   "Ratinanniemen festivaalipuisto",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/kujakollin-jamit-2026-04-05-2026-05-03-2026-06-07-2026-07-05-2026-08-02/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "PISPALA FOLK AFTER PARTY: Degenerados, Dark Bottle, Matilda123",
-   "Ratinanniemen festivaalipuisto",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pispala-folk-after-party-degenerados-dark-bottle-matilda123/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "DJ Jiri & Thomas Valentino",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-jiri-thomas-valentino/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "REGGAETA & MAKKARAA",
-   "Ratinanniemen festivaalipuisto",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/reggaeta-makkaraa-4/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Janne Laurila & Ville Lehtovaara",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/janne-laurila-ville-lehtovaara/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Plevnan Vinyyliveranta – Manserock-spesiaali: DJ Juissi",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-vinyyli-keskiviikot-dj-juissi-2026-08-05/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Finlayson Live: Ylva Haru",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/finlayson-live-ylva-haru/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Pappila live -ilmaiskonsertit: Happy Groove",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pappila-live-ilmaiskonsertit-happy-groove-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Uittotunnelin kesäkeikat: Seppo Tammilehto & Selkä",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-sani-aartela-kalle-alatalo/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Friendship Connection",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/friendship-connection-5/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Kesäkeskiviikko: Ratikkacore Gaiden, Akubara (speedcore live), Avaruussetä, Dreamcoat Rising, Sini, Spugecore (live)",
-   "Ratinanniemen festivaalipuisto",
-   "metal",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/kesakeskiviikko-ratikkacore-gaiden-akubara-speedcore-live-avaruusseta-dreamcoat-rising-sini-spugecore-live/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "DJ DJC",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/wicked-wednesday-dj-djc-9/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Eppu Normaali",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/eppu-normaali-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Tapahtumien Yö 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tapahtumien-yo/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Eppu Normaali x Tornin etkot & jatkot",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/eppu-normaali-x-tornin-etkot-jatkot/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Heput soittaa Eppuja",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/heput-soittaa-eppuja/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Negaatio, Kantør, Miss Vain",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/negaatio-kantor-miss-vain/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "The Music of Hans Zimmer",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/the-music-of-hans-zimmer/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Asuntomessut LIVE: Kake Randelin",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/asuntomessut-live-kake-randelin/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Lillanin Puutarhajuhlat: TUURE KILPELÄINEN",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/lillanin-puutarhajuhlat-tuure-kilpelainen/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Solvychegodsk (fin/cyp), Pepita Vanni",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/solvychegodsk-fin-cyp-pepita-vanni/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Tapahtumien Yö: Tamjazz Collective",
-   "Ratinanniemen festivaalipuisto",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tapahtumien-yo-tamjazz-collective/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Vinyyliverannan TV-tunnarispesiaali",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/vinyyliverannan-tv-tunnarispesiaali/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Country Club",
-   "Ratinanniemen festivaalipuisto",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/country-club/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "DJ Jiri",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-jiri-23/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Ilonan disco",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/ilonan-disco/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Tapahtumien Yö Telakan terassilla: Yliopiston kuorot, Jamora ry – rumpuesitys",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/puistoreggae-jatkot-joonas-hauveli-rytmi-rengit-puistoreggae-djt-friends-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "VINCE BONCAMPER",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/vince-boncamper/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Kaupunkijazz 2026",
-   "Ratinanniemen festivaalipuisto",
-   "metal",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/kaupunkijazz/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Silent Disco",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Tampere City Festival 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tampere-city-festival/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Konserttiristeily Vesterinen yhtyeineen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/konserttiristeily-eppu-normaalin-keikalle/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Suvi Teräsniska",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/suvi-terasniska-6/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "1Tipe & Kiertorata",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/1tipe-kiertorata/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Moro Sky Bar DJ:t",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-08-07/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "A9 Live: Kova Maa",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/henry-kuronen-duo/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Bulrusher + Vaalimaa",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/bulrusher-vaalimaa/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Disko Anksiyete – DJ´s Minkki & Stacye Deathsatan",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/disko-anksiyete-djs-minkki-stacye-deathsatan/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Garbagemen, The Boasters, Jaakko & Jay, Lastauslaiturin Pojat",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/garbagemen-the-boasters-jaakko-jay-lastauslaiturin-pojat/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Sobernot (CL), Pronoias (CL), Sargassus",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/sobernot-cl-pronoias-cl-sargassus/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Vesa Oksanen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/vesa-oksanen-12/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Wiley Cousins trio",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/wiley-cousins-trio-3/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Yatz3",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/yatz3/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Milleniaalidisko: dj:t Jiri & Mr. Willy",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/milleniaalidisko-djt-jiri-mr-willy/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "JOKU PAIKALLINEN BÄNDI",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/joku-paikallinen-bandi/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Tampere City Festival jatkot: Kapteeni Lamminen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tampere-city-festival-jatkot-kapteeni-lamminen/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "ALEKSI KII & ANTTI TALVITIE GUITAR PARTY",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/aleksi-kii-antti-talvitie-guitar-party/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Saariblues 2026 TAUOLLA",
-   "Ratinanniemen festivaalipuisto",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/saariblues-festivaali/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Tampere Filharmonian Puistokonsertti 2026",
-   "Ratinanniemen festivaalipuisto",
-   "classical",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tampere-filharmonian-puistokonsertti/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Anemones, Tanssit, Bunny Cute, J.Mann",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/anemones-tanssit-bunny-cute-j-mann/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Armo Blip Blop: Juha Valkeapää & Juhani Liiimatainen, SIPILÆ, Turkka Vuorinen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/armo-blip-blop-juha-valkeapaa-juhani-liiimatainen-sipilae-turkka-vuorinen/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Huvilan",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/huvilan/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Pan Salmenhaara, L. Don Ōkami",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pan-salmenhaara-l-don-okami/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Jere Dangerous, B2B, Sum Cleep",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jere-dangerous-b2b-sum-cleep/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Blastromen (julkkarit) + Sekret Teknik + Naakka",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/blastromen-julkkarit-sekret-teknik-naakka/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Gilbert K Triologik",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/gilbert-k-triologik-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Jann Wilde & The Neon Comets, UltraNoir",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jann-wilde-the-neon-comets-ultranoir/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Classical Trancelations Afterparty",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/classical-trancelations-afterparty/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "DJ Kimik",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-kimik-7/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Kino Kosmos",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/kino-kosmos-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "DJ O-Nine",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-o-nine-11/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "ILE & TEUKKA",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/ile-teukka/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Core piknik jatkot",
-   "Ratinanniemen festivaalipuisto",
-   "metal",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/core-piknik-jatkot/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Supersunnuntai Tampereella",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/supersunnuntai-tampereella/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Erik Aho trio",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/erik-aho-trio-3/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Plevnan Vinyyliveranta: DJ Juissi",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-vinyyli-keskiviikot-dj-juissi-2026-08-12/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Puistokonsertit Laikunlavalla: Orkesteri Laakson Liljat, Hannele Juutinen, Tampereen Ukuleleorkesteri",
-   "Ratinanniemen festivaalipuisto",
-   "classical",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/puistokonsertit-laikunlavalla-orkesteri-laakson-liljat-hannele-juutinen-tampereen-ukuleleorkesteri/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Fingerstyle-kitaristi Pan Salmenhaara",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/fingerstyle-kitaristi-pan-salmenhaara/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Pappila live -ilmaiskonsertit: Hateles",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pappila-live-ilmaiskonsertit-hateles/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Uittotunnelin kesäkeikat: Heikki Hela & Kalle Alatalo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-seppo-tammilehto-selka/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Laikunlavalla: Kesäsalsat",
-   "Ratinanniemen festivaalipuisto",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/laikunlavalla-kesasalsat/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Maida Vale",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/maida-vale-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Tiikeri, Vänsuut (jap), Punk Lurex, Shock Ward",
-   "Ratinanniemen festivaalipuisto",
-   "metal",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tiikeri-vansuut-jap-punk-lurex-shock-ward/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Laulun Tekijät -ilta: Ullalintulampi, Lauri Seppä",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/laulun-tekijat-ilta-ullalintulampi-lauri-seppa/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Varjokabaree – Emoklubi",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/varjokabaree-emoklubi/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Hannibal & Lecters, Olli PA",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/hannibal-lecters-keikat-tampereella/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Janne Laurila Quartet",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/janne-laurila-quartet-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "WISBORG (GER) CRISIS MODE RAIN DIARY",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/wisborg-ger-crisis-mode-rain-diary/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Hodari & hittitorstai: Ch & Ch bingo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/hodari-hittitorstai-ch-ch-bingo/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Raikku Rokkaa ja Rakastaa -festivaali 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/raikku-rokkaa-ja-rakastaa-festivaali/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Midnight Sun Finstrumental Lounge",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/midnight-sun-finstrumental-lounge-3-2026-08-14/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Soul Power G Livelabin terassilla – DJ’s Kallio & Okapi",
-   "Ratinanniemen festivaalipuisto",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/soul-power-g-livelabin-terassilla-djs-kallio-okapi-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Esa Eloranta",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/esa-eloranta/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Kulanki & Jompulainen, Mikko Sarvanne, Ewoud Van Eetvelde",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/kulanki-jompulainen-mikko-sarvanne-ewoud-van-eetvelde/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Popedan Ajajat",
-   "Ratinanniemen festivaalipuisto",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/popedan-ajajat/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Jukka Poika",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jukka-poika/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Lemmenmursut",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/lemmenmursut-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Los Pasados",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/los-pasados/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Mirkka Liesmäki",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/mirkka-liesmaki-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Misstapes – DJ Jaanamirjami",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/misstapes-dj-jaanamirjami-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Mörv, Hautaustoimisto & Off the Grid",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/morv-hautaustoimisto-off-the-grid/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Liveranta: Komiat",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/liveranta-komiat-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Sara-Maaria",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/sara-maaria/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "DJ Ozan",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-o-nine-114/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "COLIN HARTLEY",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/colin-hartley/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Härstock 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/harstock-festivaali/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Raikku Rokkaa ja Rakastaa -festivaali 2026: Miljoonasade Still Sauerkraut7 Wiley Cousins Trio Oho & Eiku Jill Johnson",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/raikku-rokkaa-ja-rakastaa-festivaali-2026-miljoonasade-still-sauerkraut7-wiley-cousins-trio-oho-eiku-jill-johnson/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Hullu!Klubi: Viides vuodenaika, Ruttokansantuote, Niskaperseote, VMVP, 197666",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/hulluklubi-viides-vuodenaika-ruttokansantuote-niskaperseote-vmvp-197666/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Absoluuttinen Nollapiste",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/absoluuttinen-nollapiste/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Uittotunnelin kesäkeikat: Kulkukoirat & Juha Hildén",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-kulkukoirat-juha-hilden/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Clone Statue, Casket Crawlers",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/clone-statue-casket-crawlers/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Joe Vestich (USA)",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/joe-vestich-sisko-ja-sen-veli-pubissa/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Maarit Hurmerinta Duo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/maarit-hurmerinta-duo-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "80´s vinyl Night – DJ Disparue & DJ Z",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/80s-vinyl-night-dj-disparue-dj-z-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "ALT Agency Summer Sessions: Topi Saha",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/alt-agency-summer-sessions-topi-saha/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Beatline",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/beatline-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Grandiradio, Sikuriina Karisukki, Olva, Kirsikkapuu",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/grandiradio-sikuriina-karisukki-olva-kirsikkapuu/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Heidi Valkama yhtyeineen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/heidi-valkama-yhtyeineen/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "PERUNABUFFET & FRIENDS – DJ-ILTAMAT: vieraana THE BLASSICS DJ’S",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/perunabuffet-friends-dj-iltamat-vieraana-the-blassics-djs/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "matilda123, Bluedrive, FIXME",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/matilda123-bluedrive-fixme/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Eartheria, Kallas, Alya North",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/eartheria-kallas-alya-north/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "J.Laho rock’n’roll Band",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/j-laho-rocknroll-band/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Leo Luxxxxus",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/leo-luxus/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Groove Brothers",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/groove-brothers/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "BROS LARSEN",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/bros-larsen/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Horror Vacui, Shocked Volk",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/horror-vacui-shocked-volk/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "DJ Willy",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-willy-8/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Compañía Kaari & Roni Martin goes ROOTS ja Pekko Käppi & K:H:H:L",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/compania-kaari-roni-martin-goes-roots-ja-pekko-kappi-khhl/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Barbatos (JPN), Beatrix, Ravenous Medicine",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/barbatos-jpn-beatrix-ravenous-medicine/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Markus Savander",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/markus-savander/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Barbatos (Japani), Beatrix, Black Spirits, VMVP",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/barbatos-japani-beatrix-black-spirits-vmvp/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Geordie Greep (UK)",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/geordie-greep-uk/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Anal Womit (PER), R.I.O.T. (UKR)",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/anal-womit-per-r-i-o-t-ukr/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Stetson Brothers",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/stetson-brothers/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Pappila live -ilmaiskonsertit: Jukka Keskitalo & Tyrvää All Stars",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pappila-live-ilmaiskonsertit-jukka-keskitalo-tyrvaa-all-stars/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Uittotunnelin kesäkeikat: Antti Railio & Kalle Alatalo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-antti-railio-kalle-alatalo/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Emily Scott Robinson (USA), Julia Rautamaa",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/emily-scott-robinson-usa-julia-rautamaa/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Mirka’s Monarchy",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/mirkas-monarchy-3/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Päivi: Lauluja elämän varrelta",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/paivi-lauluja-elaman-varrelta/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Maanalaisen JAMIT",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/maanalaisen-jamit-3/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Masi Luoma – 70 vuotta musiikin juhlaa: Groove Machine, The Wowels",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/masi-luoma-70-vuotta-musiikin-juhlaa-groove-machine-the-wowels/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Blue Skies",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/blue-skies-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Sapphic Space Dyke Disco",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/sapphic-space-dyke-disco/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Hippijuhla, Meirami",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/hippijuhla-meirami/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Boycott",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/boycott/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Kesäkissat duo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/kesakissat-duo/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "K.E.K., Jorpakko, Pornogeneraattori",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/k-e-k-jorpakko-pornogeneraattori/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Somehow jo, Lumious Mind, Sleeth",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/somehow-jo-lumious-mind-sleeth/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "DJ Riku",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-riku-9/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "The Blaster Master",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/the-blaster-master/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "VINCE & EDI DUO",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/vince-edi-duo/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Hiedanrannan Puutarhajuhlat 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/hiedanrannan-puutarhajuhlat-2026/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Kirjaslampirock 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/kirjaslampirock/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "ViinikkalaFest 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/viinikkalafest/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "LandeFest: Stenari",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/landefest-stenari/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Ahola, Töyssy  &  Ahola: Koko Komedia laulaa",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/ahola-toyssy-ahola-koko-komedia-laulaa/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Reetan ja Mikon rakkaussynttärit: Lover, Hertta Q, EJH",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/reetan-ja-mikon-rakkaussynttarit-lover-hertta-q-ejh/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Lover, Hertta Q, Eero Heinosen huutorunoja",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/lover-hertta-q-eero-heinosen-huutorunoja/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Manserock-risteily: Juri Lindeman ja Kalle Alatalo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/manserock-risteily-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Virve Rosti, Freeman ja Menneisyyden vangit",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/virve-rosti-freeman-ja-menneisyyden-vangit-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Mikko Juvonen, Proto-Torvinen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/mikko-juvonen-proto-torvinen/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Jeff Moon (USA)",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jeff-moon-usa/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "A9 Live: Ilja Jalkanen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-ilja-jalkanen/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "DJ:t Altti ja Juissi",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/djt-altti-ja-juissi/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Elokuinen Disco Ikinuorille: Topi Honkonen",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/elokuinen-disco-ikinuorille-topi-honkonen/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Jari Koivisto Työväenlauluja",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jari-koivisto-tyovaenlauluja/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Rock/Rap/Indie/Pop/Funk Mayhem!",
-   "Ratinanniemen festivaalipuisto",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/rock-rap-indie-pop-funk-mayhem/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "DJ Sara-Maaria",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-sara-maaria-10/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Mötherhead Plays Motörhead",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/motherhead-plays-motorhead/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "R.E.M. For The People",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/r-e-m-for-the-people/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Rentun Ruusut -Duo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/rentun-ruusut-duo/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "THE FAIR ATTEMPTS, LIRPO, HERJA",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/the-fair-attempts-lirpo-herja/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "SQUARE ROOT 9",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/square-root-9/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "TamJazz: Kanvas + keikan jälkeen jamit",
-   "Ratinanniemen festivaalipuisto",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tamjazz-klubi-mikko-pettinen-why-not/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Riku Poramo trio",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/riku-poramo-trio-3/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Pikkuvenetsialaiset",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pikkuvenetsialaiset/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Puistokonsertit Laikunlavalla: SPOIL., Demonessa, Ashenplains",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/puistokonsertit-laikunlavalla-spoil-demonessa-ashenplains/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Roamin Street Bandin Gumbo Club Huurteessa",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/roamin-street-bandin-gumbo-club-huurteessa-2-2026-08-26/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Uittotunnelin kesäkeikat: Pauli Hanhiniemi & Ville Rauhala MAD",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/uittotunnelin-kesakeikat-pauli-hanhiniemi-ville-rauhala-mad/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Henry Ojutkangas trio",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/henry-ojutkangas-trio-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Laikunlavalla: Kesäsalsojen päätöskonsertti – Grupo Kaney",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/laikunlavalla-kesasalsojen-paatoskonsertti-grupo-kaney/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Dingo",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dingo/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Liekkiyö 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/liekkiyo/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Vauhti Kiihtyy Festivaali 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/vauhti-kiihtyy-festivaali/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Waltikan venetsialaiset 2026: Kuumaa Portion Boys Petri Nygård Kake Randelin Sonata Arctica",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/waltikan-venetsialaiset-2026-kuumaa-portion-boys-petri-nygard-kake-randelin-sonata-arctica/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Gravity Well (IRL), Orbiter, Craneium, Sapata",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/gravity-well-irl-orbiter-craneium-sapata/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Crisella, Sekopoltsit, Kauno",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/crisella-sekopoltsit-kauno/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Ewa Kaarela Swing Band",
-   "Ratinanniemen festivaalipuisto",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/ewa-kaarela-swing-band/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Matthau Mikojan",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/matthau-mikojan/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "MONOKATE (UKR)",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/monokate-ukr/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Blackment, Despiser, Armed, Roadkill",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/blackment-despiser-armed-roadkill/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "A9 Live: Emppu Suhonen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-emppu-suhonen/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "J. Jyrkänkoski Bluesband",
-   "Ratinanniemen festivaalipuisto",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/j-jyrkankoski-bluesband-2/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Sapata, Gravity Well (IRL),Orbiter, Craneium",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/sapata-gravity-well-irlorbiter-craneium/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Bilebändi JAYHO + DJ O-Nine",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/bilebandi-jayho-dj-o-nine/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Glow -festival 2026",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/glow-festival/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Waltikan venetsialaiset 2026: Popeda, Arttu Wiskari, Elastinen, Nylon Beat, Stratovarius ja XL5",
-   "Ratinanniemen festivaalipuisto",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/waltikan-venetsialaiset-2026-popeda-arttu-wiskari-elastinen-nylon-beat-stratovarius-ja-xl5/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Coitus Int 50 Revival",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/coitus-int-50-revival/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Jazz&Blues -risteily Tarjanteella",
-   "Ratinanniemen festivaalipuisto",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jazzblues-risteily-tarjanteella-riku-poramo-trio/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Angelus Apatrida (ES), Prestige, Dethrone, Catalepsy",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/angelus-apatrida-es-prestige-dethrone-catalepsy/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Black Devils feat. Ile Kallio & Janne Louhivuori",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/black-devils-feat-ile-kallio-janne-louhivuori-3/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "KAISER66 X Röökihaus",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/kaiser66-x-rookihaus/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Tuomas Räisänen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tuomas-raisanen/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Pyhät Nuket, Syyskuu",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/skyjoggers-kaleidobolt-samane/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "ALT Agency Summer Sessions: Aksel Kankaanranta",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/alt-agency-summer-sessions-aksel-kankaanranta/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Hoc est Bellum, Hellgate Necrosodomy, Clactonian, Hekatoxen",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/hoc-est-bellum-hellgate-necrosodomy-clactonian-hekatoxen/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "The Wowels",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/the-wowels/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Yo! Soho Raps! DJ EC & DJ Laki",
-   "Ratinanniemen festivaalipuisto",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/yo-soho-raps-dj-ec-dj-laki/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Antsu Haahtela",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/antsu-haahtela/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Kimik",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/kimik-8/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Bilejuna",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/bilejuna/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "A-J KESKINEN",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/a-j-keskinen-3/"
-  ],
-  [
-   "2026-08-01",
-   "",
-   "Joonas Lepistön muistokonsertti",
-   "Ratinanniemen festivaalipuisto",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/speed-metal-afterparty/"
-  ],
-  [
-   "2026-08-06",
-   "",
-   "Tilaantuminen – Osa – Kuronta: Kahr. Karh.",
-   "Liikelaituri",
+   "2026-09-02",
+   "19:00",
+   "Olli Ahvenlahti New Quintet",
+   "Armo",
    "rock",
    0,
-   "https://www.meteli.net/tapahtuma/tilaantuminen-osa-kuronta-kahr-karh-2"
-  ],
-  [
-   "2026-08-06",
-   "",
-   "Eppu Normaali",
-   "Tampereen stadion",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/eppu-normaali-3"
-  ],
-  [
-   "2026-08-07",
-   "",
-   "Tampere City Festival: Flo Rida (USA), Scooter (DEU), Chamillionaire (USA), Showtek (NLD), Inna (ROM), Basshunter (SWE), Flipsyde (USA), Akcent (ROM), Basic Element (SWE), DJ Antoine (SUI), Günther (SWE), ItaloBrothers (DEU), Jubël (SWE) ym.",
-   "Tähti Areena",
-   "electronic",
-   0,
-   "https://www.meteli.net/tapahtuma/tampere-city-festival-flo-rida-usa-scooter-deu-chamillionaire-usa-showtek-nld-inna-rom-basshunter-swe-flipsyde-usa-akcent-rom-basic-element-swe-dj-antoine-sui-gunther-s"
-  ],
-  [
-   "2026-08-07",
-   "",
-   "Tough Ass Soul Brothers: Tuure Kilpeläinen & Knucklebone Oscar",
-   "Tavara-asema",
-   "jazz",
-   0,
-   "https://www.meteli.net/tapahtuma/tough-ass-soul-brothers-tuure-kilpelainen-knucklebone-oscar-2"
-  ],
-  [
-   "2026-08-07",
-   "",
-   "Eppu Normaali",
-   "Tampereen stadion",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/eppu-normaali-4"
-  ],
-  [
-   "2026-08-07",
-   "",
-   "Wallu’s Little Friday: Aili Julia",
-   "John Scott's Ratina",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/wallus-little-friday-aili-julia"
-  ],
-  [
-   "2026-08-07",
-   "",
-   "Garbagemen, The Boasters, Jaakko & Jay, Lastauslaiturin Pojat",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/garbagemen-the-boasters-jaakko-jay-lastauslaiturin-pojat"
-  ],
-  [
-   "2026-08-07",
-   "",
-   "Live Music Afterwork: Time Schleifer",
-   "Pub Simon",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/live-music-afterwork-time-schleifer"
-  ],
-  [
-   "2026-08-07",
-   "",
-   "Aleksi Kii & Antti Talvitie",
-   "Ruby & Fellas",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/aleksi-kii-antti-talvitie"
-  ],
-  [
-   "2026-08-07",
-   "",
-   "Pahisklubi: We Are Still, Säärelä & Björkqvist duo, DJ Silmälasipäinen Asiakas",
-   "Kulttuuriravintola Railo",
-   "electronic",
-   1,
-   "https://www.meteli.net/tapahtuma/pahisklubi-we-are-still-saarela-bjorkqvist-duo-dj-silmalasipainen-asiakas"
-  ],
-  [
-   "2026-08-07",
-   "",
-   "Hans Zimmer World",
-   "Tampere-talo",
-   "folk",
-   0,
-   "https://www.meteli.net/tapahtuma/hans-zimmer-world"
-  ],
-  [
-   "2026-08-07",
-   "",
-   "Kummituskvartetti: Pia Piltz, Niina Alitalo, Jaakko Wuolijoki, Pyry Smolander",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/kummituskvartetti-pia-piltz-niina-alitalo-jaakko-wuolijoki-pyry-smolander"
-  ],
-  [
-   "2026-08-07",
-   "",
-   "Tampere City Festival 2026 pe 7.8.2026 20",
-   "00 Tampereen Messu- ja Urheilukeskus",
-   "festival",
-   0,
-   "https://keikat.org/olavi-tampereen-122"
-  ],
-  [
-   "2026-08-08",
-   "",
-   "Jon-Henrik Fjällgren (SWE)",
-   "Kalevan kirkko",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/jon-henrik-fjallgren-swe"
-  ],
-  [
-   "2026-08-08",
-   "",
-   "K40-disco: DJ:t Sami & Antti",
-   "Tavara-asema",
-   "electronic",
-   0,
-   "https://www.meteli.net/tapahtuma/k40-disco-djt-sami-antti-20"
-  ],
-  [
-   "2026-08-08",
-   "",
-   "Eppu Normaali",
-   "Tampereen stadion",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/eppu-normaali-5"
-  ],
-  [
-   "2026-08-08",
-   "",
-   "L. Don Ökami, Pan Salmenhaara",
-   "Pethaus",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/l-don-okami-pan-salmenhaara"
-  ],
-  [
-   "2026-08-08",
-   "",
-   "Neverfade, Roadkill, Armed",
-   "Bar Kotelo",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/neverfade-roadkill-armed"
-  ],
-  [
-   "2026-08-08",
-   "",
-   "Jann Wilde & The Neon Comets, UltraNoir",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/jann-wilde-the-neon-comets-ultranoir"
-  ],
-  [
-   "2026-08-08",
-   "",
-   "Buenos Airolas",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/buenos-airolas"
-  ],
-  [
-   "2026-08-09",
-   "",
-   "Supersunnuntai Tampere: Marcus & Martinus (NOR), Mirella, Ahti, Etta, Hugo, Lage ym.",
-   "Tähti Areena",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/supersunnuntai-tampere-marcus-martinus-nor-mirella-ahti-etta-hugo-lage-ym"
-  ],
-  [
-   "2026-08-09",
-   "",
-   "Tilaantuminen – Osa – Kuronta: Kahr. Karh.",
-   "Liikelaituri",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/tilaantuminen-osa-kuronta-kahr-karh-3"
-  ],
-  [
-   "2026-08-09",
-   "",
-   "Pan Salmenhaara",
-   "Tallipiha",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/pan-salmenhaara-9"
-  ],
-  [
-   "2026-08-09",
-   "",
-   "Supersunnuntai perhefestivaali, Tampere su 9.8.2026 20",
-   "00 Tampereen Messu- ja Urheilukeskus",
-   "festival",
-   0,
-   "https://keikat.org/etta-tampereen-152"
-  ],
-  [
-   "2026-08-12",
-   "",
-   "Pan Salmenhaara",
-   "Winebistro 1910",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/pan-salmenhaara-10"
-  ],
-  [
-   "2026-08-13",
-   "",
-   "Wisborg (DEU), Crisis Mode, Rain Diary",
-   "Bar Kotelo",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/wisborg-deu-crisis-mode-rain-diary"
-  ],
-  [
-   "2026-08-13",
-   "",
-   "Hannibal & Lecters, Olli PA",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/hannibal-lecters-olli-pa"
-  ],
-  [
-   "2026-08-13",
-   "",
-   "Laulun Tekijät: Ullalintulampi, Lauri Seppä",
-   "Atmos Taproom",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/laulun-tekijat-ullalintulampi-lauri-seppa"
-  ],
-  [
-   "2026-08-14",
-   "",
-   "Popedan Ajajat, Horsepower",
-   "Tavara-asema",
-   "hiphop",
-   0,
-   "https://www.meteli.net/tapahtuma/popedan-ajajat-horsepower"
-  ],
-  [
-   "2026-08-14",
-   "",
-   "Jukka Poika",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/jukka-poika-9"
-  ],
-  [
-   "2026-08-14",
-   "",
-   "Wallu’s Little Friday: Janne Westerlund",
-   "John Scott's Ratina",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/wallus-little-friday-janne-westerlund"
-  ],
-  [
-   "2026-08-14",
-   "",
-   "Pep Torres (USA) & His Finnish All-Stars, Son Demon and His Holy Boys",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/pep-torres-usa-his-finnish-all-stars-son-demon-and-his-holy-boys"
-  ],
-  [
-   "2026-08-14",
-   "",
-   "Live Music Afterwork: Jukka Pahkamäki",
-   "Pub Simon",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/live-music-afterwork-jukka-pahkamaki-2"
-  ],
-  [
-   "2026-08-15",
-   "",
-   "Absoluuttinen Nollapiste, Brian",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/absoluuttinen-nollapiste-brian"
-  ],
-  [
-   "2026-08-15",
-   "",
-   "Maarit Hurmerinta Duo",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/maarit-hurmerinta-duo-8"
-  ],
-  [
-   "2026-08-15",
-   "",
-   "Club Alt Summer Sessions: Topi Saha",
-   "O'Connell's",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/club-alt-summer-sessions-topi-saha"
-  ],
-  [
-   "2026-08-18",
-   "",
-   "Geordie Greep (GBR)",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/geordie-greep-gbr-2"
-  ],
-  [
-   "2026-08-19",
-   "",
-   "Emily Scott Robinson (USA), Julia Rautamaa",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/emily-scott-robinson-usa"
-  ],
-  [
-   "2026-08-20",
-   "",
-   "Masi Luoma – 70 vuotta musiikin juhlaa!: Groove Machine, The Wowels",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/masi-luoma-70-vuotta-musiikin-juhlaa-groove-machine-the-wowels"
-  ],
-  [
-   "2026-08-21",
-   "",
-   "Blockfest: Future (USA), Tyga (USA), Rae Sremmurd (USA), Yeat (USA), 2hollis (USA), JVG, Ibe, Lauri Haav, Isac Elliot, Costi, Averagekidluke, Bizi, Melo, William, Kerza, Senya, Alina Burnet, Koira, Louna0nline, Minttu,",
-   "Ares ym. Ratinanniemi",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/blockfest-future-usa-tyga-usa-rae-sremmurd-usa-yeat-usa-2hollis-usa-jvg-ibe-lauri-haav-isac-elliot-costi-averagekidluke-bizi-melo-william-kerza-senya-alina-burnet-koira-lo"
-  ],
-  [
-   "2026-08-21",
-   "",
-   "Boycott",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/boycott"
-  ],
-  [
-   "2026-08-21",
-   "",
-   "The Blaster Master",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/the-blaster-master"
-  ],
-  [
-   "2026-08-21",
-   "",
-   "Live Music Afterwork: Selkä Pulkkinen",
-   "Pub Simon",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/live-music-afterwork-selka-pulkkinen-2"
-  ],
-  [
-   "2026-08-21",
-   "",
-   "Festivaali 2026 pe 21.8.2026 20",
-   "00 Pyynikki",
-   "festival",
-   0,
-   "https://keikat.org/festivaali-pyynikki-232"
-  ],
-  [
-   "2026-08-22",
-   "",
-   "Virve Rosti, Freeman ja Menneisyyden vangit",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/virve-rosti-freeman-ja-menneisyyden-vangit-7"
-  ],
-  [
-   "2026-08-22",
-   "",
-   "Diskoteekki Purkkaa ja jytää: DJ:t Altti, Juissi",
-   "Tavara-asema",
-   "electronic",
-   0,
-   "https://www.meteli.net/tapahtuma/diskoteekki-purkkaa-ja-jytaa-djt-altti-juissi"
-  ],
-  [
-   "2026-08-22",
-   "",
-   "R.E.M. For The People",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/r-e-m-for-the-people-2"
-  ],
-  [
-   "2026-08-22",
-   "",
-   "Industrial Oddities: The Fair Attempts, Lirpo, Herja",
-   "Bar Kotelo",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/industrial-oddities-the-fair-attempts-lirpo-herja"
-  ],
-  [
-   "2026-08-28",
-   "",
-   "Vauhti Kiihtyy Tampere: Käärijä, Sonata Arctica, Stratovarius, Bess, Kaija Koo, Elastinen, Kake Randelin, Diandra instagrammfacebook, Juha Tapio, Yö, Petri Nygård, Popeda, Portion Boys, Ressu Redford, Nylon Beat,",
-   "Klamydia Hakametsän jäähalli",
-   "hiphop",
-   0,
-   "https://www.meteli.net/tapahtuma/vauhti-kiihtyy-tampere-kaarija-sonata-arctica-stratovarius-bess-kaija-koo-elastinen-kake-randelin-diandra-instagrammfacebook-juha-tapio-yo-petri-nygard-popeda-portion-boys-ressu-redford"
-  ],
-  [
-   "2026-08-28",
-   "",
-   "Matthau Mikojan",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/matthau-mikojan-2"
-  ],
-  [
-   "2026-08-28",
-   "",
-   "Kaleidobolt, Skyjoggers, Samane",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/kaleidobolt-skyjoggers-samane"
-  ],
-  [
-   "2026-08-28",
-   "",
-   "Live Music Afterwork: Luca Sturniolo",
-   "Pub Simon",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/live-music-afterwork-luca-sturniolo-4"
-  ],
-  [
-   "2026-08-29",
-   "",
-   "Speed Metal Party: Angelus Apatrida (ESP), Living Death (DEU), Prestige, Dethrone, Objector (BEL), Catalepsy",
-   "Tavara-asema",
-   "metal",
-   0,
-   "https://www.meteli.net/tapahtuma/speed-metal-party-angelus-apatrida-esp-prestige-dethrone-catalepsy"
-  ],
-  [
-   "2026-08-29",
-   "",
-   "Hurriganes Show: Black Devils feat. Ile Kallio & Janne Louhivuori",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/black-devils-feat-ile-kallio-janne-louhivuori-7"
-  ],
-  [
-   "2026-08-29",
-   "",
-   "Club Alt Summer Sessions: Aksel Kankaanranta",
-   "O'Connell's",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/club-alt-summer-sessions-aksel-kankaanranta"
-  ],
-  [
-   "2026-08-29",
-   "",
-   "Pyhät Nuket, Syyskuu",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/pyhat-nuket-syyskuu"
-  ],
-  [
-   "2026-08-29",
-   "",
-   "Koovee naiset kotiottelut 2026-2027 la 29.8.2026 20",
-   "00 Spiral Tampere",
-   "rock",
-   0,
-   "https://keikat.org/koovee-spiral-313"
+   "https://kohokohdat.fi/tampere/tapahtuma/olli-ahvenlahti-new-quintet/"
   ],
   [
    "2026-09-02",
@@ -2607,497 +32,65 @@
   [
    "2026-09-02",
    "",
-   "Forces, Luke Lund & Sidewards Ebb",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/forces-luke-lund-sidewards-ebb/"
-  ],
-  [
-   "2026-09-02",
-   "",
    "Haight, Sunvoyeur, Turbo Testicles",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/haight-sunvoyeur-turbo-testicles/"
   ],
   [
-   "2026-09-02",
-   "",
+   "2026-09-03",
+   "19:00",
+   "Tampere Philharmonic Orchestra: Kullervo",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/kullervo/"
+  ],
+  [
+   "2026-09-03",
+   "19:00",
+   "Issias Duo Selkä & Katwi",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/issias-duo-selka-katwi/"
+  ],
+  [
+   "2026-09-03",
+   "19:00",
    "Jaakko Laitinen & Väärä Raha",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jaakko-laitinen-vaara-raha-3/"
   ],
   [
-   "2026-09-02",
-   "",
+   "2026-09-03",
+   "20:00",
+   "Mat McNerney",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mat-mcnerney/"
+  ],
+  [
+   "2026-09-03",
+   "20:00",
+   "Rahvaanmusiikin kerho: Désirée Saarela, I Fäälan",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/rahvaanmusiikin-kerho-desiree-saarela-i-faalan/"
+  ],
+  [
+   "2026-09-03",
+   "21:00",
    "A9 Live: Pasi Vainionperä",
-   "G Livelab Tampere",
+   "Tampere",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/a9-live-pasi-vainionpera/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Silent Disco",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07-2026-08-14-2026-08-21-2026-08-28-2026-09-04/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Tyrvää Jazz 2026",
-   "G Livelab Tampere",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tyrvaa-jazz/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Moro Sky Bar DJ:t",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-04/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Pintandwefall",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pintandwefall/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Acoustenced & Ehdonalainen – We Still Play Sentenced",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/acoustenced-ehdonalainen-we-still-play-sentenced/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "DJ Ozan",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-ozan-2/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Pispalan Saunafest 2026",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pispalan-saunafest/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "+ Juggling Jugulars, Abduktio, Puhelinseksi",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/juggling-jugulars-abduktio-puhelinseksi/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "An Evening With Kiuas",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/an-evening-with-kiuas/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Billie Joelina",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/billie-joelina-2/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Funebrarum (USA) + support",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/funebrarum-usa-support/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Honey B & T-Bones",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/honey-b-t-bones-2/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Hekypop 2: Joku Puhuu, Maida Vale, Kesyt Jätkät",
-   "G Livelab Tampere",
-   "hiphop",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/hekypop-2-joku-puhuu-maida-vale-kesyt-jatkat/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "DJ O-Nine",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-o-nine-16/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "DJ:t Jaana Mirjami & Karri Tappio, Sara-Maaria",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/djt-jaana-mirjami-karri-tappio-sara-maaria/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Kujakollin jamit",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/kujakollin-jamit-2026-04-05-2026-05-03-2026-06-07-2026-07-05-2026-08-02-2026-09-06/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Fatboy (SE)",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/fatboy-se-2/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "DJ Petermayn",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-petermayn-4/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Tampere Guitar Festival 2026",
-   "G Livelab Tampere",
-   "festival",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tampere-guitar-festival/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Ilmavoimien Big Band & Olli Soikkeli: Django!",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/ilmavoimien-big-band-olli-soikkeli-django/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "touko (EP-julkkarit) + Viive",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/touko-ep-julkkarit-viive/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "The Psychward Breakouts, De La Rocka & The Garbagemen",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/the-psychward-breakouts-de-la-rocka-the-garbagemen/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "VERMILIA, AETHER (PL), FOLKRIM",
-   "G Livelab Tampere",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/vermilia-aether-pl-folkrim/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Särkänniemen Kesäkauden päättäjäiset ja ilotulitus 2026",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/sarkanniemen-kesakauden-paattajaiset-ja-ilotulitus/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Jukka Perko & Jay Kortehisto: Foxtet",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jukka-perko-jay-kortehisto-foxtet/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Stenari",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/stenari-2/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "The Munsons (Tokela & Tommi Viksten)",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/the-munsons-tokela-tommi-viksten/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "NITS (NL)",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/nits-nl/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Timo Kämäräinen",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/timo-kamarainen/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Joose Keskitalo & The Mystic Revelation Of Teppo Repo",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/joose-keskitalo-the-mystic-revelation-of-teppo-repo/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Tommy Lindgren Metropolis – Sininen kaupunki Revisited",
-   "G Livelab Tampere",
-   "metal",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tommy-lindgren-metropolis-sininen-kaupunki-revisited/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Aknestik – Vien Sun Sydämen Pohjoiseen 40-vuotisjuhlakiertue",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/aknestik-vien-sun-sydamen-pohjoiseen-40-vuotisjuhlakiertue/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Lost in Music: LASTOUT, Rioghan, King Satan",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/lost-in-music-lastout-rioghan-king-satan/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Tumppi Varonen & Problems, Pelle Miljoona, Kärtsy Hatakka (Waltari)",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tumppi-varonen-problems-pelle-miljoona-kartsy-hatakka-waltari/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "The Clash Meets The Jam",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/the-clash-meets-the-jam/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "TERESIA VON STORM, ELEKTRIC ROKBAND, DISTANT HORIZON",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/teresia-von-storm-elektric-rokband-distant-horizon/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Lost Society & HOKKA: Miseria is a State of Mind – Tour, Support: St. Aurora",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/lost-society-hokka-miseria-is-a-state-of-mind-tour-support-st-aurora/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Jack & Jones",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jack-jones/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "LOWHILL, LIGHTBEARER, IN THORNS",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/lowhill-lightbearer-in-thorns/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Emodisko",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/emodisko-3/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Irina: Akustinen ilta",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/irina-akustinen-ilta/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Lemonator",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/lemonator/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "K40-disco: DJ:t Sami & Antti",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/k40-disco-djt-sami-antti-3/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Juha Tretjakov",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/juha-tretjakov-3/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "A9 Live: Kauko Röyhkä",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-kauko-royhka/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Out Of Breath, Madella, Denshi, True Grit, Twisting Knives",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/out-of-breath-madella-denshi-true-grit-twisting-knives/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "GRAVECITY BANDITS, MANIC ORDER, DANGER HÅT",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/gravecity-bandits-manic-order-danger-hat/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "DJ:t Antti H & Sami",
-   "G Livelab Tampere",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/djt-antti-h-sami/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Diandra – Hymni rakkaudelle",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/diandra-hymni-rakkaudelle/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Irkkujamit",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/irkkujamit-7/"
-  ],
-  [
-   "2026-09-02",
-   "",
-   "Roamin Street Bandin Gumbo Club Huurteessa",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/roamin-street-bandin-gumbo-club-huurteessa-2-2026-09-30/"
   ],
   [
    "2026-09-03",
@@ -3107,6 +100,96 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/jaakko-laitinen-vaara-raha-16"
+  ],
+  [
+   "2026-09-03",
+   "",
+   "Rahvaanmusiikin kerho: Désirée Saarela, I Fäälan",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/rahvaanmusiikin-kerho-desiree-saarela-i-faalan"
+  ],
+  [
+   "2026-09-04",
+   "19:00",
+   "Tuomas Paukku, Matti Salo",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tuomas-paukku-matti-salo/"
+  ],
+  [
+   "2026-09-04",
+   "20:00",
+   "Mat MUSTA JUHLA: NNHMN (de), Spit Mask (usa/de), Miseria Ultima, Laua Rip",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mat-musta-juhla-nnhmn-de-spit-mask-usa-de-miseria-ultima-laua-rip/"
+  ],
+  [
+   "2026-09-04",
+   "20:30",
+   "Piritta Lumous Rock Band",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/piritta-lumous-rock-band/"
+  ],
+  [
+   "2026-09-04",
+   "21:00",
+   "Jarkko Helin & Crawfish Kings",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jarkko-helin-crawfish-kings-2/"
+  ],
+  [
+   "2026-09-04",
+   "21:00",
+   "Mikko Lankinen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mikko-lankinen/"
+  ],
+  [
+   "2026-09-04",
+   "21:00",
+   "Pintandwefall",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/pintandwefall/"
+  ],
+  [
+   "2026-09-04",
+   "21:00",
+   "Poikkitela",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/nousu-hip-hop-night-2/"
+  ],
+  [
+   "2026-09-04",
+   "22:00",
+   "Sumuposauttaja",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/holy-snakes-uk-lokit-sumuposauttaja/"
+  ],
+  [
+   "2026-09-04",
+   "23:00",
+   "DJ Ozan",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-ozan-2/"
   ],
   [
    "2026-09-04",
@@ -3125,6 +208,204 @@
    "metal",
    1,
    "https://www.meteli.net/tapahtuma/pahisklubi-outouhka-afternoon-omens-dj-punk-soul-brother"
+  ],
+  [
+   "2026-09-04",
+   "",
+   "Live Music Afterwork: Jarie",
+   "Pub Simon",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/live-music-afterwork-jarie"
+  ],
+  [
+   "2026-09-04",
+   "",
+   "Sumuposauttaja Band",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/sumuposauttaja-band"
+  ],
+  [
+   "2026-09-04",
+   "",
+   "Vitun Iso Rotsi,",
+   "Timo Pieni Huijaus Olympia",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/vitun-iso-rotsi-timo-pieni-huijaus"
+  ],
+  [
+   "2026-09-04",
+   "",
+   "Silent Disco",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07-2026-08-14-2026-08-21-2026-08-28-2026-09-04/"
+  ],
+  [
+   "2026-09-04",
+   "",
+   "Tyrvää Jazz 2026",
+   "Tampere",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tyrvaa-jazz/"
+  ],
+  [
+   "2026-09-04",
+   "",
+   "Moro Sky Bar DJ:t",
+   "Moro Sky Bar",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-04/"
+  ],
+  [
+   "2026-09-04",
+   "",
+   "Acoustenced & Ehdonalainen – We Still Play Sentenced",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/acoustenced-ehdonalainen-we-still-play-sentenced/"
+  ],
+  [
+   "2026-09-05",
+   "00:00",
+   "Syskofrenia",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/syskofrenia/"
+  ],
+  [
+   "2026-09-05",
+   "18:00",
+   "+ Juggling Jugulars, Abduktio, Puhelinseksi",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/juggling-jugulars-abduktio-puhelinseksi/"
+  ],
+  [
+   "2026-09-05",
+   "18:00",
+   "MUSTA JUHLA:  [di:unru:]",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/musta-juhla-diunru/"
+  ],
+  [
+   "2026-09-05",
+   "19:00",
+   "Colin Hartley",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/colin-hartley-4/"
+  ],
+  [
+   "2026-09-05",
+   "19:00",
+   "Rob Noyes (US), People Skills (US), Kuupuu & Amon Dude",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/rob-noyes-us-people-skills-us-kuupuu-amon-dude/"
+  ],
+  [
+   "2026-09-05",
+   "20:00",
+   "Billie Joelina",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/billie-joelina-2/"
+  ],
+  [
+   "2026-09-05",
+   "20:00",
+   "Cosey Mueller (deu), Eat My Teeth (pol), Nici Pop (deu), Anthrax Fields",
+   "Tampere",
+   "hiphop",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/cosey-mueller-deu-eat-my-teeth-pol-nici-pop-deu-anthrax-fields/"
+  ],
+  [
+   "2026-09-05",
+   "20:00",
+   "Honey B & T-Bones",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/honey-b-t-bones-2/"
+  ],
+  [
+   "2026-09-05",
+   "21:00",
+   "Aika-avaruus: Dub-Experimental-Electronic-Cosmic: DJ Jere Dangerous / Vinyl set",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/aika-avaruus-dub-experimental-electronic-cosmic-dj-jere-dangerous-vinyl-set-2/"
+  ],
+  [
+   "2026-09-05",
+   "21:00",
+   "Hekypop 2: Joku Puhuu, Maida Vale, Kesyt Jätkät",
+   "Tampere",
+   "hiphop",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hekypop-2-joku-puhuu-maida-vale-kesyt-jatkat/"
+  ],
+  [
+   "2026-09-05",
+   "21:30",
+   "Matti Johannes Koivu",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/matti-johannes-koivu-3/"
+  ],
+  [
+   "2026-09-05",
+   "22:00",
+   "Joe Vestich",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/joe-vestich-2/"
+  ],
+  [
+   "2026-09-05",
+   "23:00",
+   "DJ O-Nine",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-o-nine-16/"
+  ],
+  [
+   "2026-09-05",
+   "23:30",
+   "DJ:t Jaana Mirjami & Karri Tappio, Sara-Maaria",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/djt-jaana-mirjami-karri-tappio-sara-maaria/"
+  ],
+  [
+   "2026-09-05",
+   "",
+   "Matti Johannes Koivu",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/matti-johannes-koivu-5"
   ],
   [
    "2026-09-05",
@@ -3156,11 +437,65 @@
   [
    "2026-09-05",
    "",
-   "Funebrarum (USA)",
+   "Funebrarum (USA), Malformed, Pestigore",
    "Varjobaari",
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/funebrarum-usa-2"
+  ],
+  [
+   "2026-09-05",
+   "",
+   "Tuomiofest: Yöpuolia, Utopianisti, Pelkkä Poutanen, Silja Palomäki, Kaunis Veli,",
+   "Suurimot Bistro Vilja",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/tuomiofest"
+  ],
+  [
+   "2026-09-05",
+   "",
+   "Katubaari Axu 10 vuotta",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/katubaari-axu-10-vuotta/"
+  ],
+  [
+   "2026-09-05",
+   "",
+   "An Evening With Kiuas",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/an-evening-with-kiuas/"
+  ],
+  [
+   "2026-09-05",
+   "",
+   "Funebrarum (USA) + support",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/funebrarum-usa-support/"
+  ],
+  [
+   "2026-09-05",
+   "",
+   "Moro Sky Bar DJ:t",
+   "Moro Sky Bar",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-05/"
+  ],
+  [
+   "2026-09-06",
+   "18:30",
+   "Kujakollin jamit",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kujakollin-jamit-2026-04-05-2026-05-03-2026-06-07-2026-07-05-2026-08-02-2026-09-06/"
   ],
   [
    "2026-09-06",
@@ -3170,6 +505,33 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/tohtori-kivimaen-valinnat-hilja-gronfors-trio-akkajee-emmi-kuittinen"
+  ],
+  [
+   "2026-09-06",
+   "",
+   "Tohtori Kivimäen valinta: Hilja Grönfors Trio, Akkajee, Emmi Kuittinen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tohtori-kivimaen-valinta-hilja-gronfors-trio-akkajee-emmi-kuittinen/"
+  ],
+  [
+   "2026-09-08",
+   "19:00",
+   "Johanna Försti & HT Combo – Swing Swing Swing",
+   "Tampere",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/johanna-forsti-ht-combo-swing-swing-swing/"
+  ],
+  [
+   "2026-09-09",
+   "19:00",
+   "Fatboy (SE)",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/fatboy-se-2/"
   ],
   [
    "2026-09-09",
@@ -3190,6 +552,42 @@
    "https://www.meteli.net/tapahtuma/saara-suvanto-muistoissamme-pekka-nisu-hanna-ekola-martti-heikkila-make-tommila"
   ],
   [
+   "2026-09-09",
+   "",
+   "Saara Suvanto muistoissamme: Pekka Nisu, Hanna Ekola, Martti Heikkilä & Make Tommila",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/saara-suvanto-muistoissamme-pekka-nisu-hanna-ekola-martti-heikkila-make-tommila/"
+  ],
+  [
+   "2026-09-10",
+   "20:00",
+   "Perunapuffet DJs",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/perunapuffet-djs/"
+  ],
+  [
+   "2026-09-10",
+   "21:00",
+   "Mirka’s Monarchy",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mirkas-monarchy-5/"
+  ],
+  [
+   "2026-09-10",
+   "23:00",
+   "DJ Petermayn",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-petermayn-4/"
+  ],
+  [
    "2026-09-10",
    "",
    "Aarne Pelkonen",
@@ -3197,6 +595,105 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/aarne-pelkonen-6"
+  ],
+  [
+   "2026-09-10",
+   "",
+   "KiskoFest 2026: Ege Zulu, Olga, Aaro 630",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kiskofest/"
+  ],
+  [
+   "2026-09-11",
+   "09:45",
+   "Open Rehearsal",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a327689a7cd070007b2df8c&date=11.09.2026&time=09.45+-+13.00"
+  ],
+  [
+   "2026-09-11",
+   "19:00",
+   "Tampere Philharmonic Orchestra: Sibelius 5",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/sibelius-5/"
+  ],
+  [
+   "2026-09-11",
+   "19:00",
+   "Delphine Dora, Maauimala",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/delphine-dora-maauimala/"
+  ],
+  [
+   "2026-09-11",
+   "19:00",
+   "Ilmavoimien Big Band & Olli Soikkeli: Django!",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ilmavoimien-big-band-olli-soikkeli-django/"
+  ],
+  [
+   "2026-09-11",
+   "20:00",
+   "touko (EP-julkkarit) + Viive",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/touko-ep-julkkarit-viive/"
+  ],
+  [
+   "2026-09-11",
+   "21:00",
+   "Cenotaph (mex), Cryptworm (uk), TONNE",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hulluklubi-sekamuotoinen-jakso-oma-koloni-purkkapaiva-gag-reflex-kasa-luita/"
+  ],
+  [
+   "2026-09-11",
+   "21:00",
+   "Jahnukaiset",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jahnukaiset-komets/"
+  ],
+  [
+   "2026-09-11",
+   "21:00",
+   "Tuomas Lehto",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tuomas-lehto/"
+  ],
+  [
+   "2026-09-11",
+   "22:00",
+   "RNBLICIOUS: 90- ja 00-lukujen R&B- ja hiphop-klassikot  DJ’t Sara-Maaria & C-Flava",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/rnblicious-90-ja-00-lukujen-rb-ja-hiphop-klassikot-djt-sara-maaria-c-flava/"
+  ],
+  [
+   "2026-09-11",
+   "22:00",
+   "VERMILIA, AETHER (PL), FOLKRIM",
+   "Tampere",
+   "folk",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/vermilia-aether-pl-folkrim/"
   ],
   [
    "2026-09-11",
@@ -3235,6 +732,150 @@
    "https://www.meteli.net/tapahtuma/jahnukaiset-30-vuotisjuhlakonsertti"
   ],
   [
+   "2026-09-11",
+   "",
+   "Rokets, Gehenna Sour, Fuzzkills",
+   "Maanalainen",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/rokets-gehenna-sour-fuzzkills"
+  ],
+  [
+   "2026-09-11",
+   "",
+   "Silent Disco",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07-2026-08-14-2026-08-21-2026-08-28-2026-09-04-2026-09-11/"
+  ],
+  [
+   "2026-09-11",
+   "",
+   "Moro Sky Bar DJ:t",
+   "Moro Sky Bar",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-11/"
+  ],
+  [
+   "2026-09-11",
+   "",
+   "The Psychward Breakouts, De La Rocka & The Garbagemen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/the-psychward-breakouts-de-la-rocka-the-garbagemen/"
+  ],
+  [
+   "2026-09-12",
+   "12:11",
+   "Elämäni Biisi: tähtiartistit ja vieraat Tampereella",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/elamani-biisi-tahtiartistit-ja-vieraat-tampereella-9/"
+  ],
+  [
+   "2026-09-12",
+   "15:00",
+   "Jukka Perko & Jay Kortehisto: Foxtet",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jukka-perko-jay-kortehisto-foxtet/"
+  ],
+  [
+   "2026-09-12",
+   "17:00",
+   "HULLU!KLUBI: Lastauslaiturin Pojat, ’Áháchí , V-Osasto, Purran Lista, Spezial Number",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hulluklubi-lastauslaiturin-pojat-ahachi-v-osasto-purran-lista-spezial-number/"
+  ],
+  [
+   "2026-09-12",
+   "18:00",
+   "Jiri Nikkinen The Beatles Tribute Band",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jiri-nikkinen-the-beatles-tribute-band-2/"
+  ],
+  [
+   "2026-09-12",
+   "19:00",
+   "Piennar, Antero Mentu & Mentulaiset",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/piennar-antero-mentu-mentulaiset/"
+  ],
+  [
+   "2026-09-12",
+   "20:00",
+   "Stenari",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/stenari-2/"
+  ],
+  [
+   "2026-09-12",
+   "21:00",
+   "Força Macabra 35v show, Kovaa Rasvaa, The Carnival, Below the Graves",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/forca-macabra-35v-show-kovaa-rasvaa-the-carnival-below-the-graves/"
+  ],
+  [
+   "2026-09-12",
+   "21:00",
+   "KANERVA -levynjulkaisukeikka + Liila Jokelin & Teemu Markkula",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kanerva-levynjulkaisukeikka-liila-jokelin-teemu-markkula/"
+  ],
+  [
+   "2026-09-12",
+   "21:00",
+   "Taneli Harma",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/bellman-kollektiivi-2/"
+  ],
+  [
+   "2026-09-12",
+   "21:00",
+   "The Munsons (Tokela & Tommi Viksten)",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/the-munsons-tokela-tommi-viksten/"
+  ],
+  [
+   "2026-09-12",
+   "21:00",
+   "Tuomas Lehto",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tuomas-lehto-2/"
+  ],
+  [
+   "2026-09-12",
+   "22:00",
+   "Boris",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/boris/"
+  ],
+  [
    "2026-09-12",
    "",
    "Jukka Perko & Jay Kortehisto Foxtet",
@@ -3271,13 +912,49 @@
    "https://www.meteli.net/tapahtuma/tavara-asema-4"
   ],
   [
-   "2026-09-13",
+   "2026-09-12",
    "",
-   "OFF: Carolus Rex su 13.9.2026 20",
-   "00 Teatteri Telakka",
+   "Jambo,",
+   "Sara Bee Olympia",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-473"
+   "https://www.meteli.net/tapahtuma/jambo-sara-bee"
+  ],
+  [
+   "2026-09-12",
+   "",
+   "Särkänniemen Kesäkauden päättäjäiset ja ilotulitus 2026",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/sarkanniemen-kesakauden-paattajaiset-ja-ilotulitus/"
+  ],
+  [
+   "2026-09-12",
+   "",
+   "Moro Sky Bar DJ:t",
+   "Moro Sky Bar",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-12/"
+  ],
+  [
+   "2026-09-13",
+   "17:00",
+   "HULLU!KLUBI: Dark Bottle, Läppävika, Isojen Poikien Pöytä, Roskis, Kikkailijat",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hulluklubi-dark-bottle-lappavika-isojen-poikien-poyta-roskis-kikkailijat/"
+  ],
+  [
+   "2026-09-14",
+   "19:00",
+   "NITS (NL)",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/nits-nl/"
   ],
   [
    "2026-09-14",
@@ -3290,12 +967,57 @@
   ],
   [
    "2026-09-16",
+   "00:00",
+   "Timo Kämäräinen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/timo-kamarainen/"
+  ],
+  [
+   "2026-09-16",
    "",
    "Timo Kämäräinen",
    "G Livelab Tampere",
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/timo-kamarainen-3"
+  ],
+  [
+   "2026-09-16",
+   "",
+   "Tampere Guitar Festival 2026",
+   "Tampere",
+   "festival",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tampere-guitar-festival/"
+  ],
+  [
+   "2026-09-17",
+   "18:30",
+   "Joose Keskitalo & The Mystic Revelation Of Teppo Repo",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/joose-keskitalo-the-mystic-revelation-of-teppo-repo/"
+  ],
+  [
+   "2026-09-17",
+   "19:00",
+   "Tommy Lindgren Metropolis – Sininen kaupunki Revisited",
+   "Tampere",
+   "metal",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tommy-lindgren-metropolis-sininen-kaupunki-revisited/"
+  ],
+  [
+   "2026-09-17",
+   "20:30",
+   "Zargenzein, Sleeth, Tocka Magnolia",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/zargenzein-sleeth-tocka-magnolia/"
   ],
   [
    "2026-09-17",
@@ -3305,6 +1027,87 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/tommy-lindgren-metropolis"
+  ],
+  [
+   "2026-09-17",
+   "",
+   "Samae Koskinen",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/samae-koskinen-19"
+  ],
+  [
+   "2026-09-17",
+   "",
+   "Laulun Tekijät: Markus Perttula, April Skies",
+   "Atmos Taproom",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/laulun-tekijat-markus-perttula-april-skies"
+  ],
+  [
+   "2026-09-18",
+   "18:00",
+   "ELÄMÄ ON PUNK : Jorpakko, Häiriköt, Ne Koistiset, Pakotie, Psykoterapia, yllätysesiintyjä. Terssi Hätä-Ratkaisu",
+   "Tampere",
+   "metal",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/elama-on-punk-jorpakko-hairikot-ne-koistiset-pakotie-psykoterapia-yllatysesiintyja-terssi-hata-ratkaisu/"
+  ],
+  [
+   "2026-09-18",
+   "18:00",
+   "Rohee musailta: Mansen Tiikeri, Eero Heinonen, Maida Vale",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/rohee-musailta-mansen-tiikeri-eero-heinonen-maida-vale/"
+  ],
+  [
+   "2026-09-18",
+   "19:00",
+   "Tampere Philharmonic Orchestra: French Romanticism",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/french-romanticism/"
+  ],
+  [
+   "2026-09-18",
+   "19:00",
+   "Perkeet, Flags Of Unity, Kotidisko-Risto & Erkki Käsimerkki",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/perkeet-flags-of-unity-kotidisko-risto-erkki-kasimerkki/"
+  ],
+  [
+   "2026-09-18",
+   "21:00",
+   "Ari Pulkkinen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ari-pulkkinen-4/"
+  ],
+  [
+   "2026-09-18",
+   "21:00",
+   "Weldon Bros.",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/weldon-bros/"
+  ],
+  [
+   "2026-09-18",
+   "22:00",
+   "TERESIA VON STORM, ELEKTRIC ROKBAND, DISTANT HORIZON",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/teresia-von-storm-elektric-rokband-distant-horizon/"
   ],
   [
    "2026-09-18",
@@ -3345,20 +1148,191 @@
   [
    "2026-09-18",
    "",
-   "Uudet Tekijät: Knife Jerks - Puukkojunkkarit pe 18.9.2026 20",
-   "00 Teatteri Telakka",
+   "Teresia Von Storm, Elektric Rokband, Distant Horizon",
+   "Bar Kotelo",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-509"
+   "https://www.meteli.net/tapahtuma/teresia-von-storm-elektric-rokband-distant-horizon"
   ],
   [
    "2026-09-18",
    "",
-   "Elämä on Punk Vol. 32 pe 18.9.2026 20",
-   "00 Vastavirta-klubi",
+   "Silent Disco",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07-2026-08-14-2026-08-21-2026-08-28-2026-09-04-2026-09-11-2026-09-18/"
+  ],
+  [
+   "2026-09-18",
+   "",
+   "Aknestik – Vien Sun Sydämen Pohjoiseen 40-vuotisjuhlakiertue",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/aknestik-vien-sun-sydamen-pohjoiseen-40-vuotisjuhlakiertue/"
+  ],
+  [
+   "2026-09-18",
+   "",
+   "Lost in Music: LASTOUT, Rioghan, King Satan",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lost-in-music-lastout-rioghan-king-satan/"
+  ],
+  [
+   "2026-09-18",
+   "",
+   "Tumppi Varonen & Problems, Pelle Miljoona, Kärtsy Hatakka (Waltari)",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tumppi-varonen-problems-pelle-miljoona-kartsy-hatakka-waltari/"
+  ],
+  [
+   "2026-09-18",
+   "",
+   "Moro Sky Bar DJ:t",
+   "Moro Sky Bar",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-18/"
+  ],
+  [
+   "2026-09-18",
+   "",
+   "The Clash Meets The Jam",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/the-clash-meets-the-jam/"
+  ],
+  [
+   "2026-09-18",
+   "",
+   "Tampereen Flamencoviikko 2026 – 360-klubi: Murtola, Widenius & Mugu",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tampereen-flamencoviikko-2026-360-klubi-murtola-widenius-mugu/"
+  ],
+  [
+   "2026-09-19",
+   "15:00",
+   "Ramosoppa: Pykimät duo, Komplikaatio, Teyo & Stindy plays Mopot",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ramosoppa-pykimat-duo-komplikaatio-teyo-stindy-plays-mopot/"
+  ],
+  [
+   "2026-09-19",
+   "18:00",
+   "ELÄMÄ ON PUNK: Perseenpyyhkijät, Riemumaa, Sanktio, Pojat, No Ei!, V-osasto",
+   "Tampere",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-515"
+   "https://kohokohdat.fi/tampere/tapahtuma/elama-on-punk-perseenpyyhkijat-riemumaa-sanktio-pojat-no-ei-v-osasto/"
+  ],
+  [
+   "2026-09-19",
+   "19:00",
+   "Lost Society & HOKKA: Miseria is a State of Mind – Tour, Support: St. Aurora",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lost-society-hokka-miseria-is-a-state-of-mind-tour-support-st-aurora/"
+  ],
+  [
+   "2026-09-19",
+   "19:00",
+   "Veiston, Sammakoiden Valtakunta",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/veiston-sammakoiden-valtakunta/"
+  ],
+  [
+   "2026-09-19",
+   "20:00",
+   "Jack & Jones",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jack-jones/"
+  ],
+  [
+   "2026-09-19",
+   "21:00",
+   "Ari Pulkkinen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ari-pulkkinen-3/"
+  ],
+  [
+   "2026-09-19",
+   "21:00",
+   "Ruuhkapeikko",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ruuhkapeikko/"
+  ],
+  [
+   "2026-09-19",
+   "21:30",
+   "Janna (duo)",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/janna-duo/"
+  ],
+  [
+   "2026-09-19",
+   "22:00",
+   "Hank Nero",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hank-nero-3/"
+  ],
+  [
+   "2026-09-19",
+   "22:00",
+   "LOWHILL, LIGHTBEARER, IN THORNS",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lowhill-lightbearer-in-thorns/"
+  ],
+  [
+   "2026-09-19",
+   "22:00",
+   "Milleniaalidisko: dj:t Jiri & Mr. Willy",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/milleniaalidisko-djt-jiri-mr-willy/"
+  ],
+  [
+   "2026-09-19",
+   "23:00",
+   "Emodisko",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/emodisko-3/"
+  ],
+  [
+   "2026-09-19",
+   "",
+   "Janna duo",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/janna-duo"
   ],
   [
    "2026-09-19",
@@ -3379,6 +1353,51 @@
    "https://www.meteli.net/tapahtuma/kalevauva-fi-8"
   ],
   [
+   "2026-09-19",
+   "",
+   "Lowhill, Lightbearer, In Thorns",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lowhill-lightbearer-in-thorns"
+  ],
+  [
+   "2026-09-19",
+   "",
+   "Moro Sky Bar DJ:t",
+   "Moro Sky Bar",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-19/"
+  ],
+  [
+   "2026-09-20",
+   "15:00",
+   "Afternoon of Fauns: Transformations",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/afternoon-of-fauns-transformations-2/"
+  ],
+  [
+   "2026-09-20",
+   "18:00",
+   "Laula elämän puolesta",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/laula-elaman-puolesta/"
+  ],
+  [
+   "2026-09-23",
+   "19:00",
+   "Irina: Akustinen ilta",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/irina-akustinen-ilta/"
+  ],
+  [
    "2026-09-23",
    "",
    "Hallowed Lungs – Pyhät keuhkot: Kimmo Pohjonen",
@@ -3388,6 +1407,33 @@
    "https://www.meteli.net/tapahtuma/hallowed-lungs-pyhat-keuhkot-kimmo-pohjonen"
   ],
   [
+   "2026-09-23",
+   "",
+   "Juha Saunala, MäSä Duo, M.I. Laine",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/juha-saunala-masa-duo-m-i-laine"
+  ],
+  [
+   "2026-09-23",
+   "",
+   "Brian Charette (USA), Mathias Sandberg & Teppo Mäkynen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/brian-charette-usa-mathias-sandberg-teppo-makynen/"
+  ],
+  [
+   "2026-09-24",
+   "18:00",
+   "Lauantain toivotut 90 vuotta",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lauantain-toivotut-90-vuotta-2/"
+  ],
+  [
    "2026-09-24",
    "",
    "Wöyh!",
@@ -3395,6 +1441,96 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/woyh-12"
+  ],
+  [
+   "2026-09-25",
+   "18:00",
+   "Lemonator",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lemonator/"
+  ],
+  [
+   "2026-09-25",
+   "19:00",
+   "Tampere Philharmonic Orchestra: The Firebird",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/firebird/"
+  ],
+  [
+   "2026-09-25",
+   "19:00",
+   "Bäckström Wärnheim duo, Simo Laihonen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/backstrom-warnheim-duo-simo-laihonen/"
+  ],
+  [
+   "2026-09-25",
+   "19:30",
+   "Decultivate (cz), Trigger (de), LiliXElbe (cz), Dehumanizer, Harmer, Massa",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/decultivate-cz-trigger-de-lilixelbe-cz-dehumanizer-harmer-massa/"
+  ],
+  [
+   "2026-09-25",
+   "20:00",
+   "Black Magic Six, Ulf Wolf",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/black-magic-six-ulf-wolf/"
+  ],
+  [
+   "2026-09-25",
+   "20:00",
+   "K40-disco: DJ:t Sami & Antti",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/k40-disco-djt-sami-antti-3/"
+  ],
+  [
+   "2026-09-25",
+   "21:00",
+   "Mika Rämä Trubaduuri",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mika-rama-trubaduuri-6/"
+  ],
+  [
+   "2026-09-25",
+   "21:30",
+   "Hanhiniemi – Rauhala MAD",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hanhiniemi-rauhala-mad-2/"
+  ],
+  [
+   "2026-09-25",
+   "22:00",
+   "Game&RAVE: DJ:s Thomas Johan, JWLZ, Kehveli, Yukata, HExexen, Utepia",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-jiri-32/"
+  ],
+  [
+   "2026-09-25",
+   "",
+   "Hanhiniemi-Rauhala M.A.D",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/hanhiniemi-rauhala-m-a-d-4"
   ],
   [
    "2026-09-25",
@@ -3424,10 +1560,145 @@
    "https://www.meteli.net/tapahtuma/k40-disco-djt-sami-antti-21"
   ],
   [
+   "2026-09-25",
+   "",
+   "Soundrun, Cold Dogs",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/soundrun-cold-dogs"
+  ],
+  [
+   "2026-09-25",
+   "",
+   "Kätfish,",
+   "Kirkkovene Ihku",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/katfish-kirkkovene-2"
+  ],
+  [
+   "2026-09-25",
+   "",
+   "Silent Disco",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07-2026-08-14-2026-08-21-2026-08-28-2026-09-04-2026-09-11-2026-09-18-2026-09-25/"
+  ],
+  [
+   "2026-09-25",
+   "",
+   "Moro Sky Bar DJ:t",
+   "Moro Sky Bar",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-25/"
+  ],
+  [
+   "2026-09-26",
+   "19:00",
+   "Mikko Alatalo",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mikko-alatalo-2/"
+  ],
+  [
+   "2026-09-26",
+   "19:00",
+   "Ringhold, Juuso Paaso",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ringhold-juuso-paaso/"
+  ],
+  [
+   "2026-09-26",
+   "19:30",
+   "Maaseudun Tulevaisuus, Juggling Jugulars, Tappajatomaatit, Saattohoito79",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/maaseudun-tulevaisuus-juggling-jugulars-tappajatomaatit-saattohoito79/"
+  ],
+  [
+   "2026-09-26",
+   "20:00",
+   "Juha Tretjakov",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/juha-tretjakov-3/"
+  ],
+  [
+   "2026-09-26",
+   "21:00",
+   "A9 Live: Kauko Röyhkä",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-kauko-royhka/"
+  ],
+  [
+   "2026-09-26",
+   "21:00",
+   "Joonatan & Nemanja feat Yalun",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lintudisko/"
+  ],
+  [
+   "2026-09-26",
+   "21:00",
+   "Mika Rämä Trubaduuri",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mika-rama-trubaduuri-5/"
+  ],
+  [
+   "2026-09-26",
+   "21:30",
+   "Pekko Käppi & K:H:H:L",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/pekko-kappi-khhl/"
+  ],
+  [
+   "2026-09-26",
+   "22:00",
+   "Colin Hartley",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/colin-hartley-5/"
+  ],
+  [
+   "2026-09-26",
+   "22:00",
+   "GRAVECITY BANDITS, MANIC ORDER, DANGER HÅT",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/gravecity-bandits-manic-order-danger-hat/"
+  ],
+  [
+   "2026-09-26",
+   "23:00",
+   "DJ:t Antti H & Sami",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/djt-antti-h-sami/"
+  ],
+  [
    "2026-09-26",
    "",
-   "Pekko Käppi & K:H:H",
-   "L TTT-Klubi",
+   "Pekko Käppi & K:H:H:L",
+   "TTT-Klubi",
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/pekko-kappi-khhl-7"
@@ -3435,8 +1706,8 @@
   [
    "2026-09-26",
    "",
-   "Bitter/Sweet",
-   "Nomad Vocals Kulttuuritalo Laikku",
+   "Bitter/Sweet: Nomad Vocals",
+   "Kulttuuritalo Laikku",
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/bitter-sweet-nomad-vocals-2"
@@ -3460,13 +1731,67 @@
    "https://www.meteli.net/tapahtuma/timo-rautiainen-trio-niskalaukaus-6"
   ],
   [
+   "2026-09-26",
+   "",
+   "Hiljaiset levyt 40 Vuotta punkkia: Maaseudun tulevaisuus, Saattohoito79, Tappajatomaatit, Jugglin Jugulars",
+   "Vastavirta-Klubi",
+   "metal",
+   0,
+   "https://www.meteli.net/tapahtuma/hiljaiset-levyt-40-vuotta-punkkia-maaseudun-tulevaisuus-saattohoito79-tappajatomaatit-jugglin-jugulars"
+  ],
+  [
+   "2026-09-26",
+   "",
+   "Moro Sky Bar DJ:t",
+   "Moro Sky Bar",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-26/"
+  ],
+  [
+   "2026-09-26",
+   "",
+   "Out Of Breath, Madella, Denshi, True Grit, Twisting Knives",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/out-of-breath-madella-denshi-true-grit-twisting-knives/"
+  ],
+  [
+   "2026-09-27",
+   "19:00",
+   "Diandra – Hymni rakkaudelle",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/diandra-hymni-rakkaudelle/"
+  ],
+  [
+   "2026-09-27",
+   "19:00",
+   "Sähköinen matinea 13: Shantidas (FR), Inselberg (FR), Kimmo Helén",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/sahkoinen-matinea-13-shantidas-fr-inselberg-fr-kimmo-helen/"
+  ],
+  [
    "2026-09-29",
    "",
-   "Stu Larsen (AUS), Imme & Julia Adriana",
+   "Stu Larsen (AUS), Imme (NLD), Julia Adriana (NLD)",
    "Telakka",
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/stu-larsen-aus-imme-julia-adriana"
+  ],
+  [
+   "2026-09-30",
+   "19:00",
+   "Irkkujamit",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/irkkujamit-7/"
   ],
   [
    "2026-09-30",
@@ -3485,6 +1810,33 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/samla-mammas-manna-swe-2"
+  ],
+  [
+   "2026-09-30",
+   "",
+   "Roamin Street Bandin Gumbo Club Huurteessa",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/roamin-street-bandin-gumbo-club-huurteessa-2-2026-09-30/"
+  ],
+  [
+   "2026-10-01",
+   "01:10",
+   "Lost in Music 2026: Saarisalo, Jutta Rahmel ja Tyson Blu",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lost-in-music-2026-aizhan-sultan-nicholas-francett-leija-lautamaja/"
+  ],
+  [
+   "2026-10-01",
+   "01:10",
+   "Lost In Music Olympia: LASTOUT + Rioghan + King Satan",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lost-in-music-olympia-lastout-rioghan-king-satan/"
   ],
   [
    "2026-10-01",
@@ -3516,11 +1868,146 @@
   [
    "2026-10-01",
    "",
-   "Music x Media 2026 to 1.10.2026 20",
-   "00 Tampere-talo",
+   "Lost In Music: Jutta Rahmel, Tyson Blu, Saarisalo",
+   "O'Connell's",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-jutta-rahmel-tyson-blu-saarisalo"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Lost In Music: Marita Närhi, Hulda Huima, Ani Harmi, Padelclub",
+   "Paapan Kapakka",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-marita-narhi-hulda-huima-ani-harmi-padelclub"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Improv Night: JadaJada Improv",
+   "Tampere",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-606"
+   "https://kohokohdat.fi/tampere/tapahtuma/improv-night-jadajada-improv-3-2026-10-01/"
+  ],
+  [
+   "2026-10-02",
+   "02:10",
+   "Silent Disco",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07-2026-08-14-2026-08-21-2026-08-28-2026-09-04-2026-09-11-2026-09-18-2026-09-25-2026-10-02/"
+  ],
+  [
+   "2026-10-02",
+   "02:10",
+   "Mariska",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mariska/"
+  ],
+  [
+   "2026-10-02",
+   "02:10",
+   "Forces, Luke Lund & Sidewards Ebb",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/forces-luke-lund-sidewards-ebb/"
+  ],
+  [
+   "2026-10-02",
+   "02:10",
+   "Lost in Music 2026: Aizhan Sultan, Nicholas Francett, Leija Lautamaja",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lost-in-music-2025-kastehelmi-longing-louisa-anni-pohto/"
+  ],
+  [
+   "2026-10-02",
+   "02:10",
+   "Brymir + Horizon Ignited + Omnivortex",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/brymir-horizon-ignited-omnivortex/"
+  ],
+  [
+   "2026-10-02",
+   "02:10",
+   "Duo Iskender feat. Veli",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/duo-iskender-feat-veli/"
+  ],
+  [
+   "2026-10-02",
+   "02:10",
+   "Lost in Music 2026: Emmi Lorentzen, Isaac Sene, Aaro630, Jami Faltin",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lost-in-music-2026-emmi-lorentzen-isaac-sene-aaro630-jami-faltin/"
+  ],
+  [
+   "2026-10-02",
+   "02:10",
+   "Nousu Hip Hop Night",
+   "Tampere",
+   "hiphop",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/nousu-hip-hop-night-3/"
+  ],
+  [
+   "2026-10-02",
+   "02:10",
+   "Lost in Music: Onni Rajaniemi, Nina Kaitaranta, Tero Petri & Korvaamattomat",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/the-wowels-2/"
+  ],
+  [
+   "2026-10-02",
+   "02:10",
+   "Vesa Oksanen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/vesa-oksanen-12/"
+  ],
+  [
+   "2026-10-02",
+   "02:10",
+   "Wimme & Rinne",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/wimme-rinne/"
+  ],
+  [
+   "2026-10-02",
+   "19:00",
+   "Live recording: A European Requiem",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/live-recording-of-the-concert-a-european-requiem/"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Wimme & Rinne",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/wimme-rinne-2"
   ],
   [
    "2026-10-02",
@@ -3550,6 +2037,105 @@
    "https://www.meteli.net/tapahtuma/lost-in-music-ab-keiju-f"
   ],
   [
+   "2026-10-02",
+   "",
+   "Lost In Music: Vauxdeville, Us",
+   "Maanalainen",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-vauxdeville-us"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: Aizhan Sultan, Nicholas Francett, Leija Lautamaja",
+   "O'Connell's",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-aizhan-sultan-nicholas-francett-leija-lautamaja"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: Onni Rajaniemi, Nina Kaitaranta, Ricky Kotka, Tero-Petri & Korvaamattomat",
+   "Paapan Kapakka",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-onni-rajaniemi-nina-kaitaranta-ricky-kotka-tero-petri-korvaamattomat"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music – Rare Rave Café: DJ:t Nasty Nikke, Rimpelä",
+   "Tavara-asema",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-rare-rave-cafe-djt-nasty-nikke-rimpela"
+  ],
+  [
+   "2026-10-03",
+   "03:10",
+   "Dead By April (SWE) + special guest: Cyhra (SWE) & support: Balance Breach",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dead-by-april-swe-special-guest-cyhra-swe-support-balance-breach/"
+  ],
+  [
+   "2026-10-03",
+   "03:10",
+   "Heikki Hela",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/heikki-hela/"
+  ],
+  [
+   "2026-10-03",
+   "03:10",
+   "EMO ROMANSE: My Chemical Romance -ilta",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/emo-romanse-my-chemical-romance/"
+  ],
+  [
+   "2026-10-03",
+   "03:10",
+   "Juri Lindeman soolona",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/juri-lindeman-soolona-2/"
+  ],
+  [
+   "2026-10-03",
+   "03:10",
+   "Vesa Oksanen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/vesa-oksanen-11/"
+  ],
+  [
+   "2026-10-03",
+   "03:10",
+   "Jari Uutela",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jari-uutela/"
+  ],
+  [
+   "2026-10-03",
+   "03:10",
+   "DJ Sara-Maaria",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-sara-maaria-6/"
+  ],
+  [
    "2026-10-03",
    "",
    "Lohdun lauluja: Nina Tapio & Petri Somer",
@@ -3577,6 +2163,42 @@
    "https://www.meteli.net/tapahtuma/rekami-2"
   ],
   [
+   "2026-10-04",
+   "04:10",
+   "Mike Oldfieldin musiikkia: The Best of Tubular Bells I, II & III",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mike-oldfieldin-musiikkia-the-best-of-tubular-bells-i-ii-iii/"
+  ],
+  [
+   "2026-10-04",
+   "04:10",
+   "The Best of Tubular Bells I, II & III",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/the-best-of-tubular-bells-i-ii-iii/"
+  ],
+  [
+   "2026-10-04",
+   "04:10",
+   "Kujakollin jamit",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kujakollin-jamit-2026-04-05-2026-05-03-2026-06-07-2026-07-05-2026-08-02-2026-09-06-2026-10-04/"
+  ],
+  [
+   "2026-10-04",
+   "15:00",
+   "Chamber Music Among Visual Art",
+   "Armo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/chamber-music-among-visual-art-martha-diamond/"
+  ],
+  [
    "2026-10-06",
    "",
    "G Liveslow: Lawrence English (AUS)",
@@ -3584,6 +2206,33 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/g-liveslow-lawrence-english-aus"
+  ],
+  [
+   "2026-10-07",
+   "07:10",
+   "Ilta Tampereella feat. Lohjan kaupunginorkesterin jousikvartetti",
+   "Tampere",
+   "classical",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ilta-tampereella-feat-lohjan-kaupunginorkesterin-jousikvartetti/"
+  ],
+  [
+   "2026-10-07",
+   "07:10",
+   "Kamarikuoro Näsi: The Sacred Veil",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kamarikuoro-nasi-the-sacred-veil/"
+  ],
+  [
+   "2026-10-07",
+   "07:10",
+   "Mirka’s Monarchy",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mirkas-monarchy-6/"
   ],
   [
    "2026-10-07",
@@ -3597,20 +2246,38 @@
   [
    "2026-10-07",
    "",
-   "Michael Monroe",
+   "Michael Monroe (akustinen)",
    "G Livelab Tampere",
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/michael-monroe-23"
   ],
   [
-   "2026-10-07",
-   "",
-   "OFF: Maailman onnellisin mies ke 7.10.2026 20",
-   "00 Teatteri Telakka",
+   "2026-10-08",
+   "08:10",
+   "Mikko Alatalo",
+   "Tampere",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-646"
+   "https://kohokohdat.fi/tampere/tapahtuma/mikko-alatalo/"
+  ],
+  [
+   "2026-10-08",
+   "08:10",
+   "Emma Salokoski & Jarmo Saari – Kaksin",
+   "Armo",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/emma-salokoski-jarmo-saari-kaksin/"
+  ],
+  [
+   "2026-10-08",
+   "08:10",
+   "Rahvaanmusiikin kerho: Tareq Abboushi, Nemat Battah",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/rahvaanmusiikin-kerho-tareq-abboushi-nemat-battah/"
   ],
   [
    "2026-10-08",
@@ -3631,6 +2298,78 @@
    "https://www.meteli.net/tapahtuma/vince-boncamperin-20-vuotistaiteilijajuhla"
   ],
   [
+   "2026-10-08",
+   "",
+   "Rahvaanmusiikin kerho: Tareq Abboushi, Nemat Battah",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/rahvaanmusiikin-kerho-tareq-abboushi-nemat-battah"
+  ],
+  [
+   "2026-10-09",
+   "09:10",
+   "Silent Disco",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07-2026-08-14-2026-08-21-2026-08-28-2026-09-04-2026-09-11-2026-09-18-2026-09-25-2026-10-02-2026-10-09/"
+  ],
+  [
+   "2026-10-09",
+   "09:10",
+   "Classic Rock Show – Linman & C/o",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/classic-rock-show-linman-c-o/"
+  ],
+  [
+   "2026-10-09",
+   "09:10",
+   "Mamba – Saa koskettaa",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mamba-saa-koskettaa/"
+  ],
+  [
+   "2026-10-09",
+   "09:10",
+   "A9 Live: Ville Leinonen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-ville-leinonen/"
+  ],
+  [
+   "2026-10-09",
+   "09:10",
+   "Frank Martini Party of the Century",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/frank-martini-party-of-the-century/"
+  ],
+  [
+   "2026-10-09",
+   "09:10",
+   "IRA",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ira-3/"
+  ],
+  [
+   "2026-10-09",
+   "19:00",
+   "Tampere Philharmonic Orchestra: Zarathustra",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/zarathustra/"
+  ],
+  [
    "2026-10-09",
    "",
    "Kun saksofoni palaa: Timo Lassy",
@@ -3649,49 +2388,1561 @@
    "https://www.meteli.net/tapahtuma/frank-martini-party-of-the-century"
   ],
   [
-   "2026-11-05",
+   "2026-10-09",
    "",
-   "Tehdas Teatteri: Extra-neitsyt evankeliumi to 5.11.2026 20",
-   "00 Teatteri Telakka",
+   "Tohtori Getto",
+   "Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-832"
+   "https://www.meteli.net/tapahtuma/tohtori-getto-8"
+  ],
+  [
+   "2026-10-10",
+   "10:10",
+   "Teerenpeli Tease: Horror & Tease Show",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/teerenpeli-tease-horror-tease-show/"
+  ],
+  [
+   "2026-10-10",
+   "10:10",
+   "Anssi Salmela Duo",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/anssi-salmela-duo/"
+  ],
+  [
+   "2026-10-10",
+   "10:10",
+   "Desert Beagle",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/desert-beagle-2/"
+  ],
+  [
+   "2026-10-10",
+   "10:10",
+   "Moonlight Bandits",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/moonlight-bandits/"
+  ],
+  [
+   "2026-10-10",
+   "10:10",
+   "Jesse Kaikuranta",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jesse-kaikuranta/"
+  ],
+  [
+   "2026-10-10",
+   "10:10",
+   "Nyrkkitappelu",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/nyrkkitappelu-2/"
+  ],
+  [
+   "2026-10-10",
+   "10:10",
+   "Haystack (SWE), Loins, Som Är Död",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/haystack-swe-loins-som-ar-dod/"
+  ],
+  [
+   "2026-10-10",
+   "10:10",
+   "Kapitaatio",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kapitaatio-3/"
+  ],
+  [
+   "2026-10-10",
+   "10:10",
+   "Milleniaalidisko: dj:t Jiri & Mr. Willy",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/milleniaalidisko/"
+  ],
+  [
+   "2026-10-10",
+   "10:10",
+   "DJ:t Sami & Riku",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/djt-sami-riku/"
+  ],
+  [
+   "2026-10-10",
+   "14:00",
+   "Tampere Philharmonic Orchestra presents: Revel and Romantic Mischief",
+   "G Livelab Tampere",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/tpo-presents-entertainment-and-whisked-mischief/"
+  ],
+  [
+   "2026-10-10",
+   "",
+   "Jesse Kaikuranta",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/jesse-kaikuranta-4"
+  ],
+  [
+   "2026-10-10",
+   "",
+   "Viihdettä ja vispilänkauppaa: Tampere Filharmonia",
+   "G Livelab Tampere",
+   "classical",
+   0,
+   "https://www.meteli.net/tapahtuma/viihdetta-ja-vispilankauppaa-tampere-filharmonia"
+  ],
+  [
+   "2026-10-10",
+   "",
+   "Nyrkkitappelu, Aino & Hajonneet, Grillijono K.O.",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/nyrkkitappelu-aino-hajonneet-grillijono-k-o"
+  ],
+  [
+   "2026-10-10",
+   "",
+   "Nössö Nova",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/nosso-nova-9"
+  ],
+  [
+   "2026-10-10",
+   "",
+   "Control plays The Clash, DJ Kallio",
+   "Telakka",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/control-plays-the-clash-dj-kallio"
+  ],
+  [
+   "2026-10-13",
+   "",
+   "Jason Moran (USA)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/jason-moran-usa-2"
+  ],
+  [
+   "2026-10-14",
+   "14:10",
+   "Syyskissat",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/syyskissat/"
+  ],
+  [
+   "2026-10-14",
+   "14:10",
+   "Hardcore Superstar (SWE)",
+   "Tampere",
+   "metal",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hardcore-superstar-swe/"
+  ],
+  [
+   "2026-10-14",
+   "14:10",
+   "Wardruna: World Tour Part II",
+   "Tampere",
+   "folk",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/wardruna-world-tour-part-ii/"
+  ],
+  [
+   "2026-10-14",
+   "",
+   "Wardruna (NOR)",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/wardruna-nor-3"
+  ],
+  [
+   "2026-10-14",
+   "",
+   "GA-20 (USA)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/ga-20-usa-6"
+  ],
+  [
+   "2026-10-14",
+   "",
+   "Hardcore Superstar (SWE)",
+   "Tavara-asema",
+   "metal",
+   0,
+   "https://www.meteli.net/tapahtuma/hardcore-superstar-swe-2"
+  ],
+  [
+   "2026-10-15",
+   "15:10",
+   "Clearwater Creedence Revival – Fortunate Son Tour 2026",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/clearwater-creedence-revival-fortunate-son-tour-2026/"
+  ],
+  [
+   "2026-10-15",
+   "15:10",
+   "Tangos aumentados – tangon uusi ulottuvuus",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tangos-aumentados-tangon-uusi-ulottuvuus/"
+  ],
+  [
+   "2026-10-15",
+   "",
+   "Clearwater Creedence Revival (GBR)",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/clearwater-creedence-revival-gbr"
+  ],
+  [
+   "2026-10-15",
+   "",
+   "Absoluuttinen Nollapiste",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/absoluuttinen-nollapiste-11"
+  ],
+  [
+   "2026-10-16",
+   "16:10",
+   "Silent Disco",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07-2026-08-14-2026-08-21-2026-08-28-2026-09-04-2026-09-11-2026-09-18-2026-09-25-2026-10-02-2026-10-09-2026-10-16/"
+  ],
+  [
+   "2026-10-16",
+   "16:10",
+   "Viiden tähden -kiertue",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/viiden-tahden-kiertue/"
+  ],
+  [
+   "2026-10-16",
+   "16:10",
+   "Shorty Otis Blues Band",
+   "Tampere",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/shorty-otis-blues-band-3/"
+  ],
+  [
+   "2026-10-16",
+   "16:10",
+   "A9 Live: Ville LeinoBillie Joelinanen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-ville-leinobillie-joelinanen/"
+  ],
+  [
+   "2026-10-16",
+   "16:10",
+   "Tuomas Lehto",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tuomas-lehto-3/"
+  ],
+  [
+   "2026-10-16",
+   "16:10",
+   "Vallu Lukka",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/vallu-lukka-8/"
+  ],
+  [
+   "2026-10-16",
+   "16:10",
+   "Rane Raitsikka & Tokela",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/rane-raitsikka-tokela/"
+  ],
+  [
+   "2026-10-16",
+   "",
+   "Rane Raitsikka & Tokela",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/rane-raitsikka-tokela-3"
+  ],
+  [
+   "2026-10-16",
+   "",
+   "Absoluuttinen Nollapiste",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/absoluuttinen-nollapiste-9"
+  ],
+  [
+   "2026-10-16",
+   "",
+   "Lemmenpyssyt, Ghost of Bruce, Paulin Namidisco",
+   "Telakka",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/lemmenpyssyt-ghost-of-bruce-paulin-namidisco"
+  ],
+  [
+   "2026-10-16",
+   "",
+   "Skatemaniacs Crew 30 vuotta: SMC",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/skatemaniacs-crew-30-vuotta-smc"
+  ],
+  [
+   "2026-10-17",
+   "17:10",
+   "Lapsuuden sankarit -juhlakiertue – Miljoonasade 40 vuotta",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lapsuuden-sankarit-juhlakiertue-miljoonasade-40-vuotta/"
+  ],
+  [
+   "2026-10-17",
+   "17:10",
+   "Hector & Power Band",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hector-power-band/"
+  ],
+  [
+   "2026-10-17",
+   "17:10",
+   "Miljoonasade 40 vuotta: Lapsuuden sankarit -juhlakiertue",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/miljoonasade-40-vuotta-lapsuuden-sankarit-juhlakiertue/"
+  ],
+  [
+   "2026-10-17",
+   "17:10",
+   "Moon Shot",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/moon-shot/"
+  ],
+  [
+   "2026-10-17",
+   "17:10",
+   "Juuso Peippo",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/juuso-peippo-3/"
+  ],
+  [
+   "2026-10-17",
+   "17:10",
+   "K40-disco: DJ:t Sami & Antti",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/k40-disco-djt-sami-antti-4/"
+  ],
+  [
+   "2026-10-17",
+   "17:10",
+   "Andreas Rantala",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/andreas-rantala/"
+  ],
+  [
+   "2026-10-17",
+   "17:10",
+   "Jyrki Lepistö",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jyrki-lepisto/"
+  ],
+  [
+   "2026-10-17",
+   "17:10",
+   "Vallu Lukka",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/vallu-lukka-9/"
+  ],
+  [
+   "2026-10-17",
+   "17:10",
+   "Laura Närhi",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/laura-narhi-2/"
+  ],
+  [
+   "2026-10-17",
+   "17:10",
+   "Antti Toivola",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/antti-toivola-4/"
+  ],
+  [
+   "2026-10-17",
+   "",
+   "Laura Närhi",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/laura-narhi-6"
+  ],
+  [
+   "2026-10-17",
+   "",
+   "Laulustudio Kaj Chydenius esittää – Syleily",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/laulustudio-kaj-chydenius-esittaa-syleily"
+  ],
+  [
+   "2026-10-17",
+   "",
+   "Helmi Marleena",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/helmi-marleena-6"
+  ],
+  [
+   "2026-10-17",
+   "",
+   "K40-disco: DJ:t Sami & Antti",
+   "Tavara-asema",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/k40-disco-djt-sami-antti-22"
+  ],
+  [
+   "2026-10-17",
+   "",
+   "Chuck Berry 100: Del Futuras feat. Wiley Cousins",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/chuck-berry-100-del-futuras-feat-wiley-cousins"
+  ],
+  [
+   "2026-10-17",
+   "",
+   "Kisko-klubi",
+   "Ville Leinonen Asemamestari",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/kisko-klubi-ville-leinonen"
+  ],
+  [
+   "2026-10-18",
+   "18:10",
+   "Muistoissamme Tapani Kansa -Juhlakonsertti",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/muistoissamme-tapani-kansa-juhlakonsertti/"
+  ],
+  [
+   "2026-10-21",
+   "",
+   "Laura Moisio, Julia Rautamaa",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/laura-moisio-7"
+  ],
+  [
+   "2026-10-21",
+   "",
+   "Warner E. Hodges International All Stars feat. Stacie Collins (USA/SWE)",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/warner-e-hodges-international-all-stars-feat-stacie-collins-usa-swe"
+  ],
+  [
+   "2026-10-22",
+   "22:10",
+   "Suvi Teräsniska",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/suvi-terasniska-7/"
+  ],
+  [
+   "2026-10-22",
+   "",
+   "Jukka Haavisto – Löyly Syndicate",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/jukka-haavisto-loyly-syndicate"
+  ],
+  [
+   "2026-10-23",
+   "18:00",
+   "Concert for the whole family: Lost Key",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/concert-for-the-whole-family-lost-key/"
+  ],
+  [
+   "2026-10-23",
+   "23:10",
+   "Kaija Koo",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kaija-koo/"
+  ],
+  [
+   "2026-10-23",
+   "23:10",
+   "Silent Disco",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07-2026-08-14-2026-08-21-2026-08-28-2026-09-04-2026-09-11-2026-09-18-2026-09-25-2026-10-02-2026-10-09-2026-10-16-2026-10-23/"
+  ],
+  [
+   "2026-10-23",
+   "23:10",
+   "Happoradio, Kormus",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/happoradio-kormus-2/"
+  ],
+  [
+   "2026-10-23",
+   "23:10",
+   "Ilta – Ystävä-kiertue",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ilta-ystava-kiertue/"
+  ],
+  [
+   "2026-10-23",
+   "23:10",
+   "Solar Blue",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/solar-blue-2/"
+  ],
+  [
+   "2026-10-23",
+   "23:10",
+   "Kumikameli 40 & Sehr Schnell (LP-julkkarit) + Vihan Muna",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kumikameli-40-sehr-schnell-lp-julkkarit-vihan-muna/"
+  ],
+  [
+   "2026-10-23",
+   "23:10",
+   "Trubaduuri Henriksson",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/trubaduuri-henriksson-5/"
+  ],
+  [
+   "2026-10-23",
+   "23:10",
+   "MEGA K-40 Disco: Sami Kuronen ja DJ Salis",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mega-k-40-disco-sami-kuronen-ja-dj-salis/"
+  ],
+  [
+   "2026-10-23",
+   "",
+   "Tampere Opera: Her Voice",
+   "Tampere-talo",
+   "classical",
+   1,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/tampere-opera-her-voice-2/"
+  ],
+  [
+   "2026-10-23",
+   "",
+   "Happoradio, Kormus",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/happoradio-kormus"
+  ],
+  [
+   "2026-10-23",
+   "",
+   "Hiljaiset Levyt 40 vuotta -juhlakeikka: Hiljaiset All Stars, Dave Treganna Band, Pojat, Alivaltiosihteeri",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/hiljaiset-levyt-40-vuotta-juhlakeikka-hiljaiset-all-stars-dave-treganna-band-pojat-alivaltiosihteeri"
+  ],
+  [
+   "2026-10-23",
+   "",
+   "M",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/m-9"
+  ],
+  [
+   "2026-10-24",
+   "16:00",
+   "Mansetti parrasvaloissa",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mansetti-parrasvaloissa/"
+  ],
+  [
+   "2026-10-24",
+   "18:00",
+   "Jazz 100 vuotta-konsertti Finlaysonin Palatsilla: Bianca Morales ja Zhenia Gimer",
+   "Tampere",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jazz-100-vuotta-konsertti-finlaysonin-palatsilla-bianca-morales-ja-zhenia-gimer/"
+  ],
+  [
+   "2026-10-24",
+   "18:00",
+   "Juha Hostikka & Dallapé-orkesteri",
+   "Tampere",
+   "classical",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/juha-hostikka-dallape-orkesteri/"
+  ],
+  [
+   "2026-10-24",
+   "19:00",
+   "Arppa: Akustisesti saleissa",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/arppa-akustisesti-saleissa/"
+  ],
+  [
+   "2026-10-24",
+   "19:00",
+   "Samuli Putro",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/samuli-putro-4/"
+  ],
+  [
+   "2026-10-24",
+   "19:00",
+   "TuskaLive: Insomnium, Kaunis Kuolematon",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tuskalive-insomnium-kaunis-kuolematon/"
+  ],
+  [
+   "2026-10-24",
+   "20:00",
+   "Hermes Tuomisto",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hermes-tuomisto/"
+  ],
+  [
+   "2026-10-24",
+   "20:00",
+   "Lindholm & Uusilehto sekä Azorit Exprss",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lindholm-uusilehto-seka-azorit-exprss/"
+  ],
+  [
+   "2026-10-24",
+   "21:00",
+   "A9 Live: Annika Eklund",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-annika-eklund/"
+  ],
+  [
+   "2026-10-24",
+   "21:00",
+   "Trubaduuri Henriksson",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/trubaduuri-henriksson/"
+  ],
+  [
+   "2026-10-24",
+   "23:00",
+   "DJ:t Serial Kitty & Riku",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/djt-serial-kitty-riku/"
+  ],
+  [
+   "2026-10-24",
+   "",
+   "Rulla-klubi: Naattiorkesteri",
+   "G Livelab Tampere",
+   "classical",
+   0,
+   "https://www.meteli.net/tapahtuma/rulla-klubi-naattiorkesteri"
+  ],
+  [
+   "2026-10-24",
+   "",
+   "Insomnium",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/insomnium-5"
+  ],
+  [
+   "2026-10-24",
+   "",
+   "Mansen tähdet -konsertti Nokia Arenalla",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mansen-tahdet-konsertti-nokia-arenalla/"
+  ],
+  [
+   "2026-10-24",
+   "",
+   "Kebnekajse (SE)",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kebnekajse-se/"
+  ],
+  [
+   "2026-10-24",
+   "",
+   "Cursed Through Purgatory",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/cursed-through-purgatory/"
+  ],
+  [
+   "2026-10-24",
+   "",
+   "Janne Laurila",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/janne-laurila-2/"
+  ],
+  [
+   "2026-10-27",
+   "",
+   "Zucchero (IT)",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/zucchero-it/"
+  ],
+  [
+   "2026-10-28",
+   "19:00",
+   "Irkkujamit",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/irkkujamit-8/"
+  ],
+  [
+   "2026-10-28",
+   "19:00",
+   "Mikko Alatalo",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mikko-alatalo-3/"
+  ],
+  [
+   "2026-10-28",
+   "",
+   "Nektar (SWE)",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/nektar-swe"
+  ],
+  [
+   "2026-10-28",
+   "",
+   "Roamin Street Bandin Gumbo Club Huurteessa",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/roamin-street-bandin-gumbo-club-huurteessa-2-2026-10-28/"
+  ],
+  [
+   "2026-10-29",
+   "19:00",
+   "Black Devils – Hurriganes Show",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/black-devils-hurriganes-show/"
+  ],
+  [
+   "2026-10-29",
+   "",
+   "60 years of Jimi Hendrix: Room Full of Hendrix",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/60-years-of-jimi-hendrix-room-full-of-hendrix-3"
+  ],
+  [
+   "2026-10-30",
+   "18:00",
+   "Mariska | LOPPUUNMYYTY",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mariska-loppuunmyyty/"
+  ],
+  [
+   "2026-10-30",
+   "19:00",
+   "Tampere Philharmonic Orchestra: The Touch of Beauty",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/the-touch-of-beauty/"
+  ],
+  [
+   "2026-10-30",
+   "19:00",
+   "AHTI",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ahti-4/"
+  ],
+  [
+   "2026-10-30",
+   "21:00",
+   "Meirami",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/meirami/"
+  ],
+  [
+   "2026-10-30",
+   "21:00",
+   "Mika Peltonen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mika-peltonen-5/"
+  ],
+  [
+   "2026-10-30",
+   "",
+   "Eternal Erection",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/eternal-erection-11"
+  ],
+  [
+   "2026-10-30",
+   "",
+   "Ahti",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/ahti-23"
+  ],
+  [
+   "2026-10-30",
+   "",
+   "Silent Disco",
+   "Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/silent-disco-2026-07-03-2026-07-10-2026-07-17-2026-07-24-2026-07-31-2026-08-07-2026-08-14-2026-08-21-2026-08-28-2026-09-04-2026-09-11-2026-09-18-2026-09-25-2026-10-02-2026-10-09-2026-10-23-2026-10-30/"
+  ],
+  [
+   "2026-10-31",
+   "18:00",
+   "Amaranthe (SWE) + Self Deception, Ankor",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/amaranthe-swe-self-deception-ankor/"
+  ],
+  [
+   "2026-10-31",
+   "18:30",
+   "JARKKO MARTIKAINEN",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jarkko-martikainen/"
+  ],
+  [
+   "2026-10-31",
+   "20:00",
+   "Sanna Jäänvirta",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/sanna-jaanvirta-2/"
+  ],
+  [
+   "2026-10-31",
+   "21:00",
+   "Kesyt Jätkät",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kesyt-jatkat-3/"
+  ],
+  [
+   "2026-10-31",
+   "21:00",
+   "Mika Peltonen",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mika-peltonen/"
+  ],
+  [
+   "2026-10-31",
+   "22:00",
+   "KQ Groove",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kq-groove-3/"
+  ],
+  [
+   "2026-10-31",
+   "",
+   "Amaranthe (SWE), Self Deception (SWE), Ankor (ESP)",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/amaranthe-swe-self-deception-swe-ankor-esp-2"
+  ],
+  [
+   "2026-10-31",
+   "",
+   "DJ Kridlokk, JV",
+   "G Livelab Tampere",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/dj-kridlokk-jv"
+  ],
+  [
+   "2026-10-31",
+   "",
+   "Kivesveto GoGo, Sanktio",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/kivesveto-gogo-sanktio"
+  ],
+  [
+   "2026-10-31",
+   "",
+   "Goth Halloween: The Dark (US/GB) + TBA",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/goth-halloween-the-dark-us-gb-tba/"
+  ],
+  [
+   "2026-11-03",
+   "",
+   "Arkai (USA)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/arkai-usa"
+  ],
+  [
+   "2026-11-04",
+   "",
+   "Pekka Kuusisto & Gabriel Kahane (USA)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/pekka-kuusisto-gabriel-kahane-usa"
+  ],
+  [
+   "2026-11-05",
+   "",
+   "Yona",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/yona-21"
+  ],
+  [
+   "2026-11-05",
+   "",
+   "Rahvaanmusiikin kerho: Orffit",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/rahvaanmusiikin-kerho-orffit"
+  ],
+  [
+   "2026-11-06",
+   "09:45",
+   "Open Rehearsal",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a327689a7cd070007b2df8c&date=06.11.2026&time=09.45+-+13.00"
+  ],
+  [
+   "2026-11-06",
+   "19:00",
+   "Tampere Philharmonic Orchestra: In the Eye of the Storm",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/in-the-eye-of-the-storm/"
+  ],
+  [
+   "2026-11-06",
+   "",
+   "Saimaa",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/saimaa-29"
+  ],
+  [
+   "2026-11-06",
+   "",
+   "Risto",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/risto-11"
+  ],
+  [
+   "2026-11-07",
+   "",
+   "Walkin’ Blues: Dave Lindholm & Pepe Ahlqvist",
+   "TTT-Klubi",
+   "jazz",
+   0,
+   "https://www.meteli.net/tapahtuma/walkin-blues-dave-lindholm-pepe-ahlqvist"
+  ],
+  [
+   "2026-11-07",
+   "",
+   "Viikate, Krypta",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/viikate-krypta"
+  ],
+  [
+   "2026-11-07",
+   "",
+   "Aavikko, O Samuli A",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/aavikko-o-samuli-a-2"
+  ],
+  [
+   "2026-11-07",
+   "",
+   "Edicti",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/edicti-2"
+  ],
+  [
+   "2026-11-08",
+   "15:00",
+   "Afternoon of Fauns: Sonic Delight",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/afternoon-of-fauns-sonic-delight/"
+  ],
+  [
+   "2026-11-12",
+   "19:00",
+   "Tampere Philharmonic Orchestra: Water Music",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/water-music/"
+  ],
+  [
+   "2026-11-12",
+   "",
+   "Verneri Pohjola & Tuomo Prättälä",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/verneri-pohjola-tuomo-prattala-2"
+  ],
+  [
+   "2026-11-12",
+   "",
+   "Maija Vilkkumaa, Linda",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/maija-vilkkumaa-15"
+  ],
+  [
+   "2026-11-13",
+   "",
+   "Viivi",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/viivi-24"
+  ],
+  [
+   "2026-11-13",
+   "",
+   "Scottish Music Night: Dàimh (SCO), Rachel Hair & Ron Jappy (SCO)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/daimh-sco-rachel-hair-ron-jappy-sco"
+  ],
+  [
+   "2026-11-14",
+   "",
+   "Frigg",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/frigg"
+  ],
+  [
+   "2026-11-14",
+   "",
+   "Semmarit",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/semmarit-14"
+  ],
+  [
+   "2026-11-14",
+   "",
+   "Knipi",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/knipi-5"
+  ],
+  [
+   "2026-11-14",
+   "",
+   "K40-disco: DJ:t Sami & Antti",
+   "Tavara-asema",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/k40-disco-djt-sami-antti-23"
+  ],
+  [
+   "2026-11-14",
+   "",
+   "Kisko-klubi",
+   "Stenari Asemamestari",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/kisko-klubi-stenari"
   ],
   [
    "2026-11-18",
    "",
-   "Sorin Sirkus: Joulushow 2026 – Noctua ke 18.11.2026 20",
-   "00 Sorin Sirkus",
+   "Graham Bonnet Band (GBR),",
+   "Wishing Well Klubi",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-928"
+   "https://www.meteli.net/tapahtuma/graham-bonnet-band-gbr-wishing-well-3"
+  ],
+  [
+   "2026-11-18",
+   "",
+   "Viktoria Tolstoy & Jacob Karlzon (SWE)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/viktoria-tolstoy-jacob-karlzon-swe"
+  ],
+  [
+   "2026-11-18",
+   "",
+   "Canyon Lights (USA)",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/canyon-lights-usa"
+  ],
+  [
+   "2026-11-19",
+   "",
+   "Ricky-Tick Big Band & Julkinen Sana",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/ricky-tick-big-band-julkinen-sana-4"
+  ],
+  [
+   "2026-11-19",
+   "",
+   "Asla Jo, Saga Olsson",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/asla-jo-saga-olsson"
+  ],
+  [
+   "2026-11-20",
+   "18:00",
+   "Tchaikovsky: The Nutcracker – A Christmas Carol",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/tchaikovsky-the-nutcracker-a-christmas-carol/"
+  ],
+  [
+   "2026-11-20",
+   "",
+   "Timo Kahilainen feat. Heikki Hela & Just in Time",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/timo-kahilainen-feat-heikki-hela-just-in-time"
+  ],
+  [
+   "2026-11-20",
+   "",
+   "Benjamin",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/benjamin-18"
   ],
   [
    "2026-11-21",
    "",
-   "Kotae Expo 2026 la 21.11.2026 20",
-   "00 Tampereen Messu- ja Urheilukeskus",
+   "Us",
+   "Telakka",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-949"
+   "https://www.meteli.net/tapahtuma/us-2"
   ],
   [
-   "2027-02-01",
+   "2026-11-21",
    "",
-   "Magda G - Valtakunnan äiti ma 1.2.2027 20",
-   "00 Vooninki",
+   "60-vuotisjuhlakonsertti: Mika Maijala",
+   "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1104"
+   "https://www.meteli.net/tapahtuma/60-vuotisjuhlakonsertti-mika-maijala"
   ],
   [
-   "2027-06-18",
+   "2026-11-25",
    "",
-   "Ankea Festival pe 18.6.2027 20",
-   "00 Hiedanrannan Tehdasaukio",
-   "festival",
+   "Johanna Iivanainen 50v -juhlakonsertti",
+   "G Livelab Tampere",
+   "rock",
    0,
-   "https://keikat.org/ankea-hiedanrannan-1123"
+   "https://www.meteli.net/tapahtuma/johanna-iivanainen-50v-juhlakonsertti"
+  ],
+  [
+   "2026-11-26",
+   "",
+   "Vapaat äänet 30 vuotta: Lotus Flowers trio, Antti Lötjönen",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/vapaat-aanet-30-vuotta-lotus-flowers-trio-antti-lotjonen"
+  ],
+  [
+   "2026-11-26",
+   "",
+   "Tabula Rasa, Fantasia",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/tabula-rasa-fantasia"
+  ],
+  [
+   "2026-11-26",
+   "",
+   "Kissa,",
+   "Lala Salama Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/kissa-lala-salama"
+  ],
+  [
+   "2026-11-27",
+   "09:45",
+   "Open Rehearsal",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a327689a7cd070007b2df8c&date=27.11.2026&time=09.45+-+13.00"
+  ],
+  [
+   "2026-11-27",
+   "19:00",
+   "Tampere Philharmonic Orchestra: Romantic Favourites",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/romantic-favourites/"
+  ],
+  [
+   "2026-11-27",
+   "",
+   "Masa Orpana Honk",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/masa-orpana-honk-2"
+  ],
+  [
+   "2026-11-27",
+   "",
+   "Melancholy Mass: Sólstafir (ISL), Vorna, Cryptic Hatred,",
+   "Ashen Tomb Olympia",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/melancholy-mass-solstafir-isl-vorna-cryptic-hatred-ashen-tomb-2"
+  ],
+  [
+   "2026-11-28",
+   "",
+   "Die Oberherren (SWE), Dharma Guns, Rob Coffinshaker (SWE)",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/die-oberherren-swe-dharma-guns-rob-coffinshaker-swe"
+  ],
+  [
+   "2026-11-28",
+   "",
+   "Stam1na,",
+   "Stoned Statues Pakkahuone",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/stam1na-stoned-statues-6"
+  ],
+  [
+   "2026-11-28",
+   "",
+   "Costi, Uu$er",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/costi-uuer-3"
+  ],
+  [
+   "2026-12-04",
+   "19:00",
+   "Opera Gala",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/opera-gala/"
+  ],
+  [
+   "2026-12-04",
+   "",
+   "Granfelt & Nikku Classic Guitar Rock",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/granfelt-nikku-classic-guitar-rock-2"
+  ],
+  [
+   "2026-12-04",
+   "",
+   "Blues Pills (SWE), Graveyard (SWE)",
+   "Tavara-asema",
+   "jazz",
+   0,
+   "https://www.meteli.net/tapahtuma/blues-pills-swe-graveyard-swe"
+  ],
+  [
+   "2026-12-11",
+   "19:00",
+   "Waltteri Torikka & Tampere Philharmonic: Christmas Concert",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/waltteri-torikka-tampere-philharmonic-christmas-concert/"
+  ],
+  [
+   "2026-12-13",
+   "15:00",
+   "Afternoon of Fauns: A Dancing Enchanted Forest",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/afternoon-of-fauns-a-dancing-enchanted-forest/"
+  ],
+  [
+   "2026-12-15",
+   "",
+   "Leavings-Orkesteri & Timo Rautiainen",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.meteli.net/tapahtuma/leavings-orkesteri-timo-rautiainen-20"
+  ],
+  [
+   "2026-12-17",
+   "19:00",
+   "Tampere Philharmonic Orchestra: Santtu-Matias Rouvali & Alena Baeva",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/santtu-matias-rouvali-alena-baeva/"
+  ],
+  [
+   "2026-12-29",
+   "",
+   "Herrasmiehet Lavalla: Danny, Eino Grön, Pasi Kaunisto, Erkki Liikanen, Kai Hyttinen, Eikka Eronen, Jari Puhakka, Markku Veijalainen",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/herrasmiehet-lavalla-danny-eino-gron-pasi-kaunisto-erkki-liikanen-kai-hyttinen-eikka-eronen-jari-puhakka-markku-veijalainen-6"
+  ],
+  [
+   "2027-01-15",
+   "19:00",
+   "Tampere Philharmonic Orchestra: Season series concert",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a1597fa8811e40007efe310&date=15.01.2027&time=19.00+-+21.00"
+  ],
+  [
+   "2027-01-29",
+   "19:00",
+   "Tampere Philharmonic Orchestra: Season series concert",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a15997e8811e40007efe390&date=29.01.2027&time=19.00+-+21.00"
+  ],
+  [
+   "2027-02-05",
+   "19:00",
+   "Tampere Philharmonic Orchestra: Season series concert",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a159cb28811e40007efe519&date=05.02.2027&time=19.00+-+21.00"
+  ],
+  [
+   "2027-02-12",
+   "19:00",
+   "Tampere Philharmonic Orchestra: Season series concert",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a159ea7be620f0007b6dd84&date=12.02.2027&time=19.00+-+21.00"
+  ],
+  [
+   "2027-03-18",
+   "",
+   "The Halo Effect (SWE), Lacuna Coil (ITA),",
+   "Omnium Gatherum Pakkahuone",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/the-halo-effect-swe-lacuna-coil-ita-omnium-gatherum-2"
   ]
  ]
 }
