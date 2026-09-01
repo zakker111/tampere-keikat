@@ -18,3 +18,5 @@ JadaJada Improv Show
 Irish Bar O’Connell’s
 klo 20.00
 Ilmainen)
+TODO make sure we dont have duplicate events lets chose random site if dublikate occurs
+
