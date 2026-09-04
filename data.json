@@ -1,27 +1,18 @@
 {
- "generated": "2026-09-04 10:54 UTC",
+ "generated": "2026-09-04 11:16 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_org": "OK",
-  "tampere_filharmonia": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
+  "vastavirta": "OK",
+  "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "OK",
-  "vastavirta": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-09-04",
-   "12:00",
-   "Kirjastokaraoke",
-   "Tesoman kirjasto, Tesomankatu 4, 33310 Tampere",
-   "pop",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a240d53187d2f000740bb1e"
-  ],
   [
    "2026-09-04",
    "19:00",
@@ -66,6 +57,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/piritta-lumous-rock-band/"
+  ],
+  [
+   "2026-09-04",
+   "20:30",
+   "Piritta Lumous Rock Band",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.facebook.com/events/1077217488079448/"
   ],
   [
    "2026-09-04",
@@ -147,6 +147,15 @@
    "punk",
    0,
    "https://keikat.live/keikka/5936-the-angosturas-swe-korupuhe-otrok"
+  ],
+  [
+   "2026-09-04",
+   "21:00",
+   "MUSTA JUHLA : NNHMN (deu) (00.30), Spit Mask (usa/deu) (23.30), Miseria Ultima (21.30), Laua Rip (22.30)",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.facebook.com/events/1951426778770889/"
   ],
   [
    "2026-09-04",
@@ -276,6 +285,15 @@
   ],
   [
    "2026-09-05",
+   "18:00",
+   "MUSTA JUHLA : [di:unru:] (20.00), Gootti-visa (18.00)",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.facebook.com/events/1951426778770889/"
+  ],
+  [
+   "2026-09-05",
    "19:00",
    "Colin Hartley",
    "Tampere",
@@ -399,6 +417,24 @@
    "metal",
    0,
    "https://keikat.live/keikka/6019-cryptic-hatred-cumbeast-galvanizer"
+  ],
+  [
+   "2026-09-05",
+   "21:00",
+   "Musta Juhla : Cosey Mueller (deu) (00.30), Eat My Teeth (pol) (23.30), Nici Pop (deu) (22.30), Anthrax Fields (21.30)",
+   "Vastavirta-Klubi",
+   "hiphop",
+   0,
+   "https://www.facebook.com/events/1951426778770889/"
+  ],
+  [
+   "2026-09-05",
+   "21:00",
+   "Aika-avaruus : Dub-Experimental-Electronic-Cosmic : DJ Jere Dangerous / Vinyl set",
+   "Terassi Pub Yläkerta",
+   "electronic",
+   1,
+   "https://www.facebook.com/events/s/vastavirta-ylakerta-aika-avaru/1073959881808190/"
   ],
   [
    "2026-09-05",
@@ -546,6 +582,15 @@
   ],
   [
    "2026-09-06",
+   "18:00",
+   "MUSTA JUHLA : Gootti-Karaoke",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.facebook.com/events/1951426778770889/"
+  ],
+  [
+   "2026-09-06",
    "18:30",
    "Kujakollin jamit",
    "Tampere",
@@ -663,6 +708,15 @@
   ],
   [
    "2026-09-10",
+   "20:00",
+   "Perunapuffet DJs + kikkerikisat",
+   "Terassi Pub Yläkerta",
+   "electronic",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-09-10",
    "23:00",
    "DJ Petermayn",
    "Tampere",
@@ -696,6 +750,15 @@
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a327689a7cd070007b2df8c&date=11.09.2026&time=09.45+-+13.00"
+  ],
+  [
+   "2026-09-11",
+   "17:00",
+   "HULLU!KLUBI : Purkkapäivä (20.00), Gag Reflex (19.15), Roskis (18.30), Läppävika (17.45), 昨今 Sakkon (17.00)",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-09-11",
@@ -768,6 +831,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tuomas-lehto/"
+  ],
+  [
+   "2026-09-11",
+   "21:00",
+   "Cenotaph (mex), Cryptworm (uk), TONNE",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-09-11",
@@ -897,6 +969,15 @@
   ],
   [
    "2026-09-12",
+   "17:00",
+   "HULLU!KLUBI :  Spezial Number (20.15), Purran Lista (19.30), V-Osasto (18.30), ’Áháchí (17.45), Säärelä & Björqkvist-duo (17.00)",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-09-12",
    "18:00",
    "Jiri Nikkinen The Beatles Tribute Band",
    "Tampere",
@@ -978,6 +1059,15 @@
   ],
   [
    "2026-09-12",
+   "21:00",
+   "Força Macabra 35v show, Kovaa Rasvaa, The Carnival, Below the Graves",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.facebook.com/events/827134760055618/"
+  ],
+  [
+   "2026-09-12",
    "22:00",
    "Boris",
    "Tampere",
@@ -1056,6 +1146,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/hulluklubi-dark-bottle-lappavika-isojen-poikien-poyta-roskis-kikkailijat/"
+  ],
+  [
+   "2026-09-13",
+   "17:00",
+   "HULLU!KLUBI : Kikkailijat (20.15), Oma koloni (19.15), Isojen Poikien Pöytä (18.00), Sekamuotoinen Jakso (17.45), Dark Bottle (17.00)",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-09-13",
@@ -1158,6 +1257,15 @@
   ],
   [
    "2026-09-17",
+   "18:30",
+   "Joose Keskitalo & The Mystic Revelation Of Teppo Repo",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-09-17",
    "19:00",
    "Tommy Lindgren Metropolis – Sininen kaupunki Revisited",
    "Tampere",
@@ -1173,6 +1281,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/zargenzein-sleeth-tocka-magnolia/"
+  ],
+  [
+   "2026-09-17",
+   "20:30",
+   "Zargenzein, Sleeth, Tocka Magnolia",
+   "Vastavirta-Klubi",
+   "rock",
+   1,
+   "https://www.facebook.com/events/1412132050798253/"
   ],
   [
    "2026-09-17",
@@ -1227,6 +1344,24 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/rohee-musailta-mansen-tiikeri-eero-heinonen-maida-vale/"
+  ],
+  [
+   "2026-09-18",
+   "18:00",
+   "Rohee musailta : Mansen Tiikeri, Eero Heinonen, Maida Vale",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.facebook.com/events/912086771396830/"
+  ],
+  [
+   "2026-09-18",
+   "18:00",
+   "ELÄMÄ ON PUNK : Jorpakko, Häiriköt, Ne Koistiset,  Pakotie, Psykoterapia, yllätysesiintyjä. Terssi Hätä-Ratkaisu",
+   "Vastavirta-Klubi",
+   "metal",
+   0,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-09-18",
@@ -1428,12 +1563,39 @@
   ],
   [
    "2026-09-19",
+   "15:00",
+   "Ramosoppa : Pykimät duo, Komplikaatio, Teyo & Stindy plays Mopot",
+   "Vastavirta-Klubi",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-09-19",
    "18:00",
    "ELÄMÄ ON PUNK: Perseenpyyhkijät, Riemumaa, Sanktio, Pojat, No Ei!, V-osasto",
    "Tampere",
    "metal",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/elama-on-punk-perseenpyyhkijat-riemumaa-sanktio-pojat-no-ei-v-osasto/"
+  ],
+  [
+   "2026-09-19",
+   "18:00",
+   "ELÄMÄ ON PUNK : Perseenpyyhkijät, Riemumaa, Sanktio, Pojat, No Ei!, V-osasto",
+   "Vastavirta-Klubi",
+   "metal",
+   0,
+   "https://www.facebook.com/events/1420226296169401/"
+  ],
+  [
+   "2026-09-19",
+   "18:00",
+   "Sean & Mereau",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.facebook.com/events/3564063017103743/"
   ],
   [
    "2026-09-19",
@@ -1614,6 +1776,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/laula-elaman-puolesta/"
+  ],
+  [
+   "2026-09-20",
+   "18:00",
+   "Laula elämän puolesta : Tule laulamaan matalalla kynnyksellä ympäristöaiheisia tuttuja(kin) lauluja klo 18-20",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-09-21",
@@ -1797,6 +1968,15 @@
   ],
   [
    "2026-09-25",
+   "19:30",
+   "Decultivate (cz), Trigger (de), LiliXElbe (cz), Dehumanizer, Harmer, Massa",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-09-25",
    "20:00",
    "Black Magic Six, Ulf Wolf",
    "Tampere",
@@ -1812,6 +1992,15 @@
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/k40-disco-djt-sami-antti-3/"
+  ],
+  [
+   "2026-09-25",
+   "20:00",
+   "Black Magic Six, Ulf Wolf",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-09-25",
@@ -1974,6 +2163,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/maaseudun-tulevaisuus-juggling-jugulars-tappajatomaatit-saattohoito79/"
+  ],
+  [
+   "2026-09-26",
+   "19:30",
+   "Maaseudun Tulevaisuus, Juggling Jugulars, Tappajatomaatit, Saattohoito79",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-09-26",
@@ -2292,6 +2490,15 @@
   ],
   [
    "2026-10-01",
+   "19:00",
+   "Bad Jesus Experience, Planet Retaliates, Keretik",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-10-01",
    "20:00",
    "Music x Media 2026 to 1.10.2026",
    "Tampere-talo",
@@ -2478,6 +2685,15 @@
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/dynamic-event/live-recording-of-the-concert-a-european-requiem/"
+  ],
+  [
+   "2026-10-02",
+   "20:30",
+   "Agrimonia (swe), Kürøishi, Vivisektio, Kahtia",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-10-02",
@@ -2883,6 +3099,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/ira-3/"
+  ],
+  [
+   "2026-10-09",
+   "10:00",
+   "Asiakkaan päivä Sampolan kirjastossa",
+   "Sampolan kirjasto, Sammonkatu 2, 33540 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a75951951febb0007fb06cc"
   ],
   [
    "2026-10-09",
