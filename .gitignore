@@ -1,7 +1,4 @@
 ```
 # Log files
 *.log
-scrape_output.log
-scrape_summary.log
-server.log
 ```
