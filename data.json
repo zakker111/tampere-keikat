@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-04 11:56 UTC",
+ "generated": "2026-09-04 12:33 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
@@ -9,8 +9,8 @@
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
-  "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
-  "kohokohdat": "OK"
+  "kohokohdat": "OK",
+  "meteli": "NO_EVENTS_OR_PARSE_FAILURE"
  },
  "events": [
   [
