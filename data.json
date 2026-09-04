@@ -1,15 +1,15 @@
 {
- "generated": "2026-09-04 19:43 UTC",
+ "generated": "2026-09-04 19:56 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_live": "OK",
   "keikat_org": "OK",
   "vastavirta": "OK",
-  "keikat_live": "OK",
   "tampere_filharmonia": "OK",
-  "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_kirjastot": "OK",
+  "meteli": "OK",
   "kohokohdat": "OK"
  },
  "events": [
@@ -84,6 +84,51 @@
    "rock",
    0,
    "https://www.facebook.com/events/1951426778770889/"
+  ],
+  [
+   "2026-09-04",
+   "",
+   "Pintandwefall 20 vuotta!",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/pintandwefall-20-vuotta"
+  ],
+  [
+   "2026-09-04",
+   "",
+   "Pahisklubi: Ou’touhka, Afternoon Omens, DJ Punk Soul Brother",
+   "Kulttuuriravintola Railo",
+   "metal",
+   1,
+   "https://www.meteli.net/tapahtuma/pahisklubi-outouhka-afternoon-omens-dj-punk-soul-brother"
+  ],
+  [
+   "2026-09-04",
+   "",
+   "Live Music Afterwork: Jarie",
+   "Pub Simon",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/live-music-afterwork-jarie"
+  ],
+  [
+   "2026-09-04",
+   "",
+   "Sumuposauttaja Band",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/sumuposauttaja-band"
+  ],
+  [
+   "2026-09-04",
+   "",
+   "Vitun Iso Rotsi,",
+   "Timo Pieni Huijaus Olympia",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/vitun-iso-rotsi-timo-pieni-huijaus"
   ],
   [
    "2026-09-04",
@@ -187,6 +232,60 @@
   [
    "2026-09-05",
    "",
+   "Matti Johannes Koivu",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/matti-johannes-koivu-5"
+  ],
+  [
+   "2026-09-05",
+   "",
+   "Wasted 30-vuotisjuhlakeikka, Juggling Jugulars, Abduktio, Puhelinseksi",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/wasted-30-vuotisjuhlakeikka-juggling-jugulars-abduktio-puhelinseksi"
+  ],
+  [
+   "2026-09-05",
+   "",
+   "Honey B. & T-Bones",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/honey-b-t-bones-13"
+  ],
+  [
+   "2026-09-05",
+   "",
+   "Syskofrenia",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/syskofrenia"
+  ],
+  [
+   "2026-09-05",
+   "",
+   "Funebrarum (USA), Malformed, Pestigore",
+   "Varjobaari",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/funebrarum-usa-2"
+  ],
+  [
+   "2026-09-05",
+   "",
+   "Tuomiofest: Yöpuolia, Utopianisti, Pelkkä Poutanen, Silja Palomäki, Kaunis Veli,",
+   "Suurimot Bistro Vilja",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/tuomiofest"
+  ],
+  [
+   "2026-09-05",
+   "",
    "Moro Sky Bar DJ:t",
    "Moro Sky Bar",
    "electronic",
@@ -203,6 +302,15 @@
    "https://www.facebook.com/events/1951426778770889/"
   ],
   [
+   "2026-09-06",
+   "",
+   "Tohtori Kivimäen valinta: Hilja Grönfors Trio, Akkajee, Emmi Kuittinen",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/tohtori-kivimaen-valinnat-hilja-gronfors-trio-akkajee-emmi-kuittinen"
+  ],
+  [
    "2026-09-08",
    "17:00",
    "Työpaja: Äänittämisen perusteet",
@@ -210,6 +318,24 @@
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a2427c6a7cd070007ab6c21"
+  ],
+  [
+   "2026-09-09",
+   "",
+   "Fatboy (SWE)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/fatboy-swe-2"
+  ],
+  [
+   "2026-09-09",
+   "",
+   "Saara Suvanto muistoissamme: Pekka Nisu, Hanna Ekola, Martti Heikkilä, Make Tommila",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/saara-suvanto-muistoissamme-pekka-nisu-hanna-ekola-martti-heikkila-make-tommila"
   ],
   [
    "2026-09-10",
@@ -228,6 +354,15 @@
    "electronic",
    1,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-09-10",
+   "",
+   "Aarne Pelkonen",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/aarne-pelkonen-6"
   ],
   [
    "2026-09-11",
@@ -268,6 +403,51 @@
   [
    "2026-09-11",
    "",
+   "Touko, Viive",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/touko-viive-2"
+  ],
+  [
+   "2026-09-11",
+   "",
+   "Cenotaph (MEX), Cryptworm (GBR), Tonne",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/cenotaph-mex-cryptworm-gbr-tonne"
+  ],
+  [
+   "2026-09-11",
+   "",
+   "Uudenkuun Yö: Vermilia, Aether (POL), Folkrim",
+   "Bar Kotelo",
+   "folk",
+   0,
+   "https://www.meteli.net/tapahtuma/uudenkuun-yo-vermilia-aether-pol-folkrim"
+  ],
+  [
+   "2026-09-11",
+   "",
+   "Jahnukaiset 30-vuotisjuhlakonsertti",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/jahnukaiset-30-vuotisjuhlakonsertti"
+  ],
+  [
+   "2026-09-11",
+   "",
+   "Rokets, Gehenna Sour, Fuzzkills",
+   "Maanalainen",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/rokets-gehenna-sour-fuzzkills"
+  ],
+  [
+   "2026-09-11",
+   "",
    "Moro Sky Bar DJ:t",
    "Moro Sky Bar",
    "electronic",
@@ -304,6 +484,51 @@
   [
    "2026-09-12",
    "",
+   "Jukka Perko & Jay Kortehisto Foxtet",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/jukka-perko-jay-kortehisto-foxtet"
+  ],
+  [
+   "2026-09-12",
+   "",
+   "The Munsons",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/the-munsons-2"
+  ],
+  [
+   "2026-09-12",
+   "",
+   "Kanerva, Liila Jokelin",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/kanerva-liila-jokelin"
+  ],
+  [
+   "2026-09-12",
+   "",
+   "Tavara-asema <3 Ysäri: DJ:t Juissi & Jykke",
+   "Tavara-asema",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/tavara-asema-4"
+  ],
+  [
+   "2026-09-12",
+   "",
+   "Jambo,",
+   "Sara Bee Olympia",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/jambo-sara-bee"
+  ],
+  [
+   "2026-09-12",
+   "",
    "Moro Sky Bar DJ:t",
    "Moro Sky Bar",
    "electronic",
@@ -329,6 +554,15 @@
    "https://keikat.org/off-teatteri-256"
   ],
   [
+   "2026-09-14",
+   "",
+   "Nits (NLD)",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/nits-nld-3"
+  ],
+  [
    "2026-09-15",
    "12:30",
    "Runoja ja rokkia: Karoliina Blackburn ja Costello Hautamäki",
@@ -347,6 +581,15 @@
    "https://tapahtumat.tampere.fi/fi-FI/page/6a242c52187d2f000740d9a9"
   ],
   [
+   "2026-09-16",
+   "",
+   "Timo Kämäräinen",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/timo-kamarainen-3"
+  ],
+  [
    "2026-09-17",
    "18:30",
    "Joose Keskitalo & The Mystic Revelation Of Teppo Repo",
@@ -363,6 +606,33 @@
    "rock",
    1,
    "https://www.facebook.com/events/1412132050798253/"
+  ],
+  [
+   "2026-09-17",
+   "",
+   "Tommy Lindgren Metropolis",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/tommy-lindgren-metropolis"
+  ],
+  [
+   "2026-09-17",
+   "",
+   "Samae Koskinen",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/samae-koskinen-19"
+  ],
+  [
+   "2026-09-17",
+   "",
+   "Laulun Tekijät: Markus Perttula, April Skies",
+   "Atmos Taproom",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/laulun-tekijat-markus-perttula-april-skies"
   ],
   [
    "2026-09-18",
@@ -412,6 +682,51 @@
   [
    "2026-09-18",
    "",
+   "Koira",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/koira"
+  ],
+  [
+   "2026-09-18",
+   "",
+   "Tumppi Varonen – 70-vuotisjuhlakonsertti: Tumppi Varonen & Problems, Pelle Miljoona, Kärtsy Hatakka",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/tumppi-varonen-70-vuotisjuhlakonsertti-tumppi-varonen-problems-pelle-miljoona-kartsy-hatakka-2"
+  ],
+  [
+   "2026-09-18",
+   "",
+   "Polymoon, Sisar, Ether Eye",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/polymoon-sisar-ether-eye"
+  ],
+  [
+   "2026-09-18",
+   "",
+   "Kalevauva.fi",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/kalevauva-fi-7"
+  ],
+  [
+   "2026-09-18",
+   "",
+   "Teresia Von Storm, Elektric Rokband, Distant Horizon",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/teresia-von-storm-elektric-rokband-distant-horizon"
+  ],
+  [
+   "2026-09-18",
+   "",
    "Moro Sky Bar DJ:t",
    "Moro Sky Bar",
    "electronic",
@@ -457,6 +772,42 @@
   [
    "2026-09-19",
    "",
+   "Janna duo",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/janna-duo"
+  ],
+  [
+   "2026-09-19",
+   "",
+   "Lost Society, Hokka, St. Aurora",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-society-hokka-st-aurora"
+  ],
+  [
+   "2026-09-19",
+   "",
+   "Kalevauva.fi",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/kalevauva-fi-8"
+  ],
+  [
+   "2026-09-19",
+   "",
+   "Lowhill, Lightbearer, In Thorns",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lowhill-lightbearer-in-thorns"
+  ],
+  [
+   "2026-09-19",
+   "",
    "Moro Sky Bar DJ:t",
    "Moro Sky Bar",
    "electronic",
@@ -491,6 +842,33 @@
    "https://tapahtumat.tampere.fi/fi-FI/page/6a743c5551d559000726a138"
   ],
   [
+   "2026-09-23",
+   "",
+   "Hallowed Lungs – Pyhät keuhkot: Kimmo Pohjonen",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/hallowed-lungs-pyhat-keuhkot-kimmo-pohjonen"
+  ],
+  [
+   "2026-09-23",
+   "",
+   "Juha Saunala, MäSä Duo, M.I. Laine",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/juha-saunala-masa-duo-m-i-laine"
+  ],
+  [
+   "2026-09-24",
+   "",
+   "Wöyh!",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/woyh-12"
+  ],
+  [
    "2026-09-25",
    "19:00",
    "Tampere Philharmonic Orchestra: The Firebird",
@@ -520,6 +898,60 @@
   [
    "2026-09-25",
    "",
+   "Hanhiniemi-Rauhala M.A.D",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/hanhiniemi-rauhala-m-a-d-4"
+  ],
+  [
+   "2026-09-25",
+   "",
+   "Lemonator, Sugarrush",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lemonator-sugarrush"
+  ],
+  [
+   "2026-09-25",
+   "",
+   "Ilta",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/ilta-28"
+  ],
+  [
+   "2026-09-25",
+   "",
+   "K40-disco: DJ:t Sami & Antti",
+   "Tavara-asema",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/k40-disco-djt-sami-antti-21"
+  ],
+  [
+   "2026-09-25",
+   "",
+   "Soundrun, Cold Dogs",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/soundrun-cold-dogs"
+  ],
+  [
+   "2026-09-25",
+   "",
+   "Kätfish,",
+   "Kirkkovene Ihku",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/katfish-kirkkovene-2"
+  ],
+  [
+   "2026-09-25",
+   "",
    "Moro Sky Bar DJ:t",
    "Moro Sky Bar",
    "electronic",
@@ -534,6 +966,51 @@
    "rock",
    0,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-09-26",
+   "",
+   "Pekko Käppi & K:H:H:L",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/pekko-kappi-khhl-7"
+  ],
+  [
+   "2026-09-26",
+   "",
+   "Bitter/Sweet: Nomad Vocals",
+   "Kulttuuritalo Laikku",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/bitter-sweet-nomad-vocals-2"
+  ],
+  [
+   "2026-09-26",
+   "",
+   "Crazy Rock ’n Roll Night Alright: Gravecity Bandits, Manic Order, Danger Håt",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/crazy-rock-n-roll-night-alright-gravecity-bandits-manic-order-danger-hat"
+  ],
+  [
+   "2026-09-26",
+   "",
+   "Timo Rautiainen & Trio Niskalaukaus",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/timo-rautiainen-trio-niskalaukaus-6"
+  ],
+  [
+   "2026-09-26",
+   "",
+   "Hiljaiset levyt 40 Vuotta punkkia: Maaseudun tulevaisuus, Saattohoito79, Tappajatomaatit, Jugglin Jugulars",
+   "Vastavirta-Klubi",
+   "metal",
+   0,
+   "https://www.meteli.net/tapahtuma/hiljaiset-levyt-40-vuotta-punkkia-maaseudun-tulevaisuus-saattohoito79-tappajatomaatit-jugglin-jugulars"
   ],
   [
    "2026-09-26",
@@ -563,6 +1040,33 @@
    "https://tapahtumat.tampere.fi/fi-FI/page/6a758f2551febb0007fb01c6"
   ],
   [
+   "2026-09-29",
+   "",
+   "Stu Larsen (AUS), Imme (NLD), Julia Adriana (NLD)",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/stu-larsen-aus-imme-julia-adriana"
+  ],
+  [
+   "2026-09-30",
+   "",
+   "Becca Stevens (USA) & UMO Helsinki Jazz Orchestra",
+   "G Livelab Tampere",
+   "jazz",
+   0,
+   "https://www.meteli.net/tapahtuma/becca-stevens-usa-umo-helsinki-jazz-orchestra"
+  ],
+  [
+   "2026-09-30",
+   "",
+   "Samla Mammas Manna (SWE), Fysiikka & Kemia",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/samla-mammas-manna-swe-2"
+  ],
+  [
    "2026-10-01",
    "19:00",
    "Bad Jesus Experience, Planet Retaliates, Keretik",
@@ -579,6 +1083,51 @@
    "rock",
    0,
    "https://keikat.org/music-tampere-talo-475"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Lost In Music – by Lördag: Myrtsi, Kukkatalo, Ullalintulampi",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-by-lordag-myrtsi-kukkatalo-ullalintulampi"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Lost In Music: Raama, Ella Herold, Vet Pillows, Tuure Boelius",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-raama-ella-herold-vet-pillows-tuure-boelius"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Lost In Music: Fibi, Efka Crush, Hopeasiivet",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-fibi-efka-crush-hopeasiivet"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Lost In Music: Jutta Rahmel, Tyson Blu, Saarisalo",
+   "O'Connell's",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-jutta-rahmel-tyson-blu-saarisalo"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Lost In Music: Marita Närhi, Hulda Huima, Ani Harmi, Padelclub",
+   "Paapan Kapakka",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-marita-narhi-hulda-huima-ani-harmi-padelclub"
   ],
   [
    "2026-10-02",
@@ -608,6 +1157,78 @@
    "https://www.vastavirta.net"
   ],
   [
+   "2026-10-02",
+   "",
+   "Wimme & Rinne",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/wimme-rinne-2"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: Helmi Antila, Oiro Pena, Hot Heros",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-helmi-antila-oiro-pena-hot-heros"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: Emmi Lorentzen, Aaro630, Isaac Sene, Jami Faltin",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-emmi-lorentzen-aaro630-isaac-sene-jami-faltin"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: AB, Keiju, F",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-ab-keiju-f"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: Vauxdeville, Us",
+   "Maanalainen",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-vauxdeville-us"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: Aizhan Sultan, Nicholas Francett, Leija Lautamaja",
+   "O'Connell's",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-aizhan-sultan-nicholas-francett-leija-lautamaja"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: Onni Rajaniemi, Nina Kaitaranta, Ricky Kotka, Tero-Petri & Korvaamattomat",
+   "Paapan Kapakka",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-onni-rajaniemi-nina-kaitaranta-ricky-kotka-tero-petri-korvaamattomat"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music – Rare Rave Café: DJ:t Nasty Nikke, Rimpelä",
+   "Tavara-asema",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-rare-rave-cafe-djt-nasty-nikke-rimpela"
+  ],
+  [
    "2026-10-03",
    "",
    "Pääkirjasto Metso 40 vuotta -juhlaviikko",
@@ -615,6 +1236,33 @@
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a8d8b699c23460007282651"
+  ],
+  [
+   "2026-10-03",
+   "",
+   "Lohdun lauluja: Nina Tapio & Petri Somer",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lohdun-lauluja-nina-tapio-petri-somer"
+  ],
+  [
+   "2026-10-03",
+   "",
+   "Dead By April (SWE), Cyhra (SWE), Balance Breach",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/dead-by-april-swe-cyhra-swe-balance-breach-3"
+  ],
+  [
+   "2026-10-03",
+   "",
+   "Rekami, Kosmiset Liskot",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/rekami-2"
   ],
   [
    "2026-10-04",
@@ -635,6 +1283,15 @@
    "https://tapahtumat.tampere.fi/fi-FI/page/6a7ad89130345e0007a4a268"
   ],
   [
+   "2026-10-06",
+   "",
+   "G Liveslow: Lawrence English (AUS)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/g-liveslow-lawrence-english-aus"
+  ],
+  [
    "2026-10-07",
    "20:00",
    "OFF: Maailman onnellisin mies ke 7.10.2026",
@@ -644,6 +1301,24 @@
    "https://keikat.org/off-teatteri-534"
   ],
   [
+   "2026-10-07",
+   "",
+   "Elias Kaskinen",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/elias-kaskinen-5"
+  ],
+  [
+   "2026-10-07",
+   "",
+   "Michael Monroe (akustinen)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/michael-monroe-23"
+  ],
+  [
    "2026-10-08",
    "08:10",
    "Emma Salokoski & Jarmo Saari – Kaksin",
@@ -651,6 +1326,33 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/emma-salokoski-jarmo-saari-kaksin/"
+  ],
+  [
+   "2026-10-08",
+   "",
+   "Antti Railio",
+   "Kalevan kirkko",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/antti-railio-19"
+  ],
+  [
+   "2026-10-08",
+   "",
+   "Vince Boncamperin 20-vuotistaiteilijajuhla",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/vince-boncamperin-20-vuotistaiteilijajuhla"
+  ],
+  [
+   "2026-10-08",
+   "",
+   "Rahvaanmusiikin kerho: Tareq Abboushi, Nemat Battah",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/rahvaanmusiikin-kerho-tareq-abboushi-nemat-battah"
   ],
   [
    "2026-10-09",
@@ -671,6 +1373,33 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/zarathustra/"
   ],
   [
+   "2026-10-09",
+   "",
+   "Kun saksofoni palaa: Timo Lassy",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/kun-saksofoni-palaa-timo-lassy-2"
+  ],
+  [
+   "2026-10-09",
+   "",
+   "Frank Martini Party of the Century",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/frank-martini-party-of-the-century"
+  ],
+  [
+   "2026-10-09",
+   "",
+   "Tohtori Getto",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/tohtori-getto-8"
+  ],
+  [
    "2026-10-10",
    "14:00",
    "Tampere Philharmonic Orchestra presents: Revel and Romantic Mischief",
@@ -678,6 +1407,222 @@
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/dynamic-event/tpo-presents-entertainment-and-whisked-mischief/"
+  ],
+  [
+   "2026-10-10",
+   "",
+   "Jesse Kaikuranta",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/jesse-kaikuranta-4"
+  ],
+  [
+   "2026-10-10",
+   "",
+   "Viihdettä ja vispilänkauppaa: Tampere Filharmonia",
+   "G Livelab Tampere",
+   "classical",
+   0,
+   "https://www.meteli.net/tapahtuma/viihdetta-ja-vispilankauppaa-tampere-filharmonia"
+  ],
+  [
+   "2026-10-10",
+   "",
+   "Nyrkkitappelu, Aino & Hajonneet, Grillijono K.O.",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/nyrkkitappelu-aino-hajonneet-grillijono-k-o"
+  ],
+  [
+   "2026-10-10",
+   "",
+   "Nössö Nova",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/nosso-nova-9"
+  ],
+  [
+   "2026-10-10",
+   "",
+   "Control plays The Clash, DJ Kallio",
+   "Telakka",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/control-plays-the-clash-dj-kallio"
+  ],
+  [
+   "2026-10-13",
+   "",
+   "Jason Moran (USA)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/jason-moran-usa-2"
+  ],
+  [
+   "2026-10-14",
+   "",
+   "Wardruna (NOR)",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/wardruna-nor-3"
+  ],
+  [
+   "2026-10-14",
+   "",
+   "GA-20 (USA)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/ga-20-usa-6"
+  ],
+  [
+   "2026-10-14",
+   "",
+   "Hardcore Superstar (SWE)",
+   "Tavara-asema",
+   "metal",
+   0,
+   "https://www.meteli.net/tapahtuma/hardcore-superstar-swe-2"
+  ],
+  [
+   "2026-10-15",
+   "",
+   "Clearwater Creedence Revival (GBR)",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/clearwater-creedence-revival-gbr"
+  ],
+  [
+   "2026-10-15",
+   "",
+   "Absoluuttinen Nollapiste",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/absoluuttinen-nollapiste-11"
+  ],
+  [
+   "2026-10-16",
+   "",
+   "Rane Raitsikka & Tokela",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/rane-raitsikka-tokela-3"
+  ],
+  [
+   "2026-10-16",
+   "",
+   "Absoluuttinen Nollapiste",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/absoluuttinen-nollapiste-9"
+  ],
+  [
+   "2026-10-16",
+   "",
+   "Lemmenpyssyt, Ghost of Bruce, Paulin Namidisco",
+   "Telakka",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/lemmenpyssyt-ghost-of-bruce-paulin-namidisco"
+  ],
+  [
+   "2026-10-16",
+   "",
+   "Skatemaniacs Crew 30 vuotta: SMC",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/skatemaniacs-crew-30-vuotta-smc"
+  ],
+  [
+   "2026-10-17",
+   "",
+   "Laura Närhi",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/laura-narhi-6"
+  ],
+  [
+   "2026-10-17",
+   "",
+   "Laulustudio Kaj Chydenius esittää – Syleily",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/laulustudio-kaj-chydenius-esittaa-syleily"
+  ],
+  [
+   "2026-10-17",
+   "",
+   "Helmi Marleena",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/helmi-marleena-6"
+  ],
+  [
+   "2026-10-17",
+   "",
+   "K40-disco: DJ:t Sami & Antti",
+   "Tavara-asema",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/k40-disco-djt-sami-antti-22"
+  ],
+  [
+   "2026-10-17",
+   "",
+   "Chuck Berry 100: Del Futuras feat. Wiley Cousins",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/chuck-berry-100-del-futuras-feat-wiley-cousins"
+  ],
+  [
+   "2026-10-17",
+   "",
+   "Kisko-klubi",
+   "Ville Leinonen Asemamestari",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/kisko-klubi-ville-leinonen"
+  ],
+  [
+   "2026-10-21",
+   "",
+   "Laura Moisio, Julia Rautamaa",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/laura-moisio-7"
+  ],
+  [
+   "2026-10-21",
+   "",
+   "Warner E. Hodges International All Stars feat. Stacie Collins (USA/SWE)",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/warner-e-hodges-international-all-stars-feat-stacie-collins-usa-swe"
+  ],
+  [
+   "2026-10-22",
+   "",
+   "Jukka Haavisto – Löyly Syndicate",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/jukka-haavisto-loyly-syndicate"
   ],
   [
    "2026-10-23",
@@ -698,6 +1643,60 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/tampere-opera-her-voice-2/"
   ],
   [
+   "2026-10-23",
+   "",
+   "Happoradio, Kormus",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/happoradio-kormus"
+  ],
+  [
+   "2026-10-23",
+   "",
+   "Hiljaiset Levyt 40 vuotta -juhlakeikka: Hiljaiset All Stars, Dave Treganna Band, Pojat, Alivaltiosihteeri",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/hiljaiset-levyt-40-vuotta-juhlakeikka-hiljaiset-all-stars-dave-treganna-band-pojat-alivaltiosihteeri"
+  ],
+  [
+   "2026-10-23",
+   "",
+   "M",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/m-9"
+  ],
+  [
+   "2026-10-24",
+   "",
+   "Rulla-klubi: Naattiorkesteri",
+   "G Livelab Tampere",
+   "classical",
+   0,
+   "https://www.meteli.net/tapahtuma/rulla-klubi-naattiorkesteri"
+  ],
+  [
+   "2026-10-24",
+   "",
+   "Insomnium",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/insomnium-5"
+  ],
+  [
+   "2026-10-28",
+   "",
+   "Nektar (SWE)",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/nektar-swe"
+  ],
+  [
    "2026-10-29",
    "20:00",
    "Pakkahuone,",
@@ -705,6 +1704,15 @@
    "rock",
    0,
    "https://keikat.org/tampere-pakkahuone-764"
+  ],
+  [
+   "2026-10-29",
+   "",
+   "60 years of Jimi Hendrix: Room Full of Hendrix",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/60-years-of-jimi-hendrix-room-full-of-hendrix-3"
   ],
   [
    "2026-10-30",
@@ -716,6 +1724,69 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/the-touch-of-beauty/"
   ],
   [
+   "2026-10-30",
+   "",
+   "Eternal Erection",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/eternal-erection-11"
+  ],
+  [
+   "2026-10-30",
+   "",
+   "Ahti",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/ahti-23"
+  ],
+  [
+   "2026-10-31",
+   "",
+   "Amaranthe (SWE), Self Deception (SWE), Ankor (ESP)",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/amaranthe-swe-self-deception-swe-ankor-esp-2"
+  ],
+  [
+   "2026-10-31",
+   "",
+   "DJ Kridlokk, JV",
+   "G Livelab Tampere",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/dj-kridlokk-jv"
+  ],
+  [
+   "2026-10-31",
+   "",
+   "Kivesveto GoGo, Sanktio",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/kivesveto-gogo-sanktio"
+  ],
+  [
+   "2026-11-03",
+   "",
+   "Arkai (USA)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/arkai-usa"
+  ],
+  [
+   "2026-11-04",
+   "",
+   "Pekka Kuusisto & Gabriel Kahane (USA)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/pekka-kuusisto-gabriel-kahane-usa"
+  ],
+  [
    "2026-11-05",
    "20:00",
    "Tehdas Teatteri: Extra-neitsyt evankeliumi to 5.11.2026",
@@ -723,6 +1794,24 @@
    "rock",
    0,
    "https://keikat.org/tehdas-teatteri-820"
+  ],
+  [
+   "2026-11-05",
+   "",
+   "Yona",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/yona-21"
+  ],
+  [
+   "2026-11-05",
+   "",
+   "Rahvaanmusiikin kerho: Orffit",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/rahvaanmusiikin-kerho-orffit"
   ],
   [
    "2026-11-06",
@@ -743,6 +1832,60 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/in-the-eye-of-the-storm/"
   ],
   [
+   "2026-11-06",
+   "",
+   "Saimaa",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/saimaa-29"
+  ],
+  [
+   "2026-11-06",
+   "",
+   "Risto",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/risto-11"
+  ],
+  [
+   "2026-11-07",
+   "",
+   "Walkin’ Blues: Dave Lindholm & Pepe Ahlqvist",
+   "TTT-Klubi",
+   "jazz",
+   0,
+   "https://www.meteli.net/tapahtuma/walkin-blues-dave-lindholm-pepe-ahlqvist"
+  ],
+  [
+   "2026-11-07",
+   "",
+   "Viikate, Krypta",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/viikate-krypta"
+  ],
+  [
+   "2026-11-07",
+   "",
+   "Aavikko, O Samuli A",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/aavikko-o-samuli-a-2"
+  ],
+  [
+   "2026-11-07",
+   "",
+   "Edicti",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/edicti-2"
+  ],
+  [
    "2026-11-08",
    "15:00",
    "Afternoon of Fauns: Sonic Delight",
@@ -761,6 +1904,87 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/water-music/"
   ],
   [
+   "2026-11-12",
+   "",
+   "Verneri Pohjola & Tuomo Prättälä",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/verneri-pohjola-tuomo-prattala-2"
+  ],
+  [
+   "2026-11-12",
+   "",
+   "Maija Vilkkumaa, Linda",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/maija-vilkkumaa-15"
+  ],
+  [
+   "2026-11-13",
+   "",
+   "Viivi",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/viivi-24"
+  ],
+  [
+   "2026-11-13",
+   "",
+   "Scottish Music Night: Dàimh (SCO), Rachel Hair & Ron Jappy (SCO)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/daimh-sco-rachel-hair-ron-jappy-sco"
+  ],
+  [
+   "2026-11-14",
+   "",
+   "Frigg",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/frigg"
+  ],
+  [
+   "2026-11-14",
+   "",
+   "Semmarit",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/semmarit-14"
+  ],
+  [
+   "2026-11-14",
+   "",
+   "Knipi",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/knipi-5"
+  ],
+  [
+   "2026-11-14",
+   "",
+   "K40-disco: DJ:t Sami & Antti",
+   "Tavara-asema",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/k40-disco-djt-sami-antti-23"
+  ],
+  [
+   "2026-11-14",
+   "",
+   "Kisko-klubi",
+   "Stenari Asemamestari",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/kisko-klubi-stenari"
+  ],
+  [
    "2026-11-18",
    "20:00",
    "Sorin Sirkus: Joulushow 2026 – Noctua ke 18.11.2026",
@@ -768,6 +1992,51 @@
    "rock",
    0,
    "https://keikat.org/sorin-sorin-953"
+  ],
+  [
+   "2026-11-18",
+   "",
+   "Graham Bonnet Band (GBR),",
+   "Wishing Well Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/graham-bonnet-band-gbr-wishing-well-3"
+  ],
+  [
+   "2026-11-18",
+   "",
+   "Viktoria Tolstoy & Jacob Karlzon (SWE)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/viktoria-tolstoy-jacob-karlzon-swe"
+  ],
+  [
+   "2026-11-18",
+   "",
+   "Canyon Lights (USA)",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/canyon-lights-usa"
+  ],
+  [
+   "2026-11-19",
+   "",
+   "Ricky-Tick Big Band & Julkinen Sana",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/ricky-tick-big-band-julkinen-sana-4"
+  ],
+  [
+   "2026-11-19",
+   "",
+   "Asla Jo, Saga Olsson",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/asla-jo-saga-olsson"
   ],
   [
    "2026-11-20",
@@ -779,6 +2048,24 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/tchaikovsky-the-nutcracker-a-christmas-carol/"
   ],
   [
+   "2026-11-20",
+   "",
+   "Timo Kahilainen feat. Heikki Hela & Just in Time",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/timo-kahilainen-feat-heikki-hela-just-in-time"
+  ],
+  [
+   "2026-11-20",
+   "",
+   "Benjamin",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/benjamin-18"
+  ],
+  [
    "2026-11-21",
    "20:00",
    "Kotae Expo 2026 la 21.11.2026",
@@ -786,6 +2073,60 @@
    "rock",
    0,
    "https://keikat.org/kotae-tampereen-987"
+  ],
+  [
+   "2026-11-21",
+   "",
+   "Us",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/us-2"
+  ],
+  [
+   "2026-11-21",
+   "",
+   "60-vuotisjuhlakonsertti: Mika Maijala",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/60-vuotisjuhlakonsertti-mika-maijala"
+  ],
+  [
+   "2026-11-25",
+   "",
+   "Johanna Iivanainen 50v -juhlakonsertti",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/johanna-iivanainen-50v-juhlakonsertti"
+  ],
+  [
+   "2026-11-26",
+   "",
+   "Vapaat äänet 30 vuotta: Lotus Flowers trio, Antti Lötjönen",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/vapaat-aanet-30-vuotta-lotus-flowers-trio-antti-lotjonen"
+  ],
+  [
+   "2026-11-26",
+   "",
+   "Tabula Rasa, Fantasia",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/tabula-rasa-fantasia"
+  ],
+  [
+   "2026-11-26",
+   "",
+   "Kissa,",
+   "Lala Salama Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/kissa-lala-salama"
   ],
   [
    "2026-11-27",
@@ -806,6 +2147,51 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/romantic-favourites/"
   ],
   [
+   "2026-11-27",
+   "",
+   "Masa Orpana Honk",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/masa-orpana-honk-2"
+  ],
+  [
+   "2026-11-27",
+   "",
+   "Melancholy Mass: Sólstafir (ISL), Vorna, Cryptic Hatred,",
+   "Ashen Tomb Olympia",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/melancholy-mass-solstafir-isl-vorna-cryptic-hatred-ashen-tomb-2"
+  ],
+  [
+   "2026-11-28",
+   "",
+   "Die Oberherren (SWE), Dharma Guns, Rob Coffinshaker (SWE)",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/die-oberherren-swe-dharma-guns-rob-coffinshaker-swe"
+  ],
+  [
+   "2026-11-28",
+   "",
+   "Stam1na,",
+   "Stoned Statues Pakkahuone",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/stam1na-stoned-statues-6"
+  ],
+  [
+   "2026-11-28",
+   "",
+   "Costi, Uu$er",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/costi-uuer-3"
+  ],
+  [
    "2026-12-04",
    "19:00",
    "Opera Gala",
@@ -813,6 +2199,24 @@
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/dynamic-event/opera-gala/"
+  ],
+  [
+   "2026-12-04",
+   "",
+   "Granfelt & Nikku Classic Guitar Rock",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/granfelt-nikku-classic-guitar-rock-2"
+  ],
+  [
+   "2026-12-04",
+   "",
+   "Blues Pills (SWE), Graveyard (SWE)",
+   "Tavara-asema",
+   "jazz",
+   0,
+   "https://www.meteli.net/tapahtuma/blues-pills-swe-graveyard-swe"
   ],
   [
    "2026-12-11",
@@ -833,6 +2237,15 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/afternoon-of-fauns-a-dancing-enchanted-forest/"
   ],
   [
+   "2026-12-15",
+   "",
+   "Leavings-Orkesteri & Timo Rautiainen",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.meteli.net/tapahtuma/leavings-orkesteri-timo-rautiainen-20"
+  ],
+  [
    "2026-12-17",
    "19:00",
    "Tampere Philharmonic Orchestra: Santtu-Matias Rouvali & Alena Baeva",
@@ -840,6 +2253,15 @@
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/dynamic-event/santtu-matias-rouvali-alena-baeva/"
+  ],
+  [
+   "2026-12-29",
+   "",
+   "Herrasmiehet Lavalla: Danny, Eino Grön, Pasi Kaunisto, Erkki Liikanen, Kai Hyttinen, Eikka Eronen, Jari Puhakka, Markku Veijalainen",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/herrasmiehet-lavalla-danny-eino-gron-pasi-kaunisto-erkki-liikanen-kai-hyttinen-eikka-eronen-jari-puhakka-markku-veijalainen-6"
   ],
   [
    "2027-01-15",
@@ -885,6 +2307,15 @@
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a159ea7be620f0007b6dd84&date=12.02.2027&time=19.00+-+21.00"
+  ],
+  [
+   "2027-03-18",
+   "",
+   "The Halo Effect (SWE), Lacuna Coil (ITA),",
+   "Omnium Gatherum Pakkahuone",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/the-halo-effect-swe-lacuna-coil-ita-omnium-gatherum-2"
   ]
  ]
 }
