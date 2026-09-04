@@ -1,7 +1,7 @@
 ```
-# Logs
+# Log files
 *.log
-
-# Environment
-.env.local
+scrape_output.log
+scrape_summary.log
+server.log
 ```

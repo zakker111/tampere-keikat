@@ -546,8 +546,20 @@ function toEvents(raw){
   return raw.map((r,i)=>({id:i,date:r[0],time:r[1],title:r[2],venue:r[3],genre:r[4],free:!!r[5],url:r[6]}));
 }
 
+// Safe Date Parser: Forces local interpretation of YYYY-MM-DD to avoid UTC shifting
+function parseDateLocal(dateStr) {
+    if (!dateStr) return null;
+    const parts = dateStr.split('-');
+    if (parts.length === 3) {
+        return new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+    }
+    const d = new Date(dateStr);
+    return isNaN(d.getTime()) ? null : d;
+}
+
 const now = new Date();
-const TODAY = now.toISOString().slice(0,10);
+// Use local date components to build TODAY string safely
+const TODAY = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2,'0') + '-' + String(now.getDate()).padStart(2,'0');
 const DOW = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
 const DOW_FULL = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -602,8 +614,10 @@ function escapeHtml(str){
 }
 
 function fmtDate(dateStr){
-  const d = new Date(dateStr+"T12:00:00");
-  return {dow: DOW[(d.getDay()+6)%7], dowFull: DOW_FULL[(d.getDay()+6)%7], day: d.getDate(), month: MONTHS[d.getMonth()]};
+  // Use local date parsing to avoid UTC shift issues
+  const d = parseDateLocal(dateStr);
+  if (!d) return {dow: "?", dowFull: "Unknown", day: 0, month: ""};
+  return {dow: DOW[d.getDay()], dowFull: DOW_FULL[d.getDay()], day: d.getDate(), month: MONTHS[d.getMonth()]};
 }
 
 function ticketHTML(ev){

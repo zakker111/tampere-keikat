@@ -1,16 +1,16 @@
 {
- "generated": "2026-09-04 12:33 UTC",
+ "generated": "2026-09-04 14:31 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
-  "keikat_org": "OK",
   "vastavirta": "OK",
+  "keikat_org": "OK",
   "tampere_filharmonia": "OK",
+  "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_kirjastot": "OK",
-  "kohokohdat": "OK",
-  "meteli": "NO_EVENTS_OR_PARSE_FAILURE"
+  "kohokohdat": "OK"
  },
  "events": [
   [
@@ -1316,7 +1316,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-353"
+   "https://keikat.org/koovee-spiral-354"
   ],
   [
    "2026-09-19",
@@ -1892,7 +1892,7 @@
    "Sammon uusi koulu",
    "rock",
    0,
-   "https://keikat.org/tampereen-sammon-460"
+   "https://keikat.org/tampereen-sammon-461"
   ],
   [
    "2026-09-29",
@@ -2000,7 +2000,7 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-479"
+   "https://keikat.org/music-tampere-talo-480"
   ],
   [
    "2026-10-01",
@@ -2306,7 +2306,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-536"
+   "https://keikat.org/off-teatteri-538"
   ],
   [
    "2026-10-08",
@@ -3017,7 +3017,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-765"
+   "https://keikat.org/tampere-pakkahuone-767"
   ],
   [
    "2026-10-30",
@@ -3143,7 +3143,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-821"
+   "https://keikat.org/tehdas-teatteri-823"
   ],
   [
    "2026-11-06",
@@ -3188,7 +3188,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-952"
+   "https://keikat.org/sorin-sorin-954"
   ],
   [
    "2026-11-20",
@@ -3206,7 +3206,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-998"
+   "https://keikat.org/kotae-tampereen-1000"
   ],
   [
    "2026-11-27",
@@ -3287,7 +3287,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1231"
+   "https://keikat.org/magda-vooninki-1235"
   ],
   [
    "2027-02-05",
