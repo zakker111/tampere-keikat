@@ -1,0 +1,63 @@
+
+========================================
+SCRAPE START
+========================================
+Running independent sources in parallel.
+Date range: 2026-09-04 -> 2027-03-23
+[fetch] attempt 1 for https://www.meteli.net/kaupunki/tampere failed: 403 Client Error: Forbidden for url: https://www.meteli.net/kaupunki/tampere
+[tamperefilharmonia page 1] parsed 24 events
+[puistokonsertit] parsed 0 events
+[puistokonsertit] COMPLETE — 0 events in 1.5s — NO_EVENTS_OR_PARSE_FAILURE
+[keikat.org] parsed 15 events
+[keikat_org] COMPLETE — 15 events in 1.8s — OK
+[fetch] attempt 2 for https://www.meteli.net/kaupunki/tampere failed: 403 Client Error: Forbidden for url: https://www.meteli.net/kaupunki/tampere
+[keikat_live] SOURCE OK — 17 events parsed
+[keikat_live] COMPLETE — 17 events in 2.4s — OK
+[tamperefilharmonia page 2] parsed 9 events
+[vastavirta] parsed 25 events
+  ✓ 2026-09-04 20:30 — Piritta Lumous Rock Band — Terassi Pub Yläkerta — https://www.facebook.com/events/1077217488079448/
+  ✓ 2026-09-04 21:00 — MUSTA JUHLA : NNHMN (deu) (00.30), Spit Mask (usa/deu) (23.30), Miseria Ultima (21.30), Laua Rip (22.30) — Vastavirta-Klubi — https://www.facebook.com/events/1951426778770889/
+  ✓ 2026-09-05 18:00 — MUSTA JUHLA : [di:unru:] (20.00), Gootti-visa (18.00) — Terassi Pub Yläkerta — https://www.facebook.com/events/1951426778770889/
+  ✓ 2026-09-05 21:00 — Musta Juhla : Cosey Mueller (deu) (00.30), Eat My Teeth (pol) (23.30), Nici Pop (deu) (22.30), Anthrax Fields (21.30) — Vastavirta-Klubi — https://www.facebook.com/events/1951426778770889/
+  ✓ 2026-09-05 21:00 — Aika-avaruus : Dub-Experimental-Electronic-Cosmic : DJ Jere Dangerous / Vinyl set — Terassi Pub Yläkerta — https://www.facebook.com/events/s/vastavirta-ylakerta-aika-avaru/1073959881808190/
+  ✓ 2026-09-06 18:00 — MUSTA JUHLA : Gootti-Karaoke — Terassi Pub Yläkerta — https://www.facebook.com/events/1951426778770889/
+  ✓ 2026-09-10 20:00 — Perunapuffet DJs + kikkerikisat — Terassi Pub Yläkerta — https://www.vastavirta.net
+  ✓ 2026-09-11 17:00 — HULLU!KLUBI : Purkkapäivä (20.00), Gag Reflex (19.15), Roskis (18.30), Läppävika (17.45), 昨今 Sakkon (17.00) — Terassi Pub Yläkerta — https://www.vastavirta.net
+  ✓ 2026-09-11 21:00 — Cenotaph (mex), Cryptworm (uk), TONNE — Vastavirta-Klubi — https://www.vastavirta.net
+  ✓ 2026-09-12 17:00 — HULLU!KLUBI :  Spezial Number (20.15), Purran Lista (19.30), V-Osasto (18.30), ’Áháchí (17.45), Säärelä & Björqkvist-duo (17.00) — Terassi Pub Yläkerta — https://www.vastavirta.net
+  ✓ 2026-09-12 21:00 — Força Macabra 35v show, Kovaa Rasvaa, The Carnival, Below the Graves — Vastavirta-Klubi — https://www.facebook.com/events/827134760055618/
+  ✓ 2026-09-13 17:00 — HULLU!KLUBI : Kikkailijat (20.15), Oma koloni (19.15), Isojen Poikien Pöytä (18.00), Sekamuotoinen Jakso (17.45), Dark Bottle (17.00) — Terassi Pub Yläkerta — https://www.vastavirta.net
+  ✓ 2026-09-17 18:30 — Joose Keskitalo & The Mystic Revelation Of Teppo Repo — Vastavirta-Klubi — https://www.vastavirta.net
+  ✓ 2026-09-17 20:30 — Zargenzein, Sleeth, Tocka Magnolia — Vastavirta-Klubi — https://www.facebook.com/events/1412132050798253/
+  ✓ 2026-09-18 18:00 — Rohee musailta : Mansen Tiikeri, Eero Heinonen, Maida Vale — Terassi Pub Yläkerta — https://www.facebook.com/events/912086771396830/
+  ✓ 2026-09-18 18:00 — ELÄMÄ ON PUNK : Jorpakko, Häiriköt, Ne Koistiset,  Pakotie, Psykoterapia, yllätysesiintyjä. Terssi Hätä-Ratkaisu — Vastavirta-Klubi — https://www.vastavirta.net
+  ✓ 2026-09-19 15:00 — Ramosoppa : Pykimät duo, Komplikaatio, Teyo & Stindy plays Mopot — Vastavirta-Klubi — https://www.vastavirta.net
+  ✓ 2026-09-19 18:00 — ELÄMÄ ON PUNK : Perseenpyyhkijät, Riemumaa, Sanktio, Pojat, No Ei!, V-osasto — Vastavirta-Klubi — https://www.facebook.com/events/1420226296169401/
+  ✓ 2026-09-19 18:00 — Sean & Mereau — Terassi Pub Yläkerta — https://www.facebook.com/events/3564063017103743/
+  ✓ 2026-09-20 18:00 — Laula elämän puolesta : Tule laulamaan matalalla kynnyksellä ympäristöaiheisia tuttuja(kin) lauluja klo 18-20 — Terassi Pub Yläkerta — https://www.vastavirta.net
+  ✓ 2026-09-25 19:30 — Decultivate (cz), Trigger (de), LiliXElbe (cz), Dehumanizer, Harmer, Massa — Vastavirta-Klubi — https://www.vastavirta.net
+  ✓ 2026-09-25 20:00 — Black Magic Six, Ulf Wolf — Terassi Pub Yläkerta — https://www.vastavirta.net
+  ✓ 2026-09-26 19:30 — Maaseudun Tulevaisuus, Juggling Jugulars, Tappajatomaatit, Saattohoito79 — Vastavirta-Klubi — https://www.vastavirta.net
+  ✓ 2026-10-01 19:00 — Bad Jesus Experience, Planet Retaliates, Keretik — Vastavirta-Klubi — https://www.vastavirta.net
+  ✓ 2026-10-02 20:30 — Agrimonia (swe), Kürøishi, Vivisektio, Kahtia — Vastavirta-Klubi — https://www.vastavirta.net
+[vastavirta] COMPLETE — 25 events in 3.9s — OK
+[fetch] attempt 3 for https://www.meteli.net/kaupunki/tampere failed: 403 Client Error: Forbidden for url: https://www.meteli.net/kaupunki/tampere
+[tamperefilharmonia] TOTAL parsed 33 events
+[tampere_filharmonia] COMPLETE — 33 events in 4.9s — OK
+[parse_month_page] skipping anchor without reliable date: title='Elämäni Biisi: tähtiartistit ja vieraat Tampereella' url=https://kohokohdat.fi/tampere/tapahtuma/elamani-biisi-tahtiartistit-ja-vieraat-tampereella-9/
+[fetch] attempt 4 for https://www.meteli.net/kaupunki/tampere failed: 403 Client Error: Forbidden for url: https://www.meteli.net/kaupunki/tampere
+[meteli page 1] FAILED: 403 Client Error: Forbidden for url: https://www.meteli.net/kaupunki/tampere | body: '<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; script-src &#39;nonce-UY3enH4FiiK7uBQzIi2oq4&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-s'
+[tampere_kirjastot] parsed 11 events
+  ✓ 2026-09-08 17:00 — Työpaja: Äänittämisen perusteet — Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere — https://tapahtumat.tampere.fi/fi-FI/page/6a2427c6a7cd070007ab6c21
+  ✓ 2026-09-10 18:00 — Kirjastokaraoke — Koilliskeskuksen kirjasto, Liikekatu 3, 33580 Tampere — https://tapahtumat.tampere.fi/fi-FI/page/6a240fdba7cd070007ab550e
+  ✓ 2026-09-12 13:00 — Runoja ja rokkia: Karoliina Blackburn ja Costello Hautamäki — Hervannan kirjasto, Insinöörinkatu 38, 33720 Tampere — https://tapahtumat.tampere.fi/fi-FI/page/6a2ff90a187d2f0007472192
+  ✓ 2026-09-15 12:30 — Runoja ja rokkia: Karoliina Blackburn ja Costello Hautamäki — Tesoman kirjasto, Tesomankatu 4, 33310 Tampere — https://tapahtumat.tampere.fi/fi-FI/page/6a2ff9d4187d2f000747220b
+  ✓ 2026-09-15 17:00 — Työpaja: Miksauksen ja jälkituotannon perusteet — Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere — https://tapahtumat.tampere.fi/fi-FI/page/6a242c52187d2f000740d9a9
+  ✓ 2026-09-23 18:00 — Lielahti LIVE: Hannibal & Lecters — Lielahden kirjasto, Antti Possin Kuja 1, 33400 Tampere — https://tapahtumat.tampere.fi/fi-FI/page/6a743c5551d559000726a138
+  ✓ 2026-09-29 13:00 — Yhteislaulutuokio — Koukkuniemen kirjasto, Ahlgrenin Puistokuja 2, 33180 Tampere — https://tapahtumat.tampere.fi/fi-FI/page/6a758f2551febb0007fb01c6
+  ✓ 2026-10-02 14:00 — Pasi Repo: Eino Leino sanoin ja sävelin — Koivistonkylän kirjasto, Lehvänkatu 9, 33820 Tampere — https://tapahtumat.tampere.fi/fi-FI/page/6a7ad6e2b9dcc3000713b89c
+  ✓ 2026-10-03 --:-- — Pääkirjasto Metso 40 vuotta -juhlaviikko — Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere — https://tapahtumat.tampere.fi/fi-FI/page/6a8d8b699c23460007282651
+  ✓ 2026-10-06 13:00 — Pasi Repo: Eino Leino sanoin ja sävelin — Messukylän kirjasto, Hintsankatu 1, 33560 Tampere — https://tapahtumat.tampere.fi/fi-FI/page/6a7ad89130345e0007a4a268
+  ✓ 2026-10-09 10:00 — Asiakkaan päivä Sampolan kirjastossa — Sampolan kirjasto, Sammonkatu 2, 33540 Tampere — https://tapahtumat.tampere.fi/fi-FI/page/6a75951951febb0007fb06cc
+[tampere_kirjastot] COMPLETE — 11 events in 12.7s — OK
+[playwright] attempt 1/2 for https://www.meteli.net/kaupunki/tampere failed: playwright fetch returned a challenge/empty page, not real content
