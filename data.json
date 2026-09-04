@@ -1,97 +1,16 @@
 {
- "generated": "2026-09-03 09:22 UTC",
+ "generated": "2026-09-04 07:04 UTC",
  "source_note": "Auto-scraped from 6 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_org": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_filharmonia": "OK",
   "keikat_live": "NO_EVENTS_OR_PARSE_FAILURE",
   "meteli": "OK",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-09-03",
-   "19:00",
-   "Tampere Philharmonic Orchestra: Kullervo",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/kullervo/"
-  ],
-  [
-   "2026-09-03",
-   "19:00",
-   "Issias Duo Selkä & Katwi",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/issias-duo-selka-katwi/"
-  ],
-  [
-   "2026-09-03",
-   "19:00",
-   "Jaakko Laitinen & Väärä Raha",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jaakko-laitinen-vaara-raha-3/"
-  ],
-  [
-   "2026-09-03",
-   "20:00",
-   "Mat McNerney",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/mat-mcnerney/"
-  ],
-  [
-   "2026-09-03",
-   "20:00",
-   "Rahvaanmusiikin kerho: Désirée Saarela, I Fäälan",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/rahvaanmusiikin-kerho-desiree-saarela-i-faalan/"
-  ],
-  [
-   "2026-09-03",
-   "21:00",
-   "A9 Live: Pasi Vainionperä",
-   "Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-pasi-vainionpera/"
-  ],
-  [
-   "2026-09-03",
-   "21:00",
-   "Country Club",
-   "Tampere",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/country-club-3/"
-  ],
-  [
-   "2026-09-03",
-   "",
-   "Jaakko Laitinen & Väärä Raha",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/jaakko-laitinen-vaara-raha-16"
-  ],
-  [
-   "2026-09-03",
-   "",
-   "Rahvaanmusiikin kerho: Désirée Saarela, I Fäälan",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/rahvaanmusiikin-kerho-desiree-saarela-i-faalan"
-  ],
   [
    "2026-09-04",
    "19:00",
@@ -972,7 +891,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-268"
+   "https://keikat.org/off-teatteri-260"
   ],
   [
    "2026-09-14",
@@ -1152,7 +1071,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-302"
+   "https://keikat.org/uudet-teatteri-295"
   ],
   [
    "2026-09-18",
@@ -1161,7 +1080,7 @@
    "Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-330"
+   "https://keikat.org/elämä-vastavirta-klub-314"
   ],
   [
    "2026-09-18",
@@ -1283,6 +1202,15 @@
   [
    "2026-09-18",
    "",
+   "Plevnan Oktoberfestit: Tallinn Brass",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-oktoberfestit-tallinn-brass-20/"
+  ],
+  [
+   "2026-09-18",
+   "",
    "The Clash Meets The Jam",
    "Tampere",
    "rock",
@@ -1350,7 +1278,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-360"
+   "https://keikat.org/koovee-spiral-352"
   ],
   [
    "2026-09-19",
@@ -1463,6 +1391,15 @@
   [
    "2026-09-19",
    "",
+   "Plevnan Oktoberfestit: Tallinn Brass",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-oktoberfestit-tallinn-brass-21/"
+  ],
+  [
+   "2026-09-19",
+   "",
    "Moro Sky Bar DJ:t",
    "Moro Sky Bar",
    "electronic",
@@ -1488,6 +1425,15 @@
    "https://kohokohdat.fi/tampere/tapahtuma/laula-elaman-puolesta/"
   ],
   [
+   "2026-09-21",
+   "",
+   "Plevnan Oktoberfestit: Tallinn Brass",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-oktoberfestit-tallinn-brass-22/"
+  ],
+  [
    "2026-09-22",
    "21:00",
    "Erik Aho trio",
@@ -1495,6 +1441,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/erik-aho-trio-4/"
+  ],
+  [
+   "2026-09-22",
+   "",
+   "Plevnan Oktoberfestit: Tallinn Brass",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-oktoberfestit-tallinn-brass-23/"
   ],
   [
    "2026-09-23",
@@ -1551,6 +1506,15 @@
    "https://kohokohdat.fi/tampere/tapahtuma/brian-charette-usa-mathias-sandberg-teppo-makynen/"
   ],
   [
+   "2026-09-23",
+   "",
+   "Plevnan Oktoberfestit: Tallinn Brass",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-oktoberfestit-tallinn-brass-24/"
+  ],
+  [
    "2026-09-24",
    "18:00",
    "Lauantain toivotut 90 vuotta",
@@ -1585,6 +1549,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/woyh-12"
+  ],
+  [
+   "2026-09-24",
+   "",
+   "Plevnan Oktoberfestit: Tallinn Brass",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-oktoberfestit-tallinn-brass-25/"
   ],
   [
    "2026-09-25",
@@ -1756,6 +1729,24 @@
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-25/"
+  ],
+  [
+   "2026-09-25",
+   "",
+   "Plevnan Oktoberfestit: Tallinn Brass",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-oktoberfestit-tallinn-brass-26/"
+  ],
+  [
+   "2026-09-25",
+   "",
+   "Oluthuoneen Oktoberfestit: Lavesaari trio",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-oktoberfestit-lavesaari-trio/"
   ],
   [
    "2026-09-26",
@@ -1931,6 +1922,24 @@
   [
    "2026-09-26",
    "",
+   "Plevnan Oktoberfestit: Tallinn Brass",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-oktoberfestit-tallinn-brass-27/"
+  ],
+  [
+   "2026-09-26",
+   "",
+   "Oluthuoneen Oktoberfestit: Lavesaari trio",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/oluthuoneen-oktoberfestit-lavesaari-trio/"
+  ],
+  [
+   "2026-09-26",
+   "",
    "Out Of Breath, Madella, Denshi, True Grit, Twisting Knives",
    "Tampere",
    "rock",
@@ -1962,7 +1971,7 @@
    "Sammon uusi koulu",
    "rock",
    0,
-   "https://keikat.org/tampereen-sammon-463"
+   "https://keikat.org/tampereen-sammon-457"
   ],
   [
    "2026-09-29",
@@ -2079,7 +2088,7 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-481"
+   "https://keikat.org/music-tampere-talo-476"
   ],
   [
    "2026-10-01",
@@ -2206,6 +2215,15 @@
    "hiphop",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/nousu-hip-hop-night-3/"
+  ],
+  [
+   "2026-10-02",
+   "02:10",
+   "Plevnan Oktoberfestit: Tallinn Brass",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-oktoberfestit-tallinn-brass-29/"
   ],
   [
    "2026-10-02",
@@ -2354,6 +2372,15 @@
   [
    "2026-10-03",
    "03:10",
+   "Plevnan Oktoberfestit: Tallinn Brass",
+   "Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/plevnan-oktoberfestit-tallinn-brass-28/"
+  ],
+  [
+   "2026-10-03",
+   "03:10",
    "Vesa Oksanen",
    "Tampere",
    "rock",
@@ -2484,7 +2511,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-538"
+   "https://keikat.org/off-teatteri-533"
   ],
   [
    "2026-10-07",
@@ -3528,7 +3555,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-765"
+   "https://keikat.org/tampere-pakkahuone-760"
   ],
   [
    "2026-10-29",
@@ -3726,7 +3753,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-824"
+   "https://keikat.org/tehdas-teatteri-816"
   ],
   [
    "2026-11-05",
@@ -3924,7 +3951,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-951"
+   "https://keikat.org/sorin-sorin-946"
   ],
   [
    "2026-11-18",
@@ -4005,7 +4032,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-981"
+   "https://keikat.org/kotae-tampereen-991"
   ],
   [
    "2026-11-21",
@@ -4221,7 +4248,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1223"
+   "https://keikat.org/magda-vooninki-1222"
   ],
   [
    "2027-02-05",
