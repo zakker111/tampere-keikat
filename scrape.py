@@ -19,6 +19,7 @@ import re
 import sys
 import time
 import datetime
+import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from sources.common import merge_events, venue_looks_valid, _print_final_events, log_possible_duplicates, sanitize_events
@@ -28,6 +29,17 @@ from sources.keikat_org import fetch_keikat_org
 from sources.puistokonsertit import fetch_puistokonsertit
 from sources.keikat_live import fetch_keikat_live
 from sources.tamperefilharmonia import fetch_tampere_filharmonia
+from sources.tampere_kirjastot import fetch_tampere_kirjastot
+from sources.vastavirta import fetch_vastavirta
+
+# Set up logging to file
+logging.basicConfig(
+    filename='scrape.log',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
+logger = logging.getLogger(__name__)
 
 
 def _run_source(name, func):
@@ -37,11 +49,15 @@ def _run_source(name, func):
         events = func()
         elapsed = time.monotonic() - started
         status = "OK" if events else "NO_EVENTS_OR_PARSE_FAILURE"
-        print(f"[{name}] COMPLETE — {len(events)} events in {elapsed:.1f}s — {status}", file=sys.stderr)
+        msg = f"[{name}] COMPLETE — {len(events)} events in {elapsed:.1f}s — {status}"
+        print(msg, file=sys.stderr)
+        logger.info(msg)
         return name, events, status, None
     except Exception as exc:
         elapsed = time.monotonic() - started
-        print(f"[{name}] FAILED after {elapsed:.1f}s: {exc}", file=sys.stderr)
+        msg = f"[{name}] FAILED after {elapsed:.1f}s: {exc}"
+        print(msg, file=sys.stderr)
+        logger.error(msg)
         return name, [], "FAILED", f"{name}: {exc}"
 
 
@@ -81,6 +97,8 @@ def main():
         "puistokonsertit": [],
         "keikat_live": [],
         "tampere_filharmonia": [],
+        "tampere_kirjastot": [],
+        "vastavirta": [],
     }
 
     months_to_fetch = [(today.year, today.month)]
@@ -94,6 +112,7 @@ def main():
     print("\n========================================", file=sys.stderr)
     print("SCRAPE START", file=sys.stderr)
     print("========================================", file=sys.stderr)
+    logger.info("SCRAPE START")
     print("Running independent sources in parallel.", file=sys.stderr)
     print(f"Date range: {today.isoformat()} -> {(today + datetime.timedelta(days=200)).isoformat()}", file=sys.stderr)
 
@@ -106,6 +125,8 @@ def main():
         "puistokonsertit": fetch_puistokonsertit,
         "keikat_live": fetch_keikat_live,
         "tampere_filharmonia": fetch_tampere_filharmonia,
+        "tampere_kirjastot": fetch_tampere_kirjastot,
+        "vastavirta": fetch_vastavirta,
     }
 
     with ThreadPoolExecutor(max_workers=len(jobs), thread_name_prefix="source") as pool:
@@ -127,6 +148,8 @@ def main():
     puistokonsertit_events = source_events["puistokonsertit"]
     keikat_live_events = source_events["keikat_live"]
     tampere_filharmonia_events = source_events["tampere_filharmonia"]
+    tampere_kirjastot_events = source_events["tampere_kirjastot"]
+    vastavirta_events = source_events["vastavirta"]
 
     # First source wins when the same gig appears on multiple sites.
     # puistokonsertit and tampere_filharmonia go first: both have date/time
@@ -136,10 +159,12 @@ def main():
     all_events = merge_events(
         puistokonsertit_events,
         tampere_filharmonia_events,
+        tampere_kirjastot_events,
         meteli_events,
         kohokohdat_events,
         keikat_org_events,
         keikat_live_events,
+        vastavirta_events,
     )
 
     if not all_events:
@@ -191,7 +216,7 @@ def main():
     counts = {name: len(source_events[name]) for name in jobs}
     output = {
         "generated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "source_note": "Auto-scraped from 6 sources. Music gigs only — theatre/comedy filtered out.",
+        "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
         "errors": errors,
         "source_status": source_status,
         "events": filtered,
@@ -204,14 +229,35 @@ def main():
     print("\n========================================", file=sys.stderr)
     print("SCRAPE SUMMARY", file=sys.stderr)
     print("========================================", file=sys.stderr)
+    logger.info("SCRAPE SUMMARY")
+    summary_lines = []
     for name, count in counts.items():
-        print(f"  {name:22} {count:4d}  {source_status.get(name, 'UNKNOWN')}", file=sys.stderr)
-    print(f"  Parsed before final filter: {len(all_events):4d}", file=sys.stderr)
-    print(f"  Final events in JSON:       {len(filtered):4d}", file=sys.stderr)
-    print(f"  Sources parsed: {sum(1 for name in jobs if counts[name] > 0)}/{len(jobs)}", file=sys.stderr)
-    print(f"  Total runtime: {total_elapsed:.1f}s", file=sys.stderr)
-    print("  Output: data.json", file=sys.stderr)
+        line = f"  {name:22} {count:4d}  {source_status.get(name, 'UNKNOWN')}"
+        print(line, file=sys.stderr)
+        logger.info(line)
+        summary_lines.append(line)
+    
+    lines = [
+        f"  Parsed before final filter: {len(all_events):4d}",
+        f"  Final events in JSON:       {len(filtered):4d}",
+        f"  Sources parsed: {sum(1 for name in jobs if counts[name] > 0)}/{len(jobs)}",
+        f"  Total runtime: {total_elapsed:.1f}s",
+        "  Output: data.json"
+    ]
+    for line in lines:
+        print(line, file=sys.stderr)
+        logger.info(line)
+    
     _print_final_events(filtered)
+    
+    # Write summary to separate log file
+    with open('scrape_summary.log', 'w') as f:
+        f.write("SCRAPE SUMMARY\n")
+        f.write("========================================\n")
+        for line in summary_lines:
+            f.write(line + "\n")
+        for line in lines:
+            f.write(line + "\n")
 
 
 if __name__ == "__main__":

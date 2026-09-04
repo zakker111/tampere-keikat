@@ -1,0 +1,111 @@
+2026-09-04 07:30:18 - INFO - SCRAPE START
+2026-09-04 07:30:19 - INFO - [puistokonsertit] COMPLETE — 0 events in 1.3s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 07:30:19 - INFO - [keikat_live] COMPLETE — 0 events in 1.4s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 07:30:20 - INFO - [keikat_org] COMPLETE — 15 events in 2.0s — OK
+2026-09-04 07:30:21 - INFO - [vastavirta] COMPLETE — 26 events in 3.0s — OK
+2026-09-04 07:30:23 - INFO - [tampere_filharmonia] COMPLETE — 33 events in 4.8s — OK
+2026-09-04 07:30:27 - INFO - [tampere_kirjastot] COMPLETE — 11 events in 9.4s — OK
+2026-09-04 07:30:29 - INFO - [meteli] COMPLETE — 0 events in 10.9s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 07:32:21 - INFO - SCRAPE START
+2026-09-04 07:32:22 - INFO - [puistokonsertit] COMPLETE — 0 events in 1.1s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 07:32:22 - INFO - [keikat_live] COMPLETE — 0 events in 1.4s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 07:32:23 - INFO - [keikat_org] COMPLETE — 15 events in 1.9s — OK
+2026-09-04 07:32:24 - INFO - [vastavirta] COMPLETE — 26 events in 2.7s — OK
+2026-09-04 07:32:25 - INFO - [tampere_filharmonia] COMPLETE — 33 events in 4.0s — OK
+2026-09-04 07:32:31 - INFO - [meteli] COMPLETE — 0 events in 10.0s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 07:32:31 - INFO - [tampere_kirjastot] COMPLETE — 11 events in 10.1s — OK
+2026-09-04 07:34:20 - INFO - [kohokohdat] COMPLETE — 292 events in 119.6s — OK
+2026-09-04 07:36:24 - INFO - SCRAPE START
+2026-09-04 07:36:25 - INFO - [puistokonsertit] COMPLETE — 0 events in 1.0s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 07:36:26 - INFO - [keikat_live] COMPLETE — 0 events in 1.4s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 07:36:26 - INFO - [keikat_org] COMPLETE — 15 events in 2.0s — OK
+2026-09-04 07:36:28 - INFO - [vastavirta] COMPLETE — 26 events in 3.9s — OK
+2026-09-04 07:36:28 - INFO - [tampere_filharmonia] COMPLETE — 33 events in 4.1s — OK
+2026-09-04 07:36:34 - INFO - [tampere_kirjastot] COMPLETE — 11 events in 9.8s — OK
+2026-09-04 07:36:35 - INFO - [meteli] COMPLETE — 0 events in 10.2s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 07:38:47 - INFO - SCRAPE START
+2026-09-04 07:38:48 - INFO - [puistokonsertit] COMPLETE — 0 events in 1.1s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 07:38:50 - INFO - [vastavirta] COMPLETE — 26 events in 2.4s — OK
+2026-09-04 07:38:50 - INFO - [keikat_org] COMPLETE — 15 events in 2.6s — OK
+2026-09-04 07:38:50 - INFO - [keikat_live] COMPLETE — 0 events in 3.0s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 07:38:51 - INFO - [tampere_filharmonia] COMPLETE — 33 events in 4.1s — OK
+2026-09-04 07:38:58 - INFO - [meteli] COMPLETE — 0 events in 10.8s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 07:39:06 - INFO - [tampere_kirjastot] COMPLETE — 11 events in 18.1s — OK
+2026-09-04 07:42:27 - INFO - [kohokohdat] COMPLETE — 292 events in 220.0s — OK
+2026-09-04 07:42:27 - INFO - SCRAPE SUMMARY
+2026-09-04 07:42:27 - INFO -   kohokohdat              292  OK
+2026-09-04 07:42:27 - INFO -   meteli                    0  NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 07:42:27 - INFO -   keikat_org               15  OK
+2026-09-04 07:42:27 - INFO -   puistokonsertit           0  NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 07:42:27 - INFO -   keikat_live               0  NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 07:42:27 - INFO -   tampere_filharmonia      33  OK
+2026-09-04 07:42:27 - INFO -   tampere_kirjastot        11  OK
+2026-09-04 07:42:27 - INFO -   vastavirta               26  OK
+2026-09-04 07:42:27 - INFO -   Parsed before final filter:  372
+2026-09-04 07:42:27 - INFO -   Final events in JSON:        351
+2026-09-04 07:42:27 - INFO -   Sources parsed: 5/8
+2026-09-04 07:42:27 - INFO -   Total runtime: 220.1s
+2026-09-04 07:42:27 - INFO -   Output: data.json
+2026-09-04 08:32:57 - INFO - SCRAPE START
+2026-09-04 08:32:58 - INFO - [puistokonsertit] COMPLETE — 0 events in 1.1s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 08:32:58 - INFO - [keikat_live] COMPLETE — 0 events in 1.8s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 08:32:58 - INFO - [keikat_org] COMPLETE — 15 events in 1.9s — OK
+2026-09-04 08:32:59 - INFO - [vastavirta] COMPLETE — 25 events in 2.1s — OK
+2026-09-04 08:33:01 - INFO - [tampere_filharmonia] COMPLETE — 33 events in 4.2s — OK
+2026-09-04 08:33:07 - INFO - [meteli] COMPLETE — 0 events in 10.6s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 08:33:11 - INFO - [tampere_kirjastot] COMPLETE — 11 events in 14.7s — OK
+2026-09-04 08:40:47 - INFO - SCRAPE START
+2026-09-04 08:40:48 - INFO - [puistokonsertit] COMPLETE — 0 events in 1.0s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 08:40:48 - INFO - [keikat_live] COMPLETE — 0 events in 1.6s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 08:40:49 - INFO - [keikat_org] COMPLETE — 15 events in 2.2s — OK
+2026-09-04 08:40:50 - INFO - [vastavirta] COMPLETE — 25 events in 3.1s — OK
+2026-09-04 08:40:50 - INFO - [tampere_filharmonia] COMPLETE — 33 events in 3.8s — OK
+2026-09-04 08:40:57 - INFO - [tampere_kirjastot] COMPLETE — 11 events in 10.0s — OK
+2026-09-04 08:41:49 - INFO - [meteli] COMPLETE — 0 events in 62.3s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 08:51:41 - INFO - SCRAPE START
+2026-09-04 08:51:42 - INFO - [puistokonsertit] COMPLETE — 0 events in 1.3s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 08:51:43 - INFO - [keikat_org] COMPLETE — 15 events in 1.6s — OK
+2026-09-04 08:51:45 - INFO - [keikat_live] COMPLETE — 17 events in 3.6s — OK
+2026-09-04 08:51:45 - INFO - [vastavirta] COMPLETE — 25 events in 4.0s — OK
+2026-09-04 08:51:46 - INFO - [tampere_filharmonia] COMPLETE — 33 events in 4.9s — OK
+2026-09-04 08:51:53 - INFO - [tampere_kirjastot] COMPLETE — 11 events in 12.4s — OK
+2026-09-04 08:52:44 - INFO - [meteli] COMPLETE — 0 events in 62.7s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 08:59:29 - INFO - SCRAPE START
+2026-09-04 08:59:31 - INFO - [puistokonsertit] COMPLETE — 0 events in 1.3s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 08:59:32 - INFO - [keikat_live] COMPLETE — 17 events in 2.3s — OK
+2026-09-04 08:59:32 - INFO - [keikat_org] COMPLETE — 15 events in 2.4s — OK
+2026-09-04 08:59:33 - INFO - [vastavirta] COMPLETE — 25 events in 3.4s — OK
+2026-09-04 08:59:33 - INFO - [tampere_filharmonia] COMPLETE — 33 events in 3.9s — OK
+2026-09-04 08:59:40 - INFO - [tampere_kirjastot] COMPLETE — 11 events in 10.4s — OK
+2026-09-04 09:00:30 - INFO - [meteli] COMPLETE — 0 events in 60.9s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 09:01:32 - INFO - SCRAPE START
+2026-09-04 09:01:33 - INFO - [puistokonsertit] COMPLETE — 0 events in 1.0s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 09:01:34 - INFO - [keikat_live] COMPLETE — 17 events in 2.0s — OK
+2026-09-04 09:01:36 - INFO - [keikat_org] COMPLETE — 15 events in 3.8s — OK
+2026-09-04 09:01:37 - INFO - [tampere_filharmonia] COMPLETE — 33 events in 4.6s — OK
+2026-09-04 09:01:37 - INFO - [vastavirta] COMPLETE — 25 events in 5.1s — OK
+2026-09-04 09:01:46 - INFO - [tampere_kirjastot] COMPLETE — 11 events in 14.0s — OK
+2026-09-04 09:02:34 - INFO - [meteli] COMPLETE — 0 events in 61.8s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 10:16:14 - INFO - SCRAPE START
+2026-09-04 10:16:15 - INFO - [puistokonsertit] COMPLETE — 0 events in 1.3s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 10:16:16 - INFO - [vastavirta] COMPLETE — 25 events in 2.1s — OK
+2026-09-04 10:16:18 - INFO - [keikat_live] COMPLETE — 17 events in 4.3s — OK
+2026-09-04 10:16:18 - INFO - [keikat_org] COMPLETE — 15 events in 4.3s — OK
+2026-09-04 10:16:19 - INFO - [tampere_filharmonia] COMPLETE — 33 events in 5.5s — OK
+2026-09-04 10:16:28 - INFO - [tampere_kirjastot] COMPLETE — 11 events in 14.9s — OK
+2026-09-04 10:17:17 - INFO - [meteli] COMPLETE — 0 events in 63.3s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 10:18:27 - INFO - [kohokohdat] COMPLETE — 292 events in 133.7s — OK
+2026-09-04 10:18:27 - INFO - SCRAPE SUMMARY
+2026-09-04 10:18:27 - INFO -   kohokohdat              292  OK
+2026-09-04 10:18:27 - INFO -   meteli                    0  NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 10:18:27 - INFO -   keikat_org               15  OK
+2026-09-04 10:18:27 - INFO -   puistokonsertit           0  NO_EVENTS_OR_PARSE_FAILURE
+2026-09-04 10:18:27 - INFO -   keikat_live              17  OK
+2026-09-04 10:18:27 - INFO -   tampere_filharmonia      33  OK
+2026-09-04 10:18:27 - INFO -   tampere_kirjastot        11  OK
+2026-09-04 10:18:27 - INFO -   vastavirta               25  OK
+2026-09-04 10:18:27 - INFO -   Parsed before final filter:  388
+2026-09-04 10:18:27 - INFO -   Final events in JSON:        366
+2026-09-04 10:18:27 - INFO -   Sources parsed: 6/8
+2026-09-04 10:18:27 - INFO -   Total runtime: 133.8s
+2026-09-04 10:18:27 - INFO -   Output: data.json
