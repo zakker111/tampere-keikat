@@ -11,5 +11,5 @@ SCRAPE SUMMARY
   Parsed before final filter:  388
   Final events in JSON:        366
   Sources parsed: 6/8
-  Total runtime: 28.6s
+  Total runtime: 28.2s
   Output: data.json
