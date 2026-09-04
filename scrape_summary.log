@@ -1,6 +1,6 @@
 SCRAPE SUMMARY
 ========================================
-  kohokohdat              292  OK
+  kohokohdat               10  OK
   meteli                    0  NO_EVENTS_OR_PARSE_FAILURE
   keikat_org               15  OK
   puistokonsertit           0  NO_EVENTS_OR_PARSE_FAILURE
@@ -8,8 +8,8 @@ SCRAPE SUMMARY
   tampere_filharmonia      33  OK
   tampere_kirjastot        11  OK
   vastavirta               25  OK
-  Parsed before final filter:  388
-  Final events in JSON:        366
+  Parsed before final filter:  111
+  Final events in JSON:         97
   Sources parsed: 6/8
-  Total runtime: 28.2s
+  Total runtime: 20.5s
   Output: data.json
