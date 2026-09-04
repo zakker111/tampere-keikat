@@ -314,12 +314,19 @@ def parse_month_page(html, year, month):
                 continue
 
             time_str = parse_time(text) or event_time_hint
+            # Only include event if we found a real venue — "Tampere" alone is
+            # just a lazy fallback that produces useless listings (city name
+            # isn't a venue). Skip the event entirely rather than polluting
+            # the dataset with unactionable entries.
+            if not venue:
+                print(f"[parse_month_page] skipping anchor without venue: title={title!r} url={url}", file=sys.stderr)
+                continue
             events.append({
                 "date": date_str,
                 "time": time_str,
                 "title": title,
-                "venue": venue or "Tampere",
-                "genre": guess_genre(title, venue or "Tampere"),
+                "venue": venue,
+                "genre": guess_genre(title, venue),
                 "free": 0,
                 "url": url,
             })

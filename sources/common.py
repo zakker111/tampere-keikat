@@ -161,6 +161,9 @@ def venue_looks_valid(venue):
         return False
     if not re.search(r"[a-zA-ZåäöÅÄÖ]", v):
         return False
+    # Reject bare city names used as lazy fallbacks — these aren't actual venues
+    if v.lower() in ("tampere",):
+        return False
     return True
 
 
