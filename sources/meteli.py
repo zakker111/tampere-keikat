@@ -131,3 +131,8 @@ def fetch_meteli():
         page_num += 1
 
     return events
+
+
+def scrape():
+    """Entry point for the orchestrator."""
+    return fetch_meteli()

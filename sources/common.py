@@ -27,6 +27,13 @@ try:
 except Exception:
     PLAYWRIGHT_AVAILABLE = False
 
+# Optional playwright-stealth for better Cloudflare bypass
+try:
+    from playwright_stealth import stealth_sync
+    PLAYWRIGHT_STEALTH_AVAILABLE = True
+except Exception:
+    PLAYWRIGHT_STEALTH_AVAILABLE = False
+
 
 GENRE_KEYWORDS = {
     "metal":      ["metal", "punk", "hardcore", "black metal", "death metal", "core"],
@@ -296,6 +303,9 @@ def fetch_with_playwright_content(url, timeout=25000):
             pass
         page = context.new_page()
         try:
+            # Apply stealth if available to bypass Cloudflare bot detection
+            if PLAYWRIGHT_STEALTH_AVAILABLE:
+                stealth_sync(page)
             # networkidle never fires on a Cloudflare "Just a moment..."
             # challenge page — it has persistent background JS activity by
             # design, so networkidle guarantees a timeout every time the
@@ -337,6 +347,9 @@ def fetch_with_playwright_generic(url, timeout=25000, wait_selector=None):
             pass
         page = context.new_page()
         try:
+            # Apply stealth if available to bypass Cloudflare bot detection
+            if PLAYWRIGHT_STEALTH_AVAILABLE:
+                stealth_sync(page)
             page.goto(url, wait_until="domcontentloaded", timeout=timeout)
             if wait_selector:
                 try:

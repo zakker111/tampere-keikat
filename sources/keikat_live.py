@@ -1,19 +1,9 @@
 """
 keikat.live source scraper — independent Tampere calendar source.
 
-Rewritten against a REAL sample of the live page (confirmed via a real
-production run + a pasted snapshot), replacing an earlier version that
-was built entirely blind and, as expected, returned 0 events in practice.
-
-Real structure: each event renders as FOUR consecutive <a> tags all
-sharing the same href — genre tag, title, venue, then date/time, e.g.:
-    [Festari](url)
-    [Nousevan komiikan festivaali - Perjantaiklubi 18.00](url)
-    [Onda Music & Arts Café, Tampere](url)
-    [28.8.klo 18.00](url)
-Nothing like the "TITLE [GENRE] TITLE VENUE duplicated in one link" shape
-the old parser assumed — that guess was simply wrong, which is exactly
-why it silently returned zero rather than erroring.
+UPDATED: Site structure changed! Now uses single <a class="gig"> tags containing
+all event info (genre, title, venue, date/time) in one text blob.
+Pattern: "GENRE TITLE VENUE DATE klo TIME" or "TITLE GENRE TITLE VENUE Today/Tomorrow klo TIME"
 """
 import re
 import sys
@@ -29,18 +19,15 @@ from .common import (
 
 KEIKAT_LIVE_URL = "https://keikat.live/kaupunki/tampere"
 
-# keikat.live tags each event with its own genre label — trust that over
-# guessing from keywords in the title, since it's the site's own
-# classification. Falls back to guess_genre() for any label not listed here.
 KEIKAT_LIVE_GENRE_MAP = {
     "rock": "rock",
     "metal": "metal",
-    "punk": "metal",
-    "pop": "hiphop",
+    "punk": "punk",
+    "pop": "pop",
     "hip hop": "hiphop",
     "jazz": "jazz",
     "blues": "jazz",
-    "iskelmä": "hiphop",
+    "iskelmä": "folk",
     "folk": "folk",
     "reggae": "folk",
     "elektro / dj": "electronic",
@@ -48,69 +35,119 @@ KEIKAT_LIVE_GENRE_MAP = {
     "festari": "festival",
 }
 
-KEIKAT_LIVE_DATETIME_RE = re.compile(
-    r"(\d{1,2})\.(\d{1,2})\.\s*klo\s*([01]?\d|2[0-3])\.([0-5]\d)", re.IGNORECASE
-)
-
 
 def parse_keikat_live_page(html, year=None):
-    """Groups consecutive same-href anchors into 4-tuples: genre, title,
-    venue, date/time. Confirmed against one real example while building
-    this (a comedy-festival listing, correctly excluded below) — still
-    worth checking the per-source count after the first real run, since
-    one example isn't the same as broad coverage."""
+    """Parses keikat.live with new single-anchor format.
+    Each event is in one <a class="gig"> tag with text like:
+    "Musta Juhla Festari Musta Juhla Vastavirta-Klubi Tänään klo 19.00"
+    or "Tuomiofest Klassinen Festari Tuomiofest Hatanpään valtatie 40 Huomenna klo 15.00"
+    or "Band Name Genre Band Name Venue 5.9. klo 21.00"
+    """
     year = year or datetime.date.today().year
     today = datetime.date.today()
     soup = BeautifulSoup(html, "html.parser")
     events = []
     seen_urls = set()
-
-    anchors = soup.find_all("a", href=True)
-    i, n = 0, len(anchors)
-    while i < n:
-        href = anchors[i]["href"]
-        j = i + 1
-        while j < n and anchors[j]["href"] == href:
-            j += 1
-        group = anchors[i:j]
-
-        if len(group) >= 4:
-            genre_tag, title, venue_raw, dt_text = (
-                a.get_text(" ", strip=True) for a in group[:4]
-            )
-            dt_m = KEIKAT_LIVE_DATETIME_RE.match(dt_text)
-            if dt_m and title and venue_raw:
-                day, month = int(dt_m.group(1)), int(dt_m.group(2))
-                hh, mm = int(dt_m.group(3)), dt_m.group(4)
-                try:
-                    candidate = datetime.date(year, month, day)
-                    ev_year = year
-                    if candidate < today - datetime.timedelta(days=3):
-                        ev_year += 1
-                        candidate = datetime.date(ev_year, month, day)
-
-                    if not any(kw in f"{title} {genre_tag}".casefold() for kw in EXCLUDE_KEYWORDS):
-                        venue = re.sub(r",\s*Tampere\s*$", "", venue_raw, flags=re.IGNORECASE).strip() or venue_raw
-                        full_url = urljoin(KEIKAT_LIVE_URL, href)
-                        if full_url not in seen_urls and len(title) <= 180 and len(venue) <= 80:
-                            seen_urls.add(full_url)
-                            genre = KEIKAT_LIVE_GENRE_MAP.get(genre_tag.strip().casefold())
-                            if not genre:
-                                genre = guess_genre(title, venue)
-                            events.append({
-                                "date": candidate.isoformat(),
-                                "time": f"{hh:02d}:{mm}",
-                                "title": title,
-                                "venue": venue,
-                                "genre": genre,
-                                "free": 0,
-                                "url": full_url,
-                            })
-                except ValueError:
-                    pass
-
-        i = j if j > i else i + 1
-
+    
+    # Find all gig anchors (new format)
+    gig_anchors = soup.find_all("a", class_="gig")
+    
+    for a in gig_anchors:
+        href = a.get("href")
+        if not href:
+            continue
+            
+        text = a.get_text(" ", strip=True)
+        if not text or len(text) < 10:
+            continue
+            
+        full_url = urljoin(KEIKAT_LIVE_URL, href)
+        if full_url in seen_urls:
+            continue
+        
+        # Extract date/time - supports "Tänään", "Huomenna", or specific date
+        date_obj = None
+        time_str = None
+        
+        # Check for "Tänään klo HH.MM"
+        today_match = re.search(r'Tänään klo (\d{1,2}\.\d{2})', text)
+        if today_match:
+            date_obj = today
+            time_str = today_match.group(1)
+        else:
+            # Check for "Huomenna klo HH.MM"
+            tomorrow_match = re.search(r'Huomenna klo (\d{1,2}\.\d{2})', text)
+            if tomorrow_match:
+                date_obj = today + datetime.timedelta(days=1)
+                time_str = tomorrow_match.group(1)
+            else:
+                # Check for specific date "DD.DD. klo HH.MM"
+                date_match = re.search(r'(\d{1,2}\.\d{1,2}\.)\s+klo\s+(\d{1,2}\.\d{2})', text)
+                if date_match:
+                    day_month = date_match.group(1).rstrip('.')
+                    day, month = map(int, day_month.split('.'))
+                    time_str = date_match.group(2)
+                    
+                    try:
+                        candidate = datetime.date(year, month, day)
+                        # Handle year rollover
+                        if candidate < today - datetime.timedelta(days=3):
+                            candidate = datetime.date(year + 1, month, day)
+                        date_obj = candidate
+                    except ValueError:
+                        continue
+        
+        if not date_obj or not time_str:
+            continue
+        
+        # Extract genre (usually first word or phrase before title)
+        # Look for known genre keywords in text
+        genre = None
+        text_lower = text.lower()
+        for genre_key, genre_val in KEIKAT_LIVE_GENRE_MAP.items():
+            if genre_key in text_lower:
+                genre = genre_val
+                break
+        
+        if not genre:
+            genre = guess_genre(text, "")
+        
+        # Clean up title and venue
+        # Remove date/time parts from text for title extraction
+        clean_text = re.sub(r'(Tänään|Huomenna|\d{1,2}\.\d{1,2}\.)\s+klo\s+\d{1,2}\.\d{2}', '', text).strip()
+        
+        # Try to split into title and venue
+        # Usually pattern is: "Genre Title Venue" or "Title Genre Title Venue"
+        # Take first part as title, last part before date as venue
+        parts = clean_text.split()
+        if len(parts) >= 3:
+            # Heuristic: title is first 2-4 words, venue is last 1-3 words
+            venue = parts[-1] if len(parts) > 2 else clean_text
+            title = ' '.join(parts[:-1]) if len(parts) > 2 else clean_text
+        else:
+            title = clean_text
+            venue = "Tampere"
+        
+        # Skip excluded content
+        if any(kw in f"{title}".casefold() for kw in EXCLUDE_KEYWORDS):
+            continue
+        
+        # Limit lengths
+        if len(title) > 180 or len(venue) > 80:
+            continue
+            
+        seen_urls.add(full_url)
+        
+        events.append({
+            "date": date_obj.isoformat(),
+            "time": time_str.replace('.', ':'),
+            "title": title.strip(),
+            "venue": venue.strip(),
+            "genre": genre,
+            "free": 0,
+            "url": full_url,
+        })
+    
     return events
 
 
