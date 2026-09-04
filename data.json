@@ -1,27 +1,18 @@
 {
- "generated": "2026-09-04 10:18 UTC",
+ "generated": "2026-09-04 11:56 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
-  "vastavirta": "OK",
   "keikat_live": "OK",
   "keikat_org": "OK",
+  "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-09-04",
-   "12:00",
-   "Kirjastokaraoke",
-   "Tesoman kirjasto, Tesomankatu 4, 33310 Tampere",
-   "pop",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a240d53187d2f000740bb1e"
-  ],
   [
    "2026-09-04",
    "19:00",
@@ -2409,6 +2400,15 @@
   ],
   [
    "2026-10-09",
+   "10:00",
+   "Asiakkaan päivä Sampolan kirjastossa",
+   "Sampolan kirjasto, Sammonkatu 2, 33540 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a75951951febb0007fb06cc"
+  ],
+  [
+   "2026-10-09",
    "19:00",
    "Tampere Philharmonic Orchestra: Zarathustra",
    "Tampere-talo",
@@ -3188,7 +3188,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-951"
+   "https://keikat.org/sorin-sorin-952"
   ],
   [
    "2026-11-20",
@@ -3206,7 +3206,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-997"
+   "https://keikat.org/kotae-tampereen-998"
   ],
   [
    "2026-11-27",
@@ -3287,7 +3287,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1230"
+   "https://keikat.org/magda-vooninki-1231"
   ],
   [
    "2027-02-05",
