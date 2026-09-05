@@ -31,6 +31,7 @@ from sources.keikat_live import fetch_keikat_live
 from sources.tamperefilharmonia import fetch_tampere_filharmonia
 from sources.tampere_kirjastot import fetch_tampere_kirjastot
 from sources.vastavirta import fetch_vastavirta
+from utils.dedup import deduplicate_events
 
 # Set up logging to file
 logging.basicConfig(
@@ -175,6 +176,9 @@ def main():
     if not all_events:
         print("All events were malformed after sanitization — leaving existing data.json untouched.", file=sys.stderr)
         sys.exit(1)
+
+    # Deduplicate events across all sources before final filtering
+    all_events = deduplicate_events(all_events)
 
     log_possible_duplicates(all_events)
 
