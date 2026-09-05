@@ -7,9 +7,4 @@ __pycache__/
 
 # Logs
 *.log
-
-# Environment
-.env
-.env.local
-*.env.*
 ```
