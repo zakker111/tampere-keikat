@@ -111,7 +111,17 @@ def _forward_adjacent_text(el):
     but that reflects the PREVIOUS event's venue line, not this one's).
     Still refuses to follow into a block that itself contains another
     /tampere/tapahtuma/ link, since that means we've crossed into the next
-    event's card rather than still being in this one's."""
+    event's card rather than still being in this one's.
+    
+    Kohokohdat.fi uses an Event Espresso layout where the event title link
+    is inside an <h4>, and the venue info appears as siblings AFTER the <h4>:
+      <h4><a>Event Title</a></h4>
+      <i class="fa fa-map-marker"></i>
+      <b>City</b>
+      <a>Venue Name</a>
+    So we need to check both the anchor's own siblings AND the parent h4's
+    siblings if the anchor is wrapped in an h4."""
+    # First try: direct siblings of the anchor itself
     node = el.next_sibling
     hops = 0
     while node is not None and hops < 5:
@@ -128,6 +138,33 @@ def _forward_adjacent_text(el):
         if hasattr(node, "find") and node.find("a", href=lambda h: h and "/tampere/tapahtuma/" in h):
             return ""  # this block contains a different event's title link
         return node.get_text(" ", strip=True) if hasattr(node, "get_text") else ""
+    
+    # Second try: if anchor is inside an h4, check h4's siblings
+    # (this is the Event Espresso layout pattern used by kohokohdat.fi)
+    parent_h4 = el.find_parent("h4")
+    if parent_h4:
+        collected_parts = []
+        node = parent_h4.next_sibling
+        hops = 0
+        while node is not None and hops < 8:
+            hops += 1
+            name = getattr(node, "name", None)
+            if name is None:
+                # Skip whitespace text nodes, continue to next sibling
+                node = node.next_sibling
+                continue
+            # Stop if we hit another event anchor
+            if _is_event_anchor(node):
+                break
+            # Collect text from this sibling (including links that aren't event anchors)
+            txt = node.get_text(" ", strip=True) if hasattr(node, "get_text") else ""
+            if txt:
+                collected_parts.append(txt)
+            node = node.next_sibling
+        # Return all collected parts joined together
+        if collected_parts:
+            return " ".join(collected_parts)
+    
     return ""
 
 
