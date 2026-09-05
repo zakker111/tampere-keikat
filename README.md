@@ -7,28 +7,35 @@ A one-page gig guide for Tampere: list + calendar views, genre filters, mobile-f
 
 ```
 scrape.py              orchestrator only — no site-specific parsing logic here
+utils/
+  dedup.py             event deduplication: hash-based duplicate detection
 sources/
   common.py             shared helpers: HTTP/Playwright fetching, genre guessing,
-                         venue whitelist, date/time parsing, dedup logic
+                         venue whitelist, date/time parsing
   kohokohdat.py          kohokohdat.fi
   meteli.py              meteli.net
   keikat_org.py          keikat.org
   puistokonsertit.py     puistokonsertit.tampere.fi
   keikat_live.py         keikat.live
   tamperefilharmonia.py  tamperefilharmonia.fi
+  g_livelab.fi           g-livelab.fi
+  pakkahuone.py          tampere.pakkahuone.fi
+  tampere_kirjastot.py   tampere.fi/kirjastot (library events)
+  tampere_talo.py        tampere-talo.fi
+  vastavirta.py          vastavirta-klubi.fi
 ```
 
 Each source module is self-contained: it knows how to fetch and parse
 exactly one website, and returns a plain list of event dicts. `scrape.py`
-runs all six concurrently, merges/de-duplicates the results, filters out
+runs all sources concurrently, merges/de-duplicates the results, filters out
 anything stale or invalid, and writes `data.json`. A bug in one source's
-parser can't leak into another's, and adding a 7th source later is just:
+parser can't leak into another's, and adding a new source later is just:
 write `sources/newsite.py` with a `fetch_x()` function, import it in
 `scrape.py`, add one line to the `jobs` dict.
 
 ## What it scrapes
 
-Six sources, merged and de-duplicated by (date, title, venue):
+Eleven sources, merged and de-duplicated by (date, title, venue):
 
 | Source | Confidence | Why |
 |---|---|---|
@@ -36,22 +43,26 @@ Six sources, merged and de-duplicated by (date, title, venue):
 | puistokonsertit.tampere.fi | **High** | Date/time come from the event URL's own query params, not inferred from page text |
 | tamperefilharmonia.fi | **High** | Fetched and verified against the live page while building this — real dates/times/venues, no robots.txt block. Adds classical coverage the other sources barely touch. |
 | kohokohdat.fi | Medium | Real bugs found and fixed against an actual page snapshot (date tracking, venue extraction) — see comments in `sources/kohokohdat.py` |
-| puistokonsertit.tampere.fi | **High** | Date/time come from the event URL's own query params, not inferred from page text |
 | keikat.org | Low | Built from search-snippet text, not fully inspected real HTML |
 | keikat.live | Unverified | Built without a live-tested reference sample |
+| g-livelab.fi | Unverified | New source, needs live testing |
+| tampere.pakkahuone.fi | Unverified | New source, needs live testing |
+| tampere.fi/kirjastot | Unverified | New source, needs live testing |
+| tampere-talo.fi | Unverified | New source, needs live testing |
+| vastavirta-klubi.fi | Unverified | New source, needs live testing |
 
-None of the four were reachable from the sandbox that built this (network
+None of the sources were reachable from the sandbox that built this (network
 egress there is domain-allowlisted; every one came back `403
 host_not_allowed`). GitHub Actions runners have normal internet access, so
 this isn't expected to be a problem once deployed — but it does mean the
 **first real run against the live sites is the actual test**, not something
-I could confirm beforehand for sources 2–4.
+I could confirm beforehand for most sources.
 
 Every run's `data.json` records per-source raw counts in `source_note` —
 check the Actions log or that field if the total event count looks off; a
 source silently returning 0 is your signal something broke.
 
-Coverage is still limited to whatever these four sites list — a venue that
+Coverage is still limited to whatever these eleven sites list — a venue that
 only posts to its own website or Instagram won't show up regardless.
 
 ## Deploy it (about 5 minutes)
@@ -113,6 +124,12 @@ file under `sources/`, independent of the others.
   date/time come from the event URL itself.
 - **keikat.live**: `sources/keikat_live.py` — built without a live-tested
   reference sample, most likely to need adjustment first.
+- **g_livelab**: `sources/g_livelab.py` — new source, needs live testing.
+- **pakkahuone**: `sources/pakkahuone.py` — new source, needs live testing.
+- **tampere_kirjastot**: `sources/tampere_kirjastot.py` — new source, needs live testing.
+- **tampere_talo**: `sources/tampere_talo.py` — new source, needs live testing.
+- **vastavirta**: `sources/vastavirta.py` — new source, needs live testing.
+- **tamperefilharmonia**: `sources/tamperefilharmonia.py` — verified against live page.
 
 Genre guessing (shared by all sources) is `guess_genre()` in
 `sources/common.py`. Everything's commented. You (or a future Claude
