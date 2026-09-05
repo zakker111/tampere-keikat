@@ -1,12 +1,12 @@
 {
- "generated": "2026-09-05 08:44 UTC",
+ "generated": "2026-09-05 11:07 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_org": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
   "vastavirta": "OK",
+  "keikat_org": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "OK",
@@ -158,15 +158,6 @@
    "https://www.meteli.net/tapahtuma/tuomiofest"
   ],
   [
-   "2026-09-05",
-   "",
-   "Moro Sky Bar DJ:t",
-   "Moro Sky Bar",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-05/"
-  ],
-  [
    "2026-09-06",
    "15:00",
    "Tohtori Kivimäen valinta: Hilja Grönfors Trio, Akkajee, Emmi Kuittinen Tohtori Kivimäen valinta: Hilja Grönfors Trio, Akkajee, Emmi Kuittinen Kulttuuritalo",
@@ -252,7 +243,13 @@
    "09:45",
    "Open Rehearsal",
    "Tampere-talo",
-   "classical",
+   [
+    "a",
+    "c",
+    "i",
+    "l",
+    "s"
+   ],
    0,
    "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a327689a7cd070007b2df8c&date=11.09.2026&time=09.45+-+13.00"
   ],
@@ -329,15 +326,6 @@
    "https://www.meteli.net/tapahtuma/rokets-gehenna-sour-fuzzkills"
   ],
   [
-   "2026-09-11",
-   "",
-   "Moro Sky Bar DJ:t",
-   "Moro Sky Bar",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-11/"
-  ],
-  [
    "2026-09-12",
    "13:00",
    "Runoja ja rokkia: Karoliina Blackburn ja Costello Hautamäki",
@@ -408,15 +396,6 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/jambo-sara-bee"
-  ],
-  [
-   "2026-09-12",
-   "",
-   "Moro Sky Bar DJ:t",
-   "Moro Sky Bar",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-12/"
   ],
   [
    "2026-09-13",
@@ -594,7 +573,12 @@
    "",
    "Kalevauva.fi",
    "Telakka",
-   "rock",
+   [
+    "c",
+    "k",
+    "o",
+    "r"
+   ],
    0,
    "https://www.meteli.net/tapahtuma/kalevauva-fi-7"
   ],
@@ -606,15 +590,6 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/teresia-von-storm-elektric-rokband-distant-horizon"
-  ],
-  [
-   "2026-09-18",
-   "",
-   "Moro Sky Bar DJ:t",
-   "Moro Sky Bar",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-18/"
   ],
   [
    "2026-09-19",
@@ -673,29 +648,11 @@
   [
    "2026-09-19",
    "",
-   "Kalevauva.fi",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/kalevauva-fi-8"
-  ],
-  [
-   "2026-09-19",
-   "",
    "Lowhill, Lightbearer, In Thorns",
    "Bar Kotelo",
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/lowhill-lightbearer-in-thorns"
-  ],
-  [
-   "2026-09-19",
-   "",
-   "Moro Sky Bar DJ:t",
-   "Moro Sky Bar",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-19/"
   ],
   [
    "2026-09-20",
@@ -810,7 +767,16 @@
    "",
    "K40-disco: DJ:t Sami & Antti",
    "Tavara-asema",
-   "electronic",
+   [
+    "c",
+    "e",
+    "i",
+    "l",
+    "n",
+    "o",
+    "r",
+    "t"
+   ],
    0,
    "https://www.meteli.net/tapahtuma/k40-disco-djt-sami-antti-21"
   ],
@@ -831,15 +797,6 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/katfish-kirkkovene-2"
-  ],
-  [
-   "2026-09-25",
-   "",
-   "Moro Sky Bar DJ:t",
-   "Moro Sky Bar",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-25/"
   ],
   [
    "2026-09-26",
@@ -894,15 +851,6 @@
    "metal",
    0,
    "https://www.meteli.net/tapahtuma/hiljaiset-levyt-40-vuotta-punkkia-maaseudun-tulevaisuus-saattohoito79-tappajatomaatit-jugglin-jugulars"
-  ],
-  [
-   "2026-09-26",
-   "",
-   "Moro Sky Bar DJ:t",
-   "Moro Sky Bar",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-09-26/"
   ],
   [
    "2026-09-27",
@@ -1386,7 +1334,12 @@
    "",
    "Absoluuttinen Nollapiste",
    "G Livelab Tampere",
-   "rock",
+   [
+    "c",
+    "k",
+    "o",
+    "r"
+   ],
    0,
    "https://www.meteli.net/tapahtuma/absoluuttinen-nollapiste-11"
   ],
@@ -1398,15 +1351,6 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/rane-raitsikka-tokela-3"
-  ],
-  [
-   "2026-10-16",
-   "",
-   "Absoluuttinen Nollapiste",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/absoluuttinen-nollapiste-9"
   ],
   [
    "2026-10-16",
@@ -1452,15 +1396,6 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/helmi-marleena-6"
-  ],
-  [
-   "2026-10-17",
-   "",
-   "K40-disco: DJ:t Sami & Antti",
-   "Tavara-asema",
-   "electronic",
-   0,
-   "https://www.meteli.net/tapahtuma/k40-disco-djt-sami-antti-22"
   ],
   [
    "2026-10-17",
@@ -1698,15 +1633,6 @@
   ],
   [
    "2026-11-06",
-   "09:45",
-   "Open Rehearsal",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a327689a7cd070007b2df8c&date=06.11.2026&time=09.45+-+13.00"
-  ],
-  [
-   "2026-11-06",
    "19:00",
    "Tampere Philharmonic Orchestra: In the Eye of the Storm",
    "Tampere-talo",
@@ -1848,15 +1774,6 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/knipi-5"
-  ],
-  [
-   "2026-11-14",
-   "",
-   "K40-disco: DJ:t Sami & Antti",
-   "Tavara-asema",
-   "electronic",
-   0,
-   "https://www.meteli.net/tapahtuma/k40-disco-djt-sami-antti-23"
   ],
   [
    "2026-11-14",
@@ -2013,15 +1930,6 @@
   ],
   [
    "2026-11-27",
-   "09:45",
-   "Open Rehearsal",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a327689a7cd070007b2df8c&date=27.11.2026&time=09.45+-+13.00"
-  ],
-  [
-   "2026-11-27",
    "19:00",
    "Tampere Philharmonic Orchestra: Romantic Favourites",
    "Tampere-talo",
@@ -2151,18 +2059,15 @@
    "19:00",
    "Tampere Philharmonic Orchestra: Season series concert",
    "Tampere-talo",
-   "classical",
+   [
+    "a",
+    "c",
+    "i",
+    "l",
+    "s"
+   ],
    0,
    "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a1597fa8811e40007efe310&date=15.01.2027&time=19.00+-+21.00"
-  ],
-  [
-   "2027-01-29",
-   "19:00",
-   "Tampere Philharmonic Orchestra: Season series concert",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a15997e8811e40007efe390&date=29.01.2027&time=19.00+-+21.00"
   ],
   [
    "2027-02-01",
@@ -2172,24 +2077,6 @@
    "rock",
    0,
    "https://keikat.org/magda-vooninki-1217"
-  ],
-  [
-   "2027-02-05",
-   "19:00",
-   "Tampere Philharmonic Orchestra: Season series concert",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a159cb28811e40007efe519&date=05.02.2027&time=19.00+-+21.00"
-  ],
-  [
-   "2027-02-12",
-   "19:00",
-   "Tampere Philharmonic Orchestra: Season series concert",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a159ea7be620f0007b6dd84&date=12.02.2027&time=19.00+-+21.00"
   ],
   [
    "2027-03-18",
