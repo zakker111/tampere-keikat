@@ -560,9 +560,13 @@ def sanitize_events(events):
 
 
 def merge_events(*event_lists):
-    """Merge sources in order; first matching event keeps all its data/URL.
-
+    """Merge sources in order; first matching event keeps most data,
+    but genre is compared across duplicates and the most specific/useful
+    genre is selected.
+    
     Duplicate decisions are logged so the user can see exactly which URL won.
+    When duplicates have different genres, the more specific genre wins
+    (classical > folk > jazz > hiphop > electronic > metal > rock > festival).
     """
     seen = {}
     merged = []
@@ -581,12 +585,52 @@ def merge_events(*event_lists):
             if key in seen:
                 duplicate_count += 1
                 first = seen[key]
-                print(
-                    f"[duplicate] {event.get('date')} — {event.get('title')} — {event.get('venue')}\n"
-                    f"  keeping first URL: {first.get('url','')}\n"
-                    f"  ignoring later URL: {event.get('url','')}",
-                    file=sys.stderr,
-                )
+                
+                # Check if the later event has a different genre
+                first_genre = first.get("genre", DEFAULT_GENRE)
+                later_genre = event.get("genre", DEFAULT_GENRE)
+                
+                if first_genre != later_genre:
+                    # Prefer more specific genres over generic ones
+                    # Priority: classical > folk > jazz > hiphop > metal > electronic > rock > festival
+                    genre_priority = {
+                        "classical": 1,
+                        "folk": 2,
+                        "jazz": 3,
+                        "hiphop": 4,
+                        "metal": 5,
+                        "electronic": 6,
+                        "rock": 7,
+                        "festival": 8,
+                    }
+                    first_priority = genre_priority.get(first_genre, 7)
+                    later_priority = genre_priority.get(later_genre, 7)
+                    
+                    # Use the genre with lower priority number (more specific)
+                    if later_priority < first_priority:
+                        print(
+                            f"[duplicate] {event.get('date')} — {event.get('title')} — {event.get('venue')}\n"
+                            f"  keeping first URL: {first.get('url','')}\n"
+                            f"  ignoring later URL: {event.get('url','')}\n"
+                            f"  BUT using genre from later source: '{later_genre}' instead of '{first_genre}'",
+                            file=sys.stderr,
+                        )
+                        first["genre"] = later_genre
+                    else:
+                        print(
+                            f"[duplicate] {event.get('date')} — {event.get('title')} — {event.get('venue')}\n"
+                            f"  keeping first URL: {first.get('url','')}\n"
+                            f"  ignoring later URL: {event.get('url','')}\n"
+                            f"  genres differ: keeping '{first_genre}' over '{later_genre}'",
+                            file=sys.stderr,
+                        )
+                else:
+                    print(
+                        f"[duplicate] {event.get('date')} — {event.get('title')} — {event.get('venue')}\n"
+                        f"  keeping first URL: {first.get('url','')}\n"
+                        f"  ignoring later URL: {event.get('url','')}",
+                        file=sys.stderr,
+                    )
                 continue
             seen[key] = event
             merged.append(event)
