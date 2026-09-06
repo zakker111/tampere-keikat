@@ -1,12 +1,12 @@
 {
- "generated": "2026-09-06 07:07 UTC",
+ "generated": "2026-09-06 09:04 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
-  "keikat_live": "OK",
   "keikat_org": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "vastavirta": "OK",
+  "keikat_live": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "OK",
