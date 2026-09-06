@@ -319,7 +319,7 @@
 <div class="brickwall"></div>
 
 <header class="hero">
-  <div class="eyebrow">Manse on stage — August 2026</div>
+  <div class="eyebrow">Manse on stage — September 2026</div>
   <h1>TAMPERE<br><span>KEIKAT</span></h1>
   <p class="tagline">Every gig from every bar, club and stage in town — <b>on one wall.</b> Filter by genre, or just see what's on tonight.</p>
   <div id="updatedBadge" class="status-pill"><span class="status-dot"></span><span class="status-text">Loading data…</span></div>
@@ -744,10 +744,22 @@ document.getElementById("clearBtn").onclick = ()=>{
 };
 document.getElementById("calPrev").onclick = ()=>{
   calMonth--; if(calMonth<0){calMonth=11; calYear--;}
+  // Reset selectedDay if it's no longer in the current month view
+  const selParts = selectedDay.split('-');
+  const selY = parseInt(selParts[0]), selM = parseInt(selParts[1])-1;
+  if(selY !== calYear || selM !== calMonth){
+    selectedDay = `${calYear}-${String(calMonth+1).padStart(2,'0')}-01`;
+  }
   renderCalendar(); renderDayPanel();
 };
 document.getElementById("calNext").onclick = ()=>{
   calMonth++; if(calMonth>11){calMonth=0; calYear++;}
+  // Reset selectedDay if it's no longer in the current month view
+  const selParts = selectedDay.split('-');
+  const selY = parseInt(selParts[0]), selM = parseInt(selParts[1])-1;
+  if(selY !== calYear || selM !== calMonth){
+    selectedDay = `${calYear}-${String(calMonth+1).padStart(2,'0')}-01`;
+  }
   renderCalendar(); renderDayPanel();
 };
 
