@@ -1,10 +1,18 @@
 ```
-# Python compiled files
-*.pyc
-__pycache__/
-
-# Logs
+# Logs and temp files
 *.log
-scrape.log
-scrape_summary.log
+*.tmp
+*.swp
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Original rules preserved
+*.log
 ```
