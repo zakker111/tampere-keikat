@@ -1,63 +1,18 @@
 {
- "generated": "2026-09-06 09:04 UTC",
+ "generated": "2026-09-07 09:55 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "keikat_org": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_live": "NO_EVENTS_OR_PARSE_FAILURE",
   "vastavirta": "OK",
-  "keikat_live": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "OK",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-09-06",
-   "15:00",
-   "Tohtori Kivimäen valinta: Hilja Grönfors Trio, Akkajee, Emmi Kuittinen Tohtori Kivimäen valinta: Hilja Grönfors Trio, Akkajee, Emmi Kuittinen Kulttuuritalo",
-   "Telakka",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2181-tohtori-kivimaen-valinta-hilja-gronfors-trio-akkajee-emmi-kuittinen"
-  ],
-  [
-   "2026-09-06",
-   "18:00",
-   "MUSTA JUHLA : Gootti-Karaoke",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.facebook.com/events/1951426778770889/"
-  ],
-  [
-   "2026-09-06",
-   "22:00",
-   "Kimik",
-   "Desibeli tapahtumat",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/kimik-4/"
-  ],
-  [
-   "2026-09-06",
-   "",
-   "Tohtori Kivimäen valinta: Hilja Grönfors Trio, Akkajee, Emmi Kuittinen",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/tohtori-kivimaen-valinnat-hilja-gronfors-trio-akkajee-emmi-kuittinen"
-  ],
-  [
-   "2026-09-06",
-   "",
-   "Tohtori Kivimäen valinta: Hilja Grönfors Trio, Akkajee, Emmi Kuittinen",
-   "Telakan keikat",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tohtori-kivimaen-valinta-hilja-gronfors-trio-akkajee-emmi-kuittinen/"
-  ],
   [
    "2026-09-08",
    "17:00",
@@ -548,7 +503,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-215"
+   "https://keikat.org/off-teatteri-210"
   ],
   [
    "2026-09-13",
@@ -764,7 +719,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-251"
+   "https://keikat.org/uudet-teatteri-247"
   ],
   [
    "2026-09-18",
@@ -773,7 +728,7 @@
    "Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-279"
+   "https://keikat.org/elämä-vastavirta-klub-275"
   ],
   [
    "2026-09-18",
@@ -963,7 +918,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-309"
+   "https://keikat.org/koovee-spiral-305"
   ],
   [
    "2026-09-19",
@@ -1143,6 +1098,15 @@
   ],
   [
    "2026-09-24",
+   "22:00",
+   "DB 1 vuotta – pallomeri talossa: dj Jiri",
+   "Desibeli tapahtumat",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/db-1-vuotta-pallomeri-talossa-dj-jiri/"
+  ],
+  [
+   "2026-09-24",
    "",
    "Wöyh!",
    "G Livelab Tampere",
@@ -1235,6 +1199,15 @@
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dj-jiri-32/"
+  ],
+  [
+   "2026-09-25",
+   "22:00",
+   "Game&Rave: Thomas Johan, JWLZ, Utepia, …",
+   "Desibeli tapahtumat",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/gamerave-thomas-johan-jwlz-utepia/"
   ],
   [
    "2026-09-25",
@@ -1397,6 +1370,15 @@
   [
    "2026-09-26",
    "22:00",
+   "DB 1 vuotta – pallomeri talossa: dj KimiK",
+   "Desibeli tapahtumat",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/db-1-vuotta-pallomeri-talossa-dj-jiri-2/"
+  ],
+  [
+   "2026-09-26",
+   "22:00",
    "GRAVECITY BANDITS, MANIC ORDER, DANGER HÅT",
    "Bar Kotelo",
    "rock",
@@ -1491,7 +1473,16 @@
    "Sammon uusi koulu",
    "rock",
    0,
-   "https://keikat.org/tampereen-sammon-419"
+   "https://keikat.org/tampereen-sammon-416"
+  ],
+  [
+   "2026-09-27",
+   "22:00",
+   "DB 1 vuotta – pallomeri talossa: DJ MR Willy",
+   "Desibeli tapahtumat",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/db-1-vuotta-pallomeri-talossa-dj-mr-willy/"
   ],
   [
    "2026-09-29",
@@ -1599,7 +1590,7 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-435"
+   "https://keikat.org/music-tampere-talo-433"
   ],
   [
    "2026-10-01",
@@ -2069,6 +2060,15 @@
   [
    "2026-10-07",
    "07:10",
+   "Michael Monroe",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/michael-monroe-4/"
+  ],
+  [
+   "2026-10-07",
+   "07:10",
    "Mirka’s Monarchy",
    "Paapan Kapakka",
    "rock",
@@ -2082,7 +2082,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-493"
+   "https://keikat.org/off-teatteri-492"
   ],
   [
    "2026-10-07",
@@ -2249,6 +2249,15 @@
   [
    "2026-10-10",
    "10:10",
+   "Tampere Filharmonia esittää: Viihdettä ja vispilänkauppaa",
+   "G Livelab Tampere",
+   "classical",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tampere-filharmonia-esittaa-viihdetta-ja-vispilankauppaa/"
+  ],
+  [
+   "2026-10-10",
+   "10:10",
    "Teerenpeli Tease: Horror & Tease Show",
    "Teerenpeli Tampere",
    "rock",
@@ -2401,6 +2410,15 @@
   ],
   [
    "2026-10-13",
+   "13:10",
+   "Jason Moran (US)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jason-moran-us/"
+  ],
+  [
+   "2026-10-13",
    "",
    "Jason Moran (USA)",
    "G Livelab Tampere",
@@ -2416,6 +2434,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/syyskissat/"
+  ],
+  [
+   "2026-10-14",
+   "14:10",
+   "GA-20 (US)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ga-20-us/"
   ],
   [
    "2026-10-14",
@@ -2749,6 +2776,15 @@
   ],
   [
    "2026-10-22",
+   "22:10",
+   "Jukka Haavisto – Löyly Syndicate: Juniper Path (levyjulkkarit)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jukka-haavisto-loyly-syndicate-juniper-path-levyjulkkarit/"
+  ],
+  [
+   "2026-10-22",
    "",
    "Jukka Haavisto – Löyly Syndicate",
    "G Livelab Tampere",
@@ -3075,7 +3111,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-723"
+   "https://keikat.org/tampere-pakkahuone-733"
   ],
   [
    "2026-10-29",
@@ -3269,7 +3305,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-779"
+   "https://keikat.org/tehdas-teatteri-790"
   ],
   [
    "2026-11-05",
@@ -3449,7 +3485,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-909"
+   "https://keikat.org/sorin-sorin-925"
   ],
   [
    "2026-11-18",
@@ -3530,7 +3566,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-955"
+   "https://keikat.org/kotae-tampereen-961"
   ],
   [
    "2026-11-21",
@@ -3734,7 +3770,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1192"
+   "https://keikat.org/magda-vooninki-1216"
   ],
   [
    "2027-03-18",
