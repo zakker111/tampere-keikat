@@ -569,8 +569,10 @@ const MONTHS = ["January","February","March","April","May","June","July","August
 let activeGenres = new Set();
 let searchTerm = "";
 let view = "list";
-let calYear = now.getFullYear(), calMonth = now.getMonth();
-let selectedDay = TODAY;
+// Initialize calendar to show September 2026 (month index 8) where the gigs start
+let calYear = 2026, calMonth = 8; // September is month 8 (0-indexed: 0=Jan, 8=Sep)
+// Start with selectedDay as null - shows all gigs for current month view
+let selectedDay = null;
 
 function matches(ev){
   if(activeGenres.size && !activeGenres.has(ev.genre)) return false;
@@ -662,7 +664,11 @@ function renderList(){
 function daysInMonth(y,m){ return new Date(y, m+1, 0).getDate(); }
 
 function renderCalendar(){
-  document.getElementById("calLabel").textContent = `${MONTHS[calMonth]} ${calYear}`;
+  const currentLabel = `${MONTHS[calMonth]} ${calYear}`;
+  document.getElementById("calLabel").textContent = currentLabel;
+  // Update the hero eyebrow to match the current calendar view
+  document.querySelector(".eyebrow").textContent = `Manse on stage — ${currentLabel}`;
+  
   const dowRow = document.getElementById("calDowRow");
   dowRow.innerHTML = DOW.map(d=>`<div class="calDow">${d}</div>`).join("");
 
@@ -676,7 +682,8 @@ function renderCalendar(){
     const dateStr = `${calYear}-${String(calMonth+1).padStart(2,"0")}-${String(day).padStart(2,"0")}`;
     const dayEvents = EVENTS.filter(e=>e.date===dateStr && matches(e));
     const isToday = dateStr === TODAY;
-    const isSelected = dateStr === selectedDay;
+    // Only mark as selected if the selectedDay is actually in this month
+    const isSelected = (selectedDay === dateStr);
     const dotsShown = dayEvents.slice(0,5);
     const dotsHtml = dotsShown.map(e=>`<span class="d" style="background:${GENRES[e.genre].color}"></span>`).join("");
     const moreHtml = dayEvents.length>5 ? `<span class="more">+${dayEvents.length-5}</span>` : "";
@@ -698,7 +705,30 @@ function renderCalendar(){
 
 function renderDayPanel(){
   const panel = document.getElementById("dayPanel");
-  if(!selectedDay){ panel.innerHTML=""; return; }
+  if(!selectedDay){ 
+    // If no day is selected, show all events for the current month view
+    const monthEvents = EVENTS.filter(e=>{
+      const d = parseDateLocal(e.date);
+      return d && d.getFullYear() === calYear && d.getMonth() === calMonth && matches(e);
+    }).sort((a,b)=> a.date===b.date ? (a.time||"99").localeCompare(b.time||"99") : a.date.localeCompare(b.date));
+    
+    let html = `<h3>${MONTHS[calMonth]} ${calYear} - All Gigs</h3>`;
+    if(!monthEvents.length){
+      html += `<div class="empty">No gigs matching your filters this month.</div>`;
+    } else {
+      let lastDate = null;
+      monthEvents.forEach(ev=>{
+        if(ev.date !== lastDate){
+          const f = fmtDate(ev.date);
+          html += `<div class="dateHead"><span class="dow">${f.dow} ${f.day}</span><span class="full">${f.dowFull}, ${f.day} ${f.month}</span></div>`;
+          lastDate = ev.date;
+        }
+        html += ticketHTML(ev);
+      });
+    }
+    panel.innerHTML = html;
+    return;
+  }
   const f = fmtDate(selectedDay);
   const dayEvents = EVENTS.filter(e=>e.date===selectedDay && matches(e)).sort((a,b)=>(a.time||"99").localeCompare(b.time||"99"));
   let html = `<h3>${f.dowFull}, ${f.day} ${f.month}</h3>`;
@@ -730,6 +760,15 @@ document.getElementById("btnCal").onclick = ()=>{
   document.getElementById("btnList").classList.remove("active");
   document.getElementById("listView").style.display="none";
   document.getElementById("calView").style.display="block";
+  // When switching to calendar view, ensure we're showing the right month and reset selectedDay
+  if(selectedDay){
+    const selParts = selectedDay.split('-');
+    const selY = parseInt(selParts[0]), selM = parseInt(selParts[1])-1;
+    if(selY !== calYear || selM !== calMonth){
+      calYear = selY;
+      calMonth = selM;
+    }
+  }
   renderAll();
 };
 document.getElementById("search").addEventListener("input", e=>{
@@ -744,22 +783,14 @@ document.getElementById("clearBtn").onclick = ()=>{
 };
 document.getElementById("calPrev").onclick = ()=>{
   calMonth--; if(calMonth<0){calMonth=11; calYear--;}
-  // Reset selectedDay if it's no longer in the current month view
-  const selParts = selectedDay.split('-');
-  const selY = parseInt(selParts[0]), selM = parseInt(selParts[1])-1;
-  if(selY !== calYear || selM !== calMonth){
-    selectedDay = `${calYear}-${String(calMonth+1).padStart(2,'0')}-01`;
-  }
+  // Clear selectedDay so day panel shows all gigs for the new month
+  selectedDay = null;
   renderCalendar(); renderDayPanel();
 };
 document.getElementById("calNext").onclick = ()=>{
   calMonth++; if(calMonth>11){calMonth=0; calYear++;}
-  // Reset selectedDay if it's no longer in the current month view
-  const selParts = selectedDay.split('-');
-  const selY = parseInt(selParts[0]), selM = parseInt(selParts[1])-1;
-  if(selY !== calYear || selM !== calMonth){
-    selectedDay = `${calYear}-${String(calMonth+1).padStart(2,'0')}-01`;
-  }
+  // Clear selectedDay so day panel shows all gigs for the new month
+  selectedDay = null;
   renderCalendar(); renderDayPanel();
 };
 
