@@ -761,15 +761,8 @@ document.getElementById("btnCal").onclick = ()=>{
   document.getElementById("btnList").classList.remove("active");
   document.getElementById("listView").style.display="none";
   document.getElementById("calView").style.display="block";
-  // When switching to calendar view, ensure we're showing the right month and reset selectedDay
-  if(selectedDay){
-    const selParts = selectedDay.split('-');
-    const selY = parseInt(selParts[0]), selM = parseInt(selParts[1])-1;
-    if(selY !== calYear || selM !== calMonth){
-      calYear = selY;
-      calMonth = selM;
-    }
-  }
+  // Clear selectedDay when switching to calendar view to show all gigs for current month
+  selectedDay = null;
   renderAll();
 };
 document.getElementById("search").addEventListener("input", e=>{
