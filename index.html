@@ -707,9 +707,10 @@ function renderDayPanel(){
   const panel = document.getElementById("dayPanel");
   if(!selectedDay){ 
     // If no day is selected, show all events for the current month view
+    // Use string comparison on the YYYY-MM-DD format for reliability
+    const monthPrefix = `${calYear}-${String(calMonth+1).padStart(2,'0')}-`;
     const monthEvents = EVENTS.filter(e=>{
-      const d = parseDateLocal(e.date);
-      return d && d.getFullYear() === calYear && d.getMonth() === calMonth && matches(e);
+      return e.date && e.date.startsWith(monthPrefix) && matches(e);
     }).sort((a,b)=> a.date===b.date ? (a.time||"99").localeCompare(b.time||"99") : a.date.localeCompare(b.date));
     
     let html = `<h3>${MONTHS[calMonth]} ${calYear} - All Gigs</h3>`;
@@ -785,13 +786,15 @@ document.getElementById("calPrev").onclick = ()=>{
   calMonth--; if(calMonth<0){calMonth=11; calYear--;}
   // Clear selectedDay so day panel shows all gigs for the new month
   selectedDay = null;
-  renderCalendar(); renderDayPanel();
+  renderCalendar(); 
+  renderDayPanel();
 };
 document.getElementById("calNext").onclick = ()=>{
   calMonth++; if(calMonth>11){calMonth=0; calYear++;}
   // Clear selectedDay so day panel shows all gigs for the new month
   selectedDay = null;
-  renderCalendar(); renderDayPanel();
+  renderCalendar(); 
+  renderDayPanel();
 };
 
 async function loadData(){
