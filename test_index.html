@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head><title>Test</title></head>
+<body>
+<h1>Testing Data Load</h1>
+<div id="result"></div>
+<script>
+async function test() {
+    const res = await fetch('data.json?_=' + Date.now());
+    const json = await res.json();
+    const events = json.events || json;
+    
+    // Count by month
+    const months = {};
+    events.forEach(e => {
+        const m = e[0].substring(0, 7);
+        months[m] = (months[m] || 0) + 1;
+    });
+    
+    document.getElementById('result').innerHTML = '<pre>' + JSON.stringify({
+        total: events.length,
+        byMonth: months,
+        firstDate: events[0][0],
+        expectedCalMonth: 8
+    }, null, 2) + '</pre>';
+}
+test();
+</script>
+</body>
+</html>

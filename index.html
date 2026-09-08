@@ -903,14 +903,16 @@ function renderCalendar(){
     </div>`;
   }
   grid.innerHTML = html;
-  grid.querySelectorAll(".calCell").forEach(cell=>{
-    cell.onclick = ()=>{
+  // Use event delegation for better reliability
+  grid.onclick = (e)=>{
+    const cell = e.target.closest(".calCell");
+    if(cell && !cell.classList.contains("blank")){
       selectedDay = cell.dataset.date;
       renderCalendar();
       renderDayPanel();
       document.getElementById("dayPanel").scrollIntoView({behavior:"smooth", block:"nearest"});
-    };
-  });
+    }
+  };
 }
 
 function renderDayPanel(){
