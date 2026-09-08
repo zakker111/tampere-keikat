@@ -1,11 +1,11 @@
 {
- "generated": "2026-09-07 09:55 UTC",
+ "generated": "2026-09-08 08:09 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_org": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
-  "keikat_live": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_live": "OK",
+  "keikat_org": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
@@ -292,6 +292,15 @@
   [
    "2026-09-11",
    "",
+   "Sibelius 5: Tampere Filharmonia",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.meteli.net/tapahtuma/sibelius-5-tampere-filharmonia"
+  ],
+  [
+   "2026-09-11",
+   "",
    "The Psychward Breakouts, De La Rocka & The Garbagemen",
    "Varjobaari",
    "rock",
@@ -503,7 +512,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-210"
+   "https://keikat.org/off-teatteri-208"
   ],
   [
    "2026-09-13",
@@ -719,7 +728,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-247"
+   "https://keikat.org/uudet-teatteri-245"
   ],
   [
    "2026-09-18",
@@ -728,7 +737,7 @@
    "Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-275"
+   "https://keikat.org/elämä-vastavirta-klub-273"
   ],
   [
    "2026-09-18",
@@ -918,7 +927,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-305"
+   "https://keikat.org/koovee-spiral-303"
   ],
   [
    "2026-09-19",
@@ -1473,7 +1482,7 @@
    "Sammon uusi koulu",
    "rock",
    0,
-   "https://keikat.org/tampereen-sammon-416"
+   "https://keikat.org/tampereen-sammon-414"
   ],
   [
    "2026-09-27",
@@ -1590,7 +1599,7 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-433"
+   "https://keikat.org/music-tampere-talo-432"
   ],
   [
    "2026-10-01",
@@ -2082,7 +2091,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-492"
+   "https://keikat.org/off-teatteri-493"
   ],
   [
    "2026-10-07",
@@ -2766,6 +2775,15 @@
    "https://www.meteli.net/tapahtuma/warner-e-hodges-international-all-stars-feat-stacie-collins-usa-swe"
   ],
   [
+   "2026-10-21",
+   "",
+   "Jorma Tapio & Kaski 20-vuotisjuhlakonsertti",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/jorma-tapio-kaski-20-vuotisjuhlakonsertti"
+  ],
+  [
    "2026-10-22",
    "22:10",
    "Suvi Teräsniska",
@@ -2791,6 +2809,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/jukka-haavisto-loyly-syndicate"
+  ],
+  [
+   "2026-10-22",
+   "",
+   "Marcel Riesco & His Rhythm Cats, Son Demon and His Holy Boys",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/marcel-riesco-his-rhythm-cats-son-demon-and-his-holy-boys"
   ],
   [
    "2026-10-23",
@@ -3007,6 +3034,15 @@
   [
    "2026-10-24",
    "",
+   "P-K Keränen",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/p-k-keranen-2"
+  ],
+  [
+   "2026-10-24",
+   "",
    "Mansen tähdet -konsertti Nokia Arenalla",
    "Nokia Arena",
    "rock",
@@ -3111,7 +3147,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-733"
+   "https://keikat.org/tampere-pakkahuone-736"
   ],
   [
    "2026-10-29",
@@ -3121,6 +3157,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/60-years-of-jimi-hendrix-room-full-of-hendrix-3"
+  ],
+  [
+   "2026-10-29",
+   "",
+   "Tampere Jazz Happening: Cosmic Ear (SWE), Tomasz D’browski & The Individual Beings feat. Johanna Elina Sulkunen (POL/FIN/DNK/NOR), Mestizx (NLD/USA/BOL)",
+   "Pakkahuone",
+   "jazz",
+   0,
+   "https://www.meteli.net/tapahtuma/tampere-jazz-happening-cosmic-ear-swe-tomasz-dbrowski-the-individual-beings-feat-johanna-elina-sulkunen-pol-fin-dnk-nor-mestizx-nld-usa-bol"
   ],
   [
    "2026-10-30",
@@ -3189,6 +3234,24 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/ahti-23"
+  ],
+  [
+   "2026-10-30",
+   "",
+   "Tampere Jazz Happening: Kiri Ra!, Dantchev: Domain, RinneRadio",
+   "Telakka",
+   "jazz",
+   0,
+   "https://www.meteli.net/tapahtuma/tampere-jazz-happening-kiri-ra-dantchev-domain-rinneradio"
+  ],
+  [
+   "2026-10-30",
+   "",
+   "Ira, Sebastian Visa,",
+   "Lehmus Teerenpeli",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/ira-sebastian-visa-lehmus"
   ],
   [
    "2026-10-31",
@@ -3274,6 +3337,24 @@
   [
    "2026-10-31",
    "",
+   "Tampere Jazz Happening: I’ve Known Rivers Trio, Mikko Innasen Juhlayhtye,",
+   "Colin Vallon Trio Pakkahuone",
+   "jazz",
+   0,
+   "https://www.meteli.net/tapahtuma/tampere-jazz-happening-ive-known-rivers-trio-mikko-innasen-juhlayhtye-colin-vallon-trio"
+  ],
+  [
+   "2026-10-31",
+   "",
+   "Tampere Jazz Happening: Nebbia//Kääriäinen, Raoul Björkenheim & Paal Nilssen-Love, Elifantree",
+   "Telakka",
+   "jazz",
+   0,
+   "https://www.meteli.net/tapahtuma/tampere-jazz-happening-nebbia-kaariainen-raoul-bjorkenheim-paal-nilssen-love-elifantree"
+  ],
+  [
+   "2026-10-31",
+   "",
    "Goth Halloween: The Dark (US/GB) + TBA",
    "Varjobaari",
    "rock",
@@ -3305,7 +3386,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-790"
+   "https://keikat.org/tehdas-teatteri-793"
   ],
   [
    "2026-11-05",
@@ -3485,7 +3566,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-925"
+   "https://keikat.org/sorin-sorin-933"
   ],
   [
    "2026-11-18",
@@ -3566,7 +3647,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-961"
+   "https://keikat.org/kotae-tampereen-966"
   ],
   [
    "2026-11-21",
@@ -3677,6 +3758,15 @@
    "https://www.meteli.net/tapahtuma/costi-uuer-3"
   ],
   [
+   "2026-12-03",
+   "",
+   "Aatulove,",
+   "Jemina Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/aatulove-jemina"
+  ],
+  [
    "2026-12-04",
    "19:00",
    "Opera Gala",
@@ -3770,7 +3860,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1216"
+   "https://keikat.org/magda-vooninki-1229"
   ],
   [
    "2027-03-18",
