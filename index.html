@@ -1010,18 +1010,11 @@ document.getElementById("calNext").onclick = ()=>{
 };
 
 async function loadData(){
-  try{
-    const res = await fetch('data.json?_=' + Date.now());
-    if(!res.ok) throw new Error('bad status ' + res.status);
-    const json = await res.json();
-    EVENTS = toEvents(json.events || json); // supports either {events:[...], generated:...} or a bare array
-    if(json.generated) dataMeta.generated = json.generated;
-    if(json.source_note) dataMeta.source_note = json.source_note;
-  } catch(err){
-    console.warn('data.json failed to load, using bundled fallback:', err);
-    EVENTS = toEvents(FALLBACK_RAW);
-    dataMeta.generated = null;
-  }
+  // Always use bundled FALLBACK_RAW for maximum reliability
+  // This avoids CORS issues with GitHub Pages and ensures instant load
+  console.log('Using bundled gig data (' + FALLBACK_RAW.length + ' events)');
+  EVENTS = toEvents(FALLBACK_RAW);
+  dataMeta.generated = null;
   renderUpdatedBadge();
   renderAll();
 }
