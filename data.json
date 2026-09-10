@@ -1,12 +1,12 @@
 {
- "generated": "2026-09-10 08:36 UTC",
+ "generated": "2026-09-10 09:25 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_org": "OK",
   "keikat_live": "OK",
   "vastavirta": "OK",
-  "keikat_org": "OK",
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "OK",
@@ -2041,6 +2041,15 @@
   ],
   [
    "2026-10-06",
+   "06:10",
+   "Eclipse/TamJazz-klubi: Martti Vesala Soundpost Quintet + jamit",
+   "Telakan keikat",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/eclipse-tamjazz-klubi-martti-vesala-soundpost-quintet-jamit/"
+  ],
+  [
+   "2026-10-06",
    "13:00",
    "Pasi Repo: Eino Leino sanoin ja sävelin",
    "Messukylän kirjasto, Hintsankatu 1, 33560 Tampere",
@@ -3593,7 +3602,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-925"
+   "https://keikat.org/sorin-sorin-926"
   ],
   [
    "2026-11-18",
@@ -3674,7 +3683,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-973"
+   "https://keikat.org/kotae-tampereen-974"
   ],
   [
    "2026-11-21",
@@ -3887,7 +3896,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1239"
+   "https://keikat.org/magda-vooninki-1240"
   ],
   [
    "2027-03-18",
