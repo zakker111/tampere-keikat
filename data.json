@@ -1,54 +1,18 @@
 {
- "generated": "2026-09-09 09:25 UTC",
+ "generated": "2026-09-10 08:36 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_org": "OK",
   "keikat_live": "OK",
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "vastavirta": "OK",
+  "keikat_org": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "OK",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-09-09",
-   "19:00",
-   "Fatboy (SE)",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/fatboy-se-2/"
-  ],
-  [
-   "2026-09-09",
-   "",
-   "Fatboy (SWE)",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/fatboy-swe-2"
-  ],
-  [
-   "2026-09-09",
-   "",
-   "Saara Suvanto muistoissamme: Pekka Nisu, Hanna Ekola, Martti Heikkilä, Make Tommila",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/saara-suvanto-muistoissamme-pekka-nisu-hanna-ekola-martti-heikkila-make-tommila"
-  ],
-  [
-   "2026-09-09",
-   "",
-   "Saara Suvanto muistoissamme: Pekka Nisu, Hanna Ekola, Martti Heikkilä & Make Tommila",
-   "Telakan keikat",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/saara-suvanto-muistoissamme-pekka-nisu-hanna-ekola-martti-heikkila-make-tommila/"
-  ],
   [
    "2026-09-10",
    "18:00",
@@ -211,10 +175,46 @@
   [
    "2026-09-11",
    "21:00",
+   "Bellman-kollektiivi Bellman-kollektiivi Katubaari",
+   "Axu",
+   "rock",
+   0,
+   "https://keikat.live/keikka/5808-bellman-kollektiivi"
+  ],
+  [
+   "2026-09-11",
+   "21:00",
+   "Rokets, Gehenna Sour & FUZZKILLS live Rock Rokets, Gehenna Sour & FUZZKILLS live Kulttuurikeskus",
+   "Maanalainen",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6059-rokets-gehenna-sour-fuzzkills-live"
+  ],
+  [
+   "2026-09-11",
+   "21:00",
+   "HI/LO goes HI90s #5: House, Garage & Big Beat 1995–1999 Elektro / DJ HI/LO goes HI90s #5: House, Garage & Big Beat 1995–1999 Irish Bar",
+   "O’Connell’s",
+   "electronic",
+   0,
+   "https://keikat.live/keikka/6088-hi-lo-goes-hi90s-5-house-garage-big-beat-1995-1999"
+  ],
+  [
+   "2026-09-11",
+   "21:00",
    "Cenotaph (mex) (23.30), Cryptworm (uk) (22.30), TONNE (21.30)",
    "Vastavirta-Klubi",
    "rock",
    0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-09-11",
+   "21:00",
+   "Nina Kaitaranta",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
    "https://www.vastavirta.net"
   ],
   [
@@ -363,6 +363,15 @@
   ],
   [
    "2026-09-12",
+   "20:30",
+   "Força Macabra 35v show (23.15), Kovaa Rasvaa (22.30), Below the Graves (21.45), The Carnival (21.00)",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.facebook.com/events/827134760055618/"
+  ],
+  [
+   "2026-09-12",
    "21:00",
    "Del Futuras",
    "Paapan Kapakka",
@@ -503,7 +512,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-211"
+   "https://keikat.org/off-teatteri-193"
   ],
   [
    "2026-09-13",
@@ -719,7 +728,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-241"
+   "https://keikat.org/uudet-teatteri-229"
   ],
   [
    "2026-09-18",
@@ -728,7 +737,7 @@
    "Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-269"
+   "https://keikat.org/elämä-vastavirta-klub-257"
   ],
   [
    "2026-09-18",
@@ -918,7 +927,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-300"
+   "https://keikat.org/koovee-spiral-288"
   ],
   [
    "2026-09-19",
@@ -1482,7 +1491,7 @@
    "Sammon uusi koulu",
    "rock",
    0,
-   "https://keikat.org/tampereen-sammon-410"
+   "https://keikat.org/tampereen-sammon-398"
   ],
   [
    "2026-09-27",
@@ -1599,7 +1608,7 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-431"
+   "https://keikat.org/music-tampere-talo-418"
   ],
   [
    "2026-10-01",
@@ -2091,7 +2100,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-489"
+   "https://keikat.org/off-teatteri-480"
   ],
   [
    "2026-10-07",
@@ -3165,7 +3174,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-738"
+   "https://keikat.org/tampere-pakkahuone-729"
   ],
   [
    "2026-10-29",
@@ -3404,7 +3413,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-797"
+   "https://keikat.org/tehdas-teatteri-789"
   ],
   [
    "2026-11-05",
@@ -3584,7 +3593,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-932"
+   "https://keikat.org/sorin-sorin-925"
   ],
   [
    "2026-11-18",
@@ -3665,7 +3674,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-980"
+   "https://keikat.org/kotae-tampereen-973"
   ],
   [
    "2026-11-21",
@@ -3878,7 +3887,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1240"
+   "https://keikat.org/magda-vooninki-1239"
   ],
   [
    "2027-03-18",
