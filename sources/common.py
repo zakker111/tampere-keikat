@@ -487,6 +487,34 @@ def log_possible_duplicates(events, threshold=0.6):
     return flagged
 
 
+def normalize_genre_string(genre_text):
+    """
+    Cleans and normalizes genre strings from scrapers.
+    Handles cases where text might be corrupted into list-like strings or anagrams.
+    Returns a clean lowercase genre string.
+    """
+    if not genre_text:
+        return ""
+    
+    # Remove whitespace
+    genre_text = str(genre_text).strip()
+    
+    # If it looks like a python list string (e.g., "['r', 'o', 'c', 'k']"), try to recover
+    if genre_text.startswith("[") and genre_text.endswith("]"):
+        try:
+            import ast
+            chars = ast.literal_eval(genre_text)
+            if isinstance(chars, list):
+                # Join characters and lowercase
+                word = "".join(str(c) for c in chars).lower().strip()
+                return word
+        except (ValueError, SyntaxError):
+            pass
+    
+    # Standard cleanup - lowercase
+    return genre_text.lower()
+
+
 def sanitize_events(events):
     """Defensive validation pass: guarantees every event dict downstream has
     all required fields with safe types, so a malformed dict from any one
@@ -539,8 +567,13 @@ def sanitize_events(events):
             title = title[:197].rstrip() + "…"
 
         genre = e.get("genre")
-        if not isinstance(genre, str) or not genre:
+        # Normalize genre string to handle corruption
+        if not isinstance(genre, str):
             genre = DEFAULT_GENRE
+        else:
+            genre = normalize_genre_string(genre)
+            if not genre:
+                genre = DEFAULT_GENRE
 
         free = e.get("free", 0)
         if not isinstance(free, int) or free not in (0, 1):
