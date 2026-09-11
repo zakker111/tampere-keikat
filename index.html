@@ -813,26 +813,26 @@ function toEvents(raw){
     let genre = r[4];
     // Handle corrupted genre data (arrays or string representations of arrays)
     if(Array.isArray(genre)){
-      // Map first character to known genre - fallback to 'rock' if unknown
-      const charToGenre = {
-        'r':'rock','m':'metal','p':'punk','o':'pop',
-        'j':'jazz','e':'electronic','h':'hiphop','f':'folk',
-        'c':'classical','s':'festival','i':'indie','n':'country',
-        't':'blues','k':'alternative','l':'reggae','a':'ambient'
+      // Decode anagram: sort letters and match to known genres
+      const sorted = genre.sort().join('');
+      const anagramMap = {
+        'acils':'classical',
+        'ckor':'rock',
+        'ceilnort':'electronic'
       };
-      genre = charToGenre[genre[0]] || 'rock';
+      genre = anagramMap[sorted] || 'rock';
     } else if(typeof genre === 'string' && genre.startsWith("['")){
       // Handle string representation of array like "['c', 'k', 'o', 'r']"
-      // Extract first character and map to genre
-      const match = genre.match(/^\['([a-z])'/);
-      if(match){
-        const charToGenre = {
-          'r':'rock','m':'metal','p':'punk','o':'pop',
-          'j':'jazz','e':'electronic','h':'hiphop','f':'folk',
-          'c':'classical','s':'festival','i':'indie','n':'country',
-          't':'blues','k':'alternative','l':'reggae','a':'ambient'
+      // Extract letters and decode anagram
+      const letters = genre.match(/[a-z]/g);
+      if(letters){
+        const sorted = letters.sort().join('');
+        const anagramMap = {
+          'acils':'classical',
+          'ckor':'rock',
+          'ceilnort':'electronic'
         };
-        genre = charToGenre[match[1]] || 'rock';
+        genre = anagramMap[sorted] || 'rock';
       } else {
         genre = 'rock';
       }
