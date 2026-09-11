@@ -1,0 +1,8 @@
+2026-09-10 15:38:21 - INFO - SCRAPE START
+2026-09-10 15:38:22 - INFO - [puistokonsertit] COMPLETE — 0 events in 1.2s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-10 15:38:22 - INFO - [keikat_org] COMPLETE — 15 events in 1.6s — OK
+2026-09-10 15:38:23 - INFO - [keikat_live] COMPLETE — 5 events in 2.2s — OK
+2026-09-10 15:38:24 - INFO - [vastavirta] COMPLETE — 22 events in 2.9s — OK
+2026-09-10 15:38:25 - INFO - [tampere_filharmonia] COMPLETE — 33 events in 4.3s — OK
+2026-09-10 15:38:32 - INFO - [meteli] COMPLETE — 0 events in 11.5s — NO_EVENTS_OR_PARSE_FAILURE
+2026-09-10 15:38:33 - INFO - [tampere_kirjastot] COMPLETE — 11 events in 12.6s — OK
