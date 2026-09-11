@@ -757,8 +757,8 @@ let dataMeta = {generated: null, source_note: ""};
 
 function toEvents(raw){
   return raw.map((r,i)=>{
-    // Handle corrupted genre data (arrays instead of strings)
     let genre = r[4];
+    // Handle corrupted genre data (arrays or string representations of arrays)
     if(Array.isArray(genre)){
       // Map first character to known genre - fallback to 'rock' if unknown
       const charToGenre = {
@@ -767,6 +767,20 @@ function toEvents(raw){
         'c':'classical','s':'festival'
       };
       genre = charToGenre[genre[0]] || 'rock';
+    } else if(typeof genre === 'string' && genre.startsWith("['")){
+      // Handle string representation of array like "['c', 'k', 'o', 'r']"
+      // Extract first character and map to genre
+      const match = genre.match(/^\['([a-z])'/);
+      if(match){
+        const charToGenre = {
+          'r':'rock','m':'metal','p':'punk','o':'pop',
+          'j':'jazz','e':'electronic','h':'hiphop','f':'folk',
+          'c':'classical','s':'festival'
+        };
+        genre = charToGenre[match[1]] || 'rock';
+      } else {
+        genre = 'rock';
+      }
     }
     return {id:i,date:r[0],time:r[1],title:r[2],venue:r[3],genre:genre,free:!!r[5],url:r[6]};
   });
