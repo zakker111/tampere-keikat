@@ -368,7 +368,13 @@ const GENRES = {
   hiphop:    {label:"Hip-Hop & Pop",       color:"var(--plum)"},
   folk:      {label:"Folk & World",        color:"var(--olive)"},
   classical: {label:"Classical & Orchestral", color:"var(--steel)"},
-  festival:  {label:"Festivals",           color:"var(--gold)"}
+  festival:  {label:"Festivals",           color:"var(--gold)"},
+  indie:     {label:"Indie",               color:"var(--brick-2)"},
+  country:   {label:"Country",             color:"var(--olive)"},
+  blues:     {label:"Blues",               color:"var(--amber)"},
+  alternative:{label:"Alternative",        color:"var(--brick-2)"},
+  reggae:    {label:"Reggae",              color:"var(--olive)"},
+  ambient:   {label:"Ambient",             color:"var(--teal)"}
 };
 
 // Data now lives in data.json (regenerated daily by scrape.py via GitHub Actions).
@@ -811,7 +817,8 @@ function toEvents(raw){
       const charToGenre = {
         'r':'rock','m':'metal','p':'punk','o':'pop',
         'j':'jazz','e':'electronic','h':'hiphop','f':'folk',
-        'c':'classical','s':'festival'
+        'c':'classical','s':'festival','i':'indie','n':'country',
+        't':'blues','k':'alternative','l':'reggae','a':'ambient'
       };
       genre = charToGenre[genre[0]] || 'rock';
     } else if(typeof genre === 'string' && genre.startsWith("['")){
@@ -822,7 +829,8 @@ function toEvents(raw){
         const charToGenre = {
           'r':'rock','m':'metal','p':'punk','o':'pop',
           'j':'jazz','e':'electronic','h':'hiphop','f':'folk',
-          'c':'classical','s':'festival'
+          'c':'classical','s':'festival','i':'indie','n':'country',
+          't':'blues','k':'alternative','l':'reggae','a':'ambient'
         };
         genre = charToGenre[match[1]] || 'rock';
       } else {
