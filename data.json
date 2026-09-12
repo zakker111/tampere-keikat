@@ -1,11 +1,11 @@
 {
- "generated": "2026-09-11 09:22 UTC",
+ "generated": "2026-09-12 09:02 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
+  "keikat_org": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
-  "keikat_org": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
@@ -13,237 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-09-11",
-   "09:45",
-   "Open Rehearsal",
-   "Tampere-talo",
-   [
-    "a",
-    "c",
-    "i",
-    "l",
-    "s"
-   ],
-   0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a327689a7cd070007b2df8c&date=11.09.2026&time=09.45+-+13.00"
-  ],
-  [
-   "2026-09-11",
-   "17:00",
-   "HULLU!KLUBI : Purkkapäivä (20.00), Gag Reflex (19.15), Roskis (18.30), Läppävika (17.45), 昨今 Sakkon (17.00)",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.vastavirta.net"
-  ],
-  [
-   "2026-09-11",
-   "19:00",
-   "Tampere Philharmonic Orchestra: Sibelius 5",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/sibelius-5/"
-  ],
-  [
-   "2026-09-11",
-   "19:00",
-   "Delphine Dora, Maauimala",
-   "Pethaus",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/delphine-dora-maauimala/"
-  ],
-  [
-   "2026-09-11",
-   "19:00",
-   "Ilmavoimien Big Band & Olli Soikkeli: Django!",
-   "Tampere-talo",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/ilmavoimien-big-band-olli-soikkeli-django/"
-  ],
-  [
-   "2026-09-11",
-   "20:00",
-   "touko (EP-julkkarit) + Viive",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/touko-ep-julkkarit-viive/"
-  ],
-  [
-   "2026-09-11",
-   "21:00",
-   "Cenotaph (mex), Cryptworm (uk), TONNE",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/hulluklubi-sekamuotoinen-jakso-oma-koloni-purkkapaiva-gag-reflex-kasa-luita/"
-  ],
-  [
-   "2026-09-11",
-   "21:00",
-   "Jahnukaiset",
-   "Telakan keikat",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jahnukaiset-komets/"
-  ],
-  [
-   "2026-09-11",
-   "21:00",
-   "Lazy Men",
-   "Paapan Kapakka",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/lazy-men-2/"
-  ],
-  [
-   "2026-09-11",
-   "21:00",
-   "Bellman-kollektiivi Bellman-kollektiivi Katubaari",
-   "Axu",
-   "rock",
-   0,
-   "https://keikat.live/keikka/5808-bellman-kollektiivi"
-  ],
-  [
-   "2026-09-11",
-   "21:00",
-   "Rokets, Gehenna Sour & FUZZKILLS live Rock Rokets, Gehenna Sour & FUZZKILLS live Kulttuurikeskus",
-   "Maanalainen",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6059-rokets-gehenna-sour-fuzzkills-live"
-  ],
-  [
-   "2026-09-11",
-   "21:00",
-   "HI/LO goes HI90s #5: House, Garage & Big Beat 1995–1999 Elektro / DJ HI/LO goes HI90s #5: House, Garage & Big Beat 1995–1999 Irish Bar",
-   "O’Connell’s",
-   "electronic",
-   0,
-   "https://keikat.live/keikka/6088-hi-lo-goes-hi90s-5-house-garage-big-beat-1995-1999"
-  ],
-  [
-   "2026-09-11",
-   "21:00",
-   "Cenotaph (mex) (23.30), Cryptworm (uk) (22.30), TONNE (21.30)",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.vastavirta.net"
-  ],
-  [
-   "2026-09-11",
-   "21:00",
-   "Nina Kaitaranta",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.vastavirta.net"
-  ],
-  [
-   "2026-09-11",
-   "22:00",
-   "RNBLICIOUS: 90- ja 00-lukujen R&B- ja hiphop-klassikot  DJ’t Sara-Maaria & C-Flava",
-   "Desibeli tapahtumat",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/rnblicious-90-ja-00-lukujen-rb-ja-hiphop-klassikot-djt-sara-maaria-c-flava/"
-  ],
-  [
-   "2026-09-11",
-   "22:00",
-   "VERMILIA, AETHER (PL), FOLKRIM",
-   "Bar Kotelo",
-   "folk",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/vermilia-aether-pl-folkrim/"
-  ],
-  [
-   "2026-09-11",
-   "23:00",
-   "ntopallon EM-kisojen Jatkobileet: Levi-Äijä + DJ O-Nine",
-   "Bar Ihku",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-o-nine-16/"
-  ],
-  [
-   "2026-09-11",
-   "",
-   "Touko, Viive",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/touko-viive-2"
-  ],
-  [
-   "2026-09-11",
-   "",
-   "Cenotaph (MEX), Cryptworm (GBR), Tonne",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/cenotaph-mex-cryptworm-gbr-tonne"
-  ],
-  [
-   "2026-09-11",
-   "",
-   "Uudenkuun Yö: Vermilia, Aether (POL), Folkrim",
-   "Bar Kotelo",
-   "folk",
-   0,
-   "https://www.meteli.net/tapahtuma/uudenkuun-yo-vermilia-aether-pol-folkrim"
-  ],
-  [
-   "2026-09-11",
-   "",
-   "Jahnukaiset 30-vuotisjuhlakonsertti",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/jahnukaiset-30-vuotisjuhlakonsertti"
-  ],
-  [
-   "2026-09-11",
-   "",
-   "Rokets, Gehenna Sour, Fuzzkills",
-   "Maanalainen",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/rokets-gehenna-sour-fuzzkills"
-  ],
-  [
-   "2026-09-11",
-   "",
-   "Sibelius 5: Tampere Filharmonia",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.meteli.net/tapahtuma/sibelius-5-tampere-filharmonia"
-  ],
-  [
-   "2026-09-11",
-   "",
-   "Live Music Afterwork: Tuomas Räisänen",
-   "Pub Simon",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/live-music-afterwork-tuomas-raisanen-2"
-  ],
-  [
-   "2026-09-11",
-   "",
-   "The Psychward Breakouts, De La Rocka & The Garbagemen",
-   "Varjobaari",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/the-psychward-breakouts-de-la-rocka-the-garbagemen/"
-  ],
   [
    "2026-09-12",
    "12:11",
@@ -278,7 +47,7 @@
    "Terassi Pub Yläkerta",
    "rock",
    1,
-   "https://www.vastavirta.net"
+   "https://facebook.com/events/s/hulluklubi-3v-bileet-purran-li/4316001472043229/"
   ],
   [
    "2026-09-12",
@@ -530,7 +299,7 @@
    "Terassi Pub Yläkerta",
    "rock",
    1,
-   "https://www.vastavirta.net"
+   "https://facebook.com/events/s/hulluklubi-3v-bileet-purran-li/4316001472043229/"
   ],
   [
    "2026-09-13",
@@ -539,7 +308,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-190"
+   "https://keikat.org/off-teatteri-165"
   ],
   [
    "2026-09-13",
@@ -800,7 +569,7 @@
    "Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-248"
+   "https://keikat.org/elämä-vastavirta-klub-203"
   ],
   [
    "2026-09-18",
@@ -809,7 +578,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-252"
+   "https://keikat.org/uudet-teatteri-207"
   ],
   [
    "2026-09-18",
@@ -1008,7 +777,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-282"
+   "https://keikat.org/koovee-spiral-236"
   ],
   [
    "2026-09-19",
@@ -1599,7 +1368,7 @@
    "Sammon uusi koulu",
    "rock",
    0,
-   "https://keikat.org/tampereen-sammon-393"
+   "https://keikat.org/tampereen-sammon-373"
   ],
   [
    "2026-09-27",
@@ -1716,7 +1485,7 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-411"
+   "https://keikat.org/music-tampere-talo-394"
   ],
   [
    "2026-10-01",
@@ -2226,7 +1995,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-471"
+   "https://keikat.org/off-teatteri-459"
   ],
   [
    "2026-10-07",
@@ -2418,6 +2187,15 @@
    "https://www.meteli.net/tapahtuma/homecoming-dj-orion-nenerchy-ym"
   ],
   [
+   "2026-10-09",
+   "",
+   "Repo Woman, Bad Valentines, Potkut",
+   "Maanalainen",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/repo-woman-bad-valentines-potkut"
+  ],
+  [
    "2026-10-10",
    "10:10",
    "Tampere Filharmonia esittää: Viihdettä ja vispilänkauppaa",
@@ -2470,15 +2248,6 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/nyrkkitappelu-2/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "Haystack (SWE), Loins, Som Är Död",
-   "Varjobaari",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/haystack-swe-loins-som-ar-dod/"
   ],
   [
    "2026-10-10",
@@ -2578,6 +2347,15 @@
    "electronic",
    0,
    "https://www.meteli.net/tapahtuma/control-plays-the-clash-dj-kallio"
+  ],
+  [
+   "2026-10-10",
+   "",
+   "Haystack (SWE), Loins, Som Är Död",
+   "Varjobaari",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/haystack-swe-loins-som-ar-dod-2"
   ],
   [
    "2026-10-13",
@@ -3318,7 +3096,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-724"
+   "https://keikat.org/tampere-pakkahuone-715"
   ],
   [
    "2026-10-29",
@@ -3557,7 +3335,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-787"
+   "https://keikat.org/tehdas-teatteri-778"
   ],
   [
    "2026-11-05",
@@ -3576,6 +3354,21 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/rahvaanmusiikin-kerho-orffit"
+  ],
+  [
+   "2026-11-06",
+   "09:45",
+   "Open Rehearsal",
+   "Tampere-talo",
+   [
+    "a",
+    "c",
+    "i",
+    "l",
+    "s"
+   ],
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a327689a7cd070007b2df8c&date=06.11.2026&time=09.45+-+13.00"
   ],
   [
    "2026-11-06",
@@ -3737,7 +3530,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-928"
+   "https://keikat.org/sorin-sorin-913"
   ],
   [
    "2026-11-18",
@@ -3812,13 +3605,22 @@
    "https://www.meteli.net/tapahtuma/benjamin-18"
   ],
   [
+   "2026-11-20",
+   "",
+   "Stratovarius, Klamydia, Kotiteollisuus, Kilpi",
+   "Hakametsän jäähalli",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/stratovarius-klamydia-kotiteollisuus-kilpi-3"
+  ],
+  [
    "2026-11-21",
    "20:00",
    "Kotae Expo 2026 la 21.11.2026",
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-965"
+   "https://keikat.org/kotae-tampereen-961"
   ],
   [
    "2026-11-21",
@@ -4103,7 +3905,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1251"
+   "https://keikat.org/magda-vooninki-1239"
   ],
   [
    "2027-03-18",
