@@ -106,16 +106,20 @@ def merge_event_fields(base_event: Dict[str, Any], duplicate_event: Dict[str, An
     base_genres_key = 'genre' if 'genre' in base_event else 'genres'
     dup_genres_key = 'genre' if 'genre' in duplicate_event else 'genres'
     
-    base_genres = set(base_event.get(base_genres_key, []))
-    dup_genres = set(duplicate_event.get(dup_genres_key, []))
+    base_genre = base_event.get(base_genres_key, '')
+    dup_genre = duplicate_event.get(dup_genres_key, '')
     
-    if dup_genres and not base_genres:
-        # Base has no genres, take all from duplicate
-        base_event[base_genres_key] = sorted(list(dup_genres))
-    elif dup_genres and base_genres:
-        # Both have genres, merge unique ones
-        combined_genres = base_genres.union(dup_genres)
-        base_event[base_genres_key] = sorted(list(combined_genres))
+    # Normalize genres to strings - handle cases where genre might be a list
+    # (e.g., from corrupted data or legacy formats)
+    if isinstance(base_genre, list):
+        base_genre = ' '.join(str(g) for g in base_genre)
+    if isinstance(dup_genre, list):
+        dup_genre = ' '.join(str(g) for g in dup_genre)
+    
+    # Only merge if base has no genre but duplicate does
+    # Don't try to "merge" single genre strings - just keep the first one
+    if not base_genre and dup_genre:
+        base_event[base_genres_key] = dup_genre
     
     # Merge descriptions - prefer longer/more detailed description
     base_desc = base_event.get('description', '') or ''
