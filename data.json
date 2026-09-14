@@ -1,18 +1,27 @@
 {
- "generated": "2026-09-14 20:46 UTC",
+ "generated": "2026-09-14 21:24 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
-  "keikat_live": "OK",
+  "tampere_filharmonia": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_org": "OK",
+  "keikat_live": "OK",
   "vastavirta": "OK",
-  "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "OK",
   "kohokohdat": "OK"
  },
  "events": [
+  [
+   "2026-09-14",
+   "11:00",
+   "Taaperodisko Rullassa 2026 Elektro / DJ Taaperodisko Rullassa 2026 Kulttuuritalo",
+   "Laikku",
+   "electronic",
+   0,
+   "https://keikat.live/keikka/6158-taaperodisko-rullassa-2026"
+  ],
   [
    "2026-09-14",
    "23:00",
@@ -42,15 +51,6 @@
   ],
   [
    "2026-09-15",
-   "11:00",
-   "Taaperodisko Rullassa 2026 Elektro / DJ Taaperodisko Rullassa 2026 Kulttuuritalo",
-   "Laikku",
-   "electronic",
-   0,
-   "https://keikat.live/keikka/6158-taaperodisko-rullassa-2026"
-  ],
-  [
-   "2026-09-15",
    "12:30",
    "Runoja ja rokkia: Karoliina Blackburn ja Costello Hautamäki",
    "Tesoman kirjasto, Tesomankatu 4, 33310 Tampere",
@@ -66,6 +66,15 @@
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a242c52187d2f000740d9a9"
+  ],
+  [
+   "2026-09-15",
+   "19:00",
+   "22. Tampere Guitar Festival Klassinen Festari 22. Tampere Guitar Festival Tampereen",
+   "konservatorio",
+   "classical",
+   0,
+   "https://keikat.live/keikka/6159-22-tampere-guitar-festival"
   ],
   [
    "2026-09-15",
@@ -237,15 +246,6 @@
    "rock",
    1,
    "https://www.facebook.com/events/912086771396830/"
-  ],
-  [
-   "2026-09-18",
-   "19:00",
-   "Tampere Philharmonic Orchestra: French Romanticism",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/french-romanticism/"
   ],
   [
    "2026-09-18",
@@ -564,15 +564,6 @@
   ],
   [
    "2026-09-20",
-   "15:00",
-   "Afternoon of Fauns: Transformations",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/afternoon-of-fauns-transformations-2/"
-  ],
-  [
-   "2026-09-20",
    "18:00",
    "Laula elämän puolesta",
    "Vastavirta-Klubi",
@@ -723,15 +714,6 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/lemonator/"
-  ],
-  [
-   "2026-09-25",
-   "19:00",
-   "Tampere Philharmonic Orchestra: The Firebird",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/firebird/"
   ],
   [
    "2026-09-25",
@@ -1401,15 +1383,6 @@
   ],
   [
    "2026-10-02",
-   "19:00",
-   "Live recording: A European Requiem",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/live-recording-of-the-concert-a-european-requiem/"
-  ],
-  [
-   "2026-10-02",
    "19:30",
    "Paavi Franciskuksen Pääsiäinen, Isla, Suolihuuhtelu",
    "Vastavirta-Klubi",
@@ -1634,15 +1607,6 @@
    "https://kohokohdat.fi/tampere/tapahtuma/kujakollin-jamit-2026-04-05-2026-05-03-2026-06-07-2026-07-05-2026-08-02-2026-09-06-2026-10-04/"
   ],
   [
-   "2026-10-04",
-   "15:00",
-   "Chamber Music Among Visual Art",
-   "Armo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/chamber-music-among-visual-art-martha-diamond/"
-  ],
-  [
    "2026-10-06",
    "06:10",
    "Eclipse/TamJazz-klubi: Martti Vesala Soundpost Quintet + jamit",
@@ -1861,15 +1825,6 @@
   [
    "2026-10-09",
    "19:00",
-   "Tampere Philharmonic Orchestra: Zarathustra",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/zarathustra/"
-  ],
-  [
-   "2026-10-09",
-   "19:00",
    "Supetele, Mässykiska, Perkeet",
    "Terassi Pub Yläkerta",
    "rock",
@@ -2019,15 +1974,6 @@
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a8c2e499c2346000727e398"
-  ],
-  [
-   "2026-10-10",
-   "14:00",
-   "Tampere Philharmonic Orchestra presents: Revel and Romantic Mischief",
-   "G Livelab Tampere",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/tpo-presents-entertainment-and-whisked-mischief/"
   ],
   [
    "2026-10-10",
@@ -2535,15 +2481,6 @@
   ],
   [
    "2026-10-23",
-   "18:00",
-   "Concert for the whole family: Lost Key",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/concert-for-the-whole-family-lost-key/"
-  ],
-  [
-   "2026-10-23",
    "23:00",
    "Strychnos (den), Sepulchral Curse, Iesuskull",
    "Vastavirta-Klubi",
@@ -2604,15 +2541,6 @@
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/mega-k-40-disco-sami-kuronen-ja-dj-salis/"
-  ],
-  [
-   "2026-10-23",
-   "",
-   "Tampere Opera: Her Voice",
-   "Tampere-talo",
-   "classical",
-   1,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/tampere-opera-her-voice-2/"
   ],
   [
    "2026-10-23",
@@ -2913,15 +2841,6 @@
   ],
   [
    "2026-10-30",
-   "19:00",
-   "Tampere Philharmonic Orchestra: The Touch of Beauty",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/the-touch-of-beauty/"
-  ],
-  [
-   "2026-10-30",
    "21:00",
    "Meirami",
    "Axu Katubaari",
@@ -3156,24 +3075,6 @@
   ],
   [
    "2026-11-06",
-   "09:45",
-   "Open Rehearsal",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a327689a7cd070007b2df8c&date=06.11.2026&time=09.45+-+13.00"
-  ],
-  [
-   "2026-11-06",
-   "19:00",
-   "Tampere Philharmonic Orchestra: In the Eye of the Storm",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/in-the-eye-of-the-storm/"
-  ],
-  [
-   "2026-11-06",
    "",
    "Saimaa",
    "Tavara-asema",
@@ -3225,24 +3126,6 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/edicti-2"
-  ],
-  [
-   "2026-11-08",
-   "15:00",
-   "Afternoon of Fauns: Sonic Delight",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/afternoon-of-fauns-sonic-delight/"
-  ],
-  [
-   "2026-11-12",
-   "19:00",
-   "Tampere Philharmonic Orchestra: Water Music",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/water-music/"
   ],
   [
    "2026-11-12",
@@ -3390,15 +3273,6 @@
   ],
   [
    "2026-11-20",
-   "18:00",
-   "Tchaikovsky: The Nutcracker – A Christmas Carol",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/tchaikovsky-the-nutcracker-a-christmas-carol/"
-  ],
-  [
-   "2026-11-20",
    "",
    "Timo Kahilainen feat. Heikki Hela & Just in Time",
    "TTT-Klubi",
@@ -3516,15 +3390,6 @@
   ],
   [
    "2026-11-27",
-   "19:00",
-   "Tampere Philharmonic Orchestra: Romantic Favourites",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/romantic-favourites/"
-  ],
-  [
-   "2026-11-27",
    "",
    "Masa Orpana Honk",
    "TTT-Klubi",
@@ -3585,15 +3450,6 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/rahvaanmusiikin-kerho-junna"
-  ],
-  [
-   "2026-12-04",
-   "19:00",
-   "Opera Gala",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/opera-gala/"
   ],
   [
    "2026-12-04",
@@ -3669,15 +3525,6 @@
   ],
   [
    "2026-12-11",
-   "19:00",
-   "Waltteri Torikka & Tampere Philharmonic: Christmas Concert",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/waltteri-torikka-tampere-philharmonic-christmas-concert/"
-  ],
-  [
-   "2026-12-11",
    "",
    "Joulukonsertti",
    "Oneviolin Pakkahuone",
@@ -3695,15 +3542,6 @@
    "https://www.meteli.net/tapahtuma/luxury-toys-jann-wilde-the-neon-comets"
   ],
   [
-   "2026-12-13",
-   "15:00",
-   "Afternoon of Fauns: A Dancing Enchanted Forest",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/afternoon-of-fauns-a-dancing-enchanted-forest/"
-  ],
-  [
    "2026-12-15",
    "",
    "Leavings-Orkesteri & Timo Rautiainen",
@@ -3711,15 +3549,6 @@
    "classical",
    0,
    "https://www.meteli.net/tapahtuma/leavings-orkesteri-timo-rautiainen-20"
-  ],
-  [
-   "2026-12-17",
-   "19:00",
-   "Tampere Philharmonic Orchestra: Santtu-Matias Rouvali & Alena Baeva",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/santtu-matias-rouvali-alena-baeva/"
   ],
   [
    "2026-12-29",
@@ -3738,15 +3567,6 @@
    "rock",
    0,
    "https://keikat.org/g-g-1196"
-  ],
-  [
-   "2027-01-15",
-   "19:00",
-   "Tampere Philharmonic Orchestra: Season series concert",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a1597fa8811e40007efe310&date=15.01.2027&time=19.00+-+21.00"
   ],
   [
    "2027-02-01",
