@@ -1,81 +1,18 @@
 {
- "generated": "2026-09-13 09:59 UTC",
+ "generated": "2026-09-14 10:19 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "keikat_org": "OK",
-  "keikat_live": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_live": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
-  "vastavirta": "OK",
   "tampere_filharmonia": "OK",
+  "vastavirta": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "OK",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-09-13",
-   "15:00",
-   "HOT HEROS FEATURING -klubin vieraana Susanna Volanto",
-   "Nekala",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/hot-heros-featuring-klubin-vieraana-susanna-volanto/"
-  ],
-  [
-   "2026-09-13",
-   "17:00",
-   "HULLU!KLUBI: Dark Bottle, Läppävika, Isojen Poikien Pöytä, Roskis, Kikkailijat",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/hulluklubi-dark-bottle-lappavika-isojen-poikien-poyta-roskis-kikkailijat/"
-  ],
-  [
-   "2026-09-13",
-   "17:00",
-   "HULLU!KLUBI : Kikkailijat (20.15), Oma koloni (19.15), Isojen Poikien Pöytä (18.00), Sekamuotoinen Jakso (17.45), Dark Bottle (17.00)",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://facebook.com/events/s/hulluklubi-3v-bileet-purran-li/4316001472043229/"
-  ],
-  [
-   "2026-09-13",
-   "20:00",
-   "OFF: Carolus Rex su 13.9.2026",
-   "Teatteri Telakka",
-   "rock",
-   0,
-   "https://keikat.org/off-teatteri-138"
-  ],
-  [
-   "2026-09-13",
-   "22:00",
-   "DJ Jiri",
-   "Utopia",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-jiri-31/"
-  ],
-  [
-   "2026-09-13",
-   "23:00",
-   "DJ Ozan",
-   "Bar Ihku",
-   [
-    "c",
-    "e",
-    "i",
-    "l",
-    "n",
-    "o",
-    "r",
-    "t"
-   ],
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-ozan-2/"
-  ],
   [
    "2026-09-14",
    "19:00",
@@ -114,6 +51,15 @@
   ],
   [
    "2026-09-15",
+   "11:00",
+   "Taaperodisko Rullassa 2026 Elektro / DJ Taaperodisko Rullassa 2026 Kulttuuritalo",
+   "Laikku",
+   "electronic",
+   0,
+   "https://keikat.live/keikka/6158-taaperodisko-rullassa-2026"
+  ],
+  [
+   "2026-09-15",
    "12:30",
    "Runoja ja rokkia: Karoliina Blackburn ja Costello Hautamäki",
    "Tesoman kirjasto, Tesomankatu 4, 33310 Tampere",
@@ -132,12 +78,30 @@
   ],
   [
    "2026-09-15",
+   "20:00",
+   "Salhojankadun Pubin jamit: House Band",
+   "Salhojankadun Pub",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/salhojankadun-pubin-jamit-house-band/"
+  ],
+  [
+   "2026-09-15",
    "21:00",
    "Riku Poramo trio",
    "Paapan Kapakka",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/riku-poramo-trio-4/"
+  ],
+  [
+   "2026-09-16",
+   "20:00",
+   "Houruklubi: Kino Kosmos",
+   "Huurupiilo",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/houruklubi-sumu-parakin-lapset/"
   ],
   [
    "2026-09-16",
@@ -304,6 +268,15 @@
   [
    "2026-09-18",
    "20:00",
+   "Kalevan erikois -klubi",
+   "Huurupiilo",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/vihanto-robert-saastamoinen-2/"
+  ],
+  [
+   "2026-09-18",
+   "20:00",
    "Polymoon (levyjulkkarit) + Sisar + Ether Eye",
    "G Livelab Tampere",
    "rock",
@@ -317,7 +290,7 @@
    "Vastavirta-klubi",
    "metal",
    0,
-   "https://keikat.org/elämä-vastavirta-klub-192"
+   "https://keikat.org/elämä-vastavirta-klub-191"
   ],
   [
    "2026-09-18",
@@ -326,7 +299,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/uudet-teatteri-196"
+   "https://keikat.org/uudet-teatteri-195"
   ],
   [
    "2026-09-18",
@@ -521,6 +494,15 @@
   [
    "2026-09-19",
    "20:00",
+   "Huone, Toni P., DJ Tummien oluiden tulkki",
+   "Huurupiilo",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/huone-toni-p-dj-tummien-oluiden-tulkki/"
+  ],
+  [
+   "2026-09-19",
+   "20:00",
    "Jack & Jones",
    "Sisko ja sen Veli",
    "rock",
@@ -534,7 +516,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-204"
+   "https://keikat.org/koovee-spiral-203"
   ],
   [
    "2026-09-19",
@@ -678,6 +660,15 @@
   ],
   [
    "2026-09-23",
+   "20:00",
+   "Houruklubi: Massa, Otrok",
+   "Huurupiilo",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/houruklubi-massa-otrok/"
+  ],
+  [
+   "2026-09-23",
    "",
    "Hallowed Lungs – Pyhät keuhkot: Kimmo Pohjonen",
    "G Livelab Tampere",
@@ -783,6 +774,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/black-magic-six-ulf-wolf/"
+  ],
+  [
+   "2026-09-25",
+   "20:00",
+   "Gator + 1",
+   "Huurupiilo",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/gator-1/"
   ],
   [
    "2026-09-25",
@@ -964,6 +964,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/juha-tretjakov-3/"
+  ],
+  [
+   "2026-09-26",
+   "20:00",
+   "Kinnuset, Säärelä & Björkqvist -duo",
+   "Huurupiilo",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kinnuset-saarela-bjorkqvist-duo/"
   ],
   [
    "2026-09-26",
@@ -1675,6 +1684,38 @@
   ],
   [
    "2026-10-04",
+   "04:10",
+   "Anssi Salmela Duo",
+   "Sisko ja sen Veli",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/anssi-salmela-duo/"
+  ],
+  [
+   "2026-10-04",
+   "04:10",
+   "Hermes Tuomisto",
+   "Sisko ja sen Veli",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hermes-tuomisto/"
+  ],
+  [
+   "2026-10-04",
+   "04:10",
+   "Irkkujamit",
+   "Sisko ja sen Veli",
+   [
+    "c",
+    "k",
+    "o",
+    "r"
+   ],
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/irkkujamit-8/"
+  ],
+  [
+   "2026-10-04",
    "15:00",
    "Chamber Music Among Visual Art",
    "Armo",
@@ -1969,15 +2010,6 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/teerenpeli-tease-horror-tease-show/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "Anssi Salmela Duo",
-   "Sisko ja sen Veli",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/anssi-salmela-duo/"
   ],
   [
    "2026-10-10",
@@ -2704,15 +2736,6 @@
   [
    "2026-10-24",
    "20:00",
-   "Hermes Tuomisto",
-   "Sisko ja sen Veli",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/hermes-tuomisto/"
-  ],
-  [
-   "2026-10-24",
-   "20:00",
    "Lindholm & Uusilehto sekä Azorit Exprss",
    "Axu Katubaari",
    "rock",
@@ -2808,20 +2831,6 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/zucchero-it/"
-  ],
-  [
-   "2026-10-28",
-   "19:00",
-   "Irkkujamit",
-   "Sisko ja sen Veli",
-   [
-    "c",
-    "k",
-    "o",
-    "r"
-   ],
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/irkkujamit-8/"
   ],
   [
    "2026-10-28",
@@ -2999,7 +3008,7 @@
    "2026-10-31",
    "18:30",
    "JARKKO MARTIKAINEN",
-   "Tampereen Työväen Teatteri",
+   "Gastropub Tuulensuu",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jarkko-martikainen/"
@@ -3119,7 +3128,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-742"
+   "https://keikat.org/tehdas-teatteri-745"
   ],
   [
    "2026-11-05",
@@ -3314,7 +3323,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-881"
+   "https://keikat.org/sorin-sorin-887"
   ],
   [
    "2026-11-18",
@@ -3404,7 +3413,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-928"
+   "https://keikat.org/kotae-tampereen-934"
   ],
   [
    "2026-11-21",
@@ -3668,6 +3677,15 @@
    "https://www.meteli.net/tapahtuma/herrasmiehet-lavalla-danny-eino-gron-pasi-kaunisto-erkki-liikanen-kai-hyttinen-eikka-eronen-jari-puhakka-markku-veijalainen-6"
   ],
   [
+   "2027-01-01",
+   "20:00",
+   "G Livelab Tampere: Kausikortti 2027 pe 1.1.2027",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://keikat.org/g-g-1194"
+  ],
+  [
    "2027-01-15",
    "19:00",
    "Tampere Philharmonic Orchestra: Season series concert",
@@ -3689,7 +3707,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1208"
+   "https://keikat.org/magda-vooninki-1218"
   ],
   [
    "2027-03-18",
