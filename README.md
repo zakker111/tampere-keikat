@@ -68,21 +68,18 @@ python scrape.py
 
 ## 📊 Data Sources
 
-The scraper aggregates data from 11+ Tampere music venues and event calendars:
+The scraper aggregates data from 8+ Tampere music venues and event calendars:
 
-| Source | Confidence | Coverage |
-|---|---|---|
-| meteli.net | **High** | Parser unit-tested against real listings |
-| puistokonsertit.tampere.fi | **High** | Dates from URL query params (most reliable) |
-| tamperefilharmonia.fi | **High** | Verified against live page (classical music) |
-| kohokohdat.fi | Medium | Broadest coverage, complex parsing |
-| keikat.org | Low | Built from search snippets |
-| keikat.live | Unverified | Needs live testing |
-| g-livelab.fi | Unverified | New source |
-| tampere.pakkahuone.fi | Unverified | New source |
-| tampere.fi/kirjastot | Unverified | Library events |
-| tampere-talo.fi | Unverified | New source |
-| vastavirta-klubi.fi | Unverified | New source |
+| Source | Status | Events | Coverage |
+|---|---|---|---|
+| kohokohdat.fi | ✅ OK | 208 | Broadest coverage, complex parsing |
+| tamperefilharmonia.fi | ✅ OK | 21 | Classical music, year-round |
+| vastavirta-klubi.fi | ✅ OK | 21 | Club events |
+| keikat.org | ✅ OK | 12 | Aggregator source |
+| tampere.fi/kirjastot | ✅ OK | 11 | Library events, year-round |
+| keikat.live | ✅ OK | 1 | Verified working |
+| puistokonsertit.tampere.fi | ⚠️ Seasonal | 0 | Summer only (May-August) |
+| meteli.net | ⚠️ Blocked | 0 | Cloudflare protection (needs playwright browsers) |
 
 **Note**: Coverage is limited to what these sites list. Venues only posting to Instagram won't appear.
 
@@ -120,12 +117,16 @@ You can hand-edit `data.json` directly (array of `[date, time, title, venue, gen
 ### Fixing a Broken Source
 1. Check `source_status` in `data.json` or Actions log to identify the broken source
 2. Edit the corresponding file in `sources/`:
-   - **meteli**: `sources/meteli.py` → `parse_meteli_anchor_text()`
    - **kohokohdat**: `sources/kohokohdat.py` → `parse_month_page()`
-   - **puistokonsertit**: `sources/puistokonsertit.py` (most reliable)
+   - **puistokonsertit**: `sources/puistokonsertit.py` (summer only, May-August)
+   - **meteli**: `sources/meteli.py` → Cloudflare blocking, needs playwright browsers installed
    - Genre guessing: `sources/common.py` → `guess_genre()`
 3. Test locally with `python scrape.py`
 4. Push changes
+
+**Known Issues:**
+- **meteli.net**: Blocked by Cloudflare protection. To fix: install playwright browsers (`playwright install`) and ensure browser binaries are available in the GitHub Actions environment.
+- **puistokonsertit.tampere.fi**: Seasonal source (May-August only). Returns 0 events during off-season (September-April) - this is expected behavior.
 
 ### Adding a New Source
 1. Create `sources/newsite.py` with a `fetch_newsite()` function
@@ -155,7 +156,9 @@ The site includes a GDPR-compliant cookie consent banner. Analytics is **inactiv
 
 ## 📄 License
 
-MIT License – Free to use and modify.
+This project is **open source** and available under the [MIT License](LICENSE).
+
+Feel free to use, modify, distribute, and contribute!
 
 ---
 
