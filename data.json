@@ -1,11 +1,11 @@
 {
- "generated": "2026-09-15 09:47 UTC",
+ "generated": "2026-09-16 09:39 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
-  "keikat_live": "OK",
   "keikat_org": "OK",
+  "keikat_live": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
@@ -13,42 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-09-15",
-   "11:00",
-   "Taaperodisko Rullassa 2026 Elektro / DJ Taaperodisko Rullassa 2026 Kulttuuritalo",
-   "Laikku",
-   "electronic",
-   0,
-   "https://keikat.live/keikka/6158-taaperodisko-rullassa-2026"
-  ],
-  [
-   "2026-09-15",
-   "12:30",
-   "Runoja ja rokkia: Karoliina Blackburn ja Costello Hautamäki",
-   "Tesoman kirjasto, Tesomankatu 4, 33310 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a2ff9d4187d2f000747220b"
-  ],
-  [
-   "2026-09-15",
-   "17:00",
-   "Työpaja: Miksauksen ja jälkituotannon perusteet",
-   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a242c52187d2f000740d9a9"
-  ],
-  [
-   "2026-09-15",
-   "21:00",
-   "Riku Poramo trio",
-   "Paapan Kapakka",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/riku-poramo-trio-4/"
-  ],
   [
    "2026-09-16",
    "19:00",
@@ -114,6 +78,33 @@
   ],
   [
    "2026-09-17",
+   "13:00",
+   "30. Tampereen Flamencoviikko Iskelmä Festari 30. Tampereen Flamencoviikko Tampereen",
+   "konservatorio",
+   "folk",
+   0,
+   "https://keikat.live/keikka/6161-30-tampereen-flamencoviikko"
+  ],
+  [
+   "2026-09-17",
+   "18:00",
+   "Rahvaanmusiikin kerhon jamit Folk Rahvaanmusiikin kerhon jamit Kulttuuritalo",
+   "Laikku",
+   "folk",
+   0,
+   "https://keikat.live/keikka/5129-rahvaanmusiikin-kerhon-jamit"
+  ],
+  [
+   "2026-09-17",
+   "18:00",
+   "Tiitus Folk Tiitus Tahmelan Huvila",
+   "Ilmainen",
+   "folk",
+   0,
+   "https://keikat.live/keikka/6089-tiitus"
+  ],
+  [
+   "2026-09-17",
    "18:30",
    "Joose Keskitalo & The Mystic Revelation Of Teppo Repo",
    "Vastavirta-Klubi",
@@ -129,6 +120,42 @@
    "metal",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tommy-lindgren-metropolis-sininen-kaupunki-revisited/"
+  ],
+  [
+   "2026-09-17",
+   "19:00",
+   "Tango–Guitar–Flamenco Week: Patrik Kleemola (FIN), klassinen kitara Klassinen Festari Tango–Guitar–Flamenco Week: Patrik Kleemola (FIN), klassinen kitara Tampereen",
+   "konservatorio",
+   "classical",
+   0,
+   "https://keikat.live/keikka/4698-tango-guitar-flamenco-week-patrik-kleemola-fin-klassinen-kitara"
+  ],
+  [
+   "2026-09-17",
+   "19:00",
+   "Kortetcello: Hectorin ja Kaj Chydeniuksen lauluja Folk Kortetcello: Hectorin ja Kaj Chydeniuksen lauluja Bar Oma",
+   "Ilmainen",
+   "folk",
+   0,
+   "https://keikat.live/keikka/5386-kortetcello-hectorin-ja-kaj-chydeniuksen-lauluja"
+  ],
+  [
+   "2026-09-17",
+   "19:00",
+   "Laulun Tekijät -ilta: Markus Perttula, April Skies Folk Laulun Tekijät -ilta: Markus Perttula, April Skies Erkkilänkatu 11",
+   "B-rappu",
+   "folk",
+   0,
+   "https://keikat.live/keikka/6162-laulun-tekijat-ilta-markus-perttula-april-skies"
+  ],
+  [
+   "2026-09-17",
+   "20:00",
+   "Samae Koskinen – Vol. 1 20 vuotta Folk Samae Koskinen – Vol. 1 20 vuotta Kulttuuritalo",
+   "Telakka",
+   "folk",
+   0,
+   "https://keikat.live/keikka/5270-samae-koskinen-vol-1-20-vuotta"
   ],
   [
    "2026-09-17",
@@ -367,15 +394,6 @@
   [
    "2026-09-18",
    "",
-   "Lost in Music: LASTOUT, Rioghan, King Satan",
-   "Olympia-korttelin keikat",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/lost-in-music-lastout-rioghan-king-satan/"
-  ],
-  [
-   "2026-09-18",
-   "",
    "Tumppi Varonen & Problems, Pelle Miljoona, Kärtsy Hatakka (Waltari)",
    "Tavara-asema",
    "rock",
@@ -479,7 +497,7 @@
    "Spiral Tampere",
    "rock",
    0,
-   "https://keikat.org/koovee-spiral-225"
+   "https://keikat.org/koovee-spiral-208"
   ],
   [
    "2026-09-19",
@@ -858,6 +876,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/katfish-kirkkovene-2"
+  ],
+  [
+   "2026-09-25",
+   "",
+   "Lost in Music: LASTOUT, Rioghan, King Satan",
+   "Olympia-korttelin keikat",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lost-in-music-lastout-rioghan-king-satan/"
   ],
   [
    "2026-09-25",
@@ -2093,6 +2120,15 @@
    "https://www.facebook.com/events/1729989991627841/"
   ],
   [
+   "2026-10-12",
+   "13:00",
+   "Yhteislaulut: Nostalgisia säveliä menneiltä vuosikymmeniltä",
+   "Koilliskeskuksen kirjasto, Liikekatu 3, 33580 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a7dc26543a4d100075daf3c"
+  ],
+  [
    "2026-10-13",
    "13:10",
    "Jason Moran (US)",
@@ -2136,6 +2172,15 @@
    "folk",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/wardruna-world-tour-part-ii/"
+  ],
+  [
+   "2026-10-14",
+   "18:00",
+   "Metso LIVE: Ville Ahonen",
+   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a7dd44243a4d100075dba8d"
   ],
   [
    "2026-10-14",
@@ -2864,7 +2909,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-683"
+   "https://keikat.org/tampere-pakkahuone-684"
   ],
   [
    "2026-10-29",
@@ -3116,7 +3161,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-745"
+   "https://keikat.org/tehdas-teatteri-748"
   ],
   [
    "2026-11-05",
@@ -3323,7 +3368,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-888"
+   "https://keikat.org/sorin-sorin-892"
   ],
   [
    "2026-11-18",
@@ -3413,7 +3458,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-936"
+   "https://keikat.org/kotae-tampereen-940"
   ],
   [
    "2026-11-21",
@@ -3719,7 +3764,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-1200"
+   "https://keikat.org/g-g-1208"
   ],
   [
    "2027-01-15",
@@ -3737,7 +3782,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1223"
+   "https://keikat.org/magda-vooninki-1231"
   ],
   [
    "2027-03-18",
