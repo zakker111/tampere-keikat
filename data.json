@@ -1,10 +1,10 @@
 {
- "generated": "2026-09-20 09:36 UTC",
+ "generated": "2026-09-21 10:27 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_org": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_org": "OK",
   "keikat_live": "NO_EVENTS_OR_PARSE_FAILURE",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
@@ -13,42 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-09-20",
-   "15:00",
-   "Afternoon of Fauns: Transformations",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/afternoon-of-fauns-transformations-2/"
-  ],
-  [
-   "2026-09-20",
-   "18:00",
-   "Laula elämän puolesta",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/laula-elaman-puolesta/"
-  ],
-  [
-   "2026-09-20",
-   "18:00",
-   "Laula elämän puolesta : Tule laulamaan matalalla kynnyksellä ympäristöaiheisia tuttuja(kin) lauluja klo 18-20",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.vastavirta.net"
-  ],
-  [
-   "2026-09-20",
-   "",
-   "Faunien Iltapäivä – Muodonmuutoksia: Tampere Filharmonia",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.meteli.net/tapahtuma/faunien-iltapaiva-muodonmuutoksia-tampere-filharmonia"
-  ],
   [
    "2026-09-22",
    "21:00",
@@ -276,6 +240,15 @@
   ],
   [
    "2026-09-25",
+   "21:00",
+   "Party With DJ Sakke",
+   "Gastropub Soho",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/yo-soho-raps-dj-ec-dj-laki/"
+  ],
+  [
+   "2026-09-25",
    "22:00",
    "Game&RAVE: DJ:s Thomas Johan, JWLZ, Kehveli, Yukata, HExexen, Utepia",
    "Utopia",
@@ -399,6 +372,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/plevnan-oktoberfestit-lavesaari-trio/"
+  ],
+  [
+   "2026-09-26",
+   "12:00",
+   "DJ Jukola – Radio Soho Live",
+   "Gastropub Soho",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-jukola-radio-soho-live/"
   ],
   [
    "2026-09-26",
@@ -646,20 +628,11 @@
   [
    "2026-09-27",
    "20:00",
-   "Tampereen Pyrintö lentopallo kausikortti 2026-2027 su 27.9.2026",
-   "Sammon uusi koulu",
-   "rock",
-   0,
-   "https://keikat.org/tampereen-sammon-259"
-  ],
-  [
-   "2026-09-27",
-   "20:00",
    "Tampereen Pyrintö naiset kotiottelut 2026-2027 su 27.9.2026",
    "Pyynikin Palloiluhalli",
    "rock",
    0,
-   "https://keikat.org/tampereen-pyynikin-262"
+   "https://keikat.org/tampereen-pyynikin-257"
   ],
   [
    "2026-09-27",
@@ -668,7 +641,16 @@
    "Pyynikin Palloiluhalli",
    "rock",
    0,
-   "https://keikat.org/tampereen-pyynikin-263"
+   "https://keikat.org/tampereen-pyynikin-258"
+  ],
+  [
+   "2026-09-27",
+   "20:00",
+   "Tampereen Pyrintö lentopallo kausikortti 2026-2027 su 27.9.2026",
+   "Sammon uusi koulu",
+   "rock",
+   0,
+   "https://keikat.org/tampereen-sammon-259"
   ],
   [
    "2026-09-27",
@@ -794,7 +776,7 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-283"
+   "https://keikat.org/music-tampere-talo-277"
   ],
   [
    "2026-10-01",
@@ -840,6 +822,15 @@
    "rock",
    1,
    "https://www.meteli.net/tapahtuma/lost-in-music-marita-narhi-hulda-huima-ani-harmi-padelclub"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Tampereen baarien tietovisailut torstaina",
+   "Tampere, Useita tapahtumapaikkoja",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/tampereen-baarien-tietovisailut-torstaina-2026-10-01/"
   ],
   [
    "2026-10-01",
@@ -957,6 +948,24 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/agrimonia-swe-kuroishi-vivisektio-kahtia/"
+  ],
+  [
+   "2026-10-02",
+   "02:10",
+   "Extended Groove – DJ Rufus",
+   "Gastropub Soho",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/extended-groove-dj-rufus-3/"
+  ],
+  [
+   "2026-10-02",
+   "02:10",
+   "HI/LO goes HI90s #6: Britpop, Indie & Pop Rock 1995–1999 – DJ Antti",
+   "Gastropub Soho",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hi-lo-goes-hi90s-6-britpop-indie-pop-rock-1995-1999-dj-antti/"
   ],
   [
    "2026-10-02",
@@ -1343,7 +1352,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-351"
+   "https://keikat.org/off-teatteri-343"
   ],
   [
    "2026-10-07",
@@ -2068,11 +2077,29 @@
   [
    "2026-10-17",
    "17:10",
+   "Kaikki on jazzia -festivaali: Philip Holm & Janni Rosell duo, Staffan Södergård soolo + DJ’s",
+   "Nekala",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kaikki-on-jazzia-festivaali-philip-holm-janni-rosell-duo-staffan-sodergard-soolo-djs/"
+  ],
+  [
+   "2026-10-17",
+   "17:10",
    "Hector & Power Band",
    "Tampere-talo",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/hector-power-band/"
+  ],
+  [
+   "2026-10-17",
+   "17:10",
+   "Kaikki on jazzia -festivaali: Oiro Pena, Kadi Vija, Mirror Ghost feat. Sami Sippola",
+   "Nekala",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kaikki-on-jazzia-festivaali-oiro-pena-kadi-vija-mirror-ghost-feat-sami-sippola/"
   ],
   [
    "2026-10-17",
@@ -2190,6 +2217,24 @@
    "rock",
    1,
    "https://www.meteli.net/tapahtuma/se-toinen-duo-hannakaisa-anssi-uusisilta"
+  ],
+  [
+   "2026-10-18",
+   "18:00",
+   "Laula elämän puolesta : Tule laulamaan matalalla kynnyksellä ympäristöaiheisia tuttuja(kin) lauluja klo 18-20",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-10-18",
+   "18:10",
+   "Kaikki on jazzia -festivaali: Soolot Ville Leinonen, Topias Tiheäsalo, Henri Ijäs, Janne Tuomi",
+   "Nekala",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/kaikki-on-jazzia-festivaali-soolot-ville-leinonen-topias-tiheasalo-henri-ijas-janne-tuomi/"
   ],
   [
    "2026-10-18",
@@ -2666,7 +2711,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-613"
+   "https://keikat.org/tampere-pakkahuone-612"
   ],
   [
    "2026-10-29",
@@ -2972,7 +3017,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-679"
+   "https://keikat.org/tehdas-teatteri-678"
   ],
   [
    "2026-11-05",
@@ -3188,7 +3233,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-830"
+   "https://keikat.org/sorin-sorin-832"
   ],
   [
    "2026-11-18",
@@ -3278,7 +3323,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-867"
+   "https://keikat.org/kotae-tampereen-870"
   ],
   [
    "2026-11-21",
@@ -3692,7 +3737,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-1149"
+   "https://keikat.org/g-g-1157"
   ],
   [
    "2027-01-15",
@@ -3710,7 +3755,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1174"
+   "https://keikat.org/magda-vooninki-1182"
   ],
   [
    "2027-03-18",
