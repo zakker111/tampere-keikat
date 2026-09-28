@@ -1,11 +1,11 @@
 {
- "generated": "2026-09-27 10:23 UTC",
+ "generated": "2026-09-28 11:27 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_org": "OK",
+  "keikat_live": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
-  "keikat_live": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_org": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
@@ -14,67 +14,22 @@
  },
  "events": [
   [
-   "2026-09-27",
-   "19:00",
-   "Diandra – Hymni rakkaudelle",
-   "Tampere-talo",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/diandra-hymni-rakkaudelle/"
-  ],
-  [
-   "2026-09-27",
-   "19:00",
-   "Sähköinen matinea 13: Shantidas (FR), Inselberg (FR), Kimmo Helén",
-   "Pethaus",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/sahkoinen-matinea-13-shantidas-fr-inselberg-fr-kimmo-helen/"
-  ],
-  [
-   "2026-09-27",
-   "20:00",
-   "Tampereen Pyrintö lentopallo kausikortti 2026-2027 su 27.9.2026",
-   "Sammon uusi koulu",
-   "rock",
-   0,
-   "https://keikat.org/tampereen-sammon-176"
-  ],
-  [
-   "2026-09-27",
-   "20:00",
-   "Tampereen Pyrintö naiset kotiottelut 2026-2027 su 27.9.2026",
-   "Pyynikin Palloiluhalli",
-   "rock",
-   0,
-   "https://keikat.org/tampereen-pyynikin-180"
-  ],
-  [
-   "2026-09-27",
-   "20:00",
-   "Tampereen Pyrintö naiset kausikortti 2026-2027 su 27.9.2026",
-   "Pyynikin Palloiluhalli",
-   "rock",
-   0,
-   "https://keikat.org/tampereen-pyynikin-181"
-  ],
-  [
-   "2026-09-27",
-   "22:00",
-   "DB 1 vuotta: DJ MR Willy",
-   "Desibeli tapahtumat",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/db-1-vuotta-pallomeri-talossa-dj-mr-willy/"
-  ],
-  [
    "2026-09-29",
    "13:00",
-   "Yhteislaulutuokio",
+   "Peruttu: Yhteislaulutuokio",
    "Koukkuniemen kirjasto, Ahlgrenin Puistokuja 2, 33180 Tampere",
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a758f2551febb0007fb01c6"
+  ],
+  [
+   "2026-09-29",
+   "19:00",
+   "Stu Larsen (AUS), Imme & Julia Adriana Stu Larsen (AUS), Imme & Julia Adriana Kulttuuritalo",
+   "Telakka",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2101-stu-larsen-aus-imme-julia-adriana"
   ],
   [
    "2026-09-29",
@@ -182,7 +137,7 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-201"
+   "https://keikat.org/music-tampere-talo-196"
   ],
   [
    "2026-10-01",
@@ -219,6 +174,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tampereen-baarien-tietovisailut-perjantaina-2026-09-18-2026-09-25-2026-10-02/"
+  ],
+  [
+   "2026-10-02",
+   "02:10",
+   "TEPPO TUOMISTO",
+   "Pub Simon",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/teppo-tuomisto/"
   ],
   [
    "2026-10-02",
@@ -659,7 +623,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-272"
+   "https://keikat.org/off-teatteri-267"
   ],
   [
    "2026-10-08",
@@ -1348,6 +1312,15 @@
   [
    "2026-10-17",
    "17:10",
+   "CHUCK BERRY 100: Del Futuras featuring Wiley Cousins",
+   "Telakan keikat",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/chuck-berry-100-del-futuras-featuring-wiley-cousins/"
+  ],
+  [
+   "2026-10-17",
+   "17:10",
    "Jyrki Lepistö",
    "Axu Katubaari",
    "rock",
@@ -1445,6 +1418,15 @@
    "https://kohokohdat.fi/tampere/tapahtuma/salhojankadun-pubin-jamit-house-band-ja-vierailijat-2026-10-20/"
   ],
   [
+   "2026-10-21",
+   "21:10",
+   "Jorma Tapio & Kaski 20-vuotisjuhlakonsertti",
+   "Telakan keikat",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/jorma-tapio-kaski-20-vuotisjuhlakonsertti/"
+  ],
+  [
    "2026-10-22",
    "22:10",
    "Suvi Teräsniska",
@@ -1461,6 +1443,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jukka-haavisto-loyly-syndicate-juniper-path-levyjulkkarit/"
+  ],
+  [
+   "2026-10-22",
+   "22:10",
+   "Marcel Riesco & His Rhythm Cats, Son Demon and His Holy Boys",
+   "Telakan keikat",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/marcel-riesco-his-rhythm-cats-son-demon-and-his-holy-boys/"
   ],
   [
    "2026-10-23",
@@ -1775,7 +1766,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-541"
+   "https://keikat.org/tampere-pakkahuone-537"
   ],
   [
    "2026-10-30",
@@ -1946,7 +1937,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-616"
+   "https://keikat.org/tehdas-teatteri-614"
   ],
   [
    "2026-11-06",
@@ -1991,7 +1982,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-778"
+   "https://keikat.org/sorin-sorin-776"
   ],
   [
    "2026-11-20",
@@ -2009,7 +2000,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-813"
+   "https://keikat.org/kotae-tampereen-811"
   ],
   [
    "2026-11-27",
@@ -2072,7 +2063,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-1121"
+   "https://keikat.org/g-g-1126"
   ],
   [
    "2027-01-15",
@@ -2090,7 +2081,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1147"
+   "https://keikat.org/magda-vooninki-1152"
   ]
  ]
 }
