@@ -1,12 +1,12 @@
 {
- "generated": "2026-09-28 11:27 UTC",
+ "generated": "2026-09-29 11:03 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "keikat_live": "OK",
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
-  "keikat_org": "OK",
   "vastavirta": "OK",
+  "keikat_org": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
@@ -78,6 +78,24 @@
   ],
   [
    "2026-09-30",
+   "19:00",
+   "Irkkujamit Irkkujamit Pub Sisko ja sen",
+   "Veli",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6340-irkkujamit"
+  ],
+  [
+   "2026-09-30",
+   "19:30",
+   "Samla Mammas Manna (SWE) + Fysiikka & Kemia Rock Samla Mammas Manna (SWE) + Fysiikka & Kemia Kulttuuritalo",
+   "Telakka",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2180-samla-mammas-manna-swe-fysiikka-kemia"
+  ],
+  [
+   "2026-09-30",
    "20:30",
    "Samla Mammas Manna, Fysiikka & Kemia",
    "Telakan keikat",
@@ -132,12 +150,21 @@
   ],
   [
    "2026-10-01",
+   "19:30",
+   "Bad Jesus Experience (22.30), Planet Retaliates (21.45), Civicide (21.00), Kartsa + Jartsa Drag Show (20.30)",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://facebook.com/events/s/bje-civicide-planet-retaliates/1641968900837716/"
+  ],
+  [
+   "2026-10-01",
    "20:00",
    "Music x Media 2026 to 1.10.2026",
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-196"
+   "https://keikat.org/music-tampere-talo-195"
   ],
   [
    "2026-10-01",
@@ -384,6 +411,24 @@
   ],
   [
    "2026-10-02",
+   "19:30",
+   "Paavi Franciskuksen Pääsiäinen, Isla, Suolihuuhtelu",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-10-02",
+   "20:30",
+   "Agrimonia (swe) (23.15), Kürøishi (22.30), Vivisektio (21.45), Kahtia (21.00)",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-10-02",
    "",
    "Puisto by Night: Puisto DJ:t",
    "Puisto ravintola ja kahvila",
@@ -493,7 +538,7 @@
   [
    "2026-10-03",
    "21:00",
-   "Jukka Nousiainen, Suur-Monni, Hirvonen&Härkönen. DJ Dynamike",
+   "Jukka Nousiainen (21.30), Suur-Monni (22.30), Hirvonen&Härkönen (23.30). DJ Dynamike",
    "Vastavirta-Klubi",
    "electronic",
    0,
@@ -623,7 +668,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/off-teatteri-267"
+   "https://keikat.org/off-teatteri-263"
   ],
   [
    "2026-10-08",
@@ -1766,7 +1811,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-537"
+   "https://keikat.org/tampere-pakkahuone-536"
   ],
   [
    "2026-10-30",
@@ -1937,7 +1982,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-614"
+   "https://keikat.org/tehdas-teatteri-609"
   ],
   [
    "2026-11-06",
@@ -2063,7 +2108,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-1126"
+   "https://keikat.org/g-g-1128"
   ],
   [
    "2027-01-15",
@@ -2081,7 +2126,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1152"
+   "https://keikat.org/magda-vooninki-1154"
   ]
  ]
 }
