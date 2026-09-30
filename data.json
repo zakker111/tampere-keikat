@@ -1,54 +1,18 @@
 {
- "generated": "2026-09-29 11:03 UTC",
+ "generated": "2026-09-30 10:53 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_live": "OK",
-  "vastavirta": "OK",
-  "keikat_org": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
-  "tampere_filharmonia": "OK",
+  "keikat_live": "OK",
+  "keikat_org": "OK",
+  "vastavirta": "OK",
   "tampere_kirjastot": "OK",
-  "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
+  "tampere_filharmonia": "OK",
+  "meteli": "OK",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-09-29",
-   "13:00",
-   "Peruttu: Yhteislaulutuokio",
-   "Koukkuniemen kirjasto, Ahlgrenin Puistokuja 2, 33180 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a758f2551febb0007fb01c6"
-  ],
-  [
-   "2026-09-29",
-   "19:00",
-   "Stu Larsen (AUS), Imme & Julia Adriana Stu Larsen (AUS), Imme & Julia Adriana Kulttuuritalo",
-   "Telakka",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2101-stu-larsen-aus-imme-julia-adriana"
-  ],
-  [
-   "2026-09-29",
-   "20:00",
-   "Stu Larsen (AUS), Imme & Julia Adriana",
-   "Telakan keikat",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/stu-larsen-aus-imme-julia-adriana/"
-  ],
-  [
-   "2026-09-29",
-   "21:00",
-   "Pam’s Suprice",
-   "Paapan Kapakka",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pams-suprice/"
-  ],
   [
    "2026-09-30",
    "18:00",
@@ -104,6 +68,69 @@
    "https://kohokohdat.fi/tampere/tapahtuma/samla-mammas-manna-fysiikka-kemia/"
   ],
   [
+   "2026-09-30",
+   "",
+   "Becca Stevens (USA) & UMO Helsinki Jazz Orchestra",
+   "G Livelab Tampere",
+   "jazz",
+   0,
+   "https://www.meteli.net/tapahtuma/becca-stevens-usa-umo-helsinki-jazz-orchestra"
+  ],
+  [
+   "2026-09-30",
+   "",
+   "Samla Mammas Manna (SWE), Fysiikka & Kemia",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/samla-mammas-manna-swe-2"
+  ],
+  [
+   "2026-09-30",
+   "",
+   "Tribuutti Pavarottille: Andrea Caré",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/tribuutti-pavarottille-andrea-care-4"
+  ],
+  [
+   "2026-09-30",
+   "",
+   "Los Pollosin ryhmämenu pikkujouluihin ja syksyn juhliin",
+   "Los Pollos",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/los-pollosin-ryhmamenu-pikkujouluihin-ja-syksyn-juhliin/"
+  ],
+  [
+   "2026-10-01",
+   "00:00",
+   "Lost In Music 2026: Jutta Rahmel, Tyson Blu, Saarisalo Festari Lost In Music 2026: Jutta Rahmel, Tyson Blu, Saarisalo Irish Bar",
+   "O’Connell’s",
+   "festival",
+   0,
+   "https://keikat.live/keikka/4701-lost-in-music-2026-jutta-rahmel-tyson-blu-saarisalo"
+  ],
+  [
+   "2026-10-01",
+   "00:00",
+   "Lost In Music 2026: Raama, Ella Herold, Nenerchy, Tuure Boelius Rock Festari Lost In Music 2026: Raama, Ella Herold, Nenerchy, Tuure Boelius",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://keikat.live/keikka/4703-lost-in-music-2026-raama-ella-herold-nenerchy-tuure-boelius"
+  ],
+  [
+   "2026-10-01",
+   "00:00",
+   "Lost In Music 2026: Hopeasiivet, fibi, Efka Crush Pop Festari Lost In Music 2026: Hopeasiivet, fibi, Efka Crush Kulttuuritalo",
+   "Telakka",
+   "pop",
+   0,
+   "https://keikat.live/keikka/4705-lost-in-music-2026-hopeasiivet-fibi-efka-crush"
+  ],
+  [
    "2026-10-01",
    "01:10",
    "Bad Jesus Experience, Planet Retaliates, Civicide, Kartsa + Jartsa Drag Show",
@@ -150,8 +177,44 @@
   ],
   [
    "2026-10-01",
+   "09:00",
+   "Nuorten kulttuurikeskuksen Tampereen päivä Blues Nuorten kulttuurikeskuksen Tampereen päivä Pellavatehtaankatu 4",
+   "Ilmainen",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/6937-nuorten-kulttuurikeskuksen-tampereen-paiva"
+  ],
+  [
+   "2026-10-01",
+   "18:30",
+   "Musiikkia ilman rajoja Sydämestä sydämeen Musiikkia ilman rajoja Sydämestä sydämeen Kulttuuritalo Laikku",
+   "Ilmainen",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6020-musiikkia-ilman-rajoja-sydamesta-sydameen"
+  ],
+  [
+   "2026-10-01",
+   "19:00",
+   "Lost In Music Olympia: LASTOUT + Rioghan + King Satan K-18 Metal Lost In Music Olympia: LASTOUT + Rioghan + King Satan K-18",
+   "Olympia",
+   "metal",
+   0,
+   "https://keikat.live/keikka/4305-lost-in-music-olympia-lastout-rioghan-king-satan-k-18"
+  ],
+  [
+   "2026-10-01",
+   "19:00",
+   "GUTO KONRAD (BR) & TIMO HAIKARAINEN BLUES BAND Blues GUTO KONRAD (BR) & TIMO HAIKARAINEN BLUES BAND Kulttuurikeskus",
+   "Maanalainen",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/7008-guto-konrad-br-timo-haikarainen-blues-band"
+  ],
+  [
+   "2026-10-01",
    "19:30",
-   "Bad Jesus Experience (22.30), Planet Retaliates (21.45), Civicide (21.00), Kartsa + Jartsa Drag Show (20.30)",
+   "Planet Retaliates (21.45), Bad Jesus Experience (21.45), Civicide (21.00), Kartsa + Jartsa Drag Show (20.30)",
    "Vastavirta-Klubi",
    "rock",
    0,
@@ -164,7 +227,70 @@
    "Tampere-talo",
    "rock",
    0,
-   "https://keikat.org/music-tampere-talo-195"
+   "https://keikat.org/music-tampere-talo-190"
+  ],
+  [
+   "2026-10-01",
+   "20:00",
+   "Stenari Folk Stenari Vanha",
+   "Monttu",
+   "folk",
+   0,
+   "https://keikat.live/keikka/6599-stenari"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Lost In Music – by Lördag: Myrtsi, Kukkatalo, Ullalintulampi",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-by-lordag-myrtsi-kukkatalo-ullalintulampi"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Lost In Music: Tuure Boelius, Nenerchy, Ella Herold, Raama",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-raama-ella-herold-vet-pillows-tuure-boelius"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Lost In Music: Fibi, Efka Crush, Hopeasiivet",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-fibi-efka-crush-hopeasiivet"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Lost In Music: Jutta Rahmel, Tyson Blu, Saarisalo",
+   "O'Connell's",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-jutta-rahmel-tyson-blu-saarisalo"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Lost In Music: Marita Närhi, Hulda Huima, Ani Harmi, Padelclub",
+   "Paapan Kapakka",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-marita-narhi-hulda-huima-ani-harmi-padelclub"
+  ],
+  [
+   "2026-10-01",
+   "",
+   "Lost In Music: Lastout, Rioghan,",
+   "King Satan Olympia",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-lastout-rioghan-king-satan"
   ],
   [
    "2026-10-01",
@@ -349,15 +475,6 @@
   [
    "2026-10-02",
    "02:10",
-   "Wimme & Rinne",
-   "TTT-Klubi",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/wimme-rinne/"
-  ],
-  [
-   "2026-10-02",
-   "02:10",
    "Lost in Music: Us, Vauxdeville",
    "Maanalainen",
    "rock",
@@ -411,8 +528,8 @@
   ],
   [
    "2026-10-02",
-   "19:30",
-   "Paavi Franciskuksen Pääsiäinen, Isla, Suolihuuhtelu",
+   "20:00",
+   "Paavi Franciskuksen Pääsiäinen (21.30), Suolihuuhtelu (20.45), Isla (20.00)",
    "Terassi Pub Yläkerta",
    "rock",
    1,
@@ -426,6 +543,105 @@
    "rock",
    0,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Wimme & Rinne",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/wimme-rinne-2"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: Helmi Antila, Oiro Pena, Hot Heros",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-helmi-antila-oiro-pena-hot-heros"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: Emmi Lorentzen, Aaro630, Isaac Sene, Jami Faltin",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-emmi-lorentzen-aaro630-isaac-sene-jami-faltin"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: AB, Keiju, F",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-ab-keiju-f"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: Vauxdeville, Us",
+   "Maanalainen",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-vauxdeville-us"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: Aizhan Sultan, Nicholas Francett, Leija Lautamaja",
+   "O'Connell's",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-aizhan-sultan-nicholas-francett-leija-lautamaja"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music: Onni Rajaniemi, Nina Kaitaranta, Ricky Kotka, Tero-Petri & Korvaamattomat",
+   "Paapan Kapakka",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/lost-in-music-onni-rajaniemi-nina-kaitaranta-ricky-kotka-tero-petri-korvaamattomat"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Lost In Music – Rare Rave Café: DJ:t Nasty Nikke, Rimpelä",
+   "Tavara-asema",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/lost-in-music-rare-rave-cafe-djt-nasty-nikke-rimpela"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Pahisklubi: Sleeth, Väärä Seura, DJ Reetta",
+   "Kulttuuriravintola Railo",
+   "electronic",
+   1,
+   "https://www.meteli.net/tapahtuma/pahisklubi-sleeth-vaara-seura-dj-reetta"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Wallu’s Little Friday: Duo Tutkapari",
+   "John Scott's Ratina",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/wallus-little-friday-duo-tutkapari"
+  ],
+  [
+   "2026-10-02",
+   "",
+   "Live Music Afterwork: Teppo Tuomisto",
+   "Pub Simon",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/live-music-afterwork-teppo-tuomisto-2"
   ],
   [
    "2026-10-02",
@@ -554,6 +770,42 @@
    "https://tapahtumat.tampere.fi/fi-FI/page/6a8d8b699c23460007282651"
   ],
   [
+   "2026-10-03",
+   "",
+   "Lohdun lauluja: Nina Tapio & Petri Somer",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/lohdun-lauluja-nina-tapio-petri-somer"
+  ],
+  [
+   "2026-10-03",
+   "",
+   "Dead By April (SWE), Cyhra (SWE), Balance Breach",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/dead-by-april-swe-cyhra-swe-balance-breach-3"
+  ],
+  [
+   "2026-10-03",
+   "",
+   "Rekami, Kosmiset Liskot",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/rekami-2"
+  ],
+  [
+   "2026-10-03",
+   "",
+   "Kitto",
+   "John Scott's Ratina",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/kitto"
+  ],
+  [
    "2026-10-04",
    "04:10",
    "Plevnan Oktoberfestit: Oktober-brunssi",
@@ -626,6 +878,15 @@
    "https://tapahtumat.tampere.fi/fi-FI/page/6a7ad89130345e0007a4a268"
   ],
   [
+   "2026-10-06",
+   "",
+   "G Liveslow: Lawrence English (AUS)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/g-liveslow-lawrence-english-aus"
+  ],
+  [
    "2026-10-07",
    "07:10",
    "Ilta Tampereella feat. Lohjan kaupunginorkesterin jousikvartetti",
@@ -671,6 +932,24 @@
    "https://keikat.org/off-teatteri-263"
   ],
   [
+   "2026-10-07",
+   "",
+   "Elias Kaskinen",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/elias-kaskinen-5"
+  ],
+  [
+   "2026-10-07",
+   "",
+   "Michael Monroe (akustinen)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/michael-monroe-23"
+  ],
+  [
    "2026-10-08",
    "08:10",
    "Mikko Alatalo",
@@ -700,15 +979,6 @@
   [
    "2026-10-08",
    "08:10",
-   "Vince Boncamperin 20-vuotistaiteilijajuhla",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/vince-boncamperin-20-vuotistaiteilijajuhla/"
-  ],
-  [
-   "2026-10-08",
-   "08:10",
    "To The Rails, Fermentos",
    "Maanalainen",
    "rock",
@@ -723,6 +993,24 @@
    "rock",
    1,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-10-08",
+   "",
+   "Antti Railio",
+   "Kalevan kirkko",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/antti-railio-19"
+  ],
+  [
+   "2026-10-08",
+   "",
+   "Vince Boncamperin 20-vuotistaiteilijajuhla",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/vince-boncamperin-20-vuotistaiteilijajuhla"
   ],
   [
    "2026-10-09",
@@ -1464,6 +1752,15 @@
   ],
   [
    "2026-10-21",
+   "17:30",
+   "Reissu-Rulla: Palago-duon konsertti ja työpaja",
+   "Koilliskeskuksen kirjasto, Liikekatu 3, 33580 Tampere",
+   "classical",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a918bf180aad500079a0711"
+  ],
+  [
+   "2026-10-21",
    "21:10",
    "Jorma Tapio & Kaski 20-vuotisjuhlakonsertti",
    "Telakan keikat",
@@ -1636,11 +1933,11 @@
   [
    "2026-10-24",
    "18:00",
-   "Anton & Theo, Bombilator, Voko, Flying",
+   "LAISIALIVE : Anton & Theo, Bombilator, Voko, Flying",
    "Terassi Pub Yläkerta",
    "rock",
    1,
-   "https://www.vastavirta.net"
+   "https://facebook.com/events/s/laisialive-anton-theo-bombilat/1066109879329414/"
   ],
   [
    "2026-10-24",
@@ -1744,11 +2041,11 @@
   [
    "2026-10-25",
    "19:00",
-   "Hannele Juutinen, Ilkka Niemi Band",
+   "Hannele Juutinen Band, Ilkka Niemi Band",
    "Terassi Pub Yläkerta",
    "rock",
    1,
-   "https://www.vastavirta.net"
+   "https://www.facebook.com/events/28446622154999408/"
   ],
   [
    "2026-10-27",
@@ -1811,7 +2108,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-536"
+   "https://keikat.org/tampere-pakkahuone-534"
   ],
   [
    "2026-10-30",
@@ -1982,7 +2279,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-609"
+   "https://keikat.org/tehdas-teatteri-612"
   ],
   [
    "2026-11-06",
@@ -2027,7 +2324,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-776"
+   "https://keikat.org/sorin-sorin-773"
   ],
   [
    "2026-11-20",
@@ -2045,7 +2342,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-811"
+   "https://keikat.org/kotae-tampereen-808"
   ],
   [
    "2026-11-27",
@@ -2108,7 +2405,16 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-1128"
+   "https://keikat.org/g-g-1135"
+  ],
+  [
+   "2027-01-09",
+   "15:00",
+   "New Year's Concert: Beethoven 5",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6abbaaa49633540007497f05&date=09.01.2027&time=15.00+-+16.45"
   ],
   [
    "2027-01-15",
@@ -2126,7 +2432,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1154"
+   "https://keikat.org/magda-vooninki-1161"
   ]
  ]
 }
