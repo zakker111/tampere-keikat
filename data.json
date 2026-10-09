@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-08 11:47 UTC",
+ "generated": "2026-10-09 11:45 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_org": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
+  "keikat_org": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
@@ -13,105 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-10-08",
-   "08:10",
-   "Mikko Alatalo",
-   "KOMEDIATEATTERIN PALATSI",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/mikko-alatalo/"
-  ],
-  [
-   "2026-10-08",
-   "08:10",
-   "Emma Salokoski & Jarmo Saari – Kaksin",
-   "Kangasala-talo",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/emma-salokoski-jarmo-saari-kaksin/"
-  ],
-  [
-   "2026-10-08",
-   "08:10",
-   "Oluthuone 30-vuotta – LIVE: RAUTAHAUKI",
-   "Oluthuone Panimomestari",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/oluthuone-30-vuotta-live-duo-ray-jone/"
-  ],
-  [
-   "2026-10-08",
-   "08:10",
-   "Rahvaanmusiikin kerho: Tareq Abboushi, Nemat Battah",
-   "Telakan keikat",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/rahvaanmusiikin-kerho-tareq-abboushi-nemat-battah/"
-  ],
-  [
-   "2026-10-08",
-   "08:10",
-   "Vince Boncamperin 20-vuotistaiteilijajuhla",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/vince-boncamperin-20-vuotistaiteilijajuhla/"
-  ],
-  [
-   "2026-10-08",
-   "08:10",
-   "DJ Jiri",
-   "Desibeli tapahtumat",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-jiri-29/"
-  ],
-  [
-   "2026-10-08",
-   "18:00",
-   "Alma Solina Folk Alma Solina Tahmelan Huvila",
-   "Ilmainen",
-   "folk",
-   0,
-   "https://keikat.live/keikka/6406-alma-solina"
-  ],
-  [
-   "2026-10-08",
-   "20:00",
-   "JadaJada Improv Show JadaJada Improv Show Irish Bar O’Connell’s",
-   "Ilmainen",
-   "rock",
-   0,
-   "https://keikat.live/keikka/1824-jadajada-improv-show"
-  ],
-  [
-   "2026-10-08",
-   "20:00",
-   "To The Rails, Fermentos@Maanalainen Punk To The Rails, Fermentos@Maanalainen Kulttuurikeskus",
-   "Maanalainen",
-   "punk",
-   0,
-   "https://keikat.live/keikka/7123-to-the-rails-fermentos-maanalainen"
-  ],
-  [
-   "2026-10-08",
-   "20:00",
-   "Rautahauki Oluthuoneella Rautahauki Oluthuoneella Oluthuone",
-   "Panimomestari",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7124-rautahauki-oluthuoneella"
-  ],
-  [
-   "2026-10-08",
-   "20:00",
-   "Kikkerikisat",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.vastavirta.net"
-  ],
   [
    "2026-10-09",
    "09:10",
@@ -295,15 +196,6 @@
   [
    "2026-10-09",
    "19:00",
-   "Ankea Presents: HAKEN (UK) + Ihlo (UK) K-18 Metal Ankea Presents: HAKEN (UK) + Ihlo (UK) K-18 Panimoravintola",
-   "Plevna",
-   "metal",
-   0,
-   "https://keikat.live/keikka/7178-ankea-presents-haken-uk-ihlo-uk-k-18"
-  ],
-  [
-   "2026-10-09",
-   "19:00",
    "Supertele (19.00), Mässykiska (20.00), Perkeet (21.00)",
    "Terassi Pub Yläkerta",
    "rock",
@@ -336,6 +228,15 @@
    "punk",
    0,
    "https://keikat.live/keikka/7177-potkut-repowoman-bad-valentines-maanalainen"
+  ],
+  [
+   "2026-10-09",
+   "21:30",
+   "Ankea Presents: HAKEN (UK) + Ihlo (UK) K-18 Metal Ankea Presents: HAKEN (UK) + Ihlo (UK) K-18 Panimoravintola",
+   "Plevna",
+   "metal",
+   0,
+   "https://keikat.live/keikka/7178-ankea-presents-haken-uk-ihlo-uk-k-18"
   ],
   [
    "2026-10-10",
@@ -501,6 +402,15 @@
   ],
   [
    "2026-10-10",
+   "13:00",
+   "Tangoja ja Musikaalisävelmiä Iskelmä Tangoja ja Musikaalisävelmiä Kulttuuritalo Laikku",
+   "Ilmainen",
+   "folk",
+   0,
+   "https://keikat.live/keikka/6883-tangoja-ja-musikaalisavelmia"
+  ],
+  [
+   "2026-10-10",
    "14:00",
    "Tampere Philharmonic Orchestra presents: Revel and Romantic Mischief",
    "G Livelab Tampere",
@@ -510,12 +420,75 @@
   ],
   [
    "2026-10-10",
+   "18:30",
+   "Nyrkkitappelu, Aino & Hajonneet, Grillijono K.O. Punk Nyrkkitappelu, Aino & Hajonneet, Grillijono K.O.",
+   "Tavara-asema",
+   "punk",
+   0,
+   "https://keikat.live/keikka/1966-nyrkkitappelu-aino-hajonneet-grillijono-k-o"
+  ],
+  [
+   "2026-10-10",
+   "19:00",
+   "Jarkko Ahola - Hienoimmat ja suurimmat Rock Jarkko Ahola - Hienoimmat ja suurimmat",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://keikat.live/keikka/5294-jarkko-ahola-hienoimmat-ja-suurimmat"
+  ],
+  [
+   "2026-10-10",
+   "19:00",
+   "Palestine Will Live Forever -muistokonsertti Klassinen Palestine Will Live Forever -muistokonsertti Sarvijaakonkatu 28",
+   "Ilmainen",
+   "classical",
+   0,
+   "https://keikat.live/keikka/7125-palestine-will-live-forever-muistokonsertti"
+  ],
+  [
+   "2026-10-10",
+   "20:00",
+   "Etta - Million Dollar Smile K-18 Etta - Million Dollar Smile K-18",
+   "Olympia",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2036-etta-million-dollar-smile-k-18"
+  ],
+  [
+   "2026-10-10",
+   "21:00",
+   "Desert Beagle Desert Beagle Katubaari",
+   "Axu",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6941-desert-beagle"
+  ],
+  [
+   "2026-10-10",
+   "21:00",
+   "HoroFest! Vol.2 Punk HoroFest! Vol.2 Kulttuurikeskus",
+   "Maanalainen",
+   "punk",
+   0,
+   "https://keikat.live/keikka/7180-horofest-vol-2"
+  ],
+  [
+   "2026-10-10",
    "21:00",
    "Kikkailijat  (23.00), Ninni Forever Band (22.15), Saara Heikkilä & Saki Yokoyama (21.30) + Disko Anksiyete",
    "Vastavirta-Klubi",
    "rock",
    0,
    "https://www.facebook.com/events/4841313612770162/"
+  ],
+  [
+   "2026-10-10",
+   "21:30",
+   "Jesse Kaikuranta Jesse Kaikuranta",
+   "TTT-klubi",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2073-jesse-kaikuranta"
   ],
   [
    "2026-10-11",
@@ -915,6 +888,15 @@
   ],
   [
    "2026-10-17",
+   "20:00",
+   "Jarhvi sound reggae party",
+   "Terassi Pub Yläkerta",
+   "folk",
+   1,
+   "https://www.facebook.com/events/931293389733442/"
+  ],
+  [
+   "2026-10-17",
    "21:00",
    "SEKAMETELI : Tоска Magnolia, Black Market Pharmaceut, Otrok, Headache",
    "Vastavirta-Klubi",
@@ -984,6 +966,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jorma-tapio-kaski-20-vuotisjuhlakonsertti/"
+  ],
+  [
+   "2026-10-22",
+   "20:00",
+   "Kikkerikisat",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-10-22",
@@ -1361,7 +1352,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-449"
+   "https://keikat.org/tampere-pakkahuone-441"
   ],
   [
    "2026-10-29",
@@ -1685,7 +1676,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-524"
+   "https://keikat.org/tehdas-teatteri-519"
   ],
   [
    "2026-11-06",
@@ -1806,6 +1797,24 @@
   ],
   [
    "2026-11-06",
+   "19:00",
+   "Crooked Mouth (liettua), Henna Emilia Hietamäki, Vesper Kennings",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.facebook.com/events/1986134552104304/"
+  ],
+  [
+   "2026-11-06",
+   "21:00",
+   "931FEST : Kahtia, Sonic Poison, Cleansing, Last In The Chamber, Death at Birth",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-06",
    "",
    "Pianomusiikkia Astorissa",
    "Ravintola Astor",
@@ -1884,6 +1893,24 @@
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dj-djc-5/"
+  ],
+  [
+   "2026-11-07",
+   "20:00",
+   "Seurat, Kätyrlauma",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-07",
+   "22:00",
+   "931FEST : Graveyard Goblin, Teleny, Killing Frost, Eyes Sewn Shut",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-11-08",
@@ -2180,7 +2207,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-698"
+   "https://keikat.org/sorin-sorin-693"
   ],
   [
    "2026-11-19",
@@ -2234,7 +2261,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-748"
+   "https://keikat.org/kotae-tampereen-743"
   ],
   [
    "2026-11-21",
@@ -2445,15 +2472,6 @@
   ],
   [
    "2026-11-28",
-   "20:30",
-   "Wyatt E (be), Fife the Hierophant (uk), Radien",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.vastavirta.net"
-  ],
-  [
-   "2026-11-28",
    "21:00",
    "Moonlight Bandits",
    "Axu Katubaari",
@@ -2522,7 +2540,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-1077"
+   "https://keikat.org/g-g-1075"
   ],
   [
    "2027-01-09",
@@ -2549,7 +2567,7 @@
    "Tavara-asema",
    "metal",
    0,
-   "https://keikat.org/punk-tavara-asema-1093"
+   "https://keikat.org/punk-tavara-asema-1094"
   ],
   [
    "2027-02-01",
@@ -2558,7 +2576,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1117"
+   "https://keikat.org/magda-vooninki-1119"
   ]
  ]
 }
