@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-09 11:45 UTC",
+ "generated": "2026-10-10 10:58 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_org": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
@@ -13,231 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-10-09",
-   "09:10",
-   "Classic Rock Show – Linman & C/o",
-   "Kangasala-talo",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/classic-rock-show-linman-c-o/"
-  ],
-  [
-   "2026-10-09",
-   "09:10",
-   "Mamba – Saa koskettaa",
-   "Tampere-talo",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/mamba-saa-koskettaa/"
-  ],
-  [
-   "2026-10-09",
-   "09:10",
-   "Supetele, Mässykiska, Perkeet",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/supetele-massykiska-perkeet/"
-  ],
-  [
-   "2026-10-09",
-   "09:10",
-   "Tampere Filharmonia: Zarathustra",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tampere-filharmonia-kausisarjan-konsertti-8/"
-  ],
-  [
-   "2026-10-09",
-   "09:10",
-   "Timo Lassy",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/timo-lassy/"
-  ],
-  [
-   "2026-10-09",
-   "09:10",
-   "Moro Sky Bar DJ:t",
-   "Moro Sky Bar",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/moro-sky-bar-djt-2026-05-09/"
-  ],
-  [
-   "2026-10-09",
-   "09:10",
-   "A9 Live: Ville Leinonen",
-   "Artturi 9",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/a9-live-ville-leinonen/"
-  ],
-  [
-   "2026-10-09",
-   "09:10",
-   "Frank Martini Party of the Century",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/frank-martini-party-of-the-century/"
-  ],
-  [
-   "2026-10-09",
-   "09:10",
-   "IRA",
-   "Axu Katubaari",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/ira-3/"
-  ],
-  [
-   "2026-10-09",
-   "09:10",
-   "Repo Woman, Potkut, Bad Valentines",
-   "Maanalainen",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/repo-woman-potkut-bad-valentines/"
-  ],
-  [
-   "2026-10-09",
-   "09:10",
-   "EGOKILLS WE ARE STILL",
-   "Bar Kotelo",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/egokills-we-are-still/"
-  ],
-  [
-   "2026-10-09",
-   "09:10",
-   "DJ Ozan",
-   "Bar Ihku",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-ozan-3/"
-  ],
-  [
-   "2026-10-09",
-   "09:10",
-   "DJ Willy",
-   "Desibeli tapahtumat",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-willy-desibeli-yokerhossa/"
-  ],
-  [
-   "2026-10-09",
-   "10:00",
-   "Asiakkaan päivä Sampolan kirjastossa",
-   "Sampolan kirjasto, Sammonkatu 2, 33540 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a75951951febb0007fb06cc"
-  ],
-  [
-   "2026-10-09",
-   "10:00",
-   "Tampereen Konservatorion musiikillinen aamupäivä Rullassa Tampereen Konservatorion musiikillinen aamupäivä Rullassa Kulttuuritalo",
-   "Laikku",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7126-tampereen-konservatorion-musiikillinen-aamupaiva-rullassa"
-  ],
-  [
-   "2026-10-09",
-   "17:00",
-   "Pasi Repo: Eino Leino sanoin ja sävelin",
-   "Sampolan kirjasto, Sammonkatu 2, 33540 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a7ad98d30345e0007a4a32e"
-  ],
-  [
-   "2026-10-09",
-   "18:00",
-   "IRA IRA Katubaari",
-   "Axu",
-   "rock",
-   0,
-   "https://keikat.live/keikka/5462-ira"
-  ],
-  [
-   "2026-10-09",
-   "18:00",
-   "Hämärät tunnit Festari Hämärät tunnit",
-   "Tallipiha",
-   "festival",
-   0,
-   "https://keikat.live/keikka/6706-hamarat-tunnit"
-  ],
-  [
-   "2026-10-09",
-   "19:00",
-   "Tampere Philharmonic Orchestra: Zarathustra",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/zarathustra/"
-  ],
-  [
-   "2026-10-09",
-   "19:00",
-   "Mamba - Saa koskettaa Mamba - Saa koskettaa",
-   "Tampere-talo",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2135-mamba-saa-koskettaa"
-  ],
-  [
-   "2026-10-09",
-   "19:00",
-   "Supertele (19.00), Mässykiska (20.00), Perkeet (21.00)",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://facebook.com/events/s/supertele-massykiska-perkeet-9/1580306133841259/"
-  ],
-  [
-   "2026-10-09",
-   "20:30",
-   "Mörv (23.15), Grave Hex (22.30), Hekatoxen (21.45), Deathfuckingwound (21.00)",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.facebook.com/events/2591253161346200"
-  ],
-  [
-   "2026-10-09",
-   "21:00",
-   "Tiskivuoro - DJ Rami S Elektro / DJ Tiskivuoro - DJ Rami S Irish Bar",
-   "O’Connell’s",
-   "electronic",
-   0,
-   "https://keikat.live/keikka/7009-tiskivuoro-dj-rami-s"
-  ],
-  [
-   "2026-10-09",
-   "21:00",
-   "Potkut, Repowoman, Bad Valentines@Maanalainen Punk Potkut, Repowoman, Bad Valentines@Maanalainen Kulttuurikeskus",
-   "Maanalainen",
-   "punk",
-   0,
-   "https://keikat.live/keikka/7177-potkut-repowoman-bad-valentines-maanalainen"
-  ],
-  [
-   "2026-10-09",
-   "21:30",
-   "Ankea Presents: HAKEN (UK) + Ihlo (UK) K-18 Metal Ankea Presents: HAKEN (UK) + Ihlo (UK) K-18 Panimoravintola",
-   "Plevna",
-   "metal",
-   0,
-   "https://keikat.live/keikka/7178-ankea-presents-haken-uk-ihlo-uk-k-18"
-  ],
   [
    "2026-10-10",
    "10:10",
@@ -277,7 +52,7 @@
   [
    "2026-10-10",
    "10:10",
-   "Pauli Kallio & Henri Gylander: Maalaispunkin matka metropoliin -julkaisujuhlat",
+   "Pauli Kallio & Henri Gylander: Maalaispunkin matka metropoliin -julkaisujuhlat & LIVE: Control plays The Clash",
    "Telakan keikat",
    "metal",
    0,
@@ -420,6 +195,15 @@
   ],
   [
    "2026-10-10",
+   "18:00",
+   "Hämärät tunnit Festari Hämärät tunnit",
+   "Tallipiha",
+   "festival",
+   0,
+   "https://keikat.live/keikka/6706-hamarat-tunnit"
+  ],
+  [
+   "2026-10-10",
    "18:30",
    "Nyrkkitappelu, Aino & Hajonneet, Grillijono K.O. Punk Nyrkkitappelu, Aino & Hajonneet, Grillijono K.O.",
    "Tavara-asema",
@@ -475,7 +259,7 @@
   [
    "2026-10-10",
    "21:00",
-   "Kikkailijat  (23.00), Ninni Forever Band (22.15), Saara Heikkilä & Saki Yokoyama (21.30) + Disko Anksiyete",
+   "Kikkailijat  (23.00), Ninni Forever Band (22.15), Saki Yokoyama (21.30) + Disko Anksiyete",
    "Vastavirta-Klubi",
    "rock",
    0,
@@ -525,6 +309,15 @@
    "rock",
    1,
    "https://www.facebook.com/events/1802188301023657"
+  ],
+  [
+   "2026-10-11",
+   "18:00",
+   "Olkkarin synttäri bingo Olkkarin synttäri bingo Oluthuone",
+   "Panimomestari",
+   "rock",
+   0,
+   "https://keikat.live/keikka/7179-olkkarin-synttari-bingo"
   ],
   [
    "2026-10-11",
@@ -1014,12 +807,30 @@
   ],
   [
    "2026-10-23",
+   "18:00",
+   "Näästek : open decks",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://facebook.com/events/s/naastek-teknoa-koolla-pt-2/1454690359845282/"
+  ],
+  [
+   "2026-10-23",
    "19:00",
    "Tampere Opera: Her Voice",
    "Tampere-talo",
    "classical",
    1,
    "https://www.tamperefilharmonia.fi/en/dynamic-event/tampere-opera-her-voice-2/"
+  ],
+  [
+   "2026-10-23",
+   "22:00",
+   "Näästek : teknoa Koolla!",
+   "Vastavirta-Klubi",
+   "rock",
+   1,
+   "https://facebook.com/events/s/naastek-teknoa-koolla-pt-2/1454690359845282/"
   ],
   [
    "2026-10-23",
@@ -1352,7 +1163,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-441"
+   "https://keikat.org/tampere-pakkahuone-413"
   ],
   [
    "2026-10-29",
@@ -1676,7 +1487,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-519"
+   "https://keikat.org/tehdas-teatteri-498"
   ],
   [
    "2026-11-06",
@@ -1922,6 +1733,15 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/afternoon-of-fauns-sonic-delight/"
   ],
   [
+   "2026-11-09",
+   "13:00",
+   "Runoja ja rokkia: Karoliina Blackburn ja Costello Hautamäki",
+   "Koilliskeskuksen kirjasto, Liikekatu 3, 33580 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a2ffb9aa7cd070007b1bbf5"
+  ],
+  [
    "2026-11-10",
    "10:11",
    "Eclipse/TamJazz-klubi: Equally Stupid + jamit",
@@ -2014,6 +1834,15 @@
   [
    "2026-11-13",
    "13:11",
+   "Younghearted – Joulukiertue",
+   "Kalevan kirko",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/younghearted-joulukiertue/"
+  ],
+  [
+   "2026-11-13",
+   "13:11",
    "Tuure Kilpeläinen",
    "Kangasala-talo",
    "rock",
@@ -2064,6 +1893,15 @@
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/dj-ice-k-dj-o-nine/"
+  ],
+  [
+   "2026-11-13",
+   "17:00",
+   "Sampolan MysteeriYö ja Sampola LIVE: Joose Keskitalo",
+   "Sampolan kirjasto, Sammonkatu 2, 33540 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6aa293689d2ba70007476fe2"
   ],
   [
    "2026-11-14",
@@ -2207,7 +2045,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-693"
+   "https://keikat.org/sorin-sorin-660"
   ],
   [
    "2026-11-19",
@@ -2261,7 +2099,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-743"
+   "https://keikat.org/kotae-tampereen-727"
   ],
   [
    "2026-11-21",
@@ -2540,7 +2378,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-1075"
+   "https://keikat.org/g-g-1048"
   ],
   [
    "2027-01-09",
@@ -2567,7 +2405,7 @@
    "Tavara-asema",
    "metal",
    0,
-   "https://keikat.org/punk-tavara-asema-1094"
+   "https://keikat.org/punk-tavara-asema-1067"
   ],
   [
    "2027-02-01",
@@ -2576,7 +2414,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1119"
+   "https://keikat.org/magda-vooninki-1092"
   ]
  ]
 }
