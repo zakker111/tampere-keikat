@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-10 10:58 UTC",
+ "generated": "2026-10-11 11:10 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_live": "OK",
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_org": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_live": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
@@ -13,267 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-10-10",
-   "10:10",
-   "Tampere Filharmonia esittää: Viihdettä ja vispilänkauppaa",
-   "G Livelab Tampere",
-   "classical",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tampere-filharmonia-esittaa-viihdetta-ja-vispilankauppaa/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "Teerenpeli Tease: Horror & Tease Show",
-   "Teerenpeli Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/teerenpeli-tease-horror-tease-show/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "Anssi Salmela Duo",
-   "Sisko ja sen Veli",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/anssi-salmela-duo/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "inni Forever Band, Kikkailijat, Saara Heikkilä & Saki Yokoyama",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/inni-forever-band-kikkailijat-saara-heikkila-saki-yokoyama/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "Pauli Kallio & Henri Gylander: Maalaispunkin matka metropoliin -julkaisujuhlat & LIVE: Control plays The Clash",
-   "Telakan keikat",
-   "metal",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pauli-kallio-henri-gylander-maalaispunkin-matka-metropoliin-julkaisujuhlat/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "Desert Beagle",
-   "Axu Katubaari",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/desert-beagle-2/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "Moonlight Bandits",
-   "Armo",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/moonlight-bandits/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "Nössö Nova",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/nosso-nova-2/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "HoroFest! Vol2: Jee Jee Superbändi, Lemmenpyssyt, Assi Kalma & Pahan virrat",
-   "Maanalainen",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/horofest-vol2-jee-jee-superbandi-lemmenpyssyt-assi-kalma-pahan-virrat/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "Jesse Kaikuranta",
-   "TTT-Klubi",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jesse-kaikuranta/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "Nyrkkitappelu",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/nyrkkitappelu-2/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "Haystack (SWE), Loins, Som Är Död",
-   "Varjobaari",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/haystack-swe-loins-som-ar-dod/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "Kapitaatio",
-   "Pub Kujakolli",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/kapitaatio-3/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "Milleniaalidisko: dj:t Jiri & Mr. Willy",
-   "Desibeli tapahtumat",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/milleniaalidisko/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "Oku Luukkainen",
-   "Bar Ihku",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/oku-luukkainen/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "VITRIOLIC ABYSSION UHRILAHJA",
-   "Bar Kotelo",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/vitriolic-abyssion-uhrilahja/"
-  ],
-  [
-   "2026-10-10",
-   "10:10",
-   "DJ:t Sami & Riku",
-   "Tavara-asema",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/djt-sami-riku/"
-  ],
-  [
-   "2026-10-10",
-   "10:30",
-   "Pääkirjasto Metso 40 vuotta: Musiikin riemua",
-   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a8c2e499c2346000727e398"
-  ],
-  [
-   "2026-10-10",
-   "13:00",
-   "Tangoja ja Musikaalisävelmiä Iskelmä Tangoja ja Musikaalisävelmiä Kulttuuritalo Laikku",
-   "Ilmainen",
-   "folk",
-   0,
-   "https://keikat.live/keikka/6883-tangoja-ja-musikaalisavelmia"
-  ],
-  [
-   "2026-10-10",
-   "14:00",
-   "Tampere Philharmonic Orchestra presents: Revel and Romantic Mischief",
-   "G Livelab Tampere",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/tpo-presents-entertainment-and-whisked-mischief/"
-  ],
-  [
-   "2026-10-10",
-   "18:00",
-   "Hämärät tunnit Festari Hämärät tunnit",
-   "Tallipiha",
-   "festival",
-   0,
-   "https://keikat.live/keikka/6706-hamarat-tunnit"
-  ],
-  [
-   "2026-10-10",
-   "18:30",
-   "Nyrkkitappelu, Aino & Hajonneet, Grillijono K.O. Punk Nyrkkitappelu, Aino & Hajonneet, Grillijono K.O.",
-   "Tavara-asema",
-   "punk",
-   0,
-   "https://keikat.live/keikka/1966-nyrkkitappelu-aino-hajonneet-grillijono-k-o"
-  ],
-  [
-   "2026-10-10",
-   "19:00",
-   "Jarkko Ahola - Hienoimmat ja suurimmat Rock Jarkko Ahola - Hienoimmat ja suurimmat",
-   "Tampere-talo",
-   "rock",
-   0,
-   "https://keikat.live/keikka/5294-jarkko-ahola-hienoimmat-ja-suurimmat"
-  ],
-  [
-   "2026-10-10",
-   "19:00",
-   "Palestine Will Live Forever -muistokonsertti Klassinen Palestine Will Live Forever -muistokonsertti Sarvijaakonkatu 28",
-   "Ilmainen",
-   "classical",
-   0,
-   "https://keikat.live/keikka/7125-palestine-will-live-forever-muistokonsertti"
-  ],
-  [
-   "2026-10-10",
-   "20:00",
-   "Etta - Million Dollar Smile K-18 Etta - Million Dollar Smile K-18",
-   "Olympia",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2036-etta-million-dollar-smile-k-18"
-  ],
-  [
-   "2026-10-10",
-   "21:00",
-   "Desert Beagle Desert Beagle Katubaari",
-   "Axu",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6941-desert-beagle"
-  ],
-  [
-   "2026-10-10",
-   "21:00",
-   "HoroFest! Vol.2 Punk HoroFest! Vol.2 Kulttuurikeskus",
-   "Maanalainen",
-   "punk",
-   0,
-   "https://keikat.live/keikka/7180-horofest-vol-2"
-  ],
-  [
-   "2026-10-10",
-   "21:00",
-   "Kikkailijat  (23.00), Ninni Forever Band (22.15), Saki Yokoyama (21.30) + Disko Anksiyete",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.facebook.com/events/4841313612770162/"
-  ],
-  [
-   "2026-10-10",
-   "21:30",
-   "Jesse Kaikuranta Jesse Kaikuranta",
-   "TTT-klubi",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2073-jesse-kaikuranta"
-  ],
   [
    "2026-10-11",
    "11:10",
@@ -330,12 +69,30 @@
   ],
   [
    "2026-10-12",
+   "11:00",
+   "Pispalan kirjaston syyslomaviikko Pispalan kirjaston syyslomaviikko Pispalan",
+   "kirjasto",
+   "rock",
+   0,
+   "https://keikat.live/keikka/7127-pispalan-kirjaston-syyslomaviikko"
+  ],
+  [
+   "2026-10-12",
    "13:00",
    "Yhteislaulut: Nostalgisia säveliä menneiltä vuosikymmeniltä",
    "Koilliskeskuksen kirjasto, Liikekatu 3, 33580 Tampere",
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a7dc26543a4d100075daf3c"
+  ],
+  [
+   "2026-10-12",
+   "14:00",
+   "Nuorten kulttuurikeskuksen Syyslomalla! Hip hop Nuorten kulttuurikeskuksen Syyslomalla! Pellavatehtaankatu 4",
+   "Ilmainen",
+   "hiphop",
+   0,
+   "https://keikat.live/keikka/6800-nuorten-kulttuurikeskuksen-syyslomalla"
   ],
   [
    "2026-10-13",
@@ -691,7 +448,7 @@
   [
    "2026-10-17",
    "21:00",
-   "SEKAMETELI : Tоска Magnolia, Black Market Pharmaceut, Otrok, Headache",
+   "SEKAMETELI :          Black Market Pharmaceut (21.30), Tоска Magnolia (22.15), Otrok (23.00), Headache (23.45)",
    "Vastavirta-Klubi",
    "rock",
    1,
@@ -1163,7 +920,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-413"
+   "https://keikat.org/tampere-pakkahuone-377"
   ],
   [
    "2026-10-29",
@@ -1487,7 +1244,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-498"
+   "https://keikat.org/tehdas-teatteri-464"
   ],
   [
    "2026-11-06",
@@ -1832,6 +1589,15 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/water-music/"
   ],
   [
+   "2026-11-12",
+   "20:00",
+   "Perunapuffet DJs",
+   "Terassi Pub Yläkerta",
+   "electronic",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
    "2026-11-13",
    "13:11",
    "Younghearted – Joulukiertue",
@@ -2040,12 +1806,30 @@
   ],
   [
    "2026-11-18",
+   "18:30",
+   "Iloinen perhetapahtuma: Sukkalukko",
+   "Koivistonkylän kirjasto, Lehvänkatu 9, 33820 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6ab3a435defde0000795b29a"
+  ],
+  [
+   "2026-11-18",
    "20:00",
    "Sorin Sirkus: Joulushow 2026 – Noctua ke 18.11.2026",
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-660"
+   "https://keikat.org/sorin-sorin-634"
+  ],
+  [
+   "2026-11-19",
+   "17:30",
+   "Nekala LIVE: Pelkkä Poutanen",
+   "Nekalan kirjasto, Lounaantie 2, 33800 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a903f5ce9778000075185b5"
   ],
   [
    "2026-11-19",
@@ -2099,7 +1883,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-727"
+   "https://keikat.org/kotae-tampereen-694"
   ],
   [
    "2026-11-21",
@@ -2378,7 +2162,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-1048"
+   "https://keikat.org/g-g-1018"
   ],
   [
    "2027-01-09",
@@ -2405,7 +2189,7 @@
    "Tavara-asema",
    "metal",
    0,
-   "https://keikat.org/punk-tavara-asema-1067"
+   "https://keikat.org/punk-tavara-asema-1037"
   ],
   [
    "2027-02-01",
@@ -2414,7 +2198,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1092"
+   "https://keikat.org/magda-vooninki-1064"
   ]
  ]
 }
