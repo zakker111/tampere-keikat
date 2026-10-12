@@ -18,7 +18,8 @@ from bs4 import BeautifulSoup
 from .common import (
     EXCLUDE_KEYWORDS, KNOWN_VENUES_SORTED, HEADERS, PLAYWRIGHT_AVAILABLE,
     guess_genre, is_suspicious_heading, parse_date, parse_date_with_year,
-    parse_time, fetch_with_retries, fetch_with_playwright_generic,
+    parse_time, _looks_like_leaked_date, fetch_with_retries,
+    fetch_with_playwright_generic,
 )
 
 BASE = "https://kohokohdat.fi"
@@ -214,8 +215,15 @@ def parse_month_page(html, year, month):
             yearless_date = parse_date(text, year)
             if yearless_date:
                 pending_date_hint = yearless_date
+                # Pass the stamp's own date as a guard so a '14.10' day.month
+                # fragment inside e.g. 'to 6.8. - la 8.8. 16:00' can't be
+                # mistaken for the start time (see parse_time docstring).
                 tm = re.search(r"\b([01]?\d|2[0-3]):([0-5]\d)\b", text)
-                pending_time_hint = f"{int(tm.group(1)):02d}:{tm.group(2)}" if tm else ""
+                pending_time_hint = ""
+                if tm:
+                    cand_h, cand_m = int(tm.group(1)), tm.group(2)
+                    if not _looks_like_leaked_date(cand_h, cand_m, yearless_date):
+                        pending_time_hint = f"{cand_h:02d}:{cand_m}"
                 continue
 
         if el.name != "a":
@@ -317,7 +325,9 @@ def parse_month_page(html, year, month):
                         if candidate and _date_matches_month(candidate, year, month):
                             detail_date = candidate
                             nearby = search_text[dm.start():dm.start() + 100]
-                            detail_time = parse_time(nearby)
+                            # Guard with the event's own date so a leaked
+                            # 'day.month' fragment can't become the time.
+                            detail_time = parse_time(nearby, date_hint=candidate)
                             if detail_time:
                                 event_time_hint = detail_time
                             break
@@ -350,7 +360,18 @@ def parse_month_page(html, year, month):
                 print(f"[parse_month_page] skipping anchor because date {date_str} not in parsed month {year}-{month:02d}: title={title!r} url={url}", file=sys.stderr)
                 continue
 
-            time_str = parse_time(text) or event_time_hint
+            # Pass the resolved event date as a guard: kohokohdat cards
+            # render 'ke 14.10.' right next to the time in flattened text,
+            # and the old naive regex matched '14.10' as a start time.
+            time_str = parse_time(text, date_hint=date_str) or event_time_hint
+            if time_str and _looks_like_leaked_date(
+                    int(time_str[:2]), int(time_str[3:5]), date_str):
+                # Last line of defense: never publish a day.month fragment
+                # as a start time, no matter which path produced it.
+                print(f"[parse_month_page] dropped leaked-date time "
+                      f"{time_str!r} (event on {date_str}): title={title!r}",
+                      file=sys.stderr)
+                time_str = ""
             # Only include event if we found a real venue — "Tampere" alone is
             # just a lazy fallback that produces useless listings (city name
             # isn't a venue). Skip the event entirely rather than polluting

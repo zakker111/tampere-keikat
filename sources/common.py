@@ -222,11 +222,44 @@ def _recover_leaked_time(title, venue, time_str):
 # ---------------------------------------------------------------------------
 # Date / time parsing
 # ---------------------------------------------------------------------------
-def parse_time(text):
-    m = re.search(r"\b([01]?\d|2[0-3])[:.]([0-5]\d)\b", text)
-    if m:
-        return f"{int(m.group(1)):02d}:{m.group(2)}"
+def parse_time(text, date_hint=None):
+    """Extract a HH:MM start time from text.
+
+    ``date_hint`` (an ISO 'YYYY-MM-DD' string) guards against a long-standing
+    corruption bug: kohokohdat event cards render the day-of-month right next
+    to the time with no separator in flattened text — e.g. the stamp
+    'ke 14.10. klo 19:00' becomes '... 14.10 ...' and the naive regex happily
+    matched '14.10' as a time, producing impossible start times like 14:10 or
+    11:11 (the minute always equals the scrape month's '10'/'11', the hour
+    equals the day of month). When a date_hint is given, any candidate that
+    looks like a leaked day.month fragment of that date is skipped.
+    """
+    for m in re.finditer(r"\b([01]?\d|2[0-3])[:.]([0-5]\d)\b", text):
+        hh, mm = int(m.group(1)), m.group(2)
+        if date_hint and _looks_like_leaked_date(hh, mm, date_hint):
+            continue
+        return f"{hh:02d}:{mm}"
     return ""
+
+
+def _looks_like_leaked_date(hh, mm, date_hint):
+    """True if an 'HH:MM' match is really a day.month fragment (e.g. 14:10
+    leaked from '14.10.') that should never be published as a start time."""
+    try:
+        day = int(date_hint[8:10])
+        month = int(date_hint[5:7])
+    except (ValueError, TypeError):
+        return False
+    # Minute must look like a plausible month (01-12) for this heuristic.
+    if not (1 <= int(mm) <= 12):
+        return False
+    # Exact pattern seen in the wild: hour == day of the event's own date
+    # (14.10 -> 14:10 on the 14th), or minute == the event's month
+    # (:10 / :11 matching October / November dates). A genuine gig time can
+    # legitimately match one of these (a real 13:10 start on the 14th, or a
+    # real 19:10 on any October date), so require BOTH parts to line up with
+    # the date before discarding an otherwise plausible clock value.
+    return hh == day and int(mm) == month
 
 
 def parse_date(text, year_hint):
@@ -558,6 +591,16 @@ def sanitize_events(events):
 
         time_str = e.get("time")
         if not isinstance(time_str, str):
+            time_str = ""
+        # Pipeline-wide last line of defense against the leaked day.month
+        # corruption (see parse_time docstring): whatever a source's parser
+        # produced, an HH:MM whose hour equals the event's day-of-month AND
+        # whose minute equals the event's month is a date fragment, not a
+        # start time. Blank it rather than publish a wrong time.
+        tm = re.fullmatch(r"(?:[01]?\d|2[0-3]):([0-5]\d)", time_str)
+        if tm and _looks_like_leaked_date(int(time_str[:2]), int(tm.group(1)), date):
+            print(f"[sanitize] clearing leaked-date time {time_str!r} for "
+                  f"event on {date}: title={title!r}", file=sys.stderr)
             time_str = ""
 
         # No source should ever produce a title this long — cap rather than
