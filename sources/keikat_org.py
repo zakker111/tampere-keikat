@@ -28,7 +28,11 @@ def parse_keikat_org_anchor_text(text):
         return None
     day, month, year = int(m.group(1)), int(m.group(2)), int(m.group(3))
     rest = text[m.end():].strip(" ·-")
-    time_str = parse_time(rest[:10])
+    # Pass the anchor's own date as a guard: if any stray 'day.month' fragment
+    # appears in the remainder, it can't be mistaken for a start time
+    # (same corruption class as kohokohdat — see parse_time docstring).
+    event_date = f"{year:04d}-{month:02d}-{day:02d}"
+    time_str = parse_time(rest[:10], date_hint=event_date)
     rest = re.sub(r"^\d{1,2}[:.]\d{2}\s*·?\s*", "", rest)
     rest = re.sub(r"\s*Liput\s*$", "", rest).strip()
     rest = re.sub(r"[\d,\.]+\s*€\s*$", "", rest).strip()
