@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-11 11:10 UTC",
+ "generated": "2026-10-12 12:37 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_org": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
+  "keikat_org": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
@@ -14,60 +14,6 @@
  },
  "events": [
   [
-   "2026-10-11",
-   "11:10",
-   "HOT HEROS FEATURING -klubin vieraana Faarao Pirttikangas",
-   "Nekala",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/hot-heros-featuring-klubin-vieraana-faarao-pirttikangas/"
-  ],
-  [
-   "2026-10-11",
-   "11:10",
-   "Hullu!Klubi: Loma-Suomen digikuvat, Rääkkäys, Tinkerbella, Vatsakipu",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/hulluklubi-loma-suomen-digikuvat-raakkays-tinkerbella-vatsakipu/"
-  ],
-  [
-   "2026-10-11",
-   "11:10",
-   "DJ Riku",
-   "Desibeli tapahtumat",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dj-riku-11/"
-  ],
-  [
-   "2026-10-11",
-   "17:00",
-   "Hullu!Klubi : Inkeri Turha (17.00), Rääkkäys (17.45), Tinkerbella & Big Bad Bear (18.30), Kasa Luita (19.15), Vatsakipu (20.00)",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.facebook.com/events/1802188301023657"
-  ],
-  [
-   "2026-10-11",
-   "18:00",
-   "Olkkarin synttäri bingo Olkkarin synttäri bingo Oluthuone",
-   "Panimomestari",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7179-olkkarin-synttari-bingo"
-  ],
-  [
-   "2026-10-11",
-   "21:00",
-   "ALAKULTTUURIFEST JATKOT : Otrok (21.00), Huutava Vääryys (22.00), Mikko Mato & co (23.00)",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.facebook.com/events/1729989991627841/"
-  ],
-  [
    "2026-10-12",
    "11:00",
    "Pispalan kirjaston syyslomaviikko Pispalan kirjaston syyslomaviikko Pispalan",
@@ -75,15 +21,6 @@
    "rock",
    0,
    "https://keikat.live/keikka/7127-pispalan-kirjaston-syyslomaviikko"
-  ],
-  [
-   "2026-10-12",
-   "13:00",
-   "Yhteislaulut: Nostalgisia säveliä menneiltä vuosikymmeniltä",
-   "Koilliskeskuksen kirjasto, Liikekatu 3, 33580 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a7dc26543a4d100075daf3c"
   ],
   [
    "2026-10-12",
@@ -109,7 +46,7 @@
    "Tietovisa",
    "Terassi Pub Yläkerta",
    "rock",
-   1,
+   0,
    "https://www.vastavirta.net"
   ],
   [
@@ -172,7 +109,7 @@
    "VV:n musavisa",
    "Terassi Pub Yläkerta",
    "rock",
-   1,
+   0,
    "https://www.vastavirta.net"
   ],
   [
@@ -217,7 +154,7 @@
    "Perunapuffet & friends DJ-iltamat vieraana DJ TARMO",
    "Terassi Pub Yläkerta",
    "electronic",
-   1,
+   0,
    "https://www.facebook.com/events/1105277685552089/"
   ],
   [
@@ -316,7 +253,7 @@
    "”The Plumbers” tribute to Ace Frehley and KISS",
    "Terassi Pub Yläkerta",
    "rock",
-   1,
+   0,
    "https://facebook.com/events/s/the-plumbers-tribute-to-ace-fr/1055970307482690/"
   ],
   [
@@ -442,7 +379,7 @@
    "Jarhvi sound reggae party",
    "Terassi Pub Yläkerta",
    "folk",
-   1,
+   0,
    "https://www.facebook.com/events/931293389733442/"
   ],
   [
@@ -460,7 +397,7 @@
    "Laula elämän puolesta : Tule laulamaan matalalla kynnyksellä ympäristöaiheisia tuttuja(kin) lauluja klo 18-20",
    "Terassi Pub Yläkerta",
    "rock",
-   1,
+   0,
    "https://www.vastavirta.net"
   ],
   [
@@ -523,7 +460,7 @@
    "Kikkerikisat",
    "Terassi Pub Yläkerta",
    "rock",
-   1,
+   0,
    "https://www.vastavirta.net"
   ],
   [
@@ -568,7 +505,7 @@
    "Näästek : open decks",
    "Terassi Pub Yläkerta",
    "rock",
-   1,
+   0,
    "https://facebook.com/events/s/naastek-teknoa-koolla-pt-2/1454690359845282/"
   ],
   [
@@ -920,7 +857,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-377"
+   "https://keikat.org/tampere-pakkahuone-378"
   ],
   [
    "2026-10-29",
@@ -1171,7 +1108,7 @@
    "Ville Leinonen plays Danzig",
    "Terassi Pub Yläkerta",
    "rock",
-   1,
+   0,
    "https://www.vastavirta.net"
   ],
   [
@@ -1244,7 +1181,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-464"
+   "https://keikat.org/tehdas-teatteri-465"
   ],
   [
    "2026-11-06",
@@ -1369,7 +1306,7 @@
    "Crooked Mouth (liettua), Henna Emilia Hietamäki, Vesper Kennings",
    "Terassi Pub Yläkerta",
    "rock",
-   1,
+   0,
    "https://www.facebook.com/events/1986134552104304/"
   ],
   [
@@ -1546,6 +1483,15 @@
   [
    "2026-11-12",
    "12:11",
+   "Espanjan makuinen ilta: Heart of Spain Hernán Martin & flamenco-kitaristi Tony de María",
+   "Winebistro 1910",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/espanjan-makuinen-ilta-heart-of-spain-hernan-martin-flamenco-kitaristi-tony-de-maria/"
+  ],
+  [
+   "2026-11-12",
+   "12:11",
    "Asa",
    "Tampereen Tullikamari KEIKAT",
    "rock",
@@ -1594,7 +1540,7 @@
    "Perunapuffet DJs",
    "Terassi Pub Yläkerta",
    "electronic",
-   1,
+   0,
    "https://www.vastavirta.net"
   ],
   [
@@ -1668,6 +1614,15 @@
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6aa293689d2ba70007476fe2"
+  ],
+  [
+   "2026-11-13",
+   "21:00",
+   "8 Bits High (levyjulkkarit), La Murga, Cartridge Kid",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-11-14",
@@ -1820,7 +1775,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-634"
+   "https://keikat.org/sorin-sorin-635"
   ],
   [
    "2026-11-19",
@@ -1883,7 +1838,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-694"
+   "https://keikat.org/kotae-tampereen-686"
   ],
   [
    "2026-11-21",
@@ -2094,6 +2049,15 @@
   ],
   [
    "2026-11-28",
+   "20:30",
+   "Wyatt E (be), Fife the Hierophant (uk), Radien",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-28",
    "21:00",
    "Moonlight Bandits",
    "Axu Katubaari",
@@ -2118,6 +2082,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/herrasmiehet-lavalla/"
+  ],
+  [
+   "2026-12-01",
+   "13:00",
+   "Yhteislaulutuokio",
+   "Koukkuniemen kirjasto, Ahlgrenin Puistokuja 2, 33180 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a758f2551febb0007fb01c6"
   ],
   [
    "2026-12-04",
@@ -2189,7 +2162,7 @@
    "Tavara-asema",
    "metal",
    0,
-   "https://keikat.org/punk-tavara-asema-1037"
+   "https://keikat.org/punk-tavara-asema-1038"
   ],
   [
    "2027-02-01",
@@ -2198,7 +2171,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1064"
+   "https://keikat.org/magda-vooninki-1066"
   ]
  ]
 }
