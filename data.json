@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-12 12:37 UTC",
+ "generated": "2026-10-13 12:27 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
+  "keikat_org": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
-  "keikat_org": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
@@ -14,24 +14,6 @@
  },
  "events": [
   [
-   "2026-10-12",
-   "11:00",
-   "Pispalan kirjaston syyslomaviikko Pispalan kirjaston syyslomaviikko Pispalan",
-   "kirjasto",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7127-pispalan-kirjaston-syyslomaviikko"
-  ],
-  [
-   "2026-10-12",
-   "14:00",
-   "Nuorten kulttuurikeskuksen Syyslomalla! Hip hop Nuorten kulttuurikeskuksen Syyslomalla! Pellavatehtaankatu 4",
-   "Ilmainen",
-   "hiphop",
-   0,
-   "https://keikat.live/keikka/6800-nuorten-kulttuurikeskuksen-syyslomalla"
-  ],
-  [
    "2026-10-13",
    "13:10",
    "Jason Moran (US)",
@@ -39,6 +21,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/jason-moran-us/"
+  ],
+  [
+   "2026-10-13",
+   "14:00",
+   "Nuorten kulttuurikeskuksen Syyslomalla! Hip hop Nuorten kulttuurikeskuksen Syyslomalla! Pellavatehtaankatu 4",
+   "Ilmainen",
+   "hiphop",
+   0,
+   "https://keikat.live/keikka/6800-nuorten-kulttuurikeskuksen-syyslomalla"
   ],
   [
    "2026-10-13",
@@ -102,6 +93,24 @@
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a7dd44243a4d100075dba8d"
+  ],
+  [
+   "2026-10-14",
+   "18:00",
+   "Syyskissat Syyskissat Katubaari",
+   "Axu",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6939-syyskissat"
+  ],
+  [
+   "2026-10-14",
+   "19:00",
+   "Hardcore Superstar (SWE) Punk Metal Hardcore Superstar (SWE)",
+   "Tavara-asema",
+   "metal",
+   0,
+   "https://keikat.live/keikka/1965-hardcore-superstar-swe"
   ],
   [
    "2026-10-14",
@@ -857,7 +866,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-378"
+   "https://keikat.org/tampere-pakkahuone-375"
   ],
   [
    "2026-10-29",
@@ -1109,7 +1118,7 @@
    "Terassi Pub Yläkerta",
    "rock",
    0,
-   "https://www.vastavirta.net"
+   "https://www.facebook.com/events/3672300632910272/"
   ],
   [
    "2026-11-04",
@@ -1775,7 +1784,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-635"
+   "https://keikat.org/sorin-sorin-636"
   ],
   [
    "2026-11-19",
@@ -1838,7 +1847,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-686"
+   "https://keikat.org/kotae-tampereen-695"
   ],
   [
    "2026-11-21",
@@ -2135,7 +2144,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-1018"
+   "https://keikat.org/g-g-1023"
   ],
   [
    "2027-01-09",
@@ -2162,7 +2171,7 @@
    "Tavara-asema",
    "metal",
    0,
-   "https://keikat.org/punk-tavara-asema-1038"
+   "https://keikat.org/punk-tavara-asema-1043"
   ],
   [
    "2027-02-01",
@@ -2171,7 +2180,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1066"
+   "https://keikat.org/magda-vooninki-1071"
   ]
  ]
 }
