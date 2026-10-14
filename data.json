@@ -1,44 +1,26 @@
 {
- "generated": "2026-10-13 12:27 UTC",
+ "generated": "2026-10-14 09:57 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "keikat_org": "OK",
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_kirjastot": "OK",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
  "events": [
   [
-   "2026-10-13",
-   "13:10",
-   "Jason Moran (US)",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jason-moran-us/"
-  ],
-  [
-   "2026-10-13",
+   "2026-10-14",
    "14:00",
    "Nuorten kulttuurikeskuksen Syyslomalla! Hip hop Nuorten kulttuurikeskuksen Syyslomalla! Pellavatehtaankatu 4",
    "Ilmainen",
    "hiphop",
    0,
    "https://keikat.live/keikka/6800-nuorten-kulttuurikeskuksen-syyslomalla"
-  ],
-  [
-   "2026-10-13",
-   "20:00",
-   "Tietovisa",
-   "Terassi Pub Yläkerta",
-   "rock",
-   0,
-   "https://www.vastavirta.net"
   ],
   [
    "2026-10-14",
@@ -159,6 +141,24 @@
   ],
   [
    "2026-10-15",
+   "18:00",
+   "Västin Vinyylit ja Viinit Västin Vinyylit ja Viinit Hiedanrannan",
+   "Tehdasaukio",
+   "electronic",
+   0,
+   "https://keikat.live/keikka/7557-vastin-vinyylit-ja-viinit"
+  ],
+  [
+   "2026-10-15",
+   "19:00",
+   "Clearwater Creedence Revival - Fortunate Son Tour 2026 Rock Clearwater Creedence Revival - Fortunate Son Tour 2026",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://keikat.live/keikka/1994-clearwater-creedence-revival-fortunate-son-tour-2026"
+  ],
+  [
+   "2026-10-15",
    "20:00",
    "Perunapuffet & friends DJ-iltamat vieraana DJ TARMO",
    "Terassi Pub Yläkerta",
@@ -273,6 +273,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/lapsuuden-sankarit-juhlakiertue-miljoonasade-40-vuotta/"
+  ],
+  [
+   "2026-10-17",
+   "17:10",
+   "Laulustudio Kaj Chydenius esittää: Syleily",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/laulustudio-kaj-chydenius-esittaa-syleily/"
   ],
   [
    "2026-10-17",
@@ -446,6 +455,15 @@
    "https://tapahtumat.tampere.fi/fi-FI/page/6a7dc36d2765580007aa98f3"
   ],
   [
+   "2026-10-20",
+   "20:00",
+   "Tietovisa",
+   "Terassi Pub Yläkerta",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
    "2026-10-21",
    "17:30",
    "Reissu-Rulla: Palago-duon konsertti ja työpaja",
@@ -453,6 +471,15 @@
    "classical",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a918bf180aad500079a0711"
+  ],
+  [
+   "2026-10-21",
+   "21:10",
+   "Laura Moisio: Aina jossain muualla (levyjulkkarit) + Julia Rautamaa",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/laura-moisio-aina-jossain-muualla-levyjulkkarit-julia-rautamaa/"
   ],
   [
    "2026-10-21",
@@ -574,6 +601,15 @@
   [
    "2026-10-23",
    "23:10",
+   "Hiljaiset Levyt 40 vuotta -juhlakeikka: Hiljaiset All Stars, Dave Treganna Band, Pojat, Alivaltiosihteeri",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/hiljaiset-levyt-40-vuotta-juhlakeikka-hiljaiset-all-stars-dave-treganna-band-pojat-alivaltiosihteeri/"
+  ],
+  [
+   "2026-10-23",
+   "23:10",
    "Solar Blue",
    "Axu Katubaari",
    "rock",
@@ -633,6 +669,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/trychnos-den-sepulchral-curse-iesuskull/"
+  ],
+  [
+   "2026-10-24",
+   "13:00",
+   "Rulla-klubi: Naattiorkesteri",
+   "G Livelab Tampere",
+   "classical",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/rulla-klubi-naattiorkesteri/"
   ],
   [
    "2026-10-24",
@@ -866,7 +911,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-375"
+   "https://keikat.org/tampere-pakkahuone-369"
   ],
   [
    "2026-10-29",
@@ -921,6 +966,15 @@
    "jazz",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/tampere-jazz-happening-kiri-ra-dantchev-domain-rinneradio/"
+  ],
+  [
+   "2026-10-30",
+   "20:00",
+   "Eternal Erection",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/eternal-erection/"
   ],
   [
    "2026-10-30",
@@ -1020,6 +1074,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/sanna-jaanvirta-2/"
+  ],
+  [
+   "2026-10-31",
+   "21:00",
+   "DJ Kridlokk – UG Solo 15V + JV",
+   "G Livelab Tampere",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dj-kridlokk-ug-solo-15v-jv/"
   ],
   [
    "2026-10-31",
@@ -1159,6 +1222,15 @@
   [
    "2026-11-05",
    "05:11",
+   "Yona",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/yona/"
+  ],
+  [
+   "2026-11-05",
+   "05:11",
    "Improv Night: JadaJada Improv",
    "O’Connell’s Irish Bar",
    "rock",
@@ -1190,7 +1262,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-465"
+   "https://keikat.org/tehdas-teatteri-457"
   ],
   [
    "2026-11-06",
@@ -1263,6 +1335,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/mika-rama-trubaduuri/"
+  ],
+  [
+   "2026-11-06",
+   "06:11",
+   "Risto",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/risto-2/"
   ],
   [
    "2026-11-06",
@@ -1380,6 +1461,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/janne-laurila/"
+  ],
+  [
+   "2026-11-07",
+   "07:11",
+   "Aavikko + O Samuli A",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/aavikko-o-samuli-a/"
   ],
   [
    "2026-11-07",
@@ -1528,6 +1618,15 @@
   [
    "2026-11-12",
    "12:11",
+   "Verneri Pohjola & Tuomo Prättälä",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/verneri-pohjola-tuomo-prattala/"
+  ],
+  [
+   "2026-11-12",
+   "12:11",
    "Symposium Student Party: DJ DJC",
    "Bar Ihku",
    "electronic",
@@ -1587,6 +1686,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/arto-ja-jouni-plays-deadline/"
+  ],
+  [
+   "2026-11-13",
+   "13:11",
+   "Scottish Music Night: Dàimh + Rachel Hair & Ron Jappy",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/scottish-music-night-daimh-rachel-hair-ron-jappy/"
   ],
   [
    "2026-11-13",
@@ -1770,6 +1878,15 @@
   ],
   [
    "2026-11-18",
+   "18:11",
+   "Viktoria Tolstoy & Jacob Karlzon (SE): Who We Are",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/viktoria-tolstoy-jacob-karlzon-se-who-we-are/"
+  ],
+  [
+   "2026-11-18",
    "18:30",
    "Iloinen perhetapahtuma: Sukkalukko",
    "Koivistonkylän kirjasto, Lehvänkatu 9, 33820 Tampere",
@@ -1784,7 +1901,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-636"
+   "https://keikat.org/sorin-sorin-634"
   ],
   [
    "2026-11-19",
@@ -1794,6 +1911,15 @@
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a903f5ce9778000075185b5"
+  ],
+  [
+   "2026-11-19",
+   "19:11",
+   "Asla Jo + Saga Olsson",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/asla-jo-saga-olsson/"
   ],
   [
    "2026-11-19",
@@ -1847,7 +1973,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-695"
+   "https://keikat.org/kotae-tampereen-693"
   ],
   [
    "2026-11-21",
@@ -1897,6 +2023,15 @@
   [
    "2026-11-21",
    "21:11",
+   "Mika Maijala",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/mika-maijala/"
+  ],
+  [
+   "2026-11-21",
+   "21:11",
    "Ou´touhka",
    "Axu Katubaari",
    "rock",
@@ -1911,6 +2046,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/irkkujamit-9/"
+  ],
+  [
+   "2026-11-25",
+   "19:00",
+   "Johanna Iivanainen",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/johanna-iivanainen/"
   ],
   [
    "2026-11-25",
@@ -1956,6 +2100,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/kissa-lala-salama/"
+  ],
+  [
+   "2026-11-26",
+   "19:00",
+   "Lotus Flowers (Angelini – Niescier – Abdou) + Antti Lötjönen",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lotus-flowers-angelini-niescier-abdou-antti-lotjonen/"
   ],
   [
    "2026-11-27",
@@ -2144,7 +2297,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-1023"
+   "https://keikat.org/g-g-1022"
   ],
   [
    "2027-01-09",
@@ -2171,7 +2324,7 @@
    "Tavara-asema",
    "metal",
    0,
-   "https://keikat.org/punk-tavara-asema-1043"
+   "https://keikat.org/punk-tavara-asema-1046"
   ],
   [
    "2027-02-01",
@@ -2180,7 +2333,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1071"
+   "https://keikat.org/magda-vooninki-1084"
   ]
  ]
 }
