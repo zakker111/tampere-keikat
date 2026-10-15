@@ -28,7 +28,6 @@
 ## 📋 Remaining Tasks
 
 - [ ] Install playwright browsers in GitHub Actions to fix meteli.net scraping
-- [ ] Add more sources if needed (g-livelab.fi, tampere.pakkahuone.fi, tampere-talo.fi)
 - [ ] Monitor source health and update parsers if HTML structures change
 - [ ] Consider adding Instagram scraping for venues that only post there
 

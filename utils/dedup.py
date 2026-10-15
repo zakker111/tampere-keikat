@@ -13,6 +13,11 @@ def normalize_text(text: str) -> str:
     - Lowercase
     - Remove extra whitespace
     - Remove special characters that might vary between sources
+    - Fold known venue-name variants onto one canonical form, using the
+      same VENUE_ALIASES map as the main merge pass (sources/common.py),
+      so "Tavastia-klubi" and "Tavastia Klubi" dedup together instead of
+      surviving as two cards. Without this, utils/dedup hashed raw venue
+      strings and missed cross-source spelling variants entirely.
     """
     if not text:
         return ""
@@ -20,7 +25,9 @@ def normalize_text(text: str) -> str:
     text = re.sub(r'\s+', ' ', text)
     # Remove common punctuation variations that shouldn't affect identity
     text = re.sub(r'[^\w\säöå\-]', '', text)
-    return text
+    # Canonicalize venue aliases (compact form, matching common.normalize_venue)
+    from sources.common import normalize_venue
+    return normalize_venue(text) or text
 
 
 def normalize_date(date_str: str) -> str:
@@ -68,20 +75,27 @@ def generate_event_hash(event: Dict[str, Any]) -> str:
     """
     title = normalize_text(event.get('title', ''))
     venue = normalize_text(event.get('venue', '') or event.get('name', ''))
-    
-    # Handle date normalization
+
+    # Handle date normalization. The scraper pipeline emits events with
+    # separate 'date' (YYYY-MM-DD) and 'time' (HH:MM) fields; only external
+    # feeds use a combined 'start_time'. Read all of them — previously this
+    # looked at 'start_time' alone, so every pipeline event hashed with an
+    # EMPTY date component, silently merging same-title/venue/time gigs that
+    # happened on different days (a recurring weekly event lost all but its
+    # first occurrence).
     start_time = event.get('start_time', '')
-    date_only = normalize_date(start_time)
-    
+    date_only = normalize_date(event.get('date', '') or start_time)
+
     # Extract time if present (HH:MM)
-    time_part = ""
-    if start_time and 'T' in start_time:
-        time_part = start_time.split('T')[1][:5] if len(start_time.split('T')) > 1 else ""
-    elif start_time and ' ' in start_time:
-        parts = start_time.split(' ')
-        if len(parts) > 1:
-            time_part = parts[1][:5]
-    
+    time_part = event.get('time', '')
+    if not time_part:
+        if start_time and 'T' in start_time:
+            time_part = start_time.split('T')[1][:5] if len(start_time.split('T')) > 1 else ""
+        elif start_time and ' ' in start_time:
+            parts = start_time.split(' ')
+            if len(parts) > 1:
+                time_part = parts[1][:5]
+
     # Create a unique string representation
     unique_string = f"{title}|{date_only}|{time_part}|{venue}"
     

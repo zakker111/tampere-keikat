@@ -8,7 +8,6 @@ structure with events in div.vv-custom-events containers.
 import re
 import sys
 import datetime
-from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 

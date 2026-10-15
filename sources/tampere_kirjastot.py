@@ -9,7 +9,6 @@ Music events paragraph ID: 105505
 import sys
 import datetime
 import re
-from urllib.parse import urljoin
 
 from .common import (
     EXCLUDE_KEYWORDS, HEADERS, PLAYWRIGHT_AVAILABLE, cloudscraper,
