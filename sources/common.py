@@ -46,6 +46,16 @@ GENRE_KEYWORDS = {
 }
 DEFAULT_GENRE = "rock"
 
+# Keep in sync with the GENRES map in index.html — the front-end renders
+# filter chips from exactly these keys; a genre outside this set produces
+# cards that can't be filtered properly. sanitize_events() snaps any such
+# value back to DEFAULT_GENRE.
+VALID_GENRES = {
+    "rock", "metal", "punk", "pop", "jazz", "electronic", "hiphop",
+    "folk", "classical", "festival", "indie", "country", "blues",
+    "alternative", "reggae", "ambient",
+}
+
 EXCLUDE_KEYWORDS = [
     "teatterikesä", "telttalab", "näytelmä", "teatteriesitys",
     "komedian superilta", "komiikan festivaali", "komiikka", "stand up", "stand-up", "improvisaatioteatteri",
@@ -426,6 +436,12 @@ VENUE_ALIASES = {
     # a wrong auto-merge here would silently hide a real, distinct gig,
     # which is worse than showing an occasional true duplicate.
     "kulttuuritalotelakka": "telakka",
+    # Vastavirta lists itself both as the full brand ("Vastavirta-Klubi",
+    # used by kohokohdat/keikat.org) and the short form ("Vastavirta",
+    # used by keikat.live). Same room; without this alias a gig missing
+    # its time on one source never matches the complete record on the
+    # other, so merge_events' time-backfill can't fire.
+    "vastavirta": "vastavirtaklubi",
 }
 
 
@@ -597,11 +613,15 @@ def sanitize_events(events):
         # produced, an HH:MM whose hour equals the event's day-of-month AND
         # whose minute equals the event's month is a date fragment, not a
         # start time. Blank it rather than publish a wrong time.
-        tm = re.fullmatch(r"(?:[01]?\d|2[0-3]):([0-5]\d)", time_str)
-        if tm and _looks_like_leaked_date(int(time_str[:2]), int(tm.group(1)), date):
+        tm = re.fullmatch(r"([01]?\d|2[0-3]):([0-5]\d)", time_str)
+        if tm and _looks_like_leaked_date(int(tm.group(1)), int(tm.group(2)), date):
             print(f"[sanitize] clearing leaked-date time {time_str!r} for "
                   f"event on {date}: title={title!r}", file=sys.stderr)
             time_str = ""
+        elif tm:
+            # Normalize any surviving non-padded form ("9:30" -> "09:30") so
+            # downstream sorting and the front-end always see strict HH:MM.
+            time_str = f"{int(tm.group(1)):02d}:{tm.group(2)}"
 
         # No source should ever produce a title this long — cap rather than
         # drop, so a legitimately verbose title (e.g. a big festival lineup)
@@ -617,6 +637,13 @@ def sanitize_events(events):
             genre = normalize_genre_string(genre)
             if not genre:
                 genre = DEFAULT_GENRE
+        # The front-end builds its genre filter chips from a fixed set of
+        # known genres; anything else would render as an invisible/unfilter-
+        # able card. A corrupt or brand-new genre string is snapped back to
+        # the default rather than published raw.
+        if genre not in VALID_GENRES:
+            print(f"[sanitize] unknown genre {genre!r} -> {DEFAULT_GENRE!r}: title={title!r}", file=sys.stderr)
+            genre = DEFAULT_GENRE
 
         free = e.get("free", 0)
         if not isinstance(free, int) or free not in (0, 1):
@@ -661,7 +688,21 @@ def merge_events(*event_lists):
             if key in seen:
                 duplicate_count += 1
                 first = seen[key]
-                
+
+                # Backfill missing fields from the duplicate before deciding
+                # which record wins overall: if the kept (first) event has no
+                # start time but this duplicate does, adopt the duplicate's
+                # time rather than publishing a time-less card just because
+                # the first source happened to parse worse.
+                if not first.get("time") and event.get("time"):
+                    print(
+                        f"[duplicate] {event.get('date')} — {event.get('title')} — "
+                        f"{event.get('venue')}\n"
+                        f"  backfilling missing time from duplicate: '{event['time']}'",
+                        file=sys.stderr,
+                    )
+                    first["time"] = event["time"]
+
                 # Check if the later event has a different genre
                 first_genre = first.get("genre", DEFAULT_GENRE)
                 later_genre = event.get("genre", DEFAULT_GENRE)
