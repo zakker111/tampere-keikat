@@ -13,6 +13,11 @@ def normalize_text(text: str) -> str:
     - Lowercase
     - Remove extra whitespace
     - Remove special characters that might vary between sources
+    - Fold known venue-name variants onto one canonical form, using the
+      same VENUE_ALIASES map as the main merge pass (sources/common.py),
+      so "Tavastia-klubi" and "Tavastia Klubi" dedup together instead of
+      surviving as two cards. Without this, utils/dedup hashed raw venue
+      strings and missed cross-source spelling variants entirely.
     """
     if not text:
         return ""
@@ -20,7 +25,9 @@ def normalize_text(text: str) -> str:
     text = re.sub(r'\s+', ' ', text)
     # Remove common punctuation variations that shouldn't affect identity
     text = re.sub(r'[^\w\säöå\-]', '', text)
-    return text
+    # Canonicalize venue aliases (compact form, matching common.normalize_venue)
+    from sources.common import normalize_venue
+    return normalize_venue(text) or text
 
 
 def normalize_date(date_str: str) -> str:

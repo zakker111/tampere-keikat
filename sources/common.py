@@ -7,12 +7,9 @@ lives in sources/<name>.py.
 import re
 import sys
 import time
-import random
 import datetime
-from urllib.parse import urljoin
 
 import requests
-from bs4 import BeautifulSoup
 
 # Optional cloudscraper
 try:
@@ -332,47 +329,6 @@ def fetch_with_retries(method, url, *, headers=None, params=None, timeout=20, re
     raise last_exc
 
 
-def fetch_with_playwright_content(url, timeout=25000):
-    if not PLAYWRIGHT_AVAILABLE:
-        raise RuntimeError("playwright not available")
-    with sync_playwright() as p:
-        time.sleep(1 + random.random())
-        browser = p.chromium.launch(args=["--no-sandbox", "--disable-blink-features=AutomationControlled"], headless=True)
-        context = browser.new_context(
-            user_agent=HEADERS.get("User-Agent"),
-            locale="fi-FI",
-            extra_http_headers={"Accept-Language": HEADERS.get("Accept-Language", "fi-FI,fi;q=0.9")}
-        )
-        try:
-            context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
-        except Exception:
-            pass
-        page = context.new_page()
-        try:
-            # Apply stealth if available to bypass Cloudflare bot detection
-            if PLAYWRIGHT_STEALTH_AVAILABLE:
-                stealth_sync(page)
-            # networkidle never fires on a Cloudflare "Just a moment..."
-            # challenge page — it has persistent background JS activity by
-            # design, so networkidle guarantees a timeout every time the
-            # challenge appears rather than just occasionally. domcontentloaded
-            # fires immediately regardless; the actual gate we care about is
-            # real event links showing up, which the selector wait below checks.
-            page.goto(url, wait_until="domcontentloaded", timeout=timeout)
-            try:
-                page.wait_for_selector('a[href*="/tapahtuma/"]', timeout=25000)
-            except Exception:
-                pass  # checked explicitly below instead of assuming success
-            content = page.content()
-        finally:
-            context.close()
-            browser.close()
-
-    if "Just a moment" in content or "/tapahtuma/" not in content:
-        raise RuntimeError("playwright fetch returned a challenge/empty page, not real content")
-    return content
-
-
 def fetch_with_playwright_generic(url, timeout=25000, wait_selector=None):
     """Render a page with Playwright without assuming a specific event URL pattern."""
     if not PLAYWRIGHT_AVAILABLE:
@@ -416,10 +372,18 @@ def fetch_with_playwright_generic(url, timeout=25000, wait_selector=None):
 
 
 def fetch_with_playwright_retries(url, attempts=2):
+    """Retry the generic Playwright renderer on Cloudflare-blocked pages.
+
+    Previously this called a separate `fetch_with_playwright_content` helper
+    that hard-required '/tapahtuma/' links in the page — a meteli-specific
+    URL pattern — which made it unusable (and broken) for other callers. It
+    was removed as dead/duplicate code; the generic renderer below already
+    detects challenge pages and empty responses, so retrying it is enough.
+    """
     last_exc = None
     for attempt in range(1, attempts + 1):
         try:
-            return fetch_with_playwright_content(url)
+            return fetch_with_playwright_generic(url, wait_selector='a[href*="/tapahtuma/"]')
         except Exception as exc:
             last_exc = exc
             print(f"[playwright] attempt {attempt}/{attempts} for {url} failed: {exc}", file=sys.stderr)
@@ -442,6 +406,9 @@ VENUE_ALIASES = {
     # its time on one source never matches the complete record on the
     # other, so merge_events' time-backfill can't fire.
     "vastavirta": "vastavirtaklubi",
+    # Tavastia appears with and without the hyphen in "-klubi" depending
+    # on the source; same club.
+    "tavastiaklubi": "tavastia",
 }
 
 
@@ -456,10 +423,6 @@ def normalize_text(value):
     value = re.sub(r"[–—−]", "-", value)
     value = re.sub(r"[^\w]+", "", value, flags=re.UNICODE)
     return value
-
-
-def normalize_title(title):
-    return normalize_text(title)
 
 
 def normalize_venue(venue):
@@ -487,7 +450,7 @@ def event_duplicate_key(event):
     """
     return (
         event.get("date", ""),
-        normalize_title(event.get("title", "")),
+        normalize_text(event.get("title", "")),
         normalize_venue(event.get("venue", "")),
     )
 
@@ -517,7 +480,7 @@ def log_possible_duplicates(events, threshold=0.6):
         for i in range(len(group)):
             for j in range(i + 1, len(group)):
                 t1, t2 = group[i].get("title", ""), group[j].get("title", "")
-                n1, n2 = normalize_title(t1), normalize_title(t2)
+                n1, n2 = normalize_text(t1), normalize_text(t2)
                 if n1 == n2:
                     continue  # exact match — merge_events already handled this
                 ratio = SequenceMatcher(None, n1, n2).ratio()
