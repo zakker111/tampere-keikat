@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-16 09:40 UTC",
+ "generated": "2026-10-17 09:10 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
+  "keikat_org": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
-  "keikat_org": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
@@ -13,186 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-10-16",
-   "18:00",
-   "Hämärät tunnit Festari Hämärät tunnit",
-   "Tallipiha",
-   "festival",
-   0,
-   "https://keikat.live/keikka/6706-hamarat-tunnit"
-  ],
-  [
-   "2026-10-16",
-   "18:00",
-   "Nuorten kulttuurikeskuksen Syyslomalla! Hip hop Nuorten kulttuurikeskuksen Syyslomalla! Pellavatehtaankatu 4",
-   "Ilmainen",
-   "hiphop",
-   0,
-   "https://keikat.live/keikka/6800-nuorten-kulttuurikeskuksen-syyslomalla"
-  ],
-  [
-   "2026-10-16",
-   "20:00",
-   "Lemmenpyssyt: 25 vuotta Party Special + Ghost of Bruce (soolo) & Paulin Namidisco Lemmenpyssyt: 25 vuotta Party Special + Ghost of Bruce (soolo) & Paulin Namidisco Kulttuuritalo",
-   "Telakka",
-   "electronic",
-   0,
-   "https://keikat.live/keikka/1992-lemmenpyssyt-25-vuotta-party-special-ghost-of-bruce-soolo-paulin-namidisco"
-  ],
-  [
-   "2026-10-16",
-   "20:00",
-   "Absoluuttinen Nollapiste Absoluuttinen Nollapiste G",
-   "Livelab",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2050-absoluuttinen-nollapiste"
-  ],
-  [
-   "2026-10-16",
-   "20:00",
-   "”The Plumbers” tribute to Ace Frehley and KISS",
-   "Terassi Pub Yläkerta",
-   "rock",
-   0,
-   "https://facebook.com/events/s/the-plumbers-tribute-to-ace-fr/1055970307482690/"
-  ],
-  [
-   "2026-10-16",
-   "20:30",
-   "Shorty Otis Blues Band Blues Shorty Otis Blues Band Katubaari",
-   "Axu",
-   "jazz",
-   0,
-   "https://keikat.live/keikka/6940-shorty-otis-blues-band"
-  ],
-  [
-   "2026-10-16",
-   "21:00",
-   "Pekka Tapani, Slackbird, Armi Harmio Folk Pekka Tapani, Slackbird, Armi Harmio Kulttuurikeskus",
-   "Maanalainen",
-   "folk",
-   0,
-   "https://keikat.live/keikka/7461-pekka-tapani-slackbird-armi-harmio"
-  ],
-  [
-   "2026-10-16",
-   "21:00",
-   "Party with DJ Sakke Elektro / DJ Party with DJ Sakke Irish Bar",
-   "O’Connell’s",
-   "electronic",
-   0,
-   "https://keikat.live/keikka/7497-party-with-dj-sakke"
-  ],
-  [
-   "2026-10-16",
-   "21:30",
-   "Rane Raitsikka & Tokela Rock Jazz Rane Raitsikka & Tokela",
-   "TTT-klubi",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2074-rane-raitsikka-tokela"
-  ],
-  [
-   "2026-10-16",
-   "22:00",
-   "Jytää ja iskelmää K-18 Iskelmä Jytää ja iskelmää K-18",
-   "Olympia",
-   "folk",
-   0,
-   "https://keikat.live/keikka/6462-jytaa-ja-iskelmaa-k-18"
-  ],
-  [
-   "2026-10-16",
-   "",
-   "Rane & Tokela",
-   "TTT-Klubi",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/rane-raitsikka-tokela-3"
-  ],
-  [
-   "2026-10-16",
-   "",
-   "Absoluuttinen Nollapiste",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/absoluuttinen-nollapiste-9"
-  ],
-  [
-   "2026-10-16",
-   "",
-   "Lemmenpyssyt, Ghost of Bruce, Paulin Namidisco",
-   "Telakka",
-   "electronic",
-   0,
-   "https://www.meteli.net/tapahtuma/lemmenpyssyt-ghost-of-bruce-paulin-namidisco"
-  ],
-  [
-   "2026-10-16",
-   "",
-   "Skatemaniacs Crew 30 vuotta: SMC",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/skatemaniacs-crew-30-vuotta-smc"
-  ],
-  [
-   "2026-10-16",
-   "",
-   "Wallu’s Little Friday: Hulda Huima",
-   "John Scott's Ratina",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/wallus-little-friday-hulda-huima"
-  ],
-  [
-   "2026-10-16",
-   "",
-   "Live Music Afterwork: Anton Äikäs",
-   "Pub Simon",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/live-music-afterwork-anton-aikas-3"
-  ],
-  [
-   "2026-10-16",
-   "",
-   "Dawn Noir, The Feral Kids, Daze Dolls",
-   "Bar Kotelo",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/dawn-noir-the-feral-kids-daze-dolls"
-  ],
-  [
-   "2026-10-16",
-   "",
-   "Tribute to Ace Frehley & Kiss: The Plumbers",
-   "Vastavirta-Klubi",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/tribute-to-ace-frehley-kiss-the-plumbers"
-  ],
-  [
-   "2026-10-16",
-   "",
-   "Marion Rung, Meiju Suvas, Virve Rosti, Ami Aspelund, Anja Niskanen, Esa Niemisen orkesteri",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.meteli.net/tapahtuma/marion-rung-meiju-suvas-virve-rosti-ami-aspelund-anja-niskanen-esa-niemisen-orkesteri-7"
-  ],
-  [
-   "2026-10-16",
-   "",
-   "All Good In The Hood: Jänöklubi, Varomato, Riski,",
-   "DJ C-Flava Kaijakka",
-   "electronic",
-   0,
-   "https://www.meteli.net/tapahtuma/all-good-in-the-hood-janoklubi-varomato-riski-dj-c-flava"
-  ],
   [
    "2026-10-17",
    "14:00",
@@ -228,6 +48,15 @@
    "rock",
    0,
    "https://keikat.live/keikka/2063-helmi-marleena-levyjulkkarikiertue"
+  ],
+  [
+   "2026-10-17",
+   "18:00",
+   "Hämärät tunnit Festari Hämärät tunnit",
+   "Tallipiha",
+   "festival",
+   0,
+   "https://keikat.live/keikka/6706-hamarat-tunnit"
   ],
   [
    "2026-10-17",
@@ -408,6 +237,24 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/hector-power-band"
+  ],
+  [
+   "2026-10-18",
+   "15:00",
+   "Muistoissamme Tapani Kansa -Juhlakonsertti Klassinen Muistoissamme Tapani Kansa -Juhlakonsertti",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://keikat.live/keikka/2189-muistoissamme-tapani-kansa-juhlakonsertti"
+  ],
+  [
+   "2026-10-18",
+   "18:00",
+   "Eve & Ossi Eve & Ossi Tampereen kristillinen",
+   "koulu",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6480-eve-ossi"
   ],
   [
    "2026-10-18",
@@ -740,7 +587,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-358"
+   "https://keikat.org/tampere-pakkahuone-335"
   ],
   [
    "2026-10-29",
@@ -1028,7 +875,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-446"
+   "https://keikat.org/tehdas-teatteri-422"
   ],
   [
    "2026-11-05",
@@ -1047,6 +894,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/rahvaanmusiikin-kerho-orffit"
+  ],
+  [
+   "2026-11-05",
+   "",
+   "Laulun Tekijät: Annukka, Kauris",
+   "Atmos Taproom",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/laulun-tekijat-annukka-kauris"
   ],
   [
    "2026-11-06",
@@ -1128,6 +984,15 @@
    "electronic",
    1,
    "https://www.meteli.net/tapahtuma/pahisklubi-demonessa-nahka-asiamiehet-dj-jere-dangerous"
+  ],
+  [
+   "2026-11-06",
+   "",
+   "Orphan Waves, Malamute, Pennies by the Pound",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/orphan-waves-malamute-pennies-by-the-pound"
   ],
   [
    "2026-11-06",
@@ -1364,6 +1229,15 @@
    "https://www.meteli.net/tapahtuma/the-pull-my-fingers-hellhound"
   ],
   [
+   "2026-11-13",
+   "",
+   "Live Black Sabbath Tribute: Bat Salad",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/live-black-sabbath-tribute-bat-salad-3"
+  ],
+  [
    "2026-11-14",
    "14:11",
    "Isac Elliot",
@@ -1436,6 +1310,15 @@
    "https://www.meteli.net/tapahtuma/litku-klemetti-joku-iiris"
   ],
   [
+   "2026-11-14",
+   "",
+   "Kouta, Leskentuska, Irvikuvotus",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/kouta-leskentuska-irvikuvotus"
+  ],
+  [
    "2026-11-15",
    "",
    "Napalm Death (GBR), Master (USA/CZE), Brat (USA),",
@@ -1478,7 +1361,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-630"
+   "https://keikat.org/sorin-sorin-606"
   ],
   [
    "2026-11-18",
@@ -1535,6 +1418,15 @@
    "https://www.meteli.net/tapahtuma/asla-jo-saga-olsson"
   ],
   [
+   "2026-11-19",
+   "",
+   "Legion Of The Damned (NLD), Torchia, Vitriolic",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/legion-of-the-damned-nld-torchia-vitriolic"
+  ],
+  [
    "2026-11-20",
    "18:00",
    "Tchaikovsky: The Nutcracker – A Christmas Carol",
@@ -1586,7 +1478,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-682"
+   "https://keikat.org/kotae-tampereen-657"
   ],
   [
    "2026-11-21",
@@ -1949,6 +1841,15 @@
    "https://www.meteli.net/tapahtuma/are-kriso-4"
   ],
   [
+   "2026-12-11",
+   "",
+   "Aavikko – Ydintalvi: Green King, Meteor Vortex, Malamute",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/aavikko-ydintalvi-green-king-meteor-vortex-malamute"
+  ],
+  [
    "2026-12-12",
    "",
    "Dingo",
@@ -1974,6 +1875,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/yolentoklubi-jaakko-kulta-aaro630-pihalla-2"
+  ],
+  [
+   "2026-12-12",
+   "",
+   "Aavikko – Ydintalvi: King Coyote, Monsternaut, Craneium, Orbiter",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/aavikko-ydintalvi-king-coyote-monsternaut-craneium-orbiter"
   ],
   [
    "2026-12-13",
@@ -2066,6 +1976,15 @@
    "https://www.meteli.net/tapahtuma/eva-manu-3"
   ],
   [
+   "2026-12-18",
+   "",
+   "Jytää ja iskelmää",
+   "DJ Arttu Seppänen Klubi",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/jytaa-ja-iskelmaa-dj-arttu-seppanen-5"
+  ],
+  [
    "2026-12-19",
    "",
    "Bess",
@@ -2144,7 +2063,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-1031"
+   "https://keikat.org/g-g-1008"
   ],
   [
    "2027-01-02",
@@ -2216,7 +2135,7 @@
    "Tavara-asema",
    "metal",
    0,
-   "https://keikat.org/punk-tavara-asema-1057"
+   "https://keikat.org/punk-tavara-asema-1032"
   ],
   [
    "2027-01-15",
@@ -2297,7 +2216,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1102"
+   "https://keikat.org/magda-vooninki-1079"
   ],
   [
    "2027-02-03",
