@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17 09:10 UTC",
+ "generated": "2026-10-18 09:31 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
@@ -13,231 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-10-17",
-   "14:00",
-   "Laulustudio Kaj Chydenius esittää: Syleily Laulustudio Kaj Chydenius esittää: Syleily G",
-   "Livelab",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2062-laulustudio-kaj-chydenius-esittaa-syleily"
-  ],
-  [
-   "2026-10-17",
-   "17:10",
-   "Jazz 100 vuotta-konsertti Finlaysonin Palatsilla: Bianca Morales ja Zhenia Gimer",
-   "Finlaysonin Palatsi",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/jazz-100-vuotta-konsertti-finlaysonin-palatsilla-bianca-morales-ja-zhenia-gimer/"
-  ],
-  [
-   "2026-10-17",
-   "17:30",
-   "Samuli Putro – Siinä kaikki Samuli Putro – Siinä kaikki",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7586-samuli-putro-siina-kaikki"
-  ],
-  [
-   "2026-10-17",
-   "18:00",
-   "helmi marleena: levyjulkkarikiertue helmi marleena: levyjulkkarikiertue G",
-   "Livelab",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2063-helmi-marleena-levyjulkkarikiertue"
-  ],
-  [
-   "2026-10-17",
-   "18:00",
-   "Hämärät tunnit Festari Hämärät tunnit",
-   "Tallipiha",
-   "festival",
-   0,
-   "https://keikat.live/keikka/6706-hamarat-tunnit"
-  ],
-  [
-   "2026-10-17",
-   "19:00",
-   "Hector & Power Band Hector & Power Band",
-   "Tampere-talo",
-   "rock",
-   0,
-   "https://keikat.live/keikka/5239-hector-power-band"
-  ],
-  [
-   "2026-10-17",
-   "20:00",
-   "Moon Shot K-18 Rock Moon Shot K-18",
-   "Olympia",
-   "rock",
-   0,
-   "https://keikat.live/keikka/1983-moon-shot-k-18"
-  ],
-  [
-   "2026-10-17",
-   "20:00",
-   "Chuck Berry 100: Del Futuras featuring Wiley Cousins Rock Chuck Berry 100: Del Futuras featuring Wiley Cousins Kulttuuritalo",
-   "Telakka",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2182-chuck-berry-100-del-futuras-featuring-wiley-cousins"
-  ],
-  [
-   "2026-10-17",
-   "20:00",
-   "Jarhvi sound reggae party",
-   "Terassi Pub Yläkerta",
-   "folk",
-   0,
-   "https://www.facebook.com/events/931293389733442/"
-  ],
-  [
-   "2026-10-17",
-   "21:00",
-   "helmi marleena: levyjulkkarikiertue (lisäkeikka) helmi marleena: levyjulkkarikiertue (lisäkeikka) G",
-   "Livelab",
-   "rock",
-   0,
-   "https://keikat.live/keikka/5541-helmi-marleena-levyjulkkarikiertue-lisakeikka"
-  ],
-  [
-   "2026-10-17",
-   "21:00",
-   "Jyrki Lepistö Jyrki Lepistö Katubaari",
-   "Axu",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6942-jyrki-lepisto"
-  ],
-  [
-   "2026-10-17",
-   "21:00",
-   "Uhrisavu, Naakka, Ohikulkijat, Toinen Luonto Uhrisavu, Naakka, Ohikulkijat, Toinen Luonto Kulttuurikeskus",
-   "Maanalainen",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7462-uhrisavu-naakka-ohikulkijat-toinen-luonto"
-  ],
-  [
-   "2026-10-17",
-   "21:00",
-   "SEKAMETELI :          Black Market Pharmaceut (21.30), Tоска Magnolia (22.15), Otrok (23.00), Headache (23.45)",
-   "Vastavirta-Klubi",
-   "rock",
-   1,
-   "https://www.facebook.com/events/1634721925029509/"
-  ],
-  [
-   "2026-10-17",
-   "21:30",
-   "Laura Närhi Laura Närhi",
-   "TTT-klubi",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2075-laura-narhi"
-  ],
-  [
-   "2026-10-17",
-   "",
-   "Laura Närhi",
-   "TTT-Klubi",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/laura-narhi-6"
-  ],
-  [
-   "2026-10-17",
-   "",
-   "Laulustudio Kaj Chydenius esittää – Syleily",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/laulustudio-kaj-chydenius-esittaa-syleily"
-  ],
-  [
-   "2026-10-17",
-   "",
-   "Helmi Marleena",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/helmi-marleena-6"
-  ],
-  [
-   "2026-10-17",
-   "",
-   "K40-disco: DJ:t Sami & Antti",
-   "Tavara-asema",
-   "electronic",
-   0,
-   "https://www.meteli.net/tapahtuma/k40-disco-djt-sami-antti-22"
-  ],
-  [
-   "2026-10-17",
-   "",
-   "Chuck Berry 100: Del Futuras feat. Wiley Cousins",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/chuck-berry-100-del-futuras-feat-wiley-cousins"
-  ],
-  [
-   "2026-10-17",
-   "",
-   "Kisko-klubi",
-   "Ville Leinonen Asemamestari",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/kisko-klubi-ville-leinonen"
-  ],
-  [
-   "2026-10-17",
-   "",
-   "Se Toinen Duo – Hannakaisa & Anssi Uusisilta",
-   "John Scott's Ratina",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/se-toinen-duo-hannakaisa-anssi-uusisilta"
-  ],
-  [
-   "2026-10-17",
-   "",
-   "Samuli Putro",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/samuli-putro-35"
-  ],
-  [
-   "2026-10-17",
-   "",
-   "Coraxul, Sarastus",
-   "Bar Kotelo",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/coraxul-sarastus"
-  ],
-  [
-   "2026-10-17",
-   "",
-   "Miljoonasade",
-   "Tampere-talo",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/miljoonasade-21"
-  ],
-  [
-   "2026-10-17",
-   "",
-   "Hector & Power Band",
-   "Tampere-talo",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/hector-power-band"
-  ],
   [
    "2026-10-18",
    "15:00",
@@ -282,6 +57,15 @@
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a7dc36d2765580007aa98f3"
+  ],
+  [
+   "2026-10-19",
+   "17:23",
+   "Tampereen Galleriaviikko Galleria Vivissä Tampereen Galleriaviikko Galleria Vivissä Pellavatehtaankatu 4",
+   "Ilmainen",
+   "rock",
+   0,
+   "https://keikat.live/keikka/7298-tampereen-galleriaviikko-galleria-vivissa"
   ],
   [
    "2026-10-20",
@@ -587,7 +371,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-335"
+   "https://keikat.org/tampere-pakkahuone-292"
   ],
   [
    "2026-10-29",
@@ -875,7 +659,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-422"
+   "https://keikat.org/tehdas-teatteri-380"
   ],
   [
    "2026-11-05",
@@ -1276,6 +1060,15 @@
   [
    "2026-11-14",
    "",
+   "K40-disco: DJ:t Sami & Antti",
+   "Tavara-asema",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/k40-disco-djt-sami-antti-23"
+  ],
+  [
+   "2026-11-14",
+   "",
    "Kisko-klubi",
    "Stenari Asemamestari",
    "rock",
@@ -1361,7 +1154,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-606"
+   "https://keikat.org/sorin-sorin-564"
   ],
   [
    "2026-11-18",
@@ -1478,7 +1271,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-657"
+   "https://keikat.org/kotae-tampereen-623"
   ],
   [
    "2026-11-21",
@@ -2063,7 +1856,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-1008"
+   "https://keikat.org/g-g-967"
   ],
   [
    "2027-01-02",
@@ -2135,7 +1928,7 @@
    "Tavara-asema",
    "metal",
    0,
-   "https://keikat.org/punk-tavara-asema-1032"
+   "https://keikat.org/punk-tavara-asema-998"
   ],
   [
    "2027-01-15",
@@ -2216,7 +2009,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1079"
+   "https://keikat.org/magda-vooninki-1037"
   ],
   [
    "2027-02-03",
