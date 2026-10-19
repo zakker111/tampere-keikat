@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18 09:31 UTC",
+ "generated": "2026-10-19 10:49 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
@@ -13,42 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-10-18",
-   "15:00",
-   "Muistoissamme Tapani Kansa -Juhlakonsertti Klassinen Muistoissamme Tapani Kansa -Juhlakonsertti",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://keikat.live/keikka/2189-muistoissamme-tapani-kansa-juhlakonsertti"
-  ],
-  [
-   "2026-10-18",
-   "18:00",
-   "Eve & Ossi Eve & Ossi Tampereen kristillinen",
-   "koulu",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6480-eve-ossi"
-  ],
-  [
-   "2026-10-18",
-   "18:00",
-   "Laula elämän puolesta : Tule laulamaan matalalla kynnyksellä ympäristöaiheisia tuttuja(kin) lauluja klo 18-20",
-   "Terassi Pub Yläkerta",
-   "rock",
-   0,
-   "https://www.vastavirta.net"
-  ],
-  [
-   "2026-10-18",
-   "",
-   "Muistoissamme Tapani Kansa -juhlakonsertti: Teemu Roivainen, Tomi Metsäketo, Lauri Mikkola, Mikael Saari, Jukka Nykänen & orkesteri",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.meteli.net/tapahtuma/muistoissamme-tapani-kansa-juhlakonsertti-teemu-roivainen-tomi-metsaketo-lauri-mikkola-mikael-saari-jukka-nykanen-orkesteri-4"
-  ],
   [
    "2026-10-19",
    "13:00",
@@ -371,7 +335,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-292"
+   "https://keikat.org/tampere-pakkahuone-285"
   ],
   [
    "2026-10-29",
@@ -390,6 +354,15 @@
    "jazz",
    0,
    "https://www.meteli.net/tapahtuma/tampere-jazz-happening-cosmic-ear-swe-tomasz-dbrowski-the-individual-beings-feat-johanna-elina-sulkunen-pol-fin-dnk-nor-mestizx-nld-usa-bol"
+  ],
+  [
+   "2026-10-30",
+   "18:00",
+   "Miika Leivo & band + Helmi Ada",
+   "Bistro Vilja",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/miika-leivo-band-helmi-ada/"
   ],
   [
    "2026-10-30",
@@ -412,11 +385,11 @@
   [
    "2026-10-30",
    "21:00",
-   "Santeri Sihvonen & Karjalan Konnat, Idän Voima, Halla",
+   "Idän Voima (23.30),   Santeri Sihvonen & Karjalan Konnat (22.30), Halla (21.39)",
    "Vastavirta-Klubi",
    "rock",
    0,
-   "https://www.vastavirta.net"
+   "https://facebook.com/events/s/idan-voima-santeri-sihvonen-ka/2188926915166062/"
   ],
   [
    "2026-10-30",
@@ -659,7 +632,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-380"
+   "https://keikat.org/tehdas-teatteri-374"
   ],
   [
    "2026-11-05",
@@ -1154,7 +1127,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-564"
+   "https://keikat.org/sorin-sorin-552"
   ],
   [
    "2026-11-18",
@@ -1271,7 +1244,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-623"
+   "https://keikat.org/kotae-tampereen-617"
   ],
   [
    "2026-11-21",
@@ -1856,7 +1829,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-967"
+   "https://keikat.org/g-g-965"
   ],
   [
    "2027-01-02",
@@ -1928,7 +1901,7 @@
    "Tavara-asema",
    "metal",
    0,
-   "https://keikat.org/punk-tavara-asema-998"
+   "https://keikat.org/punk-tavara-asema-997"
   ],
   [
    "2027-01-15",
@@ -2009,7 +1982,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1037"
+   "https://keikat.org/magda-vooninki-1036"
   ],
   [
    "2027-02-03",
