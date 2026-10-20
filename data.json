@@ -1,12 +1,12 @@
 {
- "generated": "2026-10-19 10:49 UTC",
+ "generated": "2026-10-20 10:06 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "keikat_org": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
-  "keikat_live": "OK",
   "vastavirta": "OK",
+  "keikat_live": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "OK",
@@ -14,17 +14,8 @@
  },
  "events": [
   [
-   "2026-10-19",
-   "13:00",
-   "Yhteislaulut: Nostalgisia säveliä menneiltä vuosikymmeniltä",
-   "Lielahden kirjasto, Antti Possin Kuja 1, 33400 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a7dc36d2765580007aa98f3"
-  ],
-  [
-   "2026-10-19",
-   "17:23",
+   "2026-10-20",
+   "17:00",
    "Tampereen Galleriaviikko Galleria Vivissä Tampereen Galleriaviikko Galleria Vivissä Pellavatehtaankatu 4",
    "Ilmainen",
    "rock",
@@ -48,6 +39,24 @@
    "classical",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a918bf180aad500079a0711"
+  ],
+  [
+   "2026-10-21",
+   "18:00",
+   "Laura Moisio: Aina jossain muualla (levyjulkkarit) + Julia Rautamaa Folk Laura Moisio: Aina jossain muualla (levyjulkkarit) + Julia Rautamaa G",
+   "Livelab",
+   "folk",
+   0,
+   "https://keikat.live/keikka/2171-laura-moisio-aina-jossain-muualla-levyjulkkarit-julia-rautamaa"
+  ],
+  [
+   "2026-10-21",
+   "18:30",
+   "Warner E. Hodges International All Stars feat. Stacie Collins Folk Warner E. Hodges International All Stars feat. Stacie Collins",
+   "Tavara-asema",
+   "folk",
+   0,
+   "https://keikat.live/keikka/5834-warner-e-hodges-international-all-stars-feat-stacie-collins"
   ],
   [
    "2026-10-21",
@@ -232,7 +241,7 @@
   [
    "2026-10-24",
    "21:00",
-   "Sur-rur, Vapaa Maa, Bulrusher",
+   "Sur-rur (23.30), Vapaa Maa (22.30), Bulrusher (21.30)",
    "Vastavirta-Klubi",
    "rock",
    0,
@@ -335,7 +344,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-285"
+   "https://keikat.org/tampere-pakkahuone-283"
   ],
   [
    "2026-10-29",
@@ -389,7 +398,7 @@
    "Vastavirta-Klubi",
    "rock",
    0,
-   "https://facebook.com/events/s/idan-voima-santeri-sihvonen-ka/2188926915166062/"
+   "https://www.vastavirta.net"
   ],
   [
    "2026-10-30",
@@ -453,6 +462,24 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/einvigi-plaguebreeder"
+  ],
+  [
+   "2026-10-30",
+   "",
+   "Idän voima, Santeri Sihvonen & Karjalan Konnat, Halla",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/idan-voima-santeri-sihvonen-karjalan-konnat-halla"
+  ],
+  [
+   "2026-10-30",
+   "",
+   "IRA feat. Sebastian Visa & Lehmus",
+   "Teerenpeli Tampere",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/ira-feat-sebastian-visa-lehmus/"
   ],
   [
    "2026-10-30",
@@ -632,7 +659,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-374"
+   "https://keikat.org/tehdas-teatteri-380"
   ],
   [
    "2026-11-05",
@@ -879,6 +906,15 @@
   ],
   [
    "2026-11-12",
+   "17:00",
+   "VOIMAILTA",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-12",
    "19:00",
    "Tampere Philharmonic Orchestra: Water Music",
    "Tampere-talo",
@@ -1005,6 +1041,15 @@
   ],
   [
    "2026-11-14",
+   "21:00",
+   "PUNTALA-KLUBI : Enourmous Doors plays Discharge, Polttouhri, Parakin Lapset + disko",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-14",
    "",
    "Frigg",
    "TTT-Klubi",
@@ -1086,6 +1131,15 @@
   ],
   [
    "2026-11-15",
+   "21:00",
+   "Hullu!Klubi : Highway Ghosts, Katastrofi, Hiljainen Kansa, Bulrusher",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-15",
    "",
    "Napalm Death (GBR), Master (USA/CZE), Brat (USA),",
    "Goatburner Klubi",
@@ -1127,7 +1181,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-552"
+   "https://keikat.org/sorin-sorin-559"
   ],
   [
    "2026-11-18",
@@ -1167,6 +1221,15 @@
   ],
   [
    "2026-11-19",
+   "18:00",
+   "Juuso Paason Tulevat Käsitteet (19.00), ATUG (18.00) + Kikkerikisat (20.00)",
+   "Terassi Pub Yläkerta",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-19",
    "",
    "Ricky-Tick Big Band & Julkinen Sana",
    "Tavara-asema",
@@ -1200,6 +1263,24 @@
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/dynamic-event/tchaikovsky-the-nutcracker-a-christmas-carol/"
+  ],
+  [
+   "2026-11-20",
+   "19:00",
+   "Säilä (21.00), Typerä Typerä Mies (20.00), Toukokuu (19.00)",
+   "Terassi Pub Yläkerta",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-20",
+   "21:00",
+   "Mimosa, Lossi T, Tykopaatti, Oiva Vedätys",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-11-20",
@@ -1239,12 +1320,30 @@
   ],
   [
    "2026-11-21",
+   "18:00",
+   "TAITEILE MINULLE TAIVAS : Pinhuusi, Piirimyyjä + open mic, Ayno, Halla",
+   "Terassi Pub Yläkerta",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-21",
    "20:00",
    "Kotae Expo 2026 la 21.11.2026",
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-617"
+   "https://keikat.org/kotae-tampereen-618"
+  ],
+  [
+   "2026-11-21",
+   "20:00",
+   "Aivoproteesi, Pohjasakka, Tohtori Koira, Punk Ekman, Suicide Sex Cult Propaganda",
+   "Vastavirta-Klubi",
+   "metal",
+   0,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-11-21",
@@ -1392,15 +1491,6 @@
   ],
   [
    "2026-11-28",
-   "20:30",
-   "Wyatt E (be), Fife the Hierophant (uk), Radien",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.vastavirta.net"
-  ],
-  [
-   "2026-11-28",
    "",
    "Die Oberherren (SWE), Dharma Guns, Rob Coffinshaker (SWE)",
    "Bar Kotelo",
@@ -1425,6 +1515,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/costi-uuer-3"
+  ],
+  [
+   "2026-11-28",
+   "",
+   "Kisko-klubi",
+   "Mikko Alatalo Asemamestari",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/kisko-klubi-mikko-alatalo-2"
   ],
   [
    "2026-12-01",
@@ -1614,6 +1713,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/aavikko-ydintalvi-green-king-meteor-vortex-malamute"
+  ],
+  [
+   "2026-12-12",
+   "11:00",
+   "Reissu-Rulla: Palago-duon konsertti ja työpaja",
+   "Tesoman kirjasto, Tesomankatu 4, 33310 Tampere",
+   "classical",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a918e98d1f6e50007be386e"
   ],
   [
    "2026-12-12",
@@ -1829,7 +1937,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-965"
+   "https://keikat.org/g-g-971"
   ],
   [
    "2027-01-02",
@@ -1877,6 +1985,15 @@
    "https://www.meteli.net/tapahtuma/frank-zappa-memorial-pancake-breakfast-6"
   ],
   [
+   "2027-01-13",
+   "",
+   "Never Obey Again (ITA), Balance Breach,",
+   "Silence The Echo Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/never-obey-again-ita-balance-breach-silence-the-echo"
+  ],
+  [
    "2027-01-14",
    "",
    "Wishamalii with Friends",
@@ -1901,7 +2018,7 @@
    "Tavara-asema",
    "metal",
    0,
-   "https://keikat.org/punk-tavara-asema-997"
+   "https://keikat.org/punk-tavara-asema-1006"
   ],
   [
    "2027-01-15",
@@ -1940,6 +2057,15 @@
    "https://www.meteli.net/tapahtuma/penniless-tomi-nordlund-syva-joki"
   ],
   [
+   "2027-01-21",
+   "",
+   "Annika Pudas",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/annika-pudas-3"
+  ],
+  [
    "2027-01-22",
    "",
    "Radio Supernova, Tamara Luonto",
@@ -1967,6 +2093,15 @@
    "https://www.meteli.net/tapahtuma/dire-straits-50th-anniversary-show-alchemy"
   ],
   [
+   "2027-01-28",
+   "",
+   "Pekka Laine & The Enchanted,",
+   "Tinyhawk & Bizzarro Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/pekka-laine-the-enchanted-tinyhawk-bizzarro-10"
+  ],
+  [
    "2027-01-29",
    "",
    "Pauliina Kokkonen",
@@ -1982,7 +2117,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1036"
+   "https://keikat.org/magda-vooninki-1046"
   ],
   [
    "2027-02-03",
