@@ -1,36 +1,18 @@
 {
- "generated": "2026-10-20 10:06 UTC",
+ "generated": "2026-10-21 10:08 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "keikat_org": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
-  "vastavirta": "OK",
   "keikat_live": "OK",
+  "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "OK",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-10-20",
-   "17:00",
-   "Tampereen Galleriaviikko Galleria Vivissä Tampereen Galleriaviikko Galleria Vivissä Pellavatehtaankatu 4",
-   "Ilmainen",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7298-tampereen-galleriaviikko-galleria-vivissa"
-  ],
-  [
-   "2026-10-20",
-   "20:00",
-   "Tietovisa",
-   "Terassi Pub Yläkerta",
-   "rock",
-   0,
-   "https://www.vastavirta.net"
-  ],
   [
    "2026-10-21",
    "17:30",
@@ -39,6 +21,15 @@
    "classical",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a918bf180aad500079a0711"
+  ],
+  [
+   "2026-10-21",
+   "17:30",
+   "Tampereen Galleriaviikko Galleria Vivissä Tampereen Galleriaviikko Galleria Vivissä Pellavatehtaankatu 4",
+   "Ilmainen",
+   "rock",
+   0,
+   "https://keikat.live/keikka/7298-tampereen-galleriaviikko-galleria-vivissa"
   ],
   [
    "2026-10-21",
@@ -87,6 +78,42 @@
   ],
   [
    "2026-10-22",
+   "18:00",
+   "Jukka Haavisto - Löyly Syndicate: Juniper Path (levyjulkkarit) Jazz Jukka Haavisto - Löyly Syndicate: Juniper Path (levyjulkkarit) G",
+   "Livelab",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/3422-jukka-haavisto-loyly-syndicate-juniper-path-levyjulkkarit"
+  ],
+  [
+   "2026-10-22",
+   "18:00",
+   "Rahvaanmusiikin kerhon jamit Folk Rahvaanmusiikin kerhon jamit Kulttuuritalo",
+   "Laikku",
+   "folk",
+   0,
+   "https://keikat.live/keikka/5129-rahvaanmusiikin-kerhon-jamit"
+  ],
+  [
+   "2026-10-22",
+   "18:00",
+   "Västin Vinyylit ja Viinit Västin Vinyylit ja Viinit Hiedanrannan",
+   "Tehdasaukio",
+   "electronic",
+   0,
+   "https://keikat.live/keikka/7557-vastin-vinyylit-ja-viinit"
+  ],
+  [
+   "2026-10-22",
+   "18:30",
+   "Solo Soi! Toivo Kärki juhlakonsertti Iskelmä Solo Soi! Toivo Kärki juhlakonsertti Tampereen",
+   "Komediateatteri",
+   "folk",
+   0,
+   "https://keikat.live/keikka/6887-solo-soi-toivo-karki-juhlakonsertti"
+  ],
+  [
+   "2026-10-22",
    "20:00",
    "Kikkerikisat",
    "Terassi Pub Yläkerta",
@@ -127,7 +154,7 @@
    "Näästek : open decks",
    "Terassi Pub Yläkerta",
    "rock",
-   0,
+   1,
    "https://facebook.com/events/s/naastek-teknoa-koolla-pt-2/1454690359845282/"
   ],
   [
@@ -304,7 +331,7 @@
   [
    "2026-10-25",
    "19:00",
-   "Hannele Juutinen Band, Ilkka Niemi Band",
+   "Hannele Juutinen Band (20.00), Ilkka Niemi Band (19.00)",
    "Terassi Pub Yläkerta",
    "rock",
    1,
@@ -318,6 +345,33 @@
    "electronic",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a74881751d559000726da7f"
+  ],
+  [
+   "2026-10-26",
+   "",
+   "Nouse Luonto – Lauluja Monimuotoisuudesta",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/nouse-luonto-lauluja-monimuotoisuudesta"
+  ],
+  [
+   "2026-10-27",
+   "21:00",
+   "Tietovisa",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-10-27",
+   "",
+   "Zucchero (ITA)",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/zucchero-ita-2"
   ],
   [
    "2026-10-28",
@@ -604,7 +658,7 @@
    "Ville Leinonen plays Danzig",
    "Terassi Pub Yläkerta",
    "rock",
-   0,
+   1,
    "https://www.facebook.com/events/3672300632910272/"
   ],
   [
@@ -721,7 +775,7 @@
    "Crooked Mouth (liettua), Henna Emilia Hietamäki, Vesper Kennings",
    "Terassi Pub Yläkerta",
    "rock",
-   0,
+   1,
    "https://www.facebook.com/events/1986134552104304/"
   ],
   [
@@ -910,7 +964,7 @@
    "VOIMAILTA",
    "Vastavirta-Klubi",
    "rock",
-   0,
+   1,
    "https://www.vastavirta.net"
   ],
   [
@@ -928,7 +982,7 @@
    "Perunapuffet DJs",
    "Terassi Pub Yläkerta",
    "electronic",
-   0,
+   1,
    "https://www.vastavirta.net"
   ],
   [
@@ -1225,7 +1279,7 @@
    "Juuso Paason Tulevat Käsitteet (19.00), ATUG (18.00) + Kikkerikisat (20.00)",
    "Terassi Pub Yläkerta",
    "rock",
-   0,
+   1,
    "https://www.vastavirta.net"
   ],
   [
@@ -1324,7 +1378,7 @@
    "TAITEILE MINULLE TAIVAS : Pinhuusi, Piirimyyjä + open mic, Ayno, Halla",
    "Terassi Pub Yläkerta",
    "rock",
-   0,
+   1,
    "https://www.vastavirta.net"
   ],
   [
@@ -1339,7 +1393,7 @@
   [
    "2026-11-21",
    "20:00",
-   "Aivoproteesi, Pohjasakka, Tohtori Koira, Punk Ekman, Suicide Sex Cult Propaganda",
+   "Pohjasakka (23.30), Aivoproteesi (22.45), Punk Ekman (22.00), Tohtori Koira (21.15), Suicide Sex Cult Propaganda (20.30)",
    "Vastavirta-Klubi",
    "metal",
    0,
@@ -1389,6 +1443,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/vauhti-kiihtyy-pikkujoulut-haloo-helsinki-neon-2-kake-randelin-ressu-redford"
+  ],
+  [
+   "2026-11-22",
+   "18:00",
+   "Laula elämän puolesta : Tule laulamaan matalalla kynnyksellä ympäristöaiheisia tuttuja(kin) lauluja klo 18-20",
+   "Vastavirta-Klubi",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-11-24",
@@ -2059,7 +2122,7 @@
   [
    "2027-01-21",
    "",
-   "Annika Pudas",
+   "Annika Pudas, Saga Mast",
    "G Livelab Tampere",
    "rock",
    0,
@@ -2127,6 +2190,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/35-vuotisjuhlakonsertti-micke-bjorklof-blue-strip"
+  ],
+  [
+   "2027-02-04",
+   "",
+   "Maa Ilmasta, Idän Voima",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/maa-ilmasta-idan-voima"
   ],
   [
    "2027-02-05",
