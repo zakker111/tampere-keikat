@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-21 10:08 UTC",
+ "generated": "2026-10-22 10:08 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "keikat_org": "OK",
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
@@ -13,69 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-10-21",
-   "17:30",
-   "Reissu-Rulla: Palago-duon konsertti ja työpaja",
-   "Koilliskeskuksen kirjasto, Liikekatu 3, 33580 Tampere",
-   "classical",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a918bf180aad500079a0711"
-  ],
-  [
-   "2026-10-21",
-   "17:30",
-   "Tampereen Galleriaviikko Galleria Vivissä Tampereen Galleriaviikko Galleria Vivissä Pellavatehtaankatu 4",
-   "Ilmainen",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7298-tampereen-galleriaviikko-galleria-vivissa"
-  ],
-  [
-   "2026-10-21",
-   "18:00",
-   "Laura Moisio: Aina jossain muualla (levyjulkkarit) + Julia Rautamaa Folk Laura Moisio: Aina jossain muualla (levyjulkkarit) + Julia Rautamaa G",
-   "Livelab",
-   "folk",
-   0,
-   "https://keikat.live/keikka/2171-laura-moisio-aina-jossain-muualla-levyjulkkarit-julia-rautamaa"
-  ],
-  [
-   "2026-10-21",
-   "18:30",
-   "Warner E. Hodges International All Stars feat. Stacie Collins Folk Warner E. Hodges International All Stars feat. Stacie Collins",
-   "Tavara-asema",
-   "folk",
-   0,
-   "https://keikat.live/keikka/5834-warner-e-hodges-international-all-stars-feat-stacie-collins"
-  ],
-  [
-   "2026-10-21",
-   "",
-   "Laura Moisio, Julia Rautamaa",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/laura-moisio-7"
-  ],
-  [
-   "2026-10-21",
-   "",
-   "Warner E. Hodges International All Stars feat. Stacie Collins (USA/SWE)",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/warner-e-hodges-international-all-stars-feat-stacie-collins-usa-swe"
-  ],
-  [
-   "2026-10-21",
-   "",
-   "Jorma Tapio & Kaski 20-vuotisjuhlakonsertti",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/jorma-tapio-kaski-20-vuotisjuhlakonsertti"
-  ],
   [
    "2026-10-22",
    "18:00",
@@ -93,6 +30,15 @@
    "folk",
    0,
    "https://keikat.live/keikka/5129-rahvaanmusiikin-kerhon-jamit"
+  ],
+  [
+   "2026-10-22",
+   "18:00",
+   "Tampereen Galleriaviikko Galleria Vivissä Tampereen Galleriaviikko Galleria Vivissä Pellavatehtaankatu 4",
+   "Ilmainen",
+   "rock",
+   0,
+   "https://keikat.live/keikka/7298-tampereen-galleriaviikko-galleria-vivissa"
   ],
   [
    "2026-10-22",
@@ -151,6 +97,15 @@
   [
    "2026-10-23",
    "18:00",
+   "Kaija Koo - Tuuleen Piirretyt Vuodet Pop Kaija Koo - Tuuleen Piirretyt Vuodet Nokia",
+   "Arena",
+   "pop",
+   0,
+   "https://keikat.live/keikka/1922-kaija-koo-tuuleen-piirretyt-vuodet"
+  ],
+  [
+   "2026-10-23",
+   "18:00",
    "Näästek : open decks",
    "Terassi Pub Yläkerta",
    "rock",
@@ -168,21 +123,66 @@
   ],
   [
    "2026-10-23",
+   "19:00",
+   "Happoradio, Kormus Rock Happoradio, Kormus",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://keikat.live/keikka/1964-happoradio-kormus"
+  ],
+  [
+   "2026-10-23",
+   "19:00",
+   "Pauli Hanhiniemen Perunateatteri K-18 Rock Pauli Hanhiniemen Perunateatteri K-18",
+   "Olympia",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2034-pauli-hanhiniemen-perunateatteri-k-18"
+  ],
+  [
+   "2026-10-23",
+   "19:00",
+   "Uusien klubi - Improkeikka Uusien klubi - Improkeikka Tampereen",
+   "Ylioppilasteatteri",
+   "rock",
+   0,
+   "https://keikat.live/keikka/7813-uusien-klubi-improkeikka"
+  ],
+  [
+   "2026-10-23",
+   "20:30",
+   "Solar Blue Solar Blue Katubaari",
+   "Axu",
+   "rock",
+   0,
+   "https://keikat.live/keikka/7376-solar-blue"
+  ],
+  [
+   "2026-10-23",
+   "21:00",
+   "M – levynjulkaisukeikka Elektro / DJ M – levynjulkaisukeikka Kulttuuritalo",
+   "Telakka",
+   "electronic",
+   0,
+   "https://keikat.live/keikka/4531-m-levynjulkaisukeikka"
+  ],
+  [
+   "2026-10-23",
+   "22:00",
+   "Ilona Tampere: Arttu Wiskari K-22 Ilona Tampere: Arttu Wiskari K-22 Viihdemaailma",
+   "Ilona",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6026-ilona-tampere-arttu-wiskari-k-22"
+  ],
+  [
+   "2026-10-23",
    "22:00",
    "Näästek : teknoa Koolla!",
    "Vastavirta-Klubi",
    "rock",
    1,
    "https://facebook.com/events/s/naastek-teknoa-koolla-pt-2/1454690359845282/"
-  ],
-  [
-   "2026-10-23",
-   "23:10",
-   "EMO ROMANSE: My Chemical Romance -ilta",
-   "Desibeli tapahtumat",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/emo-romanse-my-chemical-romance/"
   ],
   [
    "2026-10-23",
@@ -268,7 +268,7 @@
   [
    "2026-10-24",
    "21:00",
-   "Sur-rur (23.30), Vapaa Maa (22.30), Bulrusher (21.30)",
+   "*** loppuunmyyty *** Sur-rur (23.30), Vapaa Maa (22.30), Bulrusher (21.30)",
    "Vastavirta-Klubi",
    "rock",
    0,
@@ -398,7 +398,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-283"
+   "https://keikat.org/tampere-pakkahuone-273"
   ],
   [
    "2026-10-29",
@@ -713,7 +713,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-380"
+   "https://keikat.org/tehdas-teatteri-363"
   ],
   [
    "2026-11-05",
@@ -861,15 +861,6 @@
   ],
   [
    "2026-11-07",
-   "07:11",
-   "Dave Lindholm & Pepe Ahlqvist: Walkin’ blues",
-   "TTT-Klubi",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dave-lindholm-pepe-ahlqvist-walkin-blues/"
-  ],
-  [
-   "2026-11-07",
    "20:00",
    "Seurat, Kätyrlauma",
    "Terassi Pub Yläkerta",
@@ -1005,15 +996,6 @@
   ],
   [
    "2026-11-13",
-   "13:11",
-   "Younghearted – Joulukiertue",
-   "Kalevan kirko",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/younghearted-joulukiertue/"
-  ],
-  [
-   "2026-11-13",
    "17:00",
    "Sampolan MysteeriYö ja Sampola LIVE: Joose Keskitalo",
    "Sampolan kirjasto, Sammonkatu 2, 33540 Tampere",
@@ -1083,15 +1065,6 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/live-black-sabbath-tribute-bat-salad-3"
-  ],
-  [
-   "2026-11-14",
-   "14:11",
-   "Isac Elliot",
-   "Nokia Arena",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/isac-elliot/"
   ],
   [
    "2026-11-14",
@@ -1235,7 +1208,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-559"
+   "https://keikat.org/sorin-sorin-548"
   ],
   [
    "2026-11-18",
@@ -1388,7 +1361,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-618"
+   "https://keikat.org/kotae-tampereen-608"
   ],
   [
    "2026-11-21",
@@ -1851,6 +1824,15 @@
   ],
   [
    "2026-12-17",
+   "18:00",
+   "Metso LIVE: Rebekka Holi",
+   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6aaa77403e3e8f000747c048"
+  ],
+  [
+   "2026-12-17",
    "19:00",
    "Tampere Philharmonic Orchestra: Santtu-Matias Rouvali & Alena Baeva",
    "Tampere-talo",
@@ -2000,7 +1982,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-971"
+   "https://keikat.org/g-g-964"
   ],
   [
    "2027-01-02",
@@ -2081,7 +2063,7 @@
    "Tavara-asema",
    "metal",
    0,
-   "https://keikat.org/punk-tavara-asema-1006"
+   "https://keikat.org/punk-tavara-asema-1001"
   ],
   [
    "2027-01-15",
@@ -2180,7 +2162,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1046"
+   "https://keikat.org/magda-vooninki-1042"
   ],
   [
    "2027-02-03",
