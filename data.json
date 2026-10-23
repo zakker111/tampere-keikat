@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-22 10:08 UTC",
+ "generated": "2026-10-23 09:55 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "keikat_org": "OK",
-  "keikat_live": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_live": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
@@ -13,78 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-10-22",
-   "18:00",
-   "Jukka Haavisto - Löyly Syndicate: Juniper Path (levyjulkkarit) Jazz Jukka Haavisto - Löyly Syndicate: Juniper Path (levyjulkkarit) G",
-   "Livelab",
-   "jazz",
-   0,
-   "https://keikat.live/keikka/3422-jukka-haavisto-loyly-syndicate-juniper-path-levyjulkkarit"
-  ],
-  [
-   "2026-10-22",
-   "18:00",
-   "Rahvaanmusiikin kerhon jamit Folk Rahvaanmusiikin kerhon jamit Kulttuuritalo",
-   "Laikku",
-   "folk",
-   0,
-   "https://keikat.live/keikka/5129-rahvaanmusiikin-kerhon-jamit"
-  ],
-  [
-   "2026-10-22",
-   "18:00",
-   "Tampereen Galleriaviikko Galleria Vivissä Tampereen Galleriaviikko Galleria Vivissä Pellavatehtaankatu 4",
-   "Ilmainen",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7298-tampereen-galleriaviikko-galleria-vivissa"
-  ],
-  [
-   "2026-10-22",
-   "18:00",
-   "Västin Vinyylit ja Viinit Västin Vinyylit ja Viinit Hiedanrannan",
-   "Tehdasaukio",
-   "electronic",
-   0,
-   "https://keikat.live/keikka/7557-vastin-vinyylit-ja-viinit"
-  ],
-  [
-   "2026-10-22",
-   "18:30",
-   "Solo Soi! Toivo Kärki juhlakonsertti Iskelmä Solo Soi! Toivo Kärki juhlakonsertti Tampereen",
-   "Komediateatteri",
-   "folk",
-   0,
-   "https://keikat.live/keikka/6887-solo-soi-toivo-karki-juhlakonsertti"
-  ],
-  [
-   "2026-10-22",
-   "20:00",
-   "Kikkerikisat",
-   "Terassi Pub Yläkerta",
-   "rock",
-   0,
-   "https://www.vastavirta.net"
-  ],
-  [
-   "2026-10-22",
-   "",
-   "Jukka Haavisto – Löyly Syndicate",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/jukka-haavisto-loyly-syndicate"
-  ],
-  [
-   "2026-10-22",
-   "",
-   "Marcel Riesco & His Rhythm Cats, Son Demon and His Holy Boys",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/marcel-riesco-his-rhythm-cats-son-demon-and-his-holy-boys"
-  ],
   [
    "2026-10-23",
    "18:00",
@@ -102,6 +30,15 @@
    "pop",
    0,
    "https://keikat.live/keikka/1922-kaija-koo-tuuleen-piirretyt-vuodet"
+  ],
+  [
+   "2026-10-23",
+   "18:00",
+   "Tampereen Galleriaviikko Galleria Vivissä Tampereen Galleriaviikko Galleria Vivissä Pellavatehtaankatu 4",
+   "Ilmainen",
+   "rock",
+   0,
+   "https://keikat.live/keikka/7298-tampereen-galleriaviikko-galleria-vivissa"
   ],
   [
    "2026-10-23",
@@ -186,6 +123,15 @@
   ],
   [
    "2026-10-23",
+   "23:10",
+   "EMO ROMANSE: My Chemical Romance -ilta",
+   "Desibeli tapahtumat",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/emo-romanse-my-chemical-romance/"
+  ],
+  [
+   "2026-10-23",
    "",
    "Happoradio, Kormus",
    "Tavara-asema",
@@ -249,6 +195,15 @@
   ],
   [
    "2026-10-24",
+   "13:00",
+   "Rulla-klubi: Naattiorkesteri Klassinen Rulla-klubi: Naattiorkesteri G",
+   "Livelab",
+   "classical",
+   0,
+   "https://keikat.live/keikka/1948-rulla-klubi-naattiorkesteri"
+  ],
+  [
+   "2026-10-24",
    "14:00",
    "ANIMALIA : Vastamainostyöpaja",
    "Terassi Pub Yläkerta",
@@ -259,11 +214,74 @@
   [
    "2026-10-24",
    "18:00",
+   "Value Summit 2026 Arvogaala Jazz Value Summit 2026 Arvogaala Finnlaysonin",
+   "palatsi",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/2027-value-summit-2026-arvogaala"
+  ],
+  [
+   "2026-10-24",
+   "18:00",
    "LAISIALIVE : Anton & Theo, Bombilator, Voko, Flying",
    "Terassi Pub Yläkerta",
    "rock",
    1,
    "https://facebook.com/events/s/laisialive-anton-theo-bombilat/1066109879329414/"
+  ],
+  [
+   "2026-10-24",
+   "19:00",
+   "Insomnium Metal Insomnium",
+   "Tavara-asema",
+   "metal",
+   0,
+   "https://keikat.live/keikka/1963-insomnium"
+  ],
+  [
+   "2026-10-24",
+   "19:00",
+   "Mansen Tähdet Klassinen Mansen Tähdet Nokia",
+   "Arena",
+   "classical",
+   0,
+   "https://keikat.live/keikka/2100-mansen-tahdet"
+  ],
+  [
+   "2026-10-24",
+   "19:00",
+   "Arppa: Akustisesti saleissa Arppa: Akustisesti saleissa",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2136-arppa-akustisesti-saleissa"
+  ],
+  [
+   "2026-10-24",
+   "20:00",
+   "Lindholm & Uusilehto ja Azorit Express Folk Lindholm & Uusilehto ja Azorit Express Katubaari",
+   "Axu",
+   "folk",
+   0,
+   "https://keikat.live/keikka/7375-lindholm-uusilehto-ja-azorit-express"
+  ],
+  [
+   "2026-10-24",
+   "20:30",
+   "PK Keränen (soolo) PK Keränen (soolo) Kulttuuritalo",
+   "Telakka",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6362-pk-keranen-soolo"
+  ],
+  [
+   "2026-10-24",
+   "21:00",
+   "Salaliitto ja Tomi Nordlund & Syvä Joki Folk Salaliitto ja Tomi Nordlund & Syvä Joki Kulttuurikeskus",
+   "Maanalainen",
+   "folk",
+   0,
+   "https://keikat.live/keikka/7463-salaliitto-ja-tomi-nordlund-syva-joki"
   ],
   [
    "2026-10-24",
@@ -443,12 +461,12 @@
    "Terassi Pub Yläkerta",
    "rock",
    1,
-   "https://www.vastavirta.net"
+   "https://facebook.com/events/s/bad-noose-le-zok-vv-ylakerta/1581481046596806/"
   ],
   [
    "2026-10-30",
    "21:00",
-   "Idän Voima (23.30),   Santeri Sihvonen & Karjalan Konnat (22.30), Halla (21.39)",
+   "Idän Voima (23.30),   Santeri Sihvonen & Karjalan Konnat (22.30), Halla (21.30)",
    "Vastavirta-Klubi",
    "rock",
    0,
@@ -561,6 +579,15 @@
    "rock",
    0,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-10-31",
+   "23:59",
+   "Kaista goes Vastavirta",
+   "Vastavirta-Klubi",
+   "rock",
+   1,
+   "https://facebook.com/events/s/kaista-goes-vv/960187947155811/"
   ],
   [
    "2026-10-31",
@@ -717,6 +744,15 @@
   ],
   [
    "2026-11-05",
+   "20:00",
+   "Kikkerikisat",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-05",
    "",
    "Yona",
    "G Livelab Tampere",
@@ -861,6 +897,15 @@
   ],
   [
    "2026-11-07",
+   "07:11",
+   "Dave Lindholm & Pepe Ahlqvist: Walkin’ blues",
+   "TTT-Klubi",
+   "jazz",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/dave-lindholm-pepe-ahlqvist-walkin-blues/"
+  ],
+  [
+   "2026-11-07",
    "20:00",
    "Seurat, Kätyrlauma",
    "Terassi Pub Yläkerta",
@@ -996,6 +1041,15 @@
   ],
   [
    "2026-11-13",
+   "13:11",
+   "Younghearted – Joulukiertue",
+   "Kalevan kirko",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/younghearted-joulukiertue/"
+  ],
+  [
+   "2026-11-13",
    "17:00",
    "Sampolan MysteeriYö ja Sampola LIVE: Joose Keskitalo",
    "Sampolan kirjasto, Sammonkatu 2, 33540 Tampere",
@@ -1065,6 +1119,24 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/live-black-sabbath-tribute-bat-salad-3"
+  ],
+  [
+   "2026-11-14",
+   "14:11",
+   "Isac Elliot",
+   "Nokia Arena",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/isac-elliot/"
+  ],
+  [
+   "2026-11-14",
+   "14:11",
+   "50+ Disco: DJ:t  Juissi  & Jykke",
+   "TAMPEREEN KOMEDIATEATTERI",
+   "electronic",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/442928/"
   ],
   [
    "2026-11-14",
