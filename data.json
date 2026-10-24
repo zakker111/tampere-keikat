@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-23 09:55 UTC",
+ "generated": "2026-10-24 09:27 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_org": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
+  "keikat_org": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
@@ -13,186 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-10-23",
-   "18:00",
-   "Concert for the whole family: Lost Key",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/concert-for-the-whole-family-lost-key/"
-  ],
-  [
-   "2026-10-23",
-   "18:00",
-   "Kaija Koo - Tuuleen Piirretyt Vuodet Pop Kaija Koo - Tuuleen Piirretyt Vuodet Nokia",
-   "Arena",
-   "pop",
-   0,
-   "https://keikat.live/keikka/1922-kaija-koo-tuuleen-piirretyt-vuodet"
-  ],
-  [
-   "2026-10-23",
-   "18:00",
-   "Tampereen Galleriaviikko Galleria Vivissä Tampereen Galleriaviikko Galleria Vivissä Pellavatehtaankatu 4",
-   "Ilmainen",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7298-tampereen-galleriaviikko-galleria-vivissa"
-  ],
-  [
-   "2026-10-23",
-   "18:00",
-   "Näästek : open decks",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://facebook.com/events/s/naastek-teknoa-koolla-pt-2/1454690359845282/"
-  ],
-  [
-   "2026-10-23",
-   "19:00",
-   "Tampere Opera: Her Voice",
-   "Tampere-talo",
-   "classical",
-   1,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/tampere-opera-her-voice-2/"
-  ],
-  [
-   "2026-10-23",
-   "19:00",
-   "Happoradio, Kormus Rock Happoradio, Kormus",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://keikat.live/keikka/1964-happoradio-kormus"
-  ],
-  [
-   "2026-10-23",
-   "19:00",
-   "Pauli Hanhiniemen Perunateatteri K-18 Rock Pauli Hanhiniemen Perunateatteri K-18",
-   "Olympia",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2034-pauli-hanhiniemen-perunateatteri-k-18"
-  ],
-  [
-   "2026-10-23",
-   "19:00",
-   "Uusien klubi - Improkeikka Uusien klubi - Improkeikka Tampereen",
-   "Ylioppilasteatteri",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7813-uusien-klubi-improkeikka"
-  ],
-  [
-   "2026-10-23",
-   "20:30",
-   "Solar Blue Solar Blue Katubaari",
-   "Axu",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7376-solar-blue"
-  ],
-  [
-   "2026-10-23",
-   "21:00",
-   "M – levynjulkaisukeikka Elektro / DJ M – levynjulkaisukeikka Kulttuuritalo",
-   "Telakka",
-   "electronic",
-   0,
-   "https://keikat.live/keikka/4531-m-levynjulkaisukeikka"
-  ],
-  [
-   "2026-10-23",
-   "22:00",
-   "Ilona Tampere: Arttu Wiskari K-22 Ilona Tampere: Arttu Wiskari K-22 Viihdemaailma",
-   "Ilona",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6026-ilona-tampere-arttu-wiskari-k-22"
-  ],
-  [
-   "2026-10-23",
-   "22:00",
-   "Näästek : teknoa Koolla!",
-   "Vastavirta-Klubi",
-   "rock",
-   1,
-   "https://facebook.com/events/s/naastek-teknoa-koolla-pt-2/1454690359845282/"
-  ],
-  [
-   "2026-10-23",
-   "23:10",
-   "EMO ROMANSE: My Chemical Romance -ilta",
-   "Desibeli tapahtumat",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/emo-romanse-my-chemical-romance/"
-  ],
-  [
-   "2026-10-23",
-   "",
-   "Happoradio, Kormus",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/happoradio-kormus"
-  ],
-  [
-   "2026-10-23",
-   "",
-   "Hiljaiset Levyt 40 vuotta -juhlakeikka: Hiljaiset All Stars, Dave Treganna Band, Pojat, Alivaltiosihteeri",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/hiljaiset-levyt-40-vuotta-juhlakeikka-hiljaiset-all-stars-dave-treganna-band-pojat-alivaltiosihteeri"
-  ],
-  [
-   "2026-10-23",
-   "",
-   "M",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/m-9"
-  ],
-  [
-   "2026-10-23",
-   "",
-   "Wallu’s Little Friday: Drug Dog",
-   "John Scott's Ratina",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/wallus-little-friday-drug-dog"
-  ],
-  [
-   "2026-10-23",
-   "",
-   "Live Music Afterwork: Timo Niemistö",
-   "Pub Simon",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/live-music-afterwork-timo-niemisto-3"
-  ],
-  [
-   "2026-10-23",
-   "",
-   "Kita, Nitrik, Abysmal Rites",
-   "Bar Kotelo",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/kita-nitrik-abysmal-rites"
-  ],
-  [
-   "2026-10-23",
-   "",
-   "Arttu Wiskari",
-   "Ilona",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/arttu-wiskari-41"
-  ],
   [
    "2026-10-24",
    "13:00",
@@ -209,7 +29,7 @@
    "Terassi Pub Yläkerta",
    "rock",
    1,
-   "https://www.vastavirta.net"
+   "https://facebook.com/events/s/katse-elaimeen-vastamainostyop/1089989520587586/"
   ],
   [
    "2026-10-24",
@@ -223,7 +43,7 @@
   [
    "2026-10-24",
    "18:00",
-   "LAISIALIVE : Anton & Theo, Bombilator, Voko, Flying",
+   "LAISIALIVE :  Voko (18.00), Flying (19.00), Bombilator (20.00), Anton & Theo (21.00)",
    "Terassi Pub Yläkerta",
    "rock",
    1,
@@ -286,7 +106,7 @@
   [
    "2026-10-24",
    "21:00",
-   "*** loppuunmyyty *** Sur-rur (23.30), Vapaa Maa (22.30), Bulrusher (21.30)",
+   "*** loppuunmyyty *** Sur-rur (23.30), Bulrusher (22.30), Vapaa Maa (21.30)",
    "Vastavirta-Klubi",
    "rock",
    0,
@@ -416,7 +236,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-273"
+   "https://keikat.org/tampere-pakkahuone-269"
   ],
   [
    "2026-10-29",
@@ -543,6 +363,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/idan-voima-santeri-sihvonen-karjalan-konnat-halla"
+  ],
+  [
+   "2026-10-30",
+   "",
+   "Halloween Special: Kino Kosmos",
+   "Varjobaari",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/halloween-special-kino-kosmos-2"
   ],
   [
    "2026-10-30",
@@ -740,7 +569,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-363"
+   "https://keikat.org/tehdas-teatteri-359"
   ],
   [
    "2026-11-05",
@@ -817,7 +646,7 @@
   [
    "2026-11-06",
    "21:00",
-   "931FEST : Kahtia, Sonic Poison, Cleansing, Last In The Chamber, Death at Birth",
+   "931FEST : Kahtia (21.30), Last In The Chamber (22.15) , Cleansing (23.00), Out Of Breath (23.45), Death at Birth (00.30)",
    "Vastavirta-Klubi",
    "rock",
    0,
@@ -916,7 +745,7 @@
   [
    "2026-11-07",
    "22:00",
-   "931FEST : Graveyard Goblin, Teleny, Killing Frost, Eyes Sewn Shut",
+   "931FEST : Graveyard Goblin (22.30), Teleny (23.10), Eyes Sewn Shut (23.50), Killing Frost (00.30)",
    "Vastavirta-Klubi",
    "rock",
    0,
@@ -1121,6 +950,15 @@
    "https://www.meteli.net/tapahtuma/live-black-sabbath-tribute-bat-salad-3"
   ],
   [
+   "2026-11-13",
+   "",
+   "All Good In The Hood: Röge, Luka Kallio,",
+   "DJ C-Flava Kaijakka",
+   "electronic",
+   0,
+   "https://www.meteli.net/tapahtuma/all-good-in-the-hood-roge-luka-kallio-dj-c-flava"
+  ],
+  [
    "2026-11-14",
    "14:11",
    "Isac Elliot",
@@ -1280,7 +1118,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-548"
+   "https://keikat.org/sorin-sorin-545"
   ],
   [
    "2026-11-18",
@@ -1433,7 +1271,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-608"
+   "https://keikat.org/kotae-tampereen-593"
   ],
   [
    "2026-11-21",
@@ -1581,6 +1419,24 @@
   ],
   [
    "2026-11-27",
+   "19:00",
+   "Anton V. Kivi, Noo, Pekka Tapani",
+   "Terassi Pub Yläkerta",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-27",
+   "20:00",
+   "God’s Lonely Men, Garbagemen, Wolfmen",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-27",
    "",
    "Masa Orpana Honk",
    "TTT-Klubi",
@@ -1641,15 +1497,6 @@
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a758f2551febb0007fb01c6"
-  ],
-  [
-   "2026-12-02",
-   "",
-   "Beyond Awareness,",
-   "St. Aurora Klubi",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/beyond-awareness-st-aurora"
   ],
   [
    "2026-12-03",
@@ -2054,7 +1901,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-964"
+   "https://keikat.org/g-g-957"
   ],
   [
    "2027-01-02",
@@ -2135,7 +1982,7 @@
    "Tavara-asema",
    "metal",
    0,
-   "https://keikat.org/punk-tavara-asema-1001"
+   "https://keikat.org/punk-tavara-asema-995"
   ],
   [
    "2027-01-15",
@@ -2234,7 +2081,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1042"
+   "https://keikat.org/magda-vooninki-1036"
   ],
   [
    "2027-02-03",
@@ -2262,6 +2109,42 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/von-hertzen-brothers-moon-shot"
+  ],
+  [
+   "2027-02-10",
+   "",
+   "Aili Ikonen",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/aili-ikonen-5"
+  ],
+  [
+   "2027-02-11",
+   "",
+   "Aukusti Koivisto",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/aukusti-koivisto-4"
+  ],
+  [
+   "2027-02-12",
+   "",
+   "Ylva Haru, Nicholas Francett",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/ylva-haru-nicholas-francett"
+  ],
+  [
+   "2027-02-17",
+   "",
+   "Melrose Avenue (AUS)",
+   "Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/melrose-avenue-aus-2"
   ],
   [
    "2027-03-18",
