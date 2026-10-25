@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-24 09:27 UTC",
+ "generated": "2026-10-25 09:46 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
+  "keikat_org": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
-  "keikat_org": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
@@ -13,159 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-10-24",
-   "13:00",
-   "Rulla-klubi: Naattiorkesteri Klassinen Rulla-klubi: Naattiorkesteri G",
-   "Livelab",
-   "classical",
-   0,
-   "https://keikat.live/keikka/1948-rulla-klubi-naattiorkesteri"
-  ],
-  [
-   "2026-10-24",
-   "14:00",
-   "ANIMALIA : Vastamainostyöpaja",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://facebook.com/events/s/katse-elaimeen-vastamainostyop/1089989520587586/"
-  ],
-  [
-   "2026-10-24",
-   "18:00",
-   "Value Summit 2026 Arvogaala Jazz Value Summit 2026 Arvogaala Finnlaysonin",
-   "palatsi",
-   "jazz",
-   0,
-   "https://keikat.live/keikka/2027-value-summit-2026-arvogaala"
-  ],
-  [
-   "2026-10-24",
-   "18:00",
-   "LAISIALIVE :  Voko (18.00), Flying (19.00), Bombilator (20.00), Anton & Theo (21.00)",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://facebook.com/events/s/laisialive-anton-theo-bombilat/1066109879329414/"
-  ],
-  [
-   "2026-10-24",
-   "19:00",
-   "Insomnium Metal Insomnium",
-   "Tavara-asema",
-   "metal",
-   0,
-   "https://keikat.live/keikka/1963-insomnium"
-  ],
-  [
-   "2026-10-24",
-   "19:00",
-   "Mansen Tähdet Klassinen Mansen Tähdet Nokia",
-   "Arena",
-   "classical",
-   0,
-   "https://keikat.live/keikka/2100-mansen-tahdet"
-  ],
-  [
-   "2026-10-24",
-   "19:00",
-   "Arppa: Akustisesti saleissa Arppa: Akustisesti saleissa",
-   "Tampere-talo",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2136-arppa-akustisesti-saleissa"
-  ],
-  [
-   "2026-10-24",
-   "20:00",
-   "Lindholm & Uusilehto ja Azorit Express Folk Lindholm & Uusilehto ja Azorit Express Katubaari",
-   "Axu",
-   "folk",
-   0,
-   "https://keikat.live/keikka/7375-lindholm-uusilehto-ja-azorit-express"
-  ],
-  [
-   "2026-10-24",
-   "20:30",
-   "PK Keränen (soolo) PK Keränen (soolo) Kulttuuritalo",
-   "Telakka",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6362-pk-keranen-soolo"
-  ],
-  [
-   "2026-10-24",
-   "21:00",
-   "Salaliitto ja Tomi Nordlund & Syvä Joki Folk Salaliitto ja Tomi Nordlund & Syvä Joki Kulttuurikeskus",
-   "Maanalainen",
-   "folk",
-   0,
-   "https://keikat.live/keikka/7463-salaliitto-ja-tomi-nordlund-syva-joki"
-  ],
-  [
-   "2026-10-24",
-   "21:00",
-   "*** loppuunmyyty *** Sur-rur (23.30), Bulrusher (22.30), Vapaa Maa (21.30)",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.vastavirta.net"
-  ],
-  [
-   "2026-10-24",
-   "",
-   "Rulla-klubi: Naattiorkesteri",
-   "G Livelab Tampere",
-   "classical",
-   0,
-   "https://www.meteli.net/tapahtuma/rulla-klubi-naattiorkesteri"
-  ],
-  [
-   "2026-10-24",
-   "",
-   "Insomnium",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/insomnium-5"
-  ],
-  [
-   "2026-10-24",
-   "",
-   "P-K Keränen",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/p-k-keranen-2"
-  ],
-  [
-   "2026-10-24",
-   "",
-   "Korpsesoturi, Dead Samaritan, Indemon",
-   "Bar Kotelo",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/korpsesoturi-dead-samaritan-indemon"
-  ],
-  [
-   "2026-10-24",
-   "",
-   "Hevisaurus",
-   "Tampere-talo",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/hevisaurus-42"
-  ],
-  [
-   "2026-10-24",
-   "",
-   "Arppa (akustinen)",
-   "Tampere-talo",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/arppa-akustinen"
-  ],
   [
    "2026-10-25",
    "19:00",
@@ -183,6 +30,24 @@
    "electronic",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a74881751d559000726da7f"
+  ],
+  [
+   "2026-10-26",
+   "18:00",
+   "Pyystock Pyystock Pyynikin lukio",
+   "Ilmainen",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6886-pyystock"
+  ],
+  [
+   "2026-10-26",
+   "19:00",
+   "Nouse luonto - lauluja monimuotoisuudesta Klassinen Nouse luonto - lauluja monimuotoisuudesta",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://keikat.live/keikka/3418-nouse-luonto-lauluja-monimuotoisuudesta"
   ],
   [
    "2026-10-26",
@@ -236,7 +101,7 @@
    "Klubi ja Telakka",
    "rock",
    0,
-   "https://keikat.org/tampere-pakkahuone-269"
+   "https://keikat.org/tampere-pakkahuone-224"
   ],
   [
    "2026-10-29",
@@ -569,7 +434,7 @@
    "Teatteri Telakka",
    "rock",
    0,
-   "https://keikat.org/tehdas-teatteri-359"
+   "https://keikat.org/tehdas-teatteri-321"
   ],
   [
    "2026-11-05",
@@ -1118,7 +983,7 @@
    "Sorin Sirkus",
    "rock",
    0,
-   "https://keikat.org/sorin-sorin-545"
+   "https://keikat.org/sorin-sorin-499"
   ],
   [
    "2026-11-18",
@@ -1271,7 +1136,7 @@
    "Tampereen Messu- ja Urheilukeskus",
    "rock",
    0,
-   "https://keikat.org/kotae-tampereen-593"
+   "https://keikat.org/kotae-tampereen-549"
   ],
   [
    "2026-11-21",
@@ -1452,6 +1317,15 @@
    "rock",
    0,
    "https://www.meteli.net/tapahtuma/melancholy-mass-solstafir-isl-vorna-cryptic-hatred-ashen-tomb-2"
+  ],
+  [
+   "2026-11-28",
+   "20:30",
+   "Wyatt E (be), Fife the Hierophant (uk), Radien",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-11-28",
@@ -1901,7 +1775,7 @@
    "G Livelab Tampere",
    "rock",
    0,
-   "https://keikat.org/g-g-957"
+   "https://keikat.org/g-g-921"
   ],
   [
    "2027-01-02",
@@ -1982,7 +1856,7 @@
    "Tavara-asema",
    "metal",
    0,
-   "https://keikat.org/punk-tavara-asema-995"
+   "https://keikat.org/punk-tavara-asema-954"
   ],
   [
    "2027-01-15",
@@ -2081,7 +1955,7 @@
    "Vooninki",
    "rock",
    0,
-   "https://keikat.org/magda-vooninki-1036"
+   "https://keikat.org/magda-vooninki-1002"
   ],
   [
    "2027-02-03",
