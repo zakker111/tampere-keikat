@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-28 11:12 UTC",
+ "generated": "2026-10-29 11:28 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_live": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_live": "OK",
   "vastavirta": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_filharmonia": "OK",
@@ -14,42 +14,6 @@
  },
  "events": [
   [
-   "2026-10-28",
-   "18:00",
-   "Pyystock Pyystock Pyynikin lukio",
-   "Ilmainen",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6886-pyystock"
-  ],
-  [
-   "2026-10-28",
-   "19:00",
-   "Irkkujamit Irkkujamit Pub Sisko ja sen",
-   "Veli",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6340-irkkujamit"
-  ],
-  [
-   "2026-10-28",
-   "19:00",
-   "Pauli Hanhiniemen Perunateatteri Klassinen Rock Pauli Hanhiniemen Perunateatteri",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7221-pauli-hanhiniemen-perunateatteri"
-  ],
-  [
-   "2026-10-28",
-   "20:00",
-   "Nektar (SWE) Nektar (SWE) Kulttuuritalo",
-   "Telakka",
-   "rock",
-   0,
-   "https://keikat.live/keikka/5268-nektar-swe"
-  ],
-  [
    "2026-10-29",
    "14:00",
    "Kyttälän kekridisko Elektro / DJ Kyttälän kekridisko Kyttälänkatu 7",
@@ -57,6 +21,15 @@
    "electronic",
    0,
    "https://keikat.live/keikka/7559-kyttalan-kekridisko"
+  ],
+  [
+   "2026-10-29",
+   "18:00",
+   "Pyystock Pyystock Pyynikin lukio",
+   "Ilmainen",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6886-pyystock"
   ],
   [
    "2026-10-29",
@@ -114,6 +87,24 @@
   ],
   [
    "2026-10-30",
+   "18:00",
+   "MARISKA MARISKA Tampereen",
+   "Teatteri",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2028-mariska"
+  ],
+  [
+   "2026-10-30",
+   "18:00",
+   "KIITOS-konsertti - Musiikkineuvos Lasse Hoikka & Souvari Iskelmä KIITOS-konsertti - Musiikkineuvos Lasse Hoikka & Souvari",
+   "Tampere-talo",
+   "folk",
+   0,
+   "https://keikat.live/keikka/6607-kiitos-konsertti-musiikkineuvos-lasse-hoikka-souvari"
+  ],
+  [
+   "2026-10-30",
    "19:00",
    "Tampere Philharmonic Orchestra: The Touch of Beauty",
    "Tampere-talo",
@@ -123,12 +114,84 @@
   ],
   [
    "2026-10-30",
+   "19:00",
+   "AHTI AHTI",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2130-ahti"
+  ],
+  [
+   "2026-10-30",
+   "19:00",
+   "Eternal Erection Jazz Eternal Erection G",
+   "Livelab",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/5238-eternal-erection"
+  ],
+  [
+   "2026-10-30",
+   "19:00",
+   "Halloween Special: Agarwaen + Ignis Eternum + Warfarer Metal Halloween Special: Agarwaen + Ignis Eternum + Warfarer Kulttuurikeskus",
+   "Maanalainen",
+   "metal",
+   0,
+   "https://keikat.live/keikka/7250-halloween-special-agarwaen-ignis-eternum-warfarer"
+  ],
+  [
+   "2026-10-30",
+   "19:00",
+   "Uusien klubi - Nukketeatteri Uusien klubi - Nukketeatteri Tampereen",
+   "Ylioppilasteatteri",
+   "rock",
+   0,
+   "https://keikat.live/keikka/7814-uusien-klubi-nukketeatteri"
+  ],
+  [
+   "2026-10-30",
    "20:00",
-   "Le Zok, Bad Noose",
+   "IRA, Sebastian Visa, Lehmus IRA, Sebastian Visa, Lehmus",
+   "Teerenpeli",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6284-ira-sebastian-visa-lehmus"
+  ],
+  [
+   "2026-10-30",
+   "20:00",
+   "Pikkujoulukauden avajaiset Ravintola Suomassa Pikkujoulukauden avajaiset Ravintola Suomassa Ravintola",
+   "Suoma",
+   "rock",
+   0,
+   "https://keikat.live/keikka/8924-pikkujoulukauden-avajaiset-ravintola-suomassa"
+  ],
+  [
+   "2026-10-30",
+   "20:00",
+   "Le Zok (20.00), Bad Noose (21.00)",
    "Terassi Pub Yläkerta",
    "rock",
    1,
    "https://facebook.com/events/s/bad-noose-le-zok-vv-ylakerta/1581481046596806/"
+  ],
+  [
+   "2026-10-30",
+   "21:00",
+   "Clowny Business – Albumin julkaisukiertue Metal Clowny Business – Albumin julkaisukiertue Kulttuurikeskus",
+   "Maanalainen",
+   "metal",
+   0,
+   "https://keikat.live/keikka/7431-clowny-business-albumin-julkaisukiertue"
+  ],
+  [
+   "2026-10-30",
+   "21:00",
+   "Meirami Rock Meirami Katubaari",
+   "Axu",
+   "rock",
+   0,
+   "https://keikat.live/keikka/7697-meirami"
   ],
   [
    "2026-10-30",
@@ -303,6 +366,15 @@
   ],
   [
    "2026-11-07",
+   "17:30",
+   "Maria Kujanpää",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://facebook.com/events/s/ensimmaisen-biisin-julkkarijuh/1127079406470844/"
+  ],
+  [
+   "2026-11-07",
    "20:00",
    "Seurat, Kätyrlauma",
    "Terassi Pub Yläkerta",
@@ -385,11 +457,11 @@
   [
    "2026-11-13",
    "21:00",
-   "8 Bits High (levyjulkkarit), La Murga, Cartridge Kid",
+   "8 Bits High (levyjulkkarit) (23.30), La Murga (22.30), Cartridge Kid (21.30)",
    "Vastavirta-Klubi",
    "rock",
    0,
-   "https://www.vastavirta.net"
+   "https://www.facebook.com/events/s/8-bits-high-kings-of-nerd-punk/1159632633166406/"
   ],
   [
    "2026-11-14",
@@ -501,12 +573,12 @@
   ],
   [
    "2026-11-21",
-   "18:00",
+   "17:00",
    "TAITEILE MINULLE TAIVAS : Pinhuusi, Piirimyyjä + open mic, Ayno, Halla",
    "Terassi Pub Yläkerta",
    "rock",
    1,
-   "https://www.vastavirta.net"
+   "https://www.facebook.com/events/1158121343463051/"
   ],
   [
    "2026-11-21",
@@ -569,7 +641,7 @@
    "Terassi Pub Yläkerta",
    "rock",
    0,
-   "https://www.vastavirta.net"
+   "https://www.facebook.com/events/1107232212038904/"
   ],
   [
    "2026-11-27",
