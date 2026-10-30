@@ -1,81 +1,18 @@
 {
- "generated": "2026-10-29 11:28 UTC",
+ "generated": "2026-10-30 11:22 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
   "vastavirta": "OK",
-  "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_filharmonia": "OK",
+  "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_kirjastot": "OK",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-10-29",
-   "14:00",
-   "Kyttälän kekridisko Elektro / DJ Kyttälän kekridisko Kyttälänkatu 7",
-   "Ilmainen",
-   "electronic",
-   0,
-   "https://keikat.live/keikka/7559-kyttalan-kekridisko"
-  ],
-  [
-   "2026-10-29",
-   "18:00",
-   "Pyystock Pyystock Pyynikin lukio",
-   "Ilmainen",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6886-pyystock"
-  ],
-  [
-   "2026-10-29",
-   "19:00",
-   "Room Full of Hendrix: 60 Years of Jimi Hendrix Rock Room Full of Hendrix: 60 Years of Jimi Hendrix G",
-   "Livelab",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2053-room-full-of-hendrix-60-years-of-jimi-hendrix"
-  ],
-  [
-   "2026-10-29",
-   "19:00",
-   "Tampere Jazz Happening Jazz Festari Tampere Jazz Happening Tullikamarin",
-   "Klubi",
-   "jazz",
-   0,
-   "https://keikat.live/keikka/6126-tampere-jazz-happening"
-  ],
-  [
-   "2026-10-29",
-   "19:00",
-   "Frey Xenét Live Show Rock Frey Xenét Live Show Katubaari",
-   "Axu",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7696-frey-xenet-live-show"
-  ],
-  [
-   "2026-10-29",
-   "19:15",
-   "Elämäni Biisi -illat - LIVE TALTIOINTI Elämäni Biisi -illat - LIVE TALTIOINTI Factory Halli,",
-   "Mediapolis",
-   "rock",
-   0,
-   "https://keikat.live/keikka/8635-elamani-biisi-illat-live-taltiointi"
-  ],
-  [
-   "2026-10-29",
-   "20:00",
-   "Crisella, Mirage, Isojen Poikien Pöytä Crisella, Mirage, Isojen Poikien Pöytä Kulttuurikeskus",
-   "Maanalainen",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7465-crisella-mirage-isojen-poikien-poyta"
-  ],
   [
    "2026-10-30",
    "18:00",
@@ -129,6 +66,15 @@
    "jazz",
    0,
    "https://keikat.live/keikka/5238-eternal-erection"
+  ],
+  [
+   "2026-10-30",
+   "19:00",
+   "Tampere Jazz Happening 2026 Jazz Festari Tampere Jazz Happening 2026 Tullikamarin",
+   "Klubi",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/6126-tampere-jazz-happening-2026"
   ],
   [
    "2026-10-30",
@@ -222,6 +168,24 @@
   ],
   [
    "2026-10-31",
+   "14:00",
+   "Kartanon Halloween Elektro / DJ Festari Kartanon Halloween",
+   "Hiedanranta",
+   "electronic",
+   0,
+   "https://keikat.live/keikka/7901-kartanon-halloween"
+  ],
+  [
+   "2026-10-31",
+   "18:00",
+   "Kartanon komediaklubi! Jazz Kartanon komediaklubi!",
+   "Hiedanranta",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/5539-kartanon-komediaklubi"
+  ],
+  [
+   "2026-10-31",
    "18:00",
    "NPC (18.00), Ghostbustering (19.00), Arktirektum (20.00)",
    "Terassi Pub Yläkerta",
@@ -231,12 +195,102 @@
   ],
   [
    "2026-10-31",
+   "18:30",
+   "JARKKO MARTIKAINEN Folk JARKKO MARTIKAINEN TTT Suuri",
+   "näyttämö",
+   "folk",
+   0,
+   "https://keikat.live/keikka/1988-jarkko-martikainen"
+  ],
+  [
+   "2026-10-31",
+   "19:15",
+   "Elämäni Biisi -illat Elämäni Biisi -illat Factory Halli,",
+   "Mediapolis",
+   "rock",
+   0,
+   "https://keikat.live/keikka/8642-elamani-biisi-illat"
+  ],
+  [
+   "2026-10-31",
+   "19:30",
+   "Kadun Kaswatti Kadun Kaswatti Vanha",
+   "Monttu",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6596-kadun-kaswatti"
+  ],
+  [
+   "2026-10-31",
+   "20:00",
+   "Deitti-ilta Kartanolla! Deitti-ilta Kartanolla!",
+   "Hiedanranta",
+   "rock",
+   0,
+   "https://keikat.live/keikka/5538-deitti-ilta-kartanolla"
+  ],
+  [
+   "2026-10-31",
+   "21:00",
+   "Kivesveto Go-Go, Sanktio Punk Kivesveto Go-Go, Sanktio",
+   "Vastavirta-Klubi",
+   "punk",
+   0,
+   "https://keikat.live/keikka/5835-kivesveto-go-go-sanktio"
+  ],
+  [
+   "2026-10-31",
+   "21:00",
+   "Astral Sleep, Murder Hollow, Betelzeus Metal Astral Sleep, Murder Hollow, Betelzeus Kulttuurikeskus",
+   "Maanalainen",
+   "metal",
+   0,
+   "https://keikat.live/keikka/7432-astral-sleep-murder-hollow-betelzeus"
+  ],
+  [
+   "2026-10-31",
+   "21:00",
+   "Soho Horror Show Elektro / DJ Soho Horror Show Irish Bar",
+   "O’Connell’s",
+   "electronic",
+   0,
+   "https://keikat.live/keikka/7498-soho-horror-show"
+  ],
+  [
+   "2026-10-31",
+   "21:00",
+   "Kesyt Jätkät Punk Kesyt Jätkät Katubaari",
+   "Axu",
+   "punk",
+   0,
+   "https://keikat.live/keikka/7695-kesyt-jatkat"
+  ],
+  [
+   "2026-10-31",
+   "21:00",
+   "DJ Kridlokk - UG Solo 15V + JV Hip hop DJ Kridlokk - UG Solo 15V + JV G",
+   "Livelab",
+   "hiphop",
+   0,
+   "https://keikat.live/keikka/8028-dj-kridlokk-ug-solo-15v-jv"
+  ],
+  [
+   "2026-10-31",
    "21:00",
    "Kivesveto Go-Go (22.30), Sanktio (21.30)",
    "Vastavirta-Klubi",
    "rock",
    0,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-10-31",
+   "21:20",
+   "Amaranthe Metal Amaranthe",
+   "Tavara-asema",
+   "metal",
+   0,
+   "https://keikat.live/keikka/1962-amaranthe"
   ],
   [
    "2026-10-31",
@@ -264,6 +318,15 @@
    "rock",
    1,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-04",
+   "04:11",
+   "Puutarhakadun avajaiset",
+   "Puutarhakatu, useita tapahtumapaikkoja",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/puutarhakadun-avajaiset/"
   ],
   [
    "2026-11-05",
