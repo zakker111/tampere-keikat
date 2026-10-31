@@ -1,171 +1,18 @@
 {
- "generated": "2026-10-30 11:22 UTC",
+ "generated": "2026-10-31 10:56 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
-  "keikat_live": "OK",
   "vastavirta": "OK",
-  "tampere_filharmonia": "OK",
+  "keikat_live": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
+  "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-10-30",
-   "18:00",
-   "Miika Leivo & band + Helmi Ada",
-   "Bistro Vilja",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/miika-leivo-band-helmi-ada/"
-  ],
-  [
-   "2026-10-30",
-   "18:00",
-   "MARISKA MARISKA Tampereen",
-   "Teatteri",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2028-mariska"
-  ],
-  [
-   "2026-10-30",
-   "18:00",
-   "KIITOS-konsertti - Musiikkineuvos Lasse Hoikka & Souvari Iskelmä KIITOS-konsertti - Musiikkineuvos Lasse Hoikka & Souvari",
-   "Tampere-talo",
-   "folk",
-   0,
-   "https://keikat.live/keikka/6607-kiitos-konsertti-musiikkineuvos-lasse-hoikka-souvari"
-  ],
-  [
-   "2026-10-30",
-   "19:00",
-   "Tampere Philharmonic Orchestra: The Touch of Beauty",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/the-touch-of-beauty/"
-  ],
-  [
-   "2026-10-30",
-   "19:00",
-   "AHTI AHTI",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2130-ahti"
-  ],
-  [
-   "2026-10-30",
-   "19:00",
-   "Eternal Erection Jazz Eternal Erection G",
-   "Livelab",
-   "jazz",
-   0,
-   "https://keikat.live/keikka/5238-eternal-erection"
-  ],
-  [
-   "2026-10-30",
-   "19:00",
-   "Tampere Jazz Happening 2026 Jazz Festari Tampere Jazz Happening 2026 Tullikamarin",
-   "Klubi",
-   "jazz",
-   0,
-   "https://keikat.live/keikka/6126-tampere-jazz-happening-2026"
-  ],
-  [
-   "2026-10-30",
-   "19:00",
-   "Halloween Special: Agarwaen + Ignis Eternum + Warfarer Metal Halloween Special: Agarwaen + Ignis Eternum + Warfarer Kulttuurikeskus",
-   "Maanalainen",
-   "metal",
-   0,
-   "https://keikat.live/keikka/7250-halloween-special-agarwaen-ignis-eternum-warfarer"
-  ],
-  [
-   "2026-10-30",
-   "19:00",
-   "Uusien klubi - Nukketeatteri Uusien klubi - Nukketeatteri Tampereen",
-   "Ylioppilasteatteri",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7814-uusien-klubi-nukketeatteri"
-  ],
-  [
-   "2026-10-30",
-   "20:00",
-   "IRA, Sebastian Visa, Lehmus IRA, Sebastian Visa, Lehmus",
-   "Teerenpeli",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6284-ira-sebastian-visa-lehmus"
-  ],
-  [
-   "2026-10-30",
-   "20:00",
-   "Pikkujoulukauden avajaiset Ravintola Suomassa Pikkujoulukauden avajaiset Ravintola Suomassa Ravintola",
-   "Suoma",
-   "rock",
-   0,
-   "https://keikat.live/keikka/8924-pikkujoulukauden-avajaiset-ravintola-suomassa"
-  ],
-  [
-   "2026-10-30",
-   "20:00",
-   "Le Zok (20.00), Bad Noose (21.00)",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://facebook.com/events/s/bad-noose-le-zok-vv-ylakerta/1581481046596806/"
-  ],
-  [
-   "2026-10-30",
-   "21:00",
-   "Clowny Business – Albumin julkaisukiertue Metal Clowny Business – Albumin julkaisukiertue Kulttuurikeskus",
-   "Maanalainen",
-   "metal",
-   0,
-   "https://keikat.live/keikka/7431-clowny-business-albumin-julkaisukiertue"
-  ],
-  [
-   "2026-10-30",
-   "21:00",
-   "Meirami Rock Meirami Katubaari",
-   "Axu",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7697-meirami"
-  ],
-  [
-   "2026-10-30",
-   "21:00",
-   "Idän Voima (23.30),   Santeri Sihvonen & Karjalan Konnat (22.30), Halla (21.30)",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.vastavirta.net"
-  ],
-  [
-   "2026-10-30",
-   "",
-   "IRA feat. Sebastian Visa & Lehmus",
-   "Teerenpeli Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/ira-feat-sebastian-visa-lehmus/"
-  ],
-  [
-   "2026-10-30",
-   "",
-   "Ressu Redford",
-   "Bar Ihku",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/ressu-redford-2/"
-  ],
   [
    "2026-10-31",
    "14:00",
@@ -174,6 +21,15 @@
    "electronic",
    0,
    "https://keikat.live/keikka/7901-kartanon-halloween"
+  ],
+  [
+   "2026-10-31",
+   "18:00",
+   "Amaranthe (SWE) + Self Deception, Ankor Metal Amaranthe (SWE) + Self Deception, Ankor",
+   "Tavara-asema",
+   "metal",
+   0,
+   "https://keikat.live/keikka/1962-amaranthe-swe-self-deception-ankor"
   ],
   [
    "2026-10-31",
@@ -285,21 +141,21 @@
   ],
   [
    "2026-10-31",
-   "21:20",
-   "Amaranthe Metal Amaranthe",
-   "Tavara-asema",
-   "metal",
-   0,
-   "https://keikat.live/keikka/1962-amaranthe"
-  ],
-  [
-   "2026-10-31",
    "23:59",
    "Kaista goes Vastavirta",
    "Vastavirta-Klubi",
    "rock",
    1,
    "https://facebook.com/events/s/kaista-goes-vv/960187947155811/"
+  ],
+  [
+   "2026-11-01",
+   "20:00",
+   "Tampere Jazz Happening 2026: iYa Voy! Jazz Tampere Jazz Happening 2026: iYa Voy! Tullikamarin",
+   "Klubi",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/8062-tampere-jazz-happening-2026-iya-voy"
   ],
   [
    "2026-11-01",
@@ -443,7 +299,7 @@
    "Terassi Pub Yläkerta",
    "rock",
    1,
-   "https://www.vastavirta.net"
+   "https://www.facebook.com/events/1827462605264069/"
   ],
   [
    "2026-11-07",
