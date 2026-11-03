@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-02 13:07 UTC",
+ "generated": "2026-11-03 12:40 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_live": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_live": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
@@ -41,6 +41,24 @@
    "https://kohokohdat.fi/tampere/tapahtuma/puutarhakadun-avajaiset/"
   ],
   [
+   "2026-11-04",
+   "14:00",
+   "Ravintola Suoman Puutarhakadun avajaiset Ravintola Suoman Puutarhakadun avajaiset Ravintola Suoma",
+   "Ilmainen",
+   "rock",
+   0,
+   "https://keikat.live/keikka/9014-ravintola-suoman-puutarhakadun-avajaiset"
+  ],
+  [
+   "2026-11-04",
+   "18:00",
+   "Council: Pekka Kuusisto & Gabriel Kahane (US) Folk Council: Pekka Kuusisto & Gabriel Kahane (US) G",
+   "Livelab",
+   "folk",
+   0,
+   "https://keikat.live/keikka/2054-council-pekka-kuusisto-gabriel-kahane-us"
+  ],
+  [
    "2026-11-05",
    "13:00",
    "Pasi Repo: Eino Leino sanoin ja sävelin",
@@ -57,6 +75,15 @@
    "rock",
    1,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-06",
+   "06:11",
+   "Lauri Haav",
+   "Nokia Arena",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/lauri-haav-2/"
   ],
   [
    "2026-11-06",
@@ -88,7 +115,7 @@
   [
    "2026-11-06",
    "19:00",
-   "Crooked Mouth (liettua), Henna Emilia Hietamäki, Vesper Kennings",
+   "Crooked Mouth (liettua) (21.00), Vesper Kennings (20.00), Henna Emilia Hietamäki (19.00)",
    "Terassi Pub Yläkerta",
    "rock",
    1,
@@ -213,6 +240,15 @@
   ],
   [
    "2026-11-13",
+   "18:00",
+   "Barren Bloom (21.15), Disorganist (20.30), Mikko Mato (19.45), Immo (19.00), Nampa (18.15)",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-13",
    "21:00",
    "8 Bits High (levyjulkkarit) (23.30), La Murga (22.30), Cartridge Kid (21.30)",
    "Vastavirta-Klubi",
@@ -237,6 +273,15 @@
    "electronic",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/442928/"
+  ],
+  [
+   "2026-11-14",
+   "20:00",
+   "Hate Konttisen Varjohallitus, Kaide Luukkonen & Lupaus",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-11-14",
@@ -290,7 +335,7 @@
    "Terassi Pub Yläkerta",
    "rock",
    1,
-   "https://www.vastavirta.net"
+   "https://www.facebook.com/events/1785661479053362/"
   ],
   [
    "2026-11-20",
@@ -313,7 +358,7 @@
   [
    "2026-11-20",
    "21:00",
-   "Mimosa, Lossi T, Tykopaatti, Oiva Vedätys",
+   "Mimosa, Lossi T, Oiva Vedätys + 1",
    "Vastavirta-Klubi",
    "rock",
    0,
@@ -410,6 +455,15 @@
    "https://www.vastavirta.net"
   ],
   [
+   "2026-11-29",
+   "19:00",
+   "20 000 Hz, Discoteca Fatale",
+   "Terassi Pub Yläkerta",
+   "electronic",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
    "2026-12-01",
    "13:00",
    "Yhteislaulutuokio",
@@ -417,6 +471,15 @@
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a758f2551febb0007fb01c6"
+  ],
+  [
+   "2026-12-03",
+   "19:00",
+   "Säädöt, Tabloited (est), Sumu + kikkerikisat",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-12-04",
@@ -534,6 +597,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/salhojankadun-pubin-jamit-house-band-ja-vierailijat-2026-12-15/"
+  ],
+  [
+   "2026-12-16",
+   "18:00",
+   "PIKKUJOULUT",
+   "Vastavirta-Klubi",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-12-17",
