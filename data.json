@@ -1,15 +1,15 @@
 {
- "generated": "2026-11-04 00:24 UTC",
+ "generated": "2026-11-04 12:51 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "vastavirta": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
-  "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
+  "meteli": "OK",
   "kohokohdat": "OK"
  },
  "events": [
@@ -39,6 +39,24 @@
    "folk",
    0,
    "https://keikat.live/keikka/2054-council-pekka-kuusisto-gabriel-kahane-us"
+  ],
+  [
+   "2026-11-04",
+   "",
+   "Pekka Kuusisto & Gabriel Kahane (USA)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/pekka-kuusisto-gabriel-kahane-usa"
+  ],
+  [
+   "2026-11-04",
+   "",
+   "Modem,",
+   "Sokar Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/modem-sokar-4"
   ],
   [
    "2026-11-05",
@@ -84,6 +102,42 @@
    "rock",
    1,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-05",
+   "",
+   "Yona",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/yona-21"
+  ],
+  [
+   "2026-11-05",
+   "",
+   "Rahvaanmusiikin kerho: Orffit",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/rahvaanmusiikin-kerho-orffit"
+  ],
+  [
+   "2026-11-05",
+   "",
+   "Laulun Tekijät: Annukka, Kauris",
+   "Atmos Taproom",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/laulun-tekijat-annukka-kauris"
+  ],
+  [
+   "2026-11-05",
+   "",
+   "Jenni Vartiainen",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/jenni-vartiainen-14"
   ],
   [
    "2026-11-06",
@@ -140,6 +194,60 @@
    "https://www.vastavirta.net"
   ],
   [
+   "2026-11-06",
+   "",
+   "Saimaa",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/saimaa-29"
+  ],
+  [
+   "2026-11-06",
+   "",
+   "Risto",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/risto-11"
+  ],
+  [
+   "2026-11-06",
+   "",
+   "Sonia",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/sonia"
+  ],
+  [
+   "2026-11-06",
+   "",
+   "Pahisklubi: Demonessa, Nahka-Asiamiehet, DJ Jere Dangerous",
+   "Kulttuuriravintola Railo",
+   "electronic",
+   1,
+   "https://www.meteli.net/tapahtuma/pahisklubi-demonessa-nahka-asiamiehet-dj-jere-dangerous"
+  ],
+  [
+   "2026-11-06",
+   "",
+   "Orphan Waves, Malamute, Pennies by the Pound",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/orphan-waves-malamute-pennies-by-the-pound"
+  ],
+  [
+   "2026-11-06",
+   "",
+   "Tuure Kilpeläinen",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/tuure-kilpelainen-48"
+  ],
+  [
    "2026-11-07",
    "07:11",
    "Elämäni Biisi: tähtiartistit ja vieraat Tampereella",
@@ -185,6 +293,60 @@
    "https://www.vastavirta.net"
   ],
   [
+   "2026-11-07",
+   "",
+   "Walkin’ Blues: Dave Lindholm & Pepe Ahlqvist",
+   "TTT-Klubi",
+   "jazz",
+   0,
+   "https://www.meteli.net/tapahtuma/walkin-blues-dave-lindholm-pepe-ahlqvist"
+  ],
+  [
+   "2026-11-07",
+   "",
+   "Viikate, Krypta",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/viikate-krypta"
+  ],
+  [
+   "2026-11-07",
+   "",
+   "Aavikko, O Samuli A",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/aavikko-o-samuli-a-2"
+  ],
+  [
+   "2026-11-07",
+   "",
+   "Edicti, Annieeva",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/edicti-2"
+  ],
+  [
+   "2026-11-07",
+   "",
+   "Freakangel (EST), Sugar Rody (EST), Lirpo",
+   "Varjobaari",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/freakangel-est-sugar-rody-est-lirpo-2"
+  ],
+  [
+   "2026-11-07",
+   "",
+   "Spiritus Mortis, Cardinals Folly, Wolfshead",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/spiritus-mortis-cardinals-folly-wolfshead"
+  ],
+  [
    "2026-11-08",
    "15:00",
    "Afternoon of Fauns: Sonic Delight",
@@ -194,6 +356,15 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/afternoon-of-fauns-sonic-delight/"
   ],
   [
+   "2026-11-08",
+   "",
+   "Faunien Iltapäivä – Nautinnon Huumaa: Tampere Filharmonia",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.meteli.net/tapahtuma/faunien-iltapaiva-nautinnon-huumaa-tampere-filharmonia"
+  ],
+  [
    "2026-11-09",
    "13:00",
    "Runoja ja rokkia: Karoliina Blackburn ja Costello Hautamäki",
@@ -201,6 +372,15 @@
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a2ffb9aa7cd070007b1bbf5"
+  ],
+  [
+   "2026-11-10",
+   "20:00",
+   "Tietovisa",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-11-12",
@@ -228,6 +408,24 @@
    "electronic",
    1,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-12",
+   "",
+   "Verneri Pohjola & Tuomo Prättälä",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/verneri-pohjola-tuomo-prattala-2"
+  ],
+  [
+   "2026-11-12",
+   "",
+   "Maija Vilkkumaa, Linda",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/maija-vilkkumaa-15"
   ],
   [
    "2026-11-13",
@@ -264,6 +462,33 @@
    "rock",
    0,
    "https://www.facebook.com/events/s/8-bits-high-kings-of-nerd-punk/1159632633166406/"
+  ],
+  [
+   "2026-11-13",
+   "",
+   "Viivi",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/viivi-24"
+  ],
+  [
+   "2026-11-13",
+   "",
+   "Scottish Music Night: Dàimh (SCO), Rachel Hair & Ron Jappy (SCO)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/daimh-sco-rachel-hair-ron-jappy-sco"
+  ],
+  [
+   "2026-11-13",
+   "",
+   "Younghearted",
+   "Kalevan kirkko",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/younghearted-17"
   ],
   [
    "2026-11-14",
@@ -466,7 +691,7 @@
   [
    "2026-11-29",
    "19:00",
-   "20 000 Hz, Discoteca Fatale",
+   "20 000 Hz, Discoteca Fatale, Moppi",
    "Terassi Pub Yläkerta",
    "electronic",
    1,
