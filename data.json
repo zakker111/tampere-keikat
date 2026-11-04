@@ -1,36 +1,18 @@
 {
- "generated": "2026-11-03 12:40 UTC",
+ "generated": "2026-11-04 00:24 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
   "vastavirta": "OK",
-  "tampere_filharmonia": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
+  "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-11-03",
-   "19:00",
-   "ARKAI (US) Klassinen ARKAI (US) G",
-   "Livelab",
-   "classical",
-   0,
-   "https://keikat.live/keikka/4566-arkai-us"
-  ],
-  [
-   "2026-11-03",
-   "20:00",
-   "Tietovisa",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.vastavirta.net"
-  ],
   [
    "2026-11-04",
    "04:11",
@@ -66,6 +48,33 @@
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a7adb2130345e0007a4a42c"
+  ],
+  [
+   "2026-11-05",
+   "18:00",
+   "Yona: Kadonneet helmet Yona: Kadonneet helmet G",
+   "Livelab",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2173-yona-kadonneet-helmet"
+  ],
+  [
+   "2026-11-05",
+   "19:00",
+   "Jenni Vartiainen - Vedenalaista-konserttisalikiertue 2026 Pop Jenni Vartiainen - Vedenalaista-konserttisalikiertue 2026",
+   "Tampere-talo",
+   "pop",
+   0,
+   "https://keikat.live/keikka/4162-jenni-vartiainen-vedenalaista-konserttisalikiertue-2026"
+  ],
+  [
+   "2026-11-05",
+   "20:00",
+   "JadaJada Improv Show JadaJada Improv Show Irish Bar O’Connell’s",
+   "Ilmainen",
+   "rock",
+   0,
+   "https://keikat.live/keikka/1824-jadajada-improv-show"
   ],
   [
    "2026-11-05",
