@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05 13:01 UTC",
+ "generated": "2026-11-06 12:48 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
@@ -14,42 +14,6 @@
  },
  "events": [
   [
-   "2026-11-05",
-   "18:00",
-   "Yona: Kadonneet helmet Yona: Kadonneet helmet G",
-   "Livelab",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2173-yona-kadonneet-helmet"
-  ],
-  [
-   "2026-11-05",
-   "19:00",
-   "Jenni Vartiainen - Vedenalaista-konserttisalikiertue 2026 Pop Jenni Vartiainen - Vedenalaista-konserttisalikiertue 2026",
-   "Tampere-talo",
-   "pop",
-   0,
-   "https://keikat.live/keikka/4162-jenni-vartiainen-vedenalaista-konserttisalikiertue-2026"
-  ],
-  [
-   "2026-11-05",
-   "20:00",
-   "JadaJada Improv Show JadaJada Improv Show Irish Bar O’Connell’s",
-   "Ilmainen",
-   "rock",
-   0,
-   "https://keikat.live/keikka/1824-jadajada-improv-show"
-  ],
-  [
-   "2026-11-05",
-   "20:00",
-   "Kikkerikisat",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.vastavirta.net"
-  ],
-  [
    "2026-11-06",
    "06:11",
    "Lauri Haav",
@@ -57,24 +21,6 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/lauri-haav-2/"
-  ],
-  [
-   "2026-11-06",
-   "09:45",
-   "Open Rehearsal",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a327689a7cd070007b2df8c&date=06.11.2026&time=09.45+-+13.00"
-  ],
-  [
-   "2026-11-06",
-   "12:00",
-   "Kirjastokaraoke",
-   "Tesoman kirjasto, Tesomankatu 4, 33310 Tampere",
-   "pop",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a240d53187d2f000740bb1e"
   ],
   [
    "2026-11-06",
@@ -111,6 +57,15 @@
    "folk",
    0,
    "https://keikat.live/keikka/2193-tuure-kilpelainen-suomalaisii-unelmii-konserttisalikiertue-2026"
+  ],
+  [
+   "2026-11-06",
+   "20:00",
+   "OLGA #YOLO CLUB TOUR Elektro / DJ OLGA #YOLO CLUB TOUR Tullikamarin",
+   "Klubi",
+   "electronic",
+   0,
+   "https://keikat.live/keikka/5570-olga-yolo-club-tour"
   ],
   [
    "2026-11-06",
@@ -158,15 +113,6 @@
    "https://www.vastavirta.net"
   ],
   [
-   "2026-11-06",
-   "22:00",
-   "#YOLO CLUB TOUR: Olga Elektro / DJ #YOLO CLUB TOUR: Olga Tullikamarin",
-   "Klubi",
-   "electronic",
-   0,
-   "https://keikat.live/keikka/5570-yolo-club-tour-olga"
-  ],
-  [
    "2026-11-07",
    "07:11",
    "Elämäni Biisi: tähtiartistit ja vieraat Tampereella",
@@ -186,6 +132,15 @@
   ],
   [
    "2026-11-07",
+   "16:00",
+   "Impresiones Ibéricas - espanjalaista musiikkia sellolla ja kitaralla Klassinen Impresiones Ibéricas - espanjalaista musiikkia sellolla ja kitaralla Kulttuuritalo Laikku",
+   "Ilmainen",
+   "classical",
+   0,
+   "https://keikat.live/keikka/5648-impresiones-ibericas-espanjalaista-musiikkia-sellolla-ja-kitaralla"
+  ],
+  [
+   "2026-11-07",
    "17:30",
    "Maria Kujanpää",
    "Terassi Pub Yläkerta",
@@ -195,12 +150,102 @@
   ],
   [
    "2026-11-07",
+   "18:00",
+   "LAURI HAAV - LOPPUUNVARATTU LAURI HAAV - LOPPUUNVARATTU Nokia",
+   "Arena",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2089-lauri-haav-loppuunvarattu"
+  ],
+  [
+   "2026-11-07",
+   "18:00",
+   "Kartanon komediaklubi! Jazz Kartanon komediaklubi!",
+   "Hiedanranta",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/5539-kartanon-komediaklubi"
+  ],
+  [
+   "2026-11-07",
+   "18:00",
+   "Pizza e Birra: Kaisa Karhunen Pizza e Birra: Kaisa Karhunen Vuolteenkatu 1",
+   "Ilmainen",
+   "rock",
+   0,
+   "https://keikat.live/keikka/9219-pizza-e-birra-kaisa-karhunen"
+  ],
+  [
+   "2026-11-07",
+   "19:00",
+   "Viikate 30-vuotiskonsertti + Krypta Viikate 30-vuotiskonsertti + Krypta",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2127-viikate-30-vuotiskonsertti-krypta"
+  ],
+  [
+   "2026-11-07",
+   "19:15",
+   "Elämäni Biisi -illat Elämäni Biisi -illat Factory Halli,",
+   "Mediapolis",
+   "rock",
+   0,
+   "https://keikat.live/keikka/8657-elamani-biisi-illat"
+  ],
+  [
+   "2026-11-07",
+   "20:00",
+   "Freakangel (EE), Sugar Rody (EE), Lirpo Freakangel (EE), Sugar Rody (EE), Lirpo",
+   "Varjobaari",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6890-freakangel-ee-sugar-rody-ee-lirpo"
+  ],
+  [
+   "2026-11-07",
    "20:00",
    "Seurat, Kätyrlauma",
    "Terassi Pub Yläkerta",
    "rock",
    1,
    "https://www.facebook.com/events/1827462605264069/"
+  ],
+  [
+   "2026-11-07",
+   "21:00",
+   "Aavikko + O Samuli A Aavikko + O Samuli A G",
+   "Livelab",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2169-aavikko-o-samuli-a"
+  ],
+  [
+   "2026-11-07",
+   "21:00",
+   "Edicti, Annieeva Edicti, Annieeva Kulttuuritalo",
+   "Telakka",
+   "rock",
+   0,
+   "https://keikat.live/keikka/5201-edicti-annieeva"
+  ],
+  [
+   "2026-11-07",
+   "21:00",
+   "Zenev Band Jazz Zenev Band Katubaari",
+   "Axu",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/7779-zenev-band"
+  ],
+  [
+   "2026-11-07",
+   "21:00",
+   "Ruletti, Nukkuvat, Toukokuu Rock Ruletti, Nukkuvat, Toukokuu Kulttuurikeskus",
+   "Maanalainen",
+   "rock",
+   0,
+   "https://keikat.live/keikka/9171-ruletti-nukkuvat-toukokuu"
   ],
   [
    "2026-11-07",
@@ -446,6 +491,15 @@
    "https://kohokohdat.fi/tampere/tapahtuma/vauhti-kiihtyy-pikkujoulut/"
   ],
   [
+   "2026-11-21",
+   "21:11",
+   "Us",
+   "Telakan keikat",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/us/"
+  ],
+  [
    "2026-11-22",
    "18:00",
    "Laula elämän puolesta : Tule laulamaan matalalla kynnyksellä ympäristöaiheisia tuttuja(kin) lauluja klo 18-20",
@@ -453,6 +507,24 @@
    "rock",
    1,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-26",
+   "20:30",
+   "Fränder (SWE), Tsuumi Sound System",
+   "Telakan keikat",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/frander-swe-tsuumi-sound-system/"
+  ],
+  [
+   "2026-11-27",
+   "09:45",
+   "Open Rehearsal",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a327689a7cd070007b2df8c&date=27.11.2026&time=09.45+-+13.00"
   ],
   [
    "2026-11-27",
@@ -615,6 +687,15 @@
    "classical",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a918e98d1f6e50007be386e"
+  ],
+  [
+   "2026-12-12",
+   "12:12",
+   "Joululaulut Stadionilla",
+   "Tammelan Stadion",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/joululaulut-stadionilla/"
   ],
   [
    "2026-12-13",
