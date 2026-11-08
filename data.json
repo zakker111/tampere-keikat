@@ -1,162 +1,18 @@
 {
- "generated": "2026-11-07 11:37 UTC",
+ "generated": "2026-11-08 11:48 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
   "vastavirta": "OK",
-  "tampere_filharmonia": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
+  "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-11-07",
-   "07:11",
-   "Elämäni Biisi: tähtiartistit ja vieraat Tampereella",
-   "Factory Halli, Mediapolis",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/elamani-biisi-tahtiartistit-ja-vieraat-tampereella-9/"
-  ],
-  [
-   "2026-11-07",
-   "07:11",
-   "Dave Lindholm & Pepe Ahlqvist: Walkin’ blues",
-   "TTT-Klubi",
-   "jazz",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/dave-lindholm-pepe-ahlqvist-walkin-blues/"
-  ],
-  [
-   "2026-11-07",
-   "16:00",
-   "Impresiones Ibéricas - espanjalaista musiikkia sellolla ja kitaralla Klassinen Impresiones Ibéricas - espanjalaista musiikkia sellolla ja kitaralla Kulttuuritalo Laikku",
-   "Ilmainen",
-   "classical",
-   0,
-   "https://keikat.live/keikka/5648-impresiones-ibericas-espanjalaista-musiikkia-sellolla-ja-kitaralla"
-  ],
-  [
-   "2026-11-07",
-   "17:30",
-   "Maria Kujanpää",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://facebook.com/events/s/ensimmaisen-biisin-julkkarijuh/1127079406470844/"
-  ],
-  [
-   "2026-11-07",
-   "18:00",
-   "LAURI HAAV - LOPPUUNVARATTU LAURI HAAV - LOPPUUNVARATTU Nokia",
-   "Arena",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2089-lauri-haav-loppuunvarattu"
-  ],
-  [
-   "2026-11-07",
-   "18:00",
-   "Kartanon komediaklubi! Jazz Kartanon komediaklubi!",
-   "Hiedanranta",
-   "jazz",
-   0,
-   "https://keikat.live/keikka/5539-kartanon-komediaklubi"
-  ],
-  [
-   "2026-11-07",
-   "18:00",
-   "Pizza e Birra: Kaisa Karhunen Pizza e Birra: Kaisa Karhunen Vuolteenkatu 1",
-   "Ilmainen",
-   "rock",
-   0,
-   "https://keikat.live/keikka/9219-pizza-e-birra-kaisa-karhunen"
-  ],
-  [
-   "2026-11-07",
-   "19:00",
-   "Viikate 30-vuotiskonsertti + Krypta Viikate 30-vuotiskonsertti + Krypta",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2127-viikate-30-vuotiskonsertti-krypta"
-  ],
-  [
-   "2026-11-07",
-   "19:15",
-   "Elämäni Biisi -illat Elämäni Biisi -illat Factory Halli,",
-   "Mediapolis",
-   "rock",
-   0,
-   "https://keikat.live/keikka/8657-elamani-biisi-illat"
-  ],
-  [
-   "2026-11-07",
-   "20:00",
-   "Freakangel (EE), Sugar Rody (EE), Lirpo Freakangel (EE), Sugar Rody (EE), Lirpo",
-   "Varjobaari",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6890-freakangel-ee-sugar-rody-ee-lirpo"
-  ],
-  [
-   "2026-11-07",
-   "20:00",
-   "Seurat, Kätyrlauma",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.facebook.com/events/1827462605264069/"
-  ],
-  [
-   "2026-11-07",
-   "21:00",
-   "Aavikko + O Samuli A Aavikko + O Samuli A G",
-   "Livelab",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2169-aavikko-o-samuli-a"
-  ],
-  [
-   "2026-11-07",
-   "21:00",
-   "Edicti, Annieeva Edicti, Annieeva Kulttuuritalo",
-   "Telakka",
-   "rock",
-   0,
-   "https://keikat.live/keikka/5201-edicti-annieeva"
-  ],
-  [
-   "2026-11-07",
-   "21:00",
-   "Zenev Band Jazz Zenev Band Katubaari",
-   "Axu",
-   "jazz",
-   0,
-   "https://keikat.live/keikka/7779-zenev-band"
-  ],
-  [
-   "2026-11-07",
-   "21:00",
-   "Ruletti, Nukkuvat, Toukokuu Rock Ruletti, Nukkuvat, Toukokuu Kulttuurikeskus",
-   "Maanalainen",
-   "rock",
-   0,
-   "https://keikat.live/keikka/9171-ruletti-nukkuvat-toukokuu"
-  ],
-  [
-   "2026-11-07",
-   "22:00",
-   "*** LOPPUUNMYYTY*** 931FEST : Graveyard Goblin (22.30), Teleny (23.10), Eyes Sewn Shut (23.50), Killing Frost (00.30)",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.vastavirta.net"
-  ],
   [
    "2026-11-08",
    "14:00",
@@ -286,7 +142,7 @@
   [
    "2026-11-14",
    "21:00",
-   "PUNTALA ❤️ VASTAVIRTA : Enourmous Doors plays Discharge, Polttouhri, Parakin Lapset + disko",
+   "PUNTALA ❤️ VASTAVIRTA : Enourmous Doors plays Discharge (23.00), Parakin Lapset (22.15), Polttouhri (21.30) + disko",
    "Vastavirta-Klubi",
    "rock",
    0,
@@ -294,8 +150,8 @@
   ],
   [
    "2026-11-15",
-   "21:00",
-   "Hullu!Klubi : Highway Ghosts, Katastrofi, Hiljainen Kansa, Bulrusher, MUCS",
+   "17:00",
+   "Hullu!Klubi : Katastrofi (17.00), Bulrusher (17.30), Highway Ghosts (18.10), Kansa Hiljainen (18.50), Kinnuset (19,30)MUCS",
    "Terassi Pub Yläkerta",
    "rock",
    1,
@@ -484,7 +340,7 @@
   [
    "2026-11-29",
    "19:00",
-   "20 000 Hz, Discoteca Fatale, Moppi",
+   "20 000 Hz, Discoteca Fatale",
    "Terassi Pub Yläkerta",
    "electronic",
    1,
