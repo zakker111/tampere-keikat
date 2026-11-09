@@ -1,44 +1,26 @@
 {
- "generated": "2026-11-08 11:48 UTC",
+ "generated": "2026-11-09 13:41 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "keikat_live": "OK",
-  "vastavirta": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
-  "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
+  "vastavirta": "OK",
   "tampere_filharmonia": "OK",
+  "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_kirjastot": "OK",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
  "events": [
   [
-   "2026-11-08",
-   "14:00",
-   "MUUMIT Pyrstötähteä etsimässä MUUMIT Pyrstötähteä etsimässä",
-   "Tampere-talo",
+   "2026-11-10",
+   "17:20",
+   "Miljoonasade DUO - ilmaiskeikka Miljoonasade DUO - ilmaiskeikka Tullikamarin",
+   "Klubi",
    "rock",
    0,
-   "https://keikat.live/keikka/9117-muumit-pyrstotahtea-etsimassa"
-  ],
-  [
-   "2026-11-08",
-   "15:00",
-   "Afternoon of Fauns: Sonic Delight",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/afternoon-of-fauns-sonic-delight/"
-  ],
-  [
-   "2026-11-09",
-   "13:00",
-   "Runoja ja rokkia: Karoliina Blackburn ja Costello Hautamäki",
-   "Koilliskeskuksen kirjasto, Liikekatu 3, 33580 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a2ffb9aa7cd070007b1bbf5"
+   "https://keikat.live/keikka/9220-miljoonasade-duo-ilmaiskeikka"
   ],
   [
    "2026-11-10",
@@ -47,6 +29,15 @@
    "Terassi Pub Yläkerta",
    "rock",
    1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-11",
+   "20:00",
+   "Musavisa",
+   "Terassi Pub Yläkerta",
+   "rock",
+   0,
    "https://www.vastavirta.net"
   ],
   [
@@ -275,6 +266,15 @@
    "https://www.vastavirta.net"
   ],
   [
+   "2026-11-25",
+   "20:00",
+   "DJ ilta with DJ Diogenes – boogie around the world",
+   "Terassi Pub Yläkerta",
+   "electronic",
+   1,
+   "https://www.facebook.com/events/1118951650850752/"
+  ],
+  [
    "2026-11-26",
    "20:30",
    "Fränder (SWE), Tsuumi Sound System",
@@ -323,7 +323,7 @@
    "2026-11-27",
    "",
    "Masa Orpana Honk",
-   "TTT-Klubi",
+   "Valkeakosken kesäteatteri",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/masa-orpana-honk/"
@@ -428,6 +428,15 @@
    "https://tapahtumat.tampere.fi/fi-FI/page/6ac616eca2441800072e5bf5"
   ],
   [
+   "2026-12-10",
+   "10:12",
+   "Aron -joulukonsertti Elvis-tulkitsijan seurassa",
+   "Kangasalan kirkko",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/aron-cool-company-joulukonsertti-2/"
+  ],
+  [
    "2026-12-11",
    "11:12",
    "ONEVIOLIN -joulukonsertti Tampereella",
@@ -471,6 +480,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/joululaulut-stadionilla/"
+  ],
+  [
+   "2026-12-13",
+   "13:12",
+   "Elvis Christmas -joulukonsertti: Aron",
+   "Ylisen Kartano",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/elvis-christmas-joulukonsertti-aron-three-decades/"
   ],
   [
    "2026-12-13",
