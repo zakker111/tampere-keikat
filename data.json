@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-09 13:41 UTC",
+ "generated": "2026-11-10 13:35 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_live": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_live": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
@@ -33,17 +33,26 @@
   ],
   [
    "2026-11-11",
+   "19:00",
+   "Aston Kalmari Rock Aston Kalmari Tullikamarin",
+   "Klubi",
+   "rock",
+   0,
+   "https://keikat.live/keikka/5511-aston-kalmari"
+  ],
+  [
+   "2026-11-11",
    "20:00",
    "Musavisa",
    "Terassi Pub Yläkerta",
    "rock",
-   0,
+   1,
    "https://www.vastavirta.net"
   ],
   [
    "2026-11-12",
    "17:00",
-   "VOIMAILTA",
+   "VOIMAILTA : Sumuposauttaja",
    "Vastavirta-Klubi",
    "rock",
    1,
@@ -124,7 +133,7 @@
   [
    "2026-11-14",
    "20:00",
-   "Hate Konttisen Varjohallitus, Kaide Luukkonen & Lupaus",
+   "Hate Konttisen Varjohallitus (21.00), Kaide Luukkonen & Lupaus (20.00)",
    "Terassi Pub Yläkerta",
    "rock",
    1,
@@ -142,7 +151,7 @@
   [
    "2026-11-15",
    "17:00",
-   "Hullu!Klubi : Katastrofi (17.00), Bulrusher (17.30), Highway Ghosts (18.10), Kansa Hiljainen (18.50), Kinnuset (19,30)MUCS",
+   "Hullu!Klubi : Katastrofi (17.00), Bulrusher (17.30), Highway Ghosts (18.10), Kansa Hiljainen (18.50), Kinnuset (19.30)MUCS",
    "Terassi Pub Yläkerta",
    "rock",
    1,
@@ -199,7 +208,7 @@
    "Säilä (21.00), Typerä Typerä Mies (20.00), Toukokuu (19.00)",
    "Terassi Pub Yläkerta",
    "rock",
-   0,
+   1,
    "https://www.vastavirta.net"
   ],
   [
@@ -323,7 +332,7 @@
    "2026-11-27",
    "",
    "Masa Orpana Honk",
-   "Valkeakosken kesäteatteri",
+   "TTT-Klubi",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/masa-orpana-honk/"
