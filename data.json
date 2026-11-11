@@ -1,36 +1,20 @@
 {
- "generated": "2026-11-10 13:35 UTC",
+ "generated": "2026-11-11 12:18 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
- "errors": [],
+ "errors": [
+  "kohokohdat: HTTPSConnectionPool(host='kohokohdat.fi', port=443): Read timed out. (read timeout=20)"
+ ],
  "source_status": {
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_kirjastot": "OK",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
-  "kohokohdat": "OK"
+  "kohokohdat": "FAILED"
  },
  "events": [
-  [
-   "2026-11-10",
-   "17:20",
-   "Miljoonasade DUO - ilmaiskeikka Miljoonasade DUO - ilmaiskeikka Tullikamarin",
-   "Klubi",
-   "rock",
-   0,
-   "https://keikat.live/keikka/9220-miljoonasade-duo-ilmaiskeikka"
-  ],
-  [
-   "2026-11-10",
-   "20:00",
-   "Tietovisa",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.vastavirta.net"
-  ],
   [
    "2026-11-11",
    "19:00",
@@ -60,6 +44,24 @@
   ],
   [
    "2026-11-12",
+   "18:00",
+   "Västin Vinyylit ja Viinit Västin Vinyylit ja Viinit",
+   "Hiedanranta",
+   "electronic",
+   0,
+   "https://keikat.live/keikka/7557-vastin-vinyylit-ja-viinit"
+  ],
+  [
+   "2026-11-12",
+   "18:00",
+   "Solar Blue Solar Blue Tahmelan Huvila",
+   "Ilmainen",
+   "rock",
+   0,
+   "https://keikat.live/keikka/7902-solar-blue"
+  ],
+  [
+   "2026-11-12",
    "19:00",
    "Tampere Philharmonic Orchestra: Water Music",
    "Tampere-talo",
@@ -69,21 +71,21 @@
   ],
   [
    "2026-11-12",
+   "19:00",
+   "Verneri Pohjola & Tuomo Prättälä Jazz Verneri Pohjola & Tuomo Prättälä G",
+   "Livelab",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/8029-verneri-pohjola-tuomo-prattala"
+  ],
+  [
+   "2026-11-12",
    "20:00",
    "PERUNAPUFFET & FRIENDS -DJ-ILTAMAT, vieraana DJ SUPIKOIRA MOI",
    "Terassi Pub Yläkerta",
    "electronic",
    1,
    "https://www.vastavirta.net"
-  ],
-  [
-   "2026-11-13",
-   "13:11",
-   "Younghearted – Joulukiertue",
-   "Kalevan kirko",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/younghearted-joulukiertue/"
   ],
   [
    "2026-11-13",
@@ -97,7 +99,7 @@
   [
    "2026-11-13",
    "18:00",
-   "Barren Bloom (21.15), Disorganist (20.30), Mikko Mato (19.45), Immo (19.00), Nampa (18.15)",
+   "Disorganist (21.00), Barren Bloom (20.30), Immo (19.45) , Nampa (19.00)",
    "Terassi Pub Yläkerta",
    "rock",
    1,
@@ -114,30 +116,12 @@
   ],
   [
    "2026-11-14",
-   "14:11",
-   "Isac Elliot",
-   "Nokia Arena",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/isac-elliot/"
-  ],
-  [
-   "2026-11-14",
-   "14:11",
-   "50+ Disco: DJ:t  Juissi  & Jykke",
-   "TAMPEREEN KOMEDIATEATTERI",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/442928/"
-  ],
-  [
-   "2026-11-14",
    "20:00",
-   "Hate Konttisen Varjohallitus (21.00), Kaide Luukkonen & Lupaus (20.00)",
+   "Hate Konttisen Varjohallitus (20.30), Kaide Luukkonen & Lupaus (19.30)",
    "Terassi Pub Yläkerta",
    "rock",
    1,
-   "https://www.vastavirta.net"
+   "https://facebook.com/events/s/hate-konttisen-varjohallitus-k/1078610195165694/"
   ],
   [
    "2026-11-14",
@@ -151,11 +135,20 @@
   [
    "2026-11-15",
    "17:00",
-   "Hullu!Klubi : Katastrofi (17.00), Bulrusher (17.30), Highway Ghosts (18.10), Kansa Hiljainen (18.50), Kinnuset (19.30)MUCS",
+   "Hullu!Klubi : Katastrofi (17.00), Bulrusher (17.30), Highway Ghosts (18.10), Kansa Hiljainen (18.50), Kinnuset (19.30), MUCS",
    "Terassi Pub Yläkerta",
    "rock",
    1,
    "https://www.facebook.com/events/1102322162407887/"
+  ],
+  [
+   "2026-11-15",
+   "20:00",
+   "Kalevi Suopursun Karaoke",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-11-16",
@@ -165,6 +158,15 @@
    "electronic",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a74881751d559000726da7f"
+  ],
+  [
+   "2026-11-17",
+   "20:00",
+   "Tietovisa",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-11-18",
@@ -239,33 +241,6 @@
    "https://www.vastavirta.net"
   ],
   [
-   "2026-11-21",
-   "21:11",
-   "Turisti -konsertti Nokia Arenalla",
-   "Nokia Arena",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/turisti-konsertti-nokia-arenalla/"
-  ],
-  [
-   "2026-11-21",
-   "21:11",
-   "Vauhti Kiihtyy -pikkujoulut 2026",
-   "Hakametsän jäähalli",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/vauhti-kiihtyy-pikkujoulut/"
-  ],
-  [
-   "2026-11-21",
-   "21:11",
-   "Us",
-   "Telakan keikat",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/us/"
-  ],
-  [
    "2026-11-22",
    "18:00",
    "Laula elämän puolesta : Tule laulamaan matalalla kynnyksellä ympäristöaiheisia tuttuja(kin) lauluja klo 18-20",
@@ -282,15 +257,6 @@
    "electronic",
    1,
    "https://www.facebook.com/events/1118951650850752/"
-  ],
-  [
-   "2026-11-26",
-   "20:30",
-   "Fränder (SWE), Tsuumi Sound System",
-   "Telakan keikat",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/frander-swe-tsuumi-sound-system/"
   ],
   [
    "2026-11-27",
@@ -327,15 +293,6 @@
    "rock",
    0,
    "https://www.vastavirta.net"
-  ],
-  [
-   "2026-11-27",
-   "",
-   "Masa Orpana Honk",
-   "TTT-Klubi",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/masa-orpana-honk/"
   ],
   [
    "2026-11-28",
@@ -392,42 +349,6 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/opera-gala/"
   ],
   [
-   "2026-12-04",
-   "",
-   "Pianomusiikkia Astorissa",
-   "Ravintola Astor",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/pianomusiikkia-astorissa-2026-12-04/"
-  ],
-  [
-   "2026-12-04",
-   "",
-   "Puisto by Night: Puisto DJ:t",
-   "Puisto ravintola ja kahvila",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/puisto-by-night-puisto-djt-2026-12-04/"
-  ],
-  [
-   "2026-12-05",
-   "05:12",
-   "Ilveksen Iloinen Itsenäisyys 2026",
-   "Ilves Bar & Night",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/ilveksen-iloinen-itsenaisyys-2/"
-  ],
-  [
-   "2026-12-05",
-   "05:12",
-   "Portion Boys",
-   "Nokia Arena",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/portion-boys/"
-  ],
-  [
    "2026-12-05",
    "14:00",
    "Kirjasto on punk #5: Abduktio ja SSCP",
@@ -435,33 +356,6 @@
    "metal",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6ac616eca2441800072e5bf5"
-  ],
-  [
-   "2026-12-10",
-   "10:12",
-   "Aron -joulukonsertti Elvis-tulkitsijan seurassa",
-   "Kangasalan kirkko",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/aron-cool-company-joulukonsertti-2/"
-  ],
-  [
-   "2026-12-11",
-   "11:12",
-   "ONEVIOLIN -joulukonsertti Tampereella",
-   "Tampereen Tullikamari KEIKAT",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/oneviolin-joulukonsertti-tampereella/"
-  ],
-  [
-   "2026-12-11",
-   "11:12",
-   "Waltteri Torikka & Tampere Filharmonia: Joulukonsertti",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/waltteri-torikka-tampere-filharmonia-joulukonsertti/"
   ],
   [
    "2026-12-11",
@@ -473,6 +367,15 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/waltteri-torikka-tampere-philharmonic-christmas-concert/"
   ],
   [
+   "2026-12-11",
+   "21:00",
+   "Haexler (ger), Dehumanisaatio, Mielivalta, Suitsuke",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.facebook.com/events/1085542334482215"
+  ],
+  [
    "2026-12-12",
    "11:00",
    "Reissu-Rulla: Palago-duon konsertti ja työpaja",
@@ -482,22 +385,13 @@
    "https://tapahtumat.tampere.fi/fi-FI/page/6a918e98d1f6e50007be386e"
   ],
   [
-   "2026-12-12",
-   "12:12",
-   "Joululaulut Stadionilla",
-   "Tammelan Stadion",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/joululaulut-stadionilla/"
-  ],
-  [
    "2026-12-13",
-   "13:12",
-   "Elvis Christmas -joulukonsertti: Aron",
-   "Ylisen Kartano",
+   "14:30",
+   "931 ALL AGES MATINEA : Armoton, Vengeful Blood, Rääkkäys, Forced Humility",
+   "Vastavirta-Klubi",
    "rock",
    0,
-   "https://kohokohdat.fi/tampere/tapahtuma/elvis-christmas-joulukonsertti-aron-three-decades/"
+   "https://www.facebook.com/events/1102799702758369/"
   ],
   [
    "2026-12-13",
@@ -509,24 +403,6 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/afternoon-of-fauns-a-dancing-enchanted-forest/"
   ],
   [
-   "2026-12-15",
-   "15:12",
-   "Leavings-Orkesteri solistinaan Timo Rautiainen: Varasteleva Joulupukki -joulukonsertti",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/leavings-orkesteri-solistinaan-timo-rautiainen-varasteleva-joulupukki-joulukonsertti/"
-  ],
-  [
-   "2026-12-15",
-   "",
-   "Salhojankadun Pubin jamit: House Band ja vierailijat",
-   "Salhojankadun Pub",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/salhojankadun-pubin-jamit-house-band-ja-vierailijat-2026-12-15/"
-  ],
-  [
    "2026-12-16",
    "18:00",
    "PIKKUJOULUT",
@@ -534,15 +410,6 @@
    "rock",
    1,
    "https://www.vastavirta.net"
-  ],
-  [
-   "2026-12-17",
-   "17:12",
-   "Linda Lampenius ja Perttu Kivilaakso joulukonsertissa Tampereella",
-   "Tampereen tuomiokirkko",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/linda-lampenius-ja-perttu-kivilaakso-joulukonsertissa-tampereella/"
   ],
   [
    "2026-12-17",
@@ -563,51 +430,6 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/santtu-matias-rouvali-alena-baeva/"
   ],
   [
-   "2026-12-19",
-   "19:12",
-   "Joululounas Scandic Rosendahl",
-   "Ravintola Rosendahl",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/joululounas-scandic-rosendahl-2/"
-  ],
-  [
-   "2026-12-19",
-   "19:12",
-   "Raskasta Joulua 2026 -metallijoulukonsertti Tampereella",
-   "Nokia Arena",
-   "metal",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/raskasta-joulua-tampereella/"
-  ],
-  [
-   "2026-12-22",
-   "22:12",
-   "Mylläreiden perinteinen joululounas joulupöydästä",
-   "Ravintola Myllärit",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/myllareiden-perinteinen-joululounas-joulupoydasta/"
-  ],
-  [
-   "2026-12-23",
-   "23:12",
-   "Tiiliholvin perinteinen joululounas",
-   "Ravintola Tiiliholvi Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tiiliholvin-joululounas/"
-  ],
-  [
-   "2026-12-30",
-   "",
-   "Roamin Street Bandin Gumbo Club Huurteessa",
-   "Public House Huurre",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/roamin-street-bandin-gumbo-club-huurteessa-2-2026-12-30/"
-  ],
-  [
    "2027-01-09",
    "15:00",
    "New Year's Concert: Beethoven 5",
@@ -619,11 +441,20 @@
   [
    "2027-01-15",
    "19:00",
-   "Tampere Philharmonic Orchestra: Season series concert",
+   "Tampere Philharmonic Orchestra: Messages Across Worlds",
    "Tampere-talo",
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a1597fa8811e40007efe310&date=15.01.2027&time=19.00+-+21.00"
+  ],
+  [
+   "2027-01-29",
+   "19:00",
+   "Tampere Philharmonic Orchestra: Season series concert",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a15997e8811e40007efe390&date=29.01.2027&time=19.00+-+21.00"
   ]
  ]
 }
