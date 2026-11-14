@@ -1,153 +1,18 @@
 {
- "generated": "2026-11-13 12:56 UTC",
+ "generated": "2026-11-14 12:05 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "keikat_live": "OK",
-  "vastavirta": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
-  "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
+  "vastavirta": "OK",
   "tampere_filharmonia": "OK",
+  "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_kirjastot": "OK",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-11-13",
-   "13:11",
-   "Younghearted – Joulukiertue",
-   "Kalevan kirko",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/younghearted-joulukiertue/"
-  ],
-  [
-   "2026-11-13",
-   "17:00",
-   "Sampolan MysteeriYö ja Sampola LIVE: Joose Keskitalo",
-   "Sampolan kirjasto, Sammonkatu 2, 33540 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6aa293689d2ba70007476fe2"
-  ],
-  [
-   "2026-11-13",
-   "17:00",
-   "Suoman marraskuun Pikkujoulut Suoman marraskuun Pikkujoulut Ravintola",
-   "Suoma",
-   "rock",
-   0,
-   "https://keikat.live/keikka/9084-suoman-marraskuun-pikkujoulut"
-  ],
-  [
-   "2026-11-13",
-   "17:30",
-   "Younghearted - Joulukiertue Younghearted - Joulukiertue KALEVAN",
-   "KIRKKO",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6889-younghearted-joulukiertue"
-  ],
-  [
-   "2026-11-13",
-   "18:00",
-   "Disorganist (21.00), Barren Bloom (20.30), Hirvikoira (19.45), Nampa (19.00)",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://facebook.com/events/s/bagi-ilta-disorganist-barren-b/1742026394204466/"
-  ],
-  [
-   "2026-11-13",
-   "19:00",
-   "VIIVI VIIVI",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2129-viivi"
-  ],
-  [
-   "2026-11-13",
-   "19:00",
-   "Voice of TAYT - Uusien klubi Voice of TAYT - Uusien klubi Tampereen",
-   "Ylioppilasteatteri",
-   "rock",
-   0,
-   "https://keikat.live/keikka/9221-voice-of-tayt-uusien-klubi"
-  ],
-  [
-   "2026-11-13",
-   "20:00",
-   "Scottish Music Night: Dàimh + Rachel Hair & Ron Jappy Folk Scottish Music Night: Dàimh + Rachel Hair & Ron Jappy G",
-   "Livelab",
-   "folk",
-   0,
-   "https://keikat.live/keikka/2170-scottish-music-night-d-imh-rachel-hair-ron-jappy"
-  ],
-  [
-   "2026-11-13",
-   "20:00",
-   "All Good In The Hood Live: Röge / Luka Kallio / DJ C-Flava Elektro / DJ All Good In The Hood Live: Röge / Luka Kallio / DJ C-Flava Ravintola",
-   "Kaijakka",
-   "electronic",
-   0,
-   "https://keikat.live/keikka/7863-all-good-in-the-hood-live-roge-luka-kallio-dj-c-flava"
-  ],
-  [
-   "2026-11-13",
-   "20:00",
-   "Dee Kourtsman Folk Dee Kourtsman Katubaari",
-   "Axu",
-   "folk",
-   0,
-   "https://keikat.live/keikka/8610-dee-kourtsman"
-  ],
-  [
-   "2026-11-13",
-   "20:30",
-   "Sanni Mäntyranta, Sairaus, Pepita Vanni, Rääkkäys Punk Sanni Mäntyranta, Sairaus, Pepita Vanni, Rääkkäys Kulttuurikeskus",
-   "Maanalainen",
-   "punk",
-   0,
-   "https://keikat.live/keikka/9172-sanni-mantyranta-sairaus-pepita-vanni-raakkays"
-  ],
-  [
-   "2026-11-13",
-   "21:00",
-   "HI/LO goes HI90s #7: Alt Country, Folk Rock & Americana 1995–1999 Elektro / DJ HI/LO goes HI90s #7: Alt Country, Folk Rock & Americana 1995–1999 Irish Bar",
-   "O’Connell’s",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6092-hi-lo-goes-hi90s-7-alt-country-folk-rock-americana-1995-1999"
-  ],
-  [
-   "2026-11-13",
-   "21:00",
-   "8 Bits High (levyjulkkarit) (23.30), La Murga (22.30), Cartridge Kid (21.30)",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.facebook.com/events/s/8-bits-high-kings-of-nerd-punk/1159632633166406/"
-  ],
-  [
-   "2026-11-13",
-   "21:30",
-   "TTT-KLUBI: The Miracle: A night with Queen Folk TTT-KLUBI: The Miracle: A night with Queen",
-   "TTT-klubi",
-   "folk",
-   0,
-   "https://keikat.live/keikka/2080-ttt-klubi-the-miracle-a-night-with-queen"
-  ],
-  [
-   "2026-11-13",
-   "22:00",
-   "Sliki // LA 13.11. K-18 Sliki // LA 13.11. K-18 Panimoravintola",
-   "Plevna",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7500-sliki-la-13-11-k-18"
-  ],
   [
    "2026-11-14",
    "14:11",
@@ -186,12 +51,12 @@
   ],
   [
    "2026-11-14",
-   "19:00",
-   "Litku Klemetti, Joku Iiris Rock Litku Klemetti, Joku Iiris Tullikamarin",
-   "Klubi",
+   "18:00",
+   "Semmarit Rock Semmarit",
+   "Tavara-asema",
    "rock",
    0,
-   "https://keikat.live/keikka/7182-litku-klemetti-joku-iiris"
+   "https://keikat.live/keikka/9840-semmarit"
   ],
   [
    "2026-11-14",
@@ -201,6 +66,15 @@
    "rock",
    0,
    "https://keikat.live/keikka/3743-vilma-jaa-loitsui-ja-taikoi-luomuduo"
+  ],
+  [
+   "2026-11-14",
+   "19:45",
+   "Litku Klemetti Rock Pop Litku Klemetti Tullikamarin",
+   "Klubi",
+   "rock",
+   0,
+   "https://keikat.live/keikka/7182-litku-klemetti"
   ],
   [
    "2026-11-14",
@@ -214,9 +88,9 @@
   [
    "2026-11-14",
    "20:00",
-   "Uniklubi – Encore-kiertue Uniklubi – Encore-kiertue Tullikamarin",
+   "Uniklubi – Encore-kiertue Rock Uniklubi – Encore-kiertue Tullikamarin",
    "Klubi",
-   "metal",
+   "rock",
    0,
    "https://keikat.live/keikka/5830-uniklubi-encore-kiertue"
   ],
@@ -259,11 +133,11 @@
   [
    "2026-11-14",
    "21:00",
-   "PUNTALA ❤️ VASTAVIRTA : Enourmous Doors plays Discharge (23.00), Parakin Lapset (22.15), Polttouhri (21.30) + disko",
+   "PUNTALA ❤️ VASTAVIRTA : Purkkapäivä (00.00), Enourmous Doors plays Discharge (22.45), Polttouhri (22.00), Loka (21.20) + disko",
    "Vastavirta-Klubi",
    "rock",
    0,
-   "https://www.vastavirta.net"
+   "https://facebook.com/events/s/puntala-3-vastavirta/3046285929059930/"
   ],
   [
    "2026-11-14",
@@ -282,6 +156,24 @@
    "rock",
    1,
    "https://www.facebook.com/events/1102322162407887/"
+  ],
+  [
+   "2026-11-15",
+   "18:00",
+   "Sana Soi: Pro Fide - 60v uskon puolesta Blues Sana Soi: Pro Fide - 60v uskon puolesta Puuvillatehtaankatu 2",
+   "Ilmainen",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/9525-sana-soi-pro-fide-60v-uskon-puolesta"
+  ],
+  [
+   "2026-11-15",
+   "18:40",
+   "Campaign For Musical Destruction 2026 Metal Campaign For Musical Destruction 2026 Tullikamarin",
+   "Klubi",
+   "metal",
+   0,
+   "https://keikat.live/keikka/7130-campaign-for-musical-destruction-2026"
   ],
   [
    "2026-11-15",
@@ -494,7 +386,7 @@
    "2026-11-27",
    "",
    "Masa Orpana Honk",
-   "TTT-Klubi",
+   "Valkeakosken kesäteatteri",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/masa-orpana-honk/"
