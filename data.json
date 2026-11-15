@@ -1,161 +1,35 @@
 {
- "generated": "2026-11-14 12:05 UTC",
+ "generated": "2026-11-15 12:35 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_live": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_live": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_kirjastot": "OK",
-  "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
+  "meteli": "OK",
   "kohokohdat": "OK"
  },
  "events": [
   [
-   "2026-11-14",
-   "14:11",
-   "Isac Elliot",
-   "Nokia Arena",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/isac-elliot/"
-  ],
-  [
-   "2026-11-14",
-   "14:11",
-   "50+ Disco: DJ:t  Juissi  & Jykke",
-   "TAMPEREEN KOMEDIATEATTERI",
-   "electronic",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/442928/"
-  ],
-  [
-   "2026-11-14",
-   "17:30",
-   "Kartanon komediaklubi! Jazz Kartanon komediaklubi!",
-   "Hiedanranta",
-   "jazz",
-   0,
-   "https://keikat.live/keikka/5539-kartanon-komediaklubi"
-  ],
-  [
-   "2026-11-14",
-   "18:00",
-   "Isac Elliot - The Mansion Pop Isac Elliot - The Mansion Nokia",
-   "Arena",
-   "pop",
-   0,
-   "https://keikat.live/keikka/2095-isac-elliot-the-mansion"
-  ],
-  [
-   "2026-11-14",
-   "18:00",
-   "Semmarit Rock Semmarit",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://keikat.live/keikka/9840-semmarit"
-  ],
-  [
-   "2026-11-14",
-   "19:30",
-   "Vilma Jää - Loitsui ja taikoi + Luomuduo Vilma Jää - Loitsui ja taikoi + Luomuduo",
-   "Tampere-talo",
-   "rock",
-   0,
-   "https://keikat.live/keikka/3743-vilma-jaa-loitsui-ja-taikoi-luomuduo"
-  ],
-  [
-   "2026-11-14",
-   "19:45",
-   "Litku Klemetti Rock Pop Litku Klemetti Tullikamarin",
-   "Klubi",
-   "rock",
-   0,
-   "https://keikat.live/keikka/7182-litku-klemetti"
-  ],
-  [
-   "2026-11-14",
-   "20:00",
-   "Knipi - Sivellinvetoja Folk Knipi - Sivellinvetoja G",
-   "Livelab",
-   "folk",
-   0,
-   "https://keikat.live/keikka/2166-knipi-sivellinvetoja"
-  ],
-  [
-   "2026-11-14",
-   "20:00",
-   "Uniklubi – Encore-kiertue Rock Uniklubi – Encore-kiertue Tullikamarin",
-   "Klubi",
-   "rock",
-   0,
-   "https://keikat.live/keikka/5830-uniklubi-encore-kiertue"
-  ],
-  [
-   "2026-11-14",
-   "20:00",
-   "Mr.Breathless Rock Mr.Breathless Vanha",
-   "Monttu",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6602-mr-breathless"
-  ],
-  [
-   "2026-11-14",
-   "20:00",
-   "Hate Konttisen Varjohallitus (20.30), Kaide Luukkonen & Lupaus (19.30)",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://facebook.com/events/s/hate-konttisen-varjohallitus-k/1078610195165694/"
-  ],
-  [
-   "2026-11-14",
-   "21:00",
-   "Howling Bones plays Mark Lanegan Folk Howling Bones plays Mark Lanegan Katubaari",
-   "Axu",
-   "folk",
-   0,
-   "https://keikat.live/keikka/8609-howling-bones-plays-mark-lanegan"
-  ],
-  [
-   "2026-11-14",
-   "21:00",
-   "Black Mambo, Daggerplay, The Pistones Punk Black Mambo, Daggerplay, The Pistones Kulttuurikeskus",
-   "Maanalainen",
-   "punk",
-   0,
-   "https://keikat.live/keikka/9173-black-mambo-daggerplay-the-pistones"
-  ],
-  [
-   "2026-11-14",
-   "21:00",
-   "PUNTALA ❤️ VASTAVIRTA : Purkkapäivä (00.00), Enourmous Doors plays Discharge (22.45), Polttouhri (22.00), Loka (21.20) + disko",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://facebook.com/events/s/puntala-3-vastavirta/3046285929059930/"
-  ],
-  [
-   "2026-11-14",
-   "21:30",
-   "Frigg Klassinen Frigg",
-   "TTT-klubi",
-   "classical",
-   0,
-   "https://keikat.live/keikka/2076-frigg"
-  ],
-  [
    "2026-11-15",
    "17:00",
-   "Hullu!Klubi : Katastrofi (17.00), Bulrusher (17.30), Highway Ghosts (18.10), Kansa Hiljainen (18.50), Kinnuset (19.30), MUCS",
+   "Hullu!Klubi : Katastrofi (17.00), Bulrusher (17.30), Kansa Hiljainen (18.15), Kinnuset (19.00), MUCS",
    "Terassi Pub Yläkerta",
    "rock",
    1,
    "https://www.facebook.com/events/1102322162407887/"
+  ],
+  [
+   "2026-11-15",
+   "18:00",
+   "Campaign For Musical Destruction 2026: Napalm Death, Master, Brat, Goatburner Metal Campaign For Musical Destruction 2026: Napalm Death, Master, Brat, Goatburner Tullikamarin",
+   "Klubi",
+   "metal",
+   0,
+   "https://keikat.live/keikka/7130-campaign-for-musical-destruction-2026-napalm-death-master-brat-goatburner"
   ],
   [
    "2026-11-15",
@@ -168,21 +42,30 @@
   ],
   [
    "2026-11-15",
-   "18:40",
-   "Campaign For Musical Destruction 2026 Metal Campaign For Musical Destruction 2026 Tullikamarin",
-   "Klubi",
-   "metal",
-   0,
-   "https://keikat.live/keikka/7130-campaign-for-musical-destruction-2026"
-  ],
-  [
-   "2026-11-15",
    "20:00",
    "Kalevi Suopursun Karaoke",
    "Terassi Pub Yläkerta",
    "rock",
    1,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-15",
+   "",
+   "Napalm Death (GBR), Master (USA/CZE), Brat (USA),",
+   "Goatburner Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/napalm-death-gbr-master-usa-cze-brat-usa-goatburner"
+  ],
+  [
+   "2026-11-15",
+   "",
+   "Hullu!Klubi: Katastrofi, Bulrusher, Highway Ghosts, Kansa Hiljainen, Kinnuset, Mucs",
+   "Vastavirta-Klubi",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/hulluklubi-katastrofi-bulrusher-highway-ghosts-kansa-hiljainen-kinnuset-mucs"
   ],
   [
    "2026-11-16",
@@ -194,6 +77,15 @@
    "https://tapahtumat.tampere.fi/fi-FI/page/6a74881751d559000726da7f"
   ],
   [
+   "2026-11-16",
+   "18:00",
+   "PMO @ TTT-Klubi PMO @ TTT-Klubi",
+   "TTT-klubi",
+   "rock",
+   0,
+   "https://keikat.live/keikka/9713-pmo-ttt-klubi"
+  ],
+  [
    "2026-11-17",
    "20:00",
    "Tietovisa",
@@ -203,6 +95,24 @@
    "https://www.vastavirta.net"
   ],
   [
+   "2026-11-17",
+   "",
+   "Roy Montgomery (NZL)",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/roy-montgomery-nzl"
+  ],
+  [
+   "2026-11-17",
+   "",
+   "Wirsiä: Jyrki 69 & ",
+   "Pekko Käppi Messukylän kirkko",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/wirsia-jyrki-69-pekko-kappi-9"
+  ],
+  [
    "2026-11-18",
    "18:30",
    "Iloinen perhetapahtuma: Sukkalukko",
@@ -210,6 +120,42 @@
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6ab3a435defde0000795b29a"
+  ],
+  [
+   "2026-11-18",
+   "",
+   "Graham Bonnet Band (GBR/USA),",
+   "Wishing Well Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/graham-bonnet-band-gbr-wishing-well-3"
+  ],
+  [
+   "2026-11-18",
+   "",
+   "Viktoria Tolstoy & Jacob Karlzon (SWE)",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/viktoria-tolstoy-jacob-karlzon-swe"
+  ],
+  [
+   "2026-11-18",
+   "",
+   "Canyon Lights (USA)",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/canyon-lights-usa"
+  ],
+  [
+   "2026-11-18",
+   "",
+   "Manserock-ilta – Juice-spesiaali: Hauli Bros Duo, Juri Lindeman,",
+   "Kalle Alatalo Museokeskus Vapriikki",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/manserock-ilta-juice-spesiaali-hauli-bros-duo-juri-lindeman-kalle-alatalo"
   ],
   [
    "2026-11-19",
@@ -228,6 +174,42 @@
    "rock",
    1,
    "https://www.facebook.com/events/1785661479053362/"
+  ],
+  [
+   "2026-11-19",
+   "",
+   "Ricky-Tick Big Band & Julkinen Sana",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/ricky-tick-big-band-julkinen-sana-4"
+  ],
+  [
+   "2026-11-19",
+   "",
+   "Asla Jo, Saga Olsson",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/asla-jo-saga-olsson"
+  ],
+  [
+   "2026-11-19",
+   "",
+   "Legion Of The Damned (NLD), Torchia, Vitriolic",
+   "Bar Kotelo",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/legion-of-the-damned-nld-torchia-vitriolic"
+  ],
+  [
+   "2026-11-19",
+   "",
+   "Juuso Paason Tulevat Käsitteet, Atug",
+   "Vastavirta-Klubi",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/juuso-paason-tulevat-kasitteet-atug"
   ],
   [
    "2026-11-20",
@@ -264,6 +246,69 @@
    "rock",
    0,
    "https://facebook.com/events/s/mimosa-lossi-t-palone-oiva-ved/1683984883387275/"
+  ],
+  [
+   "2026-11-20",
+   "",
+   "Timo Kahilainen feat. Heikki Hela & Just in Time",
+   "TTT-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/timo-kahilainen-feat-heikki-hela-just-in-time"
+  ],
+  [
+   "2026-11-20",
+   "",
+   "Benjamin",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/benjamin-18"
+  ],
+  [
+   "2026-11-20",
+   "",
+   "Rokki Raikaa: Stratovarius, Klamydia, Kotiteollisuus, Kilpi",
+   "Hakametsän jäähalli",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/stratovarius-klamydia-kotiteollisuus-kilpi-3"
+  ],
+  [
+   "2026-11-20",
+   "",
+   "Varjobaari goes CBGB – Reunion: Neutron Blitz, V-osasto, Burning Pigs",
+   "Varjobaari",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/varjobaari-goes-cbgb-reunion-neutron-blitz-v-osasto-burning-pigs"
+  ],
+  [
+   "2026-11-20",
+   "",
+   "Live Music Afterwork: Hank Nero",
+   "Pub Simon",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/live-music-afterwork-hank-nero"
+  ],
+  [
+   "2026-11-20",
+   "",
+   "Säilä, Typerä Typerä Mies, Toukokuu",
+   "Vastavirta-Klubi",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/saila-typera-typera-mies-toukokuu"
+  ],
+  [
+   "2026-11-20",
+   "",
+   "Mimosa & Getto-Otto, Lossi T, Palone, Oiva Vedätys",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/mimosa-getto-otto-lossi-t-palone-oiva-vedatys"
   ],
   [
    "2026-11-21",
@@ -311,6 +356,51 @@
    "https://kohokohdat.fi/tampere/tapahtuma/us/"
   ],
   [
+   "2026-11-21",
+   "",
+   "Us",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/us-2"
+  ],
+  [
+   "2026-11-21",
+   "",
+   "60-vuotisjuhlakonsertti: Mika Maijala",
+   "G Livelab Tampere",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/60-vuotisjuhlakonsertti-mika-maijala"
+  ],
+  [
+   "2026-11-21",
+   "",
+   "Vauhti Kiihtyy! -pikkujoulut: Haloo Helsinki!, Neon 2, Kake Randelin, Ressu Redford",
+   "Hakametsän jäähalli",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/vauhti-kiihtyy-pikkujoulut-haloo-helsinki-neon-2-kake-randelin-ressu-redford"
+  ],
+  [
+   "2026-11-21",
+   "",
+   "Taiteile minulle taivas: Pinhuusi, Piirimyyjä, Ayno, Halla",
+   "Vastavirta-Klubi",
+   "rock",
+   1,
+   "https://www.meteli.net/tapahtuma/taiteile-minulle-taivas-pinhuusi-piirimyyja-ayno-halla"
+  ],
+  [
+   "2026-11-21",
+   "",
+   "Pohjasakka, Aivoproteesi, Punk Ekman, Tohtori Koira, Suicide Sex Cult Propaganda",
+   "Vastavirta-Klubi",
+   "metal",
+   0,
+   "https://www.meteli.net/tapahtuma/pohjasakka-aivoproteesi-punk-ekman-tohtori-koira-suicide-sex-cult-propaganda"
+  ],
+  [
    "2026-11-22",
    "18:00",
    "Laula elämän puolesta : Tule laulamaan matalalla kynnyksellä ympäristöaiheisia tuttuja(kin) lauluja klo 18-20",
@@ -318,6 +408,15 @@
    "rock",
    1,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-24",
+   "",
+   "Gwenifer Raymond (GBR)",
+   "Telakka",
+   "rock",
+   0,
+   "https://www.meteli.net/tapahtuma/gwenifer-raymond-gbr"
   ],
   [
    "2026-11-24",
@@ -386,7 +485,7 @@
    "2026-11-27",
    "",
    "Masa Orpana Honk",
-   "Valkeakosken kesäteatteri",
+   "TTT-Klubi",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/masa-orpana-honk/"
