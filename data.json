@@ -1,81 +1,18 @@
 {
- "generated": "2026-11-15 12:35 UTC",
+ "generated": "2026-11-16 13:27 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
   "vastavirta": "OK",
-  "tampere_filharmonia": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
-  "tampere_kirjastot": "OK",
-  "meteli": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
+  "tampere_filharmonia": "OK",
+  "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
+  "tampere_kirjastot": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-11-15",
-   "17:00",
-   "Hullu!Klubi : Katastrofi (17.00), Bulrusher (17.30), Kansa Hiljainen (18.15), Kinnuset (19.00), MUCS",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.facebook.com/events/1102322162407887/"
-  ],
-  [
-   "2026-11-15",
-   "18:00",
-   "Campaign For Musical Destruction 2026: Napalm Death, Master, Brat, Goatburner Metal Campaign For Musical Destruction 2026: Napalm Death, Master, Brat, Goatburner Tullikamarin",
-   "Klubi",
-   "metal",
-   0,
-   "https://keikat.live/keikka/7130-campaign-for-musical-destruction-2026-napalm-death-master-brat-goatburner"
-  ],
-  [
-   "2026-11-15",
-   "18:00",
-   "Sana Soi: Pro Fide - 60v uskon puolesta Blues Sana Soi: Pro Fide - 60v uskon puolesta Puuvillatehtaankatu 2",
-   "Ilmainen",
-   "jazz",
-   0,
-   "https://keikat.live/keikka/9525-sana-soi-pro-fide-60v-uskon-puolesta"
-  ],
-  [
-   "2026-11-15",
-   "20:00",
-   "Kalevi Suopursun Karaoke",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.vastavirta.net"
-  ],
-  [
-   "2026-11-15",
-   "",
-   "Napalm Death (GBR), Master (USA/CZE), Brat (USA),",
-   "Goatburner Klubi",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/napalm-death-gbr-master-usa-cze-brat-usa-goatburner"
-  ],
-  [
-   "2026-11-15",
-   "",
-   "Hullu!Klubi: Katastrofi, Bulrusher, Highway Ghosts, Kansa Hiljainen, Kinnuset, Mucs",
-   "Vastavirta-Klubi",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/hulluklubi-katastrofi-bulrusher-highway-ghosts-kansa-hiljainen-kinnuset-mucs"
-  ],
-  [
-   "2026-11-16",
-   "17:00",
-   "Vinyyli-illat",
-   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
-   "electronic",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a74881751d559000726da7f"
-  ],
   [
    "2026-11-16",
    "18:00",
@@ -95,78 +32,6 @@
    "https://www.vastavirta.net"
   ],
   [
-   "2026-11-17",
-   "",
-   "Roy Montgomery (NZL)",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/roy-montgomery-nzl"
-  ],
-  [
-   "2026-11-17",
-   "",
-   "Wirsiä: Jyrki 69 & ",
-   "Pekko Käppi Messukylän kirkko",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/wirsia-jyrki-69-pekko-kappi-9"
-  ],
-  [
-   "2026-11-18",
-   "18:30",
-   "Iloinen perhetapahtuma: Sukkalukko",
-   "Koivistonkylän kirjasto, Lehvänkatu 9, 33820 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6ab3a435defde0000795b29a"
-  ],
-  [
-   "2026-11-18",
-   "",
-   "Graham Bonnet Band (GBR/USA),",
-   "Wishing Well Klubi",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/graham-bonnet-band-gbr-wishing-well-3"
-  ],
-  [
-   "2026-11-18",
-   "",
-   "Viktoria Tolstoy & Jacob Karlzon (SWE)",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/viktoria-tolstoy-jacob-karlzon-swe"
-  ],
-  [
-   "2026-11-18",
-   "",
-   "Canyon Lights (USA)",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/canyon-lights-usa"
-  ],
-  [
-   "2026-11-18",
-   "",
-   "Manserock-ilta – Juice-spesiaali: Hauli Bros Duo, Juri Lindeman,",
-   "Kalle Alatalo Museokeskus Vapriikki",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/manserock-ilta-juice-spesiaali-hauli-bros-duo-juri-lindeman-kalle-alatalo"
-  ],
-  [
-   "2026-11-19",
-   "17:30",
-   "Nekala LIVE: Pelkkä Poutanen",
-   "Nekalan kirjasto, Lounaantie 2, 33800 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a903f5ce9778000075185b5"
-  ],
-  [
    "2026-11-19",
    "18:00",
    "Juuso Paason Tulevat Käsitteet (19.00), ATUG (18.00) + Kikkerikisat (20.00)",
@@ -174,51 +39,6 @@
    "rock",
    1,
    "https://www.facebook.com/events/1785661479053362/"
-  ],
-  [
-   "2026-11-19",
-   "",
-   "Ricky-Tick Big Band & Julkinen Sana",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/ricky-tick-big-band-julkinen-sana-4"
-  ],
-  [
-   "2026-11-19",
-   "",
-   "Asla Jo, Saga Olsson",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/asla-jo-saga-olsson"
-  ],
-  [
-   "2026-11-19",
-   "",
-   "Legion Of The Damned (NLD), Torchia, Vitriolic",
-   "Bar Kotelo",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/legion-of-the-damned-nld-torchia-vitriolic"
-  ],
-  [
-   "2026-11-19",
-   "",
-   "Juuso Paason Tulevat Käsitteet, Atug",
-   "Vastavirta-Klubi",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/juuso-paason-tulevat-kasitteet-atug"
-  ],
-  [
-   "2026-11-20",
-   "17:00",
-   "Laula elämän puolesta-kollektiivi Tampereen pääkirjasto Metsossa",
-   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6af423001732c1000749e32a"
   ],
   [
    "2026-11-20",
@@ -246,69 +66,6 @@
    "rock",
    0,
    "https://facebook.com/events/s/mimosa-lossi-t-palone-oiva-ved/1683984883387275/"
-  ],
-  [
-   "2026-11-20",
-   "",
-   "Timo Kahilainen feat. Heikki Hela & Just in Time",
-   "TTT-Klubi",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/timo-kahilainen-feat-heikki-hela-just-in-time"
-  ],
-  [
-   "2026-11-20",
-   "",
-   "Benjamin",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/benjamin-18"
-  ],
-  [
-   "2026-11-20",
-   "",
-   "Rokki Raikaa: Stratovarius, Klamydia, Kotiteollisuus, Kilpi",
-   "Hakametsän jäähalli",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/stratovarius-klamydia-kotiteollisuus-kilpi-3"
-  ],
-  [
-   "2026-11-20",
-   "",
-   "Varjobaari goes CBGB – Reunion: Neutron Blitz, V-osasto, Burning Pigs",
-   "Varjobaari",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/varjobaari-goes-cbgb-reunion-neutron-blitz-v-osasto-burning-pigs"
-  ],
-  [
-   "2026-11-20",
-   "",
-   "Live Music Afterwork: Hank Nero",
-   "Pub Simon",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/live-music-afterwork-hank-nero"
-  ],
-  [
-   "2026-11-20",
-   "",
-   "Säilä, Typerä Typerä Mies, Toukokuu",
-   "Vastavirta-Klubi",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/saila-typera-typera-mies-toukokuu"
-  ],
-  [
-   "2026-11-20",
-   "",
-   "Mimosa & Getto-Otto, Lossi T, Palone, Oiva Vedätys",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/mimosa-getto-otto-lossi-t-palone-oiva-vedatys"
   ],
   [
    "2026-11-21",
@@ -356,51 +113,6 @@
    "https://kohokohdat.fi/tampere/tapahtuma/us/"
   ],
   [
-   "2026-11-21",
-   "",
-   "Us",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/us-2"
-  ],
-  [
-   "2026-11-21",
-   "",
-   "60-vuotisjuhlakonsertti: Mika Maijala",
-   "G Livelab Tampere",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/60-vuotisjuhlakonsertti-mika-maijala"
-  ],
-  [
-   "2026-11-21",
-   "",
-   "Vauhti Kiihtyy! -pikkujoulut: Haloo Helsinki!, Neon 2, Kake Randelin, Ressu Redford",
-   "Hakametsän jäähalli",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/vauhti-kiihtyy-pikkujoulut-haloo-helsinki-neon-2-kake-randelin-ressu-redford"
-  ],
-  [
-   "2026-11-21",
-   "",
-   "Taiteile minulle taivas: Pinhuusi, Piirimyyjä, Ayno, Halla",
-   "Vastavirta-Klubi",
-   "rock",
-   1,
-   "https://www.meteli.net/tapahtuma/taiteile-minulle-taivas-pinhuusi-piirimyyja-ayno-halla"
-  ],
-  [
-   "2026-11-21",
-   "",
-   "Pohjasakka, Aivoproteesi, Punk Ekman, Tohtori Koira, Suicide Sex Cult Propaganda",
-   "Vastavirta-Klubi",
-   "metal",
-   0,
-   "https://www.meteli.net/tapahtuma/pohjasakka-aivoproteesi-punk-ekman-tohtori-koira-suicide-sex-cult-propaganda"
-  ],
-  [
    "2026-11-22",
    "18:00",
    "Laula elämän puolesta : Tule laulamaan matalalla kynnyksellä ympäristöaiheisia tuttuja(kin) lauluja klo 18-20",
@@ -408,15 +120,6 @@
    "rock",
    1,
    "https://www.vastavirta.net"
-  ],
-  [
-   "2026-11-24",
-   "",
-   "Gwenifer Raymond (GBR)",
-   "Telakka",
-   "rock",
-   0,
-   "https://www.meteli.net/tapahtuma/gwenifer-raymond-gbr"
   ],
   [
    "2026-11-24",
@@ -475,7 +178,7 @@
   [
    "2026-11-27",
    "20:00",
-   "God’s Lonely Men, Garbagemen, Wolfmen",
+   "Garbagemen (23.00), God’s Lonely Men (22.00), Wolfmen (21.00)",
    "Vastavirta-Klubi",
    "rock",
    0,
@@ -509,15 +212,6 @@
    "https://www.vastavirta.net"
   ],
   [
-   "2026-12-01",
-   "13:00",
-   "Yhteislaulutuokio",
-   "Koukkuniemen kirjasto, Ahlgrenin Puistokuja 2, 33180 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a758f2551febb0007fb01c6"
-  ],
-  [
    "2026-12-02",
    "19:00",
    "Pelle Miljoona & Pispala Punks, Purran lista, Kinnuset",
@@ -537,12 +231,12 @@
   ],
   [
    "2026-12-04",
-   "12:00",
-   "Kirjastokaraoke",
-   "Tesoman kirjasto, Tesomankatu 4, 33310 Tampere",
-   "pop",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a240d53187d2f000740bb1e"
+   "04:12",
+   "Eino Järvelin",
+   "Nekala",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/eino-jarvelin/"
   ],
   [
    "2026-12-04",
@@ -591,12 +285,12 @@
   ],
   [
    "2026-12-05",
-   "14:00",
-   "Kirjasto on punk #5: Abduktio ja SSCP",
-   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
-   "metal",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6ac616eca2441800072e5bf5"
+   "05:12",
+   "Anis Kiitu",
+   "Nekala",
+   "rock",
+   0,
+   "https://kohokohdat.fi/tampere/tapahtuma/anis-kiitu/"
   ],
   [
    "2026-12-10",
@@ -642,15 +336,6 @@
    "rock",
    0,
    "https://www.facebook.com/events/1085542334482215"
-  ],
-  [
-   "2026-12-12",
-   "11:00",
-   "Reissu-Rulla: Palago-duon konsertti ja työpaja",
-   "Tesoman kirjasto, Tesomankatu 4, 33310 Tampere",
-   "classical",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a918e98d1f6e50007be386e"
   ],
   [
    "2026-12-12",
@@ -723,15 +408,6 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/linda-lampenius-ja-perttu-kivilaakso-joulukonsertissa-tampereella/"
-  ],
-  [
-   "2026-12-17",
-   "18:00",
-   "Metso LIVE: Rebekka Holi",
-   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6aaa77403e3e8f000747c048"
   ],
   [
    "2026-12-17",
