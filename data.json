@@ -1,27 +1,18 @@
 {
- "generated": "2026-11-16 13:27 UTC",
+ "generated": "2026-11-17 14:11 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "keikat_live": "OK",
   "vastavirta": "OK",
-  "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_filharmonia": "OK",
+  "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
+  "tampere_kirjastot": "OK",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
-  "tampere_kirjastot": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-11-16",
-   "18:00",
-   "PMO @ TTT-Klubi PMO @ TTT-Klubi",
-   "TTT-klubi",
-   "rock",
-   0,
-   "https://keikat.live/keikka/9713-pmo-ttt-klubi"
-  ],
   [
    "2026-11-17",
    "20:00",
@@ -32,6 +23,51 @@
    "https://www.vastavirta.net"
   ],
   [
+   "2026-11-18",
+   "18:30",
+   "Iloinen perhetapahtuma: Sukkalukko",
+   "Koivistonkylän kirjasto, Lehvänkatu 9, 33820 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6ab3a435defde0000795b29a"
+  ],
+  [
+   "2026-11-18",
+   "19:00",
+   "Viktoria Tolstoy & Jacob Karlzon (SE): Who We Are Jazz Viktoria Tolstoy & Jacob Karlzon (SE): Who We Are G",
+   "Livelab",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/8030-viktoria-tolstoy-jacob-karlzon-se-who-we-are"
+  ],
+  [
+   "2026-11-18",
+   "20:00",
+   "Canyon Lights (USA) Blues Canyon Lights (USA) Kulttuuritalo",
+   "Telakka",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/4165-canyon-lights-usa"
+  ],
+  [
+   "2026-11-18",
+   "21:00",
+   "Graham Bonnet Band Rock Graham Bonnet Band Tullikamarin",
+   "Klubi",
+   "rock",
+   0,
+   "https://keikat.live/keikka/1991-graham-bonnet-band"
+  ],
+  [
+   "2026-11-19",
+   "17:30",
+   "Nekala LIVE: Pelkkä Poutanen",
+   "Nekalan kirjasto, Lounaantie 2, 33800 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a903f5ce9778000075185b5"
+  ],
+  [
    "2026-11-19",
    "18:00",
    "Juuso Paason Tulevat Käsitteet (19.00), ATUG (18.00) + Kikkerikisat (20.00)",
@@ -39,6 +75,15 @@
    "rock",
    1,
    "https://www.facebook.com/events/1785661479053362/"
+  ],
+  [
+   "2026-11-20",
+   "17:00",
+   "Laula elämän puolesta-kollektiivi Tampereen pääkirjasto Metsossa",
+   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6af423001732c1000749e32a"
   ],
   [
    "2026-11-20",
@@ -56,7 +101,7 @@
    "Terassi Pub Yläkerta",
    "rock",
    1,
-   "https://www.vastavirta.net"
+   "https://www.facebook.com/events/1755460498881861/"
   ],
   [
    "2026-11-20",
@@ -212,6 +257,15 @@
    "https://www.vastavirta.net"
   ],
   [
+   "2026-12-01",
+   "13:00",
+   "Yhteislaulutuokio",
+   "Koukkuniemen kirjasto, Ahlgrenin Puistokuja 2, 33180 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a758f2551febb0007fb01c6"
+  ],
+  [
    "2026-12-02",
    "19:00",
    "Pelle Miljoona & Pispala Punks, Purran lista, Kinnuset",
@@ -240,12 +294,39 @@
   ],
   [
    "2026-12-04",
+   "12:00",
+   "Kirjastokaraoke",
+   "Tesoman kirjasto, Tesomankatu 4, 33310 Tampere",
+   "pop",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a240d53187d2f000740bb1e"
+  ],
+  [
+   "2026-12-04",
    "19:00",
    "Opera Gala",
    "Tampere-talo",
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/dynamic-event/opera-gala/"
+  ],
+  [
+   "2026-12-04",
+   "21:00",
+   "Inariveljet, Ville Leinonen & Hot Heros",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-12-04",
+   "23:59",
+   "Kaista Goes Vastavirta",
+   "Vastavirta-Klubi",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-12-04",
@@ -293,6 +374,33 @@
    "https://kohokohdat.fi/tampere/tapahtuma/anis-kiitu/"
   ],
   [
+   "2026-12-05",
+   "14:00",
+   "Kirjasto on punk #5: Abduktio ja SSCP",
+   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
+   "metal",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6ac616eca2441800072e5bf5"
+  ],
+  [
+   "2026-12-05",
+   "17:30",
+   "BACK TO PLAN A : A Solidarity show : Hautaustoimisto (20.30), Viides Vuodenaika (19.45), ’áháchí (19.00)",
+   "Terassi Pub Yläkerta",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-12-05",
+   "20:30",
+   "Vacuous (uk), Dome Runner, Throat, Sisar",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
    "2026-12-10",
    "10:12",
    "Aron -joulukonsertti Elvis-tulkitsijan seurassa",
@@ -330,6 +438,15 @@
   ],
   [
    "2026-12-11",
+   "20:00",
+   "Taneli Harma, KoKuFa (Konsta, Kusti & Faarao)",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-12-11",
    "21:00",
    "Haexler (ger), Dehumanisaatio, Mielivalta, Suitsuke",
    "Vastavirta-Klubi",
@@ -339,12 +456,39 @@
   ],
   [
    "2026-12-12",
+   "11:00",
+   "Reissu-Rulla: Palago-duon konsertti ja työpaja",
+   "Tesoman kirjasto, Tesomankatu 4, 33310 Tampere",
+   "classical",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a918e98d1f6e50007be386e"
+  ],
+  [
+   "2026-12-12",
    "12:12",
    "Joululaulut Stadionilla",
    "Tammelan Stadion",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/joululaulut-stadionilla/"
+  ],
+  [
+   "2026-12-12",
+   "20:30",
+   "Rock Siltanen Group (22.00), Taikakaulin (21.00)",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-12-12",
+   "23:59",
+   "Pikkuäcidjoulut",
+   "Vastavirta-Klubi",
+   "electronic",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-12-13",
@@ -411,6 +555,15 @@
   ],
   [
    "2026-12-17",
+   "18:00",
+   "Metso LIVE: Rebekka Holi",
+   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6aaa77403e3e8f000747c048"
+  ],
+  [
+   "2026-12-17",
    "19:00",
    "Tampere Philharmonic Orchestra: Santtu-Matias Rouvali & Alena Baeva",
    "Tampere-talo",
@@ -435,6 +588,15 @@
    "metal",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/raskasta-joulua-tampereella/"
+  ],
+  [
+   "2026-12-21",
+   "17:00",
+   "Vinyyli-illat",
+   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
+   "electronic",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a74881751d559000726da7f"
   ],
   [
    "2026-12-22",
@@ -488,7 +650,7 @@
    "Tampere-talo",
    "classical",
    0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a15997e8811e40007efe390&date=29.01.2027&time=19.00+-+21.00"
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/sibelius-elgar-en/"
   ],
   [
    "2027-02-05",
@@ -497,7 +659,7 @@
    "Tampere-talo",
    "classical",
    0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a159cb28811e40007efe519&date=05.02.2027&time=19.00+-+21.00"
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/kalevala-reimagined/"
   ],
   [
    "2027-02-12",
@@ -506,7 +668,7 @@
    "Tampere-talo",
    "classical",
    0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a159ea7be620f0007b6dd84&date=12.02.2027&time=19.00+-+21.00"
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/from-bach-to-hypermelody/"
   ],
   [
    "2027-03-25",
@@ -515,7 +677,7 @@
    "Tampere-talo",
    "classical",
    0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a15a0628811e40007efe740&date=25.03.2027&time=19.00+-+21.00"
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/celestial-beauty/"
   ],
   [
    "2027-04-16",
@@ -524,7 +686,7 @@
    "Tampere-talo",
    "classical",
    0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a15a38cbe620f0007b6e008&date=16.04.2027&time=19.00+-+21.00"
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/mozart-and-the-mermaid/"
   ],
   [
    "2027-04-23",
@@ -533,7 +695,7 @@
    "Tampere-talo",
    "classical",
    0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a15a48fbe620f0007b6e09f&date=23.04.2027&time=19.00+-+21.00"
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/bruckners-cathedral/"
   ],
   [
    "2027-05-14",
@@ -542,7 +704,7 @@
    "Tampere-talo",
    "classical",
    0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a15a5828811e40007efe9ca&date=14.05.2027&time=19.00+-+21.00"
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/from-pastoral-to-mandarin/"
   ],
   [
    "2027-05-21",
@@ -551,7 +713,7 @@
    "Tampere-talo",
    "classical",
    0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a15a7938811e40007efeac0&date=21.05.2027&time=19.00+-+21.00"
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/between-light-and-shadow/"
   ],
   [
    "2027-05-28",
