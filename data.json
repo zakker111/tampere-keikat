@@ -1,27 +1,18 @@
 {
- "generated": "2026-11-17 14:11 UTC",
+ "generated": "2026-11-18 14:06 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
   "vastavirta": "OK",
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
-  "tampere_filharmonia": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
+  "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-11-17",
-   "20:00",
-   "Tietovisa",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.vastavirta.net"
-  ],
   [
    "2026-11-18",
    "18:30",
@@ -30,6 +21,15 @@
    "rock",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6ab3a435defde0000795b29a"
+  ],
+  [
+   "2026-11-18",
+   "19:00",
+   "Graham Bonnet Band (UK) + Wishing Well Rock Graham Bonnet Band (UK) + Wishing Well Tullikamarin",
+   "Klubi",
+   "rock",
+   0,
+   "https://keikat.live/keikka/1991-graham-bonnet-band-uk-wishing-well"
   ],
   [
    "2026-11-18",
@@ -50,15 +50,6 @@
    "https://keikat.live/keikka/4165-canyon-lights-usa"
   ],
   [
-   "2026-11-18",
-   "21:00",
-   "Graham Bonnet Band Rock Graham Bonnet Band Tullikamarin",
-   "Klubi",
-   "rock",
-   0,
-   "https://keikat.live/keikka/1991-graham-bonnet-band"
-  ],
-  [
    "2026-11-19",
    "17:30",
    "Nekala LIVE: Pelkkä Poutanen",
@@ -70,11 +61,47 @@
   [
    "2026-11-19",
    "18:00",
+   "Rahvaanmusiikin kerhon jamit Folk Rahvaanmusiikin kerhon jamit Kulttuuritalo",
+   "Laikku",
+   "folk",
+   0,
+   "https://keikat.live/keikka/5129-rahvaanmusiikin-kerhon-jamit"
+  ],
+  [
+   "2026-11-19",
+   "18:00",
    "Juuso Paason Tulevat Käsitteet (19.00), ATUG (18.00) + Kikkerikisat (20.00)",
    "Terassi Pub Yläkerta",
    "rock",
    1,
    "https://www.facebook.com/events/1785661479053362/"
+  ],
+  [
+   "2026-11-19",
+   "19:00",
+   "Asla Jo + Saga Olsson Folk Asla Jo + Saga Olsson G",
+   "Livelab",
+   "folk",
+   0,
+   "https://keikat.live/keikka/4342-asla-jo-saga-olsson"
+  ],
+  [
+   "2026-11-19",
+   "19:00",
+   "Olimpia Splendid, Sumuposauttaja, Pink Chameleons Olimpia Splendid, Sumuposauttaja, Pink Chameleons Kulttuurikeskus",
+   "Maanalainen",
+   "rock",
+   0,
+   "https://keikat.live/keikka/9174-olimpia-splendid-sumuposauttaja-pink-chameleons"
+  ],
+  [
+   "2026-11-19",
+   "19:30",
+   "Varjokabaree - painajaisklubi Varjokabaree - painajaisklubi",
+   "Varjobaari",
+   "rock",
+   0,
+   "https://keikat.live/keikka/9527-varjokabaree-painajaisklubi"
   ],
   [
    "2026-11-20",
@@ -162,6 +189,15 @@
    "18:00",
    "Laula elämän puolesta : Tule laulamaan matalalla kynnyksellä ympäristöaiheisia tuttuja(kin) lauluja klo 18-20",
    "Vastavirta-Klubi",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-24",
+   "20:00",
+   "Tietovisa",
+   "Terassi Pub Yläkerta",
    "rock",
    1,
    "https://www.vastavirta.net"
@@ -300,6 +336,15 @@
    "pop",
    1,
    "https://tapahtumat.tampere.fi/fi-FI/page/6a240d53187d2f000740bb1e"
+  ],
+  [
+   "2026-12-04",
+   "18:30",
+   "Hulda Huima duo (18,30), Ingrid Yö (19.15), Unta (20.00)",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-12-04",
@@ -722,7 +767,7 @@
    "Tampere-talo",
    "classical",
    0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a15a890be620f0007b6e2b5&date=28.05.2027&time=19.00+-+21.00"
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/mahler-iii/"
   ]
  ]
 }
