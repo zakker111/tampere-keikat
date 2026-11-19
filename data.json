@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18 14:06 UTC",
+ "generated": "2026-11-19 14:14 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
@@ -13,42 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-11-18",
-   "18:30",
-   "Iloinen perhetapahtuma: Sukkalukko",
-   "Koivistonkylän kirjasto, Lehvänkatu 9, 33820 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6ab3a435defde0000795b29a"
-  ],
-  [
-   "2026-11-18",
-   "19:00",
-   "Graham Bonnet Band (UK) + Wishing Well Rock Graham Bonnet Band (UK) + Wishing Well Tullikamarin",
-   "Klubi",
-   "rock",
-   0,
-   "https://keikat.live/keikka/1991-graham-bonnet-band-uk-wishing-well"
-  ],
-  [
-   "2026-11-18",
-   "19:00",
-   "Viktoria Tolstoy & Jacob Karlzon (SE): Who We Are Jazz Viktoria Tolstoy & Jacob Karlzon (SE): Who We Are G",
-   "Livelab",
-   "jazz",
-   0,
-   "https://keikat.live/keikka/8030-viktoria-tolstoy-jacob-karlzon-se-who-we-are"
-  ],
-  [
-   "2026-11-18",
-   "20:00",
-   "Canyon Lights (USA) Blues Canyon Lights (USA) Kulttuuritalo",
-   "Telakka",
-   "jazz",
-   0,
-   "https://keikat.live/keikka/4165-canyon-lights-usa"
-  ],
   [
    "2026-11-19",
    "17:30",
@@ -124,11 +88,74 @@
   [
    "2026-11-20",
    "19:00",
+   "Benjamin – Locker Room Tour Benjamin – Locker Room Tour",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2128-benjamin-locker-room-tour"
+  ],
+  [
+   "2026-11-20",
+   "19:00",
+   "Olavi Uusivirta Pop Olavi Uusivirta Tullikamarin",
+   "Klubi",
+   "pop",
+   0,
+   "https://keikat.live/keikka/5761-olavi-uusivirta"
+  ],
+  [
+   "2026-11-20",
+   "19:00",
+   "Uusien klubi - Animaatioilta Uusien klubi - Animaatioilta Tampereen",
+   "Ylioppilasteatteri",
+   "rock",
+   0,
+   "https://keikat.live/keikka/9528-uusien-klubi-animaatioilta"
+  ],
+  [
+   "2026-11-20",
+   "19:00",
    "Säilä (21.00), Typerä Typerä Mies (20.00), Toukokuu (19.00)",
    "Terassi Pub Yläkerta",
    "rock",
    1,
    "https://www.facebook.com/events/1755460498881861/"
+  ],
+  [
+   "2026-11-20",
+   "20:00",
+   "Rokki Raikaa -pikkujoulut Tampere - Kaverilippu K-18 Rock Rokki Raikaa -pikkujoulut Tampere - Kaverilippu K-18 Hakametsän jäähallin",
+   "piha-alue",
+   "rock",
+   0,
+   "https://keikat.live/keikka/1940-rokki-raikaa-pikkujoulut-tampere-kaverilippu-k-18"
+  ],
+  [
+   "2026-11-20",
+   "20:00",
+   "Rokki Raikaa - Tampereen suurimmat rokit - Peruslippu K-18 Rock Rokki Raikaa - Tampereen suurimmat rokit - Peruslippu K-18 Hakametsän jäähallin",
+   "piha-alue",
+   "rock",
+   0,
+   "https://keikat.live/keikka/5810-rokki-raikaa-tampereen-suurimmat-rokit-peruslippu-k-18"
+  ],
+  [
+   "2026-11-20",
+   "20:30",
+   "Ongelma, Katujen Äänet, Jätä Jämät, Purkkapäivä Festari Ongelma, Katujen Äänet, Jätä Jämät, Purkkapäivä Kulttuurikeskus",
+   "Maanalainen",
+   "festival",
+   0,
+   "https://keikat.live/keikka/9960-ongelma-katujen-aanet-jata-jamat-purkkapaiva"
+  ],
+  [
+   "2026-11-20",
+   "21:00",
+   "Amiraali Aho & Adjutantti Airaksinen Blues Amiraali Aho & Adjutantti Airaksinen Katubaari",
+   "Axu",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/9222-amiraali-aho-adjutantti-airaksinen"
   ],
   [
    "2026-11-20",
@@ -138,6 +165,15 @@
    "rock",
    0,
    "https://facebook.com/events/s/mimosa-lossi-t-palone-oiva-ved/1683984883387275/"
+  ],
+  [
+   "2026-11-20",
+   "21:30",
+   "Timo Kahilainen feat. Heikki Hela & Just in Time Rock Timo Kahilainen feat. Heikki Hela & Just in Time",
+   "TTT-klubi",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2077-timo-kahilainen-feat-heikki-hela-just-in-time"
   ],
   [
    "2026-11-21",
@@ -269,7 +305,7 @@
    "2026-11-27",
    "",
    "Masa Orpana Honk",
-   "TTT-Klubi",
+   "Valkeakosken kesäteatteri",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/masa-orpana-honk/"
@@ -430,11 +466,11 @@
   [
    "2026-12-05",
    "17:30",
-   "BACK TO PLAN A : A Solidarity show : Hautaustoimisto (20.30), Viides Vuodenaika (19.45), ’áháchí (19.00)",
+   "BACK TO PLAN A : A Solidarity show : Hautaustoimisto (20.30), Loppuromahdus (19.45), ’áháchí (19.00)",
    "Terassi Pub Yläkerta",
    "rock",
    0,
-   "https://www.vastavirta.net"
+   "https://www.facebook.com/events/1455435830095940/"
   ],
   [
    "2026-12-05",
@@ -689,6 +725,15 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/messages-across-worlds/"
   ],
   [
+   "2027-01-22",
+   "19:00",
+   "Blockbuster Movie Hits",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/blockbuster-movie-hits/"
+  ],
+  [
    "2027-01-29",
    "19:00",
    "Tampere Philharmonic Orchestra: Sibelius & Elgar",
@@ -716,6 +761,15 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/from-bach-to-hypermelody/"
   ],
   [
+   "2027-03-19",
+   "19:00",
+   "Musical Theatre Concert: Do It Like Liza",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/musical-theatre-concert-do-it-like-liza/"
+  ],
+  [
    "2027-03-25",
    "19:00",
    "Tampere Philharmonic Orchestra: Celestial Beauty",
@@ -741,6 +795,15 @@
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/dynamic-event/bruckners-cathedral/"
+  ],
+  [
+   "2027-05-01",
+   "15:00",
+   "May Day Concert: The Soundtrack of Finnish Cinema",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/dynamic-event/may-day-concert-the-soundtrack-of-finnish-cinema/"
   ],
   [
    "2027-05-14",
