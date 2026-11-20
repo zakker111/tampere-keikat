@@ -1,72 +1,18 @@
 {
- "generated": "2026-11-19 14:14 UTC",
+ "generated": "2026-11-20 13:56 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
   "vastavirta": "OK",
-  "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_filharmonia": "OK",
+  "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_kirjastot": "OK",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-11-19",
-   "17:30",
-   "Nekala LIVE: Pelkkä Poutanen",
-   "Nekalan kirjasto, Lounaantie 2, 33800 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a903f5ce9778000075185b5"
-  ],
-  [
-   "2026-11-19",
-   "18:00",
-   "Rahvaanmusiikin kerhon jamit Folk Rahvaanmusiikin kerhon jamit Kulttuuritalo",
-   "Laikku",
-   "folk",
-   0,
-   "https://keikat.live/keikka/5129-rahvaanmusiikin-kerhon-jamit"
-  ],
-  [
-   "2026-11-19",
-   "18:00",
-   "Juuso Paason Tulevat Käsitteet (19.00), ATUG (18.00) + Kikkerikisat (20.00)",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.facebook.com/events/1785661479053362/"
-  ],
-  [
-   "2026-11-19",
-   "19:00",
-   "Asla Jo + Saga Olsson Folk Asla Jo + Saga Olsson G",
-   "Livelab",
-   "folk",
-   0,
-   "https://keikat.live/keikka/4342-asla-jo-saga-olsson"
-  ],
-  [
-   "2026-11-19",
-   "19:00",
-   "Olimpia Splendid, Sumuposauttaja, Pink Chameleons Olimpia Splendid, Sumuposauttaja, Pink Chameleons Kulttuurikeskus",
-   "Maanalainen",
-   "rock",
-   0,
-   "https://keikat.live/keikka/9174-olimpia-splendid-sumuposauttaja-pink-chameleons"
-  ],
-  [
-   "2026-11-19",
-   "19:30",
-   "Varjokabaree - painajaisklubi Varjokabaree - painajaisklubi",
-   "Varjobaari",
-   "rock",
-   0,
-   "https://keikat.live/keikka/9527-varjokabaree-painajaisklubi"
-  ],
   [
    "2026-11-20",
    "17:00",
@@ -84,15 +30,6 @@
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/dynamic-event/tchaikovsky-the-nutcracker-a-christmas-carol/"
-  ],
-  [
-   "2026-11-20",
-   "19:00",
-   "Benjamin – Locker Room Tour Benjamin – Locker Room Tour",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2128-benjamin-locker-room-tour"
   ],
   [
    "2026-11-20",
@@ -151,6 +88,15 @@
   [
    "2026-11-20",
    "21:00",
+   "Benjamin Benjamin",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2128-benjamin"
+  ],
+  [
+   "2026-11-20",
+   "21:00",
    "Amiraali Aho & Adjutantti Airaksinen Blues Amiraali Aho & Adjutantti Airaksinen Katubaari",
    "Axu",
    "jazz",
@@ -177,12 +123,57 @@
   ],
   [
    "2026-11-21",
+   "16:00",
+   "Pizza e Birra: Riku Breilin Klassinen Pizza e Birra: Riku Breilin Vuolteenkatu 1",
+   "Ilmainen",
+   "classical",
+   0,
+   "https://keikat.live/keikka/9304-pizza-e-birra-riku-breilin"
+  ],
+  [
+   "2026-11-21",
    "17:00",
-   "TAITEILE MINULLE TAIVAS : Pinhuusi, Piirimyyjä + open mic, Ayno, Halla",
+   "TAITEILE MINULLE TAIVAS : Pinhuusi, Piirimyyjä (18.00), Pinhuusi (18.30), runo open mic (19.00), Ayno (20.00), Halla (21.00)",
    "Terassi Pub Yläkerta",
    "rock",
    1,
    "https://www.facebook.com/events/1158121343463051/"
+  ],
+  [
+   "2026-11-21",
+   "18:30",
+   "Turisti presents: Magic City -Arena Tour - Mastercard Presale Turisti presents: Magic City -Arena Tour - Mastercard Presale Nokia",
+   "Arena",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6027-turisti-presents-magic-city-arena-tour-mastercard-presale"
+  ],
+  [
+   "2026-11-21",
+   "19:00",
+   "Apulanta Rock Apulanta Tullikamarin",
+   "Klubi",
+   "rock",
+   0,
+   "https://keikat.live/keikka/3972-apulanta"
+  ],
+  [
+   "2026-11-21",
+   "19:00",
+   "Mika Maijala - levynjulkaisukonsertti & 60-vuotisjuhlakonsertti Mika Maijala - levynjulkaisukonsertti & 60-vuotisjuhlakonsertti G",
+   "Livelab",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6028-mika-maijala-levynjulkaisukonsertti-60-vuotisjuhlakonsertti"
+  ],
+  [
+   "2026-11-21",
+   "19:30",
+   "Vauhti Kiihtyy -pikkujoulut Tampere Festari Vauhti Kiihtyy -pikkujoulut Tampere Hakametsän jäähallin",
+   "piha-alue",
+   "festival",
+   0,
+   "https://keikat.live/keikka/1941-vauhti-kiihtyy-pikkujoulut-tampere"
   ],
   [
    "2026-11-21",
@@ -192,6 +183,24 @@
    "metal",
    0,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-21",
+   "21:00",
+   "Us Klassinen Us Kulttuuritalo",
+   "Telakka",
+   "classical",
+   0,
+   "https://keikat.live/keikka/5559-us"
+  ],
+  [
+   "2026-11-21",
+   "21:00",
+   "Ou’touhka Ou’touhka Katubaari",
+   "Axu",
+   "rock",
+   0,
+   "https://keikat.live/keikka/9530-ou-touhka"
   ],
   [
    "2026-11-21",
@@ -219,6 +228,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/us/"
+  ],
+  [
+   "2026-11-21",
+   "23:00",
+   "Magic City Arena Afterparty K18 Hip hop Magic City Arena Afterparty K18 H5",
+   "Bar&Cellar",
+   "hiphop",
+   0,
+   "https://keikat.live/keikka/8691-magic-city-arena-afterparty-k18"
   ],
   [
    "2026-11-22",
@@ -305,7 +323,7 @@
    "2026-11-27",
    "",
    "Masa Orpana Honk",
-   "Valkeakosken kesäteatteri",
+   "TTT-Klubi",
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/masa-orpana-honk/"
@@ -705,6 +723,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/roamin-street-bandin-gumbo-club-huurteessa-2-2026-12-30/"
+  ],
+  [
+   "2026-12-31",
+   "21:30",
+   "Skyjoggers, Pystyyn Kuolleet Hipit, Echolove (ee)",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
   ],
   [
    "2027-01-09",
