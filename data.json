@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-20 13:56 UTC",
+ "generated": "2026-11-21 13:23 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
   "vastavirta": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_filharmonia": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_kirjastot": "OK",
@@ -13,114 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-11-20",
-   "17:00",
-   "Laula elämän puolesta-kollektiivi Tampereen pääkirjasto Metsossa",
-   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6af423001732c1000749e32a"
-  ],
-  [
-   "2026-11-20",
-   "18:00",
-   "Tchaikovsky: The Nutcracker – A Christmas Carol",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/dynamic-event/tchaikovsky-the-nutcracker-a-christmas-carol/"
-  ],
-  [
-   "2026-11-20",
-   "19:00",
-   "Olavi Uusivirta Pop Olavi Uusivirta Tullikamarin",
-   "Klubi",
-   "pop",
-   0,
-   "https://keikat.live/keikka/5761-olavi-uusivirta"
-  ],
-  [
-   "2026-11-20",
-   "19:00",
-   "Uusien klubi - Animaatioilta Uusien klubi - Animaatioilta Tampereen",
-   "Ylioppilasteatteri",
-   "rock",
-   0,
-   "https://keikat.live/keikka/9528-uusien-klubi-animaatioilta"
-  ],
-  [
-   "2026-11-20",
-   "19:00",
-   "Säilä (21.00), Typerä Typerä Mies (20.00), Toukokuu (19.00)",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.facebook.com/events/1755460498881861/"
-  ],
-  [
-   "2026-11-20",
-   "20:00",
-   "Rokki Raikaa -pikkujoulut Tampere - Kaverilippu K-18 Rock Rokki Raikaa -pikkujoulut Tampere - Kaverilippu K-18 Hakametsän jäähallin",
-   "piha-alue",
-   "rock",
-   0,
-   "https://keikat.live/keikka/1940-rokki-raikaa-pikkujoulut-tampere-kaverilippu-k-18"
-  ],
-  [
-   "2026-11-20",
-   "20:00",
-   "Rokki Raikaa - Tampereen suurimmat rokit - Peruslippu K-18 Rock Rokki Raikaa - Tampereen suurimmat rokit - Peruslippu K-18 Hakametsän jäähallin",
-   "piha-alue",
-   "rock",
-   0,
-   "https://keikat.live/keikka/5810-rokki-raikaa-tampereen-suurimmat-rokit-peruslippu-k-18"
-  ],
-  [
-   "2026-11-20",
-   "20:30",
-   "Ongelma, Katujen Äänet, Jätä Jämät, Purkkapäivä Festari Ongelma, Katujen Äänet, Jätä Jämät, Purkkapäivä Kulttuurikeskus",
-   "Maanalainen",
-   "festival",
-   0,
-   "https://keikat.live/keikka/9960-ongelma-katujen-aanet-jata-jamat-purkkapaiva"
-  ],
-  [
-   "2026-11-20",
-   "21:00",
-   "Benjamin Benjamin",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2128-benjamin"
-  ],
-  [
-   "2026-11-20",
-   "21:00",
-   "Amiraali Aho & Adjutantti Airaksinen Blues Amiraali Aho & Adjutantti Airaksinen Katubaari",
-   "Axu",
-   "jazz",
-   0,
-   "https://keikat.live/keikka/9222-amiraali-aho-adjutantti-airaksinen"
-  ],
-  [
-   "2026-11-20",
-   "21:00",
-   "Mimosa & Getto-Otto (00.15), Lossi T (23.20), Palone (22.25), Oiva Vedätys (21.30)",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://facebook.com/events/s/mimosa-lossi-t-palone-oiva-ved/1683984883387275/"
-  ],
-  [
-   "2026-11-20",
-   "21:30",
-   "Timo Kahilainen feat. Heikki Hela & Just in Time Rock Timo Kahilainen feat. Heikki Hela & Just in Time",
-   "TTT-klubi",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2077-timo-kahilainen-feat-heikki-hela-just-in-time"
-  ],
   [
    "2026-11-21",
    "16:00",
@@ -246,6 +138,15 @@
    "rock",
    1,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-22",
+   "20:00",
+   "Dogs Homen luokkakokous vol. 1 Elektro / DJ Festari Dogs Homen luokkakokous vol. 1 Kulttuurikeskus",
+   "Maanalainen",
+   "electronic",
+   0,
+   "https://keikat.live/keikka/9961-dogs-homen-luokkakokous-vol-1"
   ],
   [
    "2026-11-24",
