@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-21 13:23 UTC",
+ "generated": "2026-11-22 13:09 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
   "vastavirta": "OK",
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_filharmonia": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
   "tampere_kirjastot": "OK",
@@ -13,123 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-11-21",
-   "16:00",
-   "Pizza e Birra: Riku Breilin Klassinen Pizza e Birra: Riku Breilin Vuolteenkatu 1",
-   "Ilmainen",
-   "classical",
-   0,
-   "https://keikat.live/keikka/9304-pizza-e-birra-riku-breilin"
-  ],
-  [
-   "2026-11-21",
-   "17:00",
-   "TAITEILE MINULLE TAIVAS : Pinhuusi, Piirimyyjä (18.00), Pinhuusi (18.30), runo open mic (19.00), Ayno (20.00), Halla (21.00)",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.facebook.com/events/1158121343463051/"
-  ],
-  [
-   "2026-11-21",
-   "18:30",
-   "Turisti presents: Magic City -Arena Tour - Mastercard Presale Turisti presents: Magic City -Arena Tour - Mastercard Presale Nokia",
-   "Arena",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6027-turisti-presents-magic-city-arena-tour-mastercard-presale"
-  ],
-  [
-   "2026-11-21",
-   "19:00",
-   "Apulanta Rock Apulanta Tullikamarin",
-   "Klubi",
-   "rock",
-   0,
-   "https://keikat.live/keikka/3972-apulanta"
-  ],
-  [
-   "2026-11-21",
-   "19:00",
-   "Mika Maijala - levynjulkaisukonsertti & 60-vuotisjuhlakonsertti Mika Maijala - levynjulkaisukonsertti & 60-vuotisjuhlakonsertti G",
-   "Livelab",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6028-mika-maijala-levynjulkaisukonsertti-60-vuotisjuhlakonsertti"
-  ],
-  [
-   "2026-11-21",
-   "19:30",
-   "Vauhti Kiihtyy -pikkujoulut Tampere Festari Vauhti Kiihtyy -pikkujoulut Tampere Hakametsän jäähallin",
-   "piha-alue",
-   "festival",
-   0,
-   "https://keikat.live/keikka/1941-vauhti-kiihtyy-pikkujoulut-tampere"
-  ],
-  [
-   "2026-11-21",
-   "20:00",
-   "Pohjasakka (23.30), Aivoproteesi (22.45), Tohtori Koira (22.0), Suicide Sex Cult Propaganda (21.15), Punk Ekman (20.30)",
-   "Vastavirta-Klubi",
-   "metal",
-   0,
-   "https://www.vastavirta.net"
-  ],
-  [
-   "2026-11-21",
-   "21:00",
-   "Us Klassinen Us Kulttuuritalo",
-   "Telakka",
-   "classical",
-   0,
-   "https://keikat.live/keikka/5559-us"
-  ],
-  [
-   "2026-11-21",
-   "21:00",
-   "Ou’touhka Ou’touhka Katubaari",
-   "Axu",
-   "rock",
-   0,
-   "https://keikat.live/keikka/9530-ou-touhka"
-  ],
-  [
-   "2026-11-21",
-   "21:11",
-   "Turisti -konsertti Nokia Arenalla",
-   "Nokia Arena",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/turisti-konsertti-nokia-arenalla/"
-  ],
-  [
-   "2026-11-21",
-   "21:11",
-   "Vauhti Kiihtyy -pikkujoulut 2026",
-   "Hakametsän jäähalli",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/vauhti-kiihtyy-pikkujoulut/"
-  ],
-  [
-   "2026-11-21",
-   "21:11",
-   "Us",
-   "Telakan keikat",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/us/"
-  ],
-  [
-   "2026-11-21",
-   "23:00",
-   "Magic City Arena Afterparty K18 Hip hop Magic City Arena Afterparty K18 H5",
-   "Bar&Cellar",
-   "hiphop",
-   0,
-   "https://keikat.live/keikka/8691-magic-city-arena-afterparty-k18"
-  ],
   [
    "2026-11-22",
    "18:00",
@@ -295,11 +178,11 @@
   [
    "2026-12-04",
    "18:30",
-   "Hulda Huima duo (18,30), Ingrid Yö (19.15), Unta (20.00)",
+   "TALVIPUUTARHA : Hulda Huima duo (18,30), Ingrid Yö (19.15), Unta (20.00)",
    "Terassi Pub Yläkerta",
    "rock",
    1,
-   "https://www.vastavirta.net"
+   "https://www.facebook.com/events/3015423552151974/"
   ],
   [
    "2026-12-04",
@@ -606,15 +489,6 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/myllareiden-perinteinen-joululounas-joulupoydasta/"
-  ],
-  [
-   "2026-12-23",
-   "23:12",
-   "Tiiliholvin perinteinen joululounas",
-   "Ravintola Tiiliholvi Tampere",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/tiiliholvin-joululounas/"
   ],
   [
    "2026-12-30",
