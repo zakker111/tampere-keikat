@@ -1,14 +1,14 @@
 {
- "generated": "2026-11-23 15:48 UTC",
+ "generated": "2026-11-24 15:39 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
+  "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
-  "tampere_kirjastot": "OK",
+  "tampere_kirjastot": "NO_EVENTS_OR_PARSE_FAILURE",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
@@ -51,6 +51,33 @@
   ],
   [
    "2026-11-25",
+   "18:30",
+   "PEPE WILLBERG 80-ELÄMÄLTÄ KAIKEN SAIN -JUHLAORKESTERI PEPE WILLBERG 80-ELÄMÄLTÄ KAIKEN SAIN -JUHLAORKESTERI",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://keikat.live/keikka/2134-pepe-willberg-80-elamalta-kaiken-sain-juhlaorkesteri"
+  ],
+  [
+   "2026-11-25",
+   "19:00",
+   "Johanna Iivanainen 50v -juhlakonsertti Johanna Iivanainen 50v -juhlakonsertti G",
+   "Livelab",
+   "rock",
+   0,
+   "https://keikat.live/keikka/2164-johanna-iivanainen-50v-juhlakonsertti"
+  ],
+  [
+   "2026-11-25",
+   "19:00",
+   "Irkkujamit Irkkujamit Pub Sisko ja sen",
+   "Veli",
+   "rock",
+   0,
+   "https://keikat.live/keikka/6340-irkkujamit"
+  ],
+  [
+   "2026-11-25",
    "20:00",
    "DJ ilta with DJ Diogenes – boogie around the world",
    "Terassi Pub Yläkerta",
@@ -88,7 +115,7 @@
   [
    "2026-11-27",
    "19:00",
-   "Anton V. Kivi, Noo, Pekka Tapani",
+   "Anton V. Kivi (21.00), Noo (20.00), Pekka Tapani (19.00)",
    "Terassi Pub Yläkerta",
    "rock",
    0,
@@ -115,7 +142,7 @@
   [
    "2026-11-28",
    "20:30",
-   "Wyatt E (be), Fife the Hierophant (uk), Radien",
+   "Wyatt E (be) (23.00), Fife the Hierophant (uk) (22.00), Radien (21.00)",
    "Vastavirta-Klubi",
    "rock",
    0,
@@ -123,26 +150,17 @@
   ],
   [
    "2026-11-29",
-   "19:00",
-   "20 000 Hz, Discoteca Fatale",
+   "18:00",
+   "20 000 Hz (19.00), Discoteca Fatale (18.00)",
    "Terassi Pub Yläkerta",
    "electronic",
    1,
    "https://www.vastavirta.net"
   ],
   [
-   "2026-12-01",
-   "13:00",
-   "Yhteislaulutuokio",
-   "Koukkuniemen kirjasto, Ahlgrenin Puistokuja 2, 33180 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a758f2551febb0007fb01c6"
-  ],
-  [
    "2026-12-02",
    "19:00",
-   "Pelle Miljoona & Pispala Punks, Purran lista, Kinnuset",
+   "Pelle Miljoona & Pispala Punks (21.00), Purran lista (20.15), Kinnuset (19.30)",
    "Vastavirta-Klubi",
    "metal",
    0,
@@ -165,15 +183,6 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/eino-jarvelin/"
-  ],
-  [
-   "2026-12-04",
-   "12:00",
-   "Kirjastokaraoke",
-   "Tesoman kirjasto, Tesomankatu 4, 33310 Tampere",
-   "pop",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a240d53187d2f000740bb1e"
   ],
   [
    "2026-12-04",
@@ -258,15 +267,6 @@
   ],
   [
    "2026-12-05",
-   "14:00",
-   "Kirjasto on punk #5: Abduktio ja SSCP",
-   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
-   "metal",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6ac616eca2441800072e5bf5"
-  ],
-  [
-   "2026-12-05",
    "17:30",
    "BACK TO PLAN A : A Solidarity show : Hautaustoimisto (20.30), Loppuromahdus (19.45), ’áháchí (19.00)",
    "Terassi Pub Yläkerta",
@@ -336,15 +336,6 @@
    "rock",
    0,
    "https://www.facebook.com/events/1085542334482215"
-  ],
-  [
-   "2026-12-12",
-   "11:00",
-   "Reissu-Rulla: Palago-duon konsertti ja työpaja",
-   "Tesoman kirjasto, Tesomankatu 4, 33310 Tampere",
-   "classical",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a918e98d1f6e50007be386e"
   ],
   [
    "2026-12-12",
@@ -438,15 +429,6 @@
   ],
   [
    "2026-12-17",
-   "18:00",
-   "Metso LIVE: Rebekka Holi",
-   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
-   "rock",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6aaa77403e3e8f000747c048"
-  ],
-  [
-   "2026-12-17",
    "19:00",
    "Tampere Philharmonic Orchestra: Santtu-Matias Rouvali & Alena Baeva",
    "Tampere-talo",
@@ -471,15 +453,6 @@
    "metal",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/raskasta-joulua-tampereella/"
-  ],
-  [
-   "2026-12-21",
-   "17:00",
-   "Vinyyli-illat",
-   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
-   "electronic",
-   1,
-   "https://tapahtumat.tampere.fi/fi-FI/page/6a74881751d559000726da7f"
   ],
   [
    "2026-12-22",
