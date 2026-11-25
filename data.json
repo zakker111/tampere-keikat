@@ -1,54 +1,18 @@
 {
- "generated": "2026-11-24 15:39 UTC",
+ "generated": "2026-11-25 15:23 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
-  "keikat_live": "OK",
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
+  "keikat_live": "OK",
   "vastavirta": "OK",
   "tampere_filharmonia": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
-  "tampere_kirjastot": "NO_EVENTS_OR_PARSE_FAILURE",
+  "tampere_kirjastot": "OK",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-11-24",
-   "18:00",
-   "TYK @ G Livelab 2026 TYK @ G Livelab 2026 G",
-   "Livelab",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6730-tyk-g-livelab-2026"
-  ],
-  [
-   "2026-11-24",
-   "20:00",
-   "Gwenifer Raymond (UK) Gwenifer Raymond (UK) Kulttuuritalo",
-   "Telakka",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6363-gwenifer-raymond-uk"
-  ],
-  [
-   "2026-11-24",
-   "20:00",
-   "Tietovisa",
-   "Terassi Pub Yläkerta",
-   "rock",
-   1,
-   "https://www.vastavirta.net"
-  ],
-  [
-   "2026-11-24",
-   "",
-   "Gwenifer Raymond (UK)",
-   "Telakan keikat",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/gwenifer-raymond-uk/"
-  ],
   [
    "2026-11-25",
    "18:30",
@@ -84,6 +48,42 @@
    "electronic",
    1,
    "https://www.facebook.com/events/1118951650850752/"
+  ],
+  [
+   "2026-11-26",
+   "18:00",
+   "Tabula Rasa, Fantasia Rock Tabula Rasa, Fantasia",
+   "Tavara-asema",
+   "rock",
+   0,
+   "https://keikat.live/keikka/5653-tabula-rasa-fantasia"
+  ],
+  [
+   "2026-11-26",
+   "18:00",
+   "Västin Vinyylit ja Viinit Västin Vinyylit ja Viinit",
+   "Hiedanranta",
+   "electronic",
+   0,
+   "https://keikat.live/keikka/7557-vastin-vinyylit-ja-viinit"
+  ],
+  [
+   "2026-11-26",
+   "19:00",
+   "Kissa, Lala Salama Jazz Kissa, Lala Salama Tullikamarin",
+   "Klubi",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/4599-kissa-lala-salama"
+  ],
+  [
+   "2026-11-26",
+   "19:30",
+   "Fränder (SWE), Tsuumi Sound System Folk Fränder (SWE), Tsuumi Sound System Kulttuuritalo",
+   "Telakka",
+   "folk",
+   0,
+   "https://keikat.live/keikka/6365-frander-swe-tsuumi-sound-system"
   ],
   [
    "2026-11-26",
@@ -158,6 +158,24 @@
    "https://www.vastavirta.net"
   ],
   [
+   "2026-12-01",
+   "13:00",
+   "Yhteislaulutuokio",
+   "Koukkuniemen kirjasto, Ahlgrenin Puistokuja 2, 33180 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a758f2551febb0007fb01c6"
+  ],
+  [
+   "2026-12-01",
+   "20:00",
+   "Tietovisa",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
    "2026-12-02",
    "19:00",
    "Pelle Miljoona & Pispala Punks (21.00), Purran lista (20.15), Kinnuset (19.30)",
@@ -183,6 +201,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/eino-jarvelin/"
+  ],
+  [
+   "2026-12-04",
+   "12:00",
+   "Kirjastokaraoke",
+   "Tesoman kirjasto, Tesomankatu 4, 33310 Tampere",
+   "pop",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a240d53187d2f000740bb1e"
   ],
   [
    "2026-12-04",
@@ -267,6 +294,15 @@
   ],
   [
    "2026-12-05",
+   "14:00",
+   "Kirjasto on punk #5: Abduktio ja SSCP",
+   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
+   "metal",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6ac616eca2441800072e5bf5"
+  ],
+  [
+   "2026-12-05",
    "17:30",
    "BACK TO PLAN A : A Solidarity show : Hautaustoimisto (20.30), Loppuromahdus (19.45), ’áháchí (19.00)",
    "Terassi Pub Yläkerta",
@@ -284,6 +320,24 @@
    "https://www.vastavirta.net"
   ],
   [
+   "2026-12-06",
+   "19:00",
+   "PADA KULTTUURII! : Are, Mimosa & Pada, Kotidisko Risto & Erkki Käsimerkki, Nuori Ilves, Putkireiska, J Kvalia, Kape, Uto Epilä, Ayno, Lama J, Breiska, Palone, Ben Hillo, Bluna-O, DJ Meskaliini (rap…",
+   "Vastavirta-Klubi",
+   "electronic",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-12-09",
+   "20:00",
+   "MUSAVISA",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
    "2026-12-10",
    "10:12",
    "Aron -joulukonsertti Elvis-tulkitsijan seurassa",
@@ -291,6 +345,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/aron-cool-company-joulukonsertti-2/"
+  ],
+  [
+   "2026-12-10",
+   "17:00",
+   "VOIMAILTA",
+   "Vastavirta-Klubi",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-12-11",
@@ -338,6 +401,24 @@
    "https://www.facebook.com/events/1085542334482215"
   ],
   [
+   "2026-12-11",
+   "23:00",
+   "VASTAVIRTA NIGHTS : DJ MÄNTY, NIKO IKON, SIN-KAL-ZÓN",
+   "Vastavirta-Klubi",
+   "electronic",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-12-12",
+   "11:00",
+   "Reissu-Rulla: Palago-duon konsertti ja työpaja",
+   "Tesoman kirjasto, Tesomankatu 4, 33310 Tampere",
+   "classical",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a918e98d1f6e50007be386e"
+  ],
+  [
    "2026-12-12",
    "12:12",
    "Joululaulut Stadionilla",
@@ -345,6 +426,15 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/joululaulut-stadionilla/"
+  ],
+  [
+   "2026-12-12",
+   "18:00",
+   "SLUMMIJAZZ : Fredrik Ljungkvist & Jonathan Bäckström & Joonas Leppänen,  KLR, Hot Heros, MPH3",
+   "Terassi Pub Yläkerta",
+   "jazz",
+   0,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-12-12",
@@ -429,12 +519,57 @@
   ],
   [
    "2026-12-17",
+   "18:00",
+   "Metso LIVE: Rebekka Holi",
+   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
+   "rock",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6aaa77403e3e8f000747c048"
+  ],
+  [
+   "2026-12-17",
    "19:00",
    "Tampere Philharmonic Orchestra: Santtu-Matias Rouvali & Alena Baeva",
    "Tampere-talo",
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/dynamic-event/santtu-matias-rouvali-alena-baeva/"
+  ],
+  [
+   "2026-12-17",
+   "20:00",
+   "Kikkerikisat",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-12-18",
+   "19:00",
+   "Moppi, Topi Korhonen Kerho, Oudot Ajat",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-12-18",
+   "21:00",
+   "Sewer Altar, Tunkio, Bolt Cross, Dross",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.vastavirta.net"
+  ],
+  [
+   "2026-12-19",
+   "19:00",
+   "Jaakko & Jay (21.00), Afternoon Omens (20.00), Kirjakerho (21.00)",
+   "Terassi Pub Yläkerta",
+   "rock",
+   1,
+   "https://www.vastavirta.net"
   ],
   [
    "2026-12-19",
@@ -455,6 +590,15 @@
    "https://kohokohdat.fi/tampere/tapahtuma/raskasta-joulua-tampereella/"
   ],
   [
+   "2026-12-21",
+   "17:00",
+   "Vinyyli-illat",
+   "Pääkirjasto Metso, Pirkankatu 2, 33210 Tampere",
+   "electronic",
+   1,
+   "https://tapahtumat.tampere.fi/fi-FI/page/6a74881751d559000726da7f"
+  ],
+  [
    "2026-12-22",
    "22:12",
    "Mylläreiden perinteinen joululounas joulupöydästä",
@@ -471,15 +615,6 @@
    "rock",
    0,
    "https://kohokohdat.fi/tampere/tapahtuma/roamin-street-bandin-gumbo-club-huurteessa-2-2026-12-30/"
-  ],
-  [
-   "2026-12-31",
-   "21:30",
-   "Skyjoggers, Pystyyn Kuolleet Hipit, Echolove (ee)",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.vastavirta.net"
   ],
   [
    "2027-01-09",
