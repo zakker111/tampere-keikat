@@ -1,54 +1,18 @@
 {
- "generated": "2026-11-25 15:23 UTC",
+ "generated": "2026-11-26 14:53 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
   "puistokonsertit": "NO_EVENTS_OR_PARSE_FAILURE",
   "keikat_live": "OK",
   "vastavirta": "OK",
-  "tampere_filharmonia": "OK",
   "keikat_org": "NO_EVENTS_OR_PARSE_FAILURE",
+  "tampere_filharmonia": "OK",
   "tampere_kirjastot": "OK",
   "meteli": "NO_EVENTS_OR_PARSE_FAILURE",
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-11-25",
-   "18:30",
-   "PEPE WILLBERG 80-ELÄMÄLTÄ KAIKEN SAIN -JUHLAORKESTERI PEPE WILLBERG 80-ELÄMÄLTÄ KAIKEN SAIN -JUHLAORKESTERI",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://keikat.live/keikka/2134-pepe-willberg-80-elamalta-kaiken-sain-juhlaorkesteri"
-  ],
-  [
-   "2026-11-25",
-   "19:00",
-   "Johanna Iivanainen 50v -juhlakonsertti Johanna Iivanainen 50v -juhlakonsertti G",
-   "Livelab",
-   "rock",
-   0,
-   "https://keikat.live/keikka/2164-johanna-iivanainen-50v-juhlakonsertti"
-  ],
-  [
-   "2026-11-25",
-   "19:00",
-   "Irkkujamit Irkkujamit Pub Sisko ja sen",
-   "Veli",
-   "rock",
-   0,
-   "https://keikat.live/keikka/6340-irkkujamit"
-  ],
-  [
-   "2026-11-25",
-   "20:00",
-   "DJ ilta with DJ Diogenes – boogie around the world",
-   "Terassi Pub Yläkerta",
-   "electronic",
-   1,
-   "https://www.facebook.com/events/1118951650850752/"
-  ],
   [
    "2026-11-26",
    "18:00",
@@ -87,7 +51,7 @@
   ],
   [
    "2026-11-26",
-   "20:30",
+   "",
    "Fränder (SWE), Tsuumi Sound System",
    "Telakan keikat",
    "rock",
@@ -102,6 +66,15 @@
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a327689a7cd070007b2df8c&date=27.11.2026&time=09.45+-+13.00"
+  ],
+  [
+   "2026-11-27",
+   "17:00",
+   "Laulajien unplugged @ Daisy Jazz Laulajien unplugged @ Daisy Ravintola",
+   "Daisy",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/9714-laulajien-unplugged-daisy"
   ],
   [
    "2026-11-27",
@@ -129,6 +102,42 @@
    "rock",
    0,
    "https://www.vastavirta.net"
+  ],
+  [
+   "2026-11-27",
+   "21:00",
+   "Trio Bratislava Intercontinental Jazz Trio Bratislava Intercontinental Katubaari",
+   "Axu",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/9644-trio-bratislava-intercontinental"
+  ],
+  [
+   "2026-11-27",
+   "21:00",
+   "Humming Whale, Barrel, Crimson Day Metal Festari Humming Whale, Barrel, Crimson Day Kulttuurikeskus",
+   "Maanalainen",
+   "metal",
+   0,
+   "https://keikat.live/keikka/9963-humming-whale-barrel-crimson-day"
+  ],
+  [
+   "2026-11-27",
+   "21:00",
+   "Jeffrey Moon Klassinen Jeffrey Moon Katubaari",
+   "Axu",
+   "classical",
+   0,
+   "https://keikat.live/keikka/10393-jeffrey-moon"
+  ],
+  [
+   "2026-11-27",
+   "21:30",
+   "Masa Orpana Honk Jazz Masa Orpana Honk",
+   "TTT-klubi",
+   "jazz",
+   0,
+   "https://keikat.live/keikka/2078-masa-orpana-honk"
   ],
   [
    "2026-11-27",
@@ -407,7 +416,7 @@
    "Vastavirta-Klubi",
    "electronic",
    1,
-   "https://www.vastavirta.net"
+   "https://www.facebook.com/events/1520898466523488/"
   ],
   [
    "2026-12-12",
@@ -671,6 +680,24 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/from-bach-to-hypermelody/"
   ],
   [
+   "2027-02-13",
+   "14:00",
+   "Tampere Philharmonic Orchestra presents: Jazz Club Vibes",
+   "G Livelab Tampere",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6aff243b9a8d5900070c0559&date=13.02.2027&time=14.00+-+15.30"
+  ],
+  [
+   "2027-02-21",
+   "15:00",
+   "Afternoon of Fauns: The Dark Train",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6aff067b661ad3000733f6ed&date=21.02.2027&time=15.00+-+17.00"
+  ],
+  [
    "2027-03-19",
    "19:00",
    "Musical Theatre Concert: Do It Like Liza",
@@ -680,6 +707,15 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/musical-theatre-concert-do-it-like-liza/"
   ],
   [
+   "2027-03-21",
+   "15:00",
+   "Afternoon of Fauns: Il tramonto (Sunset)",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6aff0820230f4c00071ef5a2&date=21.03.2027&time=15.00+-+17.00"
+  ],
+  [
    "2027-03-25",
    "19:00",
    "Tampere Philharmonic Orchestra: Celestial Beauty",
@@ -687,6 +723,15 @@
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/dynamic-event/celestial-beauty/"
+  ],
+  [
+   "2027-04-11",
+   "15:00",
+   "Afternoon of Fauns: Humourist & Activist",
+   "Sara Hildén Art Museum",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6b0035388e81bc0007ed660f&date=11.04.2027&time=15.00+-+16.00"
   ],
   [
    "2027-04-16",
@@ -707,6 +752,15 @@
    "https://www.tamperefilharmonia.fi/en/dynamic-event/bruckners-cathedral/"
   ],
   [
+   "2027-04-25",
+   "15:00",
+   "Afternoon of Fauns: Vibrations!",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6aff0a0e3c02c60007f579d0&date=25.04.2027&time=15.00+-+17.00"
+  ],
+  [
    "2027-05-01",
    "15:00",
    "May Day Concert: The Soundtrack of Finnish Cinema",
@@ -723,6 +777,15 @@
    "classical",
    0,
    "https://www.tamperefilharmonia.fi/en/dynamic-event/from-pastoral-to-mandarin/"
+  ],
+  [
+   "2027-05-16",
+   "15:00",
+   "Afternoon of Fauns: Familiar Works, Fresh Perspectives",
+   "Tampere-talo",
+   "classical",
+   0,
+   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6aff11ae661ad3000733f8e5&date=16.05.2027&time=15.00+-+17.00"
   ],
   [
    "2027-05-21",
