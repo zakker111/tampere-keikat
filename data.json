@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26 14:53 UTC",
+ "generated": "2026-11-27 14:42 UTC",
  "source_note": "Auto-scraped from 7 sources. Music gigs only — theatre/comedy filtered out.",
  "errors": [],
  "source_status": {
@@ -13,60 +13,6 @@
   "kohokohdat": "OK"
  },
  "events": [
-  [
-   "2026-11-26",
-   "18:00",
-   "Tabula Rasa, Fantasia Rock Tabula Rasa, Fantasia",
-   "Tavara-asema",
-   "rock",
-   0,
-   "https://keikat.live/keikka/5653-tabula-rasa-fantasia"
-  ],
-  [
-   "2026-11-26",
-   "18:00",
-   "Västin Vinyylit ja Viinit Västin Vinyylit ja Viinit",
-   "Hiedanranta",
-   "electronic",
-   0,
-   "https://keikat.live/keikka/7557-vastin-vinyylit-ja-viinit"
-  ],
-  [
-   "2026-11-26",
-   "19:00",
-   "Kissa, Lala Salama Jazz Kissa, Lala Salama Tullikamarin",
-   "Klubi",
-   "jazz",
-   0,
-   "https://keikat.live/keikka/4599-kissa-lala-salama"
-  ],
-  [
-   "2026-11-26",
-   "19:30",
-   "Fränder (SWE), Tsuumi Sound System Folk Fränder (SWE), Tsuumi Sound System Kulttuuritalo",
-   "Telakka",
-   "folk",
-   0,
-   "https://keikat.live/keikka/6365-frander-swe-tsuumi-sound-system"
-  ],
-  [
-   "2026-11-26",
-   "",
-   "Fränder (SWE), Tsuumi Sound System",
-   "Telakan keikat",
-   "rock",
-   0,
-   "https://kohokohdat.fi/tampere/tapahtuma/frander-swe-tsuumi-sound-system/"
-  ],
-  [
-   "2026-11-27",
-   "09:45",
-   "Open Rehearsal",
-   "Tampere-talo",
-   "classical",
-   0,
-   "https://www.tamperefilharmonia.fi/en/tapahtuma/?event-id=6a327689a7cd070007b2df8c&date=27.11.2026&time=09.45+-+13.00"
-  ],
   [
    "2026-11-27",
    "17:00",
@@ -150,6 +96,42 @@
   ],
   [
    "2026-11-28",
+   "17:00",
+   "Sitaattiklubi Sitaattiklubi",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://keikat.live/keikka/9088-sitaattiklubi"
+  ],
+  [
+   "2026-11-28",
+   "18:00",
+   "Stam1na, Stoned Statues Metal Stam1na, Stoned Statues Tullikamarin",
+   "Klubi",
+   "metal",
+   0,
+   "https://keikat.live/keikka/2183-stam1na-stoned-statues"
+  ],
+  [
+   "2026-11-28",
+   "18:00",
+   "Kohtaamisia – Alma Solina & Hale Heikkilä Kohtaamisia – Alma Solina & Hale Heikkilä",
+   "Olotila",
+   "rock",
+   0,
+   "https://keikat.live/keikka/8714-kohtaamisia-alma-solina-hale-heikkila"
+  ],
+  [
+   "2026-11-28",
+   "19:00",
+   "Anssi Kela - Nummela 25-vuotisjuhlakiertue Anssi Kela - Nummela 25-vuotisjuhlakiertue",
+   "Tampere-talo",
+   "rock",
+   0,
+   "https://keikat.live/keikka/10315-anssi-kela-nummela-25-vuotisjuhlakiertue"
+  ],
+  [
+   "2026-11-28",
    "20:30",
    "Wyatt E (be) (23.00), Fife the Hierophant (uk) (22.00), Radien (21.00)",
    "Vastavirta-Klubi",
@@ -158,13 +140,49 @@
    "https://www.vastavirta.net"
   ],
   [
+   "2026-11-28",
+   "21:00",
+   "Moonlight Bandits Rock Moonlight Bandits Katubaari",
+   "Axu",
+   "rock",
+   0,
+   "https://keikat.live/keikka/4529-moonlight-bandits"
+  ],
+  [
+   "2026-11-28",
+   "21:00",
+   "Master Boot Record (ITA) & Fulci (ITA) + Arottenbit (ITA) K-18 Master Boot Record (ITA) & Fulci (ITA) + Arottenbit (ITA) K-18 Panimoravintola",
+   "Plevna",
+   "rock",
+   0,
+   "https://keikat.live/keikka/7781-master-boot-record-ita-fulci-ita-arottenbit-ita-k-18"
+  ],
+  [
+   "2026-11-28",
+   "21:00",
+   "Soul Gutter, Rückwater, Liane Metal Festari Soul Gutter, Rückwater, Liane Kulttuurikeskus",
+   "Maanalainen",
+   "metal",
+   0,
+   "https://keikat.live/keikka/9962-soul-gutter-ruckwater-liane"
+  ],
+  [
+   "2026-11-28",
+   "23:00",
+   "Playmaker Houseparty K-20 Elektro / DJ Playmaker Houseparty K-20 Oluthuone",
+   "Panimomestari",
+   "electronic",
+   0,
+   "https://keikat.live/keikka/10128-playmaker-houseparty-k-20"
+  ],
+  [
    "2026-11-29",
    "18:00",
    "20 000 Hz (19.00), Discoteca Fatale (18.00)",
    "Terassi Pub Yläkerta",
    "electronic",
    1,
-   "https://www.vastavirta.net"
+   "https://facebook.com/events/s/terassi-pub-ylakerta-tampere-2/963578179903473/"
   ],
   [
    "2026-12-01",
@@ -394,20 +412,20 @@
   [
    "2026-12-11",
    "20:00",
+   "Haexler (ger) (22.50), Suitsuke (22.15), Dehumanisaatio (21.30), Mielivalta (21.00), Älyämpäri (20.30)",
+   "Vastavirta-Klubi",
+   "rock",
+   0,
+   "https://www.facebook.com/events/1085542334482215"
+  ],
+  [
+   "2026-12-11",
+   "20:00",
    "Taneli Harma, KoKuFa (Konsta, Kusti & Faarao)",
    "Terassi Pub Yläkerta",
    "rock",
    1,
    "https://www.vastavirta.net"
-  ],
-  [
-   "2026-12-11",
-   "21:00",
-   "Haexler (ger), Dehumanisaatio, Mielivalta, Suitsuke",
-   "Vastavirta-Klubi",
-   "rock",
-   0,
-   "https://www.facebook.com/events/1085542334482215"
   ],
   [
    "2026-12-11",
